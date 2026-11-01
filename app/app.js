@@ -388,7 +388,10 @@ function buildPopupContent(item, location) {
   const source = /^https?:\/\//i.test(item.source_url || "")
     ? `<a class="map-popup-source" href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener">Open source ↗</a>`
     : "";
-  const mapLocation = location.name || item.location || "Location not specified";
+  // Job popup headers should identify the city, not repeat a street address.
+  const mapLocation = item.kind === "job"
+    ? item.location || "Location not specified"
+    : location.name || item.location || "Location not specified";
   const history = state.activities.filter((entry) => entry["Entity ID"] === item.id || entry.entity_id === item.id);
   const activityHtml = history.length ? `<section class="activity-history"><h3>Activity</h3>${history.map((entry) => `<div class="map-popup-row"><dt>${escapeHtml(entry.Date || entry.date || "")}</dt><dd>${escapeHtml(entry.Activity || entry.activity || "")}${entry.Status || entry.status ? ` · ${escapeHtml(entry.Status || entry.status)}` : ""}</dd></div>`).join("")}</section>` : "";
   return `<div class="map-popup">
