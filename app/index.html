@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>World of Commodities | Opportunity Map</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css?v=20261101-4">
+  </head>
+  <body>
+    <main class="map-screen">
+      <div id="map" aria-label="Map of tracked opportunities"></div>
+      <aside class="sidebar" aria-label="Opportunity information">
+        <header class="sidebar-head">
+          <div class="wordmark"><span>WORLD OF COMMODITIES</span></div>
+          <span class="location-count"><b id="mapped-count">—</b> MAPPED</span>
+        </header>
+        <div class="view-switch" role="group" aria-label="Map layer">
+          <button class="view-button active" data-view="opportunities">Opportunities</button>
+          <button class="view-button" data-view="institutions">Institutions</button>
+        </div>
+        <label class="search-wrap">
+          <span aria-hidden="true">⌕</span>
+          <input id="search" type="search" placeholder="Search opportunities" autocomplete="off">
+          <kbd>/</kbd>
+        </label>
+        <nav id="filters" class="filters" aria-label="Opportunity type"></nav>
+        <div id="list-controls" class="list-controls">
+          <div><select id="facet-filter" class="native-select" aria-label="Filter field" tabindex="-1"></select><div id="facet-filter-menu"></div></div>
+          <div><select id="facet-value" class="native-select" aria-label="Filter value" tabindex="-1"></select><div id="facet-value-menu"></div></div>
+          <div class="sort-control"><select id="sort-order" class="native-select" aria-label="Sort records" tabindex="-1"></select><div id="sort-order-menu"></div></div>
+        </div>
+        <div class="list-heading"><span id="list-heading-label">OPPORTUNITIES</span><span id="result-count">0</span></div>
+        <div id="opportunity-list" class="opportunity-list" aria-live="polite"></div>
+        <footer class="sidebar-foot">
+          <div id="legend-items" class="legend-items"></div>
+          <small id="updated-label">LOCAL DATA</small>
+        </footer>
+      </aside>
+      <div class="map-attribution">© OpenStreetMap contributors · © OpenFreeMap</div>
+    </main>
+    <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
+    <script src="app.js?v=20261101-3" defer></script>
+  </body>
+</html>

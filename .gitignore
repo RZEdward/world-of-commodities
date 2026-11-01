@@ -1,0 +1,21 @@
+node_modules/
+__pycache__/
+*.py[cod]
+*.inspect.ndjson
+.work/
+data/sources/scan-results.json
+
+# Local tracker data and generated feeds
+*.xlsx
+market_updated.xlsx.inspect.ndjson
+data/opportunities.json
+data/sources/registry.json
+data/sources/office-research-queue.json
+data/sources/office-research-results.json
+
+data/sources/role-search-results.json
+outputs/
+
+.cursor/
+scripts/populate_workbook.mjs
+scripts/style_workbook.mjs
