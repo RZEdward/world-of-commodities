@@ -384,7 +384,7 @@ def main() -> None:
         payload.update({"id": row.get("Opportunity ID", ""), "company_id": row.get("Company ID", ""), "kind": "job", "title": title, "organization": org, "business": row.get("Business", categories.get(org.casefold(), "")), "role_function": row.get("Role Function", ""),
             "company_reputation_score_10": company.get("Company Reputation Score /10", ""), "company_reputation_notes": company.get("Company Reputation Notes", ""),
             "source_url": row.get("Link", ""), "location": "; ".join(city_labels), "office": "; ".join(labels), "locations": places,
-            "category": categories.get(org.casefold(), ""), "verification": "verified" if row.get("Source check", "").lower() == "verified" else "needs_review"})
+            "category": categories.get(org.casefold(), ""), "verification": "verified" if str(row.get("Source check") or row.get("Confidence") or "").strip().lower().startswith(("verified", "high")) else "needs_review"})
         payload["office_source_text"] = row.get("Office(s) (source text)", "")
         payload["registry_offices"] = row.get("Office(s) (registry links)", "")
         payload.pop("office_s_source_text", None)
