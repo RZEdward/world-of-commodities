@@ -1,7 +1,7 @@
 """Export the opportunity sheets in worldofcommodities.xlsx to the map feed."""
 from __future__ import annotations
 
-from datetime import date, datetime, timezone
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import json
 import re
@@ -78,6 +78,15 @@ def read_sheets() -> dict[str, list[dict[str, str]]]:
 
 def key(name: str) -> str:
     return re.sub(r"[^a-z0-9]+", "_", name.strip().lower()).strip("_")
+
+def sharpness_timestamp(value: str) -> str:
+    try:
+        serial = float(value)
+        if serial > 20000:
+            return (datetime(1899, 12, 30) + timedelta(days=serial)).isoformat(timespec="minutes")
+    except (TypeError, ValueError, OverflowError):
+        pass
+    return value
 
 def point_for(value: str) -> tuple[float, float] | None:
     value = value.strip()
@@ -292,7 +301,9 @@ def main() -> None:
             "owner": row.get("Owner", "") or company.get("Owner", ""),
             "category": categories.get(company.get("Company", "").casefold(), "Uncategorized"), "office": office,
             "glassdoor_score_10": company.get("Glassdoor Score /10", ""), "glassdoor_notes": company.get("Glassdoor Notes", ""),
-            "reddit_score_10": company.get("Reddit Score /10", ""), "reddit_notes": company.get("Reddit Notes", ""), "reviews_checked_on": company.get("Reviews Checked On", ""), "review_research_status": company.get("Review Research Status", "Not researched"),
+            "glassdoor_sources_search": company.get("Glassdoor Evidence / Search URL(s)", ""),
+            "reddit_score_10": company.get("Reddit Score /10", ""), "reddit_notes": company.get("Reddit Notes", ""),
+            "reddit_sources_search": company.get("Reddit Evidence / Search URL(s)", ""), "reviews_checked_on": company.get("Reviews Checked On", ""), "review_research_status": company.get("Review Research Status", "Not researched"),
             "company_reputation_score_10": company.get("Company Reputation Score /10", ""), "company_reputation_notes": company.get("Company Reputation Notes", ""),
             "location": office, "locations": places})
     mapped_company_ids = set(office_by_company)
@@ -304,7 +315,9 @@ def main() -> None:
             "owner": row.get("Owner", ""),
             "location": "Office research pending", "locations": [],
             "glassdoor_score_10": row.get("Glassdoor Score /10", ""), "glassdoor_notes": row.get("Glassdoor Notes", ""),
+            "glassdoor_sources_search": row.get("Glassdoor Evidence / Search URL(s)", ""),
             "reddit_score_10": row.get("Reddit Score /10", ""), "reddit_notes": row.get("Reddit Notes", ""),
+            "reddit_sources_search": row.get("Reddit Evidence / Search URL(s)", ""),
             "company_reputation_score_10": row.get("Company Reputation Score /10", ""), "company_reputation_notes": row.get("Company Reputation Notes", ""),
             "reviews_checked_on": row.get("Reviews Checked On", ""), "review_research_status": row.get("Review Research Status", "Not researched")})
     universities = []
@@ -323,13 +336,23 @@ def main() -> None:
             "location": "; ".join(dict.fromkeys(p["name"] for p in places)) or "No mapped campus"})
     locations = [{"location_id": r.get("Location ID", ""), "city": r.get("City", ""), "coordinates": r.get("Coordinates", ""), "owner": r.get("Owner", ""),
         "job_search": truth(r.get("Job Search")), "university_search": truth(r.get("University Search"))} for r in sheets.get("Location Registry", []) if r.get("City")]
+    location_rankings = [{"ranking_id": r.get("Ranking ID", ""), "owner": r.get("Owner", ""), "rank": r.get("Rank", ""),
+        "city": r.get("City", ""), "location_id": r.get("Location ID", ""), "search_scope": r.get("Search Scope", "")}
+        for r in sheets.get("Location Rankings", []) if r.get("Owner") and r.get("City") and r.get("Rank") not in (None, "")]
     data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
         "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
+        "location_rankings": location_rankings,
         "inbox": sheets.get("Research Inbox", []), "search_runs": sheets.get("Search Runs", []), "activities": sheets.get("Activity Log", []),
         "scope": sheets.get("Search Scope", []), "taxonomy": sheets.get("Taxonomy Registry", []),
         "office_research_queue": sheets.get("Office Research Queue", []),
         "recruitment_company_registry": sheets.get("Recruitment Company Registry", []),
-        "recruiter_registry": sheets.get("Recruiter Registry", [])}
+        "recruiter_registry": sheets.get("Recruiter Registry", []),
+        "sharpness_attempts": [{"owner":r.get("Owner", ""), "platform":r.get("Platform", ""), "assessment":r.get("Assessment", ""),
+            "attempt_type":r.get("Attempt Type", ""), "attempt_timestamp":sharpness_timestamp(r.get("Attempt Timestamp", "")), "score":r.get("Score", ""),
+            "score_metric":r.get("Score Metric", ""), "completion_pct":r.get("Completion %", ""), "time_taken_minutes":r.get("Time Taken (minutes)", ""),
+            "mode_topic":r.get("Mode / Topic", ""), "notes":r.get("Notes", ""), "session_url":r.get("Session URL", "")}
+            for r in sheets.get("Interview Sharpness", []) if r.get("Owner") and r.get("Platform") and r.get("Attempt Timestamp")
+            and any(r.get(field) not in (None, "") for field in ("Score", "Completion %", "Time Taken (minutes)"))]}
     OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     mapped = sum(len(x["locations"]) for x in data["opportunities"])
     office_points = sum(len(x["locations"]) for x in offices)

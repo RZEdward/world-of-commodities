@@ -1,0 +1,10 @@
+import { FileBlob, SpreadsheetFile } from "@oai/artifact-tool";
+const file = "C:/Users/ross/Projects/worldofcommodities/worldofcommodities.xlsx";
+const wb = await SpreadsheetFile.importXlsx(await FileBlob.load(file));
+const sheet = wb.worksheets.getItem("Interview Sharpness");
+sheet.getRange("B2:B1000").dataValidation = {rule:{type:"list", values:["Zetamac","LeetCode","GRE","GMAT","Other"]}};
+sheet.getRange("D2:D1000").dataValidation = {rule:{type:"list", values:["Practice test","Official","Not applicable"]}};
+await wb.recalculate();
+const out = await SpreadsheetFile.exportXlsx(wb);
+await out.save(file);
+console.log("Updated Interview Sharpness choices: Zetamac, LeetCode, GRE, GMAT, Other; Practice test, Official, Not applicable.");

@@ -1,0 +1,561 @@
+{
+  "scope": {
+    "worksheet": "Company Registry",
+    "rows_inclusive": [
+      151,
+      180
+    ],
+    "date_window": [
+      "2024-11-01",
+      "2026-11-01"
+    ]
+  },
+  "records": {
+    "co:china-huadian-corporation": {
+      "company": "China Huadian Corporation",
+      "Glassdoor Notes": "Targeted exact-name Glassdoor search surfaced a sparse China Huadian Group profile, but its visible reviews were dated 2023 or earlier; no attributable review dated 2024-11-01 or later was found.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/China-Huadian-Group-Reviews-E950951.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched; no attributable recent qualitative review found",
+      "Reddit Notes": "Searched Reddit for exact company/workplace terms; no attributable recent employee review or first-person workplace discussion found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:china-three-gorges-corporation": {
+      "company": "China Three Gorges Corporation",
+      "Glassdoor Notes": "Targeted Glassdoor search did not surface a usable company review page or a dated employee review for the exact parent entity. A non-platform Indeed result was not used as Glassdoor evidence. No recent attributable Glassdoor signal found.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched; no attributable recent qualitative review found",
+      "Reddit Notes": "Searched Reddit for exact company/workplace terms; no attributable recent employee review found. General energy-sector or dam-project discussion was not treated as employee testimony.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:state-power-investment-corporation": {
+      "company": "State Power Investment Corporation",
+      "Glassdoor Notes": "Targeted Glassdoor search for the exact company did not surface a usable employee review page or dated review. No recent attributable Glassdoor signal found.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched; no attributable recent qualitative review found",
+      "Reddit Notes": "Searched Reddit for exact company/workplace terms; no attributable recent employee review or workplace discussion found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:shenzhen-energy-group": {
+      "company": "Shenzhen Energy Group",
+      "Glassdoor Notes": "Glassdoor has only three reviews. Recent visible accounts: a research assistant (Mar 9, 2026) praised stable/comfortable conditions and healthcare but noted limited promotion and boring work; a data intern (May 27, 2025) praised the mentor but said team momentum was weak. Very small sample; role-specific and not a broad company-wide consensus.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.sg/Reviews/Shenzhen-Energy-Group-Reviews-E5349951.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-03-09",
+        "2025-05-27"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for exact company/workplace terms; no attributable recent employee review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:jane-street": {
+      "company": "Jane Street",
+      "Glassdoor Notes": "Recent employee reviews include positive reports of smart, helpful colleagues, pay, culture and balance, alongside comments about stress, fast pace, opaque growth/compensation and team-dependent experience. A May 9, 2025 Windows Engineer review alleges longer hours and diminished guidance as the firm grew; an Apr 24, 2025 SWE review praises collaboration and mentorship but says pace and late nights vary by team.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Jane-Street-E255549-RVW97235628.htm",
+        "https://api.glassdoor.com/Reviews/Employee-Review-Jane-Street-E255549-RVW96919329.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-05-09",
+        "2025-04-24"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "A June 22, 2025 r/csMajors AMA by a former Jane Street employee (employment verified with moderators, per post) discusses leaving over compensation/reward mismatch, flat structure, and collaborative culture; answers describe role variability and compensation scaling. First-person evidence, but still one individual’s account.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/csMajors/comments/1lhtl9e/ama_worked_at_jane_street/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-06-22"
+      ],
+      "Reddit Search Status": "recent attributable workplace post found",
+      "confidence": "medium"
+    },
+    "co:citadel-securities": {
+      "company": "Citadel Securities",
+      "Glassdoor Notes": "Recent Glassdoor reviews praise compensation, research infrastructure, opportunities and colleagues, while noting demanding hours/management expectations, siloed teams and career progression friction. A quantitative researcher review (Dec 7, 2025) cited solid research infrastructure and slightly above-average pay but team silos and limited upward mobility; a programme analyst review (Jan 12, 2026) praised technology and colleagues but flagged long hours/on-call.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Citadel-Securities-E1443495-RVW101688747.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Citadel-Securities-E1443495-RVW102207062.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-12-07",
+        "2026-01-12"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Citadel Securities workplace reviews. Results were interview/career discussion and older (2024) second-hand accounts, not recent attributable employee evidence; no usable in-window Reddit review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:drw": {
+      "company": "DRW",
+      "Glassdoor Notes": "Recent Glassdoor reviews describe strong peer/food/social environment and career opportunities, balanced against workload, uneven work-life balance on high-stress teams, and concerns about reporting/HR processes. A quantitative researcher review (Aug 13, 2026) says collaboration has improved but bonuses/upside are limited; an anonymous Jul 30, 2026 review reports workload and accountability concerns.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/DRW-Reviews-E235115.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-13",
+        "2026-07-30"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable DRW employee reviews. Search results were primarily recruiting/interview conversations and multi-firm comparisons without firsthand workplace detail; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:optiver": {
+      "company": "Optiver",
+      "Glassdoor Notes": "Recent reviews cite strong compensation and rewarding/challenging work, with high personal responsibility, competition/stress and concerns about direction or communication. An FPGA engineer review (Jan 10, 2025) specifically cites pay/benefits alongside long hours, stress and poor senior-management communication; Oct 2026 role-specific posts mention responsibility and competition.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Optiver-E243355-RVW94230119.htm",
+        "https://www.glassdoor.com/Reviews/Optiver-Reviews-E243355.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-01-10",
+        "2026-10-18",
+        "2026-10-02",
+        "2026-09-30"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Optiver employee-review posts. Results were mainly interview/offer discussions or broad industry commentary, without usable firsthand workplace detail for Optiver; no recent attributable review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:imc-trading": {
+      "company": "IMC Trading",
+      "Glassdoor Notes": "Recent reviews describe good pay/benefits, colleagues, learning and culture, with some reports of internal politics, stress and increasing top-down management/technical debt. A quantitative analyst review (Jan 28, 2026) praised salary and talent but said internal politics can outweigh merit; a trader review (Feb 17, 2025) praised culture/WLB and systems while noting top-down management and tech debt.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/IMC-Trading-Reviews-E278100.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-IMC-Trading-E278100-RVW95089145.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-09",
+        "2026-09-29",
+        "2026-01-28",
+        "2025-02-17"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable IMC employee reviews. Search surfaced job-offer/interview advice and broad quant discussion, not a sufficiently attributable firsthand workplace account; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:flow-traders": {
+      "company": "Flow Traders",
+      "Glassdoor Notes": "Recent reviews praise teams/culture, autonomy and work-life balance, while mentioning job-security uncertainty, compliance/red tape, operational burden and slow progress. These are company-wide Glassdoor posts across trading and software roles; no specific desk conclusion.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Flow-Traders-Reviews-E258344.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-26",
+        "2026-08-16",
+        "2026-08-02"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Flow Traders employee reviews. Results mainly concerned hiring/interviews or offer comparisons, not firsthand workplace themes; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:susquehanna-international-group-sig": {
+      "company": "Susquehanna International Group (SIG)",
+      "Glassdoor Notes": "Recent reviews are mixed. Positives include smart colleagues, amenities, benefits and some good team/WLB experiences; negatives include limited compensation/career progression, management or communication issues, long hours and a Feb 2026 account alleging discrimination. A Nov 18, 2025 review is explicitly about the Sydney office and should not be generalized globally; it alleges entrenched middle management blocking development.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Susquehanna-International-Group-Reviews-E24446.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Susquehanna-International-Group-E24446-RVW101365140.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Susquehanna-International-Group-E24446-RVW102976269.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-23",
+        "2026-02-26",
+        "2025-11-18",
+        "2025-08-26",
+        "2025-04-09"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable SIG workplace reviews. Results were general hiring and compensation discussions without a clearly attributable firsthand workplace review for SIG; no usable recent Reddit review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:hudson-river-trading": {
+      "company": "Hudson River Trading",
+      "Glassdoor Notes": "Recent reviews praise compensation, supportive teams, culture and learning, while noting stress, fast pace and long hours. Glassdoor’s latest visible examples include a quantitative trader (Oct 9, 2026) describing stress/pace and a data production engineer (Oct 2, 2026) describing supportive learning alongside long hours.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Hudson-River-Trading-Reviews-E470937.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-09",
+        "2026-10-02",
+        "2026-09-29"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable HRT workplace reviews. Search results were mostly hiring discussions; no recent attributable first-person workplace review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:jump-trading": {
+      "company": "Jump Trading",
+      "Glassdoor Notes": "Recent reviews praise interesting technical work, compensation, and career impact, while noting long hours, stress/peer pressure and small teams. A July 1, 2025 quantitative researcher review describes a pleasant culture/benefits but average pay relative to top firms; Aug-Oct 2026 reviews mention interesting projects and long hours.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Jump-Trading-Reviews-E251744.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Jump-Trading-E251744-RVW98394083.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-11",
+        "2026-09-20",
+        "2026-08-25",
+        "2025-07-01"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Jump Trading employee reviews. Recent surfaced material was generic quant hiring/compensation discussion and did not attribute firsthand experience to Jump; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:xtx-markets": {
+      "company": "XTX Markets",
+      "Glassdoor Notes": "Small Glassdoor sample (17 total reviews) but recent 2025 posts are positive: software engineer (Oct 30) praises autonomy, professional management and benefits while noting some restrictive HR/finance policies; anonymous reviewer (Oct 2) praises people, perks and pay; quantitative researcher (Aug 16) cites pay, interesting work and decent hours. Small sample limits confidence.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/XTX-Markets-Reviews-E2384243.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-10-30",
+        "2025-10-02",
+        "2025-08-16"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable XTX Markets employee reviews; no exact-company firsthand workplace post surfaced. Results were hiring/firm-list discussion rather than review evidence.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:tower-research-capital": {
+      "company": "Tower Research Capital",
+      "Glassdoor Notes": "Recent Glassdoor experiences vary by team. A quant trader (Jun 5, 2025) praised collaborative culture, infrastructure and growth while noting trader experience/workload is team dependent; a quant researcher (Jun 3, 2025) described strong infrastructure but below-market pay and disorganized management. A Jan 2026 quant trader cited strong salary but substantial time demands.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Tower-Research-Capital-Quantitative-Developer-New-York-Reviews-EI_IE143628.0%2C22_KO23%2C45_IL.46%2C54_IC1132348.htm",
+        "https://www.glassdoor.com/Reviews/Tower-Research-Capital-Reviews-E143628.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-01-27",
+        "2025-06-05",
+        "2025-06-03"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Tower employee reviews. Search surfaced firm reputation and job-seeking discussion without recent firsthand workplace account; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:qube-research-technologies": {
+      "company": "Qube Research & Technologies",
+      "Glassdoor Notes": "Recent reviews are mixed. Sep 15, 2025 employees praise benefits, collaboration, learning and fast-moving work, while noting shifting priorities and onboarding/ramp-up; a Dec 3, 2025 quantitative researcher cites low intensity/WLB but concerns about junior development/management; Mar 2, 2026 anonymous review alleges toxic competition and average pay.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Qube-Research-and-Technologies-E3226090-RVW100016731.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Qube-Research-and-Technologies-E3226090-RVW100022454.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Qube-Research-and-Technologies-E3226090-RVW103019910.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-03-02",
+        "2025-12-03",
+        "2025-09-15"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable QRT workplace reviews. Search results mentioned QRT in career/company lists but did not provide an attributable firsthand employee account; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:squarepoint-capital": {
+      "company": "Squarepoint Capital",
+      "Glassdoor Notes": "Recent reviews describe smart colleagues, interesting work and generally manageable hours, while flagging lower pay vs peers, segmented/isolated work, heavy workloads and uneven mentoring. Sep 21, 2025 QD review praises colleagues but says workload can be high; Oct 2026 researcher/analyst reviews mention lower compensation.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Squarepoint-Capital-Reviews-E1442647.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Squarepoint-Capital-E1442647-RVW100147375.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-10",
+        "2026-10-09",
+        "2026-10-05",
+        "2025-09-21"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Squarepoint employee reviews. Search did not produce recent firsthand workplace testimony; firm-list references and offer comparisons were excluded.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:dv-trading": {
+      "company": "DV Trading",
+      "Glassdoor Notes": "A Dec 28, 2025 operations analyst review reports abrupt termination 11 days after joining, attributing it to restructuring/headcount rather than performance, and raises concerns about hiring stability/transparency. Review is an individual operations account. Older 2024 review is outside the requested window and excluded.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-DV-Trading-E421385-RVW101987156.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-12-28"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable DV Trading employee reviews. Search surfaced interview and recruiting discussion, not firsthand workplace review evidence; no usable recent Reddit review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:eclipse-trading": {
+      "company": "Eclipse Trading",
+      "Glassdoor Notes": "A recent Glassdoor review by an IT developer (Jul 21, 2026) praises high-quality colleagues and a resilient/helpful team culture, and describes a fast-paced environment as conducive to professional growth. Older 2024 review is outside window and not included.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Eclipse-Trading-RVW87291682.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-07-21"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Eclipse Trading employee reviews; no firsthand current-window workplace review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:maven-securities": {
+      "company": "Maven Securities",
+      "Glassdoor Notes": "Recent reviews are sharply mixed. Positive Sep 24, 2026 trader review praises people, culture and food but says work can lack challenge; other 2026 posts mention support alongside pressure after leadership change and poor WLB/toxic culture; 2025 programmer/developer posts criticize senior management, culture, below-market compensation and IT direction. Distinct role perspectives, not one uniform experience.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Maven-Securities-Reviews-E716525.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Maven-Securities-E716525-RVW95328368.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Maven-Securities-E716525-RVW97892044.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-24",
+        "2026-08-11",
+        "2026-07-22",
+        "2025-06-07",
+        "2025-02-25"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Maven Securities employee reviews; no company-specific firsthand Reddit workplace post surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:g-research": {
+      "company": "G-Research",
+      "Glassdoor Notes": "Recent Glassdoor feedback is polarized. Some praise technical growth, smart colleagues and supportive teams; others criticize micromanagement/surveillance, opaque progression, leadership dysfunction and frequent priority shifts. A Jun 2, 2025 manager account specifically concerns the Dallas office; a Nov 12, 2025 anonymous review describes company-level leadership/culture concerns.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/G-Research-Reviews-E297747.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-G-Research-E297747-RVW97770882.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-G-Research-E297747-RVW95992615.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-07-10",
+        "2026-07-09",
+        "2026-06-08",
+        "2025-11-12",
+        "2025-06-02",
+        "2025-03-20"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable G-Research employee reviews; surfaced no useful company-specific firsthand workplace discussion.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:virtu-financial": {
+      "company": "Virtu Financial",
+      "Glassdoor Notes": "A Dec 5, 2024 employee review praises smart, collaborative colleagues, learning and idea-sharing, but reports long hours, unclear career/bonus linkage and concerns about job security/management advocacy. It is a single anonymous company-wide account; role and office not specified.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Virtu-Financial-E337434-RVW93435886.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2024-12-05"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Virtu employee reviews. Results were interview discussions rather than current-window firsthand workplace evidence; no usable recent review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:marex": {
+      "company": "Marex",
+      "Glassdoor Notes": "A Jun 2, 2025 corporate employee review praises performance-linked bonus but describes micromanagement, high expectations, inadequate support and concerns about transparency/fairness. Glassdoor search also returned a similarly named Cameroon-based Marex profile; the cited review is the global Marex employee page, not that unrelated/small profile.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Marex-E734644-RVW97772053.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-06-02"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Marex employee reviews; no company-specific firsthand workplace post surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:tp-icap": {
+      "company": "TP ICAP",
+      "Glassdoor Notes": "Recent reviews emphasize desk/role variation: Aug 25, 2026 broker says the job is good if assigned to a good desk; others note growth but top-down governance, poor management, early starts and workload. Explicitly desk-dependent; do not treat broker experience as universal across TP ICAP divisions.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/TP-ICAP-Reviews-E1621849.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-29",
+        "2026-08-25",
+        "2026-08-18"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable TP ICAP employee reviews; no usable first-person company workplace post surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:bgc-group": {
+      "company": "BGC Group",
+      "Glassdoor Notes": "Glassdoor profile surfaced with employee-review snippets (back office, broker, analyst) praising people, learning and management in some cases, while other snippets suggest deterioration/unique structure. Search results did not expose recent dated review text sufficient to establish a 2024-11 onward qualitative pattern; no recent theme inferred.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-BGC-Group-EI_IE9862.11%2C20.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched; no attributable recent qualitative review found",
+      "Reddit Notes": "Searched Reddit for recent attributable BGC Group employee reviews; results were interview/recruitment and mixed company-name noise, not usable firsthand workplace reviews.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:tradition": {
+      "company": "Tradition",
+      "Glassdoor Notes": "Recent Glassdoor reviews under Tradition Financial Services report high workload/staffing concerns and early starts/long hours (Aug 2026); a broker review (Jan 5, 2025) says experience varies by product/desk and alleges toxic desk-head politics. The cited employer page is Tradition Financial Services/Compagnie Financière Tradition; applicable proxy for registry’s Tradition, but office/desk differences matter.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Tradition-Financial-Services-Reviews-E213409.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Tradition-Financial-Services-E213409-RVW94081199.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-28",
+        "2026-08-19",
+        "2026-06-05",
+        "2025-01-05"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Tradition broker/employee reviews; no recent firsthand company-specific post surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:cme-group": {
+      "company": "CME Group",
+      "Glassdoor Notes": "Recent reviews praise job security, benefits, interesting work, flexible environment and work-life balance; negatives include slow career/compensation progression, office politics, limited skill growth and team/distributed-work issues. A Jul 11, 2025 anonymous employee review notes strong security/benefits but niche-industry exit limits; Sep 23, 2025 senior software engineer praises impactful work but suggests distributed teams could improve.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/CME-Group-Reviews-E7796.htm",
+        "https://api.glassdoor.com/Reviews/Employee-Review-CME-Group-E7796-RVW98630915.htm",
+        "https://api.glassdoor.com/Reviews/Employee-Review-CME-Group-E7796-RVW100190602.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-23",
+        "2026-08-08",
+        "2025-09-23",
+        "2025-07-11"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable CME Group employee reviews; surfaced market/industry discussion but no recent firsthand workplace account.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:cboe-global-markets": {
+      "company": "Cboe Global Markets",
+      "Glassdoor Notes": "Glassdoor profile under Cboe (matching Cboe Global Markets) shows mixed recent snippets: some operations employees cite strong culture, while others report mandatory office work, declining values, toxic environment and weak senior management/career growth. Search output did not expose dates for individual reviews, so recency of those themes cannot be confirmed; no dated theme asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Cboe-EI_IE7355.11%2C15.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched; no attributable recent qualitative review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Cboe employee reviews; no company-specific firsthand workplace account surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "low"
+    },
+    "co:akuna-capital": {
+      "company": "Akuna Capital",
+      "Glassdoor Notes": "Recent Glassdoor reviews mention smart colleagues, interesting work, work-life balance and fair WFH, alongside under-market pay/opaque compensation, leadership changes and redundancies. A May 1, 2025 software developer review praised colleagues/complex work but noted leadership changes and arbitrary deadlines; Oct 24, 2025 junior developer review flags sudden redundancies.",
+      "Glassdoor Source URLs": [
+        "https://api.glassdoor.com/Reviews/Employee-Review-AKUNA-CAPITAL-E608116-RVW97057504.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-AKUNA-CAPITAL-E608116-RVW100850984.htm",
+        "https://www.glassdoor.com/Reviews/AKUNA-CAPITAL-Reviews-E608116.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-30",
+        "2025-10-24",
+        "2025-05-01"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Akuna employee reviews. Results primarily concern interview difficulty/selection, not workplace conditions; no usable recent Reddit review found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    },
+    "co:da-vinci-derivatives": {
+      "company": "Da Vinci Derivatives",
+      "Glassdoor Notes": "Recent Glassdoor comments praise compensation, supportive environment, collegiality and rapid responsibility, but also describe competitive/stressful trading, irregular hours across global/crypto markets, and one 2026 graduate quant trader review alleging toxic culture. Individual perspectives conflict; small sample.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Da-Vinci-Derivatives-Reviews-E2997120.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Da-Vinci-Derivatives-E2997120-RVW98389304.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Da-Vinci-Derivatives-E2997120-RVW95271829.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-07-07",
+        "2026-06-05",
+        "2026-02-26",
+        "2025-07-12",
+        "2025-07-01",
+        "2025-02-23"
+      ],
+      "Glassdoor Search Status": "recent attributable review found",
+      "Reddit Notes": "Searched Reddit for recent attributable Da Vinci employee reviews. Search surfaced recruiting/interview discussions but no firsthand recent workplace review.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched; no attributable recent workplace review found",
+      "confidence": "medium"
+    }
+  }
+}

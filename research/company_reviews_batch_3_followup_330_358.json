@@ -1,0 +1,505 @@
+{
+  "co:siemens-energy": {
+    "Company": "Siemens Energy",
+    "Glassdoor Rating": {
+      "score_5pt": 4.2,
+      "reviews": 2124,
+      "source_url": "https://www.glassdoor.com/Reviews/Siemens-Energy-Reviews-E4393689.htm"
+    },
+    "Glassdoor Notes": "Glassdoor's company page reports 4.2/5 across about 2,124 reviews. A recent listing dated 2026-10-12 surfaced, but its narrative was not visible in search results, so no qualitative theme is inferred from the aggregate or date alone.",
+    "Reddit Notes": "Fresh searches found recent Siemens Energy India culture/work-life questions (2026-08-08) and a hiring-process complaint about delayed recruiter feedback. These are India-specific job-seeker/interview accounts, not a substantive employee review of Siemens Energy overall; no attributable recent workplace theme established.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Siemens-Energy-Reviews-E4393689.htm",
+      "https://www.reddit.com/r/LeetcodeDesi/comments/1vir4mc/siemens_energy_india/",
+      "https://www.reddit.com/r/Siemens/comments/1pwsve6/hiring_process_siemens_energy/"
+    ],
+    "Observed Review Dates": [
+      "2026-10-12",
+      "2026-08-08",
+      "2025-10-27"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor aggregate/recent date, no review text; Reddit surfaced inquiries/interview experience, no attributable employee qualitative theme."
+  },
+  "co:ge-vernova": {
+    "Company": "GE Vernova",
+    "Glassdoor Rating": {
+      "score_5pt": 3.9,
+      "reviews": 2432,
+      "source_url": "https://www.glassdoor.com/Reviews/GE-Vernova-Reviews-E740889.htm"
+    },
+    "Glassdoor Notes": "Glassdoor lists 3.9/5 from about 2,432 reviews and a most-recent review date of 2026-10-29 in the search result, but no review text was exposed; no qualitative theme is inferred.",
+    "Reddit Notes": "Searches found recent threads asking about GE Vernova jobs/work, but one 2026-01-05 poster described problems at their existing aviation-industry job while asking about GE Vernova, not an experience as a GE Vernova employee. No recent attributable employee review found.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/GE-Vernova-Reviews-E740889.htm",
+      "https://www.reddit.com/r/AircraftMechanics/comments/1q49sgp/ge_vernova/",
+      "https://www.reddit.com/r/MechanicalEngineering/comments/1jug5lo/working_at_ge_vernova_in_ny/"
+    ],
+    "Observed Review Dates": [
+      "2026-10-29",
+      "2026-01-05",
+      "2025-04-08"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor recent review date only; Reddit hits were inquiries, not firsthand GE Vernova employee evidence."
+  },
+  "co:schneider-electric": {
+    "Company": "Schneider Electric",
+    "Glassdoor Rating": {
+      "score_5pt": 4.2,
+      "reviews": 13108,
+      "source_url": "https://www.glassdoor.com/Reviews/Schneider-Electric-Reviews-E3956.htm"
+    },
+    "Glassdoor Notes": "Glassdoor company-level profile shows 4.2/5 from approximately 13,108 reviews; fresh search results did not expose a recent attributable review narrative. Rating retained separately and not used as a theme.",
+    "Reddit Notes": "Recent Schneider-related Reddit posts include an apprentice/field-service candidate asking about the employer (2026-09-16), an accepted intern discussing a field-service role (2026-09-25), and a 2025 thread where a commenter describes an employee recognition/health program as temporarily suspended. These are job-/role-specific and at least partly prospective; no general company-wide theme inferred.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Schneider-Electric-Reviews-E3956.htm",
+      "https://www.reddit.com/r/AusElectricians/comments/1whpgg8/thoughts_on_schneider_electric/",
+      "https://www.reddit.com/r/FieldService/comments/1wq9l2b/schneider_electric/",
+      "https://www.reddit.com/r/BuildingAutomation/comments/1pjix20/schneider/"
+    ],
+    "Observed Review Dates": [
+      "2026-09-16",
+      "2026-09-25",
+      "2025-12-11"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor profile only, no recent narrative; Reddit recent job-/site-specific posts, limited employee evidence."
+  },
+  "co:uplight": {
+    "Company": "Uplight",
+    "Glassdoor Rating": {
+      "score_5pt": 2.4,
+      "reviews": 206,
+      "source_url": "https://www.glassdoor.com/Reviews/Uplight-Reviews-E3028228.htm"
+    },
+    "Glassdoor Notes": "Glassdoor page reports 2.4/5 across 206 reviews and shows a recent review dated 2026-09-03, but the actual review text was not exposed by search; no qualitative theme assigned from rating/date alone.",
+    "Reddit Notes": "Company-specific Reddit searches did not surface a recent attributable employee/workplace post for Uplight.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Uplight-Reviews-E3028228.htm",
+      "https://www.glassdoor.com/Overview/Working-at-Uplight-EI_IE3028228.11,18.htm"
+    ],
+    "Observed Review Dates": [
+      "2026-09-03"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Recent Glassdoor date and aggregate only, no narrative; Reddit searched, no attributable recent signal."
+  },
+  "co:gridcog": {
+    "Company": "Gridcog",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Fresh Glassdoor queries did not locate a verifiable Gridcog employer review page or attributable recent review. Third-party directory snippets that mention employee reviews do not provide usable Glassdoor evidence.",
+    "Reddit Notes": "No attributable recent Reddit employee/workplace post about Gridcog surfaced in targeted searches.",
+    "Source URLs": [
+      "https://uk.linkedin.com/company/gridcog",
+      "https://broxer.com/c/gridcog"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Searched both platforms; no attributable recent platform evidence found."
+  },
+  "co:lcp-delta": {
+    "Company": "LCP Delta",
+    "Glassdoor Rating": {
+      "score_5pt": 4.1,
+      "reviews": 24,
+      "source_url": "https://www.glassdoor.co.uk/Reviews/LCP-Delta-Reviews-E1752527.htm"
+    },
+    "Glassdoor Notes": "Recent LCP Delta employee reviews describe friendly, passionate colleagues and scope for projects, alongside under-resourcing that can make work stressful, office politics, and perceived micromanagement. Review dates visible: analyst 2026-09-02 (under-resourcing/stress), consultant 2026-07-09 (culture/people and politics), associate consultant 2026-06-10 (work-life balance but management concerns). Small sample of 24 reviews; these are individual accounts.",
+    "Reddit Notes": "Reddit searches found only an older 2022 post about parent firm LCP, not LCP Delta, so no attributable recent LCP Delta employee signal.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Reviews/LCP-Delta-Reviews-E1752527.htm",
+      "https://www.reddit.com/r/ActuaryUK/comments/zr6o5i/anyone_know_what_its_like_working_for_lcp/"
+    ],
+    "Observed Review Dates": [
+      "2026-09-02",
+      "2026-07-09",
+      "2026-06-10"
+    ],
+    "Confidence": "High",
+    "Search Status": "Multiple recent dated Glassdoor reviews found; Reddit searched, only older parent-company discussion."
+  },
+  "co:procom": {
+    "Company": "ProCom",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Search results for Procom/ProCom mostly resolved to Canadian staffing firm Procom and unrelated companies; no reliable Glassdoor employer match for the registry's energy software company could be isolated. No score/theme attributed.",
+    "Reddit Notes": "Reddit results concerned a staffing agency called ProCom, not the energy software vendor; no attributable recent employee review for registry entity found.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Reviews/Procom-Reviews-E351793.htm",
+      "https://www.glassdoor.de/Bewertungen/ProCom-Bewertungen-E3082704.htm",
+      "https://www.reddit.com/r/VancouverJobs/comments/18xsaew/any_experience_with_agency_called_procom_services/"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Searched both platforms; entity ambiguity/name collisions excluded; no attributable recent evidence."
+  },
+  "co:d2iq": {
+    "Company": "D2IQ",
+    "Glassdoor Rating": {
+      "score_5pt": 3.7,
+      "reviews": 145,
+      "source_url": "https://www.glassdoor.com.au/Reviews/D2iQ-Reviews-E2956728.htm"
+    },
+    "Glassdoor Notes": "D2iQ Glassdoor page currently displays 3.7/5 across 145 reviews, but fresh searches did not yield dated recent review narratives. The surfaced Glassdoor item concerned a 2021 interview and was excluded as outside window.",
+    "Reddit Notes": "Company-specific Reddit searches did not locate a recent attributable employee/workplace post for D2IQ.",
+    "Source URLs": [
+      "https://www.glassdoor.com.au/Reviews/D2iQ-Reviews-E2956728.htm",
+      "https://www.glassdoor.com/Interview/D2iQ-Interview-Questions-E2956728.htm"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor aggregate only; Reddit searched, no attributable recent evidence."
+  },
+  "co:energy-one": {
+    "Company": "Energy One",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Glassdoor results show multiple unrelated entities named Energy One (including Texas and Australia), and search did not establish which record corresponds to the registry's Australian energy software/market-services company with recent attributable review text. No rating assigned.",
+    "Reddit Notes": "Fresh Reddit searches did not produce an attributable recent employee/workplace review for the energy software company Energy One.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Energy-One-Reviews-E842776.htm",
+      "https://www.glassdoor.com/Overview/Working-at-Energy-One-Australia-EI_IE4679305.11,31.htm"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Searched both platforms; Glassdoor employer identity ambiguous; no recent attributable theme."
+  },
+  "co:allegro-development": {
+    "Company": "Allegro Development",
+    "Glassdoor Rating": {
+      "score_5pt": 3.4,
+      "reviews": 100,
+      "source_url": "https://www.glassdoor.com/Reviews/Allegro-Development-Reviews-E33793.htm"
+    },
+    "Glassdoor Notes": "Glassdoor identifies Allegro Development as acquired by ION Group and directs users to ION for current information. Fresh search found no dated recent review text attributable specifically to the legacy Allegro product/team; parent-level ION posts are recorded separately under ION Commodities and not copied over.",
+    "Reddit Notes": "No recent Reddit post attributable specifically to Allegro Development/its current team surfaced; recent ION Group discussions do not identify Allegro and are not carried forward.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Allegro-Development-Reviews-E33793.htm",
+      "https://www.glassdoor.com/pay-and-benefits/Allegro-Development-E33793"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Legacy Glassdoor profile and acquisition note found; no recent attributable Allegro-specific qualitative evidence."
+  },
+  "co:ion-commodities": {
+    "Company": "ION Commodities",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "ION Commodities qualitative Glassdoor result located was an older employee review outside the target period. Recent searches did not expose attributable current ION Commodities-specific Glassdoor review text; parent ION Group rating not assigned to this division.",
+    "Reddit Notes": "A recent r/cscareers discussion dated around 2026-03-01 asks whether ION Group is as difficult as its Glassdoor reviews suggest; commenters identifying as former ION employees report understaffed dev teams, high workload/burnout, attrition and slow approvals. The discussion concerns ION Group generally and does not identify commodity desk or location, so treat as parent-level anecdotal signal only.",
+    "Source URLs": [
+      "https://www.glassdoor.co.in/Reviews/Employee-Review-ION-Group-E1923000-RVW50628228.htm",
+      "https://www.reddit.com/r/cscareers/comments/1rll404/ion_group_is_it_as_bad_as_the_glassdoor_reviews/"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Medium",
+    "Search Status": "No recent division-specific Glassdoor narrative; recent parent-level Reddit firsthand comments found, scope caveat recorded."
+  },
+  "co:brady-technologies": {
+    "Company": "Brady Technologies",
+    "Glassdoor Rating": {
+      "score_5pt": 4.3,
+      "reviews": 84,
+      "source_url": "https://www.glassdoor.com/Reviews/Brady-Technologies-Reviews-E422682.htm"
+    },
+    "Glassdoor Notes": "Glassdoor profile shows 4.3/5 from 84 reviews, but targeted searches did not expose a dated recent employee narrative. Distinct company profile Brady Technologies was selected; generic Brady (packaging/labeling) reviews are a separate Glassdoor employer and excluded.",
+    "Reddit Notes": "No attributable recent Reddit workplace post about Brady Technologies surfaced; generic Brady references are ambiguous.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Brady-Technologies-Reviews-E422682.htm",
+      "https://www.glassdoor.com.hk/Overview/Working-at-Brady-Technologies-EI_IE422682.11,29.htm"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor aggregate only, no recent text; Reddit searched, no attributable recent evidence."
+  },
+  "co:openlink-ion": {
+    "Company": "Openlink (ION)",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "OpenLink is now part of ION Group; Glassdoor search found historic OpenLink Financial pay/profile material but no recent dated review clearly tied to the Openlink product organization. Current ION parent sentiment is not assigned to this product row.",
+    "Reddit Notes": "Recent ION Group Reddit thread includes former employees discussing general ION software/dev-team workload, but does not name Openlink, so no product-specific Openlink employee theme can be substantiated.",
+    "Source URLs": [
+      "https://www.glassdoor.com/pay-and-benefits/OpenLink-Financial-E298175",
+      "https://www.reddit.com/r/cscareers/comments/1rll404/ion_group_is_it_as_bad_as_the_glassdoor_reviews/"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Searched both platforms; recent parent-level Reddit signal not attributable to Openlink; no usable product-specific recent evidence."
+  },
+  "co:endur-ion": {
+    "Company": "Endur (ION)",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Searches surfaced an older ION Group consultant Glassdoor review titled Best Place to learn Endur, outside the requested window. No recent Glassdoor review specifically about Endur was found.",
+    "Reddit Notes": "A 2026 ION Group Reddit thread reports parent-wide developer workload/attrition, without mention of Endur or commodity desks; not attributed to the Endur product team.",
+    "Source URLs": [
+      "https://www.glassdoor.co.in/Reviews/Employee-Review-ION-Group-E1923000-RVW41090056.htm",
+      "https://www.reddit.com/r/cscareers/comments/1rll404/ion_group_is_it_as_bad_as_the_glassdoor_reviews/"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "No recent Endur-specific Glassdoor evidence; Reddit result is parent-level, not product-attributable."
+  },
+  "co:trayport": {
+    "Company": "Trayport",
+    "Glassdoor Rating": {
+      "score_5pt": 3.6,
+      "reviews": 125,
+      "source_url": "https://www.glassdoor.co.uk/Overview/Working-at-Trayport-EI_IE36036.11,19.htm"
+    },
+    "Glassdoor Notes": "Recent Glassdoor accounts show mixed experiences. An administrative assistant review dated 2025-01-15 praises culture, flexible working and bonus while citing limited career progression, salary and management feedback; a Quality Engineer review dated 2025-12-17 is titled 'How has it all gone wrong?' and search snippets describe concerns about staff trust/pay changes. Other visible role-specific accounts mention cliquey culture or burnout. These are individual employee reports, not a uniform company view.",
+    "Reddit Notes": "Fresh Reddit searches did not find attributable recent Trayport employee/workplace discussion; results were Glassdoor content and unrelated platform conversations.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Reviews/Trayport-opportunity-Reviews-EI_IE36036.0,8_KH9,20.htm",
+      "https://www.glassdoor.co.uk/Reviews/Employee-Review-Trayport-E36036-RVW101864096.htm",
+      "https://www.glassdoor.co.uk/Overview/Working-at-Trayport-EI_IE36036.11,19.htm"
+    ],
+    "Observed Review Dates": [
+      "2025-01-15",
+      "2025-12-17"
+    ],
+    "Confidence": "Medium",
+    "Search Status": "Recent Glassdoor accounts found; Reddit searched, no attributable recent evidence."
+  },
+  "co:fis-front-arena": {
+    "Company": "FIS Front Arena",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Search primarily returned FIS parent-company Glassdoor reviews; a Front Arena AB employee review located was from 2016 and outside the recent window. No current Front Arena-specific review theme or score attributed.",
+    "Reddit Notes": "A 2025 FIS discussion in Serbian reports employee comments about benefits, work-life balance and collegiality alongside negative replies, but it is not Front Arena-specific. No product-level Reddit evidence found.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/FIS-Reviews-E313114.htm",
+      "https://www.glassdoor.com/Reviews/Employee-Review-FIS-E313114-RVW14198668.htm",
+      "https://www.reddit.com/r/programiranje/comments/1oev9bm/fis_situacija_u_firmi/"
+    ],
+    "Observed Review Dates": [
+      "2016-01-01",
+      "2025-10-24"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Recent Reddit discussion is FIS-wide and site-specific, not Front Arena; no recent product-level attributable evidence."
+  },
+  "co:molecule-software": {
+    "Company": "Molecule Software",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "A Glassdoor overview exists for Molecule Software and shows an undated current-employee software developer snippet ('Lots of Fun'), but no date or recent-window narrative was exposed. No theme inferred from undated snippet.",
+    "Reddit Notes": "No attributable recent Reddit employee/workplace post about Molecule Software surfaced.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Overview/Working-at-Molecule-Software-EI_IE1101409.11,28.htm"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor overview with undated snippet only; Reddit searched, no recent attributable evidence."
+  },
+  "co:quorum-software": {
+    "Company": "Quorum Software",
+    "Glassdoor Rating": {
+      "score_5pt": 4.0,
+      "reviews": 467,
+      "source_url": "https://www.glassdoor.com/Reviews/Quorum-Software-Reviews-E16174.htm"
+    },
+    "Glassdoor Notes": "Glassdoor profile reports 4.0/5 from approximately 467 reviews and the latest review date visible in search results is 2026-10-27, but no specific recent employee review narrative was exposed. No theme inferred from the aggregate/date.",
+    "Reddit Notes": "Company-specific Reddit searches did not surface a recent attributable Quorum Software employee/workplace post; similarly named organizations were excluded.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Quorum-Software-Reviews-E16174.htm"
+    ],
+    "Observed Review Dates": [
+      "2026-10-27"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor aggregate/latest date found, no text; Reddit searched, no attributable recent signal."
+  },
+  "co:copperleaf-technologies": {
+    "Company": "Copperleaf Technologies",
+    "Glassdoor Rating": {
+      "score_5pt": 3.8,
+      "reviews": 126,
+      "source_url": "https://www.glassdoor.co.uk/Reviews/Copperleaf-Reviews-E1045300.htm"
+    },
+    "Glassdoor Notes": "Glassdoor profile shows 3.8/5 across 126 reviews and a review dated 2025-12-30. Search snippets include a company response referring to July 2025 rapid growth and a demanding pace that may not fit everyone; this is management's response/context, not an independent employee claim, and no further review text was exposed. No stronger qualitative theme stated.",
+    "Reddit Notes": "No attributable recent Reddit employee/workplace post for Copperleaf surfaced in targeted searches.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Reviews/Copperleaf-Reviews-E1045300.htm",
+      "https://www.glassdoor.co.uk/Reviews/Copperleaf-people-Reviews-EI_IE1045300.0,10_KH11,17.htm"
+    ],
+    "Observed Review Dates": [
+      "2025-12-30",
+      "2025-07-01"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Recent Glassdoor review date and employer response context, no usable employee narrative; Reddit searched, no attributable signal."
+  },
+  "co:power-factors": {
+    "Company": "Power Factors",
+    "Glassdoor Rating": {
+      "score_5pt": 2.3,
+      "reviews": 83,
+      "source_url": "https://www.glassdoor.co.uk/Reviews/Power-Factors-Reviews-E1927187.htm"
+    },
+    "Glassdoor Notes": "Glassdoor page reports 2.3/5 across 83 reviews and search surfaced a review dated 2025-04-30, but the employee narrative itself was not exposed; no theme inferred from the rating or date.",
+    "Reddit Notes": "No attributable recent Reddit employee/workplace post specifically about Power Factors surfaced.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Reviews/Power-Factors-Reviews-E1927187.htm",
+      "https://www.glassdoor.co.uk/Reviews/Power-Factors-people-Reviews-EI_IE1927187.0,13_KH14,20.htm"
+    ],
+    "Observed Review Dates": [
+      "2025-04-30"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor aggregate and dated entry only; Reddit searched, no attributable recent evidence."
+  },
+  "co:krakenflex": {
+    "Company": "KrakenFlex",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Searches for KrakenFlex employee reviews returned Glassdoor's Kraken Technologies profile, not a distinct KrakenFlex employer. KrakenFlex appears to be a product/business area, and the separate Kraken employee score/reviews cannot be assumed to describe this team; no rating or theme assigned.",
+    "Reddit Notes": "No recent Reddit employee experience specifically attributable to KrakenFlex surfaced; Kraken/Octopus discussion was not transferred to this product row.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Overview/Working-at-Kraken-EI_IE8860582.11,17.htm"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Searched both platforms; no distinct KrakenFlex employee evidence, related Kraken entity not conflated."
+  },
+  "co:singapore-petroleum-company-spc": {
+    "Company": "Singapore Petroleum Company (SPC)",
+    "Glassdoor Rating": {
+      "score_5pt": 3.3,
+      "reviews": 33,
+      "source_url": "https://www.glassdoor.com/Reviews/Singapore-Petroleum-Company-Reviews-E8081.htm"
+    },
+    "Glassdoor Notes": "Recent SPC Glassdoor reviews dated 2025-08-12, 2025-08-20 and 2025-11-18 are mixed. Two managers describe micromanagement, poor culture/fairness and limited development/progression; a senior maintenance engineer describes harmony, cohesion and work-life balance, while also citing sluggish career growth and an aging/sunset industry. These are individual employee accounts; SPC is a PetroChina-owned Singapore employer.",
+    "Reddit Notes": "No attributable recent Reddit employee review for Singapore Petroleum Company surfaced in targeted searches; recent hits were unrelated Glassdoor-use discussions.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Singapore-Petroleum-Company-Reviews-E8081.htm",
+      "https://www.glassdoor.co.in/Overview/Working-at-Singapore-Petroleum-Company-EI_IE8081.11,38.htm"
+    ],
+    "Observed Review Dates": [
+      "2025-08-12",
+      "2025-08-20",
+      "2025-11-18"
+    ],
+    "Confidence": "High",
+    "Search Status": "Multiple dated Glassdoor accounts found with contrasting themes; Reddit searched, no attributable recent evidence."
+  },
+  "co:axpo": {
+    "Company": "Axpo",
+    "Glassdoor Rating": {
+      "score_5pt": 3.9,
+      "reviews": 92,
+      "source_url": "https://www.glassdoor.co.uk/Overview/Working-at-Axpo-EI_IE755157.11,15.htm"
+    },
+    "Glassdoor Notes": "Glassdoor profile shows 3.9/5 from 92 reviews; an analyst review snippet exists but no recent date or narrative was available in the search results. No recent qualitative theme inferred.",
+    "Reddit Notes": "A 2025-05-05 r/cluj thread asks for information about Axpo's Cluj/Bucharest operations and mentions its energy trading activity; it is a request for advice rather than a firsthand employee account. No attributable recent employee theme found.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Overview/Working-at-Axpo-EI_IE755157.11,15.htm",
+      "https://www.reddit.com/r/cluj/comments/1g29h4q/axpo_group_clujnapoca_ceva_informatii_despre_ei/"
+    ],
+    "Observed Review Dates": [
+      "2025-05-05"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor aggregate/undated snippet; Reddit recent inquiry only, no usable employee experience."
+  },
+  "co:veolia-north-america": {
+    "Company": "Veolia North America",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Search results returned Veolia's global Glassdoor profile (3.8/5 from over 3,000 reviews), not a clearly separated Veolia North America record. No NA-specific recent Glassdoor narrative confidently attributed; global score not copied to this regional entity.",
+    "Reddit Notes": "A 2025-11-28 wastewater thread about a Veolia chemical-treatment internship in Ontario includes a commenter describing a strong focus on safety and European standards, while noting practices vary by site. This is site/role-specific and not a broad VNA employee review. Other recent Veolia complaints were not clearly North America-specific and are excluded.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Overview/Working-at-Veolia-EI_IE20114.11,17.htm",
+      "https://www.reddit.com/r/Wastewater/comments/1p94smz/veolia_chemical_treatment_intern_ontario/"
+    ],
+    "Observed Review Dates": [
+      "2025-11-28"
+    ],
+    "Confidence": "Low",
+    "Search Status": "No distinct VNA Glassdoor review; one recent Reddit site/role-specific safety comment, not company-wide."
+  },
+  "co:graviton-research-capital": {
+    "Company": "Graviton Research Capital",
+    "Glassdoor Rating": {
+      "score_5pt": 3.9,
+      "reviews": 82,
+      "source_url": "https://www.glassdoor.co.uk/Reviews/Graviton-Research-Capital-Reviews-E1494670.htm?sort.sortType=RD"
+    },
+    "Glassdoor Notes": "Glassdoor shows about 3.9/5 from 82 reviews, but search did not expose recent dated qualitative review text. No theme inferred from aggregate rating.",
+    "Reddit Notes": "A 2025-09-30 r/quantfinance post asks about Graviton and says Glassdoor has little information; it is a candidate query, not a firsthand employee account. No attributable recent employee experience was found.",
+    "Source URLs": [
+      "https://www.glassdoor.co.uk/Reviews/Graviton-Research-Capital-Reviews-E1494670.htm?sort.sortType=RD",
+      "https://www.reddit.com/r/quantfinance/comments/1nucoyh/any_clue_on_graviton_research_capital/"
+    ],
+    "Observed Review Dates": [
+      "2025-09-30"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor profile only; Reddit recent candidate inquiry, no employee testimony."
+  },
+  "co:s-p-global": {
+    "Company": "S&P Global",
+    "Glassdoor Rating": {
+      "score_5pt": 4.0,
+      "reviews": 9235,
+      "source_url": "https://www.glassdoor.co.uk/Reviews/S-and-P-Global-Reviews-E1259396.htm"
+    },
+    "Glassdoor Notes": "A Software Developer II Glassdoor review dated 2025-08-21 is titled 'work life balance is good'; a second result showed 2026-06-03 but without text. This is broad S&P Global feedback rather than a particular division (including Platts/Commodity Insights). Company profile aggregate is about 4.0/5 from 9,235 reviews, kept separate from review themes.",
+    "Reddit Notes": "Recent S&P Global Reddit searches largely returned candidate questions or division-specific career inquiries, not attributable first-person employee reviews. No current company-wide Reddit theme added.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Employee-Review-S-and-P-Global-E1259396-RVW99501481.htm",
+      "https://www.glassdoor.co.uk/Reviews/S-and-P-Global-Reviews-E1259396.htm",
+      "https://www.reddit.com/r/Commodities/comments/1r0vvwx/commodity_associate_at_sp_global_whats_coming_for/"
+    ],
+    "Observed Review Dates": [
+      "2025-08-21",
+      "2026-06-03",
+      "2026-02-10"
+    ],
+    "Confidence": "Medium",
+    "Search Status": "One recent Glassdoor role-specific positive work-life-balance title; Reddit only candidate/job inquiries, no employee theme."
+  },
+  "co:accenture": {
+    "Company": "Accenture",
+    "Glassdoor Rating": {
+      "score_5pt": 3.7,
+      "reviews": 184641,
+      "source_url": "https://www.glassdoor.com/Reviews/Accenture-Reviews-E4138.htm"
+    },
+    "Glassdoor Notes": "Glassdoor company profile reports about 3.7/5 from over 184,000 reviews; fresh results did not reveal a recent individual qualitative review narrative suitable for inclusion. No theme inferred from aggregate rating.",
+    "Reddit Notes": "Recent first-person Reddit posts report mixed experiences across offices and roles. A 2025-01-11 post from a self-described regular employee notes helpful colleagues but limited promotion prospects; a 2026-02-06 employee with four years' tenure cites small raises relative to workload and low recognition; a 2025-01 joiner in Accenture Middle East says they left after about a year and describes a strongly negative personal experience. These are highly role/location-specific accounts, not a company-wide consensus.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Accenture-Reviews-E4138.htm",
+      "https://www.reddit.com/r/accenture/comments/1qa7pem/happy_2026_the_real_reflections_from_someone_5/",
+      "https://www.reddit.com/r/accenture/comments/1qxmizx/what_made_you_guys_leave_accenture_or_why_are_you/",
+      "https://www.reddit.com/r/accenture/comments/1ukh2c6/my_brief_experience_working_at_accenture/"
+    ],
+    "Observed Review Dates": [
+      "2026-01-11",
+      "2026-02-06"
+    ],
+    "Confidence": "Medium",
+    "Search Status": "Recent Reddit employee accounts found across different geographies/roles, mixed and anecdotal; Glassdoor aggregate only."
+  },
+  "co:petroineos": {
+    "Company": "Petroineos",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "The identifiable Glassdoor Petroineos Trading employee review surfaced was dated 2024-07-16, before the target window, and search did not find a newer attributable Glassdoor review. No recent theme or score assigned.",
+    "Reddit Notes": "Fresh Reddit searches did not surface recent attributable employee/workplace posts about Petroineos; no usable recent evidence found.",
+    "Source URLs": [
+      "https://www.glassdoor.com/Reviews/Employee-Review--RVW89198964.htm"
+    ],
+    "Observed Review Dates": [
+      "2024-07-16"
+    ],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor surfaced only out-of-window review; Reddit searched, no attributable recent evidence."
+  },
+  "co:dare": {
+    "Company": "Dare",
+    "Glassdoor Rating": null,
+    "Glassdoor Notes": "Search surfaced a Glassdoor page for 'Dare' and a separate DAR energy engineering firm; neither could be confidently matched to the registry's London energy-derivatives market maker, so no Glassdoor score or theme is attributed.",
+    "Reddit Notes": "Recent r/Commodities discussion about energy derivative market makers mentions Dare and includes a commenter saying they had not heard positive things, but the commenter does not establish firsthand employment and the statement is unsubstantiated; treat as weak market chatter rather than employee-review evidence. Older Reddit comments discuss a graduate trading role and market-maker expectations but fall outside the recent window.",
+    "Source URLs": [
+      "https://www.glassdoor.sg/Reviews/Dare-Reviews-E392756.htm",
+      "https://www.glassdoor.com/Reviews/DAR-energy-Reviews-E3563386.htm",
+      "https://www.reddit.com/r/Commodities/comments/1s8xxfj/thoughts_on_energy_derivative_market_makers/",
+      "https://www.reddit.com/r/Commodities/comments/1g6sf4g/left_my_role_as_a_trader/"
+    ],
+    "Observed Review Dates": [],
+    "Confidence": "Low",
+    "Search Status": "Glassdoor entity ambiguous; one recent Reddit mention is not attributable employee testimony; no usable recent employee review evidence."
+  }
+}

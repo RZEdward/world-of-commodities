@@ -1,0 +1,205 @@
+{
+  "date_window": "2024-11-01 through 2026-11-01",
+  "records": {
+    "co:krattrade": {
+      "company_name": "KratTrade",
+      "glassdoor": {
+        "score_10": null,
+        "rating_original": null,
+        "review_count": null,
+        "notes": "Searched Glassdoor by exact company name and legal entity spelling; no attributable company review/profile surfaced. KratTrade appears to be a young Estonian energy-technology and asset-optimization firm, so do not conflate it with similarly named trading businesses.",
+        "source_urls": [
+          "https://www.glassdoor.com/Reviews/KratTrade-reviews-SRCH_KE0,9.htm"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_glassdoor_evidence"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "Searched Reddit for exact “KratTrade” and “KratTrade OÜ”; no attributable posts or employee/workplace discussion surfaced.",
+        "source_urls": [
+          "https://www.reddit.com/search/?q=KratTrade"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_reddit_evidence"
+      }
+    },
+    "co:met-group": {
+      "company_name": "MET Group",
+      "glassdoor": {
+        "score_10": 7.6,
+        "rating_original": "3.8/5",
+        "review_count": 16,
+        "notes": "Recent reviews for MET Group (Switzerland) describe entrepreneurial opportunities and committed colleagues (2025-11-06), strong team/environment and benefits but below-market pay (2025-04-16), and learning/team-building with long accounting close workload and processes still developing (2025-03-25). Profile is the Swiss group entity; reviews are anonymous and span roles, not exclusively traders.",
+        "source_urls": [
+          "https://www.glassdoor.co.uk/Reviews/MET-Group-Switzerland-Reviews-E1563993.htm?sort.sortType=RD",
+          "https://www.glassdoor.ca/Overview/Working-at-MET-Group-Switzerland-EI_IE1563993.11%2C32.htm"
+        ],
+        "observed_dates": [
+          "2025-03-25",
+          "2025-04-16",
+          "2025-11-06"
+        ],
+        "confidence": "medium",
+        "search_status": "recent_attributable_reviews_found"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "Searched Reddit for MET Group workplace and employee-experience discussion; no attributable recent employee review surfaced.",
+        "source_urls": [
+          "https://www.reddit.com/search/?q=%22MET%20Group%22%20energy%20trading%20workplace"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_reddit_evidence"
+      }
+    },
+    "co:mft-energy": {
+      "company_name": "MFT Energy",
+      "glassdoor": {
+        "score_10": 7.8,
+        "rating_original": "3.9/5",
+        "review_count": 6,
+        "notes": "Recent review (2026-06-22) calls it a good workplace but notes long hours and rapid growth; a student analyst (2025-03-10) praises flexibility and flat hierarchy but notes limited student salary progression. Small review base (6 total); one 2024 gas-trader review is outside date window and excluded from synthesis.",
+        "source_urls": [
+          "https://www.glassdoor.ca/Reviews/MFT-Energy-Reviews-E7155359.htm",
+          "https://www.glassdoor.com/Overview/Working-at-MFT-Energy-EI_IE7155359.11%2C21.htm"
+        ],
+        "observed_dates": [
+          "2025-03-10",
+          "2026-06-22"
+        ],
+        "confidence": "medium",
+        "search_status": "recent_attributable_reviews_found"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "Searched Reddit for MFT Energy workplace and employee-experience discussion; no attributable recent posts surfaced.",
+        "source_urls": [
+          "https://www.reddit.com/search/?q=%22MFT%20Energy%22%20work%20culture"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_reddit_evidence"
+      }
+    },
+    "co:nitor-energy": {
+      "company_name": "Nitor Energy",
+      "glassdoor": {
+        "score_10": 2.0,
+        "rating_original": "1.0/5",
+        "review_count": 1,
+        "notes": "One anonymous Quantitative Trader review dated 2024-11-05 alleges contract/bonus disputes, weak model validation/mentorship, and expectation of holiday availability; it also mentions relaxed office hours/lunch. This is a single review and cannot establish company-wide conditions; confidence low.",
+        "source_urls": [
+          "https://www.glassdoor.co.uk/Reviews/Nitor-Energy-Quantitative-Trader-Reviews-EI_IE8373230.0%2C12_KO13%2C32.htm"
+        ],
+        "observed_dates": [
+          "2024-11-05"
+        ],
+        "confidence": "low",
+        "search_status": "single_recent_review_low_confidence"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "Searched Reddit for Nitor Energy workplace and employee-experience discussion; no attributable recent posts surfaced.",
+        "source_urls": [
+          "https://www.reddit.com/search/?q=%22Nitor%20Energy%22%20employee"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_reddit_evidence"
+      }
+    },
+    "co:norlys-energy-trading": {
+      "company_name": "Norlys Energy Trading",
+      "glassdoor": {
+        "score_10": 7.6,
+        "rating_original": "3.8/5",
+        "review_count": 34,
+        "notes": "A developer review dated 2025-11-02 praises people/culture, flexibility and fair compensation, while noting frequent restructuring and lack of direction. Glassdoor hosts the review under parent brand Norlys; it explicitly labels the review “Norlys Energy Trading,” making it directly relevant, though still one anonymous developer review rather than a trading-desk sample.",
+        "source_urls": [
+          "https://www.glassdoor.com/Reviews/Employee-Review-Norlys-E4147388-RVW101028951.htm",
+          "https://www.glassdoor.co.uk/Reviews/Norlys-Reviews-E4147388.htm?sort.sortType=helpful"
+        ],
+        "observed_dates": [
+          "2025-11-02"
+        ],
+        "confidence": "low-medium",
+        "search_status": "single_recent_review_low_to_medium_confidence"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "Reddit has a recent Norlys parent-company thread with employment and restructuring comments (2025-08-28/29), including comments mentioning “Norlys Energy Trading”/NET in passing. Most comments concern customer-service/telecom and broader Norlys entities; they do not substantiate Norlys Energy Trading workplace conditions, so no trading-company theme is inferred.",
+        "source_urls": [
+          "https://www.reddit.com/r/dkkarriere/comments/1n2pme4/norlys_fyrer_hver_10_medarbejder/"
+        ],
+        "observed_dates": [
+          "2025-08-28",
+          "2025-08-29"
+        ],
+        "confidence": "low",
+        "search_status": "parent_company_discussion_not_attributable_to_trading_entity"
+      }
+    },
+    "co:northpool": {
+      "company_name": "Northpool",
+      "glassdoor": {
+        "score_10": 8.6,
+        "rating_original": "4.3/5",
+        "review_count": 6,
+        "notes": "Recent reviews praise work-life balance/pay and a flat organization but note documentation gaps (data engineer, 2025-11-18); another describes international colleagues, communication and healthy culture (assistant HR manager, 2025-10-28); a software developer (2026-02-01) likes relaxed atmosphere/friendly coworkers but reports below-average compensation and limited growth. Small anonymous sample (5–6 reviews depending localized/current page); roles not all trading.",
+        "source_urls": [
+          "https://www.glassdoor.co.uk/Reviews/Northpool-Reviews-E3982915.htm",
+          "https://www.glassdoor.nl/Reviews/Northpool-Reviews-E3982915.htm"
+        ],
+        "observed_dates": [
+          "2025-10-28",
+          "2025-11-18",
+          "2026-02-01"
+        ],
+        "confidence": "medium",
+        "search_status": "recent_attributable_reviews_found"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "A May 23 2025 commodities post asks about Northpool and other Dutch power traders, noting limited public information; no substantive employee-review responses surfaced. This is a career/information request rather than firsthand workplace evidence.",
+        "source_urls": [
+          "https://www.reddit.com/r/Commodities/comments/1ktfjmd"
+        ],
+        "observed_dates": [
+          "2025-05-23",
+          "2025-05-25"
+        ],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_workplace_review"
+      }
+    },
+    "co:ompex": {
+      "company_name": "Ompex",
+      "glassdoor": {
+        "score_10": null,
+        "rating_original": null,
+        "review_count": null,
+        "notes": "Searched Glassdoor for Ompex and OMPEX AG; no attributable Glassdoor company profile or recent employee-review excerpts surfaced. Search results did identify the Swiss OMPEX AG energy-management/trading company through non-Glassdoor directories, but no Glassdoor score is reported.",
+        "source_urls": [
+          "https://www.glassdoor.com/Reviews/Ompex-reviews-SRCH_KE0,5.htm"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_glassdoor_evidence"
+      },
+      "reddit": {
+        "score_10": null,
+        "notes": "Searched Reddit for OMPEX AG and Ompex energy workplace discussion; no attributable employee/workplace posts surfaced.",
+        "source_urls": [
+          "https://www.reddit.com/search/?q=%22Ompex%20AG%22%20energy"
+        ],
+        "observed_dates": [],
+        "confidence": "low",
+        "search_status": "searched_no_attributable_reddit_evidence"
+      }
+    }
+  }
+}

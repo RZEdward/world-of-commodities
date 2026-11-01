@@ -1,0 +1,149 @@
+{
+  "co:powertica-commodities-ag": {
+    "company_name": "Powertica Commodities AG",
+    "glassdoor": {
+      "score_10": null,
+      "rating_original": null,
+      "review_count": null,
+      "notes": "Searched Glassdoor for Powertica Commodities AG and Powertica. A Glassdoor pay/benefits page exists for Powertica, but no attributable employee review or rating/count was exposed; no qualitative theme inferred.",
+      "source_urls": ["https://www.glassdoor.com/pay-and-benefits/Powertica-E9876600"],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched; profile/pay page surfaced but no attributable review evidence."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Targeted Reddit searches for Powertica and Powertica Commodities AG employee/workplace comments returned no attributable company-specific results.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable evidence found."
+    }
+  },
+  "co:priogen-energy": {
+    "company_name": "Priogen Energy",
+    "glassdoor": {
+      "score_10": 7.0,
+      "rating_original": "3.5/5; Glassdoor profile snippet shows 13 reviews (footer indicates 16 total)",
+      "review_count": 13,
+      "notes": "Glassdoor profile is titled Priogen Group (used as the matching employer for Priogen Energy). Recent employee narratives are mixed: a trainee trader (2026-02-02) describes interesting power-trading exposure but criticizes the highly academic approach, below-market compensation, and long trainee phase; a data analyst (2025-07-07) says the team vibe is coordinative/good but package relatively low for workload; a trading desk analyst (2025-04-03) praises experienced colleagues and learning, while noting limited interdepartmental collaboration. These are role-specific anonymous accounts, not a company-wide consensus.",
+      "source_urls": ["https://www.glassdoor.com/Reviews/Priogen-Group-Reviews-E955445.htm"],
+      "observed_dates": ["2026-02-02", "2025-07-07", "2025-04-03"],
+      "confidence": "High",
+      "search_status": "Recent dated Glassdoor reviews with qualitative text found; profile/group name is Priogen Group."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Searched Reddit for Priogen/Priogen Energy employee, work, and trading discussions; no attributable company-specific employee account was found. Search results were general career/review-site discussions and were excluded.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable recent employee evidence found."
+    }
+  },
+  "co:quark-energy-trading": {
+    "company_name": "Quark Energy Trading",
+    "glassdoor": {
+      "score_10": null,
+      "rating_original": null,
+      "review_count": 0,
+      "notes": "The exact Glassdoor employer profile identifies Quark Energy Trading (London) and says 'Be the first to review this company'; no employee reviews or rating are displayed. The separate Quark Software employer is unrelated and excluded.",
+      "source_urls": ["https://www.glassdoor.com/Overview/Working-at-Quark-Energy-Trading-EI_IE9496039.11,31.htm"],
+      "observed_dates": [],
+      "confidence": "High",
+      "search_status": "Exact Glassdoor profile found; no reviews/ratings available."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Targeted Reddit searches for the exact company name and employee/workplace terms returned no attributable results. No Reddit evidence used.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable evidence found."
+    }
+  },
+  "co:red-wolf-energy-trading": {
+    "company_name": "Red Wolf Energy Trading",
+    "glassdoor": {
+      "score_10": null,
+      "rating_original": null,
+      "review_count": null,
+      "notes": "Searched Glassdoor for the exact company name and variants. No matching Glassdoor employer review page or attributable employee-review text was located. Similar-name REDW and Red Wolf results were not a confirmed match and are excluded.",
+      "source_urls": ["https://www.linkedin.com/company/red-wolf-energy-trading"],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no verified Glassdoor employee review evidence."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Targeted Reddit searches for Red Wolf Energy Trading and employee/workplace terms returned no attributable company-specific posts.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable evidence found."
+    }
+  },
+  "co:second-foundation": {
+    "company_name": "Second Foundation",
+    "glassdoor": {
+      "score_10": 8.6,
+      "rating_original": "4.3/5; 40 reviews",
+      "review_count": 40,
+      "notes": "Recent Glassdoor accounts (2026-06-02 through 2026-08-22) are broadly positive about pay, benefits, colleagues, and opportunities to grow, while repeatedly flagging demanding workload/high expectations and rapid change. A visible intraday power trader review (2026-08-22) says pay/people/opportunities are strong but notes it is not a place for someone averse to hard work; a tech review (2026-08-19) praises colleagues and benefits but cites high workload; an IT project manager (2026-06-02) praises benefits/pay but reports fast changes and heavy workload. Glassdoor Q&A snippets also mention less management transparency and stagnant pay for some longer-tenured employees, but their dates were not exposed, so these are not treated as recent-window themes.",
+      "source_urls": ["https://www.glassdoor.com/Reviews/Second-Foundation-Reviews-E8629167.htm", "https://www.glassdoor.co.uk/FAQ/Second-Foundation-Question-FAQ200100-E8629167.htm"],
+      "observed_dates": ["2026-08-22", "2026-08-19", "2026-06-02"],
+      "confidence": "High",
+      "search_status": "Multiple recent dated qualitative Glassdoor reviews found; Q&A snippets undated and treated cautiously."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Searched Reddit for Second Foundation trading and employee/workplace discussions. Results were unrelated (including the Isaac Asimov book and game discussions); no attributable company-specific employee evidence found.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable evidence found; unrelated name matches excluded."
+    }
+  },
+  "co:set-swiss-energy-trading": {
+    "company_name": "SET Swiss Energy Trading",
+    "glassdoor": {
+      "score_10": null,
+      "rating_original": null,
+      "review_count": null,
+      "notes": "Searched Glassdoor for the exact company name and Swiss Energy Trading variants. No matching employee-review page or attributable recent review text was found. A LinkedIn company listing helped confirm the exact entity but is not employee-review evidence.",
+      "source_urls": ["https://www.linkedin.com/company/set-swiss-energy-trading-ag"],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no matching Glassdoor review evidence found."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Targeted searches for SET Swiss Energy Trading on Reddit returned no attributable company-specific employee posts. A broader Swiss energy-industry thread was not about this firm and is excluded.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable evidence found."
+    }
+  },
+  "co:timera-energy": {
+    "company_name": "Timera Energy",
+    "glassdoor": {
+      "score_10": null,
+      "rating_original": null,
+      "review_count": 2,
+      "notes": "A Glassdoor employer review page exists with two reviews, but its search result is old (published about 3.5 years ago) and no recent-window employee review narrative or rating was exposed. A 2026 interview page is candidate interview material, not employee experience, and was not used as a workplace theme.",
+      "source_urls": ["https://www.glassdoor.com/Reviews/Timera-Energy-Reviews-E8047657.htm?sort.ascending=false&sort.sortType=OR", "https://www.glassdoor.co.uk/Interview/Timera-Energy-Interview-Questions-E8047657.htm"],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Glassdoor profile found with two older reviews; no attributable recent qualitative evidence."
+    },
+    "reddit": {
+      "score_10": null,
+      "notes": "Targeted Reddit searches for Timera Energy employee/workplace terms returned no attributable company-specific results. Broader energy-industry discussions were excluded.",
+      "source_urls": [],
+      "observed_dates": [],
+      "confidence": "Low",
+      "search_status": "Searched/no attributable recent employee evidence found."
+    }
+  }
+}

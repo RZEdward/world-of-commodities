@@ -1,0 +1,583 @@
+{
+  "co:qatarenergy": {
+    "company_name": "QatarEnergy",
+    "glassdoor": {
+      "notes": "May 2026 geologist review says colleagues are good but change is slowed by bureaucracy; June 2026 SME notes mobility constraints; July 2026 teacher praises pay/development but flags distance from Doha. Role-specific excerpts.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/QatarEnergy-Reviews-E6778248.htm"
+      ],
+      "observed_review_dates": "2026-05-24; 2026-06-09; 2026-07-30",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "June 2026 Reddit thread includes first-person accounts: a commenter says they work under QatarEnergy LNG as contractor and describes acceptable culture but less freedom than UK; another self-described worker says good WLB/culture with early hours and manager/team variation. Direct-hire vs contractor distinction matters.",
+      "source_urls": [
+        "https://www.reddit.com/r/QatarCareers/comments/1tyefk1/job_offer_in_qatar_with_qatar_energy/"
+      ],
+      "observed_review_dates": "2026-06-06 to 2026-06-07",
+      "confidence": "medium",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:adnoc": {
+    "company_name": "ADNOC",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "May 2025 UAE work-culture thread includes first-person commenter identifying as UK-origin employee at ADNOC Onshore Abu Dhabi, describing culture as broadly like a decent UK employer. Other broad comments are not ADNOC-specific.",
+      "source_urls": [
+        "https://www.reddit.com/r/UAE/comments/1kx142z/"
+      ],
+      "observed_review_dates": "2025-05-27 to 2025-05-29",
+      "confidence": "medium",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:saudi-aramco": {
+    "company_name": "Saudi Aramco",
+    "glassdoor": {
+      "notes": "2025–26 excerpts include a project engineer praising learning/culture but citing limited advancement for non-Saudis; a senior engineer calls processes professional but promotions slow; another review notes hours/remote-location drawbacks.",
+      "source_urls": [
+        "https://stage.glassdoor.com/Reviews/Saudi-Aramco-culture-Reviews-EI_IE7712.0%2C12_KH13%2C20.htm"
+      ],
+      "observed_review_dates": "2025-02-27; 2025-09-11; 2026-03-15",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:petronas": {
+    "company_name": "Petronas",
+    "glassdoor": {
+      "notes": "Mar. 9, 2025 procurement manager review praises supportive, diverse project team but notes department variation, management layers, frequent audits and cumbersome processes.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Petronas-E8270-RVW95673473.htm"
+      ],
+      "observed_review_dates": "2025-03-09",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "June 2026 Reddit discussion about post-rightsizing Petronas includes anecdotal claims of layoffs, politics/visibility and stressful workload, balanced by a comment saying child/family needs are accommodated; comments vary by department and attribution is mixed.",
+      "source_urls": [
+        "https://www.reddit.com/r/MalaysianPF/comments/1u5hx3t/what_is_it_like_working_for_petronas/"
+      ],
+      "observed_review_dates": "2026-06-14 to 2026-06-17",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:ptt": {
+    "company_name": "PTT",
+    "glassdoor": {
+      "notes": "Aug. 20, 2025 analyst review says opportunities/benefits/WLB are positives but describes hierarchical traditional Thai state-company culture. Later excerpts cite stability but slow growth/internal moves.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-PTT-E8278-RVW99477564.htm",
+        "https://stage.glassdoor.com/Reviews/PTT-Reviews-E8278.htm"
+      ],
+      "observed_review_dates": "2025-08-20; 2025-12-08; 2026-03-23",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:sk-innovation": {
+    "company_name": "SK Innovation",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:ecopetrol": {
+    "company_name": "Ecopetrol",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "May 2025 Colombia threads include praise from a commenter calling Ecopetrol a top local employer, alongside an applicant asking for workplace context. Mostly aspirational/secondary, not a clearly attributable employee review.",
+      "source_urls": [
+        "https://www.reddit.com/r/Colombia/comments/1kqsno2/",
+        "https://www.reddit.com/r/ColombiaDevs/comments/1kzbnlo/"
+      ],
+      "observed_review_dates": "2025-05-20; 2025-05-30",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:hess-corporation": {
+    "company_name": "Hess Corporation",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:phillips-66": {
+    "company_name": "Phillips 66",
+    "glassdoor": {
+      "notes": "Recent review headlines indicate process-engineer concerns about leadership (Apr. 30, 2025) and hydraulics engineer concerns that work-life balance varies and career growth feels stagnant (Jul. 15, 2025); body text was not available in search excerpts.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Phillips-66-E498821-RVW97053845.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Phillips-66-E498821-RVW103693384.htm"
+      ],
+      "observed_review_dates": "2025-04-30; 2025-07-15",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Jan. 7, 2026 thread includes a former P66 employee giving an overall positive recommendation and mentioning occasional overtime when the next shift calls out.",
+      "source_urls": [
+        "https://www.reddit.com/r/oilandgasworkers/comments/1q6608n/phillips_66_interview/"
+      ],
+      "observed_review_dates": "2026-01-07",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:valero-energy": {
+    "company_name": "Valero Energy",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:marathon-petroleum": {
+    "company_name": "Marathon Petroleum",
+    "glassdoor": {
+      "notes": "June 2025 anonymous reviewer praises safety culture/people but wishes pay and R&D were stronger; Dec. 2025 financial analyst praises colleagues/leadership/opportunities but says onboarding needs work; Oct. 2025 pipeline controller praises pay/pension but says rotating shifts are taxing.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Marathon-Petroleum-E7657-RVW98183191.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Marathon-Petroleum-E7657-RVW101868143.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Marathon-Petroleum-E7657-RVW100426814.htm"
+      ],
+      "observed_review_dates": "2025-06-20; 2025-10-03; 2025-12-17",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:eneos": {
+    "company_name": "ENEOS",
+    "glassdoor": {
+      "notes": "ENEOS Group page excerpts: Dec. 4, 2025 renewable business assistant manager cites growth sector but traditional-company bureaucracy; Feb. 2026 anonymous account is positive but nonspecific; Jun. 2026 senior executive praises career support.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/ENEOS-Group-Reviews-E3963613.htm"
+      ],
+      "observed_review_dates": "2025-12-04; 2026-02-01; 2026-06-08",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Mar. 2025 commodities discussion asks about ENEOS Houston trading team culture; response mentions Japanese trading-house rotation practices but does not clearly identify an ENEOS employee, so this is second-hand contextual signal only.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1jg4psq/"
+      ],
+      "observed_review_dates": "2025-03; exact day not confirmed",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:cosmo-energy-holdings": {
+    "company_name": "Cosmo Energy Holdings",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:idemitsu-kosan": {
+    "company_name": "Idemitsu Kosan",
+    "glassdoor": {
+      "notes": "Nov. 2025 admin review calls it good/flexible but rule-heavy; Dec. 2025 anonymous review praises pay but reports poor WLB; Oct. 2025 marine engineer specifically notes long onboard overtime/intimidating senior ship officers.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Idemitsu-Kosan-salary-Reviews-EI_IE6376.0%2C14_KH15%2C21.htm"
+      ],
+      "observed_review_dates": "2025-10-19; 2025-11-17; 2025-12-17",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:edf": {
+    "company_name": "EDF",
+    "glassdoor": {
+      "notes": "Aug. 2026 Glassdoor reviews praise flexibility/WLB/colleagues but mention limited upward growth; another says training is available but workload may be heavy; software engineer praises supportive culture but notes slow processes.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/EDF-Reviews-E324360.htm"
+      ],
+      "observed_review_dates": "2026-08-18; 2026-08-24",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:engie": {
+    "company_name": "Engie",
+    "glassdoor": {
+      "notes": "May 6, 2025 anonymous reviewer says pay/benefits are good but alleges toxic senior management. Jul. 4, 2025 manager review specifically concerns India office, describing flexible pace but top-down management, micromanagement, favoritism and politics.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-ENGIE-E1052655-RVW97158717.htm",
+        "https://static.glassdoor.com/Reviews/ENGIE-manager-Reviews-EI_IE1052655.0%2C5_KH6%2C13.htm"
+      ],
+      "observed_review_dates": "2025-05-06; 2025-07-04",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:centrica": {
+    "company_name": "Centrica",
+    "glassdoor": {
+      "notes": "Aug. 2026 data scientist praises WLB/benefits and WFH but notes limited team culture and reactive leadership; Aug. graduate analyst praises modern culture/development but mentions restructures.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Centrica-Reviews-E6731.htm"
+      ],
+      "observed_review_dates": "2026-08-17; 2026-08-26",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Jan. 5, 2026 commodities graduate-trading discussion says Centrica can be slow to respond; this is recruitment-process commentary, not employee workplace feedback.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1q4lifv/centrica_graduate_commodity_trading/"
+      ],
+      "observed_review_dates": "2026-01-05",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:rwe": {
+    "company_name": "RWE",
+    "glassdoor": {
+      "notes": "Jul. 31, 2026 program manager excerpt praises smart colleagues/culture/innovative projects but notes difficulty navigating EU-parent governance. A separate FAQ excerpt references culture impact of July 2024 layoffs but has no clear review date.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-RWE-E3769-RVW92320800.htm",
+        "https://www.glassdoor.com/FAQ/RWE-Question-FAQ200132-E3769.htm"
+      ],
+      "observed_review_dates": "2026-07-31; undated FAQ excerpt",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:e-on": {
+    "company_name": "E.ON",
+    "glassdoor": {
+      "notes": "Aug. 20, 2026 senior data scientist describes department closure/reorganization and dissatisfaction with redeployment/communication; Sep. 1 project manager notes flexible benefits but a large hierarchy and dull work.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/E-ON-Reviews-E3981.htm"
+      ],
+      "observed_review_dates": "2026-08-20; 2026-09-01",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Oct. 14, 2026 Nottingham discussion has a current E.ON employee and a person who says they worked at E.ON/E.ON Next since 2019 describing mostly WFH/one-day hybrid and generally recommending it; local team/office signal.",
+      "source_urls": [
+        "https://www.reddit.com/r/nottingham/comments/1x5m3w5/ovo_employee_looking_for_insight_on_eons_company/"
+      ],
+      "observed_review_dates": "2026-10-14",
+      "confidence": "medium",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:uniper": {
+    "company_name": "Uniper",
+    "glassdoor": {
+      "notes": "Jun.–Aug. 2026 excerpts praise supportive colleagues, benefits and WLB but mention limited career growth/recognition, unclear priorities during organizational change, and diversity concerns.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Uniper-Reviews-E1264391.htm"
+      ],
+      "observed_review_dates": "2026-06-11; 2026-06-16; 2026-08-19",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:statkraft": {
+    "company_name": "Statkraft",
+    "glassdoor": {
+      "notes": "Mar. 15, 2025 HSSE Advisor praises meaningful work, colleagues, WLB and compensation but criticizes organization structure, Norwegian hiring bias and slow work culture.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Statkraft-AS-E241449-RVW95851178.htm"
+      ],
+      "observed_review_dates": "2025-03-15",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "July 22, 2025 Reddit layoff discussion includes second-hand report that a person who joined a little over a year before had their whole department closed; restructuring signal, not direct review.",
+      "source_urls": [
+        "https://www.reddit.com/r/norge/comments/1m6moo6/"
+      ],
+      "observed_review_dates": "2025-07-22",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:vattenfall": {
+    "company_name": "Vattenfall",
+    "glassdoor": {
+      "notes": "Feb. 17, 2025 senior engineer review praises projects, learning, WLB, pay and open culture but notes communication gaps/silos. 2026 excerpts mention supportive colleagues and slow processes.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Vattenfall-E10580-RVW95103195.htm",
+        "https://www.glassdoor.com/Reviews/Vattenfall-Reviews-E10580.htm"
+      ],
+      "observed_review_dates": "2025-02-17; 2026-07-03",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:rsted": {
+    "company_name": "Ørsted",
+    "glassdoor": {
+      "notes": "Ørsted Glassdoor excerpts: Sep. 2, 2026 developer praises mission-minded coworkers/WLB but notes bureaucracy; Aug. 10 anonymous review describes rolling layoffs, limited growth, silos and management problems.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/%C3%98rsted-Reviews-E1858272.htm"
+      ],
+      "observed_review_dates": "2026-08-10; 2026-09-02",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Sep. 23–25, 2025 Danish careers thread includes a self-identified Ørsted employee praising WLB/conditions but criticizing area leadership and employee treatment; others mention layoff-related uncertainty. Danish-language, function-specific anecdote.",
+      "source_urls": [
+        "https://www.reddit.com/r/dkkarriere/comments/1noo613/arbejde_hos_%C3%B8rsted/"
+      ],
+      "observed_review_dates": "2025-09-23 to 2025-09-25",
+      "confidence": "medium",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:sse": {
+    "company_name": "SSE",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:scottishpower": {
+    "company_name": "ScottishPower",
+    "glassdoor": {
+      "notes": "Aug. 27, 2026 project manager praises flexibility/WLB but notes old-school managers and slow departments; Aug. 8 security analyst describes micromanagement/confusing processes.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/ScottishPower-Reviews-E139642.htm"
+      ],
+      "observed_review_dates": "2026-08-08; 2026-08-27",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Nov. 4, 2024 Glasgow thread includes first-person former ScottishPower worker describing customer-account errors during customer-service outsourcing. Customer operations/outsourcing scope, not trading or all staff.",
+      "source_urls": [
+        "https://www.reddit.com/r/glasgow/comments/1gjcog6/"
+      ],
+      "observed_review_dates": "2024-11-04",
+      "confidence": "low",
+      "search_status": "recent discussion found; attribution/type caveat stated"
+    }
+  },
+  "co:drax": {
+    "company_name": "Drax",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:iberdrola": {
+    "company_name": "Iberdrola",
+    "glassdoor": {
+      "notes": "Sep. 6, 2025 anonymous review alleges long hours, understaffing, demanding management, lack of pay increases and poor office culture; no role/location detail shown.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Iberdrola-E10548-RVW99830936.htm"
+      ],
+      "observed_review_dates": "2025-09-06",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:enel": {
+    "company_name": "Enel",
+    "glassdoor": {
+      "notes": "Feb. 7, 2025 software engineer in international department praises respectful management, interesting global projects and HR support but says promotion can be difficult; Aug. 20, 2026 senior manager notes established processes but political leadership challenges.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Enel-E10910-RVW94869256.htm",
+        "https://www.glassdoor.com/Reviews/Enel-Reviews-E10910.htm"
+      ],
+      "observed_review_dates": "2025-02-07; 2026-08-20",
+      "confidence": "medium",
+      "search_status": "recent qualitative Glassdoor review evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:edison": {
+    "company_name": "Edison",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  },
+  "co:ewe": {
+    "company_name": "EWE",
+    "glassdoor": {
+      "notes": "Searched recent company-specific Glassdoor review queries (2024-11-01 onward); no attributable qualitative employee review with usable theme text found in returned results. No score or theme inferred.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Searched recent company-specific Reddit workplace/culture queries (2024-11-01 onward); no attributable recent employee/user workplace review with a usable company-experience theme found in returned results.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "searched; no attributable recent qualitative evidence found"
+    }
+  }
+}

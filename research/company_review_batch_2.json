@@ -1,0 +1,962 @@
+{
+  "co:ewe": {
+    "company": "EWE",
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "4.3/5; 34 reviews. 2024-25 praise for pay/freedom/growth; terse management criticism. Small sample. https://www.glassdoor.com/Reviews/EWE-Reviews-E42002.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:verbund": {
+    "company": "Verbund",
+    "glassdoor_score": 9.2,
+    "glassdoor_notes": "4.6/5; 10 reviews. 2024-25 climate/WLB/stability positives, with bureaucracy/hierarchy caveat. Very small sample. https://www.glassdoor.com/Reviews/Verbund-Reviews-E40723.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:fortum": {
+    "company": "Fortum",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 136 reviews. 2026 feedback polarized: inclusion/WLB positives and political/reorg/layoff criticism. One strongly negative account is not representative. https://www.glassdoor.com/Reviews/Fortum-Reviews-E9743.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:pge": {
+    "company": "PGE",
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "PGE Polska Grupa Energetyczna proxy 3.6/5; 11 reviews. 2024 stability/regular-hours positives vs overstaffing, bureaucracy/silos and monotony. https://www.glassdoor.com/Reviews/PGE-Polska-Grupa-Energetyczna-Reviews-E311599.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:eletrobras": {
+    "company": "Eletrobras",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Profile now resolves under Axia Energia; no usable current aggregate extracted. Subsidiaries not substituted. https://www.glassdoor.com/Overview/Working-at-Eletrobras-EI_IE7562.11,21.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:nextera-energy": {
+    "company": "NextEra Energy",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Current snippets conflict 3.7-3.8/5; used 3.8/5 (~1,516 reviews). 2026 benefits/learning positives; WLB, pay, management and workload concerns. https://api.glassdoor.com/Reviews/NextEra-Energy-Inc-Reviews-E221824.htm",
+    "reddit_score": 6.0,
+    "reddit_notes": "Recent Reddit threads (Aug–Oct 2026) are mixed: some praise pay, safety and progression; others report feeling undervalued or organizational friction. Comments are mostly power-plant/field roles, not trading. Small anecdotal sample. https://www.reddit.com/r/nuclear/comments/1wto1ek/getting_to_nextera_energy/ ; https://www.reddit.com/r/SubstationTechnician/comments/1wyr11m/next_era_hv_tech/",
+    "review_status": "Reddit search checked 2026-11-01; low-volume evidence, role-specific where noted"
+  },
+  "co:constellation-energy": {
+    "company": "Constellation Energy",
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "4.1/5; 755 reviews. Culture/remote work and stability positives; workload, overtime and advancement concerns. https://www.glassdoor.com/Overview/Working-at-Constellation-Energy-EI_IE75.11,31.htm",
+    "reddit_score": 6.5,
+    "reddit_notes": "Recent Reddit employee threads (r/instrumentation Aug 2026; r/nuclear Jan–Mar 2025/Mar 2026) describe good pay, security and internal mobility, alongside location/role variation and a high-turnover anecdote. Sparse, plant-heavy sample; not a markets-desk proxy. https://www.reddit.com/r/instrumentation/comments/1vxcwee/anyone_work_for_constellation/ ; https://www.reddit.com/r/nuclear/comments/1gw4cd6/constellation_energy_worklife_balance_and_mobility/ ; https://www.reddit.com/r/NuclearPower/comments/1rmquvn/working_at_constellation_energy/",
+    "review_status": "Reddit search checked 2026-11-01; low-volume evidence, role-specific where noted"
+  },
+  "co:vistra": {
+    "company": "Vistra",
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "3.0/5; 828 reviews current exact Vistra page; mixed 2026 hybrid/benefit positives vs leadership churn, workload, bonus/pay and senior-management issues. Legacy Vistra Energy page 4.1/5 is a conflicting profile; using exact current entity. https://www.glassdoor.com/Reviews/Vistra-Reviews-E1064977.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Reddit evidence is sparse and role-specific. A nuclear-sector thread from early 2024 includes a union employee saying the company was not people-oriented, while another said conditions had not changed; no recent broad sample located. Low confidence. https://www.reddit.com/r/NuclearPower/comments/19effhh",
+    "review_status": "Reddit search checked 2026-11-01; low-volume evidence, role-specific where noted"
+  },
+  "co:nrg-energy": {
+    "company": "NRG Energy",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; 987 reviews (cache range 3.9-4.0). WLB/support/growth positives vs bureaucracy, metrics and team-specific management. https://static.glassdoor.com/Reviews/NRG-Energy-Reviews-E11895.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Recent Reddit job-offer and employee anecdotes are limited; one sales worker described minimal training and intent to leave, while another thread is about a customer-facing sales complaint. These do not establish sentiment in trading/markets roles. Low confidence; provisional. https://www.reddit.com/r/Delco/comments/1qcyck9/nrg_energy_reps_at_walmart/ ; https://www.reddit.com/r/Grid_Ops/comments/1poc6ov/nrg_energy/",
+    "review_status": "Reddit search checked 2026-11-01; low-volume evidence, role-specific where noted"
+  },
+  "co:aes-corporation": {
+    "company": "AES Corporation",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; ~972 reviews. Oct 2026 feedback includes caring managers and industry-change concerns, bureaucracy and poor WLB/unclear direction. https://api.glassdoor.com/Reviews/AES-Corporation-Reviews-E291.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:dominion-energy": {
+    "company": "Dominion Energy",
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "4.2/5; 1,109 reviews. Aug 2026 pay/benefits/environment positives; shift work, weekends and large-company caveats. https://www.glassdoor.com/Reviews/Dominion-Energy-Reviews-E204.htm",
+    "reddit_score": 7.0,
+    "reddit_notes": "Reddit workplace threads include positive employee recommendations and a worker who describes the company as good to work for; other comments concern utility/customer issues rather than employment. Overall mildly positive but low-volume and role-mixed. https://www.reddit.com/r/rva/comments/170slpt ; https://www.reddit.com/r/rva/comments/1rtj3r9/workplaces_youd_recommend/ ; https://www.reddit.com/r/Grid_Ops/comments/1u9lagx/advice/",
+    "review_status": "Reddit search checked 2026-11-01; low-volume evidence, role-specific where noted"
+  },
+  "co:duke-energy": {
+    "company": "Duke Energy",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; 2,085 reviews. Aug 2026 WLB, managers and benefits positives; some field/line roles report local management/WLB issues. https://www.glassdoor.com/Reviews/Duke-Energy-Reviews-E211.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2024-25 grid-operations and technical threads give mixed role-specific reports on morale, pay and working conditions; no defensible single score. https://www.reddit.com/r/Grid_Ops/comments/1ibivn1/duke_charlotte_ops/ ; https://www.reddit.com/r/Lineman/comments/1ovi0rw/duke_energy_firing/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:eversource-energy": {
+    "company": "Eversource Energy",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 870 reviews. 2026 pay/benefit/team positives; PTO/systems/leadership concerns; one review notes long hours, turnover and call-center micromanagement. https://www.glassdoor.com/Reviews/Eversource-Energy-Reviews-E970297.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Targeted Reddit searches mainly returned customer/regulatory complaints and contractor commentary, not reliable employee reviews. Keep provisional neutral 5/10; no usable recent company-specific employee sentiment to score. https://www.reddit.com/r/Connecticut/comments/y3wrnl/eversource_and_you/",
+    "review_status": "Reddit search checked 2026-11-01; limited or role-specific employee evidence"
+  },
+  "co:bc-hydro": {
+    "company": "BC Hydro",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Conflicting pages: 3.8/5 (562) vs 4.0/5 (560); using review-page 3.8. Sep 2026 benefits positives with workload, raises and bureaucracy concerns. https://www.glassdoor.com/Reviews/BC-Hydro-Reviews-E34974.htm",
+    "reddit_score": 8.0,
+    "reddit_notes": "Several recent Reddit threads (Jul–Aug 2026) describe good pay, security, benefits and work-life balance; some note competitive hiring and process delays. Anecdotal, mostly engineering/utility roles rather than trading. https://www.reddit.com/r/britishcolumbia/comments/1v5jwlm/hydro_job_review_what_is_bc_hydro_like_for_a/ ; https://www.reddit.com/r/VancouverJobs/comments/1vuseu5/bc_hydro/",
+    "review_status": "Reddit search checked 2026-11-01; limited or role-specific employee evidence"
+  },
+  "co:hydro-quebec": {
+    "company": "Hydro-Québec",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 195 reviews (overview 3.8/198). Aug 2026 benefits/security/WLB positives vs bureaucracy, promotion speed and reorgs. https://www.glassdoor.com/Reviews/Hydro-Qu%C3%A9bec-Reviews-E7701.htm",
+    "reddit_score": 6.5,
+    "reddit_notes": "French-language Reddit discussion is mixed: employees cite strong compensation, pension and leave, alongside bureaucracy, politics and uneven team productivity. Roles discussed are largely field/technical; not a trading-desk signal. Low-to-medium confidence. https://www.reddit.com/r/QuebecFinance/comments/1h5zhlc/selon_vous_quels_sont_les_meilleurs_employeurs_au_quebec/ ; https://www.reddit.com/r/QuebecTI/comments/1c689zt/quitter_hydro_ou_pas/",
+    "review_status": "Reddit search checked 2026-11-01; limited or role-specific employee evidence"
+  },
+  "co:alectra-utilities": {
+    "company": "Alectra Utilities",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Alectra profile 4.0/5; 110 reviews. WLB/benefit and hybrid culture positives; salary/career caveats. https://www.glassdoor.com/Overview/Working-at-Alectra-EI_IE1540764.11,18.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "No usable recent Reddit employee reviews surfaced in the targeted company-name search; available discussion was too sparse or not attributable to employer experience. Provisional neutral score; low confidence.",
+    "review_status": "Reddit search checked 2026-11-01; limited or role-specific employee evidence"
+  },
+  "co:alectra-energy-solutions": {
+    "company": "Alectra Energy Solutions",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact Glassdoor entity profile; do not proxy Alectra Utilities.",
+    "reddit_score": 5.0,
+    "reddit_notes": "No usable company-specific Reddit employee reviews found in the targeted search. Alectra Energy Solutions is a distinct registry entity; no parent-company employee comments were attributed to it. Provisional neutral score; low confidence.",
+    "review_status": "Reddit search checked 2026-11-01; limited or role-specific employee evidence"
+  },
+  "co:eskom": {
+    "company": "Eskom",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; ~589 reviews. 2026 learning/career/benefits positives vs long hours, standby calls, demanding work and permanence/pay concerns. https://api.glassdoor.com/Reviews/Eskom-Reviews-E140053.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Reddit evidence is limited and mixed: a contractor describes strict deadlines and helpful staff in a 2023 thread, while discussion of workforce morale and performance systems is more negative. Not a representative recent employee sample; low confidence. https://www.reddit.com/r/RSA/comments/13s5ru3/do_any_of_you_work_at_eskom/ ; https://www.reddit.com/r/DownSouth/comments/1bqknex/eskom_does_not_have_a_reward_system_for_good/",
+    "review_status": "Reddit search checked 2026-11-01; limited or role-specific employee evidence"
+  },
+  "co:jera": {
+    "company": "JERA",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Glassdoor JERA profile: 2.5/5 (27 reviews), scaled to 5.0/10; only 31% recommend. Recent review alleges poor management; very small sample. https://www.glassdoor.com/Reviews/JERA-Reviews-E1714526.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No useful recent Reddit employer-reputation evidence located; Glassdoor sample itself is small.",
+    "review_status": "Glassdoor reviewed; Reddit checked"
+  },
+  "co:tepco": {
+    "company": "TEPCO",
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "3.4/5; 46 reviews on exact TEPCO profile. Mar 2026 stability/learning but older culture/process, pay and growth concerns; prefer exact profile over legacy Tokyo Electric alias. https://www.glassdoor.com/Reviews/TEPCO-Reviews-E683216.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:chubu-electric-power": {
+    "company": "Chubu Electric Power",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; only 3 ratings. Limited profile/review detail; very low confidence. https://www.glassdoor.com/Overview/Working-at-Chubu-Electric-Power-EI_IE6358.11,31.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:korea-electric-power-corporation-kepco": {
+    "company": "Korea Electric Power Corporation (KEPCO)",
+    "glassdoor_score": 6.4,
+    "glassdoor_notes": "3.2/5; 74 reviews. 2025-26 snippets mention WLB/career potential and government policy constraints, but also low pay/skill growth. https://www.glassdoor.com/Reviews/Korea-Electric-Power-Reviews-E5490.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:clp-holdings": {
+    "company": "CLP Holdings",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 112 reviews. Sep 2026 WLB with advancement/management criticism; Aug feedback praises colleagues but criticizes policies. https://www.glassdoor.com/Reviews/CLP-Holdings-Reviews-E6723.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:ytl-power": {
+    "company": "YTL Power",
+    "glassdoor_score": 6.4,
+    "glassdoor_notes": "YTL Power International proxy 3.2/5; only 5 ratings; category misclassified and entity match weak. Treat as low confidence. https://www.glassdoor.com/Overview/Working-at-YTL-Power-International-EI_IE9526158.11,34.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in 2024-2026 searches.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:tata-power": {
+    "company": "Tata Power",
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "3.4/5; 834 reviews. 2026 work-life/career criticism mixed with WLB/exposure praise; management/pay/career scores lower than culture. https://www.glassdoor.com/Reviews/Tata-Power-Reviews-E152741.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Reddit reports from Tata Power employees/former employees in 2024 describe alleged pay stagnation, trainee classification disputes and management concerns; a 2026 campus hiring discussion is procedural, with little sentiment. Single-sided, role-specific allegations; low confidence. https://www.reddit.com/r/LegalAdviceIndia/comments/1en3ojs/company_forcing_to_by_the_company_provided_laptop_tata_power/ ; https://www.reddit.com/r/Ethics/comments/1g43eac/injustice_at_tata_power/ ; https://www.reddit.com/r/PlacementsPrep/comments/1whs3jw/tata_power_campus_recruitments_2026/",
+    "review_status": "Reddit search checked 2026-11-01; limited sample"
+  },
+  "co:ntpc": {
+    "company": "NTPC",
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "National Thermal Power / NTPC 4.1/5; ~850 reviews. Aug 2026 mentions workload, shifts, remote locations, slow promotion alongside benefits/facilities/WLB. https://www.glassdoor.com/Reviews/National-Thermal-Power-Reviews-E8309.htm",
+    "reddit_score": 6.5,
+    "reddit_notes": "A targeted Aug 2026 Reddit discussion has one family-member anecdote describing a relatively calm plant role and strong perks; the thread has very few informed replies. Low-confidence positive indication, not desk-specific. https://www.reddit.com/r/GATE_EE_ECE_IN/comments/1vsfw4d/honest_review_of_ntpc_for_ee/",
+    "review_status": "Reddit search checked 2026-11-01; limited sample"
+  },
+  "co:adani-power": {
+    "company": "Adani Power",
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "3.5/5; 456 reviews. Oct 2026 reports competitive pay/local posting but toxic culture, long shifts/on-call, manager-dependent progression and bonus uncertainty. https://static.glassdoor.com/Reviews/Adani-Power-Reviews-E473429.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying 2024-26 company-specific employee reviews found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-energy-investment-corporation": {
+    "company": "China Energy Investment Corporation",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No clearly identifiable exact-parent Glassdoor employer profile surfaced; no proxy used.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-huaneng-group": {
+    "company": "China Huaneng Group",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Glassdoor exact-name China HuaNeng profile 3.7/5 (3 reviews), but stale and tiny (2015, 2021, 2022); another overview shows 3.9/5. Reviews mention pay/benefits positively and career growth concerns. Low-confidence historical indicator, not a current signal. https://www.glassdoor.com/Reviews/China-HuaNeng-Reviews-E40591.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-datang-corporation": {
+    "company": "China Datang Corporation",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact-parent Glassdoor rating located; did not substitute Datang International Power Generation subsidiary.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-huadian-corporation": {
+    "company": "China Huadian Corporation",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact-parent Glassdoor rating located; avoided subsidiary proxies.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-three-gorges-corporation": {
+    "company": "China Three Gorges Corporation",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact employer Glassdoor profile/rating surfaced.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:state-power-investment-corporation": {
+    "company": "State Power Investment Corporation",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No clearly identifiable exact-parent employer rating surfaced; no group proxy used.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:shenzhen-energy-group": {
+    "company": "Shenzhen Energy Group",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact company Glassdoor profile surfaced.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:jane-street": {
+    "company": "Jane Street",
+    "glassdoor_score": 8.8,
+    "glassdoor_notes": "4.4/5; 440 reviews. Comp, collaboration and WLB positives; peak intensity/advancement caveats. Company aggregate, not desk outlook. https://www.glassdoor.com/Reviews/Jane-Street-Reviews-E255549.htm",
+    "reddit_score": 7.5,
+    "reddit_notes": "Reddit discussions checked 2026-11-01 are mostly high-signal but anecdotal: January 2026 comments describe strong compensation, relatively collaborative culture and good retention; June 2026 intern account describes a toxic, competitive team experience, with a current employee disputing that this represents the wider culture. Mixed evidence; team and internship variance. https://www.reddit.com/r/quantfinance/comments/1q43oep/why_does_jane_street_have_so_much_prestige_in/ https://www.reddit.com/r/quantfinance/comments/1u30m7j/im_a_jane_street_intern_but_i_feel_completely/",
+    "review_status": "Reddit searched 2026-11-01; anecdotal evidence, confidence limited"
+  },
+  "co:citadel-securities": {
+    "company": "Citadel Securities",
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "4.2/5; 202 reviews. High comp, demanding expectations; Dec 2025 review notes silos and advancement concerns. https://www.glassdoor.com/Reviews/Citadel-Securities-Reviews-E1443495.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Recent Reddit comparisons (2025–26) repeatedly characterize Citadel/Citadel Securities culture as intense and cite poor work-life balance, while a lot of comments are candidates or outsiders rather than verified employees. Treat as directional, low-confidence sentiment and distinguish securities market-making entity from Citadel hedge fund. https://www.reddit.com/r/quantfinance/comments/1vrrjd8/imc_vs_citadel_vs_optiver/ https://www.reddit.com/r/quant/comments/1nohj63/citadel_or_jane_street/",
+    "review_status": "Reddit searched 2026-11-01; anecdotal evidence, confidence limited"
+  },
+  "co:drw": {
+    "company": "DRW",
+    "glassdoor_score": 8.8,
+    "glassdoor_notes": "4.4/5; 332 reviews. 2026 feedback includes growth positives and workload/HR strains. https://www.glassdoor.com/Reviews/DRW-Reviews-E235115.htm",
+    "reddit_score": 6.5,
+    "reddit_notes": "March 2026 r/quant discussion includes favorable second-hand descriptions of DRW culture and hiring, but little direct employee review content; other comments are industry speculation and desk-performance chatter. Low-confidence, sparse evidence, not a company-wide rating. https://www.reddit.com/r/quant/comments/1rs20pq/how_is_drw_doing/",
+    "review_status": "Reddit searched 2026-11-01; anecdotal evidence, confidence limited"
+  },
+  "co:optiver": {
+    "company": "Optiver",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor aggregate 3.8/5 from 602 company reviews (converted to 7.6/10). Recent trading-relevant review dated 2025-02-20 is available; overall rating is favorable, but a single review cannot represent all teams/offices. Checked 2026-11-01. https://api.glassdoor.com/Reviews/Optiver-Reviews-E243355.htm ; https://www.glassdoor.sg/Reviews/Employee-Review-Optiver-E243355-RVW95221171.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Reddit employee accounts in 2025 and 2026 report high pressure, performance/bonus concerns and management issues in some teams; other recent contributors describe good WLB or a positive team. Clear role/location variance; several posts are anecdotal and not representative. https://www.reddit.com/r/quant/comments/1jpci1r/dont_ever_work_at_optiver/ https://www.reddit.com/r/quantfinance/comments/1pxwa4k/optiver_delta_one_culture/ https://www.reddit.com/r/quantfinance/comments/1x8ptjl/optiver_quant_research_cut_throat_culture/ https://www.reddit.com/r/quantfinance/comments/1w5svi3/optiver_nyc/",
+    "review_status": "Reddit searched 2026-11-01; anecdotal evidence, confidence limited"
+  },
+  "co:imc-trading": {
+    "company": "IMC Trading",
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "4.1/5; 364 reviews. Jan 2026 review praises pay/talent, notes politics. https://www.glassdoor.com/Reviews/IMC-Trading-Reviews-E278100.htm",
+    "reddit_score": 6.0,
+    "reddit_notes": "Recent Reddit threads (Dec 2025–Sep 2026) describe good training/culture and reasonable hours, alongside claims of pay lag versus top peers, opaque bonuses, long non-competes and some new-hire churn. Mostly quant-community discussion, not a representative review sample; score reflects mixed sentiment. https://www.reddit.com/r/quantfinance/comments/1w6sg1g/why_does_imc_get_so_much_hate/ https://www.reddit.com/r/quantfinance/comments/1w71bvp/why_does_imc_get_so_much_hate/ https://www.reddit.com/r/quantfinance/comments/1tidpoy/imc_culture_for_a_nontrader/",
+    "review_status": "Reddit searched 2026-11-01; anecdotal evidence, confidence limited"
+  },
+  "co:flow-traders": {
+    "company": "Flow Traders",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 213 reviews. WLB relatively strong; concerns around comp, management and job security. https://api.glassdoor.com/Overview/Working-at-Flow-Traders-EI_IE258344.11%2C23.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:susquehanna-international-group-sig": {
+    "company": "Susquehanna International Group (SIG)",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 984 reviews. WLB 3.3, management 3.1, culture 3.5; Apr 2025 review. https://www.glassdoor.com/Reviews/Susquehanna-International-Group-Reviews-E24446.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:hudson-river-trading": {
+    "company": "Hudson River Trading",
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "4.3/5; 121 reviews. Pay 4.4, WLB 3.1; high pay/stress and mixed culture/strategy. https://www.glassdoor.com/Overview/Working-at-Hudson-River-Trading-EI_IE470937.11%2C31.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:jump-trading": {
+    "company": "Jump Trading",
+    "glassdoor_score": 9.0,
+    "glassdoor_notes": "4.5/5; 231 reviews. Aggregate only. https://www.glassdoor.com/Reviews/Jump-Trading-Reviews-E251744.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:xtx-markets": {
+    "company": "XTX Markets",
+    "glassdoor_score": 9.2,
+    "glassdoor_notes": "4.6/5; only 18 reviews; small sample. https://www.glassdoor.com.au/Overview/Working-at-XTX-Markets-EI_IE2384243.11%2C22.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:tower-research-capital": {
+    "company": "Tower Research Capital",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 310 reviews. Aug 2026 termination/hiring concern; other reports cite collaboration and performance decline. https://www.glassdoor.com/Reviews/Tower-Research-Capital-Reviews-E143628.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:qube-research-technologies": {
+    "company": "Qube Research & Technologies",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; 141 reviews. Growth/collaboration/pay balanced by heavy workload. https://www.glassdoor.com/Overview/Working-at-Qube-Research-and-Technologies-EI_IE3226090.11%2C41.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:squarepoint-capital": {
+    "company": "Squarepoint Capital",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 333 reviews. https://www.glassdoor.sg/Reviews/Squarepoint-Capital-Reviews-E1442647.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:dv-trading": {
+    "company": "DV Trading",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliable Glassdoor aggregate completed in this batch.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:eclipse-trading": {
+    "company": "Eclipse Trading",
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "3.3/5; 78 reviews. 2026 feedback mixed: people/WLB positives, below-market pay concerns. https://www.glassdoor.co.uk/Reviews/Eclipse-Trading-Reviews-E423801.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:maven-securities": {
+    "company": "Maven Securities",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 102 reviews. Sep 2026 positives on people/culture and criticism of trading management. https://www.glassdoor.co.uk/Reviews/Maven-Securities-Reviews-E716525.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:g-research": {
+    "company": "G-Research",
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "3.6/5; 211 reviews. 2026 technical/colleague positives alongside layoffs/culture concerns; management 2.8. https://stage.glassdoor.com/Reviews/G-Research-Reviews-E297747.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:virtu-financial": {
+    "company": "Virtu Financial",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliable Glassdoor aggregate completed in this batch.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:marex": {
+    "company": "Marex",
+    "glassdoor_score": 6.2,
+    "glassdoor_notes": "3.1/5; 171 reviews. Mar 2026 praises supportive leaders in some teams; concerns include technology management and old-boys-club culture. https://stage.glassdoor.com/Reviews/Marex-Reviews-E734644.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:tp-icap": {
+    "company": "TP ICAP",
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "3.4/5; 833 reviews. Aug 2026 says desk experience varies; top-down management criticism. https://www.glassdoor.com/Reviews/TP-ICAP-Reviews-E1621849.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:bgc-group": {
+    "company": "BGC Group",
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "3.6/5; 441 reviews. Mixed; WLB 3.8 vs comp 3.3. https://www.glassdoor.com/Overview/Working-at-BGC-Group-EI_IE9862.11%2C20.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee-review evidence found in targeted 2024-2026 searches; interview/application or consumer threads excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:tradition": {
+    "company": "Tradition",
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "Tradition Financial Services 3.3/5 (95); Aug 2026 reports workload/staffing concerns, early starts and mixed management. Compagnie Financière Tradition page shows 3.6/5 (67), a separate broker entity; identity varies by registry naming. https://www.glassdoor.com/Reviews/Tradition-Financial-Services-Reviews-E213409.htm ; https://www.glassdoor.com/Reviews/Compagnie-Financi%C3%A8re-Tradition-Junior-Broker-Reviews-EI_IE269773.0,30_KO31,44.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:cme-group": {
+    "company": "CME Group",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 1,334 reviews. WLB/culture 4.0, career 3.4; supportive environment but bureaucracy/politics and limited growth. https://static.glassdoor.com/Overview/Working-at-CME-Group-EI_IE7796.11,20.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:cboe-global-markets": {
+    "company": "Cboe Global Markets",
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "3.0/5; 310-317 reviews (cached values 2.9-3.0). https://www.glassdoor.com/Overview/Working-at-Cboe-EI_IE7355.11,15.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:akuna-capital": {
+    "company": "Akuna Capital",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 296 reviews. Aug 2026 trader review praises smart colleagues/fun work but says pay below market and compensation opaque. https://www.glassdoor.com/Reviews/AKUNA-CAPITAL-Reviews-E608116.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Dec 2025 Reddit thread has claimed current-employee experience on transparent performance feedback, mixed anonymous claims; anecdotal, no numeric score. https://www.reddit.com/r/quant/comments/1pdaiu1/current_state_of_akuna_capital/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:da-vinci-derivatives": {
+    "company": "Da Vinci Derivatives",
+    "glassdoor_score": 9.0,
+    "glassdoor_notes": "4.5/5; only 20 reviews. 2025-26 mostly positive culture/pay; Feb 2025 review alleges reduced bonus pool after record profits and promotion/hierarchy concerns. Small pool. https://www.glassdoor.com/Reviews/Da-Vinci-Derivatives-Reviews-E2997120.htm ; https://www.glassdoor.com/Reviews/Employee-Review-Da-Vinci-Derivatives-E2997120-RVW95271829.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:flow-traders-asia": {
+    "company": "Flow Traders Asia",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No separate Asia Glassdoor aggregate found. Parent Flow Traders has a separate 3.7/5 aggregate (see Flow Traders); not enough to treat as Asia-specific.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:kcg-holdings": {
+    "company": "KCG Holdings",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Legacy Glassdoor profile 3.5/5 (115) is stale: KCG was acquired by Virtu in 2017 and is not a current standalone employer. https://www.glassdoor.com/Reviews/KCG-Reviews-E722461.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:old-mission-capital": {
+    "company": "Old Mission Capital",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliable Glassdoor aggregate surfaced in targeted search.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:wolverine-trading": {
+    "company": "Wolverine Trading",
+    "glassdoor_score": 8.8,
+    "glassdoor_notes": "4.4/5; 102 reviews. WLB/culture positives; Aug 2026 notes limited career/title progression; pay/culture positive but below top competitors in one trader account. https://www.glassdoor.com/Reviews/Wolverine-Trading-Reviews-E269559.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:citadel": {
+    "company": "Citadel",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "Citadel hedge fund 3.9/5 (~779 reviews), distinct from Citadel Securities. Compensation 4.5 vs WLB 2.8/culture 3.3; intense hours, stress and politics recur. https://www.glassdoor.com/Reviews/Citadel-Reviews-E14937.htm",
+    "reddit_score": 4.5,
+    "reddit_notes": "Reddit discussions in 2025–26 often describe Citadel as highly demanding with poor work-life balance and a toxic culture, but comments mix employee anecdotes, candidate opinions and comparisons; team-specific variation is likely. This is hedge-fund entity, separate from Citadel Securities. https://www.reddit.com/r/quant/comments/1nohj63/citadel_or_jane_street/ https://www.reddit.com/r/quant/comments/1j4e4a2/jane_street_and_citadel_are_a_tier2_trading/",
+    "review_status": "Reddit searched 2026-11-01; anecdotal evidence, confidence limited"
+  },
+  "co:millennium-management": {
+    "company": "Millennium Management",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Millennium hedge fund profile 3.7/5 (~601 reviews); compensation 3.9, WLB/culture/management about 3.2. Avoid unrelated Millennium Management profile. https://static.glassdoor.com/Overview/Working-at-Millennium-EI_IE850344.11,21.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:balyasny-asset-management": {
+    "company": "Balyasny Asset Management",
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "4.2/5; 244 reviews. Compensation 4.4, WLB 3.4. https://www.glassdoor.com/Reviews/Balyasny-Asset-Management-Reviews-E262940.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:point72": {
+    "company": "Point72",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No direct aggregate score completed in this search batch.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:schonfeld-strategic-advisors": {
+    "company": "Schonfeld Strategic Advisors",
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "3.5/5; 131 reviews. Compensation 3.8 vs senior management 2.8, WLB 3.5; heterogeneous accounts. https://www.glassdoor.com/Overview/Working-at-Schonfeld-EI_IE13906.11,20.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:d-e-shaw": {
+    "company": "D. E. Shaw",
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "D. E. Shaw US flagship 4.1/5 (278 reviews); comp 4.5, WLB 3.9, culture 4.1. Do not substitute India-specific DESIS profile. https://www.glassdoor.com/Overview/Working-at-D-E-Shaw-and-Co-Investment-Firm-EI_IE29290.11,42.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:two-sigma": {
+    "company": "Two Sigma",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; 405 reviews. WLB 4.5, culture 4.3, management 3.3; Oct 2026 praise for culture/WLB alongside comp, bureaucracy and mobility concerns. https://static.glassdoor.com/Reviews/Two-Sigma-Reviews-E241045.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:man-group": {
+    "company": "Man Group",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 373 reviews. Flexibility/hybrid is positive; hours vary by role. https://api.glassdoor.com/Reviews/Man-Group-Reviews-E234069.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:brevan-howard": {
+    "company": "Brevan Howard",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No aggregate surfaced. Dec 2024 employee review cites above-market pay but difficult interpersonal dynamics; Q&A is mixed. https://www.glassdoor.com/Reviews/Employee-Review-Brevan-Howard-E300307-RVW93966100.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:bluecrest-capital-management": {
+    "company": "BlueCrest Capital Management",
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "3.0/5; 139 reviews. 2025-26 reviews cite pay/learning, but also career limits, turnover and morale. https://stage.glassdoor.com/Reviews/BlueCrest-Capital-Management-Reviews-E305621.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:marshall-wace": {
+    "company": "Marshall Wace",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-wide aggregate surfaced; London office rating 4.3/5 is location-specific and not used as a company score. Feb 2026 analyst review notes accountable/performance-driven culture and stress. https://www.glassdoor.com/Location/Marshall-Wace-Londres-Reino-Unido-Location-EI_IE269459.0,13_IL.14,33_IC2671300.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee review found in targeted 2024-2026 searches; candidate/interview/industry chatter excluded. Search may miss deleted/private posts.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:exoduspoint": {
+    "company": "ExodusPoint",
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "3.3/5; 75 reviews. Mixed comments on atmosphere, work ethic and engineering vs turnover/support/career growth, pay and office constraints. Small, team-diverse pool. https://www.glassdoor.co.uk/Reviews/ExodusPoint-Reviews-E3194507.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Older Reddit thread only; no substantive 2024-26 employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:jingan-asset-management": {
+    "company": "Jingan Asset Management",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No identifiable Glassdoor employer profile. Small Hong Kong employer; no aggregate located.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:taula-capital-management": {
+    "company": "Taula Capital Management",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No identifiable Glassdoor employer profile. Small UK LLP. https://find-and-update.company-information.service.gov.uk/company/OC447685",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:bridgewater-associates": {
+    "company": "Bridgewater Associates",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 599 reviews. Smart colleagues/learning, mixed reactions to distinctive culture; rating/count vary by snapshot. https://www.glassdoor.com/Reviews/Bridgewater-Associates-Reviews-E117647.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Reddit culture comments are from 2022-23, outside preferred window; polarized anecdotes not scored. https://www.reddit.com/r/cscareerquestions/comments/s2f8nl ; https://www.reddit.com/r/FinancialCareers/comments/17z3xdb",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:aqr-capital-management": {
+    "company": "AQR Capital Management",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; 256 reviews. Academic colleagues/learning; concerns include long or unpredictable hours, management, pay transparency and progression. https://www.glassdoor.com/Reviews/AQR-Capital-Management-Reviews-E213435.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:blackrock": {
+    "company": "BlackRock",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 6,719 reviews. Learning, colleagues and benefits positive; hours, office attendance, pay, leadership and culture mixed. Large diverse employer. https://www.glassdoor.com/Reviews/BlackRock-Reviews-E9331.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. India/Gurugram posts mention office attendance, long hours and team variability; location-specific anecdote, no numeric score. https://www.reddit.com/r/gurgaon/comments/1tkalju/joining_blackrock_soon/ ; https://www.reddit.com/r/FinancialCareers/comments/1tkalzb/joining_blackrock_soon/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:vanguard": {
+    "company": "Vanguard",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 6,392 reviews. Benefits/WLB positive; recent comments cite slow decisions, hierarchy, technology, pay and progression. https://www.glassdoor.com/Reviews/Vanguard-Reviews-E4084.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Charlotte discussion mixes stability/benefits/team positives with lower pay, slower promotion and micromanagement. Anecdotal, no numeric score. https://www.reddit.com/r/Charlotte/comments/1qubriw/hows_it_like_working_at_vanguard/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:pimco": {
+    "company": "PIMCO",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 908 reviews. Colleagues/culture praised; concerns include remote flexibility, management, long hours and expectations. https://www.glassdoor.com/Reviews/PIMCO-Reviews-E3585.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2026 thread asks about a specific operations role but provides little direct employee evidence; not scored. https://www.reddit.com/r/FinancialCareers/comments/1u8axxo/performance_operations_at_pimco_newport_beach/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:brookfield-asset-management": {
+    "company": "Brookfield Asset Management",
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "3.5/5; 487 reviews on broader Brookfield profile. Strong projects/pay vs demanding culture, leadership and micromanagement. Entity match uncertain; group-level proxy. https://www.glassdoor.com/Overview/Working-at-Brookfield-EI_IE5824.11,21.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No meaningful employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:jpmorgan-chase": {
+    "company": "JPMorgan Chase",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 36,388 reviews. Benefits, learning, colleagues and growth; long hours, demand, leadership, office policy and politics vary by team. https://www.glassdoor.com/Overview/Working-at-JPMorganChase-EI_IE5224839.11,24.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Recent employee discussions mixed: benefits/good teams vs hours, politics, raises and office policy; anecdotal, no numeric score. https://www.reddit.com/r/JPMorganChase/comments/1u2ltho/work_culture_and_expectations/ ; https://www.reddit.com/r/FinancialCareers/comments/1qlu2zq/jpmorgan_gave_little_to_no_raises_this_year/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:goldman-sachs": {
+    "company": "Goldman Sachs",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 19,789 reviews. Benefits, exposure and career value vs long hours, WLB, management and internal mobility. https://www.glassdoor.com/Overview/Working-at-Goldman-Sachs-EI_IE2800.11,24.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Anecdotal posts describe high workload/competitive culture alongside prestige and learning; mix of employee, candidate and hearsay. No numeric score. https://www.reddit.com/r/careerguidance/comments/1qh37qb/goldman_sachs_stay_or_go/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:citigroup": {
+    "company": "Citigroup",
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "Citi brand 3.6/5; 37,049 reviews. Supportive teams/inclusion vs communication, restructuring, security, promotion and workload concerns. https://www.glassdoor.com/Reviews/Citi-Reviews-E8843.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Recent posts describe layoffs/workload and pressure, with counterexamples of good managers/WLB; location and team-specific anecdotes. No numeric score. https://www.reddit.com/r/citibank/comments/1wnwoxs/just_got_hired_any_insights_to_culture_and/ ; https://www.reddit.com/r/citibank/comments/1vvkdli/wlb_at_citi/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:morgan-stanley": {
+    "company": "Morgan Stanley",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 20,192 reviews. Learning/support/WLB positives vs long hours, slow progression, bureaucracy and politics. https://www.glassdoor.com/Reviews/Morgan-Stanley-Reviews-E2282.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Very limited direct Reddit workplace evidence surfaced; most results were recruitment discussion. No score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:bank-of-america": {
+    "company": "Bank of America",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 46,551 reviews. Benefits and growth positives; office policy, slow progression and team-specific issues. https://www.glassdoor.com/Reviews/Bank-of-America-Reviews-E8874.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Recent posts discuss attendance policy and varying pay/benefits/team quality; anecdotal, no numeric score. https://www.reddit.com/r/BankOfAmerica/comments/1vgnr37/bofa_new_employee_policy/ ; https://www.reddit.com/r/Charlotte/comments/1vkw6g9/bank_of_america_now_has_stricter_wfh_policies/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:barclays": {
+    "company": "Barclays",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 22,478 reviews. Pay/benefits/WLB positives; stress, bureaucracy, technology, management and promotions concerns. https://www.glassdoor.com/Reviews/Barclays-Reviews-E3456.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No substantive employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:bnp-paribas": {
+    "company": "BNP Paribas",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 9,254 reviews. Team/social culture, WLB and growth positives; slow pay/bonus increases and manager/corporate inefficiency concerns. https://www.glassdoor.com/Reviews/BNP-Paribas-Reviews-E10342.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:societe-generale": {
+    "company": "Société Générale",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 7,229 reviews. D&I 3.9, WLB 3.8 vs management 3.1 and comp/career 3.4. Broad parent view. https://www.glassdoor.com/Reviews/Soci%C3%A9t%C3%A9-G%C3%A9n%C3%A9rale-Reviews-E10350.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence in 2024-26 targeted search.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:deutsche-bank": {
+    "company": "Deutsche Bank",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 13,020 reviews. Available indicators suggest stronger WLB/culture than senior management and compensation/career; limited recent detail. https://www.glassdoor.com/Reviews/Deutsche-Bank-Reviews-E3150.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:ubs": {
+    "company": "UBS",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 14,830 reviews. WLB/culture exceed pay/management; tech, bureaucracy and compensation concerns. https://www.glassdoor.com/Reviews/UBS-Reviews-E3419.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:hsbc": {
+    "company": "HSBC",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 28,608 reviews. Benefits/global exposure positives; bureaucracy, decisions and progression concerns. Global role/location mix. https://www.glassdoor.com/Reviews/HSBC-Reviews-E3482.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:standard-chartered": {
+    "company": "Standard Chartered",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 11,188 reviews. Some recent WLB/progression positives; culture and progression can shift after team/leadership changes. https://www.glassdoor.com/Reviews/Standard-Chartered-Bank-Reviews-E226853.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:macquarie-group": {
+    "company": "Macquarie Group",
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "3.6/5; 5,049 reviews. D&I 3.9, culture 3.6, WLB 3.4, management 3.2. https://www.glassdoor.com/Reviews/Macquarie-Group-Reviews-E12088.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence in 2024-26 targeted search.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:mizuho-financial-group": {
+    "company": "Mizuho Financial Group",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; ~1,250 reviews. 2026 reports stable conditions but challenging raises; parent profile, distinct from Mizuho Bank. https://www.glassdoor.com/Reviews/Mizuho-Financial-Group-Reviews-E42320.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence in 2024-26 targeted search.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:mufg": {
+    "company": "MUFG",
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "3.5/5; 3,520 reviews. Recent summaries mixed on benefits/WLB vs technology, leadership and office requirements. https://www.glassdoor.com/Reviews/MUFG-Reviews-E13322.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence in 2024-26 targeted search.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:nomura": {
+    "company": "Nomura",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 2,575 reviews. WLB/culture about 3.8; exposure/support positives, concerns on pay/raises, hours and layoffs. https://www.glassdoor.com/Reviews/Nomura-Reviews-E3475.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence in 2024-26 targeted search.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:ing-group": {
+    "company": "ING Group",
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "ING parent 4.1/5; 3,856 reviews. Sep 2026 benefits/WLB praised, growth/pace limitations noted; avoided unrelated tiny ING-Group profile. https://www.glassdoor.com/Reviews/ING-Reviews-E4264.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2025 Philippines-based employee comment discusses promotion eligibility; limited, local evidence and no numeric score. https://www.reddit.com/r/BPOinPH/comments/1k2jh6f/thoughts_on_ing/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:natwest-markets": {
+    "company": "NatWest Markets",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Exact Markets score unavailable; NatWest Group parent 3.9-4.0/5 is not used as a division score. Parent themes include WLB/benefits and management/micromanagement variation. https://www.glassdoor.com/Overview/Working-at-NatWest-Group-EI_IE10222.11,24.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying NatWest Markets employee Reddit evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:abn-amro": {
+    "company": "ABN AMRO",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; 1,000 reviews. No recent dated qualitative themes surfaced in this result. https://www.glassdoor.com/Reviews/ABN-AMRO-Reviews-E10499.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:rbc-capital-markets": {
+    "company": "RBC Capital Markets",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact Capital Markets score; RBC parent 4.0/5 (11,191) exists, but not used as a division-specific rating. https://www.glassdoor.com/Reviews/RBC-Reviews-E3358.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:td-securities": {
+    "company": "TD Securities",
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "4.0/5; 279 reviews. WLB 4.1, culture 4.0, comp 3.7; team/leadership/training positives; investment-banking hours caveat. https://www.glassdoor.com/Overview/Working-at-Td-Securities-EI_IE6287081.11,24.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:scotiabank": {
+    "company": "Scotiabank",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Scotiabank parent 3.9/5 (11,247); exact Scotia Capital Markets score not found and parent not substituted. https://www.glassdoor.com/Overview/Working-at-Scotiabank-EI_IE11013.11,21.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:wells-fargo": {
+    "company": "Wells Fargo",
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "3.5/5; 54,938 reviews. Senior-management score 2.9; broad parent, not CIB specific. https://www.glassdoor.com/Reviews/Wells-Fargo-Reviews-E8876.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:jefferies": {
+    "company": "Jefferies",
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; ~1,300 reviews. Aggregate found; limited recent qualitative detail in this pass. https://www.glassdoor.com/Overview/Working-at-Jefferies-EI_IE1546.11,20.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:credit-agricole-cib": {
+    "company": "Crédit Agricole CIB",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Exact CACIB profile exists but score not retrieved. Parent Crédit Agricole aggregate differs by locale and is not substituted. https://www.glassdoor.fr/Pr%C3%A9sentation/Travailler-chez-CACIB-EI_IE476908.16,21.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:smbc": {
+    "company": "SMBC",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliable company-wide aggregate surfaced in this pass. Reddit thread includes candidate and claimed-current-employee comments on hierarchy/glass ceiling; too thin to score. https://www.reddit.com/r/singaporejobs/comments/1u4qdvu/working_culture_of_smbc/",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Limited Reddit anecdote; thread mixes candidate and employee claims, no score. https://www.reddit.com/r/singaporejobs/comments/1u4qdvu/working_culture_of_smbc/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:anz": {
+    "company": "ANZ",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 6,373 reviews. Oct 2026 praises WLB/benefits while flagging restructuring, leadership changes and slow processes. https://www.glassdoor.com.au/Reviews/ANZ-Reviews-E5782.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Jun 2026 active employee discussion includes negative management/stress accounts; qualitative and self-selected, no score. https://www.reddit.com/r/auscorp/comments/1tx71o3/anz_is_the_worst_bank_to_work_at_of_the_big4/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:commonwealth-bank-of-australia": {
+    "company": "Commonwealth Bank of Australia",
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "3.6/5; 8,243 reviews. WLB/D&I 3.8 vs senior management 3.0; Oct 2026 includes positive conditions and leadership/performance communication concerns. https://www.glassdoor.com.au/Reviews/Commonwealth-Bank-of-Australia-Reviews-E7922.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:national-australia-bank": {
+    "company": "National Australia Bank",
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 4,923 reviews. D&I 3.9, WLB 3.8 vs management 3.1; latest Oct 2026 excerpt limited. https://www.glassdoor.com.au/Reviews/NAB-National-Australia-Bank-Reviews-E4262.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:ocbc": {
+    "company": "OCBC",
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "3.3/5; ~3,650 reviews. Aggregate score identified; recent review themes not captured. https://www.glassdoor.com/Overview/Working-at-OCBC-EI_IE9773.11,15.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:dbs": {
+    "company": "DBS",
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "DBS Bank 3.8/5; 7,752 reviews. https://www.glassdoor.com/Reviews/DBS-Bank-Reviews-E611812.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific employee evidence found.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:uob": {
+    "company": "UOB",
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "Glassdoor exact-parent United Overseas Bank 3.4/5 (3,739 reviews). Recent themes include people/culture and learning alongside workload, long hours, hierarchy and limited progression. Broad bank-wide score, not trading-desk-specific. https://static.glassdoor.com/Reviews/United-Overseas-Bank-Reviews-E11462.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2025-2026 Singapore threads repeatedly allege long overtime, rigid/micromanaged culture and silos; some note team variation. Anecdotal and not a numeric score. https://www.reddit.com/r/singaporejobs/comments/1n0drya/ ; https://www.reddit.com/r/asksg/comments/1ufv3wh/uob_work_culture_pay_and_benefits/ ; https://www.reddit.com/r/askSingapore/comments/1t4eqhy/",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:mirae-asset-securities": {
+    "company": "Mirae Asset Securities",
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "Glassdoor exact profile 3.0/5 (60 reviews). Recent reviews are mixed: learning/deals and WLB positives; low pay, pressure, hierarchy and management concerns. https://www.glassdoor.com/Reviews/Mirae-Asset-Securities-Reviews-E646054.htm ; 2024 review https://www.glassdoor.com/Reviews/Employee-Review-Mirae-Asset-Securities-E646054-RVW89122754.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No specific employee evidence identified in targeted Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:samsung-securities": {
+    "company": "Samsung Securities",
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "Glassdoor exact profile 3.0/5 (~47-48 reviews). 2025-26 snippets cite stable conditions/pay but bureaucracy, politics and limited career growth. https://www.glassdoor.com/Reviews/Samsung-Securities-Reviews-E640168.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No specific employee evidence identified in targeted Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-international-capital-corporation": {
+    "company": "China International Capital Corporation",
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Search found a China-location profile, not a reliable overall parent rating; no score assigned. https://static.glassdoor.com/Reviews/CICC-China-Reviews-EI_IE236265.0,4_IL.5,10_IC1160178.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  },
+  "co:china-merchants-securities": {
+    "company": "China Merchants Securities",
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "Exact-name China Merchant Securities profile 3.4/5 (168 reviews). Direct recent finance analyst review surfaced, but detail is insufficient for reliable theme summary. https://www.glassdoor.co.uk/Reviews/China-Merchant-Securities-Reviews-E480109.htm ; https://www.glassdoor.com/Reviews/Employee-Review-China-Merchant-Securities-E480109-RVW99755306.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Search did not identify company-specific Reddit employee reviews; no score.",
+    "review_status": "Glassdoor and Reddit checked"
+  }
+}

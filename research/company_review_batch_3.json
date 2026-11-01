@@ -1,0 +1,828 @@
+{
+  "co:intercontinental-exchange-ice": {
+    "glassdoor_score": 6.4,
+    "glassdoor_notes": "3.2/5; 1,978 reviews. Sep 2026 includes smart-colleague/comp positives, stress and everything-is-priority criticism. https://www.glassdoor.com/Reviews/Intercontinental-Exchange-Reviews-E13785.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Former/acquired-company staff report workload, micromanagement and post-acquisition layoffs; mixed legacy/team evidence, no numeric score. https://www.reddit.com/r/cscareerquestions/comments/1l9zl9e/working_at_intercontinental_exchange_company_ice/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:eex-group": {
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "European Energy Exchange proxy 4.2/5; 16 reviews. 2026 analysts praise work environment/WLB, with remote coordination/flexibility caveats. Profile is EEX operating entity, not clearly consolidated group. https://www.glassdoor.com/Reviews/European-Energy-Exchange-Reviews-E468061.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant Reddit employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:nasdaq": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 1,432 reviews. 2026 brand/colleague/international exposure positives, but department-dependent WLB, complexity/politics and below-market pay/workload concerns. https://www.glassdoor.com/Reviews/Nasdaq-Reviews-E12152.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Reddit results mainly hiring/interview posts, not employee workplace evidence; excluded.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:singapore-exchange-sgx": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 293 reviews. Aug 2026 technology VP praises WLB/autonomy but notes lean staffing; analyst reports limited learning/growth. https://www.glassdoor.com/Reviews/Singapore-Exchange-Reviews-E19302.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Sep 2026 thread includes unverified culture characterization; identity/insider status unclear, no score. https://www.reddit.com/r/singaporejobs/comments/1w8xtps/anyone_working_at_sgx/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:hong-kong-exchanges-and-clearing-hkex": {
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "3.5/5; 416 reviews. 2026 reviews include stable pay/exposure/WLB positives with slow junior progression, political culture and unclear KPIs. https://www.glassdoor.com/Reviews/Hong-Kong-Exchanges-Reviews-E41081.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:japan-exchange-group-jpx": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "3.8/5; only 11 ratings. 2024-25 reports stability/reputation/WLB, but seniority-led promotion and limited growth. https://www.glassdoor.com/Overview/Working-at-Japan-Exchange-Group-EI_IE1035521.11,31.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:japan-electric-power-exchange-jepx": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No exact Glassdoor employee profile/aggregate found for Japan Electric Power Exchange; retain provisional neutral 5/10. Checked 2026-11-01.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:nord-pool": {
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "4.1/5; 7 reviews on page (overview says 10). Engineer/data analyst reviews praise learning, colleagues and culture; note regulated-sector pace and salary/ownership caveats. https://www.glassdoor.com/Reviews/Nord-Pool-Reviews-E1287334.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:epex-spot": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 11 reviews. 2025-26 reviews praise flexibility/growth/helpful colleagues; one operator notes pressure and low recognition. Small sample. https://www.glassdoor.com/Reviews/EPEX-SPOT-Reviews-E1260826.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:aemo": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 156 reviews. 2026 reviews mix WLB, culture and professional-colleague praise with management and legacy-process criticism. https://www.glassdoor.com/Reviews/Australian-Energy-Market-Operator-Reviews-E854568.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:electric-reliability-council-of-texas-ercot": {
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "4.1/5; 191 reviews. Technical/benefit/stability positives; manager variability, turnover and pace concerns. https://www.glassdoor.com/Reviews/Ercot-Reviews-E23282.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:pjm-interconnection": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "4.3/5; 141 reviews. 2026 technical/benefits/stability positives, but promotion can be slow and WLB poor in some jobs. https://www.glassdoor.com/Reviews/PJM-Interconnection-Reviews-E16691.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. A 2026 operations comment recounts grid incident history, not employer workplace sentiment; no numeric score. https://www.reddit.com/r/AskElectricians/comments/1vpczxl/remember_when_the_great_northeast_blackout_was_23/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:midcontinent-independent-system-operator-miso": {
+    "glassdoor_score": 6.4,
+    "glassdoor_notes": "3.2/5; 290 reviews. Profile themes include benefits/stability and mission alongside leadership, culture, technology and advancement concerns. https://www.glassdoor.com/Overview/Working-at-MISO-EI_IE22941.11,15.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2024 first-person current employee says they enjoy the role/team. One anecdote, no score. https://www.reddit.com/r/Grid_Ops/comments/1dli5xc/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:california-iso-caiso": {
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "4.2/5; 140 reviews. 2026 benefits/remote/colleague positives; stress on major projects and flat progression concerns. https://www.glassdoor.com/Reviews/California-ISO-Reviews-E16092.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:iso-new-england": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 100 reviews. Interesting work and colleagues/culture praised; pay, leadership, hybrid policy and slow processes are concerns. https://www.glassdoor.com/Overview/Working-at-ISO-New-England-EI_IE17406.11,26.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:new-york-iso-nyiso": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "4.3/5; 130 reviews. 2026 technical/collaboration/stability positives, with layered management, office policy, feedback and compensation criticism. https://www.glassdoor.com/Reviews/New-York-ISO-Reviews-E16102.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. A local 2025 thread describes NYISO as a stable employer but commenter identity is unclear; low confidence, no score. https://www.reddit.com/r/Albany/comments/1l8ytt9/best_midsized_to_large_companies_to_work_for_in/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:ontario-ieso": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No stable exact-entity Glassdoor employer profile confirmed; retain neutral provisional 5/10, not a published rating. Indeed shows 3.3/5 from 22 reviews, but that separate-platform score is not substituted here. Checked 2026-11-01. https://ca.indeed.com/cmp/Ieso/reviews",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee workplace evidence found.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:alberta-electric-system-operator-aeso": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "3.7/5; 119 reviews. 2026 lead-engineer feedback praises benefits/flexibility/team, notes tenure-based promotion, slow change/accountability. https://www.glassdoor.com/Overview/Working-at-Alberta-Electric-System-Operator-EI_IE156469.11,43.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Former employee posts describe market operations, not workplace-culture reviews; no numeric score. https://www.reddit.com/r/alberta/comments/1fsevdi/grid_stability_this_week/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:national-energy-system-operator-neso": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "3.9/5; 50 reviews. Profile excerpts vary: mission/WLB/people positives vs bureaucracy, turnover and leadership concerns. https://www.glassdoor.com/Overview/Working-at-National-Energy-System-Operator-EI_IE10208685.11,42.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2026 anonymous/secondhand reports raise management/feedback concerns; low confidence and no score. https://www.reddit.com/r/unitedkingdom/comments/1xa4aq1/staff_at_britains_grid_operator_did_not_cover_up/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:gaspool": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Legacy entity; GASPOOL market area merged into Trading Hub Europe in 2021. No current independent employer profile found, so retain provisional neutral 5/10. Checked 2026-11-01. https://www.tradinghub.eu/Portals/0/Archiv%20GASPOOL/GPL%20Archiv%20engl%20Pressemitteilungen/20120604_GPL.pdf?ver=8rCh-8k1SGSwEKimp4rN8Q%3D%3D",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No current company-specific employee workplace evidence found.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:european-network-of-transmission-system-operators-for-electricity-entso-e": {
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "Glassdoor exact-name profile 3.3/5 (20 reviews; low sample). No dated themes established in this search. https://www.glassdoor.com/Reviews/European-Network-of-Transmission-System-Operators-for-Electricity-Reviews-E776606.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:australian-securities-exchange-asx": {
+    "glassdoor_score": 6.4,
+    "glassdoor_notes": "Glassdoor exact ASX profile 3.2/5 (148 reviews). Ratings: D&I 3.7, WLB 3.5; lower senior management 2.6 and culture/career 2.8. Summary is mixed on friendly/learning vs management/culture. https://www.glassdoor.com/Overview/Working-at-ASX-EI_IE42547.11,14.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:korea-exchange-krx": {
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "Glassdoor exact Korea Exchange profile 3.4/5 (24 reviews; low sample). Category scores favor compensation/WLB, while culture 2.6, career 2.5, senior management 2.0 and D&I 1.4. Recent dates not surfaced. Avoid confusion with Korea Exchange Bank. https://www.glassdoor.com/Overview/Working-at-Korea-Exchange-EI_IE721290.11,25.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:china-beijing-power-exchange": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No exact Glassdoor employee profile/aggregate found; search matches for Beijing Power Exchange were technical/market references rather than employee reviews. Retain provisional neutral 5/10. Checked 2026-11-01.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:cru-group": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No exact Glassdoor employee aggregate found for CRU Group; retain provisional neutral 5/10. Checked 2026-11-01. https://www.crugroup.com/",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific employee reviews found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:kpler": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor exact profile 3.8/5 (134 reviews). Recent reviews diverge: smart teams, remote flexibility and product praised; others report stress, WLB strain, management/layoff concerns. Avoid overgeneralizing; reviews differ by team and date. https://www.glassdoor.com/Reviews/Kpler-Reviews-E1060598.htm ; https://www.glassdoor.com/Reviews/Employee-Review-Kpler-E1060598-RVW95373259.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No specific employee-post evidence found in targeted 2024-2026 Reddit searches; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:aurora-energy-research": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor exact profile 3.8/5 (192 reviews). Recent 2026 reviews cite talented teams and interesting work alongside attrition, workload redistribution, limited advancement, inconsistent training and strategic/management concerns; some praise flexibility. https://www.glassdoor.com/Reviews/Aurora-Energy-Research-Reviews-E1487907.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Reddit result was an interview-process query rather than employee review; no specific employee evidence found in 2024-2026 searches. https://www.reddit.com/r/jobs/comments/1hg7yyp/interview_aurora_energy_research/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:wood-mackenzie": {
+    "glassdoor_score": 6.7,
+    "glassdoor_notes": "Glassdoor 3.3-3.4/5 (~902-925 reviews; displayed as 6.7/10 from 3.35 midpoint). Recent themes: interesting work and colleagues; weaker pay and management scores, with comments on transparency and career growth. https://www.glassdoor.com/Overview/Working-at-Wood-Mackenzie-EI_IE36813.11%2C25.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific Reddit employee review evidence located in 2024-2026 search; qualitative search result, not a rating.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:s-p-global-commodity-insights": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "No separate employer score; business renamed S&P Global Energy in 2025. Parent S&P Global Glassdoor 4.0/5 (~9,235 reviews), shown as parent proxy only; not division-specific. https://www.glassdoor.co.uk/Reviews/S-and-P-Global-Reviews-E1259396.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:rystad-energy": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Glassdoor 3.7/5 (168 reviews). 2026 comments are mixed: work-life balance/pay and learning alongside concerns about management direction, silos and organization; team and role may vary. https://www.glassdoor.com/Reviews/Rystad-Energy-Reviews-E749005.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No systematic company-specific Reddit employee sample located for 2024-2026; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:vortexa": {
+    "glassdoor_score": 9.0,
+    "glassdoor_notes": "Glassdoor 4.5/5 (92 reviews); small-to-moderate sample. No reliable dated themes captured in this search, so score only reflects aggregate. https://www.glassdoor.com/Overview/Working-at-Vortexa-EI_IE2563291.11%2C18.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:energy-aspects": {
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "Glassdoor reports 3.6/5 from 91 reviews (57% recommend). Recent 2026 reviews are mixed: positive comments mention colleagues, compensation, flexibility and interesting work; negatives mention inconsistent strategy, management/culture, workload and office policy. Checked 2026-11-01. https://www.glassdoor.co.uk/Reviews/Energy-Aspects-Reviews-E1266823.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:icis": {
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "Approx. Glassdoor 3.5/5 from a company-search listing (~315 reviews); direct company profile not confirmed, so treat as provisional and not division-specific. https://www.glassdoor.com/Explore/top-editor-companies-houston_IO.4%2C10_IL.21%2C28_IC1140171.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:argus-media": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "Glassdoor 3.9/5 (483 reviews); broad company aggregate. Recent dated themes not established in this search, so no role-specific inference. https://www.glassdoor.com/Overview/Working-at-Argus-Media-EI_IE153509.11%2C22.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:enverus": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Glassdoor 4.0/5 (628 reviews); broad company aggregate. No dated review themes captured in this search. https://www.glassdoor.co.uk/Reviews/Enverus-Reviews-E294821.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:energy-quantified": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "No distinct current Glassdoor aggregate located. Provisional 8/10 employer proxy from Montel (4.0/5, six reviews), because Energy Quantified was integrated into Montel AS in 2024; this is not an Energy Quantified-specific rating and the sample is small. Checked 2026-11-01. https://www.glassdoor.ca/Reviews/Montel-Reviews-E2301874.htm ; https://montel.energy/legal-notice",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:yes-energy": {
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "Glassdoor 3.6/5 (28 reviews; small sample). Sept. 2026 feedback is mixed: colleagues, balance and autonomy praised; pay and management/processes criticized. https://www.glassdoor.com/Reviews/Yes-Energy-Reviews-E2085152.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:montel": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Glassdoor reports 4.0/5 from 6 reviews, with 53% recommending. Recent 2026 comments praise work environment, flexibility, colleagues and ownership; concerns include pay, communication, strategy and management. Very small sample; checked 2026-11-01. https://www.glassdoor.ca/Reviews/Montel-Reviews-E2301874.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:baringa": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Glassdoor company-wide score 4.0/5 (638 reviews); category ratings: WLB 3.7, compensation 3.8, culture 4.1, career 4.0, senior management 3.8. Company aggregate, not energy desk-specific; recent qualitative review themes not established. https://stage.glassdoor.com/Compare/Bain-and-Company-vs-Baringa-Partners-EI_IE3752-E587029.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:fge": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliable Glassdoor employer aggregate located. A Reddit career-advice thread contains an unverified toxic-culture allegation; insufficient basis for a score or verified employee claim. https://www.reddit.com/r/Commodities/comments/1jitz2q",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. One 2025 Reddit career-advice thread includes an unverified culture allegation; author/employee status not established. No numeric score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:lseg-data-analytics": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "No separate profile; LSEG parent Glassdoor 3.7/5 (~3,392 reviews), used as an explicitly labeled parent proxy. Recent excerpts cite benefits, international colleagues and supportive teams, with concerns about pay, mobility and direction; not specific to this division. https://www.glassdoor.com/Overview/Working-at-LSEG-London-Stock-Exchange-Group-EI_IE11860.11%2C43.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying division-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:bloombergnef": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "No separate employer profile located; Bloomberg parent Glassdoor 4.0/5 (~8,497 reviews), shown as parent proxy only. Oct. 2026 feedback mixes praise for colleagues/culture with long-hours and progression concerns; not BNEF-specific. https://www.glassdoor.com/Reviews/Bloomberg-Reviews-E3096.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying BNEF-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:eia": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No distinct employee Glassdoor profile located; did not substitute a federal/DOE-wide score.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:international-energy-agency-iea": {
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "Glassdoor reports 3.6/5 from 60 reviews (72% recommend). 2026 analyst feedback praises mission, expert peers and relevant work, while noting hierarchy, limited growth and fixed-term job insecurity. Checked 2026-11-01. https://www.glassdoor.ca/Reviews/International-Energy-Agency-Reviews-E304477.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:oxford-institute-for-energy-studies-oies": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No reliable employee Glassdoor aggregate found; retain provisional neutral 5/10. General business/directory ratings are not employee-review evidence. Checked 2026-11-01.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:ceraweek-s-p-global": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Event/conference brand, not a separate employer. S&P Global parent Glassdoor 4.0/5 (~9,235 reviews), used only as an explicit parent proxy; not event-team specific. https://www.glassdoor.co.uk/Reviews/S-and-P-Global-Reviews-E1259396.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No standalone employer/Reddit score for event brand.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:lseg-workspace": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Product brand, not a separate employer. LSEG parent Glassdoor 3.7/5 (~3,392 reviews) used as parent proxy only. https://www.glassdoor.com/Overview/Working-at-LSEG-London-Stock-Exchange-Group-EI_IE11860.11%2C43.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No product-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:lloyd-s-list-intelligence": {
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "Glassdoor 3.0/5 (36 reviews). Recent reviews mention remote flexibility and helpful colleagues alongside management/micromanagement, downsizing/job security and career-growth concerns. Exact employer profile. https://www.glassdoor.com/Reviews/Lloyd-s-List-Intelligence-Reviews-E6520703.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:marinetraffic": {
+    "glassdoor_score": 8.8,
+    "glassdoor_notes": "Glassdoor 4.4/5 (65 reviews). Recent themes include colleagues, remote work and data-science work; some onboarding and progression concerns. Profile may reflect acquired business staff rather than current standalone employer. https://www.glassdoor.com/Reviews/MarineTraffic-Reviews-E1267555.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:synmax": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No usable Glassdoor aggregate verified; retain neutral provisional 5/10, not a published score. Jobstore shows 3.9/5 from two reviews, but this is a different platform and tiny sample, so not substituted. Checked 2026-11-01. https://www.jobstore.com/us/company/2600189/synmax",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:vaisala": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor 3.8/5 (165 reviews). Recent themes praise colleagues, benefits and products; concerns include restructuring, under-resourcing, pay ceilings and micromanagement. https://www.glassdoor.com/Reviews/Vaisala-Reviews-E31453.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:entso-e-transparency-platform": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. The Transparency Platform is an ENTSO-E product, not an employer; no exact Glassdoor rating found. Did not substitute association employee reviews.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No product-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:elexon": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor 3.8/5 (72 reviews) for UK electricity balancing/settlement body ELEXON. Reviews cite purpose, stability, inclusion and colleagues; some mention tenure-led promotion and team-specific management/support issues. https://www.glassdoor.com/Reviews/ELEXON-Reviews-E315396.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:energy-traders-europe": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Trade association rather than a trading employer; no reliable exact Glassdoor employee profile found. Retain provisional neutral 5/10. Checked 2026-11-01.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:bloomberg": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Glassdoor 4.0/5 (~8,497 reviews), broad company profile across data/news/terminal businesses, not newsroom-specific. Recent reviews are mixed: people/culture and benefits are praised; long hours, office expectations and team-dependent advancement/management pressure also appear. https://www.glassdoor.com/Reviews/Bloomberg-Reviews-E3096.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. 2024-2026 Reddit discussions include first-person worker/former-worker comments on team-dependent workload and culture, including positive WLB/pay and negative management pressure/newsroom silos. Anecdotal and conflicting; no numeric score. https://www.reddit.com/r/HENRYUK/comments/1hj4m0j/switching_jobs_in_london_meta_vs_bloomberg/ ; https://www.reddit.com/r/bloomberg/comments/1uzlc49/why_is_bloomberg_news_such_a_terrible_place_to/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:reuters": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "No distinct newsroom employer profile found; Thomson Reuters parent Glassdoor 3.9/5 (~14,692 reviews) is a proxy including non-news businesses. Reviews are mixed on supportive management/WLB and research teams versus leadership, security, recognition and advancement concerns. https://www.glassdoor.com/Overview/Working-at-Thomson-Reuters-EI_IE100303.11%2C26.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:financial-times": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor sources vary from 3.8-3.9/5 (823-829); conservative 3.8/5 used (829 reviews). Broad employer aggregate; Aug. 2026 reviews mention low-stress/industry experience alongside limited progression and below-market pay. https://api.glassdoor.com/Reviews/Financial-Times-Reviews-E4611.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:the-wall-street-journal": {
+    "glassdoor_score": 6.9,
+    "glassdoor_notes": "Glassdoor sources vary from 3.4-3.5/5 (316); midpoint 3.45/5 displayed as 6.9/10. Publication profile within Dow Jones/News Corp. Mixed reports include talented teams, but concerns about pay/career opportunity, management, overwork and turnover. https://www.glassdoor.com/Overview/Working-at-Wall-Street-Journal-EI_IE22431.11%2C30.htm ; https://static.glassdoor.com/Reviews/Wall-Street-Journal-Reviews-E22431.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:the-economist": {
+    "glassdoor_score": 6.7,
+    "glassdoor_notes": "Glassdoor employer is Economist Group, a parent proxy rather than publication-only score. Sources vary 3.3-3.4/5 (461-476); midpoint 3.35/5 displayed as 6.7/10. Senior-management ratings are weak; Apr. 2026 snippet praises learning/supportive team. https://www.glassdoor.com/Overview/Working-at-Economist-Group-EI_IE7800.11%2C26.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:handelsblatt": {
+    "glassdoor_score": 7.2,
+    "glassdoor_notes": "Glassdoor German profile reports 3.6/5 from 14 reviews and 60% recommend; localized review counts vary, so treat as a small, imperfect sample. Recent reviews praise tariff pay, fair hours and colleagues but cite hierarchy/transparency and weaker management ratings. Checked 2026-11-01. https://www.glassdoor.de/Bewertungen/Handelsblatt-Bewertungen-E862463.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:nikkei": {
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "Glassdoor 3.5/5 (29 reviews). Comments mention stable, friendly teams and pay alongside management/incentive and newspaper-business uncertainty. https://www.glassdoor.com/Reviews/Nikkei-Reviews-E1996328.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:caixin": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Glassdoor 3.7/5 (20 reviews; small sample). Reviews cite interesting journalism, friendly culture and resume value, with concerns about autonomy, advancement and possible layoffs. https://www.glassdoor.com/Reviews/Caixin-Reviews-E1944261.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:the-business-times": {
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "No direct Glassdoor employer profile confirmed. Provisional 6.6/10 proxy from SPH Media (3.3/5, 795 reviews); parent reviews mention autonomy/work-life balance alongside job-security, pay/increment and management concerns. This is not a Business Times-specific rating. Checked 2026-11-01. https://www.glassdoor.com/Reviews/SPH-Media-Limited-Reviews-E5855.htm ; https://www.linkedin.com/company/the-business-times/",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:energy-intelligence": {
+    "glassdoor_score": 5.4,
+    "glassdoor_notes": "Glassdoor 2.7/5 (39 reviews). Reviews cite hybrid/WLB, learning and colleagues alongside concerns about pay/recognition, planning, career development and management. https://www.glassdoor.com/Reviews/Energy-Intelligence-Reviews-E261856.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:upstream": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Ambiguous entity match: Glassdoor results for “Upstream” include unrelated employers, and the publication brand is part of DN Media Group. No exact brand-level employee aggregate verified; retain provisional neutral 5/10. Checked 2026-11-01.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:montel-news": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "No distinct employer profile located; provisional 8/10 parent-employer proxy from Montel (4.0/5, six reviews). This is not a Montel News-specific rating and the sample is small. Checked 2026-11-01. https://www.glassdoor.ca/Reviews/Montel-Reviews-E2301874.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:utility-dive": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "No exact brand-level Glassdoor employee aggregate verified. Utility Dive is operated by Informa TechTarget; parent proxy was not substituted. Retain provisional neutral 5/10. Checked 2026-11-01. https://www.utilitydive.com/about/",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Glassdoor evidence reviewed 2026-11-01; Reddit remains provisional neutral 5/10 because no usable company-specific recent firsthand workplace evidence was found."
+  },
+  "co:power-magazine": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact Glassdoor employer profile found; ‘Power’ results are ambiguous, so no score assigned.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:recharge-news": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Glassdoor profile under ‘Recharge’ shows 4.0/5 from one rating (2024 reporter review); too small and entity mapping uncertain for a company score. Review cites team/flexibility/remote work and industry reputation, with limited parent support/career path. https://www.glassdoor.com/Overview/Working-at-Recharge-EI_IE10438206.11%2C19.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:hydrogen-insight": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact employer profile found; did not use H2insight score because it is an unrelated customer-experience company.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:platts": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Platts is a publication/product brand; no reliable separate employer score captured. No S&P Global parent proxy assigned in this field.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:rigzone": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No exact Glassdoor employer profile found in targeted search; no score assigned.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:energy-exemplar": {
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "Glassdoor 3.4/5 (271 reviews). Mixed 2026 themes: flexibility, product and colleagues versus acquisition-related leadership/culture change, attrition, layoffs, compensation and burnout. 2024 reviews were more positive on WLB/learning. https://www.glassdoor.co.uk/Reviews/Energy-Exemplar-Reviews-E817472.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:volue": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor 3.8/5 (6 reviews; very small sample). A July 2025 review cites capable teams, modern technology and learning, but repeated sale/ownership instability. https://www.glassdoor.at/Bewertungen/Volue-Bewertungen-E6461136.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:kraken-technologies": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "Glassdoor ‘Kraken’ profile 4.3/5 (226 reviews), clearly energy-tech software rather than crypto. Aug. 2026 reviews praise culture, flexibility and colleagues; cite below-market pay, silos and progression concerns, with some alleging culture/benefit changes after separation from Octopus. https://www.glassdoor.com/Reviews/Kraken-Reviews-E8860582.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:gridbeyond": {
+    "glassdoor_score": 6.0,
+    "glassdoor_notes": "Glassdoor 3.0/5 (29 reviews). Review results are mixed; WLB/D&I/compensation stronger, senior management 2.5 and career 2.9. Individual 2026 management/organization complaints are anecdotal. https://www.glassdoor.com/Overview/Working-at-GridBeyond-EI_IE4048281.11%2C21.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:enspired": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliable exact Glassdoor employer aggregate found; did not infer a score from generic results. Company describes itself as a Vienna-headquartered automated energy trader. https://www.enspired-trading.com/about-us",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:ascend-analytics": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Glassdoor 3.7/5 (78 reviews). 2025-26 reviews mention smart colleagues, meaningful work and pay alongside executive communication, organization, compensation and attrition concerns; one 2026 review noted improvement after CEO change. https://www.glassdoor.com/Reviews/Ascend-Analytics-Reviews-E464707.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:amperon": {
+    "glassdoor_score": 10.0,
+    "glassdoor_notes": "Glassdoor 5.0/5 (6 reviews; very small sample). 2025-26 reviews praise small-team culture, onboarding, pay and benefits; one 2026 review flags company-future uncertainty. https://www.glassdoor.com/Reviews/Amperon-Reviews-E9119866.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:modo-energy": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Glassdoor shows one rating (4.9/5 in snippets); below threshold for dependable aggregate, no score assigned. https://www.glassdoor.com/Jobs/Modo-Energy-Jobs-E7308642.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:pexapark": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Glassdoor 3.7/5 (20-21 reviews; small sample). May 2026 reviews praise sector expertise, team, mission and flexibility while raising strategic clarity, operating model, changing priorities and growth. https://www.glassdoor.com/Reviews/Pexapark-Reviews-E2936259.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:piclo": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No Glassdoor employer aggregate located; results were mainly interview pages, no score assigned.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:flexpower": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No reliably matched Glassdoor employer profile; company name is ambiguous, no score assigned.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:smartestenergy": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor 3.8/5 (98 reviews). 2026 feedback is mixed: hybrid/WLB/team/benefits versus communication, morale, training and promotion fairness. Marubeni subsidiary. https://www.glassdoor.com/Reviews/SmartestEnergy-Reviews-E36540.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:enel-x": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "No separate aggregate; Enel parent Glassdoor 3.7/5 (631 reviews) is an explicitly labeled parent proxy, not Enel X-wide. A 2024 Enel X US-team review cited layoffs/on-call/process burdens; team-specific only. https://www.glassdoor.com/Reviews/Enel-Reviews-E10910.htm ; https://www.glassdoor.com/Reviews/Employee-Review-Enel-E10910-RVW85063760.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:fluence": {
+    "glassdoor_score": 6.4,
+    "glassdoor_notes": "Glassdoor 3.2/5 (172 reviews). 2025-26 reviews sharply mixed: colleagues, pay, learning and delivery praised alongside stress, disorganization, leadership, communication and culture concerns. https://www.glassdoor.com/Reviews/Fluence-Reviews-E2008681.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:tesla-energy": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Energy-only Glassdoor profiles have ambiguous/limited scope (Tesla Energy Solar Power 3.6/5, 38 reviews; Tesla Energy Engineering 5.0/5, one review). Neither supports a company-wide Tesla Energy score. https://www.glassdoor.com/Reviews/Tesla-Energy-Solar-Power-Reviews-E1453581.htm ; https://www.glassdoor.com/Overview/Working-at-Tesla-Energy-Engineering-EI_IE4405962.11%2C35.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:hitachi-energy": {
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "Glassdoor 4.2/5 (~1,661 reviews). Current reviews praise culture, WLB and career; mixed notes include high expectations, decisions affecting workers and slow change. https://www.glassdoor.com/Reviews/Hitachi-Energy-Reviews-E3507483.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:siemens-energy": {
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "Glassdoor 4.2/5 (~2,124 reviews). Positive team culture, WLB and global learning, alongside 2026 restructuring, management/growth, slow process and pay concerns. https://www.glassdoor.com/Reviews/Siemens-Energy-Reviews-E4393689.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:ge-vernova": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "Glassdoor 3.9/5 (2,432 reviews), broad post-spin-off company aggregate. Culture/WLB 3.9; senior management 3.3. https://www.glassdoor.com/Reviews/GE-Vernova-Reviews-E740889.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:schneider-electric": {
+    "glassdoor_score": 8.4,
+    "glassdoor_notes": "Glassdoor 4.2/5 (13,101 reviews), group-wide. Category ratings: culture 4.3, WLB 4.2, senior management 3.8. https://www.glassdoor.com/Reviews/Schneider-Electric-Reviews-E3956.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:uplight": {
+    "glassdoor_score": 4.8,
+    "glassdoor_notes": "Glassdoor 2.4/5 (206 reviews). 2026 reviews describe acquisition-related disconnection, messy processes, layoffs and uncertainty alongside isolated positives about colleagues/technical work. https://www.glassdoor.com/Reviews/Uplight-Reviews-E3028228.htm ; dated Jan. 15, 2026 review https://www.glassdoor.com/Reviews/Employee-Review-Uplight-E3028228-RVW102274027.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:gridcog": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No direct reliable Glassdoor employee profile found; secondary site surfaced a 4.2 score without verified sample. Product/customer reviews are not employee reputation evidence.",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:lcp-delta": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No confirmed company-wide Glassdoor aggregate. A London office page shows 4.2 without sample count; office-specific value is not used as company score. A 2025 review mentions friendly team with WLB/progression concerns. https://www.glassdoor.co.uk/Location/LCP-Delta-London-Location-EI_IE1752527.0%2C9_IL.10%2C16_IC2671300.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:procom": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Ambiguous identity: a German 3.8/5 profile (7 reviews) could not be tied confidently to the energy software ProCom GmbH; other ProCom staffing/company name collisions. No score assigned. https://www.glassdoor.de/Bewertungen/ProCom-Bewertungen-E3082704.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:d2iq": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Historic Glassdoor D2iQ 3.7/5 (145 reviews) reflects former employer; company closed/liquidated and some assets/IP/staff were acquired by Nutanix. Not a current employer reputation score. https://www.glassdoor.com.au/Reviews/D2iQ-Reviews-E2956728.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No current standalone employer score; no qualifying Reddit evidence located.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:energy-one": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Glassdoor 3.1/5 (11 reviews) surfaced but entity match is ambiguous with unrelated US home-improvement company; no score assigned pending profile confirmation. https://www.glassdoor.com/Reviews/Energy-One-Reviews-E842776.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:allegro-development": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Legacy employer acquired by ION; Glassdoor 3.4/5 (100 reviews), last dated review shown Nov. 2022, outside two-year window. Not a current employer score. https://www.glassdoor.com/Reviews/Allegro-Development-Reviews-E33793.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:ion-commodities": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "ION Commodities is a product/business label, not a separate employer; ION Group parent Glassdoor 2.5/5 (1,259 reviews) is an explicit parent proxy only. Recent 2026 reviews mention talented peers/interesting projects alongside leadership, communication, layoffs, bonus/payment uncertainty and job-security concerns. https://www.glassdoor.com/Reviews/ION-Group-Reviews-E1923000.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. Reddit discussion of ION reviews was not firsthand employee evidence; no score. https://www.reddit.com/r/cscareers/comments/1rll404/ion_group_is_it_as_bad_as_the_glassdoor_reviews/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:brady-technologies": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "Glassdoor 4.3/5 (84 reviews). 2026 reviews report friendly/supportive environment, learning and light workload, with one request for clearer management vision. https://www.glassdoor.com/Reviews/Brady-Technologies-Reviews-E422682.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:openlink-ion": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Openlink is an ION product/legacy business, not separate employer; ION Group parent Glassdoor 2.5/5 (1,259 reviews) used as explicit proxy only. https://www.glassdoor.com/Reviews/ION-Group-Reviews-E1923000.htm ; product scope https://capspire.com/wp-content/uploads/2026/03/capSpire-Resource-Guide-Upgrading-Openlink-Commodities.pdf",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:endur-ion": {
+    "glassdoor_score": 5.0,
+    "glassdoor_notes": "Endur is an ION product, not separate employer; ION Group parent Glassdoor 2.5/5 (1,259 reviews) used as explicit proxy only. https://www.glassdoor.com/Reviews/ION-Group-Reviews-E1923000.htm ; product scope https://capspire.com/wp-content/uploads/2026/03/capSpire-Resource-Guide-Upgrading-Openlink-Commodities.pdf",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:trayport": {
+    "glassdoor_score": 7.0,
+    "glassdoor_notes": "Glassdoor 3.5/5 (125 reviews). A Feb. 2026 reviewer alleges a pay cut after bonus restructuring; Trayport publicly disputed a total-compensation decline in its response. Treat as a contested individual report, not settled fact. https://www.glassdoor.co.uk/Reviews/Trayport-Reviews-E36036.htm ; review https://www.glassdoor.com/Reviews/Employee-Review-Trayport-E36036-RVW102859021.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:fis-front-arena": {
+    "glassdoor_score": 6.8,
+    "glassdoor_notes": "Front Arena is a product/division; FIS parent Glassdoor 3.4/5 (~13,500 reviews) used as explicit broad parent proxy only. 2026 Front Arena-labeled reviews mention engaging work and stretched staff/low transparency. https://www.glassdoor.com/Reviews/FIS-Reviews-E313114.htm ; https://www.glassdoor.com/Reviews/Employee-Review-FIS-E313114-RVW14198668.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:molecule-software": {
+    "glassdoor_score": 9.0,
+    "glassdoor_notes": "Glassdoor 4.5/5 (6 reviews; very small sample). Latest dated Oct. 3, 2025 review compliments coworkers. https://www.glassdoor.com/Reviews/Molecule-Software-Reviews-E1101409.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:quorum-software": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Glassdoor 4.0/5 (~467 reviews). 2026 reviews mix WLB/autonomy and learning with compensation, promotion, management/training and rapid-change concerns. https://www.glassdoor.com/Reviews/Quorum-Software-Reviews-E16174.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:copperleaf-technologies": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "Glassdoor 3.8/5 (126 reviews); acquired by IFS, so score reflects legacy employer profile. Recent reviews cite WLB/remote flexibility alongside layoffs, strategy uncertainty, leadership and culture concerns. https://www.glassdoor.co.uk/Reviews/Copperleaf-Reviews-E1045300.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No qualifying company-specific Reddit employee evidence located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:power-factors": {
+    "glassdoor_score": 4.6,
+    "glassdoor_notes": "Glassdoor current snapshots vary 2.3-2.4/5 (82-83 reviews); 2.3/5 x2 used as a dated locale snapshot. Recent 2026 reviews are sharply mixed: flexibility/respectful leadership versus layoffs, communication, ownership and execution concerns. https://www.glassdoor.co.uk/Reviews/Power-Factors-Reviews-E1927187.htm ; https://www.glassdoor.com/Reviews/Power-Factors-Reviews-E1927187.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific Reddit employee reviews found; results were job posts, not workplace accounts.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:krakenflex": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "Product/brand of Kraken energy-tech platform, not separate employer. Kraken Glassdoor 4.3/5 (229 reviews) is an explicit employer proxy only, not KrakenFlex-specific. Themes mix culture/WLB/onboarding with burnout, pay, progression and organization complaints. https://www.glassdoor.com/Overview/Working-at-Kraken-EI_IE8860582.11%2C17.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No recent credible KrakenFlex-specific employee report found; Kraken discussions located were older than the two-year window.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:singapore-petroleum-company-spc": {
+    "glassdoor_score": 6.6,
+    "glassdoor_notes": "Exact Glassdoor 3.3/5 (33 reviews). 2025 comments are mixed: a senior engineer praises cohesive culture/WLB but flags slow progression; manager reviews allege favoritism, micromanagement and poor culture. https://www.glassdoor.com/Reviews/Singapore-Petroleum-Company-Reviews-E8081.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific Reddit employee evidence found; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:axpo": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Exact Glassdoor 4.0/5 (91 reviews). Category ratings: WLB 4.3, culture 4.0, pay 3.9, career 3.6, senior management 3.4. Recent excerpts mix supportive teams/autonomy/benefits with hierarchy, unclear priorities and organizational direction. https://www.glassdoor.com.au/Overview/Working-at-Axpo-EI_IE755157.11%2C15.htm ; 2024 review https://www.glassdoor.com/Reviews/Axpo-Engineer-Reviews-EI_IE755157.0%2C4_KO5%2C13.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No relevant recent Reddit employee report found; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:veolia-north-america": {
+    "glassdoor_score": 7.6,
+    "glassdoor_notes": "No separate N.A.-wide profile identified; Veolia global Glassdoor 3.8/5 (~3,288 reviews) used only as parent proxy, not North-America-specific. Reviews mention colleagues/conditions/purpose and limited growth; one Nov. 2024 VNA-titled review notes overtime/training/turnover concerns. https://www.glassdoor.ca/Overview/Working-at-Veolia-EI_IE20114.11%2C17.htm ; https://www.glassdoor.com/Reviews/Employee-Review-Veolia-E20114-RVW93067882.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No company-specific Reddit employee firsthand report located; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:graviton-research-capital": {
+    "glassdoor_score": 8.2,
+    "glassdoor_notes": "Exact Glassdoor 4.1/5 (79 reviews). 2026 themes include talented peers, compensation/infrastructure/food and learning, alongside limited growth for some engineering roles and HR/short-horizon planning concerns. A poor-intern-management review is Singapore-office-specific. https://www.glassdoor.com/Reviews/Graviton-Research-Capital-Reviews-E1494670.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No suitable firsthand Reddit employee source found; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:s-p-global": {
+    "glassdoor_score": 8.0,
+    "glassdoor_notes": "Exact Glassdoor parent profile 4.0/5 (~9,308 reviews). Recent 2026 feedback praises WLB, mobility and benefits while also citing layoffs, uneven compensation, direction, bureaucracy/silos, politics and management instability. Company-wide, not specific to a division/desk. https://www.glassdoor.com/Reviews/S-and-P-Global-Reviews-E1259396.htm ; dated review https://api.glassdoor.com/Reviews/Employee-Review-S-and-P-Global-E1259396-RVW104543105.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No current firsthand Reddit employee posts suitable to summarize; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:accenture": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Exact Glassdoor 3.7/5 (~184,576 reviews), broad consulting/technology conglomerate aggregate, not commodity/trading-specific. Oct. 2026 reviews cite structured environment, projects and learning alongside on-call stress, low pay and limited promotion. https://www.glassdoor.com/Reviews/Accenture-Reviews-E4138.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No Reddit firsthand evidence specific/useful to commodity-facing work; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:petroineos": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Exact Petroineos Trading Glassdoor profile 3.7/5 (21 reviews; small sample). Category scores: compensation 3.9, WLB 3.8, career 3.4, culture 3.2, senior management 2.6. No dated 2024-26 themes established. https://www.glassdoor.com/Overview/Working-at-Petroineos-Trading-EI_IE9490371.11%2C29.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No current specific firsthand Reddit workplace evidence found; no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:dare": {
+    "glassdoor_score": 7.4,
+    "glassdoor_notes": "Dare International/Trading Glassdoor snapshots vary 3.7-3.8/5 (38-40 reviews); latest UK 3.7/5 (40) used. Sep.-Oct. 2026 analyst reviews mention high pressure, mixed team/support, unclear progression and junior pay relative to hours. https://www.glassdoor.co.uk/Reviews/Dare-International-Reviews-E6357593.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. A Reddit self-described former trader discusses long hours/stress/attrition, but post is ~2 years old, exact date/status unverified; not counted as current evidence and no score. https://www.reddit.com/r/Commodities/comments/1g6sf4g/left_my_role_as_a_trader/",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  },
+  "co:fuse-energy": {
+    "glassdoor_score": 6.7,
+    "glassdoor_notes": "Glassdoor snapshots vary 3.2-3.5/5 (45-54 reviews); midpoint 3.35/5 converted to 6.7/10, explicitly unstable across locale/cache. Recent 2025-26 reviews are mixed: ambitious colleagues, ownership, learning and pay alongside intense hours/WLB, management, culture and training concerns. https://www.glassdoor.com/Reviews/Fuse-Energy-Reviews-E1698474.htm ; https://www.glassdoor.com.au/Reviews/Fuse-Energy-Reviews-E1698474.htm ; https://www.glassdoor.com/Reviews/Employee-Review-Fuse-Energy-E1698474-RVW100738086.htm ; https://www.glassdoor.ie/Reviews/Employee-Review-Fuse-Energy-E1698474-RVW101286714.htm",
+    "reddit_score": 5.0,
+    "reddit_notes": "Provisional neutral estimate: 5/10; no reliable company-specific platform rating was found in the review search checked 2026-11-01. This is not a Glassdoor/Reddit published score. No Reddit first-hand employee reviews found; results were job-seeker/interview/customer commentary, no score.",
+    "review_status": "Existing sourced notes retained; Reddit remains provisional where no company-specific employee evidence was found."
+  }
+}

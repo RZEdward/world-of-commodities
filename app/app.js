@@ -15,6 +15,9 @@ const state = {
   markers: new Map(),
   selected: null,
   activities: [],
+  sharpnessAttempts: [],
+  sharpnessOwner: "Ross",
+  sharpnessExpanded: false,
 };
 
 const escapeHtml = (value) =>
@@ -40,7 +43,7 @@ const fieldLabels = {
   kind: "Type",
   verification: "Source check",
   function_market: "Function / market",
-  business: "Business",
+  business: "Business / company category",
   role_function: "Role function",
   business_function: "Role function",
   commodity: "Commodity",
@@ -67,6 +70,8 @@ const fieldLabels = {
   score_notes: "Score notes",
   candidate_fit_score_10: "Candidate fit score /10",
   candidate_fit_notes: "Candidate fit notes",
+  total_compensation_expectation_usd: "Total compensation expectation (USD/year)",
+  compensation_estimate_notes: "Compensation estimate basis",
   role_desk_outlook_score_10: "Role / desk outlook score /10",
   role_desk_outlook_notes: "Role / desk outlook notes",
   company_reputation_score_10: "Company reputation score /10",
@@ -85,11 +90,13 @@ const fieldLabels = {
   recruiter_relationship_notes: "Recruiter relationship notes",
   glassdoor_score_10: "Glassdoor score /10",
   glassdoor_notes: "Glassdoor reviews",
+  glassdoor_sources_search: "Glassdoor sources / search",
   reddit_score_10: "Reddit score /10",
   reddit_notes: "Reddit reviews",
+  reddit_sources_search: "Reddit sources / search",
   reviews_checked_on: "Reviews checked on",
   review_research_status: "Review research status",
-  business: "Business",
+  business: "Business / company category",
   role_function: "Role function",
 };
 
@@ -137,7 +144,16 @@ function deadlineBucket(item) {
 function isPlaceholder(value) {
   if (value == null) return true;
   const normalized = String(value).trim().toLowerCase();
-  return !normalized || /^(estimated\s*[-–—:]?\s*)?(not stated|not listed|unknown|n\/?a|tbd|[-–—])$/.test(normalized);
+  return !normalized || /^(estimated\s*[-–—:]?\s*)?(not stated|not listed|not provided|unknown|n\/?a|tbd|[-–—])(?:\s|$)/.test(normalized);
+}
+
+function isPlaceholderAssessment(notes) {
+  return /placeholder|pending|no attributable.*(?:review|evidence)|not yet been assessed/i.test(String(notes || ""));
+}
+
+function ratingText(value) {
+  const number = Number(value);
+  return Number.isFinite(number) ? number.toLocaleString(undefined, { maximumFractionDigits: 1 }) : String(value ?? "");
 }
 
 function facetValueFor(item, key) {
@@ -238,15 +254,17 @@ function buildPopupContent(item, location) {
   const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search", "office_source_text", "registry_offices", "scope_status"]);
   const rows = [];
 
-  const preferredOrder = ["university", "university_reputation_score_10", "university_reputation_notes", "campus", "location", "course", "course_programme_score_10", "course_programme_notes", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "candidate_fit_score_10", "course_fit_score_10", "role_desk_outlook_score_10", "company_reputation_score_10", "recruitment_company_score_10", "recruiter_assessment_score_10", "recruiter_relationship_score_10", "confidence", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
+  const preferredOrder = ["university", "university_reputation_score_10", "university_reputation_notes", "campus", "location", "course", "course_programme_score_10", "course_programme_notes", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "candidate_fit_score_10", "course_fit_score_10", "role_desk_outlook_score_10", "total_compensation_expectation_usd", "compensation_estimate_notes", "company_reputation_score_10", "recruitment_company_score_10", "recruiter_assessment_score_10", "recruiter_relationship_score_10", "confidence", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
   const fields = Object.entries(item).sort(([a], [b]) => {
     const ai = preferredOrder.indexOf(a), bi = preferredOrder.indexOf(b);
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
   });
   for (const [key, rawValue] of fields) {
-    if (omitted.has(key) || key.endsWith("_id") || rawValue == null || rawValue === "" || (item.kind === "job" && key === "category")) continue;
+    if (omitted.has(key) || key.endsWith("_id") || rawValue == null || rawValue === "" || isPlaceholder(rawValue) || (item.kind === "job" && key === "category")) continue;
     if (key === "source_url" && item.link) continue;
-    const value = key === "kind" || key === "verification"
+    const value = key === "total_compensation_expectation_usd" && Number.isFinite(Number(rawValue))
+      ? `USD ${Math.round(Number(rawValue)).toLocaleString()}/year`
+      : key === "kind" || key === "verification"
       ? String(rawValue).replace(/^\w/, (letter) => letter.toUpperCase())
       : Array.isArray(rawValue)
       ? rawValue.map((part) => typeof part === "object" ? part.name || JSON.stringify(part) : part).join(", ")
@@ -257,21 +275,22 @@ function buildPopupContent(item, location) {
     const label = key === "location"
       ? item.kind === "masters" ? "Location" : item.kind === "company" ? "Office" : "Location"
       : fieldLabels[key] || key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
-    rows.push(`<div class="map-popup-row"><dt>${escapeHtml(label)}</dt><dd>${escapeHtml(value)}</dd></div>`);
+    const rendered = key === "glassdoor_sources_search" || key === "reddit_sources_search" ? sourceLinks(value) || escapeHtml(value) : escapeHtml(value);
+    rows.push(`<div class="map-popup-row"><dt>${escapeHtml(label)}</dt><dd>${rendered}</dd></div>`);
   }
 
   const posted = asDate(item.posted);
   const deadline = asDate(item.deadline);
   const today = new Date();
-  const postedValue = posted ? `${daysBetween(posted, today)} days` : "Not listed";
-  let deadlineValue = "Not listed";
+  const postedValue = posted ? `${daysBetween(posted, today)} days` : "";
+  let deadlineValue = "";
   if (deadline) {
     const days = daysBetween(today, deadline);
     deadlineValue = days < 0 ? `${Math.abs(days)} days past` : `${days} days`;
   }
   if (item.kind !== "company") {
-    rows.push(`<div class="map-popup-row"><dt>Days since posted</dt><dd>${escapeHtml(postedValue)}</dd></div>`);
-    rows.push(`<div class="map-popup-row"><dt>Days until deadline</dt><dd>${escapeHtml(deadlineValue)}</dd></div>`);
+    if (postedValue) rows.push(`<div class="map-popup-row"><dt>Days since posted</dt><dd>${escapeHtml(postedValue)}</dd></div>`);
+    if (deadlineValue) rows.push(`<div class="map-popup-row"><dt>Days until deadline</dt><dd>${escapeHtml(deadlineValue)}</dd></div>`);
   }
 
   const source = /^https?:\/\//i.test(item.source_url || "")
@@ -311,7 +330,7 @@ function renderControls() {
   const source = locationMode ? state.locations : companyMode ? state.institutions : state.items.filter((item) => state.filter === "all" || item.kind === state.filter);
   const controls = document.querySelector("#list-controls");
   if (!source.length) { controls.hidden = true; return; }
-  const fieldOptions = locationMode ? [["owner", "Owner"]] : companyMode ? [["category", "Category"], ["owner", "Owner"]] : [["business", "Business"], ["role", "Role function"], ["commodity", "Commodity"], ["market", "Market geography"], ["horizon", "Time horizon"], ["status", "Status"], ["deadline", "Deadline"], ["owner", "Owner"]];
+  const fieldOptions = locationMode ? [["owner", "Owner"]] : companyMode ? [["category", "Category"], ["owner", "Owner"]] : [["business", "Business / company category"], ["role", "Role function"], ["commodity", "Commodity"], ["market", "Market geography"], ["horizon", "Time horizon"], ["status", "Status"], ["deadline", "Deadline"], ["owner", "Owner"]];
   const matchingSource = source.filter((item) => searchHaystack(item).includes(state.query));
   controls.hidden = matchingSource.length === 0;
   if (!matchingSource.length) return;
@@ -361,6 +380,91 @@ function renderLegend() {
   }
 }
 
+function sharpnessGroups() {
+  const attempts = state.sharpnessAttempts.filter((row) => String(row.owner || "").trim() === state.sharpnessOwner && [row.score, row.completion_pct, row.time_taken_minutes].some((value) => value !== undefined && value !== null && String(value).trim() !== ""));
+  const groups = new Map();
+  for (const row of attempts) {
+    const platform = String(row.platform || "Platform not specified").trim();
+    const assessment = String(row.assessment || row.mode_topic || "Assessment not specified").trim();
+    const attemptType = String(row.attempt_type || "Type not specified").trim();
+    const metric = String(row.score_metric || "Score").trim();
+    const key = `${platform}\u0000${assessment}\u0000${attemptType}\u0000${metric}`;
+    if (!groups.has(key)) groups.set(key, { platform, assessment, attemptType, metric, rows: [] });
+    groups.get(key).rows.push(row);
+  }
+  for (const group of groups.values()) {
+    group.rows.sort((a, b) => {
+      const at = Date.parse(a.attempt_timestamp || "") || 0;
+      const bt = Date.parse(b.attempt_timestamp || "") || 0;
+      return at - bt;
+    });
+    group.latest = group.rows[group.rows.length - 1];
+    const scored = group.rows.filter((row) => row.score !== undefined && row.score !== null && String(row.score).trim() !== "").map((row) => ({row, score:Number(row.score)})).filter(({score}) => Number.isFinite(score));
+    group.highscore = scored.length ? Math.max(...scored.map((item) => item.score)) : null;
+    group.highscoreRow = scored.find((item) => item.score === group.highscore)?.row || null;
+    const lastTen = scored.slice(-10).map((item) => item.score);
+    group.lastTenMean = lastTen.length ? lastTen.reduce((sum, score) => sum + score, 0) / lastTen.length : null;
+    const completions = group.rows.filter((row) => row.completion_pct !== undefined && row.completion_pct !== null && String(row.completion_pct).trim() !== "").map((row) => Number(row.completion_pct)).filter(Number.isFinite);
+    const times = group.rows.filter((row) => row.time_taken_minutes !== undefined && row.time_taken_minutes !== null && String(row.time_taken_minutes).trim() !== "").map((row) => Number(row.time_taken_minutes)).filter(Number.isFinite);
+    group.latestCompletion = group.latest.completion_pct;
+    group.latestTime = group.latest.time_taken_minutes;
+    group.lastTenCompletion = completions.length ? completions.slice(-10).reduce((sum, n) => sum + n, 0) / Math.min(10, completions.length) : null;
+    group.lastTenTime = times.length ? times.slice(-10).reduce((sum, n) => sum + n, 0) / Math.min(10, times.length) : null;
+    group.count = group.rows.length;
+  }
+  return [...groups.values()].sort((a, b) => a.platform.localeCompare(b.platform) || a.assessment.localeCompare(b.assessment) || a.attemptType.localeCompare(b.attemptType) || a.metric.localeCompare(b.metric));
+}
+
+function scoreText(value) {
+  if (value === null || value === undefined || String(value).trim() === "" || !Number.isFinite(Number(value))) return "—";
+  return Number(value).toLocaleString(undefined, { maximumFractionDigits: 2 });
+}
+
+function completionText(value) {
+  if (value === null || value === undefined || String(value).trim() === "" || !Number.isFinite(Number(value))) return "—";
+  const raw = Number(value);
+  return `${scoreText(raw <= 1 ? raw * 100 : raw)}%`;
+}
+
+function sourceLinks(value) {
+  const urls = String(value || "").split(/;\s*/).filter((url) => /^https?:\/\//i.test(url));
+  return urls.map((url, index) => `<a href="${escapeHtml(url)}" target="_blank" rel="noopener noreferrer">${urls.length === 1 ? "Open source / search" : `Source ${index + 1}`}</a>`).join(" · ");
+}
+
+function renderSharpness() {
+  const ownerSelect = document.querySelector("#sharpness-owner");
+  if (!ownerSelect) return;
+  const owners = [...new Set(["Ross", "Michael", ...state.sharpnessAttempts.map((row) => String(row.owner || "").trim()).filter(Boolean)])].sort((a, b) => a === "Ross" ? -1 : b === "Ross" ? 1 : a.localeCompare(b));
+  ownerSelect.innerHTML = owners.map((owner) => `<option value="${escapeHtml(owner)}">${escapeHtml(owner)}</option>`).join("");
+  if (!owners.includes(state.sharpnessOwner)) state.sharpnessOwner = owners[0] || "Ross";
+  ownerSelect.value = state.sharpnessOwner;
+  const groups = sharpnessGroups();
+  const platforms = [...new Set(["Zetamac", "LeetCode", "GRE", "GMAT", ...groups.map((group) => group.platform)])];
+  const highscores = document.querySelector("#sharpness-highscores");
+  highscores.innerHTML = groups.length
+    ? groups.map((group) => `<div class="sharpness-score-row"><span>${escapeHtml(group.platform)} · ${escapeHtml(group.assessment)} <small>${escapeHtml(group.attemptType)}</small><small class="sharpness-latest-metrics">Best ${scoreText(group.highscore)} ${escapeHtml(group.metric)} · Latest ${completionText(group.latestCompletion)} complete · ${scoreText(group.latestTime)} min</small></span></div>`).join("")
+    : platforms.map((platform) => `<div class="sharpness-score-row"><span>${escapeHtml(platform)}</span><strong>—</strong></div>`).join("");
+  const details = document.querySelector("#sharpness-detail-panel");
+  details.hidden = !state.sharpnessExpanded;
+  document.querySelector("#sharpness-details-toggle").setAttribute("aria-expanded", String(state.sharpnessExpanded));
+  document.querySelector("#sharpness-details-toggle").innerHTML = `Details <i aria-hidden="true">${state.sharpnessExpanded ? "−" : "+"}</i>`;
+  details.innerHTML = groups.length
+    ? groups.map((group) => `<section class="sharpness-detail-group">
+        <div class="sharpness-detail-title">${escapeHtml(group.platform)} · ${escapeHtml(group.assessment)} · ${escapeHtml(group.attemptType)}</div>
+        <div class="sharpness-detail-row"><span>Score metric</span><strong>${escapeHtml(group.metric)}</strong></div>
+        <div class="sharpness-detail-row"><span>Latest score</span><strong>${scoreText(group.latest.score)}</strong></div>
+        <div class="sharpness-detail-row"><span>Latest timestamp</span><strong>${escapeHtml(group.latest.attempt_timestamp || "—")}</strong></div>
+        <div class="sharpness-detail-row"><span>Last 10 mean score</span><strong>${scoreText(group.lastTenMean)}</strong></div>
+        <div class="sharpness-detail-row"><span>Highscore</span><strong>${scoreText(group.highscore)}${group.highscoreRow?.attempt_timestamp ? ` · ${escapeHtml(group.highscoreRow.attempt_timestamp)}` : ""}</strong></div>
+        <div class="sharpness-detail-row"><span>Latest completion</span><strong>${completionText(group.latestCompletion)}</strong></div>
+        <div class="sharpness-detail-row"><span>Last 10 mean completion</span><strong>${group.lastTenCompletion === null ? "—" : completionText(group.lastTenCompletion)}</strong></div>
+        <div class="sharpness-detail-row"><span>Latest time (min)</span><strong>${scoreText(group.latestTime)}</strong></div>
+        <div class="sharpness-detail-row"><span>Last 10 mean time (min)</span><strong>${scoreText(group.lastTenTime)}</strong></div>
+        <div class="sharpness-detail-row"><span>Recorded sessions</span><strong>${group.count}</strong></div>
+      </section>`).join("")
+    : `<div class="sharpness-empty">No assessment attempts logged for ${escapeHtml(state.sharpnessOwner)} yet. Add sessions in the Interview Sharpness sheet.</div>`;
+}
+
 function render() {
   const filtered = getFilteredItems();
   const visibleIds = new Set(filtered.map((item) => item.id));
@@ -400,23 +504,23 @@ function render() {
       ? `<button class="opportunity company-entry ${state.selected === item.id ? "selected" : ""}" data-id="${escapeHtml(item.id)}">
           <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.category || "University")}</div></div><i class="key-dot" style="background:${item.kind === "company" ? categoryColor(item.category) : "#c1a0ff"}"></i></div>
           <div class="loc">⌖ ${escapeHtml(item.office || item.location || "Office not specified")}</div>
-          ${item.kind === "university" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${escapeHtml(item.university_reputation_score_10)}/10${String(item.university_reputation_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "company" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${escapeHtml(item.company_reputation_score_10)}/10${String(item.company_reputation_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "university" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${ratingText(item.university_reputation_score_10)}/10${isPlaceholderAssessment(item.university_reputation_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "company" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${ratingText(item.company_reputation_score_10)}/10${isPlaceholderAssessment(item.company_reputation_notes) ? " · pending" : ""}</div>` : ""}
           ${item.owner ? `<div class="loc">Owner · ${escapeHtml(item.owner)}</div>` : ""}
         </button>`
       : `<button class="opportunity ${state.selected === item.id ? "selected" : ""}" data-id="${escapeHtml(item.id)}">
           <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.organization)}</div></div><span class="status ${statusClass(item)}">${escapeHtml(item.status || "Needs review")}</span></div>
           <div class="loc">⌖ ${escapeHtml(item.location || item.campus || "Location not listed")} <span class="kind-tag">· ${escapeHtml(item.kind)}</span></div>
           ${item.kind === "job" && (item.business || item.role_function || item.business_function || item.commodity || item.market_geography || item.time_horizon) ? `<div class="loc">${escapeHtml([item.business, item.commodity, item.market_geography, item.time_horizon].filter((part) => !isPlaceholder(part)).join(" · "))}</div>` : ""}
-          ${item.kind === "job" && item.role_desk_outlook_score_10 !== undefined ? `<div class="loc">Role / desk outlook · ${escapeHtml(item.role_desk_outlook_score_10)}/10${String(item.role_desk_outlook_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "job" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${escapeHtml(item.company_reputation_score_10)}/10${String(item.company_reputation_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "job" && item.candidate_fit_score_10 !== undefined ? `<div class="loc">Candidate fit · ${escapeHtml(item.candidate_fit_score_10)}/10</div>` : ""}
-          ${item.kind === "masters" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${escapeHtml(item.university_reputation_score_10)}/10${String(item.university_reputation_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "masters" && item.course_programme_score_10 !== undefined ? `<div class="loc">Course / programme · ${escapeHtml(item.course_programme_score_10)}/10${String(item.course_programme_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "masters" && item.course_fit_score_10 !== undefined ? `<div class="loc">Course fit · ${escapeHtml(item.course_fit_score_10)}/10</div>` : ""}
-          ${item.kind === "recruiter" && item.recruiter_assessment_score_10 !== undefined ? `<div class="loc">Recruiter · ${escapeHtml(item.recruiter_assessment_score_10)}/10${String(item.recruiter_assessment_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "recruiter" && item.recruitment_company_score_10 !== undefined ? `<div class="loc">Recruitment company · ${escapeHtml(item.recruitment_company_score_10)}/10${String(item.recruitment_company_score_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "recruiter" && item.recruiter_relationship_score_10 !== undefined ? `<div class="loc">Recruiter relationship · ${escapeHtml(item.recruiter_relationship_score_10)}/10${String(item.recruiter_relationship_notes || "").startsWith("Placeholder") ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "job" && item.role_desk_outlook_score_10 !== undefined ? `<div class="loc">Role / desk outlook · ${ratingText(item.role_desk_outlook_score_10)}/10${isPlaceholderAssessment(item.role_desk_outlook_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "job" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${ratingText(item.company_reputation_score_10)}/10${isPlaceholderAssessment(item.company_reputation_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "job" && item.candidate_fit_score_10 !== undefined ? `<div class="loc">Candidate fit · ${ratingText(item.candidate_fit_score_10)}/10</div>` : ""}
+          ${item.kind === "masters" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${ratingText(item.university_reputation_score_10)}/10${isPlaceholderAssessment(item.university_reputation_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "masters" && item.course_programme_score_10 !== undefined ? `<div class="loc">Course / programme · ${ratingText(item.course_programme_score_10)}/10${isPlaceholderAssessment(item.course_programme_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "masters" && item.course_fit_score_10 !== undefined ? `<div class="loc">Course fit · ${ratingText(item.course_fit_score_10)}/10</div>` : ""}
+          ${item.kind === "recruiter" && item.recruiter_assessment_score_10 !== undefined ? `<div class="loc">Recruiter · ${ratingText(item.recruiter_assessment_score_10)}/10${isPlaceholderAssessment(item.recruiter_assessment_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "recruiter" && item.recruitment_company_score_10 !== undefined ? `<div class="loc">Recruitment company · ${ratingText(item.recruitment_company_score_10)}/10${isPlaceholderAssessment(item.recruitment_company_score_notes) ? " · pending" : ""}</div>` : ""}
+          ${item.kind === "recruiter" && item.recruiter_relationship_score_10 !== undefined ? `<div class="loc">Recruiter relationship · ${ratingText(item.recruiter_relationship_score_10)}/10${isPlaceholderAssessment(item.recruiter_relationship_notes) ? " · pending" : ""}</div>` : ""}
           ${item.owner ? `<div class="loc">Owner · ${escapeHtml(item.owner)}</div>` : ""}
           ${!isPlaceholder(item.deadline) ? `<div class="loc">Deadline · ${escapeHtml(item.deadline)}${asDate(item.deadline) ? ` · ${escapeHtml(deadlineBucket(item))}` : ""}</div>` : ""}
         </button>`).join("")
@@ -553,6 +657,7 @@ async function initializeDashboard() {
     const data = await response.json();
     state.items = data.opportunities || [];
     state.activities = data.activities || [];
+    state.sharpnessAttempts = data.sharpness_attempts || [];
     state.offices = data.offices || [];
     state.unmappedCompanies = data.unmapped_companies || [];
     const scopeFor = (row) => {
@@ -580,6 +685,7 @@ async function initializeDashboard() {
     state.institutions = [...state.offices, ...state.unmappedCompanies, ...state.universities];
     setText("#updated-label", `DATA ${data.updated_at || "—"}`);
     render();
+    renderSharpness();
     initializeMap();
   } catch (error) {
     document.querySelector("#opportunity-list").innerHTML = `<div class="empty">${escapeHtml(error.message)}</div>`;
@@ -592,6 +698,15 @@ document.querySelector("#filters").addEventListener("click", (event) => {
   state.filter = button.dataset.filter;
   state.facetValue = "";
   render();
+});
+
+document.querySelector("#sharpness-owner").addEventListener("change", (event) => {
+  state.sharpnessOwner = event.target.value;
+  renderSharpness();
+});
+document.querySelector("#sharpness-details-toggle").addEventListener("click", () => {
+  state.sharpnessExpanded = !state.sharpnessExpanded;
+  renderSharpness();
 });
 
 document.querySelectorAll(".view-button").forEach((button) => {

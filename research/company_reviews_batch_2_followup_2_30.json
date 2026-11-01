@@ -1,0 +1,564 @@
+{
+  "scope": "Company Registry rows 2-30 inclusive",
+  "date_window": "2024-11-01 through 2026-11-01",
+  "records": {
+    "co:cathay-petroleum": {
+      "Company": "Cathay Petroleum",
+      "Company ID": "co:cathay-petroleum",
+      "Registry Row": 2,
+      "Glassdoor Notes": "Searched Glassdoor for Cathay Petroleum employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Cathay Petroleum workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:engelhart": {
+      "Company": "Engelhart",
+      "Company ID": "co:engelhart",
+      "Registry Row": 3,
+      "Glassdoor Notes": "Glassdoor profile for Engelhart Commodities Trading Partners shows mixed undated review headlines: positive opportunities/good firm, alongside concerns about leadership loyalty, senior management and decline since separation from BTG. No recent dated qualitative review was visible, and profile name is the broader Engelhart Commodities Trading Partners entity.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Engelhart-Commodities-Trading-Partners-EI_IE2276909.11%2C49.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "profile_or_undated_reviews_only",
+      "Reddit Notes": "Searched Reddit for recent Engelhart workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:astomos-energy": {
+      "Company": "Astomos Energy",
+      "Company ID": "co:astomos-energy",
+      "Registry Row": 4,
+      "Glassdoor Notes": "Searched Glassdoor for Astomos Energy employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Astomos Energy workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:vitol": {
+      "Company": "Vitol",
+      "Company ID": "co:vitol",
+      "Registry Row": 5,
+      "Glassdoor Notes": "Recent Vitol S.A. reviews praise compensation/benefits, helpful colleagues and learning, while noting a cut-throat environment, flat team structure, uncertain advancement and remote networking tradeoffs. Vitol S.A. Glassdoor profile is the global firm, not a specific desk/office; roles include data engineering and operations.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Vitol-S-A-Reviews-E272853.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-05",
+        "2026-10-17"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Recent commodities subreddit discussion contains mixed first-person/self-described-industry views: high hours and political/lean staffing concerns, with others calling Vitol strong on pay/loyalty or a good career stepping stone. One poster states experiences vary by office and seniority; these are unverified Reddit comments, not a representative review sample.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-08-13",
+        "2026-08-26",
+        "2026-10-07"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "medium"
+    },
+    "co:trafigura": {
+      "Company": "Trafigura",
+      "Company ID": "co:trafigura",
+      "Registry Row": 6,
+      "Glassdoor Notes": "Recent Trafigura reviews describe a challenging, fast-paced environment with good learning/supportive colleagues but demanding or long hours and stress that varies by role/team. Company-wide profile; reviews shown include analysts/managers, not a single commodity desk.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Trafigura-Reviews-E241813.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-14",
+        "2026-09-23",
+        "2026-09-30"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Recent commodity-trading-house comparison describes Trafigura as entrepreneurial/cut-throat and says movement from operations to trading is uncommon; another commenter characterizes workload as demanding. Replies are anonymous and role-specific, not verified employment reviews.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/Commodities/comments/1hyivsb/",
+        "https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-01-11",
+        "2025-01-12",
+        "2026-08-13"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "medium"
+    },
+    "co:mercuria": {
+      "Company": "Mercuria",
+      "Company ID": "co:mercuria",
+      "Registry Row": 7,
+      "Glassdoor Notes": "A recent software-engineer review reports draining work environment, weak management/HR support and poor communication; page also references colleagues across multiple global offices, indicating office-specific experience. This is one role-level view, not trading-floor consensus.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Mercuria-Energy-Reviews-E483375.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-05-05"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "One Jan 2025 comparison comment prefers Mercuria without elaboration; Aug 2026 discussion contains a short positive mention but no developed attributable experience. No usable recent qualitative workplace signal beyond those brief opinions.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/Commodities/comments/1hyivsb/",
+        "https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-01-11",
+        "2026-08-13"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "medium"
+    },
+    "co:gunvor": {
+      "Company": "Gunvor",
+      "Company ID": "co:gunvor",
+      "Registry Row": 8,
+      "Glassdoor Notes": "Searched Glassdoor for Gunvor employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "A Jan 2025 career thread explicitly says there was little feedback on Gunvor (neither positive nor negative); other 2025 comments mention its graduate-program cohort, not workplace culture. No attributable recent workplace review found.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/Commodities/comments/1hyivsb/",
+        "https://www.reddit.com/r/Commodities/comments/1hu6f6u/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-01-11",
+        "2025-01-05"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "low"
+    },
+    "co:glencore": {
+      "Company": "Glencore",
+      "Company ID": "co:glencore",
+      "Registry Row": 9,
+      "Glassdoor Notes": "Glassdoor profile snippets include a trading assistant saying culture has changed and other roles describing stable work or good remote culture alongside concerns about pay/practices. No dated review excerpt surfaced in this result; themes are role dependent and no recent dates asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Glencore-EI_IE12231.11%2C19.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "profile_or_undated_reviews_only",
+      "Reddit Notes": "Reddit discussions describe Glencore as more corporate/controlled than a pure trading house and suggest limited new-business opportunities; other commenters say front/middle-office roles at Glencore and peers may have poor WLB/high pay. Broad and anecdotal with no clear desk or verified affiliation.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/Commodities/comments/1hyivsb/",
+        "https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-01-11",
+        "2026-08-13"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "low"
+    },
+    "co:cargill": {
+      "Company": "Cargill",
+      "Company ID": "co:cargill",
+      "Registry Row": 10,
+      "Glassdoor Notes": "Recent reviews are mixed: Oct 2026 recruitment specialist alleges heavy workload, micromanagement, turnover and favoritism; other employees describe good culture/flexibility and promotion limits. These are broad company reviews spanning functions, not commodity trading teams specifically.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Cargill-Reviews-E2739.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-21",
+        "2026-10-22"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "A long-running Cargill experience thread includes 2025/2026 commenters alleging overwork, weak HR/management and falsification concerns, while other comments are older; allegations are unverified and are about operations/production or unspecified Cargill roles, not commodity trading desks.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/ChemicalEngineering/comments/10k5cuo/cargill_experience/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-09-05",
+        "2026-07-26"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "medium"
+    },
+    "co:bunge": {
+      "Company": "Bunge",
+      "Company ID": "co:bunge",
+      "Registry Row": 11,
+      "Glassdoor Notes": "Recent Bunge reviews range from pleasant amenities to limited WFH flexibility, minimal advancement/low pay and micromanagement. The surfaced small Bunge profile is an ambiguous/private profile (Budapest HQ) and may not represent Bunge Ltd or the global agribusiness; retain entity caveat.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Bunge-Reviews-E9170579.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-06-27",
+        "2026-02-08",
+        "2026-08-25"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Bunge workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:adm": {
+      "Company": "ADM",
+      "Company ID": "co:adm",
+      "Registry Row": 12,
+      "Glassdoor Notes": "Recent ADM reviews include positive comments on work/company and WLB, but also high turnover, management/retention criticism, long hours/shift work and limited responsiveness. Broad ADM profile includes plant/production and corporate roles; not trading-desk specific.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/ADM-Reviews-E55.htm",
+        "https://static.glassdoor.com/Reviews/ADM-Reviews-E55.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-22",
+        "2026-08-24",
+        "2026-08-25",
+        "2026-10-04",
+        "2026-10-05",
+        "2026-10-11"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent ADM workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:louis-dreyfus-company": {
+      "Company": "Louis Dreyfus Company",
+      "Company ID": "co:louis-dreyfus-company",
+      "Registry Row": 13,
+      "Glassdoor Notes": "Recent LDC reviews describe decent WLB and stable employment, but lower bonuses/pay and limited internal mobility or slow progression; one Oct 2026 junior trader specifically notes low bonus vs trading firms. Broad LDC profile; there is also a separate small “LDC. Louis Dreyfus Company” Brazil profile, which should not be conflated.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Louis-Dreyfus-Company-Reviews-E574703.htm",
+        "https://www.glassdoor.com/Reviews/LDC-Louis-Dreyfus-Company-Reviews-E8322206.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-10-28",
+        "2026-06-10",
+        "2026-10-14",
+        "2026-10-25",
+        "2026-10-29"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Recent Reddit search did not surface a Louis Dreyfus Company employee-review discussion; no attributable qualitative workplace signal found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:olam-group": {
+      "Company": "Olam Group",
+      "Company ID": "co:olam-group",
+      "Registry Row": 14,
+      "Glassdoor Notes": "Recent Olam reviews cite supportive management/WLB in some roles, while others mention long hours, low pay and limited project variety. Glassdoor result is branded “Olam,” not clearly Olam Group corporate versus operating subsidiaries; included roles range from data science to warehouse supervision.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Olam-Reviews-E1018143.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-07",
+        "2026-08-10",
+        "2026-08-20"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Olam Group workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:cofco-international": {
+      "Company": "COFCO International",
+      "Company ID": "co:cofco-international",
+      "Registry Row": 15,
+      "Glassdoor Notes": "Glassdoor results surfaced COFCO Group, not clearly COFCO International: positive environment/WLB and benefits coexist with bureaucracy and a toxic-management complaint. These are likely parent-group results and should not be treated as International trading division evidence.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/COFCO-Group-Reviews-E6336.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-06-29",
+        "2026-08-27",
+        "2026-08-30"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent COFCO International workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:hartree-partners": {
+      "Company": "Hartree Partners",
+      "Company ID": "co:hartree-partners",
+      "Registry Row": 16,
+      "Glassdoor Notes": "Recent reviews mention learning and internal opportunities, but also micromanagement/communication problems. A separate Hartree Consulting Middle East review alleges abusive culture and extreme hours; that is explicitly the consulting subsidiary/ME client-consulting practice, not the commodities trading business, and should not be generalized.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Hartree-Partners-Reviews-E374358.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-06-28",
+        "2026-07-05",
+        "2026-08-27"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Hartree Partners workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:freepoint-commodities": {
+      "Company": "Freepoint Commodities",
+      "Company ID": "co:freepoint-commodities",
+      "Registry Row": 17,
+      "Glassdoor Notes": "Recent reviews praise supportive/family-like culture, colleagues, flexibility and benefits; concerns include cross-product collaboration and HQ receiving more management attention than Galleria office. Examples include carbon trading and VP roles; office and team distinctions matter.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Freepoint-Commodities-Reviews-E704373.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-06-26",
+        "2026-08-24",
+        "2026-08-29"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Freepoint Commodities workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:castleton-commodities-international": {
+      "Company": "Castleton Commodities International",
+      "Company ID": "co:castleton-commodities-international",
+      "Registry Row": 18,
+      "Glassdoor Notes": "Recent CCI reviews praise entrepreneurial culture, learning, communication and early trading opportunities, but note under-resourced/immature data platforms and team-dependent pay/trajectory. A Stamford-specific operations review criticizes management/cost cutting and overload (Apr 2025), contrasting with Jan 2026 software-engineer review. Entity is Castleton Commodities International (CCI), not generic “Castleton.”",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Castleton-Commodities-International-Reviews-E693146.htm",
+        "https://api.glassdoor.com/Reviews/Castleton-Commodities-International-Stamford-Reviews-EI_IE693146.0%2C35_IL.36%2C44_IC1148355.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-04-22",
+        "2026-01-16",
+        "2026-01-20",
+        "2026-04-06",
+        "2026-08-03"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "An Aug 2026 commodities thread groups Castleton with firms reputed to have limited WLB in middle/front office, while praising firms in the same sector; comments are broad comparative opinion rather than attributable CCI employee testimonials.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-08-13"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_signal_found_with_attribution_caveat",
+      "Confidence": "medium"
+    },
+    "co:macquarie-commodities": {
+      "Company": "Macquarie Commodities",
+      "Company ID": "co:macquarie-commodities",
+      "Registry Row": 19,
+      "Glassdoor Notes": "Searched for Macquarie Commodities specifically; results point to parent Macquarie Group reviews but do not provide a recent attributable commodity-desk review. No desk-specific theme asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Macquarie-Group-Reviews-E12088.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "profile_or_undated_reviews_only",
+      "Reddit Notes": "Searched Reddit for recent Macquarie Commodities workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:mitsui-co": {
+      "Company": "Mitsui & Co.",
+      "Company ID": "co:mitsui-co",
+      "Registry Row": 20,
+      "Glassdoor Notes": "Profile review headlines show a mixed experience: valuable experience/steep learning curve, reactive rework culture, old-style management and low pay/long hours in some reviews. Retrieved review snippets are undated; no recent-period attribution can be confirmed.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Mitsui-and-Co-EI_IE7773.11%2C24.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "profile_or_undated_reviews_only",
+      "Reddit Notes": "Searched Reddit for recent Mitsui & Co. workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:mitsubishi-corporation": {
+      "Company": "Mitsubishi Corporation",
+      "Company ID": "co:mitsubishi-corporation",
+      "Registry Row": 21,
+      "Glassdoor Notes": "Searched Glassdoor for Mitsubishi Corporation employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Mitsubishi Corporation workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:marubeni": {
+      "Company": "Marubeni",
+      "Company ID": "co:marubeni",
+      "Registry Row": 22,
+      "Glassdoor Notes": "Recent Marubeni reviews include wide learning opportunities with regular overtime; snippets also include positive general employer descriptions. These are anonymous and no department/location was disclosed.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Marubeni-Reviews-E2398548.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-06-19",
+        "2026-07-13"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Marubeni workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:sumitomo-corporation": {
+      "Company": "Sumitomo Corporation",
+      "Company ID": "co:sumitomo-corporation",
+      "Registry Row": 23,
+      "Glassdoor Notes": "Recent Sumitomo Corporation reviews mention good benefits/pay but poor WLB, rigid processes/management, perceived preference for Japan HQ expatriates over local advancement, and layoffs. Company profile represents the sogo shosha, not Sumitomo Mitsui Banking Group; a similarly named small profile may represent a different entity.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Sumitomo-Corporation-EI_IE8187.11%2C31.htm",
+        "https://static.glassdoor.com/Reviews/Sumitomo-Corporation-Reviews-E8187.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-19",
+        "2026-08-31",
+        "2026-10-23"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Sumitomo Corporation workplace discussion; results were mostly finance-company lists, not employee experience. No attributable recent workplace signal found.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:itochu-corporation": {
+      "Company": "ITOCHU Corporation",
+      "Company ID": "co:itochu-corporation",
+      "Registry Row": 24,
+      "Glassdoor Notes": "Recent ITOCHU International reviews describe traditional/hierarchical culture and slow/opaque promotion, alongside some WLB and advancement opportunity; source is the U.S. subsidiary, not all global ITOCHU Corporation offices. Separate global ITOCHU profile has undated “outdated practices” headline only.",
+      "Glassdoor Source URLs": [
+        "https://static.glassdoor.com/Reviews/ITOCHU-International-Reviews-E4269.htm",
+        "https://www.glassdoor.com/Overview/Working-at-ITOCHU-EI_IE3528.11%2C17.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-06-17",
+        "2026-06-19",
+        "2026-08-21"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent ITOCHU Corporation workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:sojitz": {
+      "Company": "Sojitz",
+      "Company ID": "co:sojitz",
+      "Registry Row": 25,
+      "Glassdoor Notes": "Searched Glassdoor for Sojitz employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Sojitz workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:toyota-tsusho": {
+      "Company": "Toyota Tsusho",
+      "Company ID": "co:toyota-tsusho",
+      "Registry Row": 26,
+      "Glassdoor Notes": "Search returned Toyota Tsusho Systems (IT affiliate) reviews, not Toyota Tsusho Corporation. The systems reviews cite arbitrary performance reviews/strategy and below-market pay, countered by positive coworker comments; cannot generalize to trading/merchant corporation.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Toyota-Tsusho-Systems-Reviews-E5690274.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-05-13",
+        "2026-07-09"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Toyota Tsusho workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:noble-group": {
+      "Company": "Noble Group",
+      "Company ID": "co:noble-group",
+      "Registry Row": 27,
+      "Glassdoor Notes": "Search surfaced a Noble Group Limited profile and review headlines such as “lots of issues” and “terrible place” but no dated recent qualitative comments; unclear whether current entity versus legacy/restructured Noble. No recent theme asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Noble-Group-Limited-EI_IE39124.11%2C30.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "profile_or_undated_reviews_only",
+      "Reddit Notes": "Searched Reddit for recent Noble Group workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:pavilion-energy": {
+      "Company": "Pavilion Energy",
+      "Company ID": "co:pavilion-energy",
+      "Registry Row": 28,
+      "Glassdoor Notes": "Searched Glassdoor for Pavilion Energy employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Pavilion Energy workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:petrochina-international": {
+      "Company": "PetroChina International",
+      "Company ID": "co:petrochina-international",
+      "Registry Row": 29,
+      "Glassdoor Notes": "Searched Glassdoor for PetroChina International employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent PetroChina International workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:unipec": {
+      "Company": "Unipec",
+      "Company ID": "co:unipec",
+      "Registry Row": 30,
+      "Glassdoor Notes": "Searched Glassdoor for Unipec employee reviews; no attributable recent qualitative evidence surfaced in this search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Unipec workplace/employee reviews; no attributable recent qualitative signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    }
+  }
+}

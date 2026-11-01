@@ -9,11 +9,24 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261101-8">
+    <link rel="stylesheet" href="styles.css?v=20261101-13">
   </head>
   <body>
     <main class="map-screen">
       <div id="map" aria-label="Map of tracked opportunities"></div>
+      <aside class="sharpness-panel" aria-label="Interview Sharpness">
+        <div class="sharpness-heading">
+          <span>INTERVIEW SHARPNESS</span>
+          <button id="sharpness-details-toggle" type="button" aria-expanded="false">Details <i aria-hidden="true">+</i></button>
+        </div>
+        <div class="sharpness-toolbar">
+          <label for="sharpness-owner">Owner</label>
+          <select id="sharpness-owner" aria-label="Interview practice owner"></select>
+        </div>
+        <div class="sharpness-section-label">BEST SCORE BY ASSESSMENT</div>
+        <div id="sharpness-highscores" class="sharpness-highscores"></div>
+        <div id="sharpness-detail-panel" class="sharpness-detail-panel" hidden></div>
+      </aside>
       <aside class="sidebar" aria-label="Opportunity information">
         <header class="sidebar-head">
           <div class="wordmark"><span>WORLD OF COMMODITIES</span></div>
@@ -45,6 +58,6 @@
       <div class="map-attribution">© OpenStreetMap contributors · © OpenFreeMap</div>
     </main>
     <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
-    <script src="app.js?v=20261101-8" defer></script>
+    <script src="app.js?v=20261101-13" defer></script>
   </body>
 </html>

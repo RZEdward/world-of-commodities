@@ -1,0 +1,425 @@
+{
+  "scope": {
+    "worksheet": "Company Registry",
+    "rows_inclusive": [
+      121,
+      150
+    ],
+    "date_window": [
+      "2024-11-01",
+      "2026-11-01"
+    ]
+  },
+  "records": {
+    "co:ewe": {
+      "company": "EWE",
+      "Glassdoor Notes": "Recent employee reviews (May 26, 2025; Dec 12, 2024) point to pay, office, and personal growth as positives; one reviewer repeated management as the main drawback. Another described salary/freedom to make changes positively, while noting weak work culture and lack of structure. Company-wide signal; no desk/office detail beyond generic office mention.",
+      "Reddit Notes": "No usable employee-review signal found in initial targeted search for EWE employer/work discussions; search surfaced no identifiable, dated employee accounts in the requested window.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/EWE-Reviews-E42002.htm"
+      ],
+      "observed_review_dates": [
+        "2025-05-26",
+        "2024-12-12"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor evidence found; Reddit targeted search produced no usable signal"
+    },
+    "co:verbund": {
+      "company": "Verbund",
+      "Glassdoor Notes": "A current employee project manager review dated Sep 17, 2025 praises working climate and meal prices, while flagging bureaucracy and ambitious goals. This is company-wide (Austria); it does not identify a particular desk or office.",
+      "Reddit Notes": "No usable recent Reddit employee-review signal found in targeted search; no identifiable company employee posts in the requested window surfaced.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Verbund-Reviews-E40723.htm"
+      ],
+      "observed_review_dates": [
+        "2025-09-17"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor evidence found; Reddit targeted search produced no usable signal"
+    },
+    "co:fortum": {
+      "company": "Fortum",
+      "Glassdoor Notes": "Recent reviews show mixed experiences. A senior solutions architect (Jun 4, 2026) praised inclusive culture and work-life balance but called pace slow; an anonymous employee (Apr 19, 2026) described toxic internal politics, frequent restructurings/layoffs, meeting burden, and constrained career development. A procurement manager (Apr 15, 2026) praised employee support and benefits. Company-wide reviews; one positive review specifically mentions limited India exposure, so location-specific comments should not be generalized.",
+      "Reddit Notes": "Targeted searches did not surface a usable recent Reddit employee-review post about Fortum; no company-wide Reddit signal included.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Fortum-Reviews-E9743.htm"
+      ],
+      "observed_review_dates": [
+        "2026-06-04",
+        "2026-04-19",
+        "2026-04-15"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor evidence found; Reddit targeted search produced no usable signal"
+    },
+    "co:pge": {
+      "company": "PGE",
+      "Glassdoor Notes": "PGE Polska Grupa Energetyczna profile surfaced, but visible reviews were dated Aug/Jul 2024, before the window; no attributable Glassdoor review in-window found. Do not confuse with Portland General Electric (also abbreviated PGE).",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/PGE-Polska-Grupa-Energetyczna-Reviews-E311599.htm"
+      ],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: Glassdoor profile found; no in-window review text visible; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:eletrobras": {
+      "company": "Eletrobras",
+      "Glassdoor Notes": "A recent 2026 Glassdoor review surfaced under subsidiary Eletrobras Chesf, mentioning pride/long tenure and concern that privatization and layoffs could cause talent loss. This is subsidiary-specific rather than group-wide and should not be generalized.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Eletrobras-Chesf-E8777773-RVW84480021.htm"
+      ],
+      "observed_review_dates": [
+        "2026-01-06",
+        "2026-01-13"
+      ],
+      "confidence": "low",
+      "search_status": "Glassdoor: Subsidiary-specific Glassdoor evidence only; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:nextera-energy": {
+      "company": "NextEra Energy",
+      "Glassdoor Notes": "The Glassdoor page includes recent company-wide reviews (Oct 2026) with flexibility and learning/growth cited positively, while some reviewers report below-market pay, overwork, and limited advancement. Recent text shown is not desk-specific; company comprises multiple operating units so themes may differ by role/site.",
+      "Reddit Notes": "Relevant Reddit employee/user posts in the window include a May 19, 2026 discussion about NextEra nuclear operations describing a lean staffing model, workload, and non-backfilled roles; a Jan 14, 2026 job-offer thread describes a maintenance I&C role with high pay but extensive travel/overtime. These are role/site-specific anecdotes, not company-wide review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/NextEra-Energy-Inc-Reviews-E221824.htm",
+        "https://www.reddit.com/r/NuclearPower/comments/1ti1agu/de_nextera_merger/",
+        "https://www.reddit.com/r/instrumentation/comments/1qcz9f1/new_job_offer/"
+      ],
+      "observed_review_dates": [
+        "2026-10-10",
+        "2026-10-09",
+        "2026-09-24",
+        "2026-05-19",
+        "2026-01-14"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor and Reddit usable signal found"
+    },
+    "co:constellation-energy": {
+      "company": "Constellation Energy",
+      "Glassdoor Notes": "Recent company-wide reviews praise culture, remote work, benefits, and learning, while flagging high workload, long shifts/forced overtime, and sometimes limited advancement. Nuclear/plant worker accounts are particularly shift- and site-specific.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Constellation-Energy-Reviews-E75.htm"
+      ],
+      "observed_review_dates": [
+        "2026-04-22",
+        "2026-05-02",
+        "2026-08-14",
+        "2026-08-20"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:vistra": {
+      "company": "Vistra",
+      "Glassdoor Notes": "Recent company-wide reviews are mixed: hybrid work/benefits noted positively, alongside fast pace, leadership instability, weak management communication, low pay, and office politics. At least one Dec 22, 2025 analyst review specifically describes micromanagement and unreasonable overtime; its experience should be treated as role-specific.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Vistra-Reviews-E1064977.htm"
+      ],
+      "observed_review_dates": [
+        "2025-04-22",
+        "2025-12-22",
+        "2026-09-24",
+        "2026-10-02"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:nrg-energy": {
+      "company": "NRG Energy",
+      "Glassdoor Notes": "Recent reviews describe supportive teammates, benefits, growth/learning, and work-life balance, alongside rapid change and bureaucracy. Reviews are company-wide across varied functions; no desk-specific conclusion.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/NRG-Energy-Reviews-E11895.htm"
+      ],
+      "observed_review_dates": [
+        "2026-05-04",
+        "2026-08-14",
+        "2026-09-02"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:aes-corporation": {
+      "company": "AES Corporation",
+      "Glassdoor Notes": "A Jan 18, 2025 employee review describes good colleagues, remote-work balance, but a sudden return-to-office requirement involving very long travel; clearly a specific employee/location arrangement. 2026 profile snippets add frequent change, leadership disconnect, and flexibility/collaboration themes.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-AES-Corporation-E291-RVW94436954.htm"
+      ],
+      "observed_review_dates": [
+        "2025-01-18",
+        "2026-08-17",
+        "2026-08-30"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:dominion-energy": {
+      "company": "Dominion Energy",
+      "Glassdoor Notes": "Recent reviews cite good pay, benefits, and work environment; shift work, weekends/holidays, and occasional loss of focus are drawbacks. Broad company-level evidence, with operations roles naturally tied to schedules.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Dominion-Energy-Reviews-E204.htm"
+      ],
+      "observed_review_dates": [
+        "2026-08-20",
+        "2026-08-25"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:duke-energy": {
+      "company": "Duke Energy",
+      "Glassdoor Notes": "Recent reviews are favorable about work-life balance, benefits, and colleagues, but mention excessive meetings, local management problems, overtime, and poor balance for some field roles. Differences appear function/location dependent.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Duke-Energy-Reviews-E211.htm"
+      ],
+      "observed_review_dates": [
+        "2026-08-17",
+        "2026-08-27"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:eversource-energy": {
+      "company": "Eversource Energy",
+      "Glassdoor Notes": "Recent Glassdoor reviews range from positive engineering atmosphere/benefits to call-center workload and micromanagement and negative management/career concerns. Specific examples are an engineer (Jan 9, 2026) praising colleagues/atmosphere and a CSR (Mar 4, 2026) describing high call volume and long days.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Eversource-Energy-Reviews-E970297.htm"
+      ],
+      "observed_review_dates": [
+        "2025-02-19",
+        "2025-06-17",
+        "2026-01-09",
+        "2026-03-04",
+        "2026-09-20",
+        "2026-10-21"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:bc-hydro": {
+      "company": "BC Hydro",
+      "Glassdoor Notes": "Recent reviews describe good benefits, work-from-home flexibility, and vacation, balanced against heavy workloads, low raises, and bureaucratic/apathetic culture. A Feb 24, 2026 senior administration clerk gives a strongly positive general account; 2026 PM/engineering accounts differ materially by role.",
+      "Reddit Notes": "A Mar 17, 2025 discussion includes a commenter identifying as a BC Hydro employee and stating they had not seen corners cut in their work; this is a single self-identified employee reply in a public policy discussion, not a formal employer review.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/BC-Hydro-Reviews-E34974.htm",
+        "https://www.reddit.com/r/britishcolumbia/comments/1jdkh53/bc_hydro_rates_to_increase_by_375_for_next_2_years/"
+      ],
+      "observed_review_dates": [
+        "2025-03-17",
+        "2026-02-24",
+        "2026-08-27",
+        "2026-09-11",
+        "2026-09-25"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: One attributable employee comment; not a review thread"
+    },
+    "co:hydro-quebec": {
+      "company": "Hydro-Québec",
+      "Glassdoor Notes": "The recent Glassdoor profile has aggregate reviews but the visible individual review excerpts are undated/older; a dated Oct 3, 2024 review falls just outside the specified window and noted good work-life balance but slow pace/pay growth. No usable in-window review text surfaced.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Hydro-Qu%C3%A9bec-Reviews-E7701.htm"
+      ],
+      "observed_review_dates": [
+        "2024-10-03"
+      ],
+      "confidence": "low",
+      "search_status": "Glassdoor: Glassdoor profile found; no in-window review text visible; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:alectra-utilities": {
+      "company": "Alectra Utilities",
+      "Glassdoor Notes": "Recent reviews on Alectra’s company Glassdoor profile (the profile is Alectra-wide, not a separately labeled Utilities unit) mention friendly colleagues and benefits, but overwork/bureaucracy and salary below expectations. Use as parent-company proxy, not as distinct Alectra Utilities evidence.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Alectra-Reviews-E1540764.htm"
+      ],
+      "observed_review_dates": [
+        "2026-05-31",
+        "2026-08-26",
+        "2026-09-20"
+      ],
+      "confidence": "low",
+      "search_status": "Glassdoor: Parent company Glassdoor evidence; subsidiary-specific profile not surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:alectra-energy-solutions": {
+      "company": "Alectra Energy Solutions",
+      "Glassdoor Notes": "No distinct, attributable Alectra Energy Solutions Glassdoor review page or recent review surfaced in targeted search. Alectra parent-company reviews exist but have not been treated as this subsidiary’s own signal.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Alectra-Reviews-E1540764.htm"
+      ],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: No distinct company review surfaced; parent page excluded as a direct match; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:eskom": {
+      "company": "Eskom",
+      "Glassdoor Notes": "Recent reviews praise colleagues/career exposure in some roles, while others report long hours, weak compensation/support, and difficult work environments. Glassdoor accounts are group-wide and vary by job; 2025 graduate-engineer trainee review cited workload/pay mismatch.",
+      "Reddit Notes": "Search surfaced no strong recent Reddit employee-review thread. A Feb 2025 discussion included an account attributed to a senior Eskom executive relaying operational expectations, but it is secondary and not an employee review; a 2025 salary discussion is public compensation commentary. Excluded from workplace-theme synthesis.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Eskom-Reviews-E140053.htm",
+        "https://www.reddit.com/r/southafrica/comments/1ieek34/"
+      ],
+      "observed_review_dates": [
+        "2025-01-31",
+        "2025-10-25",
+        "2026-04-13",
+        "2026-05-14",
+        "2026-07-13"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: Only weak/secondary workplace material; no usable review signal"
+    },
+    "co:ಜera": {
+      "company": "JERA",
+      "Glassdoor Notes": "Targeted Glassdoor search did not surface a recent, attributable employee review for this exact company; no usable theme can be stated.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: No usable Glassdoor signal surfaced in targeted search; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:tepco": {
+      "company": "TEPCO",
+      "Glassdoor Notes": "No attributable recent employee review surfaced in targeted Glassdoor search for TEPCO. Results were insufficient to derive a usable theme.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: No usable Glassdoor signal surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:chubu-electric-power": {
+      "company": "Chubu Electric Power",
+      "Glassdoor Notes": "Glassdoor profile surfaced with only three ratings and no dated in-window review text visible. Review snippets refer to stability and mixed work-life/culture, but dates are not shown, so no recent trend inferred.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Overview/Working-at-Chubu-Electric-Power-EI_IE6358.11%2C31.htm"
+      ],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: Sparse profile; no in-window review dates visible; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:korea-electric-power-corporation-kepco": {
+      "company": "Korea Electric Power Corporation (KEPCO)",
+      "Glassdoor Notes": "Recent Korea Electric Power/KEPCO reviews cite work-life balance and career exposure, but also low wages and difficult managers; 2025 manager review describes stability but limited skill progression. Company-wide profile, not a specific office.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Korea-Electric-Power-Reviews-E5490.htm"
+      ],
+      "observed_review_dates": [
+        "2025-10-11",
+        "2025-12-14",
+        "2026-10-11"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:clp-holdings": {
+      "company": "CLP Holdings",
+      "Glassdoor Notes": "Glassdoor overview shows stable-work and good work-life impressions alongside limited advancement and management concerns, but visible review excerpts are undated; dated 2025 material found was interviews, not employee reviews. No in-window review themes asserted.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Overview/Working-at-CLP-Holdings-EI_IE6723.11%2C23.htm"
+      ],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: Profile found; no dated in-window employee review surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:ytl-power": {
+      "company": "YTL Power",
+      "Glassdoor Notes": "Search returned YTL Power International profile with a small review pool and snippets such as friendly colleagues and mixed career development, but dates were not observable and the profile may not map cleanly to the registry’s exact entity. No recent trend inferred.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Overview/Working-at-YTL-Power-International-EI_IE9526158.11%2C34.htm"
+      ],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: Sparse, entity-match caveat; no in-window dates visible; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:tata-power": {
+      "company": "Tata Power",
+      "Glassdoor Notes": "Recent reviews are mixed: learning opportunities and work environment are praised, while engineers report weak salary/career growth and challenging work-life balance. Reviews span roles and locations; some site/plant comments are local rather than company-wide.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Tata-Power-Reviews-E152741.htm"
+      ],
+      "observed_review_dates": [
+        "2026-08-09",
+        "2026-08-10",
+        "2026-08-27"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:ntpc": {
+      "company": "NTPC",
+      "Glassdoor Notes": "The Glassdoor National Thermal Power profile is a plausible NTPC match but recent dated review text was not visible in the surfaced result; snippets suggest benefits/culture and conditions dependent on supervisor and shift. Treat evidence as weak pending direct review verification.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Overview/Working-at-National-Thermal-Power-EI_IE8309.11%2C33.htm"
+      ],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: Profile likely match; no dated in-window review excerpts surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:adani-power": {
+      "company": "Adani Power",
+      "Glassdoor Notes": "Recent reviews are mixed and often plant/site-specific: some cite learning, stability, compensation, and local postings; others describe long shifts, remote postings, limited career growth, weak work-life balance, and toxic management. The Oct 23, 2026 assistant-manager review explicitly says 10–12 hour days and on-call availability.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Adani-Power-Reviews-E473429.htm"
+      ],
+      "observed_review_dates": [
+        "2025-06-03",
+        "2025-12-13",
+        "2026-06-15",
+        "2026-07-20",
+        "2026-10-23"
+      ],
+      "confidence": "medium",
+      "search_status": "Glassdoor: Recent Glassdoor reviews found; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:china-energy-investment-corporation": {
+      "company": "China Energy Investment Corporation",
+      "Glassdoor Notes": "No attributable Glassdoor employee review page or recent review surfaced in targeted search for the exact parent group. Results concerned corporate profile/ownership information, not employee reviews.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: No usable Glassdoor signal surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:china-huaneng-group": {
+      "company": "China Huaneng Group",
+      "Glassdoor Notes": "A Glassdoor page under “China HuaNeng” has only three reviews, all dated 2022 or earlier; the 2022 international project account mentions training/site work and distance from city. No in-window review evidence surfaced; avoid conflating affiliated entities absent stronger match.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/China-HuaNeng-Reviews-E40591.htm"
+      ],
+      "observed_review_dates": [
+        "2021-03-23",
+        "2022-10-06"
+      ],
+      "confidence": "low",
+      "search_status": "Glassdoor: Sparse historic profile; no in-window review surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    },
+    "co:china-datang-corporation": {
+      "company": "China Datang Corporation",
+      "Glassdoor Notes": "No attributable recent Glassdoor employee review found in targeted search. Search surfaced Datang company pages and official corporate material, not usable employee reviews.",
+      "Reddit Notes": "Targeted Reddit searches did not surface a recent, attributable employee review/post for this exact company; general industry, customer, stock, or interview discussion was not treated as employee-review evidence.",
+      "source_urls": [],
+      "observed_review_dates": [],
+      "confidence": "low",
+      "search_status": "Glassdoor: No usable Glassdoor signal surfaced; Reddit: No usable attributable Reddit review surfaced in targeted search"
+    }
+  }
+}

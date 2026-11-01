@@ -1,0 +1,577 @@
+{
+  "scope": "Company Registry rows 181-210 inclusive",
+  "date_window": "2024-11-01 through 2026-11-01",
+  "records": {
+    "co:flow-traders-asia": {
+      "Company": "Flow Traders Asia",
+      "Company ID": "co:flow-traders-asia",
+      "Registry Row": 181,
+      "Glassdoor Notes": "Searched Glassdoor for Flow Traders Asia employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Flow Traders Asia workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:kcg-holdings": {
+      "Company": "KCG Holdings",
+      "Company ID": "co:kcg-holdings",
+      "Registry Row": 182,
+      "Glassdoor Notes": "Searched Glassdoor for KCG Holdings employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent KCG Holdings workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:old-mission-capital": {
+      "Company": "Old Mission Capital",
+      "Company ID": "co:old-mission-capital",
+      "Registry Row": 183,
+      "Glassdoor Notes": "Searched Glassdoor for Old Mission Capital employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Old Mission Capital workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:wolverine-trading": {
+      "Company": "Wolverine Trading",
+      "Company ID": "co:wolverine-trading",
+      "Registry Row": 184,
+      "Glassdoor Notes": "Glassdoor reviews describe friendly/non-toxic colleagues, helpful collaboration, perks and work-life balance; some reviews mention outdated technology, opaque feedback, weak non-trading progression, and demanding trading workload. These are anonymous firm-level reviews; roles/teams vary.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Wolverine-Trading-Reviews-E269559.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Wolverine-Trading-E269559-RVW101104545.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2024-11-22",
+        "2025-11-05",
+        "2026-05-31",
+        "2026-07-16",
+        "2026-08-23"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Wolverine Trading workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:citadel": {
+      "Company": "Citadel",
+      "Company ID": "co:citadel",
+      "Registry Row": 185,
+      "Glassdoor Notes": "Searched Glassdoor for Citadel employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Citadel workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:millennium-management": {
+      "Company": "Millennium Management",
+      "Company ID": "co:millennium-management",
+      "Registry Row": 186,
+      "Glassdoor Notes": "Searched Glassdoor for Millennium Management employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Millennium Management workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:balyasny-asset-management": {
+      "Company": "Balyasny Asset Management",
+      "Company ID": "co:balyasny-asset-management",
+      "Registry Row": 187,
+      "Glassdoor Notes": "Recent reviews are mixed and team dependent: Jan 2025 praises team/management; May 2025 notes infrastructure/culture but PM turnover; Oct 2025 flags poor WLB/politics; 2026 entries cite collaboration/AI investment alongside intensity, fickle management and stress. One page is specific to San Francisco and reports long weeks/on-call; do not generalize that office review.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Balyasny-Asset-Management-E262940-RVW94580896.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Balyasny-Asset-Management-E262940-RVW97367682.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Balyasny-Asset-Management-E262940-RVW100681721.htm",
+        "https://api.glassdoor.com/Reviews/Balyasny-Asset-Management-San-Francisco-Reviews-EI_IE262940.0%2C25_IL.26%2C39_IC1147401.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-01-24",
+        "2025-03-26",
+        "2025-05-15",
+        "2025-10-15"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Balyasny Asset Management workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:point72": {
+      "Company": "Point72",
+      "Company ID": "co:point72",
+      "Registry Row": 188,
+      "Glassdoor Notes": "Recent Glassdoor review snippets report disorganization/fragmented decision-making, while other researchers praise supportive smart colleagues and hybrid benefits but describe long hours/heavy workloads and uneven management. Anonymous firm-level reviews; role and team differences likely.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Point72-Reviews-E1032703.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-08",
+        "2026-10-24"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Point72 workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:schonfeld-strategic-advisors": {
+      "Company": "Schonfeld Strategic Advisors",
+      "Company ID": "co:schonfeld-strategic-advisors",
+      "Registry Row": 189,
+      "Glassdoor Notes": "Searched Glassdoor for Schonfeld Strategic Advisors employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "A Nov 5 2024 thread asks about software-engineering culture, structure and tech after earlier layoffs/new CTO; the surfaced post itself is a question and did not provide an attributable employee answer, so no review theme claimed.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/careerguidance/comments/1gkhqji/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2024-11-05"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "low"
+    },
+    "co:d-e-shaw": {
+      "Company": "D. E. Shaw",
+      "Company ID": "co:d-e-shaw",
+      "Registry Row": 190,
+      "Glassdoor Notes": "Searched Glassdoor for D. E. Shaw employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Recent discussion is broad and largely industry commentary; a Sept 2025 commenter identifying as a recent former employee describes DESCO positively in aggregate and career advancement. Other comments praise academic/systematic research and collaborative approach but mention slow/structured advancement; another commenter explicitly warns DE Shaw Research is a separate entity. Reddit accounts are unverifiable; distinguish general firm from D.E. Shaw Research.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/quantfinance/comments/1n6xtqx/",
+        "https://www.reddit.com/r/quant/comments/1mmj7te/whats_your_opinion_on_de_shaw/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-09-03",
+        "2025-08-10",
+        "2026-05-18"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "low"
+    },
+    "co:two-sigma": {
+      "Company": "Two Sigma",
+      "Company ID": "co:two-sigma",
+      "Registry Row": 191,
+      "Glassdoor Notes": "Recent reviews cite strong WLB, remote/hybrid flexibility, benefits and smart/academic colleagues, with counterpoints of lower compensation than peers, siloed/IP-sensitive teams, bureaucracy, politics, slow pace and limited mobility. Firm-wide Glassdoor page; individual comments span quant research, software and intern roles.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Two-Sigma-Reviews-E241045.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Two-Sigma-E241045-RVW101668479.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Two-Sigma-E241045-RVW102442488.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-12-05",
+        "2026-01-23",
+        "2026-09-26",
+        "2026-10-09",
+        "2026-10-27"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "July 2026 quant thread includes commenter claims of political/internal drama and a pipeline-specialized role limiting end-to-end PM prospects; another claims Asia business expansion and lower-level stability/pay. These are Reddit comments with unverified affiliations and are role/strategy specific, not validated firm-wide employee testimony.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/quant/comments/1ukomd3/how_is_two_sigma_being_doing/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-07-01",
+        "2026-07-03",
+        "2026-07-27"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "medium"
+    },
+    "co:man-group": {
+      "Company": "Man Group",
+      "Company ID": "co:man-group",
+      "Registry Row": 192,
+      "Glassdoor Notes": "Recent employee reviews describe friendly/collaborative colleagues and reasonable WLB, balanced against below-market pay, uneven progression and sometimes chaotic/process-heavy work. One review refers to technology roles; another is an analyst; firm-level themes should not imply uniformity across AHL/systematic and other business units.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Man-Group-Reviews-E234069.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Man-Group-E234069-RVW103496129.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Man-Group-E234069-RVW105840597.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-11-24",
+        "2026-04-09",
+        "2026-09-19",
+        "2026-10-04",
+        "2026-10-21"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent Man Group workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:brevan-howard": {
+      "Company": "Brevan Howard",
+      "Company ID": "co:brevan-howard",
+      "Registry Row": 193,
+      "Glassdoor Notes": "Recent analyst/PM reviews show good pay/benefits and some positive work environment, but also workload/long hours, job-security concerns tied to performance, office-move distractions and alleged politics/turnover. The latter is an individual PM review mentioning Abu Dhabi/client coverage; treat it as office/role-specific, not company-wide fact.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Brevan-Howard-E300307-RVW99212818.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Brevan-Howard-E300307-RVW97135036.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-05-05",
+        "2025-08-07",
+        "2025-09-23",
+        "2026-08-22"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "An Oct 18 2025 quant thread alleges negative workplace experience, especially Abu Dhabi; subsequent thread discussion references Glassdoor. Anonymous allegations and office-specific context, not corroborated company-wide evidence.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/quant/comments/1o9pryj/avoid_brevan_howard_hedge_fund_especially_abu/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-10-18"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "medium"
+    },
+    "co:bluecrest-capital-management": {
+      "Company": "BlueCrest Capital Management",
+      "Company ID": "co:bluecrest-capital-management",
+      "Registry Row": 194,
+      "Glassdoor Notes": "Searched Glassdoor; found a BlueCrest profile and reviews page, but retrieved result did not expose dated attributable qualitative employee excerpts. No recent theme asserted.",
+      "Glassdoor Source URLs": [
+        "https://stage.glassdoor.com/Reviews/BlueCrest-Capital-Management-Reviews-E305621.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Searched Reddit for recent BlueCrest Capital Management workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:marshall-wace": {
+      "Company": "Marshall Wace",
+      "Company ID": "co:marshall-wace",
+      "Registry Row": 195,
+      "Glassdoor Notes": "Recent Glassdoor reviews praise collaborative culture, mentorship and benefits, while another Jan 2026 review criticizes senior leadership development. The Jan 2026 snippet specifically mentions New York office food/benefits; themes are anonymous and role/office dependent.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Marshall-Wace-E269459-RVW96679503.htm",
+        "https://www.glassdoor.co.uk/Reviews/Marshall-Wace-Reviews-E269459.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-01-06",
+        "2025-04-14",
+        "2026-01-20"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Recent Reddit search found recruiting/opinion threads but no attributable employee review with sufficiently specific workplace themes; no recent Reddit workplace signal established.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/quantfinance/comments/1wykv94/opinions_on_marshall_wace_swe_new_grad/",
+        "https://www.reddit.com/r/csMajors/comments/1o2kwbb/marshall_wace_recruiter_call/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-10-05",
+        "2025-10-09"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "medium"
+    },
+    "co:exoduspoint": {
+      "Company": "ExodusPoint",
+      "Company ID": "co:exoduspoint",
+      "Registry Row": 196,
+      "Glassdoor Notes": "Glassdoor profile exists but surfaced only undated review headlines such as fear-driven culture/inconsistent management and positive atmosphere/pay concerns. Because recent dates were not visible, no dated recent theme can be confirmed.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.ie/Overview/Working-at-ExodusPoint-EI_IE3194507.11%2C22.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Searched Reddit for recent ExodusPoint workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:jingan-asset-management": {
+      "Company": "Jingan Asset Management",
+      "Company ID": "co:jingan-asset-management",
+      "Registry Row": 197,
+      "Glassdoor Notes": "Searched Glassdoor for Jingan Asset Management employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Jingan Asset Management workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:taula-capital-management": {
+      "Company": "Taula Capital Management",
+      "Company ID": "co:taula-capital-management",
+      "Registry Row": 198,
+      "Glassdoor Notes": "Searched Glassdoor for Taula Capital Management employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Taula Capital Management workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:bridgewater-associates": {
+      "Company": "Bridgewater Associates",
+      "Company ID": "co:bridgewater-associates",
+      "Registry Row": 199,
+      "Glassdoor Notes": "Glassdoor profile lists mixed employee review headlines: some praise colleagues and growth; others characterize culture as volatile/political or poor. The review overview surfaced no dates for those snippets, so recent-period attribution cannot be confirmed from this search.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Bridgewater-Associates-EI_IE117647.11%2C33.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "A Jan 8 2025 thread about layoffs includes a commenter claiming Bridgewater was rigidly prescriptive (“Bridgewater way”) and overly focused on internal process/politics. This is one unverified comment amid layoff discussion; company-wide representativeness unknown.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/FinancialCareers/comments/1hwcrf7/bridgewater_cuts_7_of_staff/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-01-08"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "low"
+    },
+    "co:aqr-capital-management": {
+      "Company": "AQR Capital Management",
+      "Company ID": "co:aqr-capital-management",
+      "Registry Row": 200,
+      "Glassdoor Notes": "Recent AQR reviews praise smart colleagues, interesting work, academic learning and sometimes good WLB; criticisms include hierarchical/opaque management, limited compensation/career progression, legacy maintenance (India team comment), and long/unpredictable hours or micromanagement in other roles. Do not infer one location/team experience applies to all.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/AQR-Capital-Management-Reviews-E213435.htm",
+        "https://api.glassdoor.com/Reviews/AQR-Capital-Management-Reviews-E213435.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-06-09",
+        "2026-07-01",
+        "2026-08-19",
+        "2026-10-04",
+        "2026-10-06"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Nov 14 2025 quantfinance discussion characterizes AQR as bloated/operating more like an asset manager than a hedge fund; this is an anonymous forum opinion, not clearly employee testimony and not a direct review.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/quantfinance/comments/1ox9e2z/what_do_you_think_about_aqr_as_a_firm/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-11-14"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "medium"
+    },
+    "co:blackrock": {
+      "Company": "BlackRock",
+      "Company ID": "co:blackrock",
+      "Registry Row": 201,
+      "Glassdoor Notes": "Recent reviews surfaced both positive compensation/benefit comments and negative culture/job outlook/technology comments; one Oct 2026 review complains about four-days-in-office. Broad company-wide profile includes multiple divisions and locations, so these are not specific to asset management desks.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/BlackRock-Reviews-E9331.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-05",
+        "2026-10-09"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Searched Reddit for recent BlackRock workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:vanguard": {
+      "Company": "Vanguard",
+      "Company ID": "co:vanguard",
+      "Registry Row": 202,
+      "Glassdoor Notes": "Searched Glassdoor company profile and reviews; results surfaced profile/aggregate only, not dated qualitative employee excerpts usable for a recent theme.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Vanguard-Reviews-E4084.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Searched Reddit for recent Vanguard workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:pimco": {
+      "Company": "PIMCO",
+      "Company ID": "co:pimco",
+      "Registry Row": 203,
+      "Glassdoor Notes": "Searched Glassdoor company reviews; result showed profile and review count but no dated qualitative review excerpts in the retrieved search result, so no recent theme is asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/PIMCO-Reviews-E3585.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Searched Reddit for recent PIMCO workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:brookfield-asset-management": {
+      "Company": "Brookfield Asset Management",
+      "Company ID": "co:brookfield-asset-management",
+      "Registry Row": 204,
+      "Glassdoor Notes": "An Aug 2026 Glassdoor analyst review praises growth/progression opportunities but says lean teams make work-life balance difficult. Search results point to a broad Brookfield profile, not uniquely the public asset-management entity; reviews may span Brookfield affiliates, so entity attribution is limited.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Brookfield-Reviews-E5824.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-29"
+      ],
+      "Glassdoor Search Status": "recent_attributable_glassdoor_evidence",
+      "Reddit Notes": "Recent Reddit search found investment/firm-structure discussion and career questions, but no attributable employee workplace review; no recent workplace signal established.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/careeradvice/comments/1x27ohc/boss_moved_to_a_new_brookfieldbacked_renewable/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-10-11"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "medium"
+    },
+    "co:jpmorgan-chase": {
+      "Company": "JPMorgan Chase",
+      "Company ID": "co:jpmorgan-chase",
+      "Registry Row": 205,
+      "Glassdoor Notes": "Glassdoor overview surfaced mixed employee review headlines: opportunities/culture/benefits praised, while other comments note low pay, micromanagement and long hours. Search result did not expose dates or particular business lines; broad J.P. Morgan company profile rather than a specific markets desk.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-J-P-Morgan-EI_IE145.11%2C21.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Recent employee discussions are sharply mixed and stress team/LOB dependence: some say culture/benefits are good and experiences vary by office, while others cite surveillance/return-to-office, micromanagement, workload, attrition/review concerns and management dysfunction. Posts include Chase (consumer/commercial bank) and JPMorgan tech/business lines, so not specific to investment banking/markets.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/JPMorganChase/comments/1q5ws3o/keep_it_real_with_me_is_working_at_jpmc_worth_all/",
+        "https://www.reddit.com/r/JPMorganChase/comments/1wbmx9y/was_anyone_elses_experience_at_jpm_not_like_this/",
+        "https://www.reddit.com/r/JPMorganChase/comments/1k2zfqi/",
+        "https://www.reddit.com/r/JPMorganChase/comments/1n7t2w7/honestly/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-04-19",
+        "2025-09-03",
+        "2026-01-06",
+        "2026-09-09"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "low"
+    },
+    "co:goldman-sachs": {
+      "Company": "Goldman Sachs",
+      "Company ID": "co:goldman-sachs",
+      "Registry Row": 206,
+      "Glassdoor Notes": "Recent Glassdoor profile search surfaced overall company review page but no attributable dated qualitative snippets in this search. A page-level company aggregate is not used as a qualitative note.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Goldman-Sachs-Reviews-E2800.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Jan 2026 career-advice post from a UK consumer-banking operations worker describes slow progression and pay that lagged effort, while viewing experience as useful for external applications. Specific to consumer banking/operations in the UK; not investment banking.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/careerguidance/comments/1qh37qb/goldman_sachs_stay_or_go/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-01-19"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "low"
+    },
+    "co:citigroup": {
+      "Company": "Citigroup",
+      "Company ID": "co:citigroup",
+      "Registry Row": 207,
+      "Glassdoor Notes": "Searched Glassdoor for Citigroup employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Jan 20 2025 Citi discussion stresses large variation by team/office/LOB; some call risk roles relatively calm while comments range from toxic/abysmal to positive, including one Aug 2025 commenter alleging poor training, humiliation and late/night work. Accounts are anonymous and team/region-specific; not a bank-wide consensus.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/FinancialCareers/comments/1i5tfqt/is_citi_still_a_good_place_to_work_in_2025/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-01-20",
+        "2025-08-10"
+      ],
+      "Reddit Search Status": "recent_reddit_discussion_or_review_found",
+      "Confidence": "low"
+    },
+    "co:morgan-stanley": {
+      "Company": "Morgan Stanley",
+      "Company ID": "co:morgan-stanley",
+      "Registry Row": 208,
+      "Glassdoor Notes": "Recent Glassdoor search returned firm review profile/aggregate but no dated, attributable qualitative review excerpts in the surfaced result; no recent theme is asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Morgan-Stanley-Reviews-E2282.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_dated_recent_qualitative_evidence",
+      "Reddit Notes": "Searched Reddit for recent Morgan Stanley workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:bank-of-america": {
+      "Company": "Bank of America",
+      "Company ID": "co:bank-of-america",
+      "Registry Row": 209,
+      "Glassdoor Notes": "Searched Glassdoor for Bank of America employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Bank of America workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:barclays": {
+      "Company": "Barclays",
+      "Company ID": "co:barclays",
+      "Registry Row": 210,
+      "Glassdoor Notes": "Searched Glassdoor for Barclays employee reviews; no attributable recent qualitative excerpt surfaced in this batch search.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Barclays workplace/employee discussion; no attributable recent qualitative review surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    }
+  }
+}

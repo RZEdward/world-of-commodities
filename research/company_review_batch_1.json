@@ -1,0 +1,58 @@
+{
+  "co:trafigura": {
+    "glassdoor_score": null,
+    "glassdoor_notes": null,
+    "reddit_score": 5.5,
+    "reddit_notes": "Low-confidence qualitative estimate (5.5/10), not a published Reddit rating. A former physical/base-metals trader's Apr 2025 AMA described 11 years at Trafigura with a mixed-positive overall view, strong exposure and colleagues, alongside a political/hierarchical culture and demanding work. Separate 2026 comments are anecdotal and office-specific, including negative Athens comments. Do not treat these as representative or desk-wide. Checked 2026-11-01. Sources: https://www.reddit.com/r/Commodities/comments/1jwsclf/i_traded_physical_and_derivative_base_metals_for/ ; https://www.reddit.com/r/Commodities/comments/1slgeaj/does_anyone_know_what_companies_such_as_trafigura/",
+    "review_status": "Reddit evidence found; low confidence, qualitative anecdotes only"
+  },
+  "co:glencore": {
+    "glassdoor_score": null,
+    "glassdoor_notes": null,
+    "reddit_score": 4.5,
+    "reddit_notes": "Low-confidence qualitative estimate (4.5/10), not a published Reddit rating. An Aug 2026 commodities-industry discussion included several commenters characterizing Glencore front/middle-office work as high-pressure with poor work-life balance; there was also a comment that some desks may be better. This is an unverified, self-selected thread with no clear sample or office/desk coverage. Checked 2026-11-01. Source: https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/",
+    "review_status": "Reddit evidence found; low confidence, qualitative anecdotes only"
+  },
+  "co:cargill": {
+    "glassdoor_score": null,
+    "glassdoor_notes": null,
+    "reddit_score": 5.0,
+    "reddit_notes": "Low-confidence qualitative estimate (5.0/10), not a published Reddit rating. Reddit employee anecdotes are sharply mixed and mostly from plant/engineering rather than trading: some praise safety, training, colleagues and benefits; others describe workload, work-life balance, management and staffing concerns. The base discussion is Jan 2023, with additional replies through Sep 2025; recency and function match are limited. Checked 2026-11-01. Sources: https://www.reddit.com/r/ChemicalEngineering/comments/10k5cuo/cargill_experience/ ; https://www.reddit.com/r/ChemicalEngineering/comments/11uor5u/adm_and_cargill_experience/",
+    "review_status": "Reddit evidence found; low confidence, mixed and mostly non-trading anecdotes"
+  },
+  "co:adm": {
+    "glassdoor_score": null,
+    "glassdoor_notes": null,
+    "reddit_score": 4.5,
+    "reddit_notes": "Low-confidence qualitative estimate (4.5/10), not a published Reddit rating. A Reddit employee discussion updated through 2025 contains mixed but notably critical ADM accounts, including lean staffing, safety and layoff concerns; evidence is primarily chemical/plant engineering and cannot be generalized to trading roles. Checked 2026-11-01. Source: https://www.reddit.com/r/ChemicalEngineering/comments/11uor5u/adm_and_cargill_experience/",
+    "review_status": "Reddit evidence found; low confidence, function-specific anecdotes"
+  },
+  "co:cofco-international": {
+    "glassdoor_score": 7.8,
+    "glassdoor_notes": "Glassdoor exact-profile aggregate 3.9/5 from 2 reviews (converted to 7.8/10); very low confidence because of the tiny sample. One Oct 2026 review praises flexible hours and inclusive culture while mentioning compensation/increase concerns; a Jun 2025 review notes international exposure but unclear advancement. Company review anecdotes are self-selected and role/office coverage is unknown. Checked 2026-11-01. Source: https://www.glassdoor.co.in/Reviews/COFCO-INTL-Reviews-E10641003.htm",
+    "reddit_score": null,
+    "reddit_notes": null,
+    "review_status": "Glassdoor exact-profile evidence found; tiny sample, low confidence"
+  },
+  "co:cpc-corporation-taiwan": {
+    "glassdoor_score": 10.0,
+    "glassdoor_notes": "Glassdoor profile shows 5.0/5 based on a single rating (converted to 10.0/10); extremely low confidence and not a meaningful estimate of typical employee experience. The only surfaced comment says benefits are good. Checked 2026-11-01. Source: https://www.glassdoor.com/Overview/Working-at-CPC-Taiwan-EI_IE5908266.11%2C21.htm",
+    "reddit_score": null,
+    "reddit_notes": null,
+    "review_status": "Glassdoor single-rating signal found; extremely low confidence"
+  },
+  "co:statkraft-markets": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "Parent-company proxy only: Statkraft AS Glassdoor aggregate is 4.3/5 from 216 reviews (converted to 8.6/10). This is not a Statkraft Markets desk score; no desk-specific employee rating was verified. Checked 2026-11-01. Source: https://www.glassdoor.co.uk/Reviews/Statkraft-AS-Reviews-E241449.htm",
+    "reddit_score": null,
+    "reddit_notes": null,
+    "review_status": "Parent-company Glassdoor proxy found; not desk-specific"
+  },
+  "co:statkraft": {
+    "glassdoor_score": 8.6,
+    "glassdoor_notes": "Statkraft AS Glassdoor aggregate is 4.3/5 from 216 reviews (converted to 8.6/10); company-wide employee sample, not role-specific. Checked 2026-11-01. Source: https://www.glassdoor.co.uk/Reviews/Statkraft-AS-Reviews-E241449.htm",
+    "reddit_score": null,
+    "reddit_notes": null,
+    "review_status": "Glassdoor company-wide aggregate found; role-level scope limited"
+  }
+}

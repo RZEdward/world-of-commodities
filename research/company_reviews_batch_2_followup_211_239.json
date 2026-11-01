@@ -1,0 +1,537 @@
+{
+  "scope": "Company Registry rows 211-239 inclusive",
+  "date_window": "2024-11-01 through 2026-11-01",
+  "records": {
+    "co:bnp-paribas": {
+      "Company": "BNP Paribas",
+      "Company ID": "co:bnp-paribas",
+      "Registry Row": 211,
+      "Glassdoor Notes": "Recent firm-level employee reviews praise colleagues/culture and flexibility, while noting pay below peers, inconsistent manager/team experience and micromanagement complaints. Includes trade-operations and analyst examples; firm-wide profile spans many businesses/geographies.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/BNP-Paribas-Reviews-E10342.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-BNP-Paribas-E10342-RVW101966724.htm",
+        "https://api.glassdoor.com/Reviews/Employee-Review-BNP-Paribas-E10342-RVW105865864.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2025-12-25",
+        "2026-05-08",
+        "2026-10-06",
+        "2026-10-20"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent BNP Paribas employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:societe-generale": {
+      "Company": "Société Générale",
+      "Company ID": "co:societe-generale",
+      "Registry Row": 212,
+      "Glassdoor Notes": "Recent reviews cite ongoing reorganization and established structured-finance franchise; a data-scientist review praises WLB but sees limited advancement. Firm-wide profile; reorganization comments do not establish uniform experience by division.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Soci%C3%A9t%C3%A9-G%C3%A9n%C3%A9rale-Reviews-E10350.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-17",
+        "2026-10-20"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Société Générale employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:deutsche-bank": {
+      "Company": "Deutsche Bank",
+      "Company ID": "co:deutsche-bank",
+      "Registry Row": 213,
+      "Glassdoor Notes": "Recent reviews surfaced firm-wide and a small profile variant. The main firm page has Oct 2026 investment-banking associate comments describing understaffing/chaos, while operations mentions WLB but concerns pay/security. Another profile variant has tech comments re supportive team/benefits vs unpredictable hours, low pay and bureaucracy; entity/profile variant may be subsidiary or duplicate, so interpret carefully.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Deutsche-Bank-Reviews-E3150.htm",
+        "https://www.glassdoor.com/Reviews/Deutsche-Bank-Reviews-E10949476.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-07-22",
+        "2026-08-17",
+        "2026-10-28"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Deutsche Bank employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:ubs": {
+      "Company": "UBS",
+      "Company ID": "co:ubs",
+      "Registry Row": 214,
+      "Glassdoor Notes": "Recent reviews mix positive team culture/autonomy and WLB with poor management, low pay, constrained progression and difficult internal transfers. Roles include software, KYC, and authorized officers; broad UBS group profile, not specifically investment banking or markets.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/UBS-Reviews-E3419.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-08"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent UBS employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:hsbc": {
+      "Company": "HSBC",
+      "Company ID": "co:hsbc",
+      "Registry Row": 215,
+      "Glassdoor Notes": "Recent analyst review praises global exposure, training, stability and benefits but flags bureaucracy/slow decisions and team-dependent progression; a client-administration review likewise calls atmosphere highly team-dependent. Firm-wide profile across regions and divisions.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-HSBC-E3482-RVW105619131.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-16",
+        "2026-10-07"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent HSBC employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:standard-chartered": {
+      "Company": "Standard Chartered",
+      "Company ID": "co:standard-chartered",
+      "Registry Row": 216,
+      "Glassdoor Notes": "Searched Glassdoor for Standard Chartered employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Standard Chartered employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:macquarie-group": {
+      "Company": "Macquarie Group",
+      "Company ID": "co:macquarie-group",
+      "Registry Row": 217,
+      "Glassdoor Notes": "Recent reviews mention good WLB/benefits and salary, but constrained growth and engineering-team segregation; other recent employee comments suggest supportive culture/hybrid work but limited progression. Group-wide themes span banking, infrastructure and other businesses, not all trading desks.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Macquarie-Group-Reviews-E12088.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-19"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Macquarie Group employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:mizuho-financial-group": {
+      "Company": "Mizuho Financial Group",
+      "Company ID": "co:mizuho-financial-group",
+      "Registry Row": 218,
+      "Glassdoor Notes": "Recent reviews cite stability, collaborative onboarding/colleagues, and WLB in some teams, alongside salary-growth limits, authoritarian management, systems needing improvement and occasional poor WLB. Group-wide profile; role-specific examples include cyber security, VP and senior analyst.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Mizuho-Financial-Group-Reviews-E42320.htm",
+        "https://api.glassdoor.com/Reviews/Mizuho-Financial-Group-Reviews-E42320.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-14",
+        "2026-08-28",
+        "2026-08-31",
+        "2026-10-13",
+        "2026-10-18",
+        "2026-10-22"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Mizuho Financial Group employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:mufg": {
+      "Company": "MUFG",
+      "Company ID": "co:mufg",
+      "Registry Row": 219,
+      "Glassdoor Notes": "Searched Glassdoor for MUFG employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent MUFG employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:nomura": {
+      "Company": "Nomura",
+      "Company ID": "co:nomura",
+      "Registry Row": 220,
+      "Glassdoor Notes": "Searched Glassdoor for Nomura employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Nomura employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:ing-group": {
+      "Company": "ING Group",
+      "Company ID": "co:ing-group",
+      "Registry Row": 221,
+      "Glassdoor Notes": "Recent data-analyst review praises benefits and WLB but reports slow pace and low career-growth potential. Glassdoor page is ING Group-wide and not specific to the ING trading or wholesale-banking division.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/ING-Reviews-E4264.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-04"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent ING Group employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:natwest-markets": {
+      "Company": "NatWest Markets",
+      "Company ID": "co:natwest-markets",
+      "Registry Row": 222,
+      "Glassdoor Notes": "Searched Glassdoor for NatWest Markets specifically; search results returned NatWest Group employee excerpts (frequent restructures; WLB but limited front-office exposure in Gurgaon technology role), not a Markets-only review. Treat as parent-group context, not attributable to NatWest Markets specifically.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/NatWest-Group-Reviews-E10222.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-10-08",
+        "2026-10-09"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent NatWest Markets employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:abn-amro": {
+      "Company": "ABN AMRO",
+      "Company ID": "co:abn-amro",
+      "Registry Row": 223,
+      "Glassdoor Notes": "Searched Glassdoor for ABN AMRO employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent ABN AMRO employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:rbc-capital-markets": {
+      "Company": "RBC Capital Markets",
+      "Company ID": "co:rbc-capital-markets",
+      "Registry Row": 224,
+      "Glassdoor Notes": "Recent employee comments tagged RBC Capital Markets describe WLB but slow promotion, and in software-development roles mention supportive culture/AI initiatives with red tape and disconnected teams. Other broad RBC reviews stress team-dependent experience and dated technology; group-wide comments should not be assumed to describe all Capital Markets desks.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-RBC-E3358-RVW102369571.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-RBC-E3358-RVW103005004.htm",
+        "https://www.glassdoor.com/Reviews/RBC-Reviews-E3358.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-01-20",
+        "2026-03-01",
+        "2026-10-07"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Recent Reddit discussions by people identifying current/former Capital Markets experience are mixed: one Toronto poster says supportive team/stable opportunity, while a former employee describes understaffing, urgent workload, late nights/weekends and management scrutiny; thread commenters challenge some details and suggest supporting-function/IT context. A 2026 thread also says CM work can be stressful when systems affect traders. Reddit identities/claims unverified; narrow to Toronto/QTS/support functions where stated.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/rbc/comments/1uv0nrd/am_i_hurting_my_long_term_career_by_staying_at_rbc/",
+        "https://www.reddit.com/r/rbc/comments/1mpayfw",
+        "https://www.reddit.com/r/rbc/comments/1wnvy5m/principal_data_engineer_position_in_rbc_capital/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-08-13",
+        "2026-07-13",
+        "2026-09-23"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_discussion_found_with_caveat",
+      "Confidence": "medium"
+    },
+    "co:td-securities": {
+      "Company": "TD Securities",
+      "Company ID": "co:td-securities",
+      "Registry Row": 225,
+      "Glassdoor Notes": "Glassdoor surfaced a TD Securities profile with positive team culture/training and growth snippets, alongside long-hours/demanding-senior concerns for investment-banking analysts. Retrieved overview excerpts were not dated, so recent-period dates could not be verified; no dates asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Td-Securities-EI_IE6287081.11%2C24.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_observable_recent_dates",
+      "Reddit Notes": "Searched Reddit for recent TD Securities employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:scotiabank": {
+      "Company": "Scotiabank",
+      "Company ID": "co:scotiabank",
+      "Registry Row": 226,
+      "Glassdoor Notes": "Searched Glassdoor for Scotiabank employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Scotiabank employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:wells-fargo": {
+      "Company": "Wells Fargo",
+      "Company ID": "co:wells-fargo",
+      "Registry Row": 227,
+      "Glassdoor Notes": "Recent Glassdoor reviews mention competitive pay/WLB/benefits in some roles, contrasted with poor or varying management, sales pressure, limited career growth and layoffs. Reviews include retail branch, relationship-banking and software roles; broad company profile is not specific to Wells Fargo markets.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/WELLS-FARGO-Reviews-E10543964.htm",
+        "https://www.glassdoor.com/Reviews/Wells-Fargo-Reviews-E8876.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-26",
+        "2026-10-07",
+        "2026-10-09"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Wells Fargo employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:jefferies": {
+      "Company": "Jefferies",
+      "Company ID": "co:jefferies",
+      "Registry Row": 228,
+      "Glassdoor Notes": "Recent anonymous reviews praise employee development and team members but report cross-department communication gaps and an aggressive environment that may not value employees’ time. No specific desk/office was disclosed.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/Jefferies-Reviews-E1546.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-21",
+        "2026-08-24"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Jefferies employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:credit-agricole-cib": {
+      "Company": "Crédit Agricole CIB",
+      "Company ID": "co:credit-agricole-cib",
+      "Registry Row": 229,
+      "Glassdoor Notes": "Search returned parent Crédit Agricole Glassdoor pages rather than CIB-only results; snippets mention hybrid flexibility and limited transfers, plus positive culture/benefits and low pay. A French customer-adviser review on the page is not CIB-specific. Treat as parent-level signal only.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Cr%C3%A9dit-Agricole-EI_IE4252.11%2C26.htm",
+        "https://www.glassdoor.com/Reviews/Cr%C3%A9dit-Agricole-Reviews-E4252.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-02"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent Crédit Agricole CIB employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:smbc": {
+      "Company": "SMBC",
+      "Company ID": "co:smbc",
+      "Registry Row": 230,
+      "Glassdoor Notes": "Searched Glassdoor for SMBC employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent SMBC employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:anz": {
+      "Company": "ANZ",
+      "Company ID": "co:anz",
+      "Registry Row": 231,
+      "Glassdoor Notes": "Searched Glassdoor for ANZ employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit; one July 2025 thread reports senior leadership discussing complaints and cultural overhaul, but it is news-discussion rather than identifiable employee review. May 2025 thread mentions a NAB employee reaction to 4-day in-office proposal; not ANZ-specific. No attributable ANZ employee qualitative review found in this search.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/auscorp/comments/1m6xsna/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-07-23"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_discussion_found_with_caveat",
+      "Confidence": "low"
+    },
+    "co:commonwealth-bank-of-australia": {
+      "Company": "Commonwealth Bank of Australia",
+      "Company ID": "co:commonwealth-bank-of-australia",
+      "Registry Row": 232,
+      "Glassdoor Notes": "Glassdoor overview surfaced mixed employee headlines including positive “best bank to work for” and complaints about surveillance, but no dated recent qualitative excerpt was retrieved. Broad Australian parent bank page; no dated theme asserted.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Overview/Working-at-Commonwealth-Bank-of-Australia-EI_IE7922.11%2C41.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_observable_recent_dates",
+      "Reddit Notes": "Reddit search surfaced a Feb 2026 CBA employee comment mentioning repeated restructures and a July 2025 debate about offshoring and employee/job impacts. These are broad workplace/operational discussions, not securities desk reviews; affiliations are self-reported.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/AusFinance/comments/1rdbey2/cba_cuts_300_jobs_as_it_prepares_workers_for_an/",
+        "https://www.reddit.com/r/AusFinance/comments/1m3g0s3/im_a_bit_annoyed_with_cba_offshoring_workers/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-07-18",
+        "2026-02-24"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_discussion_found_with_caveat",
+      "Confidence": "low"
+    },
+    "co:national-australia-bank": {
+      "Company": "National Australia Bank",
+      "Company ID": "co:national-australia-bank",
+      "Registry Row": 233,
+      "Glassdoor Notes": "Recent senior software engineer review praises WLB, team culture and pay while reporting limited opportunities. Firm-wide NAB profile, likely varies by role and location.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/NAB-National-Australia-Bank-Reviews-E4262.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-09-05"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "May 2025 Reddit workplace discussion references a NAB employee saying a 4-day office directive prompted job search; later replies criticize trust/return-to-office. Broad corporate Australian banking context, not capital-markets-specific; anonymous commenter.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/auscorp/comments/1kpdyv3/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-05-19",
+        "2025-05-20"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_discussion_found_with_caveat",
+      "Confidence": "medium"
+    },
+    "co:ocbc": {
+      "Company": "OCBC",
+      "Company ID": "co:ocbc",
+      "Registry Row": 234,
+      "Glassdoor Notes": "Recent reviews describe helpful colleagues and WLB, but also management communication gaps, limited advancement, forced ranking/boss-pleasing concerns. The examples are anonymous and include operations and business-analyst roles; they are not securities-specific.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/OCBC-Reviews-E9773.htm"
+      ],
+      "Glassdoor Observed Review Dates": [
+        "2026-08-26",
+        "2026-08-27",
+        "2026-09-02"
+      ],
+      "Glassdoor Search Status": "recent_attributable_or_parent_context_glassdoor_found",
+      "Reddit Notes": "Searched Reddit for recent OCBC employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "medium"
+    },
+    "co:dbs": {
+      "Company": "DBS",
+      "Company ID": "co:dbs",
+      "Registry Row": 235,
+      "Glassdoor Notes": "Searched Glassdoor for DBS employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Search did not surface attributable DBS employee workplace reviews; a May 2025 Reddit post merely solicits views on DBS and several other banks without substantive employee responses.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/IndianWorkplace/comments/1kmhdve/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2025-05-14"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_discussion_found_with_caveat",
+      "Confidence": "low"
+    },
+    "co:uob": {
+      "Company": "UOB",
+      "Company ID": "co:uob",
+      "Registry Row": 236,
+      "Glassdoor Notes": "Searched Glassdoor for UOB employee reviews; no recent attributable qualitative excerpts surfaced in this search.",
+      "Glassdoor Source URLs": [
+        "https://www.glassdoor.com/Reviews/UOB-Reviews-E9774.htm"
+      ],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_profile_only_no_observable_recent_dates",
+      "Reddit Notes": "June 26 2026 AskSG thread solicits UOB culture/pay/WLB; comments characterize siloed/static work, reluctance to adopt change, micromanagement and overtime, while caveating that managers differ. Discussion appears Singapore office-specific, but commenter affiliations are not verified.",
+      "Reddit Source URLs": [
+        "https://www.reddit.com/r/asksg/comments/1ufv3wh/uob_work_culture_pay_and_benefits/"
+      ],
+      "Reddit Observed Post Dates": [
+        "2026-06-26"
+      ],
+      "Reddit Search Status": "recent_reddit_workplace_discussion_found_with_caveat",
+      "Confidence": "low"
+    },
+    "co:mirae-asset-securities": {
+      "Company": "Mirae Asset Securities",
+      "Company ID": "co:mirae-asset-securities",
+      "Registry Row": 237,
+      "Glassdoor Notes": "Searched Glassdoor for Mirae Asset Securities employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Mirae Asset Securities employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:samsung-securities": {
+      "Company": "Samsung Securities",
+      "Company ID": "co:samsung-securities",
+      "Registry Row": 238,
+      "Glassdoor Notes": "Searched Glassdoor for Samsung Securities employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent Samsung Securities employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    },
+    "co:china-international-capital-corporation": {
+      "Company": "China International Capital Corporation",
+      "Company ID": "co:china-international-capital-corporation",
+      "Registry Row": 239,
+      "Glassdoor Notes": "Searched Glassdoor for China International Capital Corporation employee reviews; no attributable recent qualitative review excerpt surfaced.",
+      "Glassdoor Source URLs": [],
+      "Glassdoor Observed Review Dates": [],
+      "Glassdoor Search Status": "searched_no_attributable_recent_evidence",
+      "Reddit Notes": "Searched Reddit for recent China International Capital Corporation employee/workplace reviews; no attributable recent qualitative workplace signal surfaced.",
+      "Reddit Source URLs": [],
+      "Reddit Observed Post Dates": [],
+      "Reddit Search Status": "searched_no_attributable_recent_evidence",
+      "Confidence": "low"
+    }
+  }
+}

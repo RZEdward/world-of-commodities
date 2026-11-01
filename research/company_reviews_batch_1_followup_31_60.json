@@ -1,0 +1,560 @@
+{
+  "co:sinopec-trading": {
+    "company_name": "Sinopec Trading",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:cpc-corporation-taiwan": {
+    "company_name": "CPC Corporation Taiwan",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:eneos-xplora": {
+    "company_name": "Eneos Xplora",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:stx-group": {
+    "company_name": "STX Group",
+    "glassdoor": {
+      "notes": "Glassdoor reviews include a Jan 24 2025 Analyst describing good work-life balance and friendly, diverse colleagues but below-market compensation, opaque bonuses and churn; Jun 5 2025 Director praised commercial/entrepreneurial deal exposure but wanted more development investment; Jun 21 2026 Trading review alleges weak direction and revolving-door hiring. Companywide, mixed role views.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-STX-Group-E1053477-RVW94573573.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-STX-Group-E1053477-RVW97854237.htm",
+        "https://www.glassdoor.com/Reviews/STX-Group-Reviews-E1053477.htm"
+      ],
+      "observed_dates": "2025-01-24; 2025-06-05; 2026-06-21",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:caldic": {
+    "company_name": "Caldic",
+    "glassdoor": {
+      "notes": "Caldic Glassdoor profile includes 2026 reviews: May 19 Regional Purchasing Executive alleges absent/toxic leadership and micromanagement; Jun 10 Accounts Executive describes a positive career start. A separate Apr 24 2025 CCO review praises leadership/development while noting rapid transition from family business to global corporation. Company-wide, varied roles/geographies.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Caldic-Reviews-E987006.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Caldic-E987006-RVW96917842.htm"
+      ],
+      "observed_dates": "2025-04-24; 2026-05-19; 2026-06-10",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:sucden": {
+    "company_name": "Sucden",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:ecom-agroindustrial": {
+    "company_name": "ECOM Agroindustrial",
+    "glassdoor": {
+      "notes": "Company profile reviews dated Mar 24, Mar 30 and May 4 2026 show mixed accounts: positive colleague culture/work-life balance; negative comments on micromanagement/HR; another values flexible schedule and learning but cites dated structure. Roles include analyst/IT/management trainee; not trading-specific.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/ECOM-Agroindustrial-Corporation-Reviews-E5183622.htm"
+      ],
+      "observed_dates": "2026-03-24; 2026-03-30; 2026-05-04",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:wilmar-international": {
+    "company_name": "Wilmar International",
+    "glassdoor": {
+      "notes": "Glassdoor Research Assistant reviews in 2025 praise appropriate workload/flexible management and good working environment, while noting weak salary progression/no WFH or lack of market pay correction; May 2026 Assistant Research Officer notes good WLB but unclear research direction. Small function-specific subgroup, not trading.",
+      "source_urls": [
+        "https://static.glassdoor.com/Reviews/Wilmar-Research-Assistant-Reviews-EI_IE43337.0%2C6_KO7%2C25.htm",
+        "https://static.glassdoor.com/Reviews/Wilmar-Assistant-Research-Officer-Reviews-EI_IE43337.0%2C6_KO7%2C33.htm"
+      ],
+      "observed_dates": "2025-04-15; 2025-05-12; 2026-05-25",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:alvean": {
+    "company_name": "Alvean",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:ed-f-man": {
+    "company_name": "ED&F Man",
+    "glassdoor": {
+      "notes": "Glassdoor Commodity Trader review dated Sep 30 2025 praises financial stability but cites below-average management and training; Apr 21 2026 Senior Manager review praises end-to-end exposure and learning. Another London HR assistant review (May 19 2025) praises team and asks for more development opportunities. These are distinct roles/offices; trader note is the closest function match.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-ED-and-F-Man-RVW9726407.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-ED-and-F-Man-E200210-RVW103663631.htm",
+        "https://www.glassdoor.com/Location/ED-and-F-Man-London-England-Location-EI_IE200210.0%2C12_IL.13%2C27_IC2671300.htm"
+      ],
+      "observed_dates": "2025-09-30; 2025-05-19; 2026-04-21",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:nidera": {
+    "company_name": "Nidera",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:czarnikow": {
+    "company_name": "Czarnikow",
+    "glassdoor": {
+      "notes": "Jan 24 2025 Associate Glassdoor review describes supportive colleagues and career/learning growth; rapid company growth makes it hard to keep track of changes. A later company profile shows 2026 Trade Support Analyst praising WLB/team/learning but wanting better communication, while Graduate Trainee and Sales Associate report WLB/recognition and transparency concerns.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Czarnikow-E535346-RVW94577401.htm",
+        "https://www.glassdoor.com/Reviews/Czarnikow-Reviews-E535346.htm"
+      ],
+      "observed_dates": "2025-01-24; 2026-06-10; 2026-07-20",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:aston": {
+    "company_name": "Aston",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:aot-energy": {
+    "company_name": "AOT Energy",
+    "glassdoor": {
+      "notes": "Glassdoor AOT Energy review dated Feb 14 2025: anonymous employee values the energy-sector opportunity but sharply criticizes local management. Very small sample and local-management scope; company reportedly sold, so current applicability is limited.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/AOT-Energy-Reviews-E1533434.htm"
+      ],
+      "observed_dates": "2025-02-14",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:gunvor-singapore": {
+    "company_name": "Gunvor Singapore",
+    "glassdoor": {
+      "notes": "Gunvor Singapore Glassdoor page shows May 21 2026 Analyst review praising remuneration and work-life balance while noting some colleagues can be difficult; Apr 14 Operations Executive praises team/people but notes flat structure and limited growth. Singapore office-specific; not necessarily trading desk.",
+      "source_urls": [
+        "https://api.glassdoor.com/Reviews/Gunvor-Singapore-Reviews-EI_IE699915.0%2C6_IL.7%2C16_IC3235921.htm"
+      ],
+      "observed_dates": "2026-04-14; 2026-05-21",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:shell-trading": {
+    "company_name": "Shell Trading",
+    "glassdoor": {
+      "notes": "Glassdoor Shell Trading Operations review dated Oct 26 2026 (role labeled Trading Operations) praises employee well-being but says work beyond role can be heavy. Glassdoor indexed this under Shell / trading operations, not a distinct Shell Trading legal entity review.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Shell-E5833-RVW4747299.htm"
+      ],
+      "observed_dates": "2026-10-26",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:bp-trading": {
+    "company_name": "BP Trading",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/Commodities thread posted Dec 3 2024 asks about BP Trading & Shipping internship/program. A commenter says BP trading teams are collaborative and globally connected and outlines potential exits; commenter’s role is not verifiable, so this is career discussion, not an attributable employee review.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1h61mn1/"
+      ],
+      "observed_dates": "2024-12-03",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    }
+  },
+  "co:totalenergies-trading": {
+    "company_name": "TotalEnergies Trading",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/Commodities thread dated Dec 26 2025 asks about TotalEnergies Trading graduate program; a reply says there are great people and a nice trading floor, but does not establish commenter’s employee status. Career/program discussion only; low confidence and not an attributable employee review.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1pw4i7w/totalenergies_trading_graduate_program/"
+      ],
+      "observed_dates": "2025-12-26",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    }
+  },
+  "co:equinor-trading": {
+    "company_name": "Equinor Trading",
+    "glassdoor": {
+      "notes": "Equinor London office Glassdoor review dated Aug 25 2026 from Market Analysis & Trading Intern praises culture and friendly environment; intern reports too short a tenure to identify downsides. Role-specific London office signal, internship only.",
+      "source_urls": [
+        "https://www.glassdoor.com/Location/Equinor-London-Location-EI_IE10408.0%2C7_IL.8%2C14_IC2671300.htm"
+      ],
+      "observed_dates": "2026-08-25",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:exxonmobil-global-trading": {
+    "company_name": "ExxonMobil Global Trading",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/Commodities discussion dated Dec 11 2025 about Exxon Global Trading includes a commenter reporting headcount cuts and staff handling regular work plus implementation support. Anecdotal, trading-relevant but no specific desk/office or verifiable employee identity.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1pjl3jf/market_view_on_exxon_global_trading/"
+      ],
+      "observed_dates": "2025-12-11",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    }
+  },
+  "co:chevron-supply-and-trading": {
+    "company_name": "Chevron Supply and Trading",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:jera-global-markets": {
+    "company_name": "JERA Global Markets",
+    "glassdoor": {
+      "notes": "JERA Global Markets Glassdoor review dated Apr 10 2025 from a Trader praises robust business but reports below-industry pay and high mid-office turnover; an intern review dated Nov 29 2025 praises collegial culture and supportive supervisors. Entity-specific, but individual role experiences.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-JERA-Global-Markets-E9229474-RVW96603172.htm"
+      ],
+      "observed_dates": "2025-04-10; 2025-11-29",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:edf-trading": {
+    "company_name": "EDF Trading",
+    "glassdoor": {
+      "notes": "EDF Trading Glassdoor profile shows 2025–26 qualitative comments: a Junior Trader (Dec 11 2025) praises learning and colleagues, notes pay; 2026 reviews mention good learning/asset-backed exposure but low pay, bureaucracy and management issues. Exact trading company; varied roles.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/EDF-Trading-Reviews-E1274547.htm?filter.overallRating=FIVE",
+        "https://www.glassdoor.com/Reviews/EDF-Trading-Reviews-E1274547.htm"
+      ],
+      "observed_dates": "2025-12-11; 2026-06-15; 2026-07-14; 2026-08-30",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:engie-global-markets": {
+    "company_name": "Engie Global Markets",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:rwe-supply-trading": {
+    "company_name": "RWE Supply & Trading",
+    "glassdoor": {
+      "notes": "Company-specific Glassdoor reviews: Apr 24 2025 Quantitative Analyst cites bureaucracy and limited flexibility; Dec 17 2025 employee praises pay/pension/bonuses but describes flat hierarchy and limited progression; Feb–Jul 2026 reviews vary, with market-risk analyst citing lack of ambition/WFH and graduates praising culture but noting limited WFH/job security. Trading-company scope.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-RWE-Supply-and-Trading-E254216-RVW96902693.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-RWE-Supply-and-Trading-E254216-RVW101865041.htm",
+        "https://www.glassdoor.com/Reviews/RWE-Supply-and-Trading-Reviews-E254216.htm"
+      ],
+      "observed_dates": "2025-04-24; 2025-12-17; 2026-02-25; 2026-03-29; 2026-07-05",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:centrica-energy-trading": {
+    "company_name": "Centrica Energy Trading",
+    "glassdoor": {
+      "notes": "A Glassdoor Centrica full-stack developer review dated Aug 26 2025 explicitly describes Centrica Energy Trading as collaborative/inclusive, with skilled supportive colleagues, development, modern technology and WLB, while noting top-management strategy uncertainty. Centrica parent profile but review specifically names the trading subsidiary.",
+      "source_urls": [
+        "https://www.glassdoor.sg/Reviews/Employee-Review-Centrica-E6731-RVW99593999.htm"
+      ],
+      "observed_dates": "2025-08-26",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:uniper-global-commodities": {
+    "company_name": "Uniper Global Commodities",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:vattenfall-energy-trading": {
+    "company_name": "Vattenfall Energy Trading",
+    "glassdoor": {
+      "notes": "Searches for recent company-specific Glassdoor employee reviews found no attributable review within the requested window; results were absent, unrelated similarly named entities, or did not identify the listed company/desk. This is not a rating.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:statkraft-markets": {
+    "company_name": "Statkraft Markets",
+    "glassdoor": {
+      "notes": "Fresh search found no Glassdoor review attributable specifically to Statkraft Markets. A 2025 Statkraft AS company-wide HSSE Advisor review cites good colleagues, meaningful work, WLB/pay but a poorly structured organization and Norwegian bias; this parent proxy cannot establish Markets/desk experience.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Statkraft-AS-E241449-RVW95851178.htm"
+      ],
+      "observed_dates": "2025-03-15",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:rsted-trading": {
+    "company_name": "Ørsted Trading",
+    "glassdoor": {
+      "notes": "Fresh search found no review attributable specifically to Ørsted Trading. A company-wide Ørsted Engineer Glassdoor review dated Apr 22 2025 cites benefits, flexible work and helpful colleagues, alongside routine work and limited advancement; scope is broad corporate and not the trading desk.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-%C3%98rsted-E1858272-RVW96849184.htm"
+      ],
+      "observed_dates": "2025-04-22",
+      "confidence": "low to moderate; self-selected qualitative reports and role/office caveats apply",
+      "search_status": "recent attributable qualitative source found"
+    },
+    "reddit": {
+      "notes": "Searches for recent company-specific Reddit workplace posts found no attributable employee/user review signal; available results were unrelated, applicant/interview discussions, market commentary, or older than 2024-11-01.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  }
+}

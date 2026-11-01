@@ -1,0 +1,303 @@
+{
+  "co:exxonmobil": {
+    "company_name": "ExxonMobil",
+    "glassdoor": {
+      "notes": "2025-07-31; 2025-08-29 Glassdoor reviews: pay praised alongside variable/poor work-life balance, culture complaints and limited growth; both broad employee reviews (one Project Engineer), not commodity-trading specific.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-ExxonMobil-E237-RVW99071966.htm"
+      ],
+      "observed_dates": "2025-07-31; 2025-08-29",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/Commodities post dated 2025-12-11: a commenter describing knowledge of Exxon Global Trading reports headcount cuts leaving staff doing regular duties plus implementation support; potentially trading-relevant but anecdotal and no location/desk detail.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1pjl3jf/market_view_on_exxon_global_trading/"
+      ],
+      "observed_dates": "2025-12-11",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:engie": {
+    "company_name": "Engie",
+    "glassdoor": {
+      "notes": "Glassdoor reviews dated 2025-04-14 (Site Manager) and 2025-05-06 (anonymous): positive office-worker experience contrasted with a “toxic environment” review; roles and locations differ, neither trading-specific.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-ENGIE-E1052655-RVW96672883.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-ENGIE-E1052655-RVW97158717.htm"
+      ],
+      "observed_dates": "2025-04-14; 2025-05-06",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit post describing employee experience at ENGIE. Results were consumer/customer or job-seeking discussions, not workplace reviews.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:cargill": {
+    "company_name": "Cargill",
+    "glassdoor": {
+      "notes": "Glassdoor production employee review dated 2025-01-22 praises dental coverage and starting pay, but notes unpaid downtime; production-role signal, not trading desk.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Cargill-E2739-RVW94528893.htm"
+      ],
+      "observed_dates": "2025-01-22",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no usable recent attributable Reddit employee review for Cargill. A 2025 commodities thread concerned interview advice; older workplace threads fall outside the date window.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:vitol": {
+    "company_name": "Vitol",
+    "glassdoor": {
+      "notes": "Glassdoor exact-profile recent reviews dated 2026-10-17 and 2026-10-05: one data engineer cited good pay/benefits with cut-throat environment and weak management/growth; another anonymous review praised compensation/bonus but lacked future-opportunity clarity. Company profile is Vitol S.A.; neither review is identified as a trading desk.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Vitol-S-A-Reviews-E272853.htm"
+      ],
+      "observed_dates": "2026-10-17; 2026-10-05",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit commodities discussion dated 2026-08-13: one commenter describes Vitol bonuses and colleagues positively but culture as toxic/political; anecdotal, desk and office unspecified.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1vngsk0/is_vitol_a_good_company/"
+      ],
+      "observed_dates": "2026-08-13",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:trafigura": {
+    "company_name": "Trafigura",
+    "glassdoor": {
+      "notes": "Glassdoor review dated 2025-03-05: anonymous reviewer praises compensation, competent colleagues and benefits, but describes poor work-life balance and unending workload. Company-wide, role/office not specified.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Trafigura-E241813-RVW95561389.htm"
+      ],
+      "observed_dates": "2025-03-05",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Former physical/base-metals trader AMA posted 2025-04-22, describing 11 years at Trafigura and mixed experience; comments discuss demanding expectations and career exposure. This is identifiable as trader experience but not a specific desk/office.",
+      "source_urls": [
+        "https://www.reddit.com/r/Commodities/comments/1jwsclf/i_traded_physical_and_derivative_base_metals_for/"
+      ],
+      "observed_dates": "2025-04-22",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:bunge": {
+    "company_name": "Bunge",
+    "glassdoor": {
+      "notes": "Glassdoor Bunge Limited review dated 2026-08-31: data engineer cites flexible hours but alleges toxic culture, bullying and scare tactics. Company-wide profile, specific function/office not supplied.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Bunge-Limited-Reviews-E9013.htm"
+      ],
+      "observed_dates": "2026-08-31",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit post reporting employee experience at Bunge. Results mentioning Bunge were industry/career advice without firsthand employer themes.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:glencore": {
+    "company_name": "Glencore",
+    "glassdoor": {
+      "notes": "Glassdoor reviews dated 2026-03-23 (EIT) and 2026-03-17 (Product Risk Analyst): pay/benefits and development praised in one; rigid structure and no hybrid work criticized in another. Different roles and geographies; not a unified trading-desk view.",
+      "source_urls": [
+        "https://stage.glassdoor.com/Reviews/Glencore-Reviews-E12231.htm"
+      ],
+      "observed_dates": "2026-03-23; 2026-03-17",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/AusMining discussion dated 2025-05-31 includes a contractor describing Queensland site experience: high turnover except long-tenured staff, acceptable pay/production bonus and safety culture at that time. Mine/site experience, not trading office.",
+      "source_urls": [
+        "https://www.reddit.com/r/AusMining/comments/1l06wom/"
+      ],
+      "observed_dates": "2025-05-31",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:chevron": {
+    "company_name": "Chevron",
+    "glassdoor": {
+      "notes": "Glassdoor reviews dated 2025-11-14 (HR Manager) and 2025-12-26 (Accounting Analyst): competitive pay/benefits, with restructuring, heavy workload/low morale in one and limited promotion despite balance/growth positives in another. Broad company roles, not trading.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Chevron-E13524-RVW101283289.htm",
+        "https://www.glassdoor.com/Reviews/Employee-Review-Chevron-E13524-RVW101974110.htm"
+      ],
+      "observed_dates": "2025-11-14; 2025-12-26",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/ChemicalEngineering discussion dated 2026-09-01: commenters describing engineering work cite strong pay/benefits, but operational roles may run 50–55 hours weekly and staffing cuts worsened workload. Function-specific engineering anecdotes; not trading.",
+      "source_urls": [
+        "https://www.reddit.com/r/ChemicalEngineering/comments/1w3ycm8/how_is_chevron_and_its_subsidiaries/"
+      ],
+      "observed_dates": "2026-09-01",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:shell": {
+    "company_name": "Shell",
+    "glassdoor": {
+      "notes": "Glassdoor Area Sales Manager review dated 2025-03-28 praises learning, mentorship, training and global exposure, while citing bureaucracy, rigid hierarchy and slow decisions; broad corporate role, not trading.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Shell-E5833-RVW96227295.htm"
+      ],
+      "observed_dates": "2025-03-28",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit employee workplace review for Shell. Recent Reddit hits were job/application questions or generalized salary discussions, not firsthand culture evidence.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:mercuria": {
+    "company_name": "Mercuria",
+    "glassdoor": {
+      "notes": "Glassdoor anonymous employee review dated 2025-04-21 praises benefits, pay, entrepreneurial environment and experienced colleagues, but describes high attrition, weak work-life balance and traders treated as infallible. Company-wide; office/desk unspecified.",
+      "source_urls": [
+        "https://api.glassdoor.com/Reviews/Employee-Review-Mercuria-Energy-E483375-RVW96831307.htm"
+      ],
+      "observed_dates": "2025-04-21",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit employee experience post for Mercuria; returned Reddit material was broad commodities career discussion without company-specific firsthand workplace themes.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:senoko-energy": {
+    "company_name": "Senoko Energy",
+    "glassdoor": {
+      "notes": "Glassdoor reviews dated 2026-06-20 (Assistant VP), 2026-06-03 (Analyst), and 2026-02-13 (Department Head): work-life balance/family spirit and benefits/bonus noted, alongside slow progress, small teams and departure of local senior management. Singapore company profile; roles vary.",
+      "source_urls": [
+        "https://www.glassdoor.co.uk/Reviews/Senoko-Energy-Reviews-E603375.htm"
+      ],
+      "observed_dates": "2026-06-20; 2026-06-03; 2026-02-13",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit employee review for Senoko Energy; surfaced Reddit results discussed consumer energy plans or the wider commodities market.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:bp": {
+    "company_name": "BP",
+    "glassdoor": {
+      "notes": "Glassdoor review dated 2026-09-09 describes good pay/benefits but slow processes and siloed teams. A 2026-10-28 senior talent acquisition review notes helpful colleagues and balance alongside restructuring; broad company sample, not trading-specific.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-bp-E9011-RVW105511629.htm",
+        "https://www.glassdoor.com/Reviews/bp-Reviews-E9011.htm"
+      ],
+      "observed_dates": "2026-09-09; 2026-10-28",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/oilandgasworkers discussion dated 2025-12-09: commenters with oil-and-gas engineering experience describe BP as comparatively friendly/family-friendly with good work-life balance, while noting lower pay versus more aggressive US majors. Broad engineering/company impression, not trading desk.",
+      "source_urls": [
+        "https://www.reddit.com/r/oilandgasworkers/comments/1pii17s/thoughts_on_corporate_culture_at_bp/"
+      ],
+      "observed_dates": "2025-12-09",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:rwe": {
+    "company_name": "RWE",
+    "glassdoor": {
+      "notes": "Glassdoor review dated 2025-03-04 by Manager, Performance Analytics praises PTO, hybrid work and transparent management, but cites reduced remote-work support and unclear leadership path; a 2026-07-10 Director review alleges toxic leadership and morale problems. Distinct role experiences, not desk-specific.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-RWE-E3769-RVW95545640.htm",
+        "https://api.glassdoor.com/Reviews/Employee-Review-RWE-E3769-RVW104728908.htm"
+      ],
+      "observed_dates": "2025-03-04; 2026-07-10",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit post describing RWE employee workplace experience. Search results were graduate-program/application discussions, not employee reviews.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  },
+  "co:sse": {
+    "company_name": "SSE",
+    "glassdoor": {
+      "notes": "Search found no recent attributable Glassdoor employee review for SSE plc within the requested period. Search results included older individual reviews and an SSE Group profile (distinct entity/profile); not used as evidence for SSE plc.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent review found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    },
+    "reddit": {
+      "notes": "Reddit r/UKJobs thread dated 2024-12-12 includes a commenter identifying prior employment at SSE/OVO and praising flexibility, benefits and culture, while noting redundancy after OVO acquisition. Treat as former employee anecdote with acquisition/affiliate context, not trading specific.",
+      "source_urls": [
+        "https://www.reddit.com/r/UKJobs/comments/1hckrdd/"
+      ],
+      "observed_dates": "2024-12-12",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    }
+  },
+  "co:vattenfall": {
+    "company_name": "Vattenfall",
+    "glassdoor": {
+      "notes": "Glassdoor Senior Engineer review dated 2025-02-17 praises projects, learning, work-life balance, compensation and open culture; notes communication gaps and silos. General company employee view, not trading-specific.",
+      "source_urls": [
+        "https://www.glassdoor.com/Reviews/Employee-Review-Vattenfall-E10580-RVW95103195.htm"
+      ],
+      "observed_dates": "2025-02-17",
+      "confidence": "low to moderate (self-selected, qualitative source; scope caveat stated in notes)",
+      "search_status": "recent attributable qualitative evidence found"
+    },
+    "reddit": {
+      "notes": "Search found no attributable recent Reddit employee workplace review for Vattenfall; returned hits were job-board reposts and consumer/energy-provider discussions.",
+      "source_urls": [],
+      "observed_dates": "No attributable recent post found",
+      "confidence": "low",
+      "search_status": "searched; no attributable recent evidence found"
+    }
+  }
+}
