@@ -4,7 +4,7 @@ A dark map dashboard for a personal commodities career and education tracker. Th
 
 ## Local setup
 
-1. Keep `worldofcommodities.xlsx` in the project root. This repository is private; the workbook is versioned here as the shared source of truth.
+1. Keep `worldofcommodities.xlsx` in the project root. This repository is currently public. The workbook and CV are publicly accessible and versioned here as the shared source of truth.
 2. Install Python 3.10+.
 3. Run `python scripts/serve.py` and open `http://127.0.0.1:8000/app/`.
 4. Edit the workbook in Excel, then run `python scripts/export_tracker.py` to refresh the dashboard feed.
@@ -19,9 +19,9 @@ Scores represent separate questions. Company, university, and recruitment-compan
 
 ## Free sharing
 
-The dashboard can be hosted as a static site on Cloudflare Pages from this private GitHub repository. Build with `python scripts/build_site.py` and publish `site-dist` as the output directory. The generated deployment folder contains only the dashboard app and its JSON feed; it does not include the workbook or CV. The dashboard feed still contains personal application and recruiter information, so protect the Pages site with Cloudflare Access and allow only the intended email addresses before sharing its URL. A `pages.dev` URL is not private by itself. The build adds `noindex` headers as a courtesy, not as access control.
+The dashboard can be hosted as a static site on Cloudflare Pages from this public GitHub repository. Any deployed Pages site is public unless separately protected; the generated dashboard feed contains personal application and recruiter information, so do not share an unprotected URL. Build with `python scripts/build_site.py` and publish `site-dist` as the output directory. The generated deployment folder contains only the dashboard app and its JSON feed; it does not include the workbook or CV. The dashboard feed still contains personal application and recruiter information, so protect the Pages site with Cloudflare Access and allow only the intended email addresses before sharing its URL. A `pages.dev` URL is not private by itself. The build adds `noindex` headers as a courtesy, not as access control.
 
 ## Data and privacy
 
-The dashboard reads a generated local JSON export from the workbook. The export and search-source cache are excluded from Git. The CV is stored in `cv/` and included in this private repository for versioned access. Avoid copying credentials, access tokens, or unrelated personal files into the repository.
+The dashboard reads a generated local JSON export from the workbook. The export and search-source cache are excluded from Git. The CV is stored in `cv/` and included in this public repository for versioned access. Avoid copying credentials, access tokens, or unrelated personal files into the repository.
 
