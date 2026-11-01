@@ -577,6 +577,7 @@ function renderSharpness() {
 }
 
 function render() {
+  if (state.view === "institutions" && !["all", "company", "university", "recruiter_person"].includes(state.filter)) state.filter = "all";
   const filtered = getFilteredItems();
   const visibleIds = new Set(filtered.map((item) => item.id));
   for (const item of filtered) for (const memberId of item.memberIds || []) visibleIds.add(memberId);
@@ -596,7 +597,7 @@ function render() {
     : [["all", "All", state.items.length], ["job", "Jobs", state.items.filter(x => x.kind === "job").length], ["masters", "Masters", state.items.filter(x => x.kind === "masters").length], ["recruiter", "People", state.items.filter(x => x.kind === "recruiter").length]];
   document.querySelector("#filters").setAttribute("aria-label", locationMode ? "Search scope" : companyMode ? "Institution type" : "Opportunity type");
   document.querySelector("#filters").innerHTML = filterOptions.filter(([key, , count]) => key === "all" || count > 0).map(([key, label, count]) => `<button class="filter ${state.filter === key ? "active" : ""}" data-filter="${key}">${label}<span>${count}</span></button>`).join("");
-  setText("#list-heading-label", locationMode ? "LOCATIONS" : companyMode ? "INSTITUTIONS & OFFICES" : "OPPORTUNITIES");
+  setText("#list-heading-label", locationMode ? "LOCATIONS" : companyMode ? "INSTITUTIONS & OFFICES/CAMPUSES" : "OPPORTUNITIES");
   document.querySelector("#search").placeholder = locationMode ? "Search cities" : companyMode ? "Search institutions or offices" : "Search opportunities";
   renderControls();
   setText("#result-count", filtered.length);
