@@ -1,0 +1,1944 @@
+{
+  "Bunge": {
+    "source_url": "https://bunge.com/contact-us",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official page lists regional/commercial contact office in this city; full office directory still to be checked.",
+    "offices": [
+      {
+        "city": "Shanghai",
+        "source_url": "https://bunge.com/contact-us",
+        "confidence": "High",
+        "notes": "Official page lists regional/commercial contact office in this city; full office directory still to be checked."
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://bunge.com/contact-us",
+        "confidence": "High",
+        "notes": "Official page lists regional/commercial contact office in this city; full office directory still to be checked."
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://bunge.com/contact-us",
+        "confidence": "High",
+        "notes": "Official page lists regional/commercial contact office in this city; full office directory still to be checked."
+      }
+    ]
+  },
+  "ADM": {
+    "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official APAC locations page lists the Japan head office.",
+        "address": "Mita NN Building, 7F, 4-1-23 Shiba, Minato-ku, Tokyo 108-0014"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official APAC locations page lists the Shanghai management office. The nutrition entry is at the same street address and is not added as a second physical location.",
+        "address": "B5 Building, 180 Yizhou Road, Xuhui District, Shanghai 200233"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official APAC locations page lists this office suite and the trading entities at this address.",
+        "address": "230 Victoria Street #11-08, Bugis Junction Towers, Singapore 188024"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official APAC locations page lists this separate address.",
+        "address": "21 Biopolis Road, Nucleos, South Tower #02-24/25/26, Singapore 138567"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official APAC locations page lists this separate office suite.",
+        "address": "230 Victoria Street #11-06, Bugis Junction Towers, Singapore 188024"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.adm.com/zh-Hans-CN/about-adm/locations/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official APAC locations page lists the South Korea office.",
+        "address": "Taiwha Building, 4F, 29 Insadong 5-gil, Jongno-gu, Seoul 03162"
+      }
+    ]
+  },
+  "Louis Dreyfus Company": {
+    "source_url": "https://www.ldc.com/who-we-are/locations/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official global locations directory lists this office; company facilities and assets in other cities were excluded.",
+    "offices": [
+      {
+        "city": "Beijing",
+        "source_url": "https://www.ldc.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Official global locations directory lists this office; company facilities and assets in other cities were excluded.",
+        "address": "Ying Ke Zhong Xin, North Worker Stadium Road, Beijing 100027"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.ldc.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Official global locations directory lists this office; company facilities and assets in other cities were excluded.",
+        "address": "No. 1359 Yaolong Road, Pudong District, Shanghai 200124"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.ldc.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Official global locations directory lists this office; company facilities and assets in other cities were excluded.",
+        "address": "21 Evesham Street, London W11 4AJ"
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://www.ldc.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Official global locations directory lists this office; company facilities and assets in other cities were excluded.",
+        "address": "GVA Center, 29 route de l’Aéroport, Geneva 1215"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.ldc.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Official global locations directory lists this office; company facilities and assets in other cities were excluded.",
+        "address": "12 Marina Boulevard, Singapore 018982"
+      }
+    ]
+  },
+  "Hartree Partners": {
+    "source_url": "https://www.hartreepartners.com/contact/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official global offices list gives the named office and address.",
+    "offices": [
+      {
+        "city": "New York City",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "1185 Avenue of the Americas, New York, NY 10036"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "33F Hibiya Mitsui Tower, 1-1-2 Yurakucho, Chiyoda-ku, Tokyo"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "Level 8, 123 Buckingham Palace Road, London SW1W 9SH"
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "Rue du Rhône 14, 1204 Geneva"
+      },
+      {
+        "city": "Oslo",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "Fifth Floor, Dronning Mauds Gate 3, 0250 Oslo"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "501 Orchard Road #20-02, Wheelock Place, Singapore 238880"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.hartreepartners.com/contact/",
+        "confidence": "High",
+        "notes": "Official global offices list gives the named office and address.",
+        "address": "14T82, 14th Floor, Shanghai World Financial Center, 100 Century Avenue, Shanghai 200120"
+      }
+    ]
+  },
+  "Freepoint Commodities": {
+    "source_url": "https://www.freepoint.com/contact-us/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official contact page lists a distinct physical office address. Stamford is not counted as New York City.",
+    "offices": [
+      {
+        "city": "Geneva",
+        "source_url": "https://www.freepoint.com/contact-us/",
+        "confidence": "High",
+        "notes": "Official contact page lists a distinct physical office address. Stamford is not counted as New York City.",
+        "address": "Rue du Rhône 42, 1204 Geneva"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.freepoint.com/contact-us/",
+        "confidence": "High",
+        "notes": "Official contact page lists a distinct physical office address. Stamford is not counted as New York City.",
+        "address": "62 Buckingham Gate, 5th Floor, London SW1E 6AJ"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.freepoint.com/contact-us/",
+        "confidence": "High",
+        "notes": "Official contact page lists a distinct physical office address. Stamford is not counted as New York City.",
+        "address": "Unit 041-042, 11/F, Hang Seng Bank Tower, 1000 Lujiazui Ring Road, Pudong, Shanghai 200120"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.freepoint.com/contact-us/",
+        "confidence": "High",
+        "notes": "Official contact page lists a distinct physical office address. Stamford is not counted as New York City.",
+        "address": "8 Marina View #35-05, Asia Square Tower 1, Singapore 018960"
+      }
+    ]
+  },
+  "COFCO International": {
+    "source_url": "https://www.cofco.com/en/brandproduct/cofcointernational/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official corporate profile states Geneva headquarters; full office directory remains to be checked.",
+    "offices": [
+      {
+        "city": "Geneva",
+        "source_url": "https://www.cofco.com/en/brandproduct/cofcointernational/",
+        "confidence": "High",
+        "notes": "Official corporate profile states Geneva headquarters; full office directory remains to be checked."
+      }
+    ]
+  },
+  "Macquarie Commodities": {
+    "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official office directory lists the physical office at this address.",
+    "offices": [
+      {
+        "city": "Sydney",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "1 Elizabeth Street, Sydney NSW"
+      },
+      {
+        "city": "Vancouver",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "355 Burrard Street, Level 12 Suite 1295, Vancouver BC"
+      },
+      {
+        "city": "New York",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "660 Fifth Avenue, New York NY 10103"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Units 8–10, Level 17, West Tower, The Genesis, No. 8 Xinyuan South Road, Beijing"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Unit 2701–05, Level 27, Tower 2, HKRI Taikoo Hui, No. 288 Shimen Yi Road, Shanghai"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Level 22–23, One IFC, 1 Harbour View Street, Central, Hong Kong"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Floor 16, Kioi Tower, Tokyo Garden Terrace Kioicho, 1–3 Kioicho, Tokyo"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Level 20–21, 9 Straits View, Marina One West Tower, Singapore"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "17–18F, Unit A, Centropolis, 26 Ujeongguk-ro, Seoul"
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Ground Floor, 81 route de Florissant, Geneva"
+      },
+      {
+        "city": "Zurich",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Floor 3, Claridenstrasse 41, Zurich"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.macquarie.com/au/en/about/contact/locations.html",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Ropemaker Place, 28 Ropemaker Street, London"
+      }
+    ]
+  },
+  "Mitsubishi Corporation": {
+    "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official office directory lists the physical office at this address.",
+    "offices": [
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Mitsubishi Shoji Building, 3-1 Marunouchi 2-Chome, Chiyoda-ku, Tokyo 100-8086"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Marunouchi Park Building, 6-1 Marunouchi 2-Chome, Chiyoda-ku, Tokyo"
+      },
+      {
+        "city": "Osaka",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "2-22 Umeda 2-chome, Kita-ku, Osaka 530-8602"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "1 Temasek Avenue, #19-00 Millenia Tower, Singapore 039192"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Mitsubishi Corporation Office Building, No. 96 Yingchun Road, Pudong, Shanghai"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "6F, West Tower, Genesis Beijing, No. 8 Xinyuan South Road, Chaoyang, Beijing 100027"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Unit 3702, 37/F, The Henderson, 2 Murray Road, Hong Kong"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "25F, Centropolis Tower A, 26 Ujeongguk-ro, Jongno-gu, Seoul 03161"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Mid City Place, 71 High Holborn, London WC1V 6BA"
+      },
+      {
+        "city": "New York",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "151 West 42nd Street, New York NY 10036-6641"
+      },
+      {
+        "city": "Boston",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "10 High Street, Suite 600, Boston MA 02110"
+      },
+      {
+        "city": "Vancouver",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "2800-200 Granville Street, Vancouver BC V6C 1G6"
+      },
+      {
+        "city": "Sydney",
+        "source_url": "https://www.mitsubishicorp.com/jp/en/about/global/",
+        "confidence": "High",
+        "notes": "Official office directory lists the physical office at this address.",
+        "address": "Suite 3503, Level 35, Grosvenor Place, 225 George Street, Sydney NSW 2000"
+      }
+    ]
+  },
+  "Trafigura": {
+    "source_url": "https://www.trafigura.com/who-we-are/locations/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "14 Saint George Street, London W1S 1FE, United Kingdom"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "10 Collyer Quay, #29-01/05, Ocean Financial Centre, Singapore 049315"
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "1 rue de Jargonnant, CH 1207 Geneva, Switzerland"
+      },
+      {
+        "city": "Houston",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "845 Texas Ave, Suite 3600, Houston, TX 77002, USA"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "3F, KDX Shinbashi Building, 2-2-9 Shinbashi, Minato-ku, Tokyo 105-0004, Japan"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "56F Tower 2, IFC Building, 8 Century Avenue, Pudong, Shanghai 200120, China"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.trafigura.com/who-we-are/locations/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "7F State Tower Namsan, 100 Toegye-ro, Jung-Gu, Seoul 04631, Republic of Korea"
+      }
+    ]
+  },
+  "Vitol": {
+    "source_url": "https://www.vitol.com/contact/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+    "offices": [
+      {
+        "city": "Geneva",
+        "source_url": "https://www.vitol.com/contact/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "Place des Bergues 3, P.O. Box 1384, 1211 Geneva 1, Switzerland"
+      },
+      {
+        "city": "Houston",
+        "source_url": "https://www.vitol.com/contact/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "3425 West Alabama Street, Houston, TX 77027, USA"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.vitol.com/contact/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "4th Floor, Nova South, 160 Victoria Street, London SW1E 5LB, United Kingdom"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.vitol.com/contact/",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "128 Beach Road, 28th Floor, #28-01 Guoco Midtown, Singapore 189773"
+      }
+    ]
+  },
+  "EDF Trading": {
+    "source_url": "https://www.edftrading.com/contact",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www.edftrading.com/contact",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "3rd Floor, Cardinal Place, 80 Victoria Street, London SW1E 5JL, United Kingdom"
+      },
+      {
+        "city": "Paris",
+        "source_url": "https://www.edftrading.com/contact",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "Site Cap Ampère, 1 Place Pleyel, 93282 Saint Denis Cedex, France"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.edftrading.com/contact",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "88 Market Street, #22-01 CapitaSpring, Singapore 048948"
+      },
+      {
+        "city": "Houston",
+        "source_url": "https://www.edftrading.com/contact",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "601 Travis Street, Suite 1700, Houston, TX 77002, USA"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.edftrading.com/contact",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "Cross Office 805-807, 1-18-6 Nishi Shinbashi, Minato-ku, Tokyo 105-0003, Japan"
+      },
+      {
+        "city": "Dublin",
+        "source_url": "https://www.edftrading.com/contact",
+        "confidence": "High",
+        "notes": "Listed on the company’s official office locations/contact page; distinct physical office address.",
+        "address": "9 Clanwilliam Terrace, Grand Canal Quay, Dublin 2, D02H266, Ireland"
+      }
+    ]
+  },
+  "Mercuria": {
+    "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "12 Marina View, Asia Square Tower 2, #26-01, Singapore 018961"
+      },
+      {
+        "city": "Auckland",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "110 Customs Street West, Level 1, Auckland 1010, New Zealand"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "48F China World Tower B, No. 1 Jianguomenwai Avenue, Beijing 100004, China"
+      },
+      {
+        "city": "Dubai",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "63rd Floor, Almas Tower, Jumeirah Lake Towers, Dubai, United Arab Emirates"
+      },
+      {
+        "city": "Jakarta",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "Menara Prima 1, 21st Floor, JL Dr. Ide Anak Agung Gde Agung, Kuningan Timur, Jakarta Selatan 12950, Indonesia"
+      },
+      {
+        "city": "Melbourne",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "Level 26, 530 Collins Street, Melbourne VIC 3000, Australia"
+      },
+      {
+        "city": "Riyadh",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "Capital SAR 500,000, Riyadh, Kingdom of Saudi Arabia (commercial address details not shown on directory)"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "Unit 2601, Kerry Pudong Office Building, No. 1155 Fang Dian Road, Pudong, Shanghai 201204, China"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://mercuria.com/what-we-do/our-regions/asia-pacific/",
+        "confidence": "High",
+        "notes": "Official Asia Pacific page lists ten regional office locations but rendered nine addresses; this verified listing is partial pending resolution of the tenth location.",
+        "address": "TOKYO TORCH Tokiwabashi Tower, 2-6-4 Otemachi, Chiyoda Ward, Tokyo 100-0004, Japan"
+      }
+    ]
+  },
+  "Glencore": {
+    "source_url": "https://www.glencore.com/sustainability/ethics-and-compliance/governance-and-structure",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Glencore page identifies these principal marketing office cities; it does not provide a complete office directory or exact addresses for every listed city.",
+    "offices": [
+      {
+        "city": "Baar",
+        "source_url": "https://www.glencore.com/sustainability/ethics-and-compliance/governance-and-structure",
+        "confidence": "High",
+        "notes": "Official Glencore page identifies these principal marketing office cities; it does not provide a complete office directory or exact addresses for every listed city.",
+        "address": "Baar, Switzerland; city-level office confirmed; exact address not verified in cited office overview"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.glencore.com/sustainability/ethics-and-compliance/governance-and-structure",
+        "confidence": "High",
+        "notes": "Official Glencore page identifies these principal marketing office cities; it does not provide a complete office directory or exact addresses for every listed city.",
+        "address": "London, United Kingdom; city-level office confirmed; exact address not verified in cited office overview"
+      },
+      {
+        "city": "New York",
+        "source_url": "https://www.glencore.com/sustainability/ethics-and-compliance/governance-and-structure",
+        "confidence": "High",
+        "notes": "Official Glencore page identifies these principal marketing office cities; it does not provide a complete office directory or exact addresses for every listed city.",
+        "address": "New York, United States; city-level office confirmed; exact address not verified in cited office overview"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.glencore.com/sustainability/ethics-and-compliance/governance-and-structure",
+        "confidence": "High",
+        "notes": "Official Glencore page identifies these principal marketing office cities; it does not provide a complete office directory or exact addresses for every listed city.",
+        "address": "Beijing, China; city-level office confirmed; exact address not verified in cited office overview"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.glencore.com/sustainability/ethics-and-compliance/governance-and-structure",
+        "confidence": "High",
+        "notes": "Official Glencore page identifies these principal marketing office cities; it does not provide a complete office directory or exact addresses for every listed city.",
+        "address": "1 Temasek Avenue, 34-01 Millenia Tower, Singapore 039192"
+      }
+    ]
+  },
+  "Shell Trading": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www.shell.com/business-customers/trading-and-supply.html",
+        "confidence": "High",
+        "notes": "Official Shell Trading & Supply page lists London among its five main office locations.",
+        "address": "Main Trading, Shipping and Energy Marketing office; exact street address not listed on trading directory"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.shell.com.sg/contact-us.html",
+        "confidence": "High",
+        "notes": "Shell trading page identifies Singapore as a main trading office; Shell Singapore official contact page supplies the office address.",
+        "address": "Main Trading, Shipping and Energy Marketing office; Shell Singapore office address: The Metropolis Tower 1, 9 North Buona Vista Drive, #06-01, Singapore 138588"
+      }
+    ]
+  },
+  "TotalEnergies Trading": {
+    "source_url": "https://trading.totalenergies.com/en/about-us/our-offices/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Geneva",
+        "source_url": "https://trading.totalenergies.com/en/about-us/our-offices/",
+        "confidence": "High",
+        "notes": "Official trading office page identifies Geneva as European trading hub; city-level location only.",
+        "address": "Trading hub; street address not published on trading office page"
+      },
+      {
+        "city": "Dubai",
+        "source_url": "https://trading.totalenergies.com/en/about-us/our-offices/",
+        "confidence": "High",
+        "notes": "Dubai appears in the office network and global presence map.",
+        "address": "City-level office; street address not published on trading office page"
+      }
+    ]
+  },
+  "Equinor Trading": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.equinor.com/where-we-are/singapore",
+        "confidence": "High",
+        "notes": "Official Equinor Singapore page identifies this as regional downstream/trading hub and gives the office address.",
+        "address": "8 Marina View, #41-05, Asia Square Tower 1, Singapore 018960"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.equinor.com/where-we-are/united-kingdom",
+        "confidence": "High",
+        "notes": "Official Equinor UK location page lists the London office.",
+        "address": "One Kingdom Street, London W2 6BD, United Kingdom"
+      },
+      {
+        "city": "Aberdeen",
+        "source_url": "https://www.equinor.com/where-we-are/united-kingdom",
+        "confidence": "High",
+        "notes": "Official Equinor UK location page lists the Aberdeen office.",
+        "address": "Equinor House, Prime Four Crescent, Kingswells, Aberdeen AB15 8QG, United Kingdom"
+      },
+      {
+        "city": "Great Yarmouth",
+        "source_url": "https://www.equinor.com/where-we-are/united-kingdom",
+        "confidence": "High",
+        "notes": "Official Equinor UK location page lists the Great Yarmouth office.",
+        "address": "50 South Denes Road, Great Yarmouth, Norfolk NR30 3PR, United Kingdom"
+      },
+      {
+        "city": "Houston",
+        "source_url": "https://www.equinor.com/where-we-are/united-states",
+        "confidence": "High",
+        "notes": "Official Equinor US locations page lists the Houston office.",
+        "address": "2107 CityWest Blvd, Suite 100, Houston, TX 77042, USA"
+      },
+      {
+        "city": "Washington, DC",
+        "source_url": "https://www.equinor.com/where-we-are/united-states",
+        "confidence": "High",
+        "notes": "Official Equinor US locations page lists the Washington DC office.",
+        "address": "1050 K Street NW, Suite 1100, Washington, DC 20001-4417, USA"
+      },
+      {
+        "city": "Stamford, Connecticut",
+        "source_url": "https://www.equinor.com/where-we-are/united-states",
+        "confidence": "High",
+        "notes": "Official Equinor US locations page lists the Stamford office.",
+        "address": "600 Washington Blvd, Suite 800, Stamford, CT 06901, USA"
+      },
+      {
+        "city": "Boston",
+        "source_url": "https://www.equinor.com/where-we-are/united-states",
+        "confidence": "High",
+        "notes": "Official Equinor US locations page lists the Boston office.",
+        "address": "53 State Street, Suite 500, Boston, MA 02109, USA"
+      },
+      {
+        "city": "Brooklyn, New York",
+        "source_url": "https://www.equinor.com/where-we-are/united-states",
+        "confidence": "High",
+        "notes": "Official Equinor US locations page lists a New York project office in Brooklyn.",
+        "address": "34 35th Street, Suite A415, Brooklyn, NY 11232, USA"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.equinor.com/where-we-are/japan",
+        "confidence": "High",
+        "notes": "Official Equinor Japan page says the Tokyo office will close by the end of 2026; retain as active through the stated closure window, then refresh.",
+        "address": "Level 8, Pacific Century Place Marunouchi, 1-11-1 Marunouchi, Chiyoda-ku, Tokyo, Japan"
+      }
+    ]
+  },
+  "Gunvor Singapore": {
+    "source_url": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+        "confidence": "High",
+        "notes": "Gunvor official 2025 brochure identifies London as a trading office; no street address published. Coordinates are approximate city-centre markers."
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+        "confidence": "High",
+        "notes": "Gunvor official 2025 brochure identifies Geneva as a trading office; no street address published. Coordinates are approximate city-centre markers."
+      },
+      {
+        "city": "Dubai",
+        "source_url": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+        "confidence": "High",
+        "notes": "Gunvor official 2025 brochure identifies Dubai as a trading office; no street address published. Coordinates are approximate city-centre markers."
+      }
+    ]
+  },
+  "BP Trading": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www.bp.com/content/dam/bp/business-sites/en/global/bp-trading-and-shipping/documents/regulatory-resource-centre/bet-terms-of-business-professional-and-ecp.pdf",
+        "confidence": "High",
+        "notes": "BP Britannic Energy Trading terms identify this as its principal operating office. Coordinates are approximate city-centre markers.",
+        "address": "25 The North Colonnade, London E14 5HS"
+      },
+      {
+        "city": "Dubai",
+        "source_url": "https://www.bp.com/content/dam/bp/business-sites/en/global/corporate/pdfs/careers/careers-bp-in-middle-east.pdf",
+        "confidence": "High",
+        "notes": "BP regional overview says fuels marketing and trading operates from Dubai; no street address listed. Coordinates are approximate city-centre markers."
+      }
+    ]
+  },
+  "Chevron Supply and Trading": {
+    "source_url": "https://www-dev.chevron.com/worldwide/united-kingdom",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Chevron identifies London among its global Supply and Trading floors; no address listed. Coordinates are approximate city-centre markers.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www-dev.chevron.com/worldwide/united-kingdom",
+        "confidence": "High",
+        "notes": "Chevron identifies London among its global Supply and Trading floors; no address listed. Coordinates are approximate city-centre markers."
+      }
+    ]
+  },
+  "ExxonMobil Global Trading": {
+    "source_url": "https://corporate.exxonmobil.com/what-we-do/energy-supply/crude-trading",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "ExxonMobil identifies Leatherhead as its Europe crude marketing office and publishes the sales-and-supply address. Coordinates are approximate city-centre markers.",
+    "offices": [
+      {
+        "city": "Leatherhead",
+        "source_url": "https://corporate.exxonmobil.com/what-we-do/energy-supply/crude-trading",
+        "confidence": "High",
+        "notes": "ExxonMobil identifies Leatherhead as its Europe crude marketing office and publishes the sales-and-supply address. Coordinates are approximate city-centre markers.",
+        "address": "ExxonMobil House, Ermyn Way, Leatherhead, Surrey KT22 8UX"
+      }
+    ]
+  },
+  "RWE Supply & Trading": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Essen",
+        "source_url": "https://www.rwe.com/en/the-group/rwest/",
+        "confidence": "High",
+        "notes": "RWE identifies Essen as its headquarters and principal trading floor; page names international trading floors and branch offices. Coordinates are approximate city-centre markers.",
+        "address": "RWE Platz 6, 45141 Essen"
+      },
+      {
+        "city": "London",
+        "source_url": "https://uk.rwe.com/rwe-supply-and-trading/",
+        "confidence": "High",
+        "notes": "RWE S&T page gives London office address. Coordinates are approximate city-centre markers.",
+        "address": "The Northcliffe, 28 Tudor Street, London EC4Y 0AY"
+      },
+      {
+        "city": "Swindon",
+        "source_url": "https://uk.rwe.com/rwe-supply-and-trading/",
+        "confidence": "High",
+        "notes": "RWE identifies Swindon as an office with Supply & Trading staff and lists business park address. Coordinates are approximate city-centre markers.",
+        "address": "Windmill Hill Business Park, Whitehill Way, SN5 6PB"
+      }
+    ]
+  },
+  "Marubeni": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.marubeni.com/en/company/network/asia/",
+        "confidence": "High",
+        "notes": "Official Asia directory lists Singapore Branch and ASEAN head office. Coordinates are approximate city-centre markers.",
+        "address": "138 Market Street, #31-01 CapitaGreen, Singapore 048946"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.marubeni.com/en/company/network/asia/",
+        "confidence": "High",
+        "notes": "Official directory. Coordinates are approximate city-centre markers.",
+        "address": "22F, West Tower, World Financial Centre, No. 1 East 3rd Ring Middle Road, Chaoyang District, Beijing 100020"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.marubeni.com/en/company/network/asia/",
+        "confidence": "High",
+        "notes": "Official directory. Coordinates are approximate city-centre markers.",
+        "address": "6F, Tower 3, Jing An Kerry Centre, 1228 Yan An Zhong Road, Jing An District, Shanghai 200040"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.marubeni.com/en/company/network/asia/",
+        "confidence": "High",
+        "notes": "Official directory. Coordinates are approximate city-centre markers.",
+        "address": "20F, Tower 1, Admiralty Centre, 18 Harcourt Road, Hong Kong"
+      },
+      {
+        "city": "Taipei",
+        "source_url": "https://www.marubeni.com/en/company/network/asia/",
+        "confidence": "High",
+        "notes": "Official directory. Coordinates are approximate city-centre markers.",
+        "address": "16F-1, No. 168, Sec. 3, Nanjing East Road, Zhongshan District, Taipei City 10488"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.marubeni.com/en/company/network/asia/",
+        "confidence": "High",
+        "notes": "Official directory. Coordinates are approximate city-centre markers.",
+        "address": "26F, Mirae Asset CENTER1 West Tower, 26 Eulji-ro 5-gil, Jung-gu, Seoul 04539"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.marubeni.com/en/company/network/japan/",
+        "confidence": "High",
+        "notes": "Official directory. Coordinates are approximate city-centre markers.",
+        "address": "4-2, Otemachi 1-chome, Chiyoda-ku, Tokyo 100-8088"
+      }
+    ]
+  },
+  "Mitsui & Co.": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.mitsui.com/ap/en/company/location/index.html",
+        "confidence": "High",
+        "notes": "Official APAC office directory. Coordinates are approximate city-centre markers.",
+        "address": "12 Marina View, #31-01 Asia Square Tower 2, Singapore 018961"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.mitsui.com/cn/en/company/location/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "37th Floor, China World Tower A, 1 Jianguomenwai Avenue, Beijing"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.mitsui.com/cn/en/company/location/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "41st Floor, Shanghai World Financial Center, No. 100 Century Avenue, Pudong New Area, Shanghai"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.mitsui.com/cn/en/company/location/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "25th and 26th Floors, Far East Finance Centre, 16 Harcourt Road, Hong Kong"
+      },
+      {
+        "city": "Taipei",
+        "source_url": "https://www.mitsui.com/cn/en/company/location/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "22F & 23F, No. 2, Sec. 1, Chengde Rd., Datong Dist., Taipei City 103022"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.mitsui.com/jp/en/company/outline/worldwide/japan/",
+        "confidence": "High",
+        "notes": "Official Japan office directory. Coordinates are approximate city-centre markers.",
+        "address": "2-1, Otemachi 1-chome, Chiyoda-ku, Tokyo 100-8631"
+      }
+    ]
+  },
+  "Sumitomo Corporation": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.sumitomocorp.com/en/asia-oceania/about/scao/officeinfo",
+        "confidence": "High",
+        "notes": "Official regional office directory. Coordinates are approximate city-centre markers.",
+        "address": "182 Cecil Street, #22-01 Frasers Tower, Singapore 069547"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.sumitomocorp.com/en/easia/about/list",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "10F, Shanghai World Financial Center, 100 Century Avenue, Pudong New Area, Shanghai 200120"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.sumitomocorp.com/en/easia/about/list",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "Unit 26, 23rd Floor, China World Tower A, No. 1 Jianguomenwai Avenue, Beijing 100004"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.sumitomocorp.com/en/easia/about/list",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "Unit A, 23rd Floor, United Centre, 95 Queensway, Hong Kong"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.sumitomocorp.com/en/easia/about/list",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "20th Fl, Kyobo Life Insurance Bldg., 1 Jong-ro, Jongno-gu, Seoul 03154"
+      }
+    ]
+  },
+  "ITOCHU Corporation": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.itochu.co.jp/en/about/network/asia/",
+        "confidence": "High",
+        "notes": "Official Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "6 Shenton Way, #22-08 OUE Downtown 2, Singapore 068809"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.itochu.co.jp/en/about/network/east_asia/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "Unit 01-07A, 13th Floor, South Tower of CP Center, No. 20 Jin He East Avenue, Chaoyang District, Beijing 100020"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.itochu.co.jp/en/about/network/east_asia/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "26F, Jin Mao Tower, 88 Century Avenue, Pudong District, Shanghai 200121"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.itochu.co.jp/en/about/network/east_asia/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "28th Floor, United Centre, 95 Queensway, Hong Kong"
+      },
+      {
+        "city": "Shenzhen",
+        "source_url": "https://www.itochu.co.jp/en/about/network/east_asia/index.html",
+        "confidence": "High",
+        "notes": "Official East Asia office directory. Coordinates are approximate city-centre markers.",
+        "address": "Unit 11, 41/F, Han Guo City Commercial Center, No. 3031 Shennan Zhong Road, Futian District, Shenzhen 518033"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.itochu.co.jp/en/about/profile/",
+        "confidence": "High",
+        "notes": "Official corporate profile, current as of 2026-08-24. Coordinates are approximate city-centre markers.",
+        "address": "Akasaka Trust Tower, 17-22 Akasaka 2-chome, Minato-ku, Tokyo 107-8077"
+      },
+      {
+        "city": "Osaka",
+        "source_url": "https://www.itochu.co.jp/en/about/profile/",
+        "confidence": "High",
+        "notes": "Official corporate profile, current as of 2026-08-24. Coordinates are approximate city-centre markers.",
+        "address": "1-3 Umeda 3-chome, Kita-ku, Osaka 530-8448"
+      }
+    ]
+  },
+  "Argus Media": {
+    "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+    "offices": [
+      {
+        "city": "Houston",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "2929 Allen Parkway, 18th Floor, Houston, TX 77019"
+      },
+      {
+        "city": "Washington, DC",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "1667 K Street NW, Suite 1150, Washington, DC 20006"
+      },
+      {
+        "city": "Calgary",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "The Ampersand North Tower, Suite 2520, 140 4th Avenue SW, Calgary, AB T2P 3N3"
+      },
+      {
+        "city": "Mexico City",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Spaces Prado Sur, Prado Sur 150, Suite 303, Lomas Virreyes, Lomas de Chapultepec, Miguel Hidalgo, 11000"
+      },
+      {
+        "city": "Pittsburgh",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "The Cigar Factory, 2740 Smallman Street, Floor 5, Pittsburgh, PA 15222"
+      },
+      {
+        "city": "New York City",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "500 Fifth Avenue, Suite 2222, New York, NY 10110"
+      },
+      {
+        "city": "Sao Paulo",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Avenida Paulista, 283/287, 16th floor, rooms 161-162, Bela Vista, Sao Paulo, CEP 04002-030"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "50 Raffles Place, Singapore Land Tower, #10-01, Singapore 048623"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Room 4-6, 10/F, Office Tower E3, Oriental Plaza, 1 East Chang An Avenue, Dong Cheng District, Beijing 100738"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Room 3901, #268 Middle Xizang Road, Shanghai Raffles City, Huangpu District, Shanghai"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Burex Kyobashi 609, Kyobashi 2-7-14, Chuo-ku, Tokyo 104-0031"
+      },
+      {
+        "city": "Sydney",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Level 3, 223 Liverpool Street, Darlinghurst, NSW 2010, Sydney"
+      },
+      {
+        "city": "Jakarta",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Intiland Tower, 19th floor, JI Kav. 32, RT. 003 RW. 002, Kel. Karet Tengsin, Jakarta Pusat 10220"
+      },
+      {
+        "city": "Hamburg",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Neuer Wall 59, 20354 Hamburg"
+      },
+      {
+        "city": "Granada",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Plaza del Campillo 2, 1D, Granada"
+      },
+      {
+        "city": "Paris",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "10 avenue de la Grande Armee, 75017 Paris"
+      },
+      {
+        "city": "London",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Lacon House, 84 Theobald's Road, WC1X 8NL"
+      },
+      {
+        "city": "Amsterdam",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Office 102, Herengracht 168, Amsterdam 1016 BP"
+      },
+      {
+        "city": "Riga",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Duntes iela 6-214, Riga, LV-1013"
+      },
+      {
+        "city": "Kyiv",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "30/39 Shchekavytska Street, Office 30, Kyiv"
+      },
+      {
+        "city": "Brussels",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory."
+      },
+      {
+        "city": "Tbilisi",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Mtatsminda district, Giorgi Leonidze Street 2a, area 7, floor 5"
+      },
+      {
+        "city": "Cape Town",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory."
+      },
+      {
+        "city": "Dubai",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Office 2803-2804, 28th floor, Shatha Tower, Dubai Media City, PO Box 502821"
+      },
+      {
+        "city": "Lagos",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory."
+      },
+      {
+        "city": "Mumbai",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "505, C Wing, ONE BKC, G-Block, BKC, Mumbai, Maharashtra 400051"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Suite 23, 20th floor, Glass Tower, 534 Teheran-ro, Gangnam-gu, Seoul"
+      },
+      {
+        "city": "Astana",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory."
+      },
+      {
+        "city": "Moscow",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Partial service offering; address not listed"
+      },
+      {
+        "city": "San Francisco",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory."
+      },
+      {
+        "city": "Manila",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "22/F Mega Tower, EDSA corner J. Vargas Avenue, Brgy. Wack-Wack-Greenhills, Mandaluyong City 1555"
+      },
+      {
+        "city": "New Delhi",
+        "source_url": "https://view.ceros.com/argus-media/2024-06-28-draft-our-locations-1-1-1",
+        "confidence": "High",
+        "notes": "Official Argus global office map lists this location. Location coordinates are approximate city-centre markers. Directory link is a 2024-dated Ceros map; Argus current About page reports 32 offices while its LinkedIn page reports 30, so the global office inventory remains partial pending a current company directory.",
+        "address": "Avanta Business Center, Statesman House, Barakhamba Road, New Delhi 110001"
+      }
+    ]
+  },
+  "Fuse Energy": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "Mixed; see each office",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www.fuseenergy.com/legal/privacy-policy",
+        "confidence": "High",
+        "notes": "Official privacy policy lists current registered address; checked 2026-11-01. Coordinates are approximate city-centre markers.",
+        "address": "Fuse Energy, One Bank Street, Canary Wharf, London E14 4SG"
+      },
+      {
+        "city": "Madrid",
+        "source_url": "https://www.fuseenergy.com/es",
+        "confidence": "High",
+        "notes": "Official Spain regional information page lists the office/complaints address; checked 2026-11-01. Coordinates are approximate city-centre markers.",
+        "address": "Calle Velazquez 113, 7E, 28001 Madrid"
+      },
+      {
+        "city": "Dubai",
+        "source_url": "https://www.linkedin.com/jobs/search/?keywords=Fuse%20Energy",
+        "confidence": "Medium",
+        "notes": "LinkedIn verified employer postings list several Fuse Energy roles in Dubai as hybrid; record as a candidate office location until a street address or official directory is confirmed. Coordinates are approximate city-centre markers.",
+        "address": "Hybrid job location; street address not confirmed"
+      }
+    ]
+  },
+  "Jane Street": {
+    "source_url": "https://www.janestreet.com/culture/our-offices/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "New York",
+        "source_url": "https://www.janestreet.com/culture/our-offices/",
+        "confidence": "High",
+        "notes": "Official office page lists the New York office and street address; building pin from OpenStreetMap.",
+        "address": "250 Vesey Street, New York, NY 10281"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.janestreet.com/culture/our-offices/",
+        "confidence": "High",
+        "notes": "Official office page lists the London address; coordinate is the city registry point, approximate until the building is geocoded.",
+        "address": "2 & A Half Devonshire Square, Premier Place, London EC2M 4UJ"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.janestreet.com/culture/our-offices/",
+        "confidence": "High",
+        "notes": "Official office page lists the Hong Kong address; building pin from OpenStreetMap.",
+        "address": "10th Floor, Chater House, 8 Connaught Road Central, Central, Hong Kong"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.janestreet.com/culture/our-offices/",
+        "confidence": "High",
+        "notes": "Official office page lists the Singapore address; building pin from OpenStreetMap.",
+        "address": "IOI Central Boulevard Towers (West Tower), 2 Central Boulevard #43-01, Singapore 018916"
+      }
+    ]
+  },
+  "Susquehanna International Group (SIG)": {
+    "source_url": "https://sig.com/who-we-are/office-locations/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "New York",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the New York office; building pin from OpenStreetMap.",
+        "address": "30 Hudson Yards, 16th Floor, New York, NY 10001"
+      },
+      {
+        "city": "London",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the London office; building pin from OpenStreetMap.",
+        "address": "25 Basinghall Street, London EC2V 5HA"
+      },
+      {
+        "city": "San Francisco",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the San Francisco office; building pin from OpenStreetMap.",
+        "address": "101 California Street, Suite 3250, San Francisco, CA 94111"
+      },
+      {
+        "city": "Sydney",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the Sydney address; city pin is approximate.",
+        "address": "Level 48, Tower One, International Towers, 100 Barangaroo Avenue, Barangaroo NSW 2000"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the Beijing address; city pin is approximate.",
+        "address": "Suite 1908, East Wing, Exchange Twin Towers, B12 Jianguomenwai Avenue, Beijing 100022"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the Hong Kong address; city pin is approximate.",
+        "address": "23rd Floor, AIA Central, 1 Connaught Road Central, Hong Kong"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the Shanghai address; city pin is approximate.",
+        "address": "Suite 1712–1714, Corporate Avenue, 222 Hubin Road, Huangpu District, Shanghai 200021"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the Singapore address; building pin from OpenStreetMap.",
+        "address": "1 Wallich Street, #26-02, Guoco Tower, Singapore 078881"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://sig.com/who-we-are/office-locations/",
+        "confidence": "High",
+        "notes": "Official global office page lists the Tokyo address; city pin is approximate.",
+        "address": "3F, COI Nishi-Aoyama Building, 1-11-1 Shibuya, Tokyo 150-0002"
+      }
+    ]
+  },
+  "Optiver": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.optiver.com/join-us/locations/",
+        "confidence": "High",
+        "notes": "Official locations page confirms an office in Hong Kong; street address not listed on the reviewed page. City pin is approximate."
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.optiver.com/join-us/locations/",
+        "confidence": "High",
+        "notes": "Official locations page confirms an office in London; street address not listed on the reviewed page. City pin is approximate."
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.optiver.com/join-us/locations/",
+        "confidence": "High",
+        "notes": "Official locations page confirms an office in Shanghai; street address not listed on the reviewed page. City pin is approximate."
+      },
+      {
+        "city": "Sydney",
+        "source_url": "https://www.optiver.com/join-us/locations/sydney/",
+        "confidence": "High",
+        "notes": "Official Sydney office page lists this address; city pin is approximate.",
+        "address": "Level 32, 275 Kent Street, Sydney NSW 2000"
+      }
+    ]
+  },
+  "Flow Traders": {
+    "source_url": "https://www.flowtraders.com/about/where-we-operate/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.flowtraders.com/about/where-we-operate/",
+        "confidence": "High",
+        "notes": "Official office page lists the Hong Kong address; building pin from OpenStreetMap.",
+        "address": "Room 2803, Hysan Place, 500 Hennessy Road, Causeway Bay, Hong Kong"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.flowtraders.com/about/where-we-operate/",
+        "confidence": "High",
+        "notes": "Official office page lists the London address; building pin from OpenStreetMap.",
+        "address": "12 Finsbury Square, London EC2A 1AS"
+      },
+      {
+        "city": "New York",
+        "source_url": "https://www.flowtraders.com/about/where-we-operate/",
+        "confidence": "High",
+        "notes": "Official office page lists the New York address; building pin from OpenStreetMap.",
+        "address": "1114 Avenue of the Americas, 4th Floor, New York, NY 10036"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.flowtraders.com/about/where-we-operate/",
+        "confidence": "High",
+        "notes": "Official office page lists the Shanghai representative office address; city pin is approximate.",
+        "address": "Unit 801, Jing An Kerry Centre, Tower 2, 1515 West Nanjing Road, Shanghai 200041"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.flowtraders.com/about/where-we-operate/",
+        "confidence": "High",
+        "notes": "Official office page lists the Singapore address; building pin from OpenStreetMap.",
+        "address": "#40-11, Ocean Financial Centre, 10 Collyer Quay, Singapore 049315"
+      }
+    ]
+  },
+  "S&P Global": {
+    "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Boston",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; city pin is approximate.",
+        "address": "One Financial Center, 675 Atlantic Avenue, Boston, MA 02111"
+      },
+      {
+        "city": "Cambridge, MA",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "44 Brattle Street, Cambridge, MA 02138"
+      },
+      {
+        "city": "New York",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "55 Water Street, New York, NY 10041"
+      },
+      {
+        "city": "San Francisco",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "333 Bush Street, San Francisco, CA 94104"
+      },
+      {
+        "city": "Vancouver",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "1055 West Georgia Street, Vancouver, BC V6E 3P3"
+      },
+      {
+        "city": "Beijing",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; city pin is approximate.",
+        "address": "49F, Beijing FFC, No. 5 East 3rd Ring Road, Chaoyang District, Beijing 100001"
+      },
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; city pin is approximate.",
+        "address": "Level 3, Three Exchange Square, 8 Connaught Place, Central, Hong Kong"
+      },
+      {
+        "city": "Shanghai",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; city pin is approximate.",
+        "address": "25F, K’wah Center, 1010 Huaihai Middle Road, Shanghai 200031"
+      },
+      {
+        "city": "Seoul",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "7F Seoul Finance Center, 136 Sejong-daero, Jung-gu, Seoul 04520"
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; city pin is approximate.",
+        "address": "12 Marina Boulevard, MBFC Tower 3, Level 23, Singapore 018982"
+      },
+      {
+        "city": "Sydney",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "Level 22, 400 George Street, Sydney NSW 2000"
+      },
+      {
+        "city": "Tokyo",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; city pin is approximate.",
+        "address": "L28, Marunouchi Kitaguchi Building, 1-6-5 Marunouchi, Chiyoda, Tokyo 100-0005"
+      },
+      {
+        "city": "London",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "25 Ropemaker Street, London EC2Y 9LY"
+      },
+      {
+        "city": "Geneva",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "24 Chemin de la Mairie, 1258 Perly, Geneva"
+      },
+      {
+        "city": "Zurich",
+        "source_url": "https://www.spglobal.com/en/contact-us/office-locations",
+        "confidence": "High",
+        "notes": "Official global office directory lists the address; building pin from OpenStreetMap.",
+        "address": "HeadsQuarter, Stockerstrasse 33, 8002 Zurich"
+      }
+    ]
+  },
+  "Singapore Petroleum Company (SPC)": {
+    "source_url": "https://www.spc.com.sg/job_opportunities/lng-analyst/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official LNG analyst posting states Singapore; separate public office address was not found in this check. City pin is approximate.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.spc.com.sg/job_opportunities/lng-analyst/",
+        "confidence": "High",
+        "notes": "Official LNG analyst posting states Singapore; separate public office address was not found in this check. City pin is approximate."
+      }
+    ]
+  },
+  "ENGIE": {
+    "source_url": "https://jobs.engie.com/job/Sales-Trader/71834-en_US/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official posting says the role may be based in Tokyo or Singapore; street office address not provided. City pin is approximate.",
+    "offices": [
+      {
+        "city": "Tokyo",
+        "source_url": "https://jobs.engie.com/job/Sales-Trader/71834-en_US/",
+        "confidence": "High",
+        "notes": "Official posting says the role may be based in Tokyo or Singapore; street office address not provided. City pin is approximate."
+      }
+    ]
+  },
+  "Jingan Asset Management": {
+    "source_url": "https://www.jingan.hk/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official company page lists its Hong Kong office address; city pin is approximate.",
+    "offices": [
+      {
+        "city": "Hong Kong",
+        "source_url": "https://www.jingan.hk/",
+        "confidence": "High",
+        "notes": "Official company page lists its Hong Kong office address; city pin is approximate.",
+        "address": "Room 4006, 40/F, Cosco Tower, 183 Queen’s Road Central, Hong Kong"
+      }
+    ]
+  },
+  "ExxonMobil": {
+    "source_url": "",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "See individual office notes; included records retain source research status.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://corporate.exxonmobil.com/locations/singapore",
+        "confidence": "High",
+        "notes": "Official company page lists Singapore office address; city pin is approximate.",
+        "address": "1 HarbourFront Place, HarbourFront Tower One, #06-00, Singapore 098633"
+      },
+      {
+        "city": "London",
+        "source_url": "https://jobs.exxonmobil.com/job/London-Gas-Trading-Analyst-LND/1379255600/",
+        "confidence": "High",
+        "notes": "Official Gas Trading Analyst posting identifies a central London trading office but does not provide its street address. City pin is approximate.",
+        "address": "Central London Trading office; street address not published in the posting"
+      }
+    ]
+  },
+  "Accenture": {
+    "source_url": "https://www.accenture.com/en/about/location?loc=Ireland",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Accenture location listing and entity disclosure list its Singapore address; city pin is approximate.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.accenture.com/en/about/location?loc=Ireland",
+        "confidence": "High",
+        "notes": "Official Accenture location listing and entity disclosure list its Singapore address; city pin is approximate.",
+        "address": "250 North Bridge Road, #35-00, Raffles City Tower, Singapore 179101"
+      }
+    ]
+  },
+  "Senoko Energy": {
+    "source_url": "https://www.senokoenergy.com/en/contact",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official contact page lists the address; building pin from OpenStreetMap.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.senokoenergy.com/en/contact",
+        "confidence": "High",
+        "notes": "Official contact page lists the address; building pin from OpenStreetMap.",
+        "address": "31 Senoko Road, Singapore 758103"
+      }
+    ]
+  },
+  "Wells Fargo": {
+    "source_url": "https://www.wellsfargo.com/assets/pdf/personal/privacy-security/International_Privacy_Notice_English.pdf",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Wells Fargo disclosure lists three Singapore entities at this building; city pin is approximate.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.wellsfargo.com/assets/pdf/personal/privacy-security/International_Privacy_Notice_English.pdf",
+        "confidence": "High",
+        "notes": "Official Wells Fargo disclosure lists three Singapore entities at this building; city pin is approximate.",
+        "address": "138 Market Street, #30-01 to #30-03, CapitaGreen, Singapore 048946"
+      }
+    ]
+  },
+  "Baringa": {
+    "source_url": "https://www.baringa.com/en/about/regions/asia/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Baringa page confirms its Singapore hub; street address not listed on the reviewed page. City pin is approximate.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://www.baringa.com/en/about/regions/asia/",
+        "confidence": "High",
+        "notes": "Official Baringa page confirms its Singapore hub; street address not listed on the reviewed page. City pin is approximate."
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://www.baringa.com/en/about/regions/asia/",
+        "confidence": "High",
+        "notes": "Official Baringa page confirms its Singapore hub; street address not listed on the reviewed page. City pin is approximate."
+      }
+    ]
+  },
+  "Petroineos": {
+    "source_url": "https://careers.petroineos.com/",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official careers and contact pages list the London office address; building pin from OpenStreetMap.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://careers.petroineos.com/",
+        "confidence": "High",
+        "notes": "Official careers and contact pages list the London office address; building pin from OpenStreetMap.",
+        "address": "The Adelphi, 1–11 John Adam Street, London WC2N 6HT"
+      }
+    ]
+  },
+  "Veolia North America": {
+    "source_url": "https://jobs.veolia.com/en/job/boston/energy-market-analyst/3091/44322282304",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official Energy Market Analyst posting gives Boston as location; street address not provided. City pin is approximate.",
+    "offices": [
+      {
+        "city": "Boston",
+        "source_url": "https://jobs.veolia.com/en/job/boston/energy-market-analyst/3091/44322282304",
+        "confidence": "High",
+        "notes": "Official Energy Market Analyst posting gives Boston as location; street address not provided. City pin is approximate."
+      }
+    ]
+  },
+  "Graviton Research Capital": {
+    "source_url": "https://job-boards.greenhouse.io/gravitonresearchcapital/jobs/8593672002",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official role listing gives Singapore as location; street address not provided. City pin is approximate.",
+    "offices": [
+      {
+        "city": "Singapore",
+        "source_url": "https://job-boards.greenhouse.io/gravitonresearchcapital/jobs/8593672002",
+        "confidence": "High",
+        "notes": "Official role listing gives Singapore as location; street address not provided. City pin is approximate."
+      }
+    ]
+  },
+  "Marex": {
+    "source_url": "https://www.marex.com/careers/career-opportunities/20d68679ef4401-application-support-analyst-energy-trading-operations",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official careers listing gives London as location; street address not provided for this role. City pin is approximate.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://www.marex.com/careers/career-opportunities/20d68679ef4401-application-support-analyst-energy-trading-operations",
+        "confidence": "High",
+        "notes": "Official careers listing gives London as location; street address not provided for this role. City pin is approximate."
+      }
+    ]
+  },
+  "DV Trading": {
+    "source_url": "https://job-boards.greenhouse.io/dvtrading/jobs/4721555005",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official DV Commodities job listing gives London as location; street address not provided. City pin is approximate.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://job-boards.greenhouse.io/dvtrading/jobs/4721555005",
+        "confidence": "High",
+        "notes": "Official DV Commodities job listing gives London as location; street address not provided. City pin is approximate."
+      }
+    ]
+  },
+  "Dare": {
+    "source_url": "https://careers.dare.global/jobs/8360237-graduate-trading-analyst",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official graduate trading role gives London as location; street address not provided. City pin is approximate.",
+    "offices": [
+      {
+        "city": "London",
+        "source_url": "https://careers.dare.global/jobs/8360237-graduate-trading-analyst",
+        "confidence": "High",
+        "notes": "Official graduate trading role gives London as location; street address not provided. City pin is approximate."
+      }
+    ]
+  },
+  "DRW": {
+    "source_url": "https://job-boards.greenhouse.io/drweng/jobs/7810753",
+    "checked_on": "2026-11-01",
+    "confidence": "High",
+    "status": "partial",
+    "notes": "Official role listing gives the city; no street office address was found in this pass. City pin is approximate.",
+    "offices": [
+      {
+        "city": "Hong Kong",
+        "source_url": "https://job-boards.greenhouse.io/drweng/jobs/7810753",
+        "confidence": "High",
+        "notes": "Official role listing gives the city; no street office address was found in this pass. City pin is approximate."
+      },
+      {
+        "city": "Singapore",
+        "source_url": "https://job-boards.greenhouse.io/drweng/jobs/7810753",
+        "confidence": "High",
+        "notes": "Official role listing gives the city; no street office address was found in this pass. City pin is approximate."
+      }
+    ]
+  }
+}

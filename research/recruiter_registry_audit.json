@@ -1,0 +1,1135 @@
+{
+  "checked_on": "2026-11-01",
+  "scope": "Recruiter Registry rows 2–53; public profile and first-party source review. Contact routes include only public work contacts or LinkedIn/firm contact routes.",
+  "records": [
+    {
+      "row": 2,
+      "recruiter_id": "recruiter:28b8f30710cd",
+      "name": "Felix Bateman",
+      "original_registry_values": {
+        "employer": "Carisbrook Partners",
+        "location": "London, United Kingdom",
+        "linkedin_url": "",
+        "contact_details": "f.bateman@carisbrookpartners.com | +44 (0)20 7183 9607"
+      },
+      "employer": "Carisbrook Partners",
+      "affiliation_type": "agency",
+      "location": "Not stated on individual bio; London firm office only",
+      "linkedin": "Not verified; use firm bio/contact",
+      "route": "f.bateman@carisbrookpartners.com; +44 (0)20 7183 9607 (public work contact)",
+      "sources": [
+        "https://www.carisbrookpartners.com/team/felix-bateman/"
+      ],
+      "confidence": "High",
+      "notes": "Official bio confirms person, firm and commodities/quant recruiting. Do not infer the firm office is his residence."
+    },
+    {
+      "row": 3,
+      "recruiter_id": "recruiter:ddd0981323a9",
+      "name": "Shahla Davidson",
+      "original_registry_values": {
+        "employer": "Carisbrook Partners",
+        "location": "London, United Kingdom",
+        "linkedin_url": "",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "Carisbrook Partners",
+      "affiliation_type": "agency",
+      "location": "Not stated individually; firm is London-based",
+      "linkedin": "Not verified",
+      "route": "Carisbrook contact form or LinkedIn search; no direct personal contact published",
+      "sources": [
+        "https://www.carisbrookpartners.com/teams/",
+        "https://www.carisbrookpartners.com/practice-areas/commodities/"
+      ],
+      "confidence": "High",
+      "notes": "First-party team and practice pages support current affiliation and commodities practice."
+    },
+    {
+      "row": 4,
+      "recruiter_id": "recruiter:3af1676b1c08",
+      "name": "Hamish Graham",
+      "original_registry_values": {
+        "employer": "Durlston Partners",
+        "location": "London, United Kingdom; New York, United States",
+        "linkedin_url": "https://www.linkedin.com/in/hamish-graham-00abaa97/",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "Durlston Partners",
+      "affiliation_type": "agency",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/hamish-graham-00abaa97",
+      "route": "LinkedIn message; no direct public contact found",
+      "sources": [
+        "https://uk.linkedin.com/in/hamish-graham-00abaa97",
+        "https://durlstonpartners.com/meet-us/"
+      ],
+      "confidence": "Medium",
+      "notes": "LinkedIn confirms London and Durlston; firm meet-us page is supporting company context."
+    },
+    {
+      "row": 5,
+      "recruiter_id": "recruiter:00cea41a4dc1",
+      "name": "Sam Evans",
+      "original_registry_values": {
+        "employer": "GridSelect",
+        "location": "Newcastle, United Kingdom",
+        "linkedin_url": "https://www.linkedin.com/in/sam-evans-86b89b196/",
+        "contact_details": "sam.evans@grid.select | +44 (0) 7947 771379"
+      },
+      "employer": "GridSelect",
+      "affiliation_type": "agency founder",
+      "location": "Newcastle firm base; individual location not separately verified",
+      "linkedin": "https://www.linkedin.com/in/sam-evans-86b89b196/",
+      "route": "sam.evans@grid.select; +44 (0)7947 771379 (public business contact)",
+      "sources": [
+        "https://grid.select/about",
+        "https://www.linkedin.com/in/sam-evans-86b89b196/"
+      ],
+      "confidence": "High",
+      "notes": "Official GridSelect about page identifies founder and public work contact."
+    },
+    {
+      "row": 6,
+      "recruiter_id": "recruiter:801115c96a25",
+      "name": "Nicholas Osborn",
+      "original_registry_values": {
+        "employer": "AEJ Consulting",
+        "location": "London, United Kingdom",
+        "linkedin_url": "",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "AEJ Consulting (registry value; unconfirmed)",
+      "affiliation_type": "uncertain",
+      "location": "Not verified",
+      "linkedin": "Not verified",
+      "route": "AEJ firm contact route or LinkedIn search; no person-specific contact verified",
+      "sources": [
+        "https://aejconsulting.com/energy-trading-commodities/"
+      ],
+      "confidence": "Low",
+      "notes": "Only firm practice page found; it does not confirm this person, current affiliation or city."
+    },
+    {
+      "row": 7,
+      "recruiter_id": "recruiter:56c71a249f52",
+      "name": "Megan Mackey",
+      "original_registry_values": {
+        "employer": "Ardmore Search Partners",
+        "location": "London, United Kingdom",
+        "linkedin_url": "https://www.linkedin.com/in/megan-mackey-10b43a224/",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "Ardmore Search Partners",
+      "affiliation_type": "agency",
+      "location": "Individual city not confirmed; firm operates London and Calgary",
+      "linkedin": "https://www.linkedin.com/in/megan-mackey-10b43a224/",
+      "route": "LinkedIn message or Ardmore firm contact; no direct work contact verified",
+      "sources": [
+        "https://www.linkedin.com/in/megan-mackey-10b43a224/",
+        "https://uk.linkedin.com/company/ardmore-search-partners"
+      ],
+      "confidence": "Medium",
+      "notes": "LinkedIn/company page supports affiliation, but not individual location."
+    },
+    {
+      "row": 8,
+      "recruiter_id": "recruiter:778acf837ee7",
+      "name": "Xara Smith",
+      "original_registry_values": {
+        "employer": "L.Knighton",
+        "location": "London, United Kingdom",
+        "linkedin_url": "",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "L. Knighton (possible; registry says L.Knighton)",
+      "affiliation_type": "uncertain",
+      "location": "Not verified",
+      "linkedin": "Not found",
+      "route": "Firm contact page only; identity not resolved",
+      "sources": [
+        "https://www.lknighton.com/connect"
+      ],
+      "confidence": "Low",
+      "notes": "No person-specific evidence found; company name spelling may need confirmation."
+    },
+    {
+      "row": 9,
+      "recruiter_id": "recruiter:d9ddca703d3e",
+      "name": "Ben Williams",
+      "original_registry_values": {
+        "employer": "Ardmore Search Partners",
+        "location": "London, United Kingdom",
+        "linkedin_url": "https://www.linkedin.com/in/ben-williams-91041b116/",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "Ardmore Search Partners",
+      "affiliation_type": "agency",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/ben-williams-91041b116",
+      "route": "LinkedIn message or Ardmore firm contact; no direct contact found",
+      "sources": [
+        "https://uk.linkedin.com/in/ben-williams-91041b116",
+        "https://uk.linkedin.com/company/ardmore-search-partners"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn identifies London and front-office executive search across global energy markets."
+    },
+    {
+      "row": 10,
+      "recruiter_id": "recruiter:ca2155709698",
+      "name": "Matthew Sheinfeld",
+      "original_registry_values": {
+        "employer": "Principal Search",
+        "location": "London, United Kingdom",
+        "linkedin_url": "https://www.linkedin.com/in/matthew-sheinfeld/",
+        "contact_details": "Name from the user-pasted list; contact details not provided"
+      },
+      "employer": "Principal Search",
+      "affiliation_type": "agency",
+      "location": "London Area, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/matthew-sheinfeld",
+      "route": "LinkedIn message or firm contact; no personal contact published",
+      "sources": [
+        "https://uk.linkedin.com/in/matthew-sheinfeld",
+        "https://principalsearch.com/contact-us/"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn identifies Principal Search and London area; firm contact page provides general route."
+    },
+    {
+      "row": 11,
+      "recruiter_id": "recruiter:laxmi-gill",
+      "name": "Laxmi Gill",
+      "original_registry_values": {
+        "employer": "Hedge Fund Specialist Headhunter",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/laxmi-gill-13557114/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Tighe International (current; possible concurrent Liberty Professionals affiliation is unresolved)",
+      "affiliation_type": "agency; possible dual affiliation",
+      "location": "Dubai, UAE (firm base; person-level city not explicit)",
+      "linkedin": "https://www.linkedin.com/in/laxmi-gill-13557114/",
+      "route": "LinkedIn message or Tighe firm contact; no verified personal contact",
+      "sources": [
+        "https://tighesearch.com/about-us/",
+        "https://www.linkedin.com/in/laxmi-gill-13557114/"
+      ],
+      "confidence": "Medium",
+      "notes": "Tighe first-party page lists her on Middle East commodities/quant research team; secondary source suggests possible Liberty role. Treat dual affiliation as unresolved."
+    },
+    {
+      "row": 12,
+      "recruiter_id": "recruiter:dawn-gulanes",
+      "name": "Dawn Gulanes",
+      "original_registry_values": {
+        "employer": "Executive Search",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/gulanesdawn/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Kepler Search",
+      "affiliation_type": "agency",
+      "location": "Singapore",
+      "linkedin": "https://www.linkedin.com/in/gulanesdawn/",
+      "route": "dawn.gulanes@keplersearch.com (public work email)",
+      "sources": [
+        "https://keplersearch.com/dawn-gulanes/",
+        "https://www.linkedin.com/in/gulanesdawn/"
+      ],
+      "confidence": "High",
+      "notes": "Official profile confirms Singapore, executive search and APAC energy/commodities focus."
+    },
+    {
+      "row": 13,
+      "recruiter_id": "recruiter:debora-lengler",
+      "name": "Debora Lengler",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/dlengler/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Aurex Group",
+      "affiliation_type": "agency",
+      "location": "Australia; exact city not confirmed by current source",
+      "linkedin": "https://www.linkedin.com/in/dlengler/",
+      "route": "debora@aurexgroup.com (public work email)",
+      "sources": [
+        "https://www.aurexgroup.com/natural-resources/",
+        "https://www.linkedin.com/posts/dlengler_happy-to-share-that-ive-recently-joined-activity-7465219036700753940-werk"
+      ],
+      "confidence": "High",
+      "notes": "Recent announcement and official team page confirm Principal Consultant at Aurex, Australia, with power portfolio. Earlier “independent” is outdated."
+    },
+    {
+      "row": 14,
+      "recruiter_id": "recruiter:harry-d",
+      "name": "Harry D",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/harryep/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Not verified",
+      "affiliation_type": "uncertain",
+      "location": "Not verified",
+      "linkedin": "https://www.linkedin.com/in/harryep/",
+      "route": "LinkedIn message only",
+      "sources": [
+        "https://www.linkedin.com/in/harryep/"
+      ],
+      "confidence": "Low",
+      "notes": "Profile alias is abbreviated; exact identity/employer not reliably resolved."
+    },
+    {
+      "row": 15,
+      "recruiter_id": "recruiter:oliver-cooke",
+      "name": "Oliver Cooke",
+      "original_registry_values": {
+        "employer": "Oscar Faye",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/ocooke/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Oscar Faye",
+      "affiliation_type": "agency founder",
+      "location": "Dallas, Texas, United States",
+      "linkedin": "https://www.linkedin.com/in/ocooke",
+      "route": "LinkedIn or Oscar Faye firm contact; no direct personal contact found",
+      "sources": [
+        "https://www.oscarfaye.com/team",
+        "https://www.linkedin.com/in/ocooke"
+      ],
+      "confidence": "High",
+      "notes": "First-party team page confirms Founding Partner & CEO; LinkedIn identifies Dallas."
+    },
+    {
+      "row": 16,
+      "recruiter_id": "recruiter:maxime-bulhoff",
+      "name": "Maxime Bülhoff",
+      "original_registry_values": {
+        "employer": "NordSearch",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/maxime-b%C3%BClhoff-11213519a/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "NordSearch",
+      "affiliation_type": "agency",
+      "location": "South Africa (LinkedIn location; country/city precision only)",
+      "linkedin": "https://za.linkedin.com/in/maxime-b%C3%BClhoff-11213519a",
+      "route": "maxime@nord-search.com (public business email on company LinkedIn); LinkedIn",
+      "sources": [
+        "https://za.linkedin.com/in/maxime-b%C3%BClhoff-11213519a",
+        "https://uk.linkedin.com/company/nordsearch"
+      ],
+      "confidence": "High",
+      "notes": "Person profile confirms NordSearch and South Africa; do not substitute company Manchester HQ for person location."
+    },
+    {
+      "row": 17,
+      "recruiter_id": "recruiter:alexander-merron",
+      "name": "Alexander Merron",
+      "original_registry_values": {
+        "employer": "Storm4",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/alexander-merron-0324jj/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Storm4",
+      "affiliation_type": "agency",
+      "location": "New York City metropolitan area, United States",
+      "linkedin": "https://www.linkedin.com/in/alexander-merron-0324jj",
+      "route": "alex.merron@storm4.com (public work email in job post); LinkedIn",
+      "sources": [
+        "https://www.linkedin.com/in/alexander-merron-0324jj",
+        "https://www.linkedin.com/jobs/view/portfolio-manager-at-storm4-4477174548"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn supports Storm4/NYC metro; job post publishes work email."
+    },
+    {
+      "row": 18,
+      "recruiter_id": "recruiter:adam-carabetta",
+      "name": "Adam Carabetta",
+      "original_registry_values": {
+        "employer": "Formative",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/adamcarabetta85/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Formative Search",
+      "affiliation_type": "agency co-founder/director",
+      "location": "Singapore",
+      "linkedin": "https://sg.linkedin.com/in/adamcarabetta85",
+      "route": "adam@formativesearch.com (public work email); LinkedIn",
+      "sources": [
+        "https://www.formativesearch.com/consultant/adam-carabetta",
+        "https://sg.linkedin.com/in/adamcarabetta85"
+      ],
+      "confidence": "High",
+      "notes": "Official bio confirms Co-founder/Director, Energy Transition; LinkedIn confirms Singapore."
+    },
+    {
+      "row": 19,
+      "recruiter_id": "recruiter:joe-ashton",
+      "name": "Joe Ashton",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/joe-ashton/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Charles Levick",
+      "affiliation_type": "agency",
+      "location": "Not publicly stated",
+      "linkedin": "https://www.linkedin.com/in/joe-ashton/",
+      "route": "LinkedIn message or firm contact; no direct email found",
+      "sources": [
+        "https://www.charleslevick.com/about-us/",
+        "https://www.linkedin.com/in/joe-ashton/"
+      ],
+      "confidence": "High",
+      "notes": "Official firm page identifies Head of U.S. Power Markets. Do not infer a New York residence."
+    },
+    {
+      "row": 20,
+      "recruiter_id": "recruiter:james-lacey",
+      "name": "James Lacey",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/james-lacey-dp/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Durlston Partners",
+      "affiliation_type": "agency",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/james-lacey-dp",
+      "route": "james@durlstonpartners.com (public work email in his LinkedIn posts); LinkedIn",
+      "sources": [
+        "https://uk.linkedin.com/in/james-lacey-dp",
+        "https://durlstonpartners.com/meet-us/"
+      ],
+      "confidence": "High",
+      "notes": "Current Senior Consultant, Core Technology; registry “independent” is outdated."
+    },
+    {
+      "row": 21,
+      "recruiter_id": "recruiter:neil-jethwa",
+      "name": "Neil Jethwa",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/neiljethwa/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Pangea Talent Solutions",
+      "affiliation_type": "agency",
+      "location": "Not publicly verified",
+      "linkedin": "https://www.linkedin.com/in/neiljethwa/",
+      "route": "neil@pangea-ts.com (public work email); firm phone +44 (0)20 3059 9683 / +1 (646) 285 6882",
+      "sources": [
+        "https://www.pangea-ts.com/static/download_files/brochures/Supply_Trading_Power.pdf",
+        "https://www.linkedin.com/posts/pangea-talent-solutions_energytradingweek-energytrading-connect-activity-7235262547631697920-fG_Q"
+      ],
+      "confidence": "High",
+      "notes": "Official firm brochure lists Senior Vice President and business contact; exact person location not verified."
+    },
+    {
+      "row": 22,
+      "recruiter_id": "recruiter:terry-lin",
+      "name": "Terry Lin",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/titanterry/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Titan GreenTech / Titan Consulting",
+      "affiliation_type": "agency consultant; also market-entry/consulting activity",
+      "location": "Tokyo, Japan",
+      "linkedin": "https://jp.linkedin.com/in/titanterry",
+      "route": "greentechinfo@titanconsulting.jp; +81 03 4550 6788 (firm contact); LinkedIn",
+      "sources": [
+        "https://greentech.titanconsulting.jp/terry-lin/",
+        "https://jp.linkedin.com/in/titanterry"
+      ],
+      "confidence": "High",
+      "notes": "Current title Manager—Power Markets & PPA; Tokyo based; sources describe Japan/APAC power recruitment, PPA and energy markets."
+    },
+    {
+      "row": 23,
+      "recruiter_id": "recruiter:patrick-reynolds",
+      "name": "Patrick Reynolds",
+      "original_registry_values": {
+        "employer": "NordSearch",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/patnordsearch/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "NordSearch",
+      "affiliation_type": "agency founder",
+      "location": "Manchester, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/patnordsearch",
+      "route": "NordSearch website contact form or LinkedIn; no personal email found",
+      "sources": [
+        "https://www.nord-search.com/",
+        "https://uk.linkedin.com/in/patnordsearch"
+      ],
+      "confidence": "High",
+      "notes": "Official site identifies Founder & Chief Recruiter; LinkedIn supports Manchester."
+    },
+    {
+      "row": 24,
+      "recruiter_id": "recruiter:arjan-gill",
+      "name": "Arjan Gill",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/arjangill92/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Carisbrook Partners",
+      "affiliation_type": "agency",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/arjangill92",
+      "route": "a.gill@carisbrookpartners.com (public work email on LinkedIn); LinkedIn",
+      "sources": [
+        "https://www.carisbrookpartners.com/team-list/",
+        "https://uk.linkedin.com/in/arjangill92"
+      ],
+      "confidence": "High",
+      "notes": "Official team page says he leads Commodities practice; distinguish from unrelated same-name profiles."
+    },
+    {
+      "row": 25,
+      "recruiter_id": "recruiter:will-adie",
+      "name": "Will Adie",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/will-adie-87758216/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "ISL (affiliation likely; recruiting role uncertain)",
+      "affiliation_type": "uncertain agency affiliation",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/will-adie-87758216",
+      "route": "LinkedIn message only",
+      "sources": [
+        "https://uk.linkedin.com/in/will-adie-87758216"
+      ],
+      "confidence": "Medium",
+      "notes": "LinkedIn supports ISL and London; available evidence does not establish his exact role as a recruiter."
+    },
+    {
+      "row": 26,
+      "recruiter_id": "recruiter:tom-kemp",
+      "name": "Tom Kemp",
+      "original_registry_values": {
+        "employer": "Nanook Advisors",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/tom-kemp/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Nanook Energy Advisors LLP",
+      "affiliation_type": "agency/recruitment lead",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/tom-kemp",
+      "route": "LinkedIn message; no public personal contact found",
+      "sources": [
+        "https://uk.linkedin.com/in/tom-kemp"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn says he heads recruitment at Nanook Energy Advisors LLP; normalize registry brand to full current name."
+    },
+    {
+      "row": 27,
+      "recruiter_id": "recruiter:ben-brannan",
+      "name": "Ben Brannan",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/ben-brannan-a57b691a8/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "H.W. Anderson",
+      "affiliation_type": "agency",
+      "location": "Dubai, UAE",
+      "linkedin": "https://ae.linkedin.com/in/ben-brannan-a57b691a8",
+      "route": "LinkedIn message or H.W. Anderson Dubai office contact; no personal email found",
+      "sources": [
+        "https://ae.linkedin.com/in/ben-brannan-a57b691a8",
+        "https://www.hw-anderson.com/team"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn confirms Dubai and firm; official team page lists Lead Consultant."
+    },
+    {
+      "row": 28,
+      "recruiter_id": "recruiter:nicolas-cambi",
+      "name": "Nicolas Cambi",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/nicolas-cambi-703b5332/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Executive Search Partners Inc.",
+      "affiliation_type": "agency",
+      "location": "Greater Boston; Cohasset, Massachusetts also associated with firm page",
+      "linkedin": "https://www.linkedin.com/in/nicolas-cambi-703b5332",
+      "route": "Ncambi@ex-sp.com (public work email in LinkedIn post); LinkedIn",
+      "sources": [
+        "https://www.linkedin.com/in/nicolas-cambi-703b5332",
+        "https://zw.linkedin.com/company/executive-search-partners-inc-",
+        "https://ex-sp.replit.app/"
+      ],
+      "confidence": "High",
+      "notes": "Person profile supports firm; company profile gives Greater Boston; firm focuses energy trading search."
+    },
+    {
+      "row": 29,
+      "recruiter_id": "recruiter:tea-carter",
+      "name": "Téa Carter",
+      "original_registry_values": {
+        "employer": "Carisbrook Partners",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/tea-carter/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Carisbrook Partners",
+      "affiliation_type": "agency",
+      "location": "London, United Kingdom",
+      "linkedin": "Not verified",
+      "route": "t.carter@carisbrookpartners.com; firm phone +44 (0)20 7183 9607",
+      "sources": [
+        "https://www.carisbrookpartners.com/team/tea-carter/"
+      ],
+      "confidence": "High",
+      "notes": "Official bio confirms North American gas/power mandates and London move; restore accent in first name."
+    },
+    {
+      "row": 30,
+      "recruiter_id": "recruiter:jordan-alexander-greaves",
+      "name": "Jordan Alexander-Greaves",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/jordanalexandergreaves/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "G-Global",
+      "affiliation_type": "agency",
+      "location": "Not publicly stated",
+      "linkedin": "https://www.linkedin.com/in/jordanalexandergreaves/",
+      "route": "G-Global firm contact or LinkedIn; no personal contact found",
+      "sources": [
+        "https://gglobal.co.uk/home/",
+        "https://www.linkedin.com/in/jordanalexandergreaves/"
+      ],
+      "confidence": "High",
+      "notes": "Official site lists Director and commodity finance/risk recruitment; independent registry value is outdated."
+    },
+    {
+      "row": 31,
+      "recruiter_id": "recruiter:kelvin-koh",
+      "name": "Kelvin Koh",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/kelvin-koh-3a048b180/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Principle Partners",
+      "affiliation_type": "agency",
+      "location": "Singapore",
+      "linkedin": "https://sg.linkedin.com/in/kelvin-koh-3a048b180",
+      "route": "Firm contact route or LinkedIn; no personal contact found",
+      "sources": [
+        "https://sg.linkedin.com/in/kelvin-koh-3a048b180",
+        "https://www.efinancialcareers.sg/jobs-Singapore-Singapore-Commodities_Derivatives_Trader.id20947965"
+      ],
+      "confidence": "Medium",
+      "notes": "LinkedIn supports Singapore and hedge-fund/search coverage in Asia; job posting supplies firm/location corroboration."
+    },
+    {
+      "row": 32,
+      "recruiter_id": "recruiter:bradley-newton",
+      "name": "Bradley Newton",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/bradleygnewton/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Talisman Advisory Partners",
+      "affiliation_type": "agency",
+      "location": "United States (exact person city not verified)",
+      "linkedin": "https://www.linkedin.com/in/bradleygnewton/",
+      "route": "LinkedIn message or Talisman contact; no personal contact found",
+      "sources": [
+        "https://www.linkedin.com/in/bradleygnewton/",
+        "https://www.linkedin.com/jobs/view/power-trader-at-talisman-4469104056"
+      ],
+      "confidence": "Medium",
+      "notes": "Evidence supports Director recruiting power/quant/trading at Talisman; don’t use a job location as his residence."
+    },
+    {
+      "row": 33,
+      "recruiter_id": "recruiter:chris-king",
+      "name": "Chris King",
+      "original_registry_values": {
+        "employer": "Castleton Commodities International",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/chris-king-6313982/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Castleton Commodities International (CCI)",
+      "affiliation_type": "in-house talent acquisition",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/chris-king-6313982",
+      "route": "LinkedIn message; no direct public contact found",
+      "sources": [
+        "https://uk.linkedin.com/in/chris-king-6313982",
+        "https://www.linkedin.com/company/castleton-commodities-international/"
+      ],
+      "confidence": "Medium",
+      "notes": "LinkedIn identifies Senior Talent Partner at CCI/London; latest person-specific date not independently refreshed."
+    },
+    {
+      "row": 34,
+      "recruiter_id": "recruiter:silvia-quartu",
+      "name": "Silvia Quartu",
+      "original_registry_values": {
+        "employer": "Centalion",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/silvia-quartu-18539845/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Centalion",
+      "affiliation_type": "in-house talent acquisition",
+      "location": "Geneva, Switzerland",
+      "linkedin": "https://ch.linkedin.com/in/silvia-quartu-18539845",
+      "route": "LinkedIn message or Centalion general contact; no public individual email",
+      "sources": [
+        "https://ch.linkedin.com/in/silvia-quartu-18539845"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn profile supports Talent Acquisition, commodities/trading, Geneva."
+    },
+    {
+      "row": 35,
+      "recruiter_id": "recruiter:silvia-filipova",
+      "name": "Silvia Filipova",
+      "original_registry_values": {
+        "employer": "Setberry",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/silvia-filipova-07958217/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Setberry Ltd / SetSelect",
+      "affiliation_type": "agency founder/consultant",
+      "location": "Zürich/Zug area, Switzerland (profile); company legal address in Wettingen",
+      "linkedin": "https://ch.linkedin.com/in/silvia-filipova-07958217",
+      "route": "hello@setberry.com (general company contact); LinkedIn",
+      "sources": [
+        "https://ch.linkedin.com/in/silvia-filipova-07958217",
+        "https://www.setselect.io/privacy"
+      ],
+      "confidence": "High",
+      "notes": "Privacy page identifies Setberry Ltd and Silvia Petrova Filipova; “SetSelect” is brand. Do not use legal address as person location."
+    },
+    {
+      "row": 36,
+      "recruiter_id": "recruiter:daisy-lomax",
+      "name": "Daisy Lomax",
+      "original_registry_values": {
+        "employer": "Fuse Energy",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/daisy-lomax-417560203/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Beresford Wilson & Partners (BWP)",
+      "affiliation_type": "agency",
+      "location": "Dubai, UAE",
+      "linkedin": "https://ae.linkedin.com/in/daisy-lomax-417560203",
+      "route": "daisy@bwpltd.com (public work email in LinkedIn posts); LinkedIn",
+      "sources": [
+        "https://ae.linkedin.com/in/daisy-lomax-417560203",
+        "https://www.bwpltd.com"
+      ],
+      "confidence": "High",
+      "notes": "Current profile indicates BWP Associate Partner; Fuse Energy registry value is stale/incorrect."
+    },
+    {
+      "row": 37,
+      "recruiter_id": "recruiter:jasmine-warner",
+      "name": "Jasmine Warner",
+      "original_registry_values": {
+        "employer": "DRW",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/jasmine-warner-65017816b/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "DRW",
+      "affiliation_type": "in-house talent acquisition",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/jasmine-warner-65017816b",
+      "route": "LinkedIn message or DRW careers/firm contact; no current personal email verified",
+      "sources": [
+        "https://uk.linkedin.com/in/jasmine-warner-65017816b"
+      ],
+      "confidence": "Medium",
+      "notes": "Current LinkedIn supports DRW London. Do not reuse historic Selby Jennings email as current."
+    },
+    {
+      "row": 38,
+      "recruiter_id": "recruiter:leann-daniel",
+      "name": "Leann Daniel",
+      "original_registry_values": {
+        "employer": "Aurora Energy Research",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/leann-daniel-cmgr-mcmi-483aab130/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Aurora Energy Research",
+      "affiliation_type": "in-house recruitment",
+      "location": "Greater Oxford area, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/leann-daniel-cmgr-mcmi-483aab130",
+      "route": "LinkedIn message or Aurora general contact; no public individual email",
+      "sources": [
+        "https://uk.linkedin.com/in/leann-daniel-cmgr-mcmi-483aab130"
+      ],
+      "confidence": "Medium",
+      "notes": "Current profile supports Aurora and Oxford area; exact current title not captured."
+    },
+    {
+      "row": 39,
+      "recruiter_id": "recruiter:robert-carruthers",
+      "name": "Robert Carruthers",
+      "original_registry_values": {
+        "employer": "Global Commodity Search",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/robert-carruthers-2b02245/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Global Commodity Search",
+      "affiliation_type": "agency",
+      "location": "Greater London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/robert-carruthers-2b02245",
+      "route": "robert.carruthers@globalcommoditysearch.com (public work email on LinkedIn); LinkedIn",
+      "sources": [
+        "https://uk.linkedin.com/in/robert-carruthers-2b02245",
+        "https://www.linkedin.com/company/global-commodity-search"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn supports current company and London; company page confirms commodity search."
+    },
+    {
+      "row": 40,
+      "recruiter_id": "recruiter:chris-tan",
+      "name": "Chris Tan",
+      "original_registry_values": {
+        "employer": "Gigantes Group",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/chris-tan-jing-ting/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Gigantes Group (registry value; unconfirmed)",
+      "affiliation_type": "uncertain",
+      "location": "Not verified",
+      "linkedin": "https://www.linkedin.com/in/chris-tan-jing-ting/",
+      "route": "LinkedIn message only",
+      "sources": [
+        "https://www.linkedin.com/in/chris-tan-jing-ting/"
+      ],
+      "confidence": "Low",
+      "notes": "No person-specific current employer/location evidence found in public indexing."
+    },
+    {
+      "row": 41,
+      "recruiter_id": "recruiter:gulliver-goodall",
+      "name": "Gulliver Goodall",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/gulliver-goodall-58b98a260/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Selby Jennings",
+      "affiliation_type": "agency",
+      "location": "London Area, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/gulliver-goodall-58b98a260",
+      "route": "Gulliver.Goodall@selbyjennings.com (public work email in own LinkedIn post); LinkedIn",
+      "sources": [
+        "https://uk.linkedin.com/in/gulliver-goodall-58b98a260",
+        "https://www.linkedin.com/posts/gulliver-goodall-58b98a260_hello-and-happy-friday-please-see-below-activity-7296197213519544326-sF1S"
+      ],
+      "confidence": "High",
+      "notes": "Current LinkedIn supports Selby Jennings/London; previous independent value is outdated."
+    },
+    {
+      "row": 42,
+      "recruiter_id": "recruiter:jakob-bloch",
+      "name": "Jakob Bloch",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/jakobbloch/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Jakob Bloch & Partners / Bloch Partners",
+      "affiliation_type": "agency founder",
+      "location": "Petersfield, United Kingdom (company base; individual city not independently stated); firm also has Singapore/Geneva offices",
+      "linkedin": "https://www.linkedin.com/in/jakobbloch/",
+      "route": "LinkedIn or company contact form; no personal public email found",
+      "sources": [
+        "https://www.blochpartners.com",
+        "https://www.linkedin.com/in/jakobbloch/"
+      ],
+      "confidence": "High",
+      "notes": "Official company site identifies Jakob as CEO and confirms office footprint; do not infer residence from headquarters."
+    },
+    {
+      "row": 43,
+      "recruiter_id": "recruiter:lewis-cook",
+      "name": "Lewis Cook",
+      "original_registry_values": {
+        "employer": "Fionics",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/lewis-cook-9b98a9171/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Fionics",
+      "affiliation_type": "agency business development (not recruiter)",
+      "location": "Not stated in first-party source",
+      "linkedin": "https://uk.linkedin.com/in/lewis-cook-9b98a9171",
+      "route": "LinkedIn or Fionics contact; no public personal email",
+      "sources": [
+        "https://fionics.io/team/",
+        "https://uk.linkedin.com/in/lewis-cook-9b98a9171"
+      ],
+      "confidence": "High",
+      "notes": "Official team page identifies Head of Business Development and former natural gas trader; remove from recruiter category if registry is recruiter-only."
+    },
+    {
+      "row": 44,
+      "recruiter_id": "recruiter:jennifer-hughes",
+      "name": "Jennifer Hughes",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/jennifer-hughes-202644b7/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Not verified; registry says independent",
+      "affiliation_type": "uncertain",
+      "location": "Not verified",
+      "linkedin": "https://www.linkedin.com/in/jennifer-hughes-202644b7/",
+      "route": "LinkedIn message only",
+      "sources": [
+        "https://www.linkedin.com/in/jennifer-hughes-202644b7/"
+      ],
+      "confidence": "Low",
+      "notes": "Name/profile slug maps to multiple namesakes; no confident current affiliation or role identified."
+    },
+    {
+      "row": 45,
+      "recruiter_id": "recruiter:emma-kelly",
+      "name": "Emma Kelly",
+      "original_registry_values": {
+        "employer": "Cohere",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/emmakelly/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Cohere",
+      "affiliation_type": "in-house talent acquisition",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/emmakelly",
+      "route": "LinkedIn message; no public individual contact found",
+      "sources": [
+        "https://uk.linkedin.com/in/emmakelly"
+      ],
+      "confidence": "High",
+      "notes": "LinkedIn update says Talent Partner in Cohere London office."
+    },
+    {
+      "row": 46,
+      "recruiter_id": "recruiter:charlie-butler",
+      "name": "Charlie Butler",
+      "original_registry_values": {
+        "employer": "ProspectAware",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/charlie-butler-8499941a1/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "ProspectAware",
+      "affiliation_type": "in-house recruitment/staff enablement",
+      "location": "London firm office; individual location not verified",
+      "linkedin": "https://www.linkedin.com/in/charlie-butler-8499941a1/",
+      "route": "ProspectAware contact form or LinkedIn; no direct email found",
+      "sources": [
+        "https://www.prospectaware.com/about.html",
+        "https://www.linkedin.com/in/charlie-butler-8499941a1/"
+      ],
+      "confidence": "High",
+      "notes": "Official team page calls him Recruitment & Staff Enablement Manager; London office is firm office only."
+    },
+    {
+      "row": 47,
+      "recruiter_id": "recruiter:alex-jahani",
+      "name": "Alex Jahani",
+      "original_registry_values": {
+        "employer": "Hubscale",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/alex-jahani-fde-recruiter/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "1001 AI, embedded with Hubscale (mixed/transitioning arrangement)",
+      "affiliation_type": "embedded talent partner",
+      "location": "London, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/alex-jahani-fde-recruiter",
+      "route": "alex@1001.ai (public work email in LinkedIn post); LinkedIn",
+      "sources": [
+        "https://uk.linkedin.com/in/alex-jahani-fde-recruiter"
+      ],
+      "confidence": "Medium",
+      "notes": "Current public profile/post describe 1001 AI Lead Talent Partner embedded at Hubscale; registry Hubscale-only is incomplete."
+    },
+    {
+      "row": 48,
+      "recruiter_id": "recruiter:tazkia-pitoyo",
+      "name": "Tazkia Pitoyo",
+      "original_registry_values": {
+        "employer": "DentalMonitoring",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/tazkiapitoyo/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "DentalMonitoring",
+      "affiliation_type": "in-house talent acquisition",
+      "location": "Paris, France",
+      "linkedin": "https://fr.linkedin.com/in/tazkiapitoyo",
+      "route": "LinkedIn message; no public personal contact found",
+      "sources": [
+        "https://fr.linkedin.com/in/tazkiapitoyo"
+      ],
+      "confidence": "Medium",
+      "notes": "LinkedIn profile/activity supports DentalMonitoring and Paris; secondary directory suggests another transition but is less reliable."
+    },
+    {
+      "row": 49,
+      "recruiter_id": "recruiter:lucy-bates",
+      "name": "Lucy Bates",
+      "original_registry_values": {
+        "employer": "Brightstem",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/lucy-bates-0916361/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "BrightStem Graduates",
+      "affiliation_type": "agency founder",
+      "location": "United Kingdom; city not reliably current",
+      "linkedin": "https://uk.linkedin.com/in/lucy-bates-0916361",
+      "route": "lucy@brightstemgraduates.com (public business email in launch post); LinkedIn",
+      "sources": [
+        "https://uk.linkedin.com/in/lucy-bates-0916361",
+        "https://www.linkedin.com/posts/lucy-bates-0916361_a-personal-update-ive-launched-brightstem-activity-7260650903450406914-34s3"
+      ],
+      "confidence": "High",
+      "notes": "Founder’s own post confirms BrightStem Graduates launch; company name should include Graduates."
+    },
+    {
+      "row": 50,
+      "recruiter_id": "recruiter:hugo-buttigieg",
+      "name": "Hugo Buttigieg",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/hugo-buttigieg-2a1266257/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "KINEKTA (most recent announcement; LinkedIn profile still indexed as NEXHR)",
+      "affiliation_type": "agency",
+      "location": "London Area, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/hugo-buttigieg-2a1266257",
+      "route": "LinkedIn message; no public direct contact found",
+      "sources": [
+        "https://uk.linkedin.com/in/hugo-buttigieg-2a1266257",
+        "https://www.linkedin.com/posts/kinekta_welcometotheteam-kinekta-recruitment-activity-7426999778632314882-RSYA"
+      ],
+      "confidence": "Medium",
+      "notes": "KINEKTA welcome post appears more recent than NEXHR profile indexing; confirm manually before changing canonical employer."
+    },
+    {
+      "row": 51,
+      "recruiter_id": "recruiter:georgina-bowis",
+      "name": "Georgina Bowis",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/georginabowis/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "University of Reading (current profile; recruiter role unverified)",
+      "affiliation_type": "uncertain / career development",
+      "location": "Greater Reading Area, United Kingdom",
+      "linkedin": "https://uk.linkedin.com/in/georginabowis",
+      "route": "LinkedIn message only",
+      "sources": [
+        "https://uk.linkedin.com/in/georginabowis"
+      ],
+      "confidence": "Medium",
+      "notes": "Current profile indicates University of Reading and career/talent development; historic corporate talent acquisition claims are not current evidence."
+    },
+    {
+      "row": 52,
+      "recruiter_id": "recruiter:rebecca-schuster",
+      "name": "Rebecca Schuster",
+      "original_registry_values": {
+        "employer": "Siemens",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/rebeccajaneschuster/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Siemens (registry value; person identity/employer match unverified)",
+      "affiliation_type": "uncertain",
+      "location": "Not verified",
+      "linkedin": "https://www.linkedin.com/in/rebeccajaneschuster/",
+      "route": "LinkedIn message only",
+      "sources": [
+        "https://www.linkedin.com/in/rebeccajaneschuster/"
+      ],
+      "confidence": "Low",
+      "notes": "Multiple namesakes; Siemens Healthineers Dr Rebecca Schuster is not established to be the registry person. Do not merge identities."
+    },
+    {
+      "row": 53,
+      "recruiter_id": "recruiter:richard-twumasi",
+      "name": "Richard Twumasi",
+      "original_registry_values": {
+        "employer": "Independent / not stated",
+        "location": "Not publicly stated in the available person-level source.",
+        "linkedin_url": "https://www.linkedin.com/in/rtwumasi/",
+        "contact_details": "No verified direct email or phone in captured source; use the LinkedIn profile as contact route."
+      },
+      "employer": "Ocean Red",
+      "affiliation_type": "agency founder",
+      "location": "Chelmsford, United Kingdom (secondary directory; not on firm bio)",
+      "linkedin": "https://www.linkedin.com/in/rtwumasi/",
+      "route": "Ocean Red contact form or LinkedIn; no verified individual email",
+      "sources": [
+        "https://oceanred.io/about",
+        "https://oceanred.io",
+        "https://www.efinancialcareers.co.uk/companies/Ocean_Red_Partners-JDkBXNB1Iq9T8aXM"
+      ],
+      "confidence": "High for founder/company; Medium for location",
+      "notes": "Official about page identifies founder and industry background; Chelmsford comes from directory and is lower-confidence."
+    }
+  ]
+}

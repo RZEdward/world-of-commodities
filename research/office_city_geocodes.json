@@ -1,0 +1,86 @@
+{
+  "Bogota": {
+    "lat": 4.6533817,
+    "lon": -74.0836331,
+    "display_name": "Bogotá ciudad, Bogotá, Distrito Capital, RAP (Especial) Central, Colombia",
+    "type": "administrative"
+  },
+  "Chonburi": {
+    "lat": 13.1857117,
+    "lon": 101.1210777,
+    "display_name": "จังหวัดชลบุรี, ประเทศไทย",
+    "type": "administrative"
+  },
+  "Cologne": {
+    "lat": 50.938361,
+    "lon": 6.959974,
+    "display_name": "Köln, Nordrhein-Westfalen, Deutschland",
+    "type": "administrative"
+  },
+  "Dusseldorf": {
+    "lat": 51.2254018,
+    "lon": 6.7763137,
+    "display_name": "Düsseldorf, Nordrhein-Westfalen, Deutschland",
+    "type": "administrative"
+  },
+  "Frankfurt": {
+    "lat": 50.1106444,
+    "lon": 8.6820917,
+    "display_name": "Frankfurt am Main, Hessen, Deutschland",
+    "type": "administrative"
+  },
+  "Kusnacht": {
+    "lat": 47.3176276,
+    "lon": 8.5830859,
+    "display_name": "Küsnacht (ZH), Bezirk Meilen, Zürich, 8700, Schweiz;Suisse;Svizzera;Svizra",
+    "type": "administrative"
+  },
+  "Leon": {
+    "lat": 31.2715127,
+    "lon": -95.9953382,
+    "display_name": "Leon County, Texas, United States",
+    "type": "administrative"
+  },
+  "Montreal": {
+    "lat": 45.5031824,
+    "lon": -73.5698065,
+    "display_name": "Montréal, Agglomération de Montréal, Montréal (région administrative), Québec, Canada",
+    "type": "administrative"
+  },
+  "New York": {
+    "lat": 40.7127281,
+    "lon": -74.0060152,
+    "display_name": "New York, United States",
+    "type": "administrative"
+  },
+  "Red Bank": {
+    "lat": 40.3470543,
+    "lon": -74.0643065,
+    "display_name": "Red Bank, Monmouth County, New Jersey, 07701, United States",
+    "type": "administrative"
+  },
+  "Sao Paulo": {
+    "lat": -23.5506507,
+    "lon": -46.6333824,
+    "display_name": "São Paulo, Região Sudeste, Brasil",
+    "type": "administrative"
+  },
+  "St Helier": {
+    "lat": 49.1856637,
+    "lon": -2.1102277,
+    "display_name": "St Helier, Jersey",
+    "type": "administrative"
+  },
+  "Ulaanbaatar": {
+    "lat": 47.9184676,
+    "lon": 106.9177016,
+    "display_name": "Улаанбаатар ᠤᠯᠠᠭᠠᠨ ᠪᠠᠭᠠᠲᠤᠷ, Монгол улс ᠮᠤᠩᠭᠤᠯ ᠤᠯᠤᠰ",
+    "type": "administrative"
+  },
+  "Zurich": {
+    "lat": 47.3744489,
+    "lon": 8.5410422,
+    "display_name": "Zürich, Bezirk Zürich, Zürich, Schweiz;Suisse;Svizzera;Svizra",
+    "type": "administrative"
+  }
+}
