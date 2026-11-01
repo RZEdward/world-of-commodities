@@ -26,3 +26,6 @@ worldofcommodities.with-recruiter-registry.xlsx
 .cursor/
 scripts/populate_workbook.mjs
 scripts/style_workbook.mjs
+
+# Generated shareable static deployment output
+site-dist/

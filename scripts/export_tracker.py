@@ -215,6 +215,9 @@ def main() -> None:
     locations_by_city = {r.get("City", "").casefold(): r for r in sheets.get("Location Registry", []) if r.get("City")}
     companies = {r.get("Company ID", ""): r for r in sheets.get("Company Registry", []) if r.get("Company ID")}
     categories = {r.get("Company", "").casefold(): r.get("Category", "") for r in sheets.get("Company Registry", [])}
+    recruitment_companies = {r.get("Recruitment Company ID", ""): r for r in sheets.get("Recruitment Company Registry", []) if r.get("Recruitment Company ID")}
+    recruiter_people = {r.get("Recruiter ID", ""): r for r in sheets.get("Recruiter Registry", []) if r.get("Recruiter ID")}
+    universities_by_id = {r.get("University ID", ""): r for r in sheets.get("University Registry", []) if r.get("University ID")}
     office_rows = [r for r in sheets.get("Office Registry", []) if r.get("Office ID") and r.get("Company ID")]
     office_by_id = {r["Office ID"]: r for r in office_rows}
     office_by_company = {}
@@ -245,7 +248,9 @@ def main() -> None:
             if point: places.append({"name": label or city, "latitude": point[0], "longitude": point[1]})
         places = list({(p["latitude"], p["longitude"]): p for p in places}.values())
         title, org = row.get("Role", ""), row.get("Company", "")
+        company = companies.get(row.get("Company ID", ""), {})
         payload.update({"id": row.get("Opportunity ID", ""), "company_id": row.get("Company ID", ""), "kind": "job", "title": title, "organization": org, "business": row.get("Business", categories.get(org.casefold(), "")), "role_function": row.get("Role Function", ""),
+            "company_reputation_score_10": company.get("Company Reputation Score /10", ""), "company_reputation_notes": company.get("Company Reputation Notes", ""),
             "source_url": row.get("Link", ""), "location": "; ".join(city_labels), "office": "; ".join(labels), "locations": places,
             "category": categories.get(org.casefold(), ""), "verification": "verified" if row.get("Source check", "").lower() == "verified" else "needs_review"})
         payload["office_source_text"] = row.get("Office(s) (source text)", "")
@@ -259,11 +264,17 @@ def main() -> None:
             payload = {key(k): v for k, v in row.items() if v not in (None, "")}
             if kind == "masters":
                 campus = campus_by_id.get(row.get("Campus ID", ""), {})
+                university = universities_by_id.get(row.get("University ID", ""), {})
                 point = point_for(campus.get("Coordinates", "") or row.get("Coordinates", ""))
                 places = [{"name": campus.get("Location", row.get("Location", "")), "latitude": point[0], "longitude": point[1]}] if point else []
-                payload.update({"university_id": row.get("University ID", ""), "campus_id": row.get("Campus ID", ""), "campus": row.get("Campus", ""), "location": row.get("Location", "")})
+                payload.update({"university_id": row.get("University ID", ""), "campus_id": row.get("Campus ID", ""), "campus": row.get("Campus", ""), "location": row.get("Location", ""),
+                    "university_reputation_score_10": university.get("University Reputation Score /10", ""), "university_reputation_notes": university.get("University Reputation Notes", "")})
             else:
                 places = locations_for(row, "recruiter")
+                recruiter = recruiter_people.get(row.get("Recruiter ID", ""), {})
+                recruitment_company = recruitment_companies.get(row.get("Recruitment Company ID", ""), {})
+                payload.update({"recruiter_assessment_score_10": recruiter.get("Recruiter Assessment Score /10", ""), "recruiter_assessment_notes": recruiter.get("Recruiter Assessment Notes", ""),
+                    "recruitment_company_score_10": recruitment_company.get("Recruitment Company Score /10", ""), "recruitment_company_score_notes": recruitment_company.get("Recruitment Company Score Notes", "")})
             title, org = row.get(title_col, ""), row.get(org_col, "")
             payload.update({"id": row.get("Opportunity ID", row.get("Person ID", "")), "kind": kind, "title": title, "organization": org,
                 "source_url": row.get("Link", ""), "locations": places, "verification": "verified" if row.get("Confidence", "").lower().startswith("high") else "needs_review"})
@@ -278,9 +289,11 @@ def main() -> None:
         offices.append({**{key(k): v for k, v in row.items() if v not in (None, "")}, "id": row["Office ID"], "kind": "company",
             "title": company.get("Company", row.get("Company", "")), "organization": categories.get(company.get("Company", "").casefold(), "Uncategorized"),
             "company_id": row["Company ID"], "company": company.get("Company", row.get("Company", "")),
+            "owner": row.get("Owner", "") or company.get("Owner", ""),
             "category": categories.get(company.get("Company", "").casefold(), "Uncategorized"), "office": office,
             "glassdoor_score_10": company.get("Glassdoor Score /10", ""), "glassdoor_notes": company.get("Glassdoor Notes", ""),
             "reddit_score_10": company.get("Reddit Score /10", ""), "reddit_notes": company.get("Reddit Notes", ""), "reviews_checked_on": company.get("Reviews Checked On", ""), "review_research_status": company.get("Review Research Status", "Not researched"),
+            "company_reputation_score_10": company.get("Company Reputation Score /10", ""), "company_reputation_notes": company.get("Company Reputation Notes", ""),
             "location": office, "locations": places})
     mapped_company_ids = set(office_by_company)
     unmapped_companies = []
@@ -288,9 +301,11 @@ def main() -> None:
         if company_id in mapped_company_ids: continue
         unmapped_companies.append({"id": company_id, "kind": "company", "title": row.get("Company", ""), "organization": row.get("Category", "Uncategorized"),
             "company": row.get("Company", ""), "company_id": company_id, "category": row.get("Category", "Uncategorized"), "office_research_status": row.get("Office Research Status", "Not started"),
+            "owner": row.get("Owner", ""),
             "location": "Office research pending", "locations": [],
             "glassdoor_score_10": row.get("Glassdoor Score /10", ""), "glassdoor_notes": row.get("Glassdoor Notes", ""),
             "reddit_score_10": row.get("Reddit Score /10", ""), "reddit_notes": row.get("Reddit Notes", ""),
+            "company_reputation_score_10": row.get("Company Reputation Score /10", ""), "company_reputation_notes": row.get("Company Reputation Notes", ""),
             "reviews_checked_on": row.get("Reviews Checked On", ""), "review_research_status": row.get("Review Research Status", "Not researched")})
     universities = []
     uni_rows = sheets.get("University Registry", [])
@@ -303,8 +318,10 @@ def main() -> None:
         members = [r.get("Opportunity ID") for r in sheets.get("Masters", []) if r.get("University ID") == uni.get("University ID") and r.get("Opportunity ID")]
         universities.append({"id": uni.get("University ID", ""), "kind": "university", "title": uni.get("University", ""), "organization": uni.get("Category", "University"),
             "category": uni.get("Category", "University"), "university": uni.get("University", ""), "memberIds": members, "locations": places,
+            "owner": uni.get("Owner", ""),
+            "university_reputation_score_10": uni.get("University Reputation Score /10", ""), "university_reputation_notes": uni.get("University Reputation Notes", ""),
             "location": "; ".join(dict.fromkeys(p["name"] for p in places)) or "No mapped campus"})
-    locations = [{"location_id": r.get("Location ID", ""), "city": r.get("City", ""), "coordinates": r.get("Coordinates", ""),
+    locations = [{"location_id": r.get("Location ID", ""), "city": r.get("City", ""), "coordinates": r.get("Coordinates", ""), "owner": r.get("Owner", ""),
         "job_search": truth(r.get("Job Search")), "university_search": truth(r.get("University Search"))} for r in sheets.get("Location Registry", []) if r.get("City")]
     data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
         "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
