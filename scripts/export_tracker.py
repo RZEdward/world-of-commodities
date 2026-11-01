@@ -242,6 +242,11 @@ def main() -> None:
     locations_by_city = {r.get("City", "").casefold(): r for r in sheets.get("Location Registry", []) if r.get("City")}
     job_search_location_ids = {r.get("Location ID", "") for r in sheets.get("Location Registry", []) if r.get("Location ID") and truth(r.get("Job Search"))}
     company_rows = sheets.get("Company Registry", [])
+    company_rankings = {
+        (str(r.get("Owner", "")).strip().casefold(), str(r.get("Company ID", "")).strip()): r
+        for r in sheets.get("Company Rankings", [])
+        if r.get("Owner") and r.get("Company ID")
+    }
     # Calculate the missing-Reddit scale factor from paired observed scores on
     # each export. Imputed, indirect, and unverified Reddit scores never train it.
     observed_ratios = []
@@ -314,6 +319,11 @@ def main() -> None:
         except (TypeError, ValueError):
             reddit = None
         category = row.get("Category", "")
+        ranking = company_rankings.get((str(row.get("Owner", "Ross")).strip().casefold(), company_id)) or company_rankings.get(("ross", company_id), {})
+        row["Company Priority Rank"] = ranking.get("Rank", "")
+        row["Company Priority Tier"] = ranking.get("Priority Tier", "")
+        row["Company Search Focus"] = ranking.get("Search Focus", "")
+        row["Company Priority Rationale"] = ranking.get("Rationale", "")
         company_ratio = category_reddit_glassdoor_ratios.get(category, reddit_glassdoor_ratio)
         category_n = len(category_observed_ratios.get(category, []))
         if row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") == "Estimated" and glassdoor is not None:
@@ -411,6 +421,8 @@ def main() -> None:
         offices.append({**{key(k): v for k, v in row.items() if v not in (None, "")}, "id": row["Office ID"], "kind": "company",
             "title": company.get("Company", row.get("Company", "")), "organization": categories.get(company.get("Company", "").casefold(), "Uncategorized"),
             "company_id": row["Company ID"], "company": company.get("Company", row.get("Company", "")),
+            "company_priority_rank": company.get("Company Priority Rank", ""), "company_priority_tier": company.get("Company Priority Tier", ""),
+            "company_search_focus": company.get("Company Search Focus", ""), "company_priority_rationale": company.get("Company Priority Rationale", ""),
             "owner": row.get("Owner", "") or company.get("Owner", ""),
             "category": categories.get(company.get("Company", "").casefold(), "Uncategorized"), "office": office,
             "glassdoor_score_10": company.get("Glassdoor Score /10", ""), "glassdoor_notes": company.get("Glassdoor Notes", ""),
@@ -425,6 +437,8 @@ def main() -> None:
         if company_id in mapped_company_ids: continue
         unmapped_companies.append({"id": company_id, "kind": "company", "title": row.get("Company", ""), "organization": row.get("Category", "Uncategorized"),
             "company": row.get("Company", ""), "company_id": company_id, "category": row.get("Category", "Uncategorized"), "office_research_status": row.get("Office Research Status", "Not started"),
+            "company_priority_rank": row.get("Company Priority Rank", ""), "company_priority_tier": row.get("Company Priority Tier", ""),
+            "company_search_focus": row.get("Company Search Focus", ""), "company_priority_rationale": row.get("Company Priority Rationale", ""),
             "owner": row.get("Owner", ""),
             "location": "Office research pending", "locations": [],
             "glassdoor_score_10": row.get("Glassdoor Score /10", ""), "glassdoor_notes": row.get("Glassdoor Notes", ""),
@@ -470,9 +484,16 @@ def main() -> None:
     location_rankings = [{"ranking_id": r.get("Ranking ID", ""), "owner": r.get("Owner", ""), "rank": r.get("Rank", ""),
         "city": r.get("City", ""), "location_id": r.get("Location ID", ""), "search_scope": r.get("Search Scope", "")}
         for r in sheets.get("Location Rankings", []) if r.get("Owner") and r.get("City") and r.get("Rank") not in (None, "")]
+    company_rankings_payload = [{"ranking_id": r.get("Ranking ID", ""), "owner": r.get("Owner", ""), "rank": r.get("Rank", ""),
+        "company_id": r.get("Company ID", ""), "company": r.get("Company", ""), "category": r.get("Category", ""),
+        "priority_tier": r.get("Priority Tier", ""), "search_focus": r.get("Search Focus", ""),
+        "rationale": r.get("Rationale", ""), "confidence": r.get("Confidence", ""),
+        "evidence_basis": r.get("Evidence Basis", ""), "source_urls": r.get("Source URL(s)", ""),
+        "last_reviewed": r.get("Last Reviewed", "")}
+        for r in sheets.get("Company Rankings", []) if r.get("Owner") and r.get("Company ID") and r.get("Rank") not in (None, "")]
     data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
         "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
-        "location_rankings": location_rankings,
+        "location_rankings": location_rankings, "company_rankings": company_rankings_payload,
         "score_model": {"reddit_glassdoor_ratio": round(reddit_glassdoor_ratio, 4) if reddit_glassdoor_ratio is not None else None,
             "ratio_method": "category median after the paired-sample threshold; otherwise live global median", "observed_pair_count": len(observed_ratios),
             "category_ratio_pair_threshold": category_ratio_minimum, "global_ratio_pair_threshold": global_ratio_minimum,
