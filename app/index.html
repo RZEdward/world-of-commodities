@@ -10,7 +10,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css?v=20261101-13">
+    <link rel="stylesheet" href="styles.css?v=20261101-14">
   </head>
   <body>
     <main class="map-screen">
@@ -22,7 +22,8 @@
         </div>
         <div class="sharpness-toolbar">
           <label for="sharpness-owner">Owner</label>
-          <select id="sharpness-owner" aria-label="Interview practice owner"></select>
+          <select id="sharpness-owner" class="native-select" aria-label="Interview practice owner" tabindex="-1"></select>
+          <div id="sharpness-owner-menu"></div>
         </div>
         <div class="sharpness-section-label">BEST SCORE BY ASSESSMENT</div>
         <div id="sharpness-highscores" class="sharpness-highscores"></div>
@@ -59,6 +60,6 @@
       <div class="map-attribution">© OpenStreetMap contributors · © OpenFreeMap</div>
     </main>
     <script src="https://unpkg.com/maplibre-gl@5.6.2/dist/maplibre-gl.js"></script>
-    <script src="app.js?v=20261101-13" defer></script>
+    <script src="app.js?v=20261101-14" defer></script>
   </body>
 </html>

@@ -1,3 +1,8 @@
+const persistedSharpnessHidden = (() => {
+  try { return localStorage.getItem("woc.sharpness.hidden") === "true"; }
+  catch { return false; }
+})();
+
 const state = {
   items: [],
   offices: [],
@@ -21,6 +26,7 @@ const state = {
   sharpnessAttempts: [],
   sharpnessOwner: "Ross",
   sharpnessExpanded: false,
+  sharpnessHidden: persistedSharpnessHidden,
 };
 
 const escapeHtml = (value) =>
@@ -488,10 +494,12 @@ function sourceLinks(value) {
 function renderSharpness() {
   const ownerSelect = document.querySelector("#sharpness-owner");
   if (!ownerSelect) return;
+  document.querySelector(".sharpness-panel").hidden = state.sharpnessHidden;
   const owners = [...new Set(["Ross", "Michael", ...state.sharpnessAttempts.map((row) => String(row.owner || "").trim()).filter(Boolean)])].sort((a, b) => a === "Ross" ? -1 : b === "Ross" ? 1 : a.localeCompare(b));
   ownerSelect.innerHTML = owners.map((owner) => `<option value="${escapeHtml(owner)}">${escapeHtml(owner)}</option>`).join("");
   if (!owners.includes(state.sharpnessOwner)) state.sharpnessOwner = owners[0] || "Ross";
   ownerSelect.value = state.sharpnessOwner;
+  syncCustomDropdown(ownerSelect, "sharpness-owner-menu");
   const groups = sharpnessGroups();
   const platforms = [...new Set(["Zetamac", "LeetCode", "GRE", "GMAT", ...groups.map((group) => group.platform)])];
   const highscores = document.querySelector("#sharpness-highscores");
@@ -772,6 +780,13 @@ document.querySelector("#sharpness-details-toggle").addEventListener("click", ()
   renderSharpness();
 });
 
+function toggleSharpnessPanel() {
+  state.sharpnessHidden = !state.sharpnessHidden;
+  document.querySelector(".sharpness-panel").hidden = state.sharpnessHidden;
+  try { localStorage.setItem("woc.sharpness.hidden", String(state.sharpnessHidden)); }
+  catch { /* The panel remains toggleable when browser storage is unavailable. */ }
+}
+
 document.querySelectorAll(".view-button").forEach((button) => {
   button.addEventListener("click", () => {
     document.querySelectorAll(".view-button").forEach((view) => view.classList.remove("active"));
@@ -814,6 +829,11 @@ document.addEventListener("click", (event) => {
 });
 
 document.addEventListener("keydown", (event) => {
+  if (event.ctrlKey && event.shiftKey && event.key.toLowerCase() === "i") {
+    event.preventDefault();
+    toggleSharpnessPanel();
+    return;
+  }
   if (event.key !== "Escape") return;
   document.querySelectorAll(".custom-select-menu").forEach((menu) => {
     menu.hidden = true;
