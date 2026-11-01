@@ -40,7 +40,9 @@ const fieldLabels = {
   kind: "Type",
   verification: "Source check",
   function_market: "Function / market",
-  business_function: "Business function",
+  business: "Business",
+  role_function: "Role function",
+  business_function: "Role function",
   commodity: "Commodity",
   market_geography: "Market geography",
   time_horizon: "Time horizon",
@@ -61,6 +63,16 @@ const fieldLabels = {
   confidence: "Confidence",
   research_notes: "Research notes",
   search_scope: "Search Scope",
+  score_10: "Score /10",
+  score_notes: "Score notes",
+  glassdoor_score_10: "Glassdoor score /10",
+  glassdoor_notes: "Glassdoor reviews",
+  reddit_score_10: "Reddit score /10",
+  reddit_notes: "Reddit reviews",
+  reviews_checked_on: "Reviews checked on",
+  review_research_status: "Review research status",
+  business: "Business",
+  role_function: "Role function",
 };
 
 const categoryColors = {
@@ -111,8 +123,9 @@ function isPlaceholder(value) {
 }
 
 function facetValueFor(item, key) {
-  if (key === "category") return item.category;
-  if (key === "function") return item.business_function;
+  if (key === "category" || key === "business") return item.business || item.category;
+  if (key === "function") return item.role_function || item.business_function;
+  if (key === "role") return item.role_function || item.business_function;
   if (key === "commodity") return item.commodity;
   if (key === "market") return item.market_geography;
   if (key === "horizon") return item.time_horizon;
@@ -130,7 +143,7 @@ function facetValuesFor(item, key) {
 }
 
 function searchHaystack(item) {
-  return `${item.title} ${item.organization} ${item.location} ${item.office || ""} ${item.owner || ""} ${item.category || ""} ${item.business_function || ""} ${item.commodity || ""} ${item.market_geography || ""} ${item.time_horizon || ""} ${item.experience_requirement_years || ""} ${item.requirements || ""} ${item.next_action || ""}`.toLowerCase();
+  return `${item.title} ${item.organization} ${item.location} ${item.office || ""} ${item.owner || ""} ${item.category || ""} ${item.business || ""} ${item.role_function || item.business_function || ""} ${item.commodity || ""} ${item.market_geography || ""} ${item.time_horizon || ""} ${item.experience_requirement_years || ""} ${item.requirements || ""} ${item.next_action || ""}`.toLowerCase();
 }
 
 function syncCustomDropdown(select, hostId) {
@@ -198,13 +211,13 @@ function buildPopupContent(item, location) {
   const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search", "office_source_text", "registry_offices", "scope_status"]);
   const rows = [];
 
-  const preferredOrder = ["university", "campus", "location", "search_scope", "course", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "confidence", "requirements", "next_action", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
+  const preferredOrder = ["university", "campus", "location", "search_scope", "course", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "confidence", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
   const fields = Object.entries(item).sort(([a], [b]) => {
     const ai = preferredOrder.indexOf(a), bi = preferredOrder.indexOf(b);
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
   });
   for (const [key, rawValue] of fields) {
-    if (omitted.has(key) || key.endsWith("_id") || rawValue == null || rawValue === "") continue;
+    if (omitted.has(key) || key.endsWith("_id") || rawValue == null || rawValue === "" || (item.kind === "job" && key === "category")) continue;
     if (key === "source_url" && item.link) continue;
     const value = key === "kind" || key === "verification"
       ? String(rawValue).replace(/^\w/, (letter) => letter.toUpperCase())
@@ -271,7 +284,7 @@ function renderControls() {
   const source = companyMode ? state.institutions : state.items.filter((item) => state.filter === "all" || item.kind === state.filter);
   const controls = document.querySelector("#list-controls");
   if (!source.length) { controls.hidden = true; return; }
-  const fieldOptions = companyMode ? [["category", "Category"]] : [["function", "Business function"], ["commodity", "Commodity"], ["market", "Market geography"], ["horizon", "Time horizon"], ["status", "Status"], ["deadline", "Deadline"]];
+  const fieldOptions = companyMode ? [["category", "Category"]] : [["business", "Business"], ["role", "Role function"], ["commodity", "Commodity"], ["market", "Market geography"], ["horizon", "Time horizon"], ["status", "Status"], ["deadline", "Deadline"]];
   const matchingSource = source.filter((item) => searchHaystack(item).includes(state.query));
   controls.hidden = matchingSource.length === 0;
   if (!matchingSource.length) return;
@@ -288,7 +301,7 @@ function renderControls() {
   state.facet = fields.some(([key]) => key === state.facet) ? state.facet : fields[0]?.[0] || "";
   filter.value = state.facet;
   const values = [...new Set(matchingSource.flatMap((item) => facetValuesFor(item, state.facet)).filter((entry) => !isPlaceholder(entry)))].sort((a,b) => String(a).localeCompare(String(b)));
-  const facetNoun = state.facet === "category" ? "categories" : state.facet === "function" ? "business functions" : state.facet === "commodity" ? "commodities" : state.facet === "market" ? "market geographies" : state.facet === "horizon" ? "time horizons" : state.facet === "deadline" ? "deadlines" : "statuses";
+  const facetNoun = state.facet === "category" || state.facet === "business" ? "businesses" : state.facet === "function" || state.facet === "role" ? "role functions" : state.facet === "commodity" ? "commodities" : state.facet === "market" ? "market geographies" : state.facet === "horizon" ? "time horizons" : state.facet === "deadline" ? "deadlines" : "statuses";
   value.innerHTML = `<option value="">Match · All ${facetNoun}</option>` + values.map((entry) => `<option value="${escapeHtml(entry)}">${escapeHtml(entry)}</option>`).join("");
   if (!values.includes(state.facetValue)) state.facetValue = "";
   value.value = state.facetValue;
@@ -363,7 +376,7 @@ function render() {
       : `<button class="opportunity ${state.selected === item.id ? "selected" : ""}" data-id="${escapeHtml(item.id)}">
           <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.organization)}</div></div><span class="status ${statusClass(item)}">${escapeHtml(item.status || "Needs review")}</span></div>
           <div class="loc">⌖ ${escapeHtml(item.location || item.campus || "Location not listed")} <span class="kind-tag">· ${escapeHtml(item.kind)}</span></div>
-          ${item.kind === "job" && (item.business_function || item.commodity || item.market_geography || item.time_horizon) ? `<div class="loc">${escapeHtml([item.business_function, item.commodity, item.market_geography, item.time_horizon].filter((part) => !isPlaceholder(part)).join(" · "))}</div>` : ""}
+          ${item.kind === "job" && (item.business || item.role_function || item.business_function || item.commodity || item.market_geography || item.time_horizon) ? `<div class="loc">${escapeHtml([item.business, item.commodity, item.market_geography, item.time_horizon].filter((part) => !isPlaceholder(part)).join(" · "))}</div>` : ""}
           ${item.owner ? `<div class="loc">Owner · ${escapeHtml(item.owner)}</div>` : ""}
           ${!isPlaceholder(item.deadline) ? `<div class="loc">Deadline · ${escapeHtml(item.deadline)}${asDate(item.deadline) ? ` · ${escapeHtml(deadlineBucket(item))}` : ""}</div>` : ""}
         </button>`).join("")

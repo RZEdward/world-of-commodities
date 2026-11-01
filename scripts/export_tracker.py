@@ -245,7 +245,7 @@ def main() -> None:
             if point: places.append({"name": label or city, "latitude": point[0], "longitude": point[1]})
         places = list({(p["latitude"], p["longitude"]): p for p in places}.values())
         title, org = row.get("Role", ""), row.get("Company", "")
-        payload.update({"id": row.get("Opportunity ID", ""), "company_id": row.get("Company ID", ""), "kind": "job", "title": title, "organization": org,
+        payload.update({"id": row.get("Opportunity ID", ""), "company_id": row.get("Company ID", ""), "kind": "job", "title": title, "organization": org, "business": row.get("Business", categories.get(org.casefold(), "")), "role_function": row.get("Role Function", ""),
             "source_url": row.get("Link", ""), "location": "; ".join(city_labels), "office": "; ".join(labels), "locations": places,
             "category": categories.get(org.casefold(), ""), "verification": "verified" if row.get("Source check", "").lower() == "verified" else "needs_review"})
         payload["office_source_text"] = row.get("Office(s) (source text)", "")
@@ -279,6 +279,8 @@ def main() -> None:
             "title": company.get("Company", row.get("Company", "")), "organization": categories.get(company.get("Company", "").casefold(), "Uncategorized"),
             "company_id": row["Company ID"], "company": company.get("Company", row.get("Company", "")),
             "category": categories.get(company.get("Company", "").casefold(), "Uncategorized"), "office": office,
+            "glassdoor_score_10": company.get("Glassdoor Score /10", ""), "glassdoor_notes": company.get("Glassdoor Notes", ""),
+            "reddit_score_10": company.get("Reddit Score /10", ""), "reddit_notes": company.get("Reddit Notes", ""), "reviews_checked_on": company.get("Reviews Checked On", ""), "review_research_status": company.get("Review Research Status", "Not researched"),
             "location": office, "locations": places})
     mapped_company_ids = set(office_by_company)
     unmapped_companies = []
@@ -286,7 +288,10 @@ def main() -> None:
         if company_id in mapped_company_ids: continue
         unmapped_companies.append({"id": company_id, "kind": "company", "title": row.get("Company", ""), "organization": row.get("Category", "Uncategorized"),
             "company": row.get("Company", ""), "company_id": company_id, "category": row.get("Category", "Uncategorized"), "office_research_status": row.get("Office Research Status", "Not started"),
-            "location": "Office research pending", "locations": []})
+            "location": "Office research pending", "locations": [],
+            "glassdoor_score_10": row.get("Glassdoor Score /10", ""), "glassdoor_notes": row.get("Glassdoor Notes", ""),
+            "reddit_score_10": row.get("Reddit Score /10", ""), "reddit_notes": row.get("Reddit Notes", ""),
+            "reviews_checked_on": row.get("Reviews Checked On", ""), "review_research_status": row.get("Review Research Status", "Not researched")})
     universities = []
     uni_rows = sheets.get("University Registry", [])
     for uni in uni_rows:
@@ -306,6 +311,7 @@ def main() -> None:
         "inbox": sheets.get("Research Inbox", []), "search_runs": sheets.get("Search Runs", []), "activities": sheets.get("Activity Log", []),
         "scope": sheets.get("Search Scope", []), "taxonomy": sheets.get("Taxonomy Registry", []),
         "office_research_queue": sheets.get("Office Research Queue", []),
+        "recruitment_company_registry": sheets.get("Recruitment Company Registry", []),
         "recruiter_registry": sheets.get("Recruiter Registry", [])}
     OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     mapped = sum(len(x["locations"]) for x in data["opportunities"])
