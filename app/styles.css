@@ -192,7 +192,7 @@ body {
   background: rgb(255 255 255 / 3%);
 }
 
-.filters[aria-label="Institution type"] { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.filters[aria-label="Institution type"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 .filters[aria-label="Search scope"] { grid-template-columns: repeat(2, minmax(0, 1fr)); }
 
 .filter {
@@ -207,6 +207,8 @@ body {
   cursor: pointer;
   white-space: nowrap;
 }
+
+.filters[aria-label="Institution type"] .filter { height: auto; min-height: 30px; white-space: normal; line-height: 1.25; }
 
 .filter span {
   margin-left: 3px;
@@ -348,6 +350,9 @@ body {
   font: 9px var(--mono);
   line-height: 1.6;
 }
+
+.total-score { color: var(--text); }
+.total-score span { display: block; margin-top: 2px; color: var(--quiet); font: 8px/1.5 var(--mono); }
 
 .status {
   flex: 0 0 auto;
