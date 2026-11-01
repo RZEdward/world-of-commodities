@@ -278,8 +278,11 @@ def main() -> None:
         category_ratio_minimum = int(float(score_model.get("Minimum paired scores for category ratio", 5)))
         global_ratio_minimum = int(float(score_model.get("Minimum paired scores for global ratio", 2)))
         neutral_reddit_score = float(score_model.get("Neutral Reddit estimate when no pair exists", 6))
+        reputation_category_minimum = int(float(score_model.get("Minimum observed reputation scores for category median", 5)))
+        reputation_global_minimum = int(float(score_model.get("Minimum observed reputation scores for global median", 2)))
     except (TypeError, ValueError):
         category_ratio_minimum, global_ratio_minimum, neutral_reddit_score = 5, 2, 6.0
+        reputation_category_minimum, reputation_global_minimum = 5, 2
     for row in company_rows:
         if row.get("Glassdoor Score Basis") != "Observed" or row.get("Reddit Score Basis") != "Observed":
             continue
@@ -302,6 +305,33 @@ def main() -> None:
     weight_total = glassdoor_weight + reddit_weight
     glassdoor_weight /= weight_total
     reddit_weight /= weight_total
+    # For newly tracked companies with no company-specific review score, use a
+    # live category median of scores grounded in observed Glassdoor evidence;
+    # fall back to the live global median when that category sample is small.
+    # This avoids inventing a fixed neutral/company score and lets new roles
+    # receive a provisional total while their own review research is pending.
+    reputation_by_category: dict[str, list[float]] = {}
+    reputation_observed: list[float] = []
+    for source_row in company_rows:
+        if source_row.get("Glassdoor Score Basis") != "Observed":
+            continue
+        try:
+            reputation = float(source_row.get("Company Reputation Score /10", ""))
+        except (TypeError, ValueError):
+            continue
+        if not 0 <= reputation <= 10:
+            continue
+        reputation_observed.append(reputation)
+        reputation_by_category.setdefault(str(source_row.get("Category", "")), []).append(reputation)
+    global_reputation_median = (
+        statistics.median(reputation_observed)
+        if len(reputation_observed) >= reputation_global_minimum else None
+    )
+    category_reputation_medians = {
+        category: statistics.median(values)
+        for category, values in reputation_by_category.items()
+        if len(values) >= reputation_category_minimum
+    }
     job_weight_names = {
         "candidate_fit": "Candidate fit", "role_fit": "Role fit", "desk_outlook": "Desk outlook",
         "expected_earnings": "Expected earnings", "company_reputation": "Company reputation", "location": "Location",
@@ -353,6 +383,19 @@ def main() -> None:
                                    "Company-category norms and reviewer context matter; this is a provisional cross-platform estimate, not a desk-specific assessment.")
         if glassdoor is not None and reddit is not None and row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") in ("Observed", "Estimated"):
             row["Company Reputation Score /10"] = round(glassdoor * glassdoor_weight + reddit * reddit_weight, 1)
+        if row.get("Company Reputation Score /10") in (None, ""):
+            reputation_median = category_reputation_medians.get(category, global_reputation_median)
+            if reputation_median is not None:
+                category_count = len(reputation_by_category.get(category, []))
+                if category in category_reputation_medians:
+                    method = f"live {category} median from {category_count} companies with observed Glassdoor evidence"
+                else:
+                    method = f"live global median from {len(reputation_observed)} companies with observed Glassdoor evidence; {category_count} in category, below the {reputation_category_minimum}-company threshold"
+                row["Company Reputation Score /10"] = round(reputation_median, 1)
+                row["Company Reputation Notes"] = (
+                    f"Estimated from the {method}. This is a provisional category/global peer estimate, "
+                    "not company-specific review evidence; it is recalculated from real observed scores on each export."
+                )
         companies[company_id] = row
     categories = {r.get("Company", "").casefold(): r.get("Category", "") for r in sheets.get("Company Registry", [])}
     recruitment_companies = {r.get("Recruitment Company ID", ""): r for r in sheets.get("Recruitment Company Registry", []) if r.get("Recruitment Company ID")}

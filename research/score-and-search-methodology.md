@@ -39,6 +39,8 @@ Desk outlook uses current hiring, desk/team descriptions, business strategy, mar
 
 Glassdoor and Reddit are separate employer-wide reputation signals, not desk scores. Use attributable evidence from the last five years. Reddit starts around 6; move it only for atypical positive or negative evidence judged relative to company category and reviewer standards. Estimate a missing Reddit score by multiplying observed Glassdoor by the live median Reddit/Glassdoor ratio for the category when at least five paired observed companies exist; otherwise use the live global median if at least two pairs exist. Estimated, indirect, unverified, and stale values never train the ratio. If the evidence sample is too small, use a neutral 6 estimate and label low confidence. Never use a hardcoded conversion factor.
 
+For a company with no usable company-specific reputation score, the dashboard export estimates a provisional company score from the live median of companies with observed Glassdoor-backed reputation scores in the same company category. If that category has fewer than the `Score Model` minimum (currently 5), use the live global median only when the global minimum (currently 2) is met. These minimum sample sizes are editable in `Score Model`; the values themselves are recalculated from observed scores on every export. If the global sample is too small, leave reputation and total score incomplete until evidence exists. Clearly label every peer-median estimate and do not treat it as company-specific review research.
+
 ## Search workflow rules
 
 - Search and map all active job roles in the owner’s registered Job Search cities, even when a role has low candidate or role fit. Score and label lower-fit roles; do not silently exclude them.
