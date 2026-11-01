@@ -3,6 +3,7 @@ const state = {
   offices: [],
   universities: [],
   institutions: [],
+  locations: [],
   view: "opportunities",
   filter: "all",
   query: "",
@@ -57,6 +58,7 @@ const fieldLabels = {
   checked_on: "Checked on",
   confidence: "Confidence",
   research_notes: "Research notes",
+  search_scope: "Search Scope",
 };
 
 const categoryColors = {
@@ -184,10 +186,10 @@ function buildPopupContent(item, location) {
       <div class="course-panels">${panels}</div>
     </div>`;
   }
-  const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link"]);
+  const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search"]);
   const rows = [];
 
-  const preferredOrder = ["university", "campus", "location", "course", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "confidence", "requirements", "next_action", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
+  const preferredOrder = ["university", "campus", "location", "search_scope", "course", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "confidence", "requirements", "next_action", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
   const fields = Object.entries(item).sort(([a], [b]) => {
     const ai = preferredOrder.indexOf(a), bi = preferredOrder.indexOf(b);
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
@@ -236,9 +238,11 @@ function buildPopupContent(item, location) {
 }
 
 function getFilteredItems() {
-  const source = state.view === "institutions" ? state.institutions : state.items;
+  const source = state.view === "institutions" ? state.institutions : state.view === "locations" ? state.locations : state.items;
   const filtered = source.filter((item) => {
-    const matchesKind = state.view === "institutions" ? state.filter === "all" || item.kind === state.filter : state.filter === "all" || item.kind === state.filter;
+    const matchesKind = state.view === "locations"
+      ? state.filter === "all" || item.scope_key === state.filter
+      : state.filter === "all" || item.kind === state.filter;
     const haystack = searchHaystack(item);
     const facetText = facetValueFor(item, state.facet);
     const matchesFacet = !state.facetValue || String(facetText || "").toLowerCase() === state.facetValue.toLowerCase();
@@ -249,6 +253,7 @@ function getFilteredItems() {
 }
 
 function renderControls() {
+  if (state.view === "locations") { document.querySelector("#list-controls").hidden = true; return; }
   const companyMode = state.view === "institutions";
   const filter = document.querySelector("#facet-filter"), value = document.querySelector("#facet-value"), sort = document.querySelector("#sort-order");
   const source = companyMode ? state.institutions : state.items.filter((item) => state.filter === "all" || item.kind === state.filter);
@@ -287,7 +292,11 @@ function renderControls() {
 
 function renderLegend() {
   const legend = document.querySelector("#legend-items");
-  if (state.view === "institutions" && state.filter !== "university") {
+  if (state.view === "locations") {
+    const scopes = [...new Set(getFilteredItems().map((item) => item.search_scope))];
+    const colors = { "Job": "#70c8b4", "Masters": "#c1a0ff", "Jobs & Masters": "#d7ff78" };
+    legend.innerHTML = scopes.map((scope) => `<span><i class="key-dot" style="background:${colors[scope]}"></i>${escapeHtml(scope)}</span>`).join("");
+  } else if (state.view === "institutions" && state.filter !== "university") {
     const categories = [...new Set(state.offices.filter((item) => item.locations?.length).map((item) => String(item.category || "").split(";")[0].trim()).filter(Boolean))];
     legend.innerHTML = categories.map((category) => `<span><i class="key-dot" style="background:${categoryColor(category)}"></i>${escapeHtml(category)}</span>`).join("");
   } else {
@@ -312,13 +321,16 @@ function render() {
   }
 
   const companyMode = state.view === "institutions";
-  const filterOptions = companyMode
+  const locationMode = state.view === "locations";
+  const filterOptions = locationMode
+    ? [["all", "All", state.locations.length], ["jobs", "Jobs", state.locations.filter(x => x.job_search).length], ["masters", "Masters", state.locations.filter(x => x.university_search).length], ["both", "Jobs & Masters", state.locations.filter(x => x.job_search && x.university_search).length]]
+    : companyMode
     ? [["all", "All", state.institutions.length], ["company", "Companies", state.offices.length], ["university", "Universities", state.universities.length]]
     : [["all", "All", state.items.length], ["job", "Jobs", state.items.filter(x => x.kind === "job").length], ["masters", "Masters", state.items.filter(x => x.kind === "masters").length], ["recruiter", "People", state.items.filter(x => x.kind === "recruiter").length]];
-  document.querySelector("#filters").setAttribute("aria-label", companyMode ? "Institution type" : "Opportunity type");
+  document.querySelector("#filters").setAttribute("aria-label", locationMode ? "Search scope" : companyMode ? "Institution type" : "Opportunity type");
   document.querySelector("#filters").innerHTML = filterOptions.filter(([key, , count]) => key === "all" || count > 0).map(([key, label, count]) => `<button class="filter ${state.filter === key ? "active" : ""}" data-filter="${key}">${label}<span>${count}</span></button>`).join("");
-  setText("#list-heading-label", companyMode ? "INSTITUTIONS & OFFICES" : "OPPORTUNITIES");
-  document.querySelector("#search").placeholder = companyMode ? "Search institutions or offices" : "Search opportunities";
+  setText("#list-heading-label", locationMode ? "LOCATIONS" : companyMode ? "INSTITUTIONS & OFFICES" : "OPPORTUNITIES");
+  document.querySelector("#search").placeholder = locationMode ? "Search cities" : companyMode ? "Search institutions or offices" : "Search opportunities";
   renderControls();
   setText("#result-count", filtered.length);
   const mappedCount = filtered.reduce((count, item) => count + (item.locations?.length || 0), 0);
@@ -326,7 +338,12 @@ function render() {
   renderLegend();
 
   document.querySelector("#opportunity-list").innerHTML = filtered.length
-    ? filtered.map((item) => companyMode
+    ? filtered.map((item) => locationMode
+      ? `<button class="opportunity location-entry ${state.selected === item.id ? "selected" : ""}" data-id="${escapeHtml(item.id)}">
+          <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2></div><i class="key-dot" style="background:${item.scope_key === "both" ? "#d7ff78" : item.scope_key === "masters" ? "#c1a0ff" : "#70c8b4"}"></i></div>
+          <div class="loc">Search Scope · ${escapeHtml(item.search_scope)}</div>
+        </button>`
+      : companyMode
       ? `<button class="opportunity company-entry ${state.selected === item.id ? "selected" : ""}" data-id="${escapeHtml(item.id)}">
           <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.category || "University")}</div></div><i class="key-dot" style="background:${item.kind === "company" ? categoryColor(item.category) : "#c1a0ff"}"></i></div>
           <div class="loc">⌖ ${escapeHtml(item.office || item.location || "Office not specified")}</div>
@@ -346,7 +363,7 @@ function render() {
 }
 
 function selectItem(id, flyTo) {
-  const source = state.view === "institutions" ? state.institutions : state.items;
+  const source = state.view === "institutions" ? state.institutions : state.view === "locations" ? state.locations : state.items;
   const item = source.find((entry) => entry.id === id);
   if (!item) return;
 
@@ -385,7 +402,7 @@ function createMarker(item, location) {
     "On Hold": "#ff986c",
   };
   const isCompany = item.kind === "company";
-  const color = isCompany ? categoryColor(item.category) : kindColors[item.kind] || "#d2d8dd";
+  const color = isCompany ? categoryColor(item.category) : item.kind === "location" ? (item.scope_key === "both" ? "#d7ff78" : item.scope_key === "masters" ? "#c1a0ff" : "#70c8b4") : kindColors[item.kind] || "#d2d8dd";
   const border = isCompany ? "#101513" : statusBorders[item.status] || "#69747d";
   element.style.cssText = `
     width: 13px;
@@ -456,6 +473,9 @@ function initializeMap() {
       const markers = (item.locations || []).map((location) => createMarker(item, location));
       if (markers.length) state.markers.set(item.id, markers);
     }
+    for (const item of state.locations) {
+      state.markers.set(item.id, (item.locations || []).map((location) => createMarker(item, location)));
+    }
     render();
   });
 }
@@ -468,6 +488,17 @@ async function initializeDashboard() {
     const data = await response.json();
     state.items = data.opportunities || [];
     state.offices = data.offices || [];
+    const scopeFor = (row) => {
+      const jobs = row.job_search === true || String(row.job_search).toLowerCase() === "true";
+      const masters = row.university_search === true || String(row.university_search).toLowerCase() === "true";
+      return { jobs, masters, search_scope: jobs && masters ? "Jobs & Masters" : jobs ? "Job" : masters ? "Masters" : "", scope_key: jobs && masters ? "both" : jobs ? "jobs" : "masters" };
+    };
+    state.locations = (data.locations || []).map((row) => {
+      const scope = scopeFor(row);
+      const [latitude, longitude] = String(row.coordinates || "").split(",").map(Number);
+      const location = { name: row.city, latitude, longitude };
+      return { ...row, ...scope, id: `location:${row.city.toLowerCase()}`, kind: "location", title: row.city, organization: "Search locations", location: row.city, latitude, longitude, locations: [location] };
+    }).filter(item => item.search_scope && Number.isFinite(item.latitude) && Number.isFinite(item.longitude));
     const universityGroups = new Map();
     for (const item of state.items.filter((entry) => entry.kind === "masters")) {
       const campus = item.campus || item.location || "Campus not specified";
@@ -506,8 +537,8 @@ document.querySelectorAll(".view-button").forEach((button) => {
     for (const markers of state.markers.values()) for (const marker of markers) marker.getPopup()?.remove();
     render();
     if (!state.map?.loaded()) return;
-    if (state.view === "institutions") {
-      const points = state.institutions.flatMap((item) => item.locations || []);
+    if (state.view === "institutions" || state.view === "locations") {
+      const points = (state.view === "institutions" ? state.institutions : state.locations).flatMap((item) => item.locations || []);
       if (points.length > 1) {
         const bounds = new maplibregl.LngLatBounds();
         points.forEach((point) => bounds.extend([point.longitude, point.latitude]));

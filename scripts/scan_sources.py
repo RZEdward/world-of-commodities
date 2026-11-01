@@ -106,7 +106,7 @@ def add_command(args: argparse.Namespace) -> None:
             "state": "needs_review", "added_at": datetime.now(timezone.utc).isoformat(), "source_date": None}
     sources.append(item)
     write_json(REGISTRY, sources)
-    print(f"Added source for review: {args.title}. Review it and add verified details to market_updated.xlsx, then run `python scripts/export_tracker.py`.")
+    print(f"Added source for review: {args.title}. Review it and add verified details to worldofcommodities.xlsx, then run `python scripts/export_tracker.py`.")
 
 
 def main() -> None:

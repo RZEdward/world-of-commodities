@@ -1,4 +1,4 @@
-"""Export the opportunity sheets in market_updated.xlsx to the map feed."""
+"""Export the opportunity sheets in worldofcommodities.xlsx to the map feed."""
 from __future__ import annotations
 
 from datetime import date, datetime, timezone
@@ -9,7 +9,7 @@ import zipfile
 import xml.etree.ElementTree as ET
 
 ROOT = Path(__file__).resolve().parents[1]
-BOOK = ROOT / "market_updated.xlsx"
+BOOK = ROOT / "worldofcommodities.xlsx"
 OUTPUT = ROOT / "data" / "opportunities.json"
 ROLE_RESULTS = ROOT / "data" / "sources" / "role-search-results.json"
 NS = {"m": "http://schemas.openxmlformats.org/spreadsheetml/2006/main", "r": "http://schemas.openxmlformats.org/officeDocument/2006/relationships"}
@@ -249,12 +249,23 @@ def main() -> None:
         owners = list(dict.fromkeys(filter(None, [*prior.get("owner", "").split(", "), *item.get("owner", "").split(", ")])))
         prior["owner"] = ", ".join(owners)
         prior["locations"] = list({(p["latitude"], p["longitude"]): p for p in [*prior["locations"], *item["locations"]]}.values())
+    locations = []
+    for row in sheets.get("Location Registry", []):
+        city = row.get("City", "").strip()
+        if not city:
+            continue
+        locations.append({
+            "city": city,
+            "coordinates": row.get("Coordinates", "").strip(),
+            "job_search": row.get("Job Search", "").strip().lower() in ("true", "1", "yes"),
+            "university_search": row.get("University Search", "").strip().lower() in ("true", "1", "yes"),
+        })
     data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
-            "opportunities": list(combined.values()), "offices": offices}
+            "opportunities": list(combined.values()), "offices": offices, "locations": locations}
     OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     mapped = sum(len(x["locations"]) for x in data["opportunities"])
     office_points = sum(len(x["locations"]) for x in offices)
-    print(f"Exported {len(data['opportunities'])} opportunity records ({mapped} locations) and {len(offices)} office records ({office_points} mapped offices) to {OUTPUT.relative_to(ROOT)}")
+    print(f"Exported {len(data['opportunities'])} opportunity records ({mapped} locations), {len(offices)} office records ({office_points} mapped offices), and {len(locations)} search-scope cities to {OUTPUT.relative_to(ROOT)}")
 
 if __name__ == "__main__":
     main()
