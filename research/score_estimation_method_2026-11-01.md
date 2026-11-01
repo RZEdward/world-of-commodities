@@ -1,17 +1,30 @@
-# Provisional missing-Reddit estimate — 2026-11-01
+# Employer review score estimation — 2026-11-01
 
-Where a company has a usable Glassdoor score but no attributable Reddit workplace evidence, the current pass estimates Reddit as:
+## Reddit should be read in context
 
-`Estimated Reddit /10 = Glassdoor /10 × 0.77`
+Reddit scores are assessments of the evidence found, not a literal average of comments. Interpret criticism relative to the standards and expertise of the people making it, the company's category and size, the role and seniority discussed, and how directly the comment reflects workplace experience. For example, a high-performing prop-trading employee may hold a very different bar for compensation, pace, or technical quality than a utility employee discussing general job satisfaction. A general industry thread, political discussion, or parent-company anecdote is not equivalent to a direct review of the target company's relevant team.
 
-The provisional 0.77 is the median Reddit-to-Glassdoor ratio among 12 company rows with substantive evidence on both platforms: Vitol, ExxonMobil, NextEra Energy, Constellation Energy, Vistra, NRG Energy, Dominion Energy, BC Hydro, Eskom, Tata Power, NTPC, and Jane Street. Median was used to limit the influence of unusually positive or negative pairs. This is a sample-derived starting value, not a validated universal relationship; company types and user populations differ. It is intentionally labeled estimated in each affected row.
+Keep direct employee accounts, employer reviews, indirect mentions, and unverified claims distinct in notes and evidence basis. Do not feed indirect, estimated, or unverified Reddit scores into the cross-platform calibration sample. The company-wide review score also does not establish a specific desk's profitability or outlook; that needs separate role/desk evidence.
 
-Company reputation continues to use the existing 75% Glassdoor / 25% Reddit blend, with the imputed Reddit estimate substituted only where the Reddit evidence is missing and the Glassdoor input is supported. Rows lacking a usable source on both platforms remain unresolved until the owner chooses a fallback rule.
+## Live missing-Reddit estimate
 
-A few obvious records were checked directly against current platform pages to replace unsupported 4.5 Reddit defaults:
-- ADM: Glassdoor 3.7/5 (7.4/10); no attributable recent Reddit employee review; imputed Reddit 5.7/10.
-- Optiver: Glassdoor 3.8/5 (7.6/10); no attributable recent Reddit employee review; imputed Reddit 5.9/10.
-- Citadel: Glassdoor 3.9/5 (7.8/10), 781 reviews; no captured recent Reddit employee review; imputed Reddit 6.0/10. Source: https://www.glassdoor.com/Reviews/Citadel-Reviews-E14937.htm
-- Santos: Glassdoor 3.1/5 (6.2/10), 351 reviews; unrelated Reddit workforce/layoff discussion was excluded as a workplace review; imputed Reddit 4.8/10. Source: https://www.glassdoor.com/Reviews/Santos-Reviews-E5764.htm
+Where Glassdoor is observed and Reddit workplace evidence is missing, the current estimate is:
 
-The next scoring calibration should confirm whether the ratio should be median, mean, segment-specific, or adjusted for sample size and review recency, and define an estimate when neither platform has usable evidence.
+`Estimated Reddit /10 = observed Glassdoor /10 × live median (observed Reddit /10 ÷ observed Glassdoor /10)`
+
+The median is recalculated from Company Registry rows marked Observed on both platforms. It excludes estimated and indirect evidence. At this revision the eligible sample is intentionally narrow (Equinor and Jane Street); the workbook formula and dashboard export recompute the median as scores/basis labels change. The current small sample makes this a rough cross-platform bridge, not a universal relationship. Company/category-specific norms and critic standards need to be incorporated into the scoring rubric after owner calibration.
+
+Company reputation currently blends Glassdoor and Reddit using the weights stored on the Score Model sheet (currently 75% / 25%). The weights are editable model inputs, not embedded in the missing-score scale factor. Rows without usable Glassdoor evidence, or without a calculable live ratio, do not receive a fabricated Reddit estimate.
+
+## Evidence-quality exclusions
+
+- BC Hydro: the Reddit reply was in a policy discussion and said the employee had not personally seen corners cut; excluded from paired-score calibration.
+- Goldman Sachs: the Reddit account concerned UK consumer-banking operations, while the paired Glassdoor number is company-wide; excluded as a non-comparable pair.
+- Alberta Electric System Operator: a public-sector policy discussion and self-identified former employee comment, not a comparable workplace review; excluded.
+- Tesla Energy: the Reddit thread concerned parent-company Tesla and mixed/older experiences, while the registry score is tied to an Energy Systems Designer review; excluded.
+
+These comments remain available as indirect evidence where appropriate; the exclusion only prevents them calibrating the live Reddit-to-Glassdoor ratio.
+
+## Next calibration
+
+Owner input is needed on peer-group normalization, source credibility, weighting/recentness, small-sample handling, and what to do when neither platform has attributable evidence. See the scoring questions in the project conversation before changing those rules.

@@ -5,6 +5,7 @@ from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
 import json
 import re
+import statistics
 import zipfile
 import xml.etree.ElementTree as ET
 
@@ -239,7 +240,55 @@ def main() -> None:
     truth = lambda value: str(value).strip().lower() in ("true", "1", "yes")
     locations_by_id = {r.get("Location ID", ""): r for r in sheets.get("Location Registry", []) if r.get("Location ID")}
     locations_by_city = {r.get("City", "").casefold(): r for r in sheets.get("Location Registry", []) if r.get("City")}
-    companies = {r.get("Company ID", ""): r for r in sheets.get("Company Registry", []) if r.get("Company ID")}
+    company_rows = sheets.get("Company Registry", [])
+    # Calculate the missing-Reddit scale factor from paired observed scores on
+    # each export. Imputed, indirect, and unverified Reddit scores never train it.
+    observed_ratios = []
+    for row in company_rows:
+        if row.get("Glassdoor Score Basis") != "Observed" or row.get("Reddit Score Basis") != "Observed":
+            continue
+        try:
+            glassdoor = float(row.get("Glassdoor Score /10", ""))
+            reddit = float(row.get("Reddit Score /10", ""))
+        except (TypeError, ValueError):
+            continue
+        if 0 < glassdoor <= 10 and 0 <= reddit <= 10:
+            observed_ratios.append(reddit / glassdoor)
+    reddit_glassdoor_ratio = statistics.median(observed_ratios) if observed_ratios else None
+    score_model = {str(r.get("Metric", "")).strip(): r.get("Value", "") for r in sheets.get("Score Model", [])}
+    try:
+        glassdoor_weight = float(score_model.get("Glassdoor weight", 0.75))
+        reddit_weight = float(score_model.get("Reddit weight", 0.25))
+    except (TypeError, ValueError):
+        glassdoor_weight, reddit_weight = 0.75, 0.25
+    if glassdoor_weight < 0 or reddit_weight < 0 or glassdoor_weight + reddit_weight <= 0:
+        glassdoor_weight, reddit_weight = 0.75, 0.25
+    weight_total = glassdoor_weight + reddit_weight
+    glassdoor_weight /= weight_total
+    reddit_weight /= weight_total
+
+    companies = {}
+    for source_row in company_rows:
+        company_id = source_row.get("Company ID", "")
+        if not company_id:
+            continue
+        row = dict(source_row)
+        try:
+            glassdoor = float(row.get("Glassdoor Score /10", ""))
+        except (TypeError, ValueError):
+            glassdoor = None
+        try:
+            reddit = float(row.get("Reddit Score /10", ""))
+        except (TypeError, ValueError):
+            reddit = None
+        if row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") == "Estimated" and glassdoor is not None and reddit_glassdoor_ratio is not None:
+            reddit = round(min(10.0, max(0.0, glassdoor * reddit_glassdoor_ratio)), 1)
+            row["Reddit Score /10"] = reddit
+            row["Reddit Notes"] = (f"Estimated from observed Glassdoor score using the live median Reddit/Glassdoor ratio recalculated from {len(observed_ratios)} observed company pairs; indirect, estimated and unverified evidence is excluded. "
+                                   "Company/category differences and reviewer standards make this a provisional cross-platform estimate, not a desk-specific assessment.")
+        if glassdoor is not None and reddit is not None and row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") in ("Observed", "Estimated"):
+            row["Company Reputation Score /10"] = round(glassdoor * glassdoor_weight + reddit * reddit_weight, 1)
+        companies[company_id] = row
     categories = {r.get("Company", "").casefold(): r.get("Category", "") for r in sheets.get("Company Registry", [])}
     recruitment_companies = {r.get("Recruitment Company ID", ""): r for r in sheets.get("Recruitment Company Registry", []) if r.get("Recruitment Company ID")}
     recruiter_people = {r.get("Recruiter ID", ""): r for r in sheets.get("Recruiter Registry", []) if r.get("Recruiter ID")}
@@ -381,6 +430,9 @@ def main() -> None:
     data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
         "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
         "location_rankings": location_rankings,
+        "score_model": {"reddit_glassdoor_ratio": round(reddit_glassdoor_ratio, 4) if reddit_glassdoor_ratio is not None else None,
+            "ratio_method": "live median of paired observed Glassdoor and Reddit scores", "observed_pair_count": len(observed_ratios),
+            "glassdoor_weight": round(glassdoor_weight, 4), "reddit_weight": round(reddit_weight, 4)},
         "inbox": sheets.get("Research Inbox", []), "search_runs": sheets.get("Search Runs", []), "activities": sheets.get("Activity Log", []),
         "scope": sheets.get("Search Scope", []), "taxonomy": sheets.get("Taxonomy Registry", []),
         "office_research_queue": sheets.get("Office Research Queue", []),
@@ -392,6 +444,13 @@ def main() -> None:
             "mode_topic":r.get("Mode / Topic", ""), "notes":r.get("Notes", ""), "session_url":r.get("Session URL", "")}
             for r in sheets.get("Interview Sharpness", []) if r.get("Owner") and r.get("Platform") and r.get("Attempt Timestamp")
             and any(r.get(field) not in (None, "") for field in ("Score", "Completion %", "Time Taken (minutes)"))]}
+    def round_scores(value):
+        if isinstance(value, dict):
+            return {k: (round(v, 1) if k.endswith("_score_10") and isinstance(v, (int, float)) and not isinstance(v, bool) else round_scores(v)) for k, v in value.items()}
+        if isinstance(value, list):
+            return [round_scores(item) for item in value]
+        return value
+    data = round_scores(data)
     OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     mapped = sum(len(x["locations"]) for x in data["opportunities"])
