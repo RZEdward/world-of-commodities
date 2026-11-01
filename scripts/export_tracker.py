@@ -242,6 +242,18 @@ def main() -> None:
     locations_by_city = {r.get("City", "").casefold(): r for r in sheets.get("Location Registry", []) if r.get("City")}
     job_search_location_ids = {r.get("Location ID", "") for r in sheets.get("Location Registry", []) if r.get("Location ID") and truth(r.get("Job Search"))}
     company_rows = sheets.get("Company Registry", [])
+    application_routes_by_company = {}
+    for route in sheets.get("Application Routes", []):
+        if str(route.get("Status", "")).strip().casefold() != "active":
+            continue
+        company_id = str(route.get("Company ID", "")).strip()
+        if company_id and route.get("Source URL"):
+            application_routes_by_company.setdefault(company_id, []).append({
+                "name": route.get("Route Type", "Application route"),
+                "target_role_families": route.get("Target Role Families", ""),
+                "url": route.get("Source URL", ""),
+                "notes": route.get("Notes", ""),
+            })
     company_rankings = {
         (str(r.get("Owner", "")).strip().casefold(), str(r.get("Company ID", "")).strip()): r
         for r in sheets.get("Company Rankings", [])
@@ -383,6 +395,7 @@ def main() -> None:
         company = companies.get(row.get("Company ID", ""), {})
         payload.update({"id": row.get("Opportunity ID", ""), "company_id": row.get("Company ID", ""), "kind": "job", "title": title, "organization": org, "business": row.get("Business", categories.get(org.casefold(), "")), "role_function": row.get("Role Function", ""),
             "company_reputation_score_10": company.get("Company Reputation Score /10", ""), "company_reputation_notes": company.get("Company Reputation Notes", ""),
+            "application_routes": application_routes_by_company.get(row.get("Company ID", ""), []),
             "source_url": row.get("Link", ""), "location": "; ".join(city_labels), "office": "; ".join(labels), "locations": places,
             "category": categories.get(org.casefold(), ""), "verification": "verified" if str(row.get("Source check") or row.get("Confidence") or "").strip().lower().startswith(("verified", "high")) else "needs_review"})
         payload["office_source_text"] = row.get("Office(s) (source text)", "")
@@ -430,6 +443,7 @@ def main() -> None:
             "reddit_score_10": company.get("Reddit Score /10", ""), "reddit_notes": company.get("Reddit Notes", ""),
             "reddit_sources_search": company.get("Reddit Evidence / Search URL(s)", ""), "reviews_checked_on": company.get("Reviews Checked On", ""), "review_research_status": company.get("Review Research Status", "Not researched"),
             "company_reputation_score_10": company.get("Company Reputation Score /10", ""), "company_reputation_notes": company.get("Company Reputation Notes", ""),
+            "application_routes": application_routes_by_company.get(row.get("Company ID", ""), []),
             "location": office, "locations": places})
     mapped_company_ids = set(office_by_company)
     unmapped_companies = []

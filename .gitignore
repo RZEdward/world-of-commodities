@@ -13,6 +13,7 @@ data/sources/office-research-results.json
 
 data/sources/role-search-results.json
 data/sources/role-search-scope.json
+research/search_runs/
 outputs/
 Jobs_preview.png
 Location_Registry_preview.png

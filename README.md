@@ -21,7 +21,7 @@ Registries define the entities and scope that opportunities link to:
 
 - **Scope and geography:** Location Registry, Location Rankings, Office Registry, Campus Registry.
 - **Organizations and people:** Company Registry, University Registry, Recruitment Company Registry, Recruiter Registry.
-- **Opportunities and execution:** Jobs, Masters, Recruiters (interactions), Expired Roles, Research Inbox, Search Runs, Activity Log.
+- **Opportunities and execution:** Jobs, Masters, Application Routes (official speculative applications), Recruiters (interactions), Expired Roles, Research Inbox, Search Runs, Search Coverage Log, Activity Log.
 - **Model inputs:** Company Rankings, Score Model, and the controlled taxonomy sheets.
 
 Each sheet has an Owner. For registry and search-scope records this is the person responsible for maintaining them; for opportunities and interactions it is the person responsible for the application or relationship. Job records link to registered offices and locations. Multi-city vacancies are represented as one role-city row per eligible registered city. Masters records link to university and campus records; campus coordinates are stored in Campus Registry. The Location Registry is the geographic boundary: do not add or export offices/campuses outside an owner's active search scope. Chicago, Harbin, Providence, and Xi'an were explicitly excluded from Ross's scope; associated institutions should not be retained as in-scope records.
@@ -36,15 +36,20 @@ Candidate fit means fit between Ross's experience and the role requirements. Rol
 
 ## Research workflow and scripts
 
-The recurring search is a human-led research task supported by scripts. Web research, source interpretation, discovery, cross-checking, company/office decisions, and reasoned scoring are not automated by the current scripts. Follow the workbook's current registries, owner rankings, and the two research documents above as the scope and decision rules.
+The recurring search is a human-led research task supported by scripts. The saved [daily and on-demand prompt](research/DAILY_SEARCH_PROMPT.md) defines the full role and masters search, selective company inclusion, native-language discovery, cadence, evidence rules, scoring references, and closeout. The research playbook and scoring methodology remain the evidence and scoring references. The prompt includes daily, rotating, admissions-cycle, event-driven, and quarterly coverage so the entire company universe is not re-searched manually every day.
 
+At each closeout, use logged yield, time, duplicates, and missed-lead evidence to improve the prompt and repeatable methods. Date and explain reusable changes in the prompt change log; do not reduce a family's cadence after one quiet run. Unsearched families remain explicit coverage gaps.
+
+- `python scripts/prepare_daily_search.py --owner Ross --mode daily` reads the workbook's live search cities, city rankings, Company Rankings, open jobs, Masters rows, and past Search Coverage Log entries. It creates a dated scope snapshot and run brief under ignored `research/search_runs/`. Use `--mode on-demand` for a full due-family pass or `--mode baseline` to establish the first full coverage log.
 - `python scripts/scan_sources.py scan` checks the reachability of URLs already in the local source registry. It does not discover companies or jobs, verify that a posting is still open, or interpret page content. `--kind job|masters|recruiter|office` narrows the check.
 - `python scripts/scan_sources.py add ...` records a URL as a source lead for later review; it does not create or update a workbook row.
+- `node scripts/close_search_run.mjs --payload path/to/run-summary.json` appends a completed run summary and per-source-family coverage rows to the workbook's Search Runs and Search Coverage Log sheets. The exact payload fields and cadence rules are defined in the saved prompt.
 - `python scripts/export_tracker.py` turns workbook rows into the dashboard feed and applies the workbook-configured score model and registered scope.
 - `python scripts/build_site.py` exports the feed and packages the static website for GitHub Pages. It is a publishing build, not a research sweep.
 
-During a search, record source URL, check date, the exact evidence/claim, confidence, and limitations. Preserve source links when updating rows. A participant or auction record can identify a company to investigate, but does not by itself prove a local office, an open role, or an active trading desk. See the research playbook for official market, balancing, capacity, and support-auction sources and their limitations.
+Search Runs stores one summary per completed run. Search Coverage Log stores one row per source-family × market/query batch, including terms/language, cadence, reviewed items, yield, elapsed time, next review and source links. This makes it possible to adjust repeat frequency from evidence without recording every result twice. Scripts prepare the scope and record the log; they do not perform the unstructured web research. A participant or auction record can identify a company to investigate, but does not by itself prove a local office, an open role, or an active trading desk.
 
 ## Published dashboard
 
 The public dashboard is at [https://rzedward.github.io/world-of-commodities/app/](https://rzedward.github.io/world-of-commodities/app/). It supports opportunities, institutions/offices/campuses, locations, owners, search, filters, sorting, map/sidebar selection, status, source links, and interview-sharpness summaries. It only displays the generated feed; update the workbook and rebuild/deploy to change published data.
+
