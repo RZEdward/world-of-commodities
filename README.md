@@ -40,6 +40,8 @@ The recurring search is a human-led research task supported by scripts. The save
 
 At each closeout, use logged yield, time, duplicates, and missed-lead evidence to improve the prompt and repeatable methods. Date and explain reusable changes in the prompt change log; do not reduce a family's cadence after one quiet run. Unsearched families remain explicit coverage gaps.
 
+The first full weekly job sweep is archived in [the 2026-11-01 run folder](research/runs/2026-11-01-weekly-job-sweep/). It includes regional source ledgers, new-role candidates, open-role refreshes, and the run summary. Its search coverage is complete for the 977 mapped company-city pairs and 14 job-search cities; role promotion remains selective, and the run summary identifies leads that still need validation.
+
 - `python scripts/prepare_daily_search.py --owner Ross --mode daily` reads the workbook's live search cities, city rankings, Company Rankings, mapped company-city pairs, open jobs, Masters rows, and past Search Coverage Log entries. It creates a dated scope snapshot and run brief under ignored `research/search_runs/`. Use `--mode weekly-jobs` for all job cities, ranked employers and open-role refresh; `--mode on-demand` for all due research families; or `--mode baseline` for the initial all-family coverage log.
 - `python scripts/scan_sources.py scan` checks the reachability of URLs already in the local source registry. It does not discover companies or jobs, verify that a posting is still open, or interpret page content. `--kind job|masters|recruiter|office` narrows the check.
 - `python scripts/scan_sources.py add ...` records a URL as a source lead for later review; it does not create or update a workbook row.
