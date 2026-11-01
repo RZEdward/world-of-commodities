@@ -11,7 +11,8 @@ shutil.copytree(ROOT / "app", DIST / "app", ignore=shutil.ignore_patterns("*.map
 data_dir = DIST / "data"
 data_dir.mkdir(parents=True)
 shutil.copy2(ROOT / "data" / "opportunities.json", data_dir / "opportunities.json")
-(DIST / "index.html").write_text('<!doctype html><meta http-equiv="refresh" content="0;url=/app/"><title>World of Commodities</title><a href="/app/">Open dashboard</a>\n', encoding="utf-8")
+(DIST / "index.html").write_text('<!doctype html><meta name="robots" content="noindex, nofollow"><meta http-equiv="refresh" content="0;url=app/"><title>World of Commodities</title><a href="app/">Open dashboard</a>\n', encoding="utf-8")
+(DIST / ".nojekyll").write_text("", encoding="utf-8")
 (DIST / "robots.txt").write_text("User-agent: *\nDisallow: /\n", encoding="utf-8")
 (DIST / "_headers").write_text("/*\n  X-Content-Type-Options: nosniff\n  Referrer-Policy: strict-origin-when-cross-origin\n  X-Frame-Options: DENY\n  X-Robots-Tag: noindex, nofollow, noarchive\n\n/data/*\n  Cache-Control: no-store\n", encoding="utf-8")
 print(f"Built static site: {DIST}")

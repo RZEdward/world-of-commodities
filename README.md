@@ -4,7 +4,7 @@ A dark map dashboard for a personal commodities career and education tracker. Th
 
 ## Local setup
 
-1. Keep `worldofcommodities.xlsx` in the project root. This repository is private; the workbook and CV are available only to authorized collaborators.
+1. Keep `worldofcommodities.xlsx` in the project root. This repository is public; the workbook and CV are publicly accessible and versioned here.
 2. Install Python 3.10+.
 3. Run `python scripts/serve.py` and open `http://127.0.0.1:8000/app/`.
 4. Edit the workbook in Excel, then run `python scripts/export_tracker.py` to refresh the dashboard feed.
@@ -19,9 +19,9 @@ Scores represent separate questions. Company, university, and recruitment-compan
 
 ## Free sharing
 
-The dashboard can be hosted as a static site on Cloudflare Pages from this private GitHub repository. A deployed Pages site is public unless separately protected; the generated dashboard feed contains personal application and recruiter information, so do not share an unprotected URL. Build with `python scripts/build_site.py` and publish `site-dist` as the output directory. The generated deployment folder contains only the dashboard app and its JSON feed; it does not include the workbook or CV. Protect the Pages site with Cloudflare Access and allow only intended email addresses before sharing its URL. A `pages.dev` URL is not private by itself. The build adds `noindex` headers as a courtesy, not as access control.
+The dashboard is published free on GitHub Pages at [https://rzedward.github.io/world-of-commodities/](https://rzedward.github.io/world-of-commodities/). A GitHub Actions workflow builds `site-dist` from the workbook on each relevant push to `main` and deploys it. The deployed site is public and contains the opportunity, institution, location, and interview-sharpness dashboard feed. `robots.txt` and `noindex` discourage search indexing but do not restrict access.
 
 ## Data and privacy
 
-The dashboard reads a generated local JSON export from the workbook. The export and search-source cache are excluded from Git. The CV is stored in `cv/` and included in this private repository for versioned access. Avoid copying credentials, access tokens, or unrelated personal files into the repository.
+The dashboard reads a generated JSON export from the workbook. The generated local feed is excluded from Git; the Pages workflow rebuilds it for deployment. The CV is stored in `cv/` and included in this public repository for versioned access. Avoid copying credentials, access tokens, or unrelated personal files into the repository.
 
