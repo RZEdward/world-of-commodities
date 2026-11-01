@@ -203,7 +203,7 @@ const scoreNumber = (value) => {
 function rankScore(rank, maxRank) {
   if (!Number.isFinite(rank) || !Number.isFinite(maxRank)) return null;
   if (maxRank <= 1) return 10;
-  return 10 - ((rank - 1) * 9 / (maxRank - 1));
+  return 10 - ((rank - 1) * 4 / (maxRank - 1));
 }
 
 function addJobScores(item) {
@@ -220,13 +220,13 @@ function addJobScores(item) {
   const candidate = scoreNumber(item.candidate_fit_score_10);
   const company = scoreNumber(item.company_reputation_score_10);
   const desk = scoreNumber(item.role_desk_outlook_score_10);
-  const parts = [[candidate, .35], [company, .20], [desk, .25], [locationScore, .20]];
-  const total = parts.every(([value]) => value !== null)
-    ? parts.reduce((sum, [value, weight]) => sum + value * weight, 0)
+  const parts = [candidate, company, desk, locationScore];
+  const total = parts.every((value) => value !== null)
+    ? parts.reduce((sum, value) => sum + value, 0) / parts.length
     : null;
   return { ...item, location_rank: locationRank, location_fit_score_10: locationScore === null ? "" : Number(locationScore.toFixed(2)),
     total_score_10: total === null ? "" : Number(total.toFixed(2)),
-    total_score_method: "35% candidate fit + 20% company reputation + 25% desk outlook + 20% location preference. Uses the best-ranked offered city; rank 1 = 10 and the lowest ranked job city = 1, using the owner's job location rankings." };
+    total_score_method: "Simple average of candidate fit, company reputation, desk outlook, and location score. Uses the best-ranked offered city; the owner's rank 1 scores 10/10 and the lowest ranked job city scores 6/10, with a linear scale between." };
 }
 
 function syncCustomDropdown(select, hostId) {
@@ -577,7 +577,7 @@ function render() {
           ${item.kind === "job" && item.role_desk_outlook_score_10 !== undefined ? `<div class="loc">Role / desk outlook · ${ratingText(item.role_desk_outlook_score_10)}/10${isPlaceholderAssessment(item.role_desk_outlook_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "job" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${ratingText(item.company_reputation_score_10)}/10${isPlaceholderAssessment(item.company_reputation_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "job" && item.candidate_fit_score_10 !== undefined ? `<div class="loc">Candidate fit · ${ratingText(item.candidate_fit_score_10)}/10</div>` : ""}
-          ${item.kind === "job" && item.total_score_10 !== "" ? `<div class="loc total-score">Total score · ${ratingText(item.total_score_10)}/10 <span>Fit ${ratingText(item.candidate_fit_score_10)} × 35% · Company ${ratingText(item.company_reputation_score_10)} × 20% · Desk ${ratingText(item.role_desk_outlook_score_10)} × 25% · Location ${ratingText(item.location_fit_score_10)} × 20%</span></div>` : ""}
+          ${item.kind === "job" && item.total_score_10 !== "" ? `<div class="loc total-score">Total score · ${ratingText(item.total_score_10)}/10 <span>Fit ${ratingText(item.candidate_fit_score_10)} · Company ${ratingText(item.company_reputation_score_10)} · Desk ${ratingText(item.role_desk_outlook_score_10)} · Location ${ratingText(item.location_fit_score_10)}</span></div>` : ""}
           ${item.kind === "masters" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${ratingText(item.university_reputation_score_10)}/10${isPlaceholderAssessment(item.university_reputation_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "masters" && item.course_programme_score_10 !== undefined ? `<div class="loc">Course / programme · ${ratingText(item.course_programme_score_10)}/10${isPlaceholderAssessment(item.course_programme_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "masters" && item.course_fit_score_10 !== undefined ? `<div class="loc">Course fit · ${ratingText(item.course_fit_score_10)}/10</div>` : ""}
