@@ -1,31 +1,50 @@
 # World of Commodities
 
-A dark map dashboard for a personal commodities career and education tracker. The editable workbook is the source of truth; the dashboard feed is generated locally from it.
+World of Commodities is a personal research and execution tracker for energy and commodities careers, education, recruiters, and search scope. The Excel workbook is the editable system of record. The dashboard is a generated view of that workbook.
 
-## Local setup
+## Project data and privacy
 
-1. Keep `worldofcommodities.xlsx` in the project root. This repository is public; the workbook and CV are publicly accessible and versioned here.
-2. Install Python 3.10+.
+This GitHub repository and its GitHub Pages dashboard are public. The workbook and CV in this repository are publicly accessible and versioned. The deployed website contains a generated dashboard feed; it does not contain the workbook or CV as separate files. Public access is not restricted by `noindex` or `robots.txt`.
+
+## Run the dashboard locally
+
+1. Install Python 3.10 or later.
+2. Keep `worldofcommodities.xlsx` in the repository root.
 3. Run `python scripts/serve.py` and open `http://127.0.0.1:8000/app/`.
-4. Edit the workbook in Excel, then run `python scripts/export_tracker.py` to refresh the dashboard feed.
+4. Edit the workbook in Excel. The local server regenerates the dashboard feed from the workbook when it is requested.
 
-The workbook is the editable system of record. `Company Registry`, `University Registry`, `Recruitment Company Registry`, `Recruiter Registry`, `Office Registry`, `Campus Registry`, `Location Registry`, and `Location Rankings` define entities and search scope. Location Rankings stores one row per owner and city; equal rank values represent tied priorities, and the generated dashboard feed carries those rankings for later search automation. Jobs link to companies and one or more offices/cities; Masters link to universities and campuses; recruiter interactions link people to recruitment companies. In Jobs, Business means the company's category. Commodity, Market Geography, and Time Horizon describe what it trades, where, and over what horizon; Role Function separately records the work performed using controlled values.
+To regenerate the feed directly, run `python scripts/export_tracker.py`. To build the static Pages package, run `python scripts/build_site.py`; this writes to ignored `site-dist/`. GitHub Actions runs that build and deploys it when the workbook, app, or deployment scripts change on `main`.
 
-Every sheet has an `Owner` field. For registry and scope records, it identifies who maintains the source, mapping or search scope; for opportunities and recruiter interactions, it identifies who is responsible for the application or relationship. `Unassigned` means responsibility still needs to be agreed. The dashboard can filter and sort by Owner wherever values exist.
+## Workbook structure
 
-Scores represent separate questions. Company, university, and recruitment-company reputation scores assess the organization. Role/desk, course/programme, and recruiter scores assess the specific opportunity or person. Candidate fit, role fit, course fit, and recruiter relationship scores remain separate. Role fit rewards direct market decision-making, trading/risk exposure, and relevant analysis; asset optimization and consulting score below trading/spec roles, while operations and middle/back office score lower. Top-fit analyst or trading roles at flagship destinations can score 10 for role fit; broader organization reputation still has its own company score. Each company has separate Glassdoor and Reddit ratings and qualitative notes, plus evidence or search links, checked date, research status, and caveats. When no attributable rating is available, 5/10 is a labelled placeholder, not an evaluated neutral rating. The company reputation synthesis weights Glassdoor 75% and lower-confidence Reddit 25%.
+Registries define the entities and scope that opportunities link to:
 
-Job Total Score is the simple average of six owner-specific scores: candidate fit, role fit, company reputation, role/desk outlook, location fit, and expected earnings (each 1/6). For roles offered in several cities, it uses the best-ranked offered city. City rank maps linearly from rank 1 = 10 to the lowest ranked job-search city = 6. Expected Earnings Score represents approximate 10-year pay upside, anchored to first-year total compensation where available; where compensation is unavailable, the provisional score uses a role-family proxy and says so in its notes. It is an estimate, not a promise of lifetime earnings. The dashboard exposes high-to-low sorts and strict `Score > X` thresholds, and keeps component scores in the map panel while showing only Total Score in the sidebar.
+- **Scope and geography:** Location Registry, Location Rankings, Office Registry, Campus Registry.
+- **Organizations and people:** Company Registry, University Registry, Recruitment Company Registry, Recruiter Registry.
+- **Opportunities and execution:** Jobs, Masters, Recruiters (interactions), Expired Roles, Research Inbox, Search Runs, Activity Log.
+- **Model inputs:** Company Rankings, Score Model, and the controlled taxonomy sheets.
 
-The Location Registry is the allowed geographic scope. Office Registry and Campus Registry rows must link to a current Location ID; out-of-scope company offices are removed from the registry and cannot be exported as map points. Recruiter people may remain in their people registry, but the dashboard only maps them when their stated city is in scope. Recruitment companies remain in their registry and recruiter records, but only recruiter people are shown in the Institutions view. The map key is collapsed until requested.
+Each sheet has an Owner. For registry and search-scope records this is the person responsible for maintaining them; for opportunities and interactions it is the person responsible for the application or relationship. Job records link to registered offices and locations. Multi-city vacancies are represented as one role-city row per eligible registered city. Masters records link to university and campus records; campus coordinates are stored in Campus Registry. The Location Registry is the geographic boundary: do not add or export offices/campuses outside an owner's active search scope. Chicago, Harbin, Providence, and Xi'an were explicitly excluded from Ross's scope; associated institutions should not be retained as in-scope records.
 
-`python scripts/scan_sources.py scan` checks registered URLs for reachability only. A reachable page does not establish that a role or program remains open; review the employer/source page before updating the workbook.
+For jobs, **Business** is the employer category. **Commodity**, **Market Geography**, and **Time Horizon** describe the traded product, market region, and trading/analysis horizon. **Role Function** describes the work performed. Do not put a graduate rotation, seniority, or contract duration in the market time-horizon field.
 
-## Free sharing
+## Scores and ranking
 
-The dashboard is published free on GitHub Pages at [https://rzedward.github.io/world-of-commodities/](https://rzedward.github.io/world-of-commodities/). A GitHub Actions workflow builds `site-dist` from the workbook on each relevant push to `main` and deploys it. The deployed site is public and contains the opportunity, institution, location, and interview-sharpness dashboard feed. `robots.txt` and `noindex` discourage search indexing but do not restrict access.
+The current owner-approved job total is a weighted average: location 25%, role fit 25%, candidate fit 15%, expected earnings 15%, desk outlook 15%, and company reputation 5%. Component scores use a 0–10 scale. The owner-ranked location score maps linearly from 10 at rank 1 to 6 at the lowest active rank; its total-score impact is capped at one point. Multi-city opportunities have separate role-city rows and are scored for each city.
 
-## Data and privacy
+Candidate fit means fit between Ross's experience and the role requirements. Role fit means how attractive the actual work is to Ross. Company reputation is distinct from role/desk outlook. Estimates need a stated basis and confidence; uncertain or incomplete totals are provisional. Do not fill missing evidence with an unlabelled neutral score. The detailed definitions, calibration examples, source standards, and daily search rules are in [Scoring and search methodology](research/score-and-search-methodology.md). Company and power/gas discovery evidence is recorded in the [research playbook](research/REPEATABLE_SEARCH_METHODS.md), with the current rating-calibration notes in [score estimation method](research/score_estimation_method_2026-11-01.md).
 
-The dashboard reads a generated JSON export from the workbook. The generated local feed is excluded from Git; the Pages workflow rebuilds it for deployment. The CV is stored in `cv/` and included in this public repository for versioned access. Avoid copying credentials, access tokens, or unrelated personal files into the repository.
+## Research workflow and scripts
 
+The recurring search is a human-led research task supported by scripts. Web research, source interpretation, discovery, cross-checking, company/office decisions, and reasoned scoring are not automated by the current scripts. Follow the workbook's current registries, owner rankings, and the two research documents above as the scope and decision rules.
+
+- `python scripts/scan_sources.py scan` checks the reachability of URLs already in the local source registry. It does not discover companies or jobs, verify that a posting is still open, or interpret page content. `--kind job|masters|recruiter|office` narrows the check.
+- `python scripts/scan_sources.py add ...` records a URL as a source lead for later review; it does not create or update a workbook row.
+- `python scripts/export_tracker.py` turns workbook rows into the dashboard feed and applies the workbook-configured score model and registered scope.
+- `python scripts/build_site.py` exports the feed and packages the static website for GitHub Pages. It is a publishing build, not a research sweep.
+
+During a search, record source URL, check date, the exact evidence/claim, confidence, and limitations. Preserve source links when updating rows. A participant or auction record can identify a company to investigate, but does not by itself prove a local office, an open role, or an active trading desk. See the research playbook for official market, balancing, capacity, and support-auction sources and their limitations.
+
+## Published dashboard
+
+The public dashboard is at [https://rzedward.github.io/world-of-commodities/app/](https://rzedward.github.io/world-of-commodities/app/). It supports opportunities, institutions/offices/campuses, locations, owners, search, filters, sorting, map/sidebar selection, status, source links, and interview-sharpness summaries. It only displays the generated feed; update the workbook and rebuild/deploy to change published data.

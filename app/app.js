@@ -346,6 +346,29 @@ function buildPopupContent(item, location) {
     "expected_earnings_score_10", "expected_earnings_notes",
     "location_fit_score_10",
   ]);
+  const assessmentScoreRows = {
+    company: [
+      ["company_reputation_score_10", "Company reputation", "company_reputation_notes"],
+      ["glassdoor_score_10", "Glassdoor", "glassdoor_notes"],
+      ["reddit_score_10", "Reddit", "reddit_notes"],
+    ],
+    university: [["university_reputation_score_10", "University reputation", "university_reputation_notes"]],
+    masters: [
+      ["university_reputation_score_10", "University reputation", "university_reputation_notes"],
+      ["course_programme_score_10", "Course / programme", "course_programme_notes"],
+      ["course_fit_score_10", "Course fit", "course_fit_notes"],
+    ],
+    recruiter: [
+      ["recruitment_company_score_10", "Recruitment company", "recruitment_company_score_notes"],
+      ["recruiter_assessment_score_10", "Recruiter assessment", "recruiter_assessment_notes"],
+      ["recruiter_relationship_score_10", "Relationship", "recruiter_relationship_notes"],
+    ],
+    recruiter_person: [
+      ["recruiter_assessment_score_10", "Recruiter assessment", "recruiter_assessment_notes"],
+      ["recruitment_company_score_10", "Recruitment company", "recruitment_company_score_notes"],
+    ],
+  };
+  const assessmentScoreKeys = new Set(Object.values(assessmentScoreRows).flatMap((entries) => entries.flatMap(([key, , noteKey]) => [key, noteKey])));
   const immediateJobKeys = new Set(["location", "owner", "status", "deadline", "total_compensation_expectation_usd"]);
   const pushRow = (markup, key) => {
     if (item.kind !== "job") rows.push(markup);
@@ -360,6 +383,7 @@ function buildPopupContent(item, location) {
   });
   for (const [key, rawValue] of fields) {
     if (item.kind === "job" && jobScoreKeys.has(key)) continue;
+    if (assessmentScoreKeys.has(key)) continue;
     if (item.kind === "masters" && (key === "confidence" || key === "fit")) continue;
     if (item.kind === "job" && (key === "confidence" || key === "fit")) continue;
     const showUnspecifiedDeadline = item.kind === "job" && key === "deadline" && isPlaceholder(rawValue);
@@ -411,7 +435,8 @@ function buildPopupContent(item, location) {
     ["role_desk_outlook_score_10", "Desk outlook", "role_desk_outlook_notes"],
     ["expected_earnings_score_10", "Expected earnings", "expected_earnings_notes"],
     ["location_fit_score_10", "Location fit", ""],
-  ].filter(([key]) => scoreNumber(item[key]) !== null).map(([key, label, noteKey, statusKey]) => {
+  ] : assessmentScoreRows[item.kind] || [];
+  const renderedScoreRows = scoreRows.filter(([key]) => scoreNumber(item[key]) !== null).map(([key, label, noteKey, statusKey]) => {
     let note = noteKey ? item[noteKey] : "";
     if (key === "location_fit_score_10") {
       const weight = Number(state.scoreModel?.job_total_weights?.location);
@@ -421,8 +446,8 @@ function buildPopupContent(item, location) {
     const score = `${ratingText(item[key])}/10`;
     const accessibleNote = note ? ` ${String(note).replace(/\s+/g, " ").trim()}` : "";
     return `<tr class="${key === "total_score_10" ? "score-total" : ""}"><th scope="row">${escapeHtml(label)}</th><td class="score-value" tabindex="0" aria-label="${escapeHtml(`${label}: ${score}.${accessibleNote}`)}"${note ? ` data-note="${escapeHtml(note)}"` : ""}>${escapeHtml(score)}${statusKey && item[statusKey] ? `<span class="score-status">${escapeHtml(String(item[statusKey]).toLowerCase())}</span>` : ""}</td></tr>`;
-  }).join("") : "";
-  const scoreSummary = scoreRows ? `<section class="score-summary" aria-label="Opportunity scores"><table><thead><tr><th>Score</th><th>/10</th></tr></thead><tbody>${scoreRows}</tbody></table></section>` : "";
+  }).join("");
+  const scoreSummary = renderedScoreRows ? `<section class="score-summary" aria-label="${item.kind === "job" ? "Opportunity scores" : "Assessment scores"}"><table><thead><tr><th>Score</th><th>/10</th></tr></thead><tbody>${renderedScoreRows}</tbody></table></section>` : "";
 
   const source = /^https?:\/\//i.test(item.source_url || "")
     ? `<a class="map-popup-source" href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener">Open source ↗</a>`
@@ -436,7 +461,7 @@ function buildPopupContent(item, location) {
   return `<div class="map-popup">
     <div class="map-popup-title ${item.kind === "company" ? "company-title" : ""}">${escapeHtml(item.title)}</div>
     <div class="map-popup-organization">${escapeHtml(item.organization)} · ${escapeHtml(mapLocation)}</div>
-    <div class="map-popup-fields">${item.kind === "job" ? `${jobImmediateRows.join("")}${scoreSummary}${jobDetailRows.join("")}` : rows.join("")}</div>
+    <div class="map-popup-fields">${item.kind === "job" ? `${jobImmediateRows.join("")}${scoreSummary}${jobDetailRows.join("")}` : `${scoreSummary}${rows.join("")}`}</div>
     ${activityHtml}
     ${source}
   </div>`;

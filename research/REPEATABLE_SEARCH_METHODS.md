@@ -1,6 +1,6 @@
 # Power and gas company discovery methods
 
-Last reviewed: 2026-11-01. This is a research playbook and evidence log, not an automated daily search specification. Search scope is the current Location Registry (33 cities). City flags determine whether a city is in the current job or university scope; they do not prove that any company trades there.
+Last reviewed: 2026-11-01. This is a research playbook and evidence log, not an automated daily search specification. Search scope must be read from the current workbook's Location Registry and owner-specific Location Rankings at the start of each run; do not rely on a city count or a copied static city list in this document. City flags determine whether a city is in the current job or university scope; they do not prove that any company trades there.
 
 ## Evidence standard
 
@@ -60,10 +60,10 @@ There is no meaningful single score across Zetamac, LeetCode, GRE and GMAT. Log 
 
 ## Coverage snapshot: 2026-11-01
 
-- Location Registry contains 33 cities. The official-source pass is under way and is not yet an exhaustive verified company/office census.
+- The official-source pass is under way and is not yet an exhaustive verified company/office census. Read current scope from the workbook; the registry may change after exclusions and owner ranking updates.
 - ACER’s downloaded public XML snapshot is stored as `acer_market_participants_2026-11-01.zip`; the city-filtered extraction is `acer_target_city_participants_2026-11-01.csv`. It contains 184 records across London (151), Geneva (18), Zürich (9) and Zurich (6). These are participant records, not 184 unique employers; entity-to-parent deduplication and activity/office validation are required.
 - Official sources reviewed include ACER, ENTSO-E, JAO, EPRX, Singapore EMC/EMA, AEMO, ISO-NE, CAISO, PJM, UK Elexon/Ofgem/Xoserve, Japan JEPX/METI, Hong Kong Government and Beijing’s market scheme. Coverage by source and city needs to be expanded and reconciled against each relevant system’s latest data.
-- The next research pass should prioritize target cities with broad energy trading hubs and market data (London, Singapore, Tokyo, Sydney, Geneva, Zurich, New York, San Francisco, Shanghai, Beijing and Hong Kong), then cover remaining registry cities and their relevant regional markets.
+- The next research pass should follow the owner-specific Company Rankings and Location Rankings in the workbook. Do not substitute a hand-picked city list for the current ranked scope.
 
 ## Source snapshots and provenance
 
