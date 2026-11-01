@@ -3,6 +3,8 @@ const state = {
   offices: [],
   unmappedCompanies: [],
   universities: [],
+  recruiterPeople: [],
+  recruitmentCompanies: [],
   institutions: [],
   locations: [],
   view: "opportunities",
@@ -282,11 +284,14 @@ function buildPopupContent(item, location) {
   const posted = asDate(item.posted);
   const deadline = asDate(item.deadline);
   const today = new Date();
-  const postedValue = posted ? `${daysBetween(posted, today)} days` : "";
+  const postedDays = posted ? daysBetween(posted, today) : null;
+  const postedValue = posted ? `${postedDays} ${postedDays === 1 ? "day" : "days"}` : "";
   let deadlineValue = "";
   if (deadline) {
     const days = daysBetween(today, deadline);
-    deadlineValue = days < 0 ? `${Math.abs(days)} days past` : `${days} days`;
+    const magnitude = Math.abs(days);
+    const unit = magnitude === 1 ? "day" : "days";
+    deadlineValue = days < 0 ? `${magnitude} ${unit} past` : `${days} ${unit}`;
   }
   if (item.kind !== "company") {
     if (postedValue) rows.push(`<div class="map-popup-row"><dt>Days since posted</dt><dd>${escapeHtml(postedValue)}</dd></div>`);
@@ -481,7 +486,7 @@ function render() {
   const filterOptions = locationMode
     ? [["all", "All", state.locations.length], ["jobs", "Jobs", state.locations.filter(x => x.job_search).length], ["masters", "Masters", state.locations.filter(x => x.university_search).length], ["both", "Jobs & Masters", state.locations.filter(x => x.job_search && x.university_search).length]]
     : companyMode
-    ? [["all", "All", state.institutions.length], ["company", "Companies", state.offices.length + state.unmappedCompanies.length], ["university", "Universities", state.universities.length]]
+    ? [["all", "All", state.institutions.length], ["company", "Companies", state.institutions.filter(x => x.kind === "company").length], ["university", "Universities", state.universities.length], ["recruitment_company", "Recruitment Companies", state.recruitmentCompanies.length], ["recruiter_person", "Recruiters", state.recruiterPeople.length]]
     : [["all", "All", state.items.length], ["job", "Jobs", state.items.filter(x => x.kind === "job").length], ["masters", "Masters", state.items.filter(x => x.kind === "masters").length], ["recruiter", "People", state.items.filter(x => x.kind === "recruiter").length]];
   document.querySelector("#filters").setAttribute("aria-label", locationMode ? "Search scope" : companyMode ? "Institution type" : "Opportunity type");
   document.querySelector("#filters").innerHTML = filterOptions.filter(([key, , count]) => key === "all" || count > 0).map(([key, label, count]) => `<button class="filter ${state.filter === key ? "active" : ""}" data-filter="${key}">${label}<span>${count}</span></button>`).join("");
@@ -502,7 +507,7 @@ function render() {
         </button>`
       : companyMode
       ? `<button class="opportunity company-entry ${state.selected === item.id ? "selected" : ""}" data-id="${escapeHtml(item.id)}">
-          <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.category || "University")}</div></div><i class="key-dot" style="background:${item.kind === "company" ? categoryColor(item.category) : "#c1a0ff"}"></i></div>
+          <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.category || item.kind.replaceAll("_", " "))}</div></div><i class="key-dot" style="background:${item.kind === "company" ? categoryColor(item.category) : item.kind === "university" ? "#c1a0ff" : item.kind === "recruiter_person" ? "#ffb86e" : "#70c8b4"}"></i></div>
           <div class="loc">⌖ ${escapeHtml(item.office || item.location || "Office not specified")}</div>
           ${item.kind === "university" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${ratingText(item.university_reputation_score_10)}/10${isPlaceholderAssessment(item.university_reputation_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "company" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${ratingText(item.company_reputation_score_10)}/10${isPlaceholderAssessment(item.company_reputation_notes) ? " · pending" : ""}</div>` : ""}
@@ -642,6 +647,10 @@ function initializeMap() {
       const markers = (item.locations || []).map((location) => createMarker(item, location));
       if (markers.length) state.markers.set(item.id, markers);
     }
+    for (const item of [...state.unmappedCompanies, ...state.recruitmentCompanies, ...state.recruiterPeople]) {
+      const markers = (item.locations || []).map((location) => createMarker(item, location));
+      if (markers.length) state.markers.set(item.id, markers);
+    }
     for (const item of state.locations) {
       state.markers.set(item.id, (item.locations || []).map((location) => createMarker(item, location)));
     }
@@ -660,6 +669,8 @@ async function initializeDashboard() {
     state.sharpnessAttempts = data.sharpness_attempts || [];
     state.offices = data.offices || [];
     state.unmappedCompanies = data.unmapped_companies || [];
+    state.recruiterPeople = data.recruiter_people || [];
+    state.recruitmentCompanies = data.recruitment_companies || [];
     const scopeFor = (row) => {
       const jobs = row.job_search === true || String(row.job_search).toLowerCase() === "true";
       const masters = row.university_search === true || String(row.university_search).toLowerCase() === "true";
@@ -682,7 +693,7 @@ async function initializeDashboard() {
       group.locations = group.locations.filter((point, index, points) => points.findIndex((other) => other.latitude === point.latitude && other.longitude === point.longitude) === index);
     }
     state.universities = data.universities?.length ? data.universities : [...universityGroups.values()];
-    state.institutions = [...state.offices, ...state.unmappedCompanies, ...state.universities];
+    state.institutions = [...state.offices, ...state.unmappedCompanies, ...state.universities, ...state.recruitmentCompanies, ...state.recruiterPeople];
     setText("#updated-label", `DATA ${data.updated_at || "—"}`);
     render();
     renderSharpness();

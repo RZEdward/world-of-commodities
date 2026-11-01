@@ -334,6 +334,24 @@ def main() -> None:
             "owner": uni.get("Owner", ""),
             "university_reputation_score_10": uni.get("University Reputation Score /10", ""), "university_reputation_notes": uni.get("University Reputation Notes", ""),
             "location": "; ".join(dict.fromkeys(p["name"] for p in places)) or "No mapped campus"})
+    recruiter_registry = []
+    for row in sheets.get("Recruiter Registry", []):
+        raw_location = row.get("Location", "").strip()
+        # Do not turn a recruiting firm's office into a person's location.
+        uncertain = re.search(r"not (?:stated|verified|publicly|confirmed)|firm (?:office|base)|individual location|exact city not|city not reliably", raw_location, re.I)
+        point = point_for(raw_location) if raw_location and not uncertain else None
+        places = [{"name": raw_location, "latitude": point[0], "longitude": point[1]}] if point else []
+        recruiter_registry.append({**{key(k): v for k, v in row.items() if v not in (None, "")},
+            "id": row.get("Recruiter ID", ""), "kind": "recruiter_person", "title": row.get("Name", ""),
+            "organization": row.get("Recruitment Company", "Recruiter"), "category": row.get("Specialization", "Recruiter"),
+            "location": raw_location if point else ("Location not verified" if raw_location else "Location not listed"),
+            "locations": places, "source_url": row.get("Source URL", ""), "owner": row.get("Owner", "")})
+    recruitment_company_registry = []
+    for row in sheets.get("Recruitment Company Registry", []):
+        recruitment_company_registry.append({**{key(k): v for k, v in row.items() if v not in (None, "")},
+            "id": row.get("Recruitment Company ID", ""), "kind": "recruitment_company", "title": row.get("Recruitment Company", ""),
+            "organization": row.get("Recruitment Type", "Recruitment company"), "category": row.get("Markets / Specialization", "Recruitment"),
+            "location": row.get("Coverage / Geography", ""), "locations": [], "source_url": row.get("Source URL", ""), "owner": row.get("Owner", "")})
     locations = [{"location_id": r.get("Location ID", ""), "city": r.get("City", ""), "coordinates": r.get("Coordinates", ""), "owner": r.get("Owner", ""),
         "job_search": truth(r.get("Job Search")), "university_search": truth(r.get("University Search"))} for r in sheets.get("Location Registry", []) if r.get("City")]
     location_rankings = [{"ranking_id": r.get("Ranking ID", ""), "owner": r.get("Owner", ""), "rank": r.get("Rank", ""),
@@ -345,18 +363,19 @@ def main() -> None:
         "inbox": sheets.get("Research Inbox", []), "search_runs": sheets.get("Search Runs", []), "activities": sheets.get("Activity Log", []),
         "scope": sheets.get("Search Scope", []), "taxonomy": sheets.get("Taxonomy Registry", []),
         "office_research_queue": sheets.get("Office Research Queue", []),
-        "recruitment_company_registry": sheets.get("Recruitment Company Registry", []),
-        "recruiter_registry": sheets.get("Recruiter Registry", []),
+        "recruitment_companies": recruitment_company_registry,
+        "recruiter_people": recruiter_registry,
         "sharpness_attempts": [{"owner":r.get("Owner", ""), "platform":r.get("Platform", ""), "assessment":r.get("Assessment", ""),
             "attempt_type":r.get("Attempt Type", ""), "attempt_timestamp":sharpness_timestamp(r.get("Attempt Timestamp", "")), "score":r.get("Score", ""),
             "score_metric":r.get("Score Metric", ""), "completion_pct":r.get("Completion %", ""), "time_taken_minutes":r.get("Time Taken (minutes)", ""),
             "mode_topic":r.get("Mode / Topic", ""), "notes":r.get("Notes", ""), "session_url":r.get("Session URL", "")}
             for r in sheets.get("Interview Sharpness", []) if r.get("Owner") and r.get("Platform") and r.get("Attempt Timestamp")
             and any(r.get(field) not in (None, "") for field in ("Score", "Completion %", "Time Taken (minutes)"))]}
+    OUTPUT.parent.mkdir(parents=True, exist_ok=True)
     OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     mapped = sum(len(x["locations"]) for x in data["opportunities"])
     office_points = sum(len(x["locations"]) for x in offices)
-    print(f"Exported {len(entries)} opportunity records ({mapped} locations), {len(offices)} office records ({office_points} mapped offices), {len(unmapped_companies)} companies pending office research, {len(universities)} universities, and {len(locations)} search-scope cities to {OUTPUT.relative_to(ROOT)}")
+    print(f"Exported {len(entries)} opportunity records ({mapped} locations), {len(offices)} office records ({office_points} mapped offices), {len(unmapped_companies)} companies pending office research, {len(universities)} universities, {len(recruiter_registry)} recruiter people ({sum(bool(x['locations']) for x in recruiter_registry)} mapped), {len(recruitment_company_registry)} recruitment companies, and {len(locations)} search-scope cities to {OUTPUT.relative_to(ROOT)}")
 
 if __name__ == "__main__":
     main()
