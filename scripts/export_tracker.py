@@ -163,7 +163,7 @@ def taxonomy_for(record: dict[str, str]) -> dict[str, str]:
     return {"business_function": function, "commodity": commodity,
             "market_geography": geography, "time_horizon": horizon}
 
-def locations_for(record: dict[str, str], kind: str) -> list[dict]:
+def locations_for(record: dict[str, str], kind: str, locations_by_city: dict[str, dict[str, str]] | None = None) -> list[dict]:
     raw = record.get("Coordinates", "") if kind in ("office", "masters") else record.get("Location", "") if kind == "recruiter" else ""
     parsed = []
     if raw:
@@ -172,15 +172,19 @@ def locations_for(record: dict[str, str], kind: str) -> list[dict]:
             named = re.match(r"([^:]+):\s*(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)", part)
             if named:
                 name, lat, lon = named.groups()
-                parsed.append({"name": name.strip(), "latitude": float(lat), "longitude": float(lon)})
+                if kind == "recruiter":
+                    point = scoped_point_for(name, locations_by_city or {})
+                    if point: parsed.append({"name": name.strip(), "latitude": point[0], "longitude": point[1]})
+                else:
+                    parsed.append({"name": name.strip(), "latitude": float(lat), "longitude": float(lon)})
             else:
-                point = point_for(part)
+                point = scoped_point_for(part, locations_by_city or {}) if kind == "recruiter" else point_for(part)
                 if point:
                     name = part.strip() if kind == "recruiter" else record.get("Office", "") if kind == "office" else record.get("Campus", "") if kind == "masters" else record.get("Location", "")
                     parsed.append({"name": name, "latitude": point[0], "longitude": point[1]})
     if not parsed:
         location = record.get("Location", "") if kind in ("job", "recruiter") else record.get("Office", "") if kind == "office" else f"{record.get('Campus','')} {record.get('Location','')}"
-        point = point_for(location)
+        point = scoped_point_for(location, locations_by_city or {}) if kind == "recruiter" else point_for(location)
         if point:
             display_name = record.get("Location", "").strip() if kind == "masters" else location.strip()
             parsed.append({"name": display_name, "latitude": point[0], "longitude": point[1]})
@@ -188,6 +192,19 @@ def locations_for(record: dict[str, str], kind: str) -> list[dict]:
     for item in parsed:
         unique[(item["latitude"], item["longitude"])] = item
     return list(unique.values())
+
+def scoped_point_for(value: str, locations_by_city: dict[str, dict[str, str]]) -> tuple[float, float] | None:
+    """Resolve people only to cities explicitly present in Location Registry."""
+    low = str(value or "").casefold()
+    aliases = {"cambridge, ma": ("cambridge, ma", "cambridge, massachusetts", "cambridge ma"),
+               "cambridge, uk": ("cambridge, uk", "cambridge uk"),
+               "hong kong": ("hong kong", "kowloon"), "new york": ("new york", "nyc", "manhattan"),
+               "san francisco": ("san francisco", "sf"), "zurich": ("zurich", "zürich")}
+    for city, row in locations_by_city.items():
+        names = aliases.get(city, (city,))
+        if any(re.search(rf"(?<![a-z]){re.escape(name)}(?![a-z])", low) for name in names):
+            return point_for(row.get("Coordinates", ""))
+    return None
 
 def in_job_search_scope(record: dict[str, str], job_cities: list[str]) -> bool:
     location = str(record.get("Location", "")).casefold()
@@ -227,15 +244,19 @@ def main() -> None:
     recruitment_companies = {r.get("Recruitment Company ID", ""): r for r in sheets.get("Recruitment Company Registry", []) if r.get("Recruitment Company ID")}
     recruiter_people = {r.get("Recruiter ID", ""): r for r in sheets.get("Recruiter Registry", []) if r.get("Recruiter ID")}
     universities_by_id = {r.get("University ID", ""): r for r in sheets.get("University Registry", []) if r.get("University ID")}
-    office_rows = [r for r in sheets.get("Office Registry", []) if r.get("Office ID") and r.get("Company ID")]
+    office_rows = [r for r in sheets.get("Office Registry", []) if r.get("Office ID") and r.get("Company ID") and r.get("Location ID") in locations_by_id]
     office_by_id = {r["Office ID"]: r for r in office_rows}
     office_by_company = {}
     for row in office_rows:
         office_by_company.setdefault(row["Company ID"], []).append(row)
     job_links = {}
     for link in sheets.get("Job Location Links", []):
+        if link.get("Location ID") not in locations_by_id:
+            continue
+        if link.get("Office ID") and link.get("Office ID") not in office_by_id:
+            continue
         job_links.setdefault(link.get("Opportunity ID", ""), []).append(link)
-    campus_by_id = {r.get("Campus ID", ""): r for r in sheets.get("Campus Registry", []) if r.get("Campus ID")}
+    campus_by_id = {r.get("Campus ID", ""): r for r in sheets.get("Campus Registry", []) if r.get("Campus ID") and r.get("Location ID") in locations_by_id}
     entries = []
     for row in sheets.get("Jobs", []):
         if row.get("Scope Status") != "In Scope":
@@ -274,12 +295,12 @@ def main() -> None:
             if kind == "masters":
                 campus = campus_by_id.get(row.get("Campus ID", ""), {})
                 university = universities_by_id.get(row.get("University ID", ""), {})
-                point = point_for(campus.get("Coordinates", "") or row.get("Coordinates", ""))
+                point = point_for(campus.get("Coordinates", "")) if campus else None
                 places = [{"name": campus.get("Location", row.get("Location", "")), "latitude": point[0], "longitude": point[1]}] if point else []
                 payload.update({"university_id": row.get("University ID", ""), "campus_id": row.get("Campus ID", ""), "campus": row.get("Campus", ""), "location": row.get("Location", ""),
                     "university_reputation_score_10": university.get("University Reputation Score /10", ""), "university_reputation_notes": university.get("University Reputation Notes", "")})
             else:
-                places = locations_for(row, "recruiter")
+                places = locations_for(row, "recruiter", locations_by_city)
                 recruiter = recruiter_people.get(row.get("Recruiter ID", ""), {})
                 recruitment_company = recruitment_companies.get(row.get("Recruitment Company ID", ""), {})
                 payload.update({"recruiter_assessment_score_10": recruiter.get("Recruiter Assessment Score /10", ""), "recruiter_assessment_notes": recruiter.get("Recruiter Assessment Notes", ""),
@@ -339,7 +360,7 @@ def main() -> None:
         raw_location = row.get("Location", "").strip()
         # Do not turn a recruiting firm's office into a person's location.
         uncertain = re.search(r"not (?:stated|verified|publicly|confirmed)|firm (?:office|base)|individual location|exact city not|city not reliably", raw_location, re.I)
-        point = point_for(raw_location) if raw_location and not uncertain else None
+        point = scoped_point_for(raw_location, locations_by_city) if raw_location and not uncertain else None
         places = [{"name": raw_location, "latitude": point[0], "longitude": point[1]}] if point else []
         recruiter_registry.append({**{key(k): v for k, v in row.items() if v not in (None, "")},
             "id": row.get("Recruiter ID", ""), "kind": "recruiter_person", "title": row.get("Name", ""),

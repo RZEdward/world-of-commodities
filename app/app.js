@@ -18,7 +18,7 @@ const state = {
   query: "",
   facet: "",
   facetValue: "",
-  sort: "name",
+  sort: "total_score",
   map: null,
   markers: new Map(),
   selected: null,
@@ -79,6 +79,10 @@ const fieldLabels = {
   score_notes: "Score notes",
   candidate_fit_score_10: "Candidate fit score /10",
   candidate_fit_notes: "Candidate fit notes",
+  role_fit_score_10: "Role fit score /10",
+  role_fit_notes: "Role fit notes",
+  expected_earnings_score_10: "Expected earnings score /10",
+  expected_earnings_notes: "Expected earnings notes",
   total_compensation_expectation_usd: "Total compensation expectation (USD/year)",
   compensation_estimate_notes: "Compensation estimate basis",
   role_desk_outlook_score_10: "Role / desk outlook score /10",
@@ -218,15 +222,51 @@ function addJobScores(item) {
   const locationRank = ranks.length ? Math.min(...ranks) : null;
   const locationScore = locationRank === null ? null : rankScore(locationRank, maxRank);
   const candidate = scoreNumber(item.candidate_fit_score_10);
+  const roleFit = scoreNumber(item.role_fit_score_10) ?? inferRoleFit(item);
   const company = scoreNumber(item.company_reputation_score_10);
   const desk = scoreNumber(item.role_desk_outlook_score_10);
-  const parts = [candidate, company, desk, locationScore];
+  const earnings = scoreNumber(item.expected_earnings_score_10) ?? inferEarningsScore(item);
+  const parts = [candidate, roleFit, company, desk, locationScore, earnings];
   const total = parts.every((value) => value !== null)
     ? parts.reduce((sum, value) => sum + value, 0) / parts.length
     : null;
   return { ...item, location_rank: locationRank, location_fit_score_10: locationScore === null ? "" : Number(locationScore.toFixed(2)),
     total_score_10: total === null ? "" : Number(total.toFixed(2)),
-    total_score_method: "Simple average of candidate fit, company reputation, desk outlook, and location score. Uses the best-ranked offered city; the owner's rank 1 scores 10/10 and the lowest ranked job city scores 6/10, with a linear scale between." };
+    role_fit_score_10: item.role_fit_score_10 ?? (roleFit === null ? "" : roleFit),
+    expected_earnings_score_10: item.expected_earnings_score_10 ?? (earnings === null ? "" : earnings),
+    total_score_method: "Equal-weight average of candidate fit, role fit, company reputation, desk outlook, location fit, and expected earnings. Location is scored linearly from 10 at rank 1 to 6 at the lowest-ranked job city." };
+}
+
+function inferRoleFit(item) {
+  const text = `${item.title || ""} ${item.role_function || item.business_function || ""} ${item.business || ""}`.toLowerCase();
+  const destination = `${item.title || ""} ${item.organization || ""}`.toLowerCase();
+  if (/power analyst/.test(destination) && /incommodities|millennium|jane street/.test(destination)) return 10;
+  if (/\b(?:analyst|trader|quant|portfolio)\b/.test(destination) && Number(item.company_reputation_score_10) >= 9 && /trading|power|gas|commodity|quant|market/.test(text)) return 10;
+  let score = 5;
+  if (/trader|trading|portfolio|power analyst/.test(text)) score = 9;
+  else if (/quant|research|market analyst|commodity analyst|origination/.test(text)) score = 8;
+  else if (/asset optim|dispatch|commercial analyst/.test(text)) score = 7;
+  else if (/consult/.test(text)) score = 6;
+  if (/operations|trade support|settlement|middle office/.test(text)) score = Math.min(score, 3);
+  if (/back office|administrative|customer service/.test(text)) score = Math.min(score, 2);
+  if (/graduate|campus hire|rotation/.test(text) && score >= 8) score -= 1;
+  return score;
+}
+
+function inferEarningsScore(item) {
+  const numbers = [...String(item.total_compensation_expectation_usd || "").matchAll(/(\d[\d,]*(?:\.\d+)?)\s*([km])?/gi)]
+    .map((match) => Number(match[1].replaceAll(",", "")) * (match[2]?.toLowerCase() === "k" ? 1000 : match[2]?.toLowerCase() === "m" ? 1000000 : 1))
+    .filter((value) => Number.isFinite(value) && value >= 1000);
+  const annual = numbers.length ? (Math.min(...numbers) + Math.max(...numbers)) / 2 : NaN;
+  if (!Number.isFinite(annual) || annual <= 0) return null;
+  if (annual >= 500000) return 10;
+  if (annual >= 300000) return 9;
+  if (annual >= 200000) return 8;
+  if (annual >= 150000) return 7;
+  if (annual >= 100000) return 6;
+  if (annual >= 75000) return 5;
+  if (annual >= 50000) return 4;
+  return 3;
 }
 
 function syncCustomDropdown(select, hostId) {
@@ -302,7 +342,7 @@ function buildPopupContent(item, location) {
   const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search", "office_source_text", "registry_offices", "scope_status"]);
   const rows = [];
 
-  const preferredOrder = ["university", "university_reputation_score_10", "university_reputation_notes", "campus", "location", "course", "course_programme_score_10", "course_programme_notes", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "candidate_fit_score_10", "course_fit_score_10", "role_desk_outlook_score_10", "total_compensation_expectation_usd", "compensation_estimate_notes", "company_reputation_score_10", "recruitment_company_score_10", "recruiter_assessment_score_10", "recruiter_relationship_score_10", "confidence", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
+  const preferredOrder = ["university", "course", "campus", "location", "owner", "status", "candidate_fit_score_10", "candidate_fit_notes", "role_fit_score_10", "role_fit_notes", "company_reputation_score_10", "company_reputation_notes", "role_desk_outlook_score_10", "role_desk_outlook_notes", "location_fit_score_10", "expected_earnings_score_10", "expected_earnings_notes", "total_score_10", "total_score_method", "total_compensation_expectation_usd", "compensation_estimate_notes", "university_reputation_score_10", "university_reputation_notes", "course_fit_score_10", "course_fit_notes", "course_programme_score_10", "course_programme_notes", "recruitment_company_score_10", "recruitment_company_score_notes", "recruiter_assessment_score_10", "recruiter_assessment_notes", "recruiter_relationship_score_10", "confidence", "intake", "deadline", "fit", "link", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
   const fields = Object.entries(item).sort(([a], [b]) => {
     const ai = preferredOrder.indexOf(a), bi = preferredOrder.indexOf(b);
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
@@ -373,10 +413,11 @@ function getFilteredItems() {
     return matchesKind && matchesFacet && haystack.includes(state.query);
   });
   const deadline = (item) => { const date = asDate(item.deadline); return date ? date.getTime() : Number.MAX_SAFE_INTEGER; };
-  const scoreSorts = { candidate_fit: "candidate_fit_score_10", company_score: "company_reputation_score_10", desk_outlook: "role_desk_outlook_score_10", total_score: "total_score_10" };
+  const scoreSorts = { candidate_fit: "candidate_fit_score_10", role_fit: "role_fit_score_10", company_score: "company_reputation_score_10", desk_outlook: "role_desk_outlook_score_10", expected_earnings: "expected_earnings_score_10", total_score: "total_score_10" };
   return filtered.sort((a, b) => scoreSorts[state.sort]
     ? (scoreNumber(b[scoreSorts[state.sort]]) ?? -1) - (scoreNumber(a[scoreSorts[state.sort]]) ?? -1) || a.title.localeCompare(b.title)
-    : state.sort === "deadline" ? deadline(a) - deadline(b) : state.sort === "owner" ? String(a.owner || "").localeCompare(String(b.owner || "")) || a.title.localeCompare(b.title) : state.sort === "category" ? String(a.category || "").localeCompare(String(b.category || "")) || a.title.localeCompare(b.title) : state.sort === "location" ? String(a.office || a.location || "").localeCompare(String(b.office || b.location || "")) : a.title.localeCompare(b.title));
+    : state.view === "locations" && state.sort === "rank" ? (Number(a.rank) || 999) - (Number(b.rank) || 999) || a.title.localeCompare(b.title)
+      : state.sort === "deadline" ? deadline(a) - deadline(b) : state.sort === "owner" ? String(a.owner || "").localeCompare(String(b.owner || "")) || a.title.localeCompare(b.title) : state.sort === "category" ? String(a.category || "").localeCompare(String(b.category || "")) || a.title.localeCompare(b.title) : state.sort === "location" ? String(a.office || a.location || "").localeCompare(String(b.office || b.location || "")) : a.title.localeCompare(b.title));
 }
 
 function renderControls() {
@@ -411,7 +452,7 @@ function renderControls() {
     : `<option value="">Match · All ${facetNoun}</option>` + values.map((entry) => `<option value="${escapeHtml(entry)}">${escapeHtml(entry)}</option>`).join("");
   if (!values.includes(state.facetValue)) state.facetValue = "";
   value.value = state.facetValue;
-  const sortOptions = locationMode ? [["name", "City", () => matchingSource.some((item) => !isPlaceholder(item.title))], ["owner", "Owner", () => matchingSource.some((item) => !isPlaceholder(item.owner))]] : companyMode ? [["name", "Name", () => matchingSource.some((item) => !isPlaceholder(item.title))], ["category", "Category", () => matchingSource.some((item) => !isPlaceholder(item.category))], ["owner", "Owner", () => matchingSource.some((item) => !isPlaceholder(item.owner))], ["location", "Location", () => matchingSource.some((item) => !isPlaceholder(item.office || item.location))]] : [["name", "Name", () => matchingSource.some((item) => !isPlaceholder(item.title))], ["deadline", "Deadline soonest", () => matchingSource.some((item) => asDate(item.deadline))], ["location", "Location", () => matchingSource.some((item) => !isPlaceholder(item.location || item.campus))], ["candidate_fit", "Candidate fit · high to low", () => matchingSource.some((item) => scoreNumber(item.candidate_fit_score_10) !== null)], ["company_score", "Company score · high to low", () => matchingSource.some((item) => scoreNumber(item.company_reputation_score_10) !== null)], ["desk_outlook", "Desk outlook · high to low", () => matchingSource.some((item) => scoreNumber(item.role_desk_outlook_score_10) !== null)], ["total_score", "Total score · high to low", () => matchingSource.some((item) => scoreNumber(item.total_score_10) !== null)], ["owner", "Owner", () => matchingSource.some((item) => !isPlaceholder(item.owner))]];
+  const sortOptions = locationMode ? [["rank", "Location rank", () => matchingSource.some((item) => Number(item.rank) > 0)], ["name", "City", () => matchingSource.some((item) => !isPlaceholder(item.title))], ["owner", "Owner", () => matchingSource.some((item) => !isPlaceholder(item.owner))]] : companyMode ? [["name", "Name", () => matchingSource.some((item) => !isPlaceholder(item.title))], ["category", "Category", () => matchingSource.some((item) => !isPlaceholder(item.category))], ["owner", "Owner", () => matchingSource.some((item) => !isPlaceholder(item.owner))], ["location", "Location", () => matchingSource.some((item) => !isPlaceholder(item.office || item.location))]] : [["total_score", "Total score · high to low", () => matchingSource.some((item) => scoreNumber(item.total_score_10) !== null)], ["deadline", "Deadline soonest", () => matchingSource.some((item) => asDate(item.deadline))], ["location", "Location", () => matchingSource.some((item) => !isPlaceholder(item.location || item.campus))], ["candidate_fit", "Candidate fit · high to low", () => matchingSource.some((item) => scoreNumber(item.candidate_fit_score_10) !== null)], ["role_fit", "Role fit · high to low", () => matchingSource.some((item) => scoreNumber(item.role_fit_score_10) !== null)], ["company_score", "Company score · high to low", () => matchingSource.some((item) => scoreNumber(item.company_reputation_score_10) !== null)], ["desk_outlook", "Desk outlook · high to low", () => matchingSource.some((item) => scoreNumber(item.role_desk_outlook_score_10) !== null)], ["expected_earnings", "Expected earnings · high to low", () => matchingSource.some((item) => scoreNumber(item.expected_earnings_score_10) !== null)], ["owner", "Owner", () => matchingSource.some((item) => !isPlaceholder(item.owner))]];
   const sorts = sortOptions.filter(([, , hasItems]) => hasItems());
   sort.innerHTML = sorts.map(([key, label]) => `<option value="${key}">Sort · ${label}</option>`).join("");
   if (!sorts.some(([key]) => key === state.sort)) state.sort = sorts[0][0];
@@ -441,7 +482,7 @@ function renderLegend() {
   } else {
     const kinds = [...new Set(getFilteredItems().map((item) => item.kind))];
     const kindNames = { job: "Jobs", masters: "Masters", recruiter: "People", university: "Universities" };
-    const kindRows = kinds.map((kind) => `<span><i class="key-dot kind-${kind === "university" ? "masters" : kind}"></i>${kindNames[kind] || kind}</span>`).join("");
+  const kindRows = kinds.map((kind) => `<span><i class="key-dot kind-${kind === "university" ? "masters" : kind}"></i>${kindNames[kind] || kind}</span>`).join("");
     const statusColors = { New: "#d7ff78", Researching: "#aab4bd", "Ready to Apply": "#54d6a5", Applied: "#69aaff", Interview: "#ffda70", Offer: "#a8e77a", Rejected: "#c47a83", Withdrawn: "#927f8b", Closed: "#6f7880", "On Hold": "#ff986c" };
     const statuses = [...new Set(state.items.filter((item) => item.locations?.length).map((item) => item.status).filter(Boolean))];
     legend.innerHTML = `${kindRows}${statuses.map((status) => `<span><i class="key-dot status-key" style="--status-color:${statusColors[status] || "#aab4bd"}"></i>${escapeHtml(status)}</span>`).join("")}`;
@@ -551,7 +592,7 @@ function render() {
   const filterOptions = locationMode
     ? [["all", "All", state.locations.length], ["jobs", "Jobs", state.locations.filter(x => x.job_search).length], ["masters", "Masters", state.locations.filter(x => x.university_search).length], ["both", "Jobs & Masters", state.locations.filter(x => x.job_search && x.university_search).length]]
     : companyMode
-    ? [["all", "All", state.institutions.length], ["company", "Companies", state.institutions.filter(x => x.kind === "company").length], ["university", "Universities", state.universities.length], ["recruitment_company", "Recruitment Companies", state.recruitmentCompanies.length], ["recruiter_person", "Recruiters", state.recruiterPeople.length]]
+    ? [["all", "All", state.institutions.length], ["company", "Companies", state.institutions.filter(x => x.kind === "company").length], ["university", "Universities", state.universities.length], ["recruiter_person", "Recruiters", state.recruiterPeople.length]]
     : [["all", "All", state.items.length], ["job", "Jobs", state.items.filter(x => x.kind === "job").length], ["masters", "Masters", state.items.filter(x => x.kind === "masters").length], ["recruiter", "People", state.items.filter(x => x.kind === "recruiter").length]];
   document.querySelector("#filters").setAttribute("aria-label", locationMode ? "Search scope" : companyMode ? "Institution type" : "Opportunity type");
   document.querySelector("#filters").innerHTML = filterOptions.filter(([key, , count]) => key === "all" || count > 0).map(([key, label, count]) => `<button class="filter ${state.filter === key ? "active" : ""}" data-filter="${key}">${label}<span>${count}</span></button>`).join("");
@@ -582,10 +623,7 @@ function render() {
           <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.organization)}</div></div><span class="status ${statusClass(item)}">${escapeHtml(item.status || "Needs review")}</span></div>
           <div class="loc">⌖ ${escapeHtml(item.location || item.campus || "Location not listed")} <span class="kind-tag">· ${escapeHtml(item.kind)}</span></div>
           ${item.kind === "job" && (item.business || item.role_function || item.business_function || item.commodity || item.market_geography || item.time_horizon) ? `<div class="loc">${escapeHtml([item.business, item.commodity, item.market_geography, item.time_horizon].filter((part) => !isPlaceholder(part)).join(" · "))}</div>` : ""}
-          ${item.kind === "job" && item.role_desk_outlook_score_10 !== undefined ? `<div class="loc">Role / desk outlook · ${ratingText(item.role_desk_outlook_score_10)}/10${isPlaceholderAssessment(item.role_desk_outlook_notes) ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "job" && item.company_reputation_score_10 !== undefined ? `<div class="loc">Company reputation · ${ratingText(item.company_reputation_score_10)}/10${isPlaceholderAssessment(item.company_reputation_notes) ? " · pending" : ""}</div>` : ""}
-          ${item.kind === "job" && item.candidate_fit_score_10 !== undefined ? `<div class="loc">Candidate fit · ${ratingText(item.candidate_fit_score_10)}/10</div>` : ""}
-          ${item.kind === "job" && item.total_score_10 !== "" ? `<div class="loc total-score">Total score · ${ratingText(item.total_score_10)}/10 <span>Fit ${ratingText(item.candidate_fit_score_10)} · Company ${ratingText(item.company_reputation_score_10)} · Desk ${ratingText(item.role_desk_outlook_score_10)} · Location ${ratingText(item.location_fit_score_10)}</span></div>` : ""}
+          ${item.kind === "job" && item.total_score_10 !== "" ? `<div class="loc total-score">Total score · ${ratingText(item.total_score_10)}/10</div>` : ""}
           ${item.kind === "masters" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${ratingText(item.university_reputation_score_10)}/10${isPlaceholderAssessment(item.university_reputation_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "masters" && item.course_programme_score_10 !== undefined ? `<div class="loc">Course / programme · ${ratingText(item.course_programme_score_10)}/10${isPlaceholderAssessment(item.course_programme_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "masters" && item.course_fit_score_10 !== undefined ? `<div class="loc">Course fit · ${ratingText(item.course_fit_score_10)}/10</div>` : ""}
@@ -744,11 +782,13 @@ async function initializeDashboard() {
       const masters = row.university_search === true || String(row.university_search).toLowerCase() === "true";
       return { jobs, masters, search_scope: jobs && masters ? "Jobs & Masters" : jobs ? "Job" : masters ? "Masters" : "", scope_key: jobs && masters ? "both" : jobs ? "jobs" : "masters" };
     };
+    const rankByCityOwner = new Map((data.location_rankings || []).map((row) => [`${String(row.owner || "").toLowerCase()}|${String(row.city || "").toLowerCase()}`, Number(row.rank)]));
     state.locations = (data.locations || []).map((row) => {
       const scope = scopeFor(row);
       const [latitude, longitude] = String(row.coordinates || "").split(",").map(Number);
       const location = { name: row.city, latitude, longitude };
-      return { ...row, ...scope, id: `location:${row.city.toLowerCase()}`, kind: "location", title: row.city, organization: "Search locations", location: row.city, latitude, longitude, locations: [location] };
+      const rank = rankByCityOwner.get(`${String(row.owner || "").toLowerCase()}|${String(row.city || "").toLowerCase()}`);
+      return { ...row, ...scope, rank, id: `location:${row.city.toLowerCase()}`, kind: "location", title: row.city, organization: "Search locations", location: row.city, latitude, longitude, locations: [location] };
     }).filter(item => item.search_scope && Number.isFinite(item.latitude) && Number.isFinite(item.longitude));
     const universityGroups = new Map();
     for (const item of state.items.filter((entry) => entry.kind === "masters")) {
@@ -761,7 +801,7 @@ async function initializeDashboard() {
       group.locations = group.locations.filter((point, index, points) => points.findIndex((other) => other.latitude === point.latitude && other.longitude === point.longitude) === index);
     }
     state.universities = data.universities?.length ? data.universities : [...universityGroups.values()];
-    state.institutions = [...state.offices, ...state.unmappedCompanies, ...state.universities, ...state.recruitmentCompanies, ...state.recruiterPeople];
+    state.institutions = [...state.offices, ...state.unmappedCompanies, ...state.universities, ...state.recruiterPeople];
     setText("#updated-label", `DATA ${data.updated_at || "—"}`);
     render();
     renderSharpness();
@@ -800,6 +840,7 @@ document.querySelectorAll(".view-button").forEach((button) => {
     document.querySelectorAll(".view-button").forEach((view) => view.classList.remove("active"));
     button.classList.add("active");
     state.view = button.dataset.view;
+    state.sort = state.view === "locations" ? "rank" : state.view === "institutions" ? "name" : "total_score";
     state.filter = "all";
     state.selected = null;
     for (const markers of state.markers.values()) for (const marker of markers) marker.getPopup()?.remove();
