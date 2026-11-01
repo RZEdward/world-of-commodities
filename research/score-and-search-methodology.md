@@ -41,10 +41,13 @@ Glassdoor and Reddit are separate employer-wide reputation signals, not desk sco
 
 ## Search workflow rules
 
-- Search and map roles only in the owner’s registered Job Search cities; universities use the separate university-search scope.
-- Preserve one role-city row per distinct application location, with a unique opportunity ID and a link to the location/office registry. Same source posting may therefore have multiple location rows.
-- Search current employer career sites first, then reputable aggregators and market-specific sources. Verify the live posting, title, location, deadline, requirements, and source URL before adding it.
+- Search and map all active job roles in the owner’s registered Job Search cities, even when a role has low candidate or role fit. Score and label lower-fit roles; do not silently exclude them.
+- Priority order: (1) report every newly found role in Hong Kong and Singapore first; (2) sweep category-by-category through companies with credible evidence of power/gas trading across all registered job cities; (3) cover remaining in-scope roles. Continue refreshing existing roles and registries during every sweep.
+- Company inclusion does not require a rigid two-source threshold. A relevant official market/auction/balancing record, company-owned LinkedIn or careers statement, or credible news/article reference can support a provisional registry entry. Record the source, exact claim, evidence type, check date, and confidence; corroborate and upgrade evidence quality over time. A casual personal post without enough context is a lead to verify, not confirmation by itself.
+- Search employer career pages and company-owned LinkedIn first, then recruiter pages, established job aggregators, and market-specific sources. Use official market-participation, capacity, balancing, FiT/CfD and related auction data to discover active traders, with each data source recorded as evidence rather than as an assumption about open jobs.
+- Verify each posting’s live status, title, city, deadline, requirements, and source URL. Deduplicate copies of the same requisition from multiple sources. When a role has several application cities, create a separate role-city row per registered city, with a unique opportunity ID and link to each city’s office registry entry. Keep the same posting URL and shared role details; application statuses can differ by city.
+- On every run, refresh open posting pages and update source-backed changes to title, location, deadline, or availability. Move a role to Expired Roles once its deadline passes, unless the live employer posting explicitly still accepts applications; preserve its source and expiry/check date. Do not change the owner or user-managed application/interview status without Ross’s update; record that update and its date when supplied.
 - Keep explicit separation between company, office/city, role, owner, application status, company reputation, candidate fit, role fit, expected earnings, and desk outlook.
-- Record evidence, checked date, and confidence for estimates. “Not stated” is appropriate only when a reasonable bounded estimate cannot be supported.
-- Recalculate scores after registry, ranking, compensation, review, or role evidence changes; then regenerate the dashboard feed from the workbook.
+- Record evidence, check date, and confidence for estimates. Use “not stated” only when a reasonable bounded estimate cannot be supported.
+- Recalculate scores after registry, ranking, compensation, review, or role evidence changes; then regenerate the dashboard feed from the workbook. Lead the daily summary with new Hong Kong/Singapore roles, then other additions, changes, closing deadlines, expired roles, and material registry evidence changes.
 
