@@ -423,13 +423,21 @@ function renderControls() {
 
 function renderLegend() {
   const legend = document.querySelector("#legend-items");
+  const legendItem = (name, color) => `<span><i class="key-dot" style="background:${color}"></i>${escapeHtml(name)}</span>`;
   if (state.view === "locations") {
     const scopes = [...new Set(getFilteredItems().map((item) => item.search_scope))];
     const colors = { "Job": "#70c8b4", "Masters": "#c1a0ff", "Jobs & Masters": "#d7ff78" };
     legend.innerHTML = scopes.map((scope) => `<span><i class="key-dot" style="background:${colors[scope]}"></i>${escapeHtml(scope)}</span>`).join("");
-  } else if (state.view === "institutions" && state.filter !== "university") {
+  } else if (state.view === "institutions" && state.filter === "recruiter_person") {
+    legend.innerHTML = legendItem("Recruiters", "#ffb86e");
+  } else if (state.view === "institutions" && state.filter === "recruitment_company") {
+    legend.innerHTML = "";
+  } else if (state.view === "institutions" && state.filter === "university") {
+    legend.innerHTML = legendItem("Universities", "#c1a0ff");
+  } else if (state.view === "institutions") {
     const categories = [...new Set(state.offices.filter((item) => item.locations?.length).map((item) => String(item.category || "").split(";")[0].trim()).filter(Boolean))];
-    legend.innerHTML = categories.map((category) => `<span><i class="key-dot" style="background:${categoryColor(category)}"></i>${escapeHtml(category)}</span>`).join("");
+    legend.innerHTML = categories.map((category) => legendItem(category, categoryColor(category))).join("");
+    if (state.filter === "all") legend.innerHTML += legendItem("Universities", "#c1a0ff") + legendItem("Recruiters", "#ffb86e");
   } else {
     const kinds = [...new Set(getFilteredItems().map((item) => item.kind))];
     const kindNames = { job: "Jobs", masters: "Masters", recruiter: "People", university: "Universities" };
@@ -620,7 +628,7 @@ function selectItem(id, flyTo) {
 
 function createMarker(item, location) {
   const element = document.createElement("div");
-  const kindColors = { job: "#73d8f4", masters: "#c1a0ff", recruiter: "#ffb86e" };
+  const kindColors = { job: "#73d8f4", masters: "#c1a0ff", recruiter: "#ffb86e", recruiter_person: "#ffb86e", recruitment_company: "#70c8b4", university: "#c1a0ff" };
   const statusBorders = {
     New: "#d7ff78",
     Researching: "#aab4bd",
