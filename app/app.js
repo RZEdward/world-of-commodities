@@ -335,6 +335,23 @@ function buildPopupContent(item, location) {
   }
   const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search", "office_source_text", "registry_offices", "scope_status"]);
   const rows = [];
+  const jobImmediateRows = [];
+  const jobDetailRows = [];
+  const jobScoreKeys = new Set([
+    "total_score_10", "total_score_status", "total_score_method",
+    "candidate_fit_score_10", "candidate_fit_notes",
+    "role_fit_score_10", "role_fit_notes",
+    "company_reputation_score_10", "company_reputation_notes",
+    "role_desk_outlook_score_10", "role_desk_outlook_notes",
+    "expected_earnings_score_10", "expected_earnings_notes",
+    "location_fit_score_10",
+  ]);
+  const immediateJobKeys = new Set(["location", "owner", "status", "deadline", "total_compensation_expectation_usd"]);
+  const pushRow = (markup, key) => {
+    if (item.kind !== "job") rows.push(markup);
+    else if (immediateJobKeys.has(key)) jobImmediateRows.push(markup);
+    else jobDetailRows.push(markup);
+  };
 
   const preferredOrder = ["university", "course", "campus", "location", "owner", "status", "company_priority_rank", "company_priority_tier", "company_search_focus", "company_priority_rationale", "candidate_fit_score_10", "candidate_fit_notes", "role_fit_score_10", "role_fit_notes", "company_reputation_score_10", "company_reputation_notes", "role_desk_outlook_score_10", "role_desk_outlook_notes", "location_fit_score_10", "expected_earnings_score_10", "expected_earnings_notes", "total_score_10", "total_score_method", "total_compensation_expectation_usd", "compensation_estimate_notes", "university_reputation_score_10", "university_reputation_notes", "course_fit_score_10", "course_fit_notes", "course_programme_score_10", "course_programme_notes", "recruitment_company_score_10", "recruitment_company_score_notes", "recruiter_assessment_score_10", "recruiter_assessment_notes", "recruiter_relationship_score_10", "confidence", "intake", "deadline", "fit", "link", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
   const fields = Object.entries(item).sort(([a], [b]) => {
@@ -342,6 +359,7 @@ function buildPopupContent(item, location) {
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
   });
   for (const [key, rawValue] of fields) {
+    if (item.kind === "job" && jobScoreKeys.has(key)) continue;
     if (item.kind === "masters" && (key === "confidence" || key === "fit")) continue;
     if (item.kind === "job" && (key === "confidence" || key === "fit")) continue;
     const showUnspecifiedDeadline = item.kind === "job" && key === "deadline" && isPlaceholder(rawValue);
@@ -365,7 +383,7 @@ function buildPopupContent(item, location) {
       ? item.kind === "masters" ? "Location" : item.kind === "company" ? "Office" : "Location"
       : fieldLabels[key] || key.replaceAll("_", " ").replace(/\b\w/g, (letter) => letter.toUpperCase());
     const rendered = key === "glassdoor_sources_search" || key === "reddit_sources_search" ? sourceLinks(value) || escapeHtml(value) : escapeHtml(value);
-    rows.push(`<div class="map-popup-row"><dt>${escapeHtml(label)}</dt><dd>${rendered}</dd></div>`);
+    pushRow(`<div class="map-popup-row"><span class="map-popup-label">${escapeHtml(label)}</span><span class="map-popup-value">${rendered}</span></div>`, key);
   }
 
   const posted = asDate(item.posted);
@@ -381,9 +399,30 @@ function buildPopupContent(item, location) {
     deadlineValue = days < 0 ? `${magnitude} ${unit} past` : `${days} ${unit}`;
   }
   if (item.kind !== "company") {
-    if (postedValue) rows.push(`<div class="map-popup-row"><dt>Days since posted</dt><dd>${escapeHtml(postedValue)}</dd></div>`);
-    if (deadlineValue) rows.push(`<div class="map-popup-row"><dt>Days until deadline</dt><dd>${escapeHtml(deadlineValue)}</dd></div>`);
+    if (postedValue) pushRow(`<div class="map-popup-row"><span class="map-popup-label">Days since posted</span><span class="map-popup-value">${escapeHtml(postedValue)}</span></div>`, "days_since_posted");
+    if (deadlineValue) pushRow(`<div class="map-popup-row"><span class="map-popup-label">Days until deadline</span><span class="map-popup-value">${escapeHtml(deadlineValue)}</span></div>`, "days_until_deadline");
   }
+
+  const scoreRows = item.kind === "job" ? [
+    ["total_score_10", "Total score", "total_score_method", "total_score_status"],
+    ["candidate_fit_score_10", "Candidate fit", "candidate_fit_notes"],
+    ["role_fit_score_10", "Role fit", "role_fit_notes"],
+    ["company_reputation_score_10", "Company reputation", "company_reputation_notes"],
+    ["role_desk_outlook_score_10", "Desk outlook", "role_desk_outlook_notes"],
+    ["expected_earnings_score_10", "Expected earnings", "expected_earnings_notes"],
+    ["location_fit_score_10", "Location fit", ""],
+  ].filter(([key]) => scoreNumber(item[key]) !== null).map(([key, label, noteKey, statusKey]) => {
+    let note = noteKey ? item[noteKey] : "";
+    if (key === "location_fit_score_10") {
+      const weight = Number(state.scoreModel?.job_total_weights?.location);
+      const swing = Number(state.scoreModel?.location_max_total_contribution_swing);
+      note = `Based on the owner-ranked location, scaled within the agreed 6–10 range.${Number.isFinite(weight) ? ` Weight: ${Math.round(weight * 100)}% of total.` : ""}${Number.isFinite(swing) ? ` Maximum total-score impact: ${swing.toFixed(1)} point.` : ""}`;
+    }
+    const score = `${ratingText(item[key])}/10`;
+    const accessibleNote = note ? ` ${String(note).replace(/\s+/g, " ").trim()}` : "";
+    return `<tr class="${key === "total_score_10" ? "score-total" : ""}"><th scope="row">${escapeHtml(label)}</th><td class="score-value" tabindex="0" aria-label="${escapeHtml(`${label}: ${score}.${accessibleNote}`)}"${note ? ` data-note="${escapeHtml(note)}"` : ""}>${escapeHtml(score)}${statusKey && item[statusKey] ? `<span class="score-status">${escapeHtml(String(item[statusKey]).toLowerCase())}</span>` : ""}</td></tr>`;
+  }).join("") : "";
+  const scoreSummary = scoreRows ? `<section class="score-summary" aria-label="Opportunity scores"><table><thead><tr><th>Score</th><th>/10</th></tr></thead><tbody>${scoreRows}</tbody></table></section>` : "";
 
   const source = /^https?:\/\//i.test(item.source_url || "")
     ? `<a class="map-popup-source" href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener">Open source ↗</a>`
@@ -397,10 +436,45 @@ function buildPopupContent(item, location) {
   return `<div class="map-popup">
     <div class="map-popup-title ${item.kind === "company" ? "company-title" : ""}">${escapeHtml(item.title)}</div>
     <div class="map-popup-organization">${escapeHtml(item.organization)} · ${escapeHtml(mapLocation)}</div>
-    <dl class="map-popup-fields">${rows.join("")}</dl>
+    <div class="map-popup-fields">${item.kind === "job" ? `${jobImmediateRows.join("")}${scoreSummary}${jobDetailRows.join("")}` : rows.join("")}</div>
     ${activityHtml}
     ${source}
   </div>`;
+}
+
+function attachScoreTooltips(popupElement) {
+  for (const cell of popupElement.querySelectorAll(".score-value[data-note]")) {
+    if (cell.dataset.tooltipReady) continue;
+    cell.dataset.tooltipReady = "true";
+    let tooltip;
+    const hide = () => {
+      tooltip?.remove();
+      tooltip = null;
+    };
+    const show = () => {
+      hide();
+      tooltip = document.createElement("div");
+      tooltip.className = "score-tooltip";
+      tooltip.setAttribute("role", "tooltip");
+      tooltip.textContent = cell.dataset.note;
+      document.body.append(tooltip);
+      const rect = cell.getBoundingClientRect();
+      const box = tooltip.getBoundingClientRect();
+      let left = rect.right + 10;
+      if (left + box.width > window.innerWidth - 8) left = rect.left - box.width - 10;
+      left = Math.max(8, Math.min(left, window.innerWidth - box.width - 8));
+      const top = Math.max(8, Math.min(rect.top, window.innerHeight - box.height - 8));
+      tooltip.style.left = `${left}px`;
+      tooltip.style.top = `${top}px`;
+    };
+    cell.addEventListener("mouseenter", show);
+    cell.addEventListener("mouseleave", hide);
+    cell.addEventListener("focus", show);
+    cell.addEventListener("blur", hide);
+    cell.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") hide();
+    });
+  }
 }
 
 function getFilteredItems() {
@@ -698,9 +772,11 @@ function createMarker(item, location) {
     cursor: pointer;`;
 
   const popupContent = buildPopupContent(item, location);
+  const popup = new maplibregl.Popup({ offset: 13, maxWidth: "360px", closeButton: true, closeOnClick: true, focusAfterOpen: false }).setHTML(popupContent);
+  popup.on("open", () => attachScoreTooltips(popup.getElement()));
   const marker = new maplibregl.Marker({ element })
     .setLngLat([location.longitude, location.latitude])
-    .setPopup(new maplibregl.Popup({ offset: 13, maxWidth: "360px", closeButton: true, closeOnClick: true, focusAfterOpen: false }).setHTML(popupContent))
+    .setPopup(popup)
     .addTo(state.map);
   marker.memberIds = item.memberIds || [item.id];
 
