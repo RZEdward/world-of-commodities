@@ -240,10 +240,12 @@ def main() -> None:
     truth = lambda value: str(value).strip().lower() in ("true", "1", "yes")
     locations_by_id = {r.get("Location ID", ""): r for r in sheets.get("Location Registry", []) if r.get("Location ID")}
     locations_by_city = {r.get("City", "").casefold(): r for r in sheets.get("Location Registry", []) if r.get("City")}
+    job_search_location_ids = {r.get("Location ID", "") for r in sheets.get("Location Registry", []) if r.get("Location ID") and truth(r.get("Job Search"))}
     company_rows = sheets.get("Company Registry", [])
     # Calculate the missing-Reddit scale factor from paired observed scores on
     # each export. Imputed, indirect, and unverified Reddit scores never train it.
     observed_ratios = []
+    category_observed_ratios = {}
     for row in company_rows:
         if row.get("Glassdoor Score Basis") != "Observed" or row.get("Reddit Score Basis") != "Observed":
             continue
@@ -254,8 +256,25 @@ def main() -> None:
             continue
         if 0 < glassdoor <= 10 and 0 <= reddit <= 10:
             observed_ratios.append(reddit / glassdoor)
-    reddit_glassdoor_ratio = statistics.median(observed_ratios) if observed_ratios else None
     score_model = {str(r.get("Metric", "")).strip(): r.get("Value", "") for r in sheets.get("Score Model", [])}
+    try:
+        category_ratio_minimum = int(float(score_model.get("Minimum paired scores for category ratio", 5)))
+        global_ratio_minimum = int(float(score_model.get("Minimum paired scores for global ratio", 2)))
+        neutral_reddit_score = float(score_model.get("Neutral Reddit estimate when no pair exists", 6))
+    except (TypeError, ValueError):
+        category_ratio_minimum, global_ratio_minimum, neutral_reddit_score = 5, 2, 6.0
+    for row in company_rows:
+        if row.get("Glassdoor Score Basis") != "Observed" or row.get("Reddit Score Basis") != "Observed":
+            continue
+        try:
+            glassdoor = float(row.get("Glassdoor Score /10", ""))
+            reddit = float(row.get("Reddit Score /10", ""))
+        except (TypeError, ValueError):
+            continue
+        if 0 < glassdoor <= 10 and 0 <= reddit <= 10:
+            category_observed_ratios.setdefault(row.get("Category", ""), []).append(reddit / glassdoor)
+    reddit_glassdoor_ratio = statistics.median(observed_ratios) if len(observed_ratios) >= global_ratio_minimum else None
+    category_reddit_glassdoor_ratios = {category: statistics.median(ratios) for category, ratios in category_observed_ratios.items() if len(ratios) >= category_ratio_minimum}
     try:
         glassdoor_weight = float(score_model.get("Glassdoor weight", 0.75))
         reddit_weight = float(score_model.get("Reddit weight", 0.25))
@@ -266,6 +285,19 @@ def main() -> None:
     weight_total = glassdoor_weight + reddit_weight
     glassdoor_weight /= weight_total
     reddit_weight /= weight_total
+    job_weight_names = {
+        "candidate_fit": "Candidate fit", "role_fit": "Role fit", "desk_outlook": "Desk outlook",
+        "expected_earnings": "Expected earnings", "company_reputation": "Company reputation", "location": "Location",
+    }
+    job_total_weights = {}
+    for key_name, label in job_weight_names.items():
+        try:
+            job_total_weights[key_name] = float(score_model[f"Job weight: {label}"])
+        except (KeyError, TypeError, ValueError):
+            job_total_weights = {}
+            break
+    if job_total_weights and (any(value < 0 for value in job_total_weights.values()) or abs(sum(job_total_weights.values()) - 1.0) > 0.001):
+        job_total_weights = {}
 
     companies = {}
     for source_row in company_rows:
@@ -281,11 +313,22 @@ def main() -> None:
             reddit = float(row.get("Reddit Score /10", ""))
         except (TypeError, ValueError):
             reddit = None
-        if row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") == "Estimated" and glassdoor is not None and reddit_glassdoor_ratio is not None:
-            reddit = round(min(10.0, max(0.0, glassdoor * reddit_glassdoor_ratio)), 1)
+        category = row.get("Category", "")
+        company_ratio = category_reddit_glassdoor_ratios.get(category, reddit_glassdoor_ratio)
+        category_n = len(category_observed_ratios.get(category, []))
+        if row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") == "Estimated" and glassdoor is not None:
+            if company_ratio is None:
+                reddit = round(min(10.0, max(0.0, neutral_reddit_score)), 1)
+                method = f"neutral Reddit estimate {neutral_reddit_score:g}/10; fewer than {global_ratio_minimum} observed pairs are available for a live platform ratio"
+            else:
+                reddit = round(min(10.0, max(0.0, glassdoor * company_ratio)), 1)
+                if category in category_reddit_glassdoor_ratios:
+                    method = f"live {category} median ratio from {category_n} observed pairs"
+                else:
+                    method = f"live global median ratio from {len(observed_ratios)} observed pairs; {category_n} in category, below the {category_ratio_minimum}-pair threshold"
             row["Reddit Score /10"] = reddit
-            row["Reddit Notes"] = (f"Estimated from observed Glassdoor score using the live median Reddit/Glassdoor ratio recalculated from {len(observed_ratios)} observed company pairs; indirect, estimated and unverified evidence is excluded. "
-                                   "Company/category differences and reviewer standards make this a provisional cross-platform estimate, not a desk-specific assessment.")
+            row["Reddit Notes"] = (f"Estimated from observed Glassdoor score using the {method}. Only paired observed scores train the ratio; estimated, indirect, unverified, and older-than-five-years evidence is excluded. "
+                                   "Company-category norms and reviewer context matter; this is a provisional cross-platform estimate, not a desk-specific assessment.")
         if glassdoor is not None and reddit is not None and row.get("Glassdoor Score Basis") == "Observed" and row.get("Reddit Score Basis") in ("Observed", "Estimated"):
             row["Company Reputation Score /10"] = round(glassdoor * glassdoor_weight + reddit * reddit_weight, 1)
         companies[company_id] = row
@@ -300,7 +343,7 @@ def main() -> None:
         office_by_company.setdefault(row["Company ID"], []).append(row)
     job_links = {}
     for link in sheets.get("Job Location Links", []):
-        if link.get("Location ID") not in locations_by_id:
+        if link.get("Location ID") not in locations_by_id or link.get("Location ID") not in job_search_location_ids:
             continue
         if link.get("Office ID") and link.get("Office ID") not in office_by_id:
             continue
@@ -431,8 +474,15 @@ def main() -> None:
         "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
         "location_rankings": location_rankings,
         "score_model": {"reddit_glassdoor_ratio": round(reddit_glassdoor_ratio, 4) if reddit_glassdoor_ratio is not None else None,
-            "ratio_method": "live median of paired observed Glassdoor and Reddit scores", "observed_pair_count": len(observed_ratios),
-            "glassdoor_weight": round(glassdoor_weight, 4), "reddit_weight": round(reddit_weight, 4)},
+            "ratio_method": "category median after the paired-sample threshold; otherwise live global median", "observed_pair_count": len(observed_ratios),
+            "category_ratio_pair_threshold": category_ratio_minimum, "global_ratio_pair_threshold": global_ratio_minimum,
+            "category_pair_counts": {category: len(ratios) for category, ratios in category_observed_ratios.items()},
+            "glassdoor_weight": round(glassdoor_weight, 4), "reddit_weight": round(reddit_weight, 4),
+            "job_total_weights": job_total_weights,
+            "location_floor": 6, "location_ceiling": 10,
+            "location_max_total_contribution_swing": round(4 * job_total_weights.get("location", 0), 2) if job_total_weights else None,
+            "role_fit_smoothing_cap": 0.6,
+            "multi_city_rule": "one role-city row per registered job-search city"},
         "inbox": sheets.get("Research Inbox", []), "search_runs": sheets.get("Search Runs", []), "activities": sheets.get("Activity Log", []),
         "scope": sheets.get("Search Scope", []), "taxonomy": sheets.get("Taxonomy Registry", []),
         "office_research_queue": sheets.get("Office Research Queue", []),

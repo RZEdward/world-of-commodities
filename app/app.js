@@ -13,6 +13,7 @@ const state = {
   institutions: [],
   locations: [],
   locationRankings: [],
+  scoreModel: null,
   view: "opportunities",
   filter: "all",
   query: "",
@@ -220,54 +221,35 @@ function addJobScores(item) {
   const maxRank = validRanks.length ? Math.max(...validRanks) : null;
   const offeredCities = String(item.location || "").split(/[;|]/).map((city) => city.trim().toLowerCase()).filter(Boolean);
   const ranks = offeredCities.map((city) => rankByCity.get(city)).filter(Number.isFinite);
+  // Workbook rows are one role per city. For legacy multi-city rows, score the
+  // best city because it is the application location the owner would choose.
   const locationRank = ranks.length ? Math.min(...ranks) : null;
   const locationScore = locationRank === null ? null : rankScore(locationRank, maxRank);
-  const candidate = scoreNumber(item.candidate_fit_score_10);
-  const roleFit = scoreNumber(item.role_fit_score_10) ?? inferRoleFit(item);
-  const company = scoreNumber(item.company_reputation_score_10);
-  const desk = scoreNumber(item.role_desk_outlook_score_10);
-  const earnings = scoreNumber(item.expected_earnings_score_10) ?? inferEarningsScore(item);
-  const parts = [candidate, roleFit, company, desk, locationScore, earnings];
-  const total = parts.every((value) => value !== null)
-    ? parts.reduce((sum, value) => sum + value, 0) / parts.length
+  const scores = {
+    candidate_fit: scoreNumber(item.candidate_fit_score_10),
+    role_fit: scoreNumber(item.role_fit_score_10),
+    desk_outlook: scoreNumber(item.role_desk_outlook_score_10),
+    expected_earnings: scoreNumber(item.expected_earnings_score_10),
+    company_reputation: scoreNumber(item.company_reputation_score_10),
+    location: locationScore,
+  };
+  const weights = state.scoreModel?.job_total_weights || {};
+  const requiredKeys = ["candidate_fit", "role_fit", "desk_outlook", "expected_earnings", "company_reputation", "location"];
+  const validWeights = requiredKeys.every((key) => Number.isFinite(Number(weights[key])) && Number(weights[key]) >= 0)
+    && Math.abs(requiredKeys.reduce((sum, key) => sum + Number(weights[key]), 0) - 1) < 0.001;
+  const completeScores = requiredKeys.every((key) => scores[key] !== null);
+  const total = validWeights && completeScores
+    ? requiredKeys.reduce((sum, key) => sum + scores[key] * Number(weights[key]), 0)
     : null;
+  const noteText = [item.candidate_fit_notes, item.role_fit_notes, item.role_desk_outlook_notes, item.expected_earnings_notes, item.company_reputation_notes]
+    .filter(Boolean).join(" ");
+  const provisional = /estimate|estimated|provisional|proxy|low confidence|inferred/i.test(noteText)
+    || item.verification !== "verified";
+  const weightLabel = validWeights ? requiredKeys.map((key) => `${key.replaceAll("_", " ")} ${Math.round(Number(weights[key]) * 100)}%`).join(", ") : "weights unavailable";
   return { ...item, location_rank: locationRank, location_fit_score_10: locationScore === null ? "" : Number(locationScore.toFixed(2)),
-    total_score_10: total === null ? "" : Number(total.toFixed(2)),
-    role_fit_score_10: item.role_fit_score_10 ?? (roleFit === null ? "" : roleFit),
-    expected_earnings_score_10: item.expected_earnings_score_10 ?? (earnings === null ? "" : earnings),
-    total_score_method: "Equal-weight average of candidate fit, role fit, company reputation, desk outlook, location fit, and expected earnings. Location is scored linearly from 10 at rank 1 to 6 at the lowest-ranked job city." };
-}
-
-function inferRoleFit(item) {
-  const text = `${item.title || ""} ${item.role_function || item.business_function || ""} ${item.business || ""}`.toLowerCase();
-  const destination = `${item.title || ""} ${item.organization || ""}`.toLowerCase();
-  if (/power analyst/.test(destination) && /incommodities|millennium|jane street/.test(destination)) return 10;
-  if (/\b(?:analyst|trader|quant|portfolio)\b/.test(destination) && Number(item.company_reputation_score_10) >= 9 && /trading|power|gas|commodity|quant|market/.test(text)) return 10;
-  let score = 5;
-  if (/trader|trading|portfolio|power analyst/.test(text)) score = 9;
-  else if (/quant|research|market analyst|commodity analyst|origination/.test(text)) score = 8;
-  else if (/asset optim|dispatch|commercial analyst/.test(text)) score = 7;
-  else if (/consult/.test(text)) score = 6;
-  if (/operations|trade support|settlement|middle office/.test(text)) score = Math.min(score, 3);
-  if (/back office|administrative|customer service/.test(text)) score = Math.min(score, 2);
-  if (/graduate|campus hire|rotation/.test(text) && score >= 8) score -= 1;
-  return score;
-}
-
-function inferEarningsScore(item) {
-  const numbers = [...String(item.total_compensation_expectation_usd || "").matchAll(/(\d[\d,]*(?:\.\d+)?)\s*([km])?/gi)]
-    .map((match) => Number(match[1].replaceAll(",", "")) * (match[2]?.toLowerCase() === "k" ? 1000 : match[2]?.toLowerCase() === "m" ? 1000000 : 1))
-    .filter((value) => Number.isFinite(value) && value >= 1000);
-  const annual = numbers.length ? (Math.min(...numbers) + Math.max(...numbers)) / 2 : NaN;
-  if (!Number.isFinite(annual) || annual <= 0) return null;
-  if (annual >= 500000) return 10;
-  if (annual >= 300000) return 9;
-  if (annual >= 200000) return 8;
-  if (annual >= 150000) return 7;
-  if (annual >= 100000) return 6;
-  if (annual >= 75000) return 5;
-  if (annual >= 50000) return 4;
-  return 3;
+    total_score_10: total === null ? "" : Number(total.toFixed(1)),
+    total_score_status: total === null ? "Incomplete" : provisional ? "Provisional" : "Supported",
+    total_score_method: `Weighted average: ${weightLabel}. Location is 6–10 from rank; at 25% weight it can change the total by at most 1.0 point. Multi-city postings are separate role-city rows.` };
 }
 
 function syncCustomDropdown(select, hostId) {
@@ -628,7 +610,7 @@ function render() {
           <div class="opportunity-head"><div><h2>${escapeHtml(item.title)}</h2><div class="org">${escapeHtml(item.organization)}</div></div><span class="status ${statusClass(item)}">${escapeHtml(item.status || "Needs review")}</span></div>
           <div class="loc">⌖ ${escapeHtml(item.location || item.campus || "Location not listed")} <span class="kind-tag">· ${escapeHtml(item.kind)}</span></div>
           ${item.kind === "job" && (item.business || item.role_function || item.business_function || item.commodity || item.market_geography || item.time_horizon) ? `<div class="loc">${escapeHtml([item.business, item.commodity, item.market_geography, item.time_horizon].filter((part) => !isPlaceholder(part)).join(" · "))}</div>` : ""}
-          ${item.kind === "job" && item.total_score_10 !== "" ? `<div class="loc total-score">Total score · ${ratingText(item.total_score_10)}/10</div>` : ""}
+          ${item.kind === "job" && item.total_score_10 !== "" ? `<div class="loc total-score">Total score · ${ratingText(item.total_score_10)}/10${item.total_score_status === "Provisional" ? " · provisional" : ""}</div>` : ""}
           ${item.kind === "masters" && item.university_reputation_score_10 !== undefined ? `<div class="loc">University reputation · ${ratingText(item.university_reputation_score_10)}/10${isPlaceholderAssessment(item.university_reputation_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "masters" && item.course_programme_score_10 !== undefined ? `<div class="loc">Course / programme · ${ratingText(item.course_programme_score_10)}/10${isPlaceholderAssessment(item.course_programme_notes) ? " · pending" : ""}</div>` : ""}
           ${item.kind === "masters" && item.course_fit_score_10 !== undefined ? `<div class="loc">Course fit · ${ratingText(item.course_fit_score_10)}/10</div>` : ""}
@@ -774,6 +756,7 @@ async function initializeDashboard() {
 
     const data = await response.json();
     state.items = data.opportunities || [];
+    state.scoreModel = data.score_model || null;
     state.locationRankings = data.location_rankings || [];
     state.items = state.items.map(addJobScores);
     state.activities = data.activities || [];
