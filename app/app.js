@@ -127,6 +127,7 @@ const categoryColors = {
   "Analytics / Data Provider": "#a9c5db",
   "Market Reporting / News": "#f4b978",
   "Energy Software / Optimization": "#e58ce8",
+  "Consulting / Professional Services": "#e7a1a8",
 };
 
 function categoryColor(value) {
@@ -348,9 +349,12 @@ function buildPopupContent(item, location) {
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
   });
   for (const [key, rawValue] of fields) {
+    if (item.kind === "masters" && (key === "confidence" || key === "fit")) continue;
     if (omitted.has(key) || key.endsWith("_id") || rawValue == null || rawValue === "" || isPlaceholder(rawValue) || (item.kind === "job" && key === "category")) continue;
     if (key === "source_url" && item.link) continue;
-    const value = key === "total_compensation_expectation_usd" && Number.isFinite(Number(rawValue))
+    const value = key.endsWith("_score_10") && Number.isFinite(Number(rawValue))
+      ? (Math.round(Number(rawValue) * 10) / 10).toFixed(1).replace(/\.0$/, "")
+      : key === "total_compensation_expectation_usd" && Number.isFinite(Number(rawValue))
       ? `USD ${Math.round(Number(rawValue)).toLocaleString()}/year`
       : key === "kind" || key === "verification"
       ? String(rawValue).replace(/^\w/, (letter) => letter.toUpperCase())
