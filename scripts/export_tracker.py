@@ -155,7 +155,7 @@ def taxonomy_for(record: dict[str, str]) -> dict[str, str]:
             "market_geography": geography, "time_horizon": horizon}
 
 def locations_for(record: dict[str, str], kind: str) -> list[dict]:
-    raw = record.get("Coordinates", "") if kind in ("job", "office") else record.get("Location", "") if kind == "recruiter" else ""
+    raw = record.get("Coordinates", "") if kind in ("office", "masters") else record.get("Location", "") if kind == "recruiter" else ""
     parsed = []
     if raw:
         for part in re.split(r"\s*[;|]\s*", raw):
@@ -167,7 +167,7 @@ def locations_for(record: dict[str, str], kind: str) -> list[dict]:
             else:
                 point = point_for(part)
                 if point:
-                    name = part.strip() if kind == "recruiter" else record.get("Office", "") if kind == "office" else record.get("Location", "")
+                    name = part.strip() if kind == "recruiter" else record.get("Office", "") if kind == "office" else record.get("Campus", "") if kind == "masters" else record.get("Location", "")
                     parsed.append({"name": name, "latitude": point[0], "longitude": point[1]})
     if not parsed:
         location = record.get("Location", "") if kind in ("job", "recruiter") else record.get("Office", "") if kind == "office" else f"{record.get('Campus','')} {record.get('Location','')}"
@@ -180,92 +180,137 @@ def locations_for(record: dict[str, str], kind: str) -> list[dict]:
         unique[(item["latitude"], item["longitude"])] = item
     return list(unique.values())
 
+def in_job_search_scope(record: dict[str, str], job_cities: list[str]) -> bool:
+    location = str(record.get("Location", "")).casefold()
+    return any(re.search(rf"(?<![a-z]){re.escape(city.casefold())}(?![a-z])", location) for city in job_cities)
+
+def scoped_job_location(record: dict[str, str], job_cities: list[str]) -> str:
+    """Show only searched cities when a posting lists both in- and out-of-scope offices."""
+    location = str(record.get("Location", "")).casefold()
+    matches = [city for city in job_cities
+               if re.search(rf"(?<![a-z]){re.escape(city.casefold())}(?![a-z])", location)]
+    return ", ".join(matches)
+
+def locations_from_office_references(record: dict[str, str], office_lookup: dict[tuple[str, str], dict[str, str]]) -> list[dict]:
+    company = str(record.get("Company", "")).strip().casefold()
+    refs = [part.strip() for part in str(record.get("Office", "")).split(";") if part.strip()]
+    parsed = []
+    for reference in refs:
+        office = office_lookup.get((company, reference.casefold()))
+        if not office:
+            continue
+        raw = str(office.get("Coordinates", ""))
+        match = re.search(r"(-?\d+(?:\.\d+)?)\s*,\s*(-?\d+(?:\.\d+)?)", raw)
+        if match:
+            parsed.append({"name": str(office.get("Office", reference)), "latitude": float(match.group(1)), "longitude": float(match.group(2))})
+    unique = {}
+    for item in parsed:
+        unique[(item["latitude"], item["longitude"])] = item
+    return list(unique.values())
+
 def main() -> None:
     sheets = read_sheets()
+    truth = lambda value: str(value).strip().lower() in ("true", "1", "yes")
+    locations_by_id = {r.get("Location ID", ""): r for r in sheets.get("Location Registry", []) if r.get("Location ID")}
+    locations_by_city = {r.get("City", "").casefold(): r for r in sheets.get("Location Registry", []) if r.get("City")}
+    companies = {r.get("Company ID", ""): r for r in sheets.get("Company Registry", []) if r.get("Company ID")}
+    categories = {r.get("Company", "").casefold(): r.get("Category", "") for r in sheets.get("Company Registry", [])}
+    office_rows = [r for r in sheets.get("Office Registry", []) if r.get("Office ID") and r.get("Company ID")]
+    office_by_id = {r["Office ID"]: r for r in office_rows}
+    office_by_company = {}
+    for row in office_rows:
+        office_by_company.setdefault(row["Company ID"], []).append(row)
+    job_links = {}
+    for link in sheets.get("Job Location Links", []):
+        job_links.setdefault(link.get("Opportunity ID", ""), []).append(link)
+    campus_by_id = {r.get("Campus ID", ""): r for r in sheets.get("Campus Registry", []) if r.get("Campus ID")}
     entries = []
-    for kind, sheet_name in (("job", "Jobs"), ("masters", "Masters"), ("recruiter", "Recruiters")):
+    for row in sheets.get("Jobs", []):
+        if row.get("Scope Status") != "In Scope":
+            continue
+        payload = {key(k): v for k, v in row.items() if v not in (None, "")}
+        places, labels, city_labels = [], [], []
+        for link in job_links.get(row.get("Opportunity ID", ""), []):
+            office = office_by_id.get(link.get("Office ID", ""))
+            loc = locations_by_id.get(link.get("Location ID", ""))
+            if office:
+                point = point_for(office.get("Coordinates", ""))
+                label = office.get("Office", "")
+            else:
+                point = point_for(loc.get("Coordinates", "")) if loc else None
+                label = link.get("City", "")
+            if label and label not in labels: labels.append(label)
+            city = link.get("City", "")
+            if city and city not in city_labels: city_labels.append(city)
+            if point: places.append({"name": label or city, "latitude": point[0], "longitude": point[1]})
+        places = list({(p["latitude"], p["longitude"]): p for p in places}.values())
+        title, org = row.get("Role", ""), row.get("Company", "")
+        payload.update({"id": row.get("Opportunity ID", ""), "company_id": row.get("Company ID", ""), "kind": "job", "title": title, "organization": org,
+            "source_url": row.get("Link", ""), "location": "; ".join(city_labels), "office": "; ".join(labels), "locations": places,
+            "category": categories.get(org.casefold(), ""), "verification": "verified" if row.get("Source check", "").lower() == "verified" else "needs_review"})
+        payload["office_source_text"] = row.get("Office(s) (source text)", "")
+        payload["registry_offices"] = row.get("Office(s) (registry links)", "")
+        payload.pop("office_s_source_text", None)
+        payload.pop("office_s_registry_links", None)
+        payload.pop("function_market", None)
+        entries.append(payload)
+    for kind, sheet_name, title_col, org_col in (("masters", "Masters", "Course", "University"), ("recruiter", "Recruiters", "Name", "Company")):
         for row in sheets.get(sheet_name, []):
-            payload = {key(k): v for k, v in row.items() if v}
-            if kind == "job":
-                title, org, source = payload.get("role", ""), payload.get("company", ""), payload.get("link", "")
-                payload["source_url"] = source
-                if not any(payload.get(name) for name in ("business_function", "commodity", "market_geography", "time_horizon")):
-                    payload.update(taxonomy_for(row))
-                payload.pop("function_market", None)
-            elif kind == "masters":
-                title, org, source = payload.get("course", ""), payload.get("university", ""), payload.get("link", "")
-                payload["source_url"] = source
+            payload = {key(k): v for k, v in row.items() if v not in (None, "")}
+            if kind == "masters":
+                campus = campus_by_id.get(row.get("Campus ID", ""), {})
+                point = point_for(campus.get("Coordinates", "") or row.get("Coordinates", ""))
+                places = [{"name": campus.get("Location", row.get("Location", "")), "latitude": point[0], "longitude": point[1]}] if point else []
+                payload.update({"university_id": row.get("University ID", ""), "campus_id": row.get("Campus ID", ""), "campus": row.get("Campus", ""), "location": row.get("Location", "")})
             else:
-                title, org, source = payload.get("name", ""), payload.get("company", ""), ""
-            places = locations_for(row, kind)
-            payload.update({"id": f"{kind}:{re.sub(r'[^a-z0-9]+','-',(org+'-'+title).lower()).strip('-')}", "kind": kind,
-                "title": title, "organization": org, "owner": payload.get("owner", ""), "locations": places})
-            if len(places) == 1:
-                payload.update({"latitude": places[0]["latitude"], "longitude": places[0]["longitude"]})
-            if kind == "job":
-                confidence = payload.get("confidence", "").lower()
-                payload["verification"] = "verified" if confidence.startswith("high") else "needs_review"
-            else:
-                payload["verification"] = "verified" if payload.get("confidence", "").lower().startswith("high") else "needs_review"
+                places = locations_for(row, "recruiter")
+            title, org = row.get(title_col, ""), row.get(org_col, "")
+            payload.update({"id": row.get("Opportunity ID", row.get("Person ID", "")), "kind": kind, "title": title, "organization": org,
+                "source_url": row.get("Link", ""), "locations": places, "verification": "verified" if row.get("Confidence", "").lower().startswith("high") else "needs_review"})
+            if len(places) == 1: payload.update({"latitude": places[0]["latitude"], "longitude": places[0]["longitude"]})
             entries.append(payload)
-    if ROLE_RESULTS.exists():
-        role_data = json.loads(ROLE_RESULTS.read_text(encoding="utf-8"))
-        existing_roles = {(item.get("kind"), item.get("organization", "").casefold(), item.get("title", "").casefold(), item.get("source_url", "").casefold()) for item in entries}
-        for row in role_data.get("roles", []):
-            item = dict(row)
-            item["locations"] = locations_for(row, "job")
-            if len(item["locations"]) == 1:
-                item["latitude"] = item["locations"][0]["latitude"]
-                item["longitude"] = item["locations"][0]["longitude"]
-            item.update({"kind": "job", "title": item["role"], "organization": item["company"],
-                         "source_url": item.get("link", ""), "verification": item.get("source_check", "needs_review")})
-            identity = (item["kind"], item["organization"].casefold(), item["title"].casefold(), item["source_url"].casefold())
-            if identity not in existing_roles:
-                entries.append(item)
-    categories = {row.get("Company", "").casefold(): row.get("Category", "") for row in sheets.get("Company Registry", [])}
     offices = []
-    for row in sheets.get("Office Registry", []):
-        company = row.get("Company", "").strip()
-        if not company:
-            continue
-        office = row.get("Office", "").strip()
-        coords = row.get("Coordinates", "").strip()
-        places = locations_for(row, "office")
-        category = categories.get(company.casefold(), "Uncategorized")
-        slug = re.sub(r"[^a-z0-9]+", "-", f"{company}-{office}-{coords}".lower()).strip("-")
-        item = {key(k): v for k, v in row.items() if v}
-        item.update({"id": f"office:{slug}", "kind": "company", "title": company, "organization": category,
-                     "company": company, "category": category, "office": office,
-                     "location": office or "No verified target-city office", "locations": places})
-        offices.append(item)
-    # Same opportunity tracked by multiple owners becomes one marker and one card.
-    combined = {}
-    for item in entries:
-        identity = (item["kind"], item["organization"].casefold(), item["title"].casefold(), item.get("source_url", "").casefold())
-        if identity not in combined:
-            combined[identity] = item
-            continue
-        prior = combined[identity]
-        owners = list(dict.fromkeys(filter(None, [*prior.get("owner", "").split(", "), *item.get("owner", "").split(", ")])))
-        prior["owner"] = ", ".join(owners)
-        prior["locations"] = list({(p["latitude"], p["longitude"]): p for p in [*prior["locations"], *item["locations"]]}.values())
-    locations = []
-    for row in sheets.get("Location Registry", []):
-        city = row.get("City", "").strip()
-        if not city:
-            continue
-        locations.append({
-            "city": city,
-            "coordinates": row.get("Coordinates", "").strip(),
-            "job_search": row.get("Job Search", "").strip().lower() in ("true", "1", "yes"),
-            "university_search": row.get("University Search", "").strip().lower() in ("true", "1", "yes"),
-        })
+    for row in office_rows:
+        company = companies.get(row["Company ID"], {})
+        point = point_for(row.get("Coordinates", ""))
+        places = [{"name": row.get("Office", ""), "latitude": point[0], "longitude": point[1]}] if point else []
+        office = row.get("Office", "")
+        offices.append({**{key(k): v for k, v in row.items() if v not in (None, "")}, "id": row["Office ID"], "kind": "company",
+            "title": company.get("Company", row.get("Company", "")), "organization": categories.get(company.get("Company", "").casefold(), "Uncategorized"),
+            "company_id": row["Company ID"], "company": company.get("Company", row.get("Company", "")),
+            "category": categories.get(company.get("Company", "").casefold(), "Uncategorized"), "office": office,
+            "location": office, "locations": places})
+    mapped_company_ids = set(office_by_company)
+    unmapped_companies = []
+    for company_id, row in companies.items():
+        if company_id in mapped_company_ids: continue
+        unmapped_companies.append({"id": company_id, "kind": "company", "title": row.get("Company", ""), "organization": row.get("Category", "Uncategorized"),
+            "company": row.get("Company", ""), "company_id": company_id, "category": row.get("Category", "Uncategorized"), "office_research_status": row.get("Office Research Status", "Not started"),
+            "location": "Office research pending", "locations": []})
+    universities = []
+    uni_rows = sheets.get("University Registry", [])
+    for uni in uni_rows:
+        campuses = [c for c in campus_by_id.values() if c.get("University ID") == uni.get("University ID")]
+        places = []
+        for campus in campuses:
+            point = point_for(campus.get("Coordinates", ""))
+            if point: places.append({"name": campus.get("Campus", "") or campus.get("Location", ""), "latitude": point[0], "longitude": point[1]})
+        members = [r.get("Opportunity ID") for r in sheets.get("Masters", []) if r.get("University ID") == uni.get("University ID") and r.get("Opportunity ID")]
+        universities.append({"id": uni.get("University ID", ""), "kind": "university", "title": uni.get("University", ""), "organization": uni.get("Category", "University"),
+            "category": uni.get("Category", "University"), "university": uni.get("University", ""), "memberIds": members, "locations": places,
+            "location": "; ".join(dict.fromkeys(p["name"] for p in places)) or "No mapped campus"})
+    locations = [{"location_id": r.get("Location ID", ""), "city": r.get("City", ""), "coordinates": r.get("Coordinates", ""),
+        "job_search": truth(r.get("Job Search")), "university_search": truth(r.get("University Search"))} for r in sheets.get("Location Registry", []) if r.get("City")]
     data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
-            "opportunities": list(combined.values()), "offices": offices, "locations": locations}
+        "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
+        "inbox": sheets.get("Research Inbox", []), "search_runs": sheets.get("Search Runs", []), "activities": sheets.get("Activity Log", []),
+        "scope": sheets.get("Search Scope", []), "taxonomy": sheets.get("Taxonomy Registry", []),
+        "office_research_queue": sheets.get("Office Research Queue", []),
+        "recruiter_registry": sheets.get("Recruiter Registry", [])}
     OUTPUT.write_text(json.dumps(data, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
     mapped = sum(len(x["locations"]) for x in data["opportunities"])
     office_points = sum(len(x["locations"]) for x in offices)
-    print(f"Exported {len(data['opportunities'])} opportunity records ({mapped} locations), {len(offices)} office records ({office_points} mapped offices), and {len(locations)} search-scope cities to {OUTPUT.relative_to(ROOT)}")
+    print(f"Exported {len(entries)} opportunity records ({mapped} locations), {len(offices)} office records ({office_points} mapped offices), {len(unmapped_companies)} companies pending office research, {len(universities)} universities, and {len(locations)} search-scope cities to {OUTPUT.relative_to(ROOT)}")
 
 if __name__ == "__main__":
     main()

@@ -5,9 +5,7 @@ __pycache__/
 .work/
 data/sources/scan-results.json
 
-# Local tracker data and generated feeds
-*.xlsx
-market_updated.xlsx.inspect.ndjson
+# Local generated feeds and private files
 data/opportunities.json
 data/sources/registry.json
 data/sources/office-research-queue.json
@@ -16,6 +14,15 @@ data/sources/office-research-results.json
 data/sources/role-search-results.json
 data/sources/role-search-scope.json
 outputs/
+cv/
+Jobs_preview.png
+Location_Registry_preview.png
+Masters_preview.png
+Office_Registry_preview.png
+scripts/add_recruiter_registry.mjs
+scripts/fix_office_labels.mjs
+scripts/migrate_schema.mjs
+worldofcommodities.with-recruiter-registry.xlsx
 
 .cursor/
 scripts/populate_workbook.mjs

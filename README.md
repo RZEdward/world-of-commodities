@@ -4,19 +4,16 @@ A dark map dashboard for a personal commodities career and education tracker. Th
 
 ## Local setup
 
-1. Keep your private `worldofcommodities.xlsx` in the project root. It is deliberately excluded from Git.
+1. Keep `worldofcommodities.xlsx` in the project root. This repository is private; the workbook is versioned here as the shared source of truth.
 2. Install Python 3.10+.
 3. Run `python scripts/serve.py` and open `http://127.0.0.1:8000/app/`.
 4. Edit the workbook in Excel, then run `python scripts/export_tracker.py` to refresh the dashboard feed.
 
-The workbook contains Jobs, Masters, Recruiters, Company Registry, University Registry, Office Registry, and Location Registry. Jobs use four separate fields: Business Function, Commodity, Market Geography, and Time Horizon. Location Registry holds city coordinates and editable Job Search / University Search flags; the dashboard has Opportunities, Institutions, and Locations views. Office research rows keep source, check date, confidence, and notes beside each address. The dashboard feed and source registries are local generated/private data and are excluded from Git.
+The workbook is the editable system of record. `Company Registry`, `University Registry`, `Office Registry`, `Campus Registry`, and `Location Registry` define entities and search scope. Jobs link to companies and to one or more offices/cities through `Job Location Links`; Masters link to universities and campuses. Unverified office leads stay in `Office Research Queue`. New findings are reviewed in `Research Inbox` and grouped by `Search Runs`; `Activity Log` records follow-up. `Taxonomy Registry` and `Search Scope` hold controlled values and search rules. Jobs use four function dimensions: Business Function, Commodity, Market Geography, and Time Horizon. The dashboard feed and personal opportunity data are generated locally and excluded from Git.
 
 `python scripts/scan_sources.py scan` checks registered URLs for reachability only. A reachable page does not establish that a role or program remains open; review the employer/source page before updating the workbook.
 
-## SharePoint and hosting
+## Data and privacy
 
-The current application reads the local workbook export. SharePoint synchronization and hosted deployment are not configured yet. They require the destination workbook/site and an approved Microsoft Graph authentication path before the app can load shared edits.
+The dashboard reads a generated local JSON export from the workbook. The export, search sources, and CV are excluded from Git. The CV is kept in the local `cv/` folder. Avoid copying credentials, access tokens, or unrelated personal files into the repository.
 
-## Privacy
-
-Do not commit the workbook, generated dashboard feed, source registry, office research queue/results, or other personal opportunity data. The repository is intended to hold application code and setup documentation only.

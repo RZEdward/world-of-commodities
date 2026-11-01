@@ -1,6 +1,7 @@
 const state = {
   items: [],
   offices: [],
+  unmappedCompanies: [],
   universities: [],
   institutions: [],
   locations: [],
@@ -13,6 +14,7 @@ const state = {
   map: null,
   markers: new Map(),
   selected: null,
+  activities: [],
 };
 
 const escapeHtml = (value) =>
@@ -120,6 +122,13 @@ function facetValueFor(item, key) {
   return "";
 }
 
+function facetValuesFor(item, key) {
+  const value = facetValueFor(item, key);
+  return key === "commodity"
+    ? String(value || "").split(";").map((part) => part.trim()).filter(Boolean)
+    : value == null || value === "" ? [] : [value];
+}
+
 function searchHaystack(item) {
   return `${item.title} ${item.organization} ${item.location} ${item.office || ""} ${item.owner || ""} ${item.category || ""} ${item.business_function || ""} ${item.commodity || ""} ${item.market_geography || ""} ${item.time_horizon || ""} ${item.experience_requirement_years || ""} ${item.requirements || ""} ${item.next_action || ""}`.toLowerCase();
 }
@@ -186,7 +195,7 @@ function buildPopupContent(item, location) {
       <div class="course-panels">${panels}</div>
     </div>`;
   }
-  const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search"]);
+  const omitted = new Set(["id", "title", "organization", "latitude", "longitude", "coordinates", "locations", "source_url", "memberIds", "programmes", "link", "scope_key", "job_search", "university_search", "office_source_text", "registry_offices", "scope_status"]);
   const rows = [];
 
   const preferredOrder = ["university", "campus", "location", "search_scope", "course", "duration", "tuition_year_usd", "living_costs_year_usd", "total_cost_usd", "owner", "status", "link", "intake", "deadline", "fit", "confidence", "requirements", "next_action", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
@@ -195,7 +204,7 @@ function buildPopupContent(item, location) {
     return (ai < 0 ? 999 : ai) - (bi < 0 ? 999 : bi);
   });
   for (const [key, rawValue] of fields) {
-    if (omitted.has(key) || rawValue == null || rawValue === "") continue;
+    if (omitted.has(key) || key.endsWith("_id") || rawValue == null || rawValue === "") continue;
     if (key === "source_url" && item.link) continue;
     const value = key === "kind" || key === "verification"
       ? String(rawValue).replace(/^\w/, (letter) => letter.toUpperCase())
@@ -229,10 +238,13 @@ function buildPopupContent(item, location) {
     ? `<a class="map-popup-source" href="${escapeHtml(item.source_url)}" target="_blank" rel="noopener">Open source ↗</a>`
     : "";
   const mapLocation = location.name || item.location || "Location not specified";
+  const history = state.activities.filter((entry) => entry["Entity ID"] === item.id || entry.entity_id === item.id);
+  const activityHtml = history.length ? `<section class="activity-history"><h3>Activity</h3>${history.map((entry) => `<div class="map-popup-row"><dt>${escapeHtml(entry.Date || entry.date || "")}</dt><dd>${escapeHtml(entry.Activity || entry.activity || "")}${entry.Status || entry.status ? ` · ${escapeHtml(entry.Status || entry.status)}` : ""}</dd></div>`).join("")}</section>` : "";
   return `<div class="map-popup">
     <div class="map-popup-title ${item.kind === "company" ? "company-title" : ""}">${escapeHtml(item.title)}</div>
     <div class="map-popup-organization">${escapeHtml(item.organization)} · ${escapeHtml(mapLocation)}</div>
     <dl class="map-popup-fields">${rows.join("")}</dl>
+    ${activityHtml}
     ${source}
   </div>`;
 }
@@ -244,8 +256,8 @@ function getFilteredItems() {
       ? state.filter === "all" || item.scope_key === state.filter
       : state.filter === "all" || item.kind === state.filter;
     const haystack = searchHaystack(item);
-    const facetText = facetValueFor(item, state.facet);
-    const matchesFacet = !state.facetValue || String(facetText || "").toLowerCase() === state.facetValue.toLowerCase();
+    const facetValues = facetValuesFor(item, state.facet);
+    const matchesFacet = !state.facetValue || facetValues.some((value) => String(value).toLowerCase() === state.facetValue.toLowerCase());
     return matchesKind && matchesFacet && haystack.includes(state.query);
   });
   const deadline = (item) => { const date = asDate(item.deadline); return date ? date.getTime() : Number.MAX_SAFE_INTEGER; };
@@ -275,7 +287,7 @@ function renderControls() {
   filter.innerHTML = fields.map(([key, label]) => `<option value="${key}">Filter · ${label}</option>`).join("");
   state.facet = fields.some(([key]) => key === state.facet) ? state.facet : fields[0]?.[0] || "";
   filter.value = state.facet;
-  const values = [...new Set(matchingSource.map((item) => facetValueFor(item, state.facet)).filter((entry) => !isPlaceholder(entry)))].sort((a,b) => String(a).localeCompare(String(b)));
+  const values = [...new Set(matchingSource.flatMap((item) => facetValuesFor(item, state.facet)).filter((entry) => !isPlaceholder(entry)))].sort((a,b) => String(a).localeCompare(String(b)));
   const facetNoun = state.facet === "category" ? "categories" : state.facet === "function" ? "business functions" : state.facet === "commodity" ? "commodities" : state.facet === "market" ? "market geographies" : state.facet === "horizon" ? "time horizons" : state.facet === "deadline" ? "deadlines" : "statuses";
   value.innerHTML = `<option value="">Match · All ${facetNoun}</option>` + values.map((entry) => `<option value="${escapeHtml(entry)}">${escapeHtml(entry)}</option>`).join("");
   if (!values.includes(state.facetValue)) state.facetValue = "";
@@ -325,7 +337,7 @@ function render() {
   const filterOptions = locationMode
     ? [["all", "All", state.locations.length], ["jobs", "Jobs", state.locations.filter(x => x.job_search).length], ["masters", "Masters", state.locations.filter(x => x.university_search).length], ["both", "Jobs & Masters", state.locations.filter(x => x.job_search && x.university_search).length]]
     : companyMode
-    ? [["all", "All", state.institutions.length], ["company", "Companies", state.offices.length], ["university", "Universities", state.universities.length]]
+    ? [["all", "All", state.institutions.length], ["company", "Companies", state.offices.length + state.unmappedCompanies.length], ["university", "Universities", state.universities.length]]
     : [["all", "All", state.items.length], ["job", "Jobs", state.items.filter(x => x.kind === "job").length], ["masters", "Masters", state.items.filter(x => x.kind === "masters").length], ["recruiter", "People", state.items.filter(x => x.kind === "recruiter").length]];
   document.querySelector("#filters").setAttribute("aria-label", locationMode ? "Search scope" : companyMode ? "Institution type" : "Opportunity type");
   document.querySelector("#filters").innerHTML = filterOptions.filter(([key, , count]) => key === "all" || count > 0).map(([key, label, count]) => `<button class="filter ${state.filter === key ? "active" : ""}" data-filter="${key}">${label}<span>${count}</span></button>`).join("");
@@ -487,7 +499,9 @@ async function initializeDashboard() {
 
     const data = await response.json();
     state.items = data.opportunities || [];
+    state.activities = data.activities || [];
     state.offices = data.offices || [];
+    state.unmappedCompanies = data.unmapped_companies || [];
     const scopeFor = (row) => {
       const jobs = row.job_search === true || String(row.job_search).toLowerCase() === "true";
       const masters = row.university_search === true || String(row.university_search).toLowerCase() === "true";
@@ -509,8 +523,8 @@ async function initializeDashboard() {
       group.locations.push(...(item.locations || []));
       group.locations = group.locations.filter((point, index, points) => points.findIndex((other) => other.latitude === point.latitude && other.longitude === point.longitude) === index);
     }
-    state.universities = [...universityGroups.values()];
-    state.institutions = [...state.offices, ...state.universities];
+    state.universities = data.universities?.length ? data.universities : [...universityGroups.values()];
+    state.institutions = [...state.offices, ...state.unmappedCompanies, ...state.universities];
     setText("#updated-label", `DATA ${data.updated_at || "—"}`);
     render();
     initializeMap();
