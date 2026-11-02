@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 395,
-  "cityFallbackRows": 614,
+  "verifiedRows": 399,
+  "cityFallbackRows": 610,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5483,6 +5483,54 @@
       "osm": "way/451259201 https://www.openstreetmap.org/way/451259201",
       "feature": "Nova South, Victoria Street, London",
       "method": "Vitol’s official contact directory gives 4th Floor, Nova South, 160 Victoria Street, London SW1E 5LB. OSM way/451259201 is named Nova South but tags 130 Victoria Street (SW1E 5ND). Name and city match, but the street-number/postcode conflict is unresolved; retain only building-level precision and flag the discrepancy."
+    },
+    {
+      "id": "off:4940dfbc432d",
+      "company": "Statkraft Markets",
+      "office": "London",
+      "coordinates": "51.5144777, -0.0829731",
+      "precision": "Building-level (official London energy-trading desk and Statkraft UK office match OSM 22 Bishopsgate Tower way/717332347; OSM address covers 22–24 Bishopsgate)",
+      "source": "https://www.statkraft.com/solutions-for-industry/market-access-and-trading/",
+      "official_source": "https://www.statkraft.com/solutions-for-industry/market-access-and-trading/; https://www.statkraft.com/contacts/european-offices/united-kingdom-country-office/",
+      "osm": "way/717332347 https://www.openstreetmap.org/way/717332347",
+      "feature": "22 Bishopsgate Tower, London EC2N 4BQ",
+      "method": "Statkraft official market-access page lists London as a main trading-desk location. The official UK country-office page lists Statkraft UK Ltd at 19th Floor, 22 Bishopsgate, London EC2N 4BQ. OSM way/717332347 is 22 Bishopsgate Tower at 22–24 Bishopsgate, matching the named office building/postcode. Pin is building-level, not a specific floor."
+    },
+    {
+      "id": "off:9aabf3a9514b",
+      "company": "Statkraft",
+      "office": "London",
+      "coordinates": "51.5144777, -0.0829731",
+      "precision": "Building-level (official London energy-trading desk and Statkraft UK office match OSM 22 Bishopsgate Tower way/717332347; OSM address covers 22–24 Bishopsgate)",
+      "source": "https://www.statkraft.com/solutions-for-industry/market-access-and-trading/",
+      "official_source": "https://www.statkraft.com/solutions-for-industry/market-access-and-trading/; https://www.statkraft.com/contacts/european-offices/united-kingdom-country-office/",
+      "osm": "way/717332347 https://www.openstreetmap.org/way/717332347",
+      "feature": "22 Bishopsgate Tower, London EC2N 4BQ",
+      "method": "Same physical London trading-office building as Statkraft Markets. The group page lists the main trading desk in London; the official UK country-office page gives 22 Bishopsgate. This row is a separate registry company entry and deliberately shares the verified building coordinate."
+    },
+    {
+      "id": "off:998af1fb12fc",
+      "company": "Vattenfall",
+      "office": "London",
+      "coordinates": "51.5154174, -0.0793727",
+      "precision": "Address-level (official 70 St Mary Axe, London EC3A 8BE matches OSM way/556686921 street number and street)",
+      "source": "https://socialwall.vattenfall.com/en/about-us",
+      "official_source": "https://group.vattenfall.com/about-us/contact-us/vattenfall-in-the-uk/; https://group.vattenfall.com/uk/contactus",
+      "osm": "way/556686921 https://www.openstreetmap.org/way/556686921",
+      "feature": "70 St Mary Axe, London EC3A 8BE",
+      "method": "Vattenfall official UK office page gives 5th Floor, 70 St Mary Axe, London EC3A 8BE. The official UK contact page associates an energy-trading contact with Vattenfall UK; OSM way/556686921 is the named 70 St Mary Axe office building with matching number and street. The row is the Vattenfall group London office."
+    },
+    {
+      "id": "off:1dc63c875695",
+      "company": "Vattenfall Energy Trading",
+      "office": "London",
+      "coordinates": "51.5154174, -0.0793727",
+      "precision": "Address-level (official 70 St Mary Axe, London EC3A 8BE matches OSM way/556686921 street number and street)",
+      "source": "https://socialwall.vattenfall.com/en/about-us",
+      "official_source": "https://group.vattenfall.com/about-us/contact-us/vattenfall-in-the-uk/; https://group.vattenfall.com/uk/contactus",
+      "osm": "way/556686921 https://www.openstreetmap.org/way/556686921",
+      "feature": "70 St Mary Axe, London EC3A 8BE",
+      "method": "Vattenfall UK office page gives 5th Floor, 70 St Mary Axe, London EC3A 8BE. The official UK contact page associates an energy-trading contact with Vattenfall UK; OSM way/556686921 is the named 70 St Mary Axe office building with matching number and street. This is the separate Vattenfall Energy Trading London registry row."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5604,8 +5652,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 266,
-  "buildingLevelRows": 129,
+  "addressLevelRows": 268,
+  "buildingLevelRows": 131,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5614,6 +5662,7 @@
     "2026-11-02: 22 office rows were updated across the earlier four-row, eight-row and ten-row batches; source and map-feature details are retained in the worksheet change records.",
     "2026-11-03 address follow-up: 17 more official-address/map-feature matches were verified from 50 previously unqueried address records; 33 candidate records were rejected for insufficient building/address precision. City anchors were retained where evidence was ambiguous.",
     "2026-11-03 targeted follow-up reviewed 25 exact address/building query variants. Two points promoted: TD Securities 22 Vanderbilt Avenue (address-level OSM node/2716011976) and Macquarie Philadelphia Two Liberty Place (building-level OSM way/42785013; OSM address tags differ). Twenty-three candidates were retained at city level or rejected because results were road-only, wrong-city/address, unrelated-tenant or unresolved.",
-    "2026-11-03 named-building follow-up reviewed 12 targeted searches. Four points passed: Jingan Asset Management COSCO Tower (address-level OSM way/148228836), S&P Global K. Wah Centre Shanghai (building-level way/255632242), S&P Global Marunouchi Kitaguchi Building Tokyo (building-level relation/3817813), and Vitol Nova South London (building-level way/451259201; OSM address tags conflict with the official address). Eight candidates remained unresolved or were rejected."
+    "2026-11-03 named-building follow-up reviewed 12 targeted searches. Four points passed: Jingan Asset Management COSCO Tower (address-level OSM way/148228836), S&P Global K. Wah Centre Shanghai (building-level way/255632242), S&P Global Marunouchi Kitaguchi Building Tokyo (building-level relation/3817813), and Vitol Nova South London (building-level way/451259201; OSM address tags conflict with the official address). Eight candidates remained unresolved or were rejected.",
+    "2026-11-03 priority trading-desk office follow-up: Statkraft and Statkraft Markets London rows mapped to OSM 22 Bishopsgate Tower way/717332347 using the official London trading-desk and Statkraft UK office pages; Vattenfall and Vattenfall Energy Trading London rows mapped to OSM 70 St Mary Axe way/556686921 using official UK contact pages. Four registry rows correspond to two physical buildings. Statkraft New York remains at its city anchor; the trading desk is confirmed by city but an office street address was not confirmed, and nearby Stamford was not substituted."
   ]
 }
