@@ -555,7 +555,7 @@ def main() -> None:
         "evidence_basis": r.get("Evidence Basis", ""), "source_urls": r.get("Source URL(s)", ""),
         "last_reviewed": r.get("Last Reviewed", "")}
         for r in sheets.get("Company Rankings", []) if r.get("Owner") and r.get("Company ID") and r.get("Rank") not in (None, "")]
-    data = {"brand": "World of Commodities", "updated_at": date.today().isoformat(), "source_workbook": BOOK.name,
+    data = {"brand": "World of Commodities", "updated_at": (datetime.now(timezone.utc) + timedelta(hours=4)).date().isoformat(), "source_workbook": BOOK.name,
         "opportunities": entries, "offices": offices, "unmapped_companies": unmapped_companies, "universities": universities, "locations": locations,
         "location_rankings": location_rankings, "company_rankings": company_rankings_payload,
         "score_model": {"reddit_glassdoor_ratio": round(reddit_glassdoor_ratio, 4) if reddit_glassdoor_ratio is not None else None,
