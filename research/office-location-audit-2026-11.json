@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 403,
-  "cityFallbackRows": 606,
+  "verifiedRows": 407,
+  "cityFallbackRows": 602,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5575,6 +5575,46 @@
       "osm": "node/3856274357 https://www.openstreetmap.org/node/3856274357",
       "feature": "10 Route de l’Aéroport, Cointrin/Meyrin, Geneva canton",
       "method": "TOTSA TotalEnergies Trading SA official legal notice lists its registered office at Route de l’Aéroport 10, Geneva, followed by P.O. Box 276, 1215 Geneva. OSM node/3856274357 matches house number 10 and Route de l’Aéroport; it has no postcode tag and locates the street address in Cointrin/Meyrin (Geneva canton). The 1215 is the mailing address for the PO Box, not treated as the physical street postcode. This is in the Geneva metro office scope, not central Geneva."
+    },
+    {
+      "id": "off:5e4508138bdb",
+      "company": "Chubu Electric Power",
+      "office": "London — 2nd Floor, 210 High Holborn, London WC1V 7EP",
+      "coordinates": "51.5173182, -0.1213796",
+      "precision": "Address-level (official Chubu office address matches OSM way/97237915 house number 210 and High Holborn; postcode not tagged on the building)",
+      "source": "https://www.chuden.co.jp/english/corporate/outline/",
+      "osm": "way/97237915",
+      "method": "Chubu Electric Power current corporate profile lists its London Office at 2nd Floor, 210 High Holborn, London WC1V 7EP. OSM way/97237915 is a building footprint tagged 210 High Holborn, London; postcode is not tagged on the footprint. The mapped coordinate is the returned OSM building-feature point; not a suite-level point."
+    },
+    {
+      "id": "off:c53945223b30",
+      "company": "Northpool",
+      "office": "Vancouver — 320 Granville Street, Suite 970, Vancouver BC V6C 1S9",
+      "coordinates": "49.2855900, -123.1129019",
+      "precision": "Building-level (official Northpool address matches OSM way/1173159900 named 320 Granville; suite not mapped)",
+      "source": "https://www.northpool.nl/contact; https://opengovca.com/vancouver-business/26-145454",
+      "osm": "way/1173159900",
+      "method": "Northpool’s official contact page lists Northpool Canada at 320 Granville Street, Suite 970, Vancouver, BC V6C 1S9. OSM way/1173159900 is the named 320 Granville office-building footprint at the same street number. A Vancouver business-licence record lists Suite 980 for the legal entity; because it conflicts with the company’s current contact page, the map uses only the building point and retains the official company suite as the office label."
+    },
+    {
+      "id": "off:98cdf6f53de8",
+      "company": "Uniper",
+      "office": "London — 4th Floor, 42–44 Grosvenor Gardens, London SW1W 0EB",
+      "coordinates": "51.4964304, -0.1461872",
+      "precision": "Building-level (official Uniper office address range matches adjacent OSM footprints way/147253656 and way/147253657)",
+      "source": "https://www.uniper.energy/united-kingdom/about-uniper-uk/contact-uniper-united-kingdom",
+      "osm": "way/147253656; way/147253657",
+      "method": "Uniper’s current UK contact page lists its London office at 4th Floor, 42–44 Grosvenor Gardens, SW1W 0EB. OSM maps adjacent building footprints way/147253656 (#42, with matching postcode) and way/147253657 (#44). The point is the midpoint of the returned OSM building-feature points to represent the published 42–44 office range; it is not a floor-level coordinate."
+    },
+    {
+      "id": "off:109bb8f15758",
+      "company": "Uniper Global Commodities",
+      "office": "London — Uniper UK office, 4th Floor, 42–44 Grosvenor Gardens, London SW1W 0EB",
+      "coordinates": "51.4964304, -0.1461872",
+      "precision": "Building-level (official Uniper office address range matches adjacent OSM footprints way/147253656 and way/147253657)",
+      "source": "https://www.uniper.energy/united-kingdom/about-uniper-uk/contact-uniper-united-kingdom; https://www.uniper.energy/procurement/suppliers/invoicing-information",
+      "osm": "way/147253656; way/147253657",
+      "method": "Uniper Global Commodities London Ltd is a distinct registered entity, while Uniper’s current UK contact page publishes one London office at 4th Floor, 42–44 Grosvenor Gardens. The official Uniper invoicing page confirms the London trading subsidiary, but does not publish a separate London street address for it. This row uses the group London office as the subsidiary’s published London office location; the map point represents the adjacent 42–44 building range and does not claim a subsidiary-specific suite."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5696,8 +5736,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 269,
-  "buildingLevelRows": 134,
+  "addressLevelRows": 270,
+  "buildingLevelRows": 137,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5709,6 +5749,7 @@
     "2026-11-03 named-building follow-up reviewed 12 targeted searches. Four points passed: Jingan Asset Management COSCO Tower (address-level OSM way/148228836), S&P Global K. Wah Centre Shanghai (building-level way/255632242), S&P Global Marunouchi Kitaguchi Building Tokyo (building-level relation/3817813), and Vitol Nova South London (building-level way/451259201; OSM address tags conflict with the official address). Eight candidates remained unresolved or were rejected.",
     "2026-11-03 priority trading-desk office follow-up: Statkraft and Statkraft Markets London rows mapped to OSM 22 Bishopsgate Tower way/717332347 using the official London trading-desk and Statkraft UK office pages; Vattenfall and Vattenfall Energy Trading London rows mapped to OSM 70 St Mary Axe way/556686921 using official UK contact pages. Four registry rows correspond to two physical buildings. Statkraft New York remains at its city anchor; the trading desk is confirmed by city but an office street address was not confirmed, and nearby Stamford was not substituted.",
     "2026-11-03 high-ranked Tokyo trader follow-up: InCommodities Tokyo office mapped to Marunouchi Park Building. Official English company contact and Mitsubishi Estate Japanese property directory agree on the 2-6-1 Marunouchi address; OSM way/363563886 has the matching Japanese/English building name. Point is the building polygon centroid, not an entrance.",
-    "2026-11-03 priority office research: Aramco Far East Beijing mapped to the China World Tower III footprint (OSM way/116944490); Vortexa London updated from the stale Portsoken House to Tower 42/25 Old Broad Street (OSM way/166431059), supported by the company’s 2025 report and current Companies House filing; TOTSA TotalEnergies Trading Geneva mapped to Route de l’Aéroport 10 (OSM node/3856274357). The TOTSA physical street address is in Meyrin/Cointrin within Geneva’s metro office scope; 1215 Geneva follows the separate PO Box in the legal notice and was not treated as the street postcode."
+    "2026-11-03 priority office research: Aramco Far East Beijing mapped to the China World Tower III footprint (OSM way/116944490); Vortexa London updated from the stale Portsoken House to Tower 42/25 Old Broad Street (OSM way/166431059), supported by the company’s 2025 report and current Companies House filing; TOTSA TotalEnergies Trading Geneva mapped to Route de l’Aéroport 10 (OSM node/3856274357). The TOTSA physical street address is in Meyrin/Cointrin within Geneva’s metro office scope; 1215 Geneva follows the separate PO Box in the legal notice and was not treated as the street postcode.",
+    "2026-11-03 priority pass mapped Chubu London to OSM way/97237915 at 210 High Holborn; Northpool Vancouver to the named 320 Granville office footprint (Suite 970 official vs Suite 980 on a municipal licence record; suite omitted from point); and Uniper London to the 42–44 Grosvenor Gardens range represented by adjacent OSM building footprints. The Uniper Global Commodities subsidiary row uses the published group office because a separate subsidiary suite/address was not independently published."
   ]
 }
