@@ -142,20 +142,49 @@ function categoryColor(value) {
 
 function asDate(value) {
   if (typeof value !== "string") return null;
-  const match = /^(\d{4})-(\d{2})-(\d{2})$/.exec(value.trim());
-  if (!match) return null;
-  const [, year, month, day] = match.map(Number);
-  const timestamp = Date.UTC(year, month - 1, day);
-  const date = new Date(timestamp);
-  return date.getUTCFullYear() === year && date.getUTCMonth() === month - 1 && date.getUTCDate() === day
-    ? date
-    : null;
+  const zoneNames = {
+    JST: "Asia/Tokyo", HKT: "Asia/Hong_Kong", ET: "America/New_York",
+    EST: "America/New_York", EDT: "America/New_York", UK: "Europe/London",
+    GMT: "UTC", BST: "Europe/London", CET: "Europe/Zurich",
+    CEST: "Europe/Zurich", UTC: "UTC",
+  };
+  const toTimestamp = (year, month, day, hour = 0, minute = 0, zone = "") => {
+    const wallClockUtc = Date.UTC(year, month - 1, day, hour, minute);
+    const check = new Date(wallClockUtc);
+    if (check.getUTCFullYear() !== year || check.getUTCMonth() !== month - 1 || check.getUTCDate() !== day
+      || hour < 0 || hour > 23 || minute < 0 || minute > 59) return null;
+    const timeZone = zoneNames[zone.toUpperCase()];
+    if (!timeZone) return wallClockUtc;
+    let timestamp = wallClockUtc;
+    for (let i = 0; i < 3; i += 1) {
+      const parts = new Intl.DateTimeFormat("en-GB", {
+        timeZone, year: "numeric", month: "2-digit", day: "2-digit",
+        hour: "2-digit", minute: "2-digit", hourCycle: "h23",
+      }).formatToParts(new Date(timestamp));
+      const part = (name) => Number(parts.find((entry) => entry.type === name)?.value);
+      const displayedAsUtc = Date.UTC(part("year"), part("month") - 1, part("day"), part("hour"), part("minute"));
+      timestamp += wallClockUtc - displayedAsUtc;
+    }
+    return timestamp;
+  };
+  const matches = [...value.matchAll(/\b(\d{4})-(\d{2})-(\d{2})(?:[ T]+(\d{1,2}):(\d{2})(?:\s*(JST|HKT|ET|EST|EDT|UK|GMT|BST|CET|CEST|UTC))?)?/gi)];
+  const timestamps = matches.map((match) => toTimestamp(
+    Number(match[1]), Number(match[2]), Number(match[3]), Number(match[4] || 0), Number(match[5] || 0), match[6] || "",
+  )).filter(Number.isFinite).sort((a, b) => a - b);
+  if (!timestamps.length) return null;
+  const now = new Date();
+  const today = Date.UTC(now.getFullYear(), now.getMonth(), now.getDate());
+  const nextDeadline = timestamps.find((timestamp) => {
+    const date = new Date(timestamp);
+    return Date.UTC(date.getFullYear(), date.getMonth(), date.getDate()) >= today;
+  });
+  return new Date(nextDeadline ?? timestamps[0]);
 }
 
 function daysBetween(from, to) {
   const day = 24 * 60 * 60 * 1000;
-  const utcFrom = Date.UTC(from.getUTCFullYear(), from.getUTCMonth(), from.getUTCDate());
-  const utcTo = Date.UTC(to.getUTCFullYear(), to.getUTCMonth(), to.getUTCDate());
+  const utcFrom = Date.UTC(from.getFullYear(), from.getMonth(), from.getDate());
+  const utcTo = Date.UTC(to.getFullYear(), to.getMonth(), to.getDate());
   return Math.round((utcTo - utcFrom) / day);
 }
 
@@ -523,7 +552,7 @@ function getFilteredItems() {
   return filtered.sort((a, b) => state.view === "institutions" && state.sort === "company_rank" ? (Number(a.company_priority_rank) || 99999) - (Number(b.company_priority_rank) || 99999) || a.title.localeCompare(b.title) : scoreSorts[state.sort]
     ? (scoreNumber(b[scoreSorts[state.sort]]) ?? -1) - (scoreNumber(a[scoreSorts[state.sort]]) ?? -1) || a.title.localeCompare(b.title)
     : state.view === "locations" && state.sort === "rank" ? (Number(a.rank) || 999) - (Number(b.rank) || 999) || a.title.localeCompare(b.title)
-      : state.sort === "deadline" ? deadline(a) - deadline(b) : state.sort === "owner" ? String(a.owner || "").localeCompare(String(b.owner || "")) || a.title.localeCompare(b.title) : state.sort === "category" ? String(a.category || "").localeCompare(String(b.category || "")) || a.title.localeCompare(b.title) : state.sort === "location" ? String(a.office || a.location || "").localeCompare(String(b.office || b.location || "")) : a.title.localeCompare(b.title));
+      : state.sort === "deadline" ? deadline(a) - deadline(b) || a.title.localeCompare(b.title) : state.sort === "owner" ? String(a.owner || "").localeCompare(String(b.owner || "")) || a.title.localeCompare(b.title) : state.sort === "category" ? String(a.category || "").localeCompare(String(b.category || "")) || a.title.localeCompare(b.title) : state.sort === "location" ? String(a.office || a.location || "").localeCompare(String(b.office || b.location || "")) : a.title.localeCompare(b.title));
 }
 
 function renderControls() {
