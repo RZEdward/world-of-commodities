@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 391,
-  "cityFallbackRows": 618,
+  "verifiedRows": 395,
+  "cityFallbackRows": 614,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5439,6 +5439,50 @@
         "coordinates": "39.9526, -75.1652",
         "precision": "City-level fallback — official street/building address recorded; exact office point unresolved"
       }
+    },
+    {
+      "id": "off:45e74db678f7",
+      "company": "Jingan Asset Management",
+      "office": "Hong Kong — Room 4006, 40/F, Cosco Tower",
+      "coordinates": "22.2855857, 114.1528497",
+      "precision": "Address-level (official COSCO Tower address matches OSM way/148228836 name, house number 183 and Queen’s Road Central)",
+      "source": "https://www.jingan.hk/",
+      "osm": "way/148228836 https://www.openstreetmap.org/way/148228836",
+      "feature": "COSCO Tower, 183 Queen’s Road Central, Hong Kong",
+      "method": "Jingan Asset Management official contact page gives Room 4006, 40/F, Cosco Tower, 183 Queen’s Road Central, Hong Kong. OSM way/148228836 is named COSCO Tower and carries addr:housenumber=183 and addr:street=Queen’s Road Central. The coordinate is the building footprint; suite 4006 is not separately mapped."
+    },
+    {
+      "id": "off:f57cab7dc7c4",
+      "company": "S&P Global",
+      "office": "Shanghai — 25F, K’wah Center, 1010 Huaihai Middle Road",
+      "coordinates": "31.2179598, 121.4515112",
+      "precision": "Building-level (official K’wah Center name matches OSM way/255632242 K. Wah Centre)",
+      "source": "https://www.spglobal.com/en/contact-us/office-locations",
+      "osm": "way/255632242 https://www.openstreetmap.org/way/255632242",
+      "feature": "K. Wah Centre, Shanghai",
+      "method": "S&P Global official directory lists Shanghai at 25F, K’wah Center, 1010 Huaihai Middle Road. OSM way/255632242 is a commercial building with name:en=K. Wah Centre. OSM has no matching street-number tags, so retain building-level precision."
+    },
+    {
+      "id": "off:7ffbc0c701a7",
+      "company": "S&P Global",
+      "office": "Tokyo — L28, Marunouchi Kitaguchi Building",
+      "coordinates": "35.6838783, 139.7668809",
+      "precision": "Building-level (official Marunouchi Kitaguchi Building name matches OSM relation/3817813 building footprint)",
+      "source": "https://www.spglobal.com/en/contact-us/office-locations",
+      "osm": "relation/3817813 https://www.openstreetmap.org/relation/3817813",
+      "feature": "Marunouchi Kitaguchi Building, Marunouchi Oazo, Tokyo",
+      "method": "S&P Global official directory lists L28, Marunouchi Kitaguchi Building, 1-6-5 Marunouchi, Chiyoda, Tokyo. OSM relation/3817813 is the named building footprint (name:en=Marunouchi Kitaguchi Building). The point identifies the building, not the entrance or floor."
+    },
+    {
+      "id": "off:4ee362937348",
+      "company": "Vitol",
+      "office": "London office — 4th Floor, Nova South, 160 Victoria Street, London SW1E 5LB, United Kingdom",
+      "coordinates": "51.4970050, -0.1434585",
+      "precision": "Building-level (official Nova South name matches OSM way/451259201; map street number conflicts)",
+      "source": "https://www.vitol.com/contact/",
+      "osm": "way/451259201 https://www.openstreetmap.org/way/451259201",
+      "feature": "Nova South, Victoria Street, London",
+      "method": "Vitol’s official contact directory gives 4th Floor, Nova South, 160 Victoria Street, London SW1E 5LB. OSM way/451259201 is named Nova South but tags 130 Victoria Street (SW1E 5ND). Name and city match, but the street-number/postcode conflict is unresolved; retain only building-level precision and flag the discrepancy."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5560,8 +5604,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 265,
-  "buildingLevelRows": 126,
+  "addressLevelRows": 266,
+  "buildingLevelRows": 129,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5569,6 +5613,7 @@
     "2026-11-02 named-building pass: 10 additional points added (two address-level and eight building-level). Seven building-level rows retain postcode metadata conflicts; Accenture Singapore retains a 250/252 street-number variance.",
     "2026-11-02: 22 office rows were updated across the earlier four-row, eight-row and ten-row batches; source and map-feature details are retained in the worksheet change records.",
     "2026-11-03 address follow-up: 17 more official-address/map-feature matches were verified from 50 previously unqueried address records; 33 candidate records were rejected for insufficient building/address precision. City anchors were retained where evidence was ambiguous.",
-    "2026-11-03 targeted follow-up reviewed 25 exact address/building query variants. Two points promoted: TD Securities 22 Vanderbilt Avenue (address-level OSM node/2716011976) and Macquarie Philadelphia Two Liberty Place (building-level OSM way/42785013; OSM address tags differ). Twenty-three candidates were retained at city level or rejected because results were road-only, wrong-city/address, unrelated-tenant or unresolved."
+    "2026-11-03 targeted follow-up reviewed 25 exact address/building query variants. Two points promoted: TD Securities 22 Vanderbilt Avenue (address-level OSM node/2716011976) and Macquarie Philadelphia Two Liberty Place (building-level OSM way/42785013; OSM address tags differ). Twenty-three candidates were retained at city level or rejected because results were road-only, wrong-city/address, unrelated-tenant or unresolved.",
+    "2026-11-03 named-building follow-up reviewed 12 targeted searches. Four points passed: Jingan Asset Management COSCO Tower (address-level OSM way/148228836), S&P Global K. Wah Centre Shanghai (building-level way/255632242), S&P Global Marunouchi Kitaguchi Building Tokyo (building-level relation/3817813), and Vitol Nova South London (building-level way/451259201; OSM address tags conflict with the official address). Eight candidates remained unresolved or were rejected."
   ]
 }
