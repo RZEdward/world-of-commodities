@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 399,
-  "cityFallbackRows": 610,
+  "verifiedRows": 400,
+  "cityFallbackRows": 609,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5531,6 +5531,17 @@
       "osm": "way/556686921 https://www.openstreetmap.org/way/556686921",
       "feature": "70 St Mary Axe, London EC3A 8BE",
       "method": "Vattenfall UK office page gives 5th Floor, 70 St Mary Axe, London EC3A 8BE. The official UK contact page associates an energy-trading contact with Vattenfall UK; OSM way/556686921 is the named 70 St Mary Axe office building with matching number and street. This is the separate Vattenfall Energy Trading London registry row."
+    },
+    {
+      "id": "off:91f15ab9f302",
+      "company": "InCommodities",
+      "office": "Tokyo — Marunouchi Park Building, 2-6-1 Marunouchi, Chiyoda-ku",
+      "coordinates": "35.6789905, 139.7630237",
+      "precision": "Building-level (official InCommodities address and Mitsubishi Estate building directory match named OSM way/363563886; centroid of building footprint)",
+      "source": "https://incommodities.com/contact; https://office.mec.co.jp/search/detail/011418",
+      "osm": "way/363563886 https://www.openstreetmap.org/way/363563886",
+      "feature": "Marunouchi Park Building, 2-6-1 Marunouchi, Tokyo",
+      "method": "Official InCommodities and Mitsubishi Estate addresses match the named OSM building footprint; centroid calculated from way geometry."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5653,7 +5664,7 @@
     ]
   },
   "addressLevelRows": 268,
-  "buildingLevelRows": 131,
+  "buildingLevelRows": 132,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5663,6 +5674,7 @@
     "2026-11-03 address follow-up: 17 more official-address/map-feature matches were verified from 50 previously unqueried address records; 33 candidate records were rejected for insufficient building/address precision. City anchors were retained where evidence was ambiguous.",
     "2026-11-03 targeted follow-up reviewed 25 exact address/building query variants. Two points promoted: TD Securities 22 Vanderbilt Avenue (address-level OSM node/2716011976) and Macquarie Philadelphia Two Liberty Place (building-level OSM way/42785013; OSM address tags differ). Twenty-three candidates were retained at city level or rejected because results were road-only, wrong-city/address, unrelated-tenant or unresolved.",
     "2026-11-03 named-building follow-up reviewed 12 targeted searches. Four points passed: Jingan Asset Management COSCO Tower (address-level OSM way/148228836), S&P Global K. Wah Centre Shanghai (building-level way/255632242), S&P Global Marunouchi Kitaguchi Building Tokyo (building-level relation/3817813), and Vitol Nova South London (building-level way/451259201; OSM address tags conflict with the official address). Eight candidates remained unresolved or were rejected.",
-    "2026-11-03 priority trading-desk office follow-up: Statkraft and Statkraft Markets London rows mapped to OSM 22 Bishopsgate Tower way/717332347 using the official London trading-desk and Statkraft UK office pages; Vattenfall and Vattenfall Energy Trading London rows mapped to OSM 70 St Mary Axe way/556686921 using official UK contact pages. Four registry rows correspond to two physical buildings. Statkraft New York remains at its city anchor; the trading desk is confirmed by city but an office street address was not confirmed, and nearby Stamford was not substituted."
+    "2026-11-03 priority trading-desk office follow-up: Statkraft and Statkraft Markets London rows mapped to OSM 22 Bishopsgate Tower way/717332347 using the official London trading-desk and Statkraft UK office pages; Vattenfall and Vattenfall Energy Trading London rows mapped to OSM 70 St Mary Axe way/556686921 using official UK contact pages. Four registry rows correspond to two physical buildings. Statkraft New York remains at its city anchor; the trading desk is confirmed by city but an office street address was not confirmed, and nearby Stamford was not substituted.",
+    "2026-11-03 high-ranked Tokyo trader follow-up: InCommodities Tokyo office mapped to Marunouchi Park Building. Official English company contact and Mitsubishi Estate Japanese property directory agree on the 2-6-1 Marunouchi address; OSM way/363563886 has the matching Japanese/English building name. Point is the building polygon centroid, not an entrance."
   ]
 }
