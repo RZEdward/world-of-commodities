@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 407,
-  "cityFallbackRows": 602,
+  "verifiedRows": 411,
+  "cityFallbackRows": 598,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5615,6 +5615,46 @@
       "source": "https://www.uniper.energy/united-kingdom/about-uniper-uk/contact-uniper-united-kingdom; https://www.uniper.energy/procurement/suppliers/invoicing-information",
       "osm": "way/147253656; way/147253657",
       "method": "Uniper Global Commodities London Ltd is a distinct registered entity, while Uniper’s current UK contact page publishes one London office at 4th Floor, 42–44 Grosvenor Gardens. The official Uniper invoicing page confirms the London trading subsidiary, but does not publish a separate London street address for it. This row uses the group London office as the subsidiary’s published London office location; the map point represents the adjacent 42–44 building range and does not claim a subsidiary-specific suite."
+    },
+    {
+      "id": "off:ca4a0c31b206",
+      "company": "ADNOC",
+      "office": "Singapore — One George Street, #21-02/03, Singapore 049145",
+      "coordinates": "1.2857390, 103.8477899",
+      "precision": "Building-level (official ADNOC Trading address matches named OSM way/47300930 at 1 George Street; suite not mapped)",
+      "source": "https://adnoc.ae/what-we-do/our-businesses/adnoc-trading; https://afdshd01.adnoc.ae/adn-prd/-/media/adnoc-v2/sub-brands/adnoc-trading/files/at_privacy-notice-for-counterparties-customers-suppliers-and-partners.ashx",
+      "osm": "way/47300930",
+      "method": "ADNOC Trading’s current location page lists One George Street, #21-02/03, Singapore 049145. OSM way/47300930 is the One George Street building footprint at 1 George Street and postcode 049145. The suite is not geocoded separately."
+    },
+    {
+      "id": "off:3d80bc056df0",
+      "company": "ADNOC",
+      "office": "Geneva — ADNOC Trading Europe, Quai de l’Ile 13, 1204 Geneva",
+      "coordinates": "46.2049759, 6.1436837",
+      "precision": "Address-level (official ADNOC Trading Europe address matches OSM node/1335858814 house number 13, street and postcode)",
+      "source": "https://adnoc.ae/what-we-do/our-businesses/adnoc-trading; https://afdshd01.adnoc.ae/adn-prd/-/media/adnoc-v2/sub-brands/adnoc-trading/files/at_privacy-notice-for-counterparties-customers-suppliers-and-partners.ashx",
+      "osm": "node/1335858814",
+      "method": "ADNOC Trading’s location page lists its Geneva office at Quai de l’Ile 13, 1204 Geneva. The group privacy notice identifies ADNOC Trading Europe SA. OSM node/1335858814 matches house number 13, street and postcode. Pin is at the mapped street-address node; not floor-level."
+    },
+    {
+      "id": "off:d9c155dd2060",
+      "company": "Danske Commodities",
+      "office": "London — Waverley House, One Kingdom Street, London W2 6BD",
+      "coordinates": "51.5190420, -0.1816949",
+      "precision": "Building-level (official Danske address names One Kingdom Street; OSM way/42032682 is the named #1 building, postcode metadata differs)",
+      "source": "https://danskecommodities.com/united-kingdom; https://danskecommodities.com/contact",
+      "osm": "way/42032682",
+      "method": "Danske Commodities’ current UK page lists its office at c/o Equinor, Waverley House, One Kingdom Street, London W2 6BD. OSM way/42032682 is the #1 One Kingdom Street building. OSM tags postcode W2 6PY rather than the company-published W2 6BD; the named-building and street-number match is used at building-level and the postcode discrepancy remains explicit."
+    },
+    {
+      "id": "off:2aa1a10e2b52",
+      "company": "Danske Commodities",
+      "office": "Singapore — c/o Equinor, 8 Marina View, #41-05, Asia Square Tower 1, Singapore 018960",
+      "coordinates": "1.2790064, 103.8513509",
+      "precision": "Building-level (official Danske Singapore address matches OSM way/407941850 Asia Square Tower 1, address and postcode; suite not mapped)",
+      "source": "https://danskecommodities.com/contact; https://danskecommodities.com/dc-annual-2023",
+      "osm": "way/407941850",
+      "method": "Danske Commodities’ current office page lists its Singapore APAC office c/o Equinor at 8 Marina View, #41-05, Asia Square Tower 1, Singapore 018960. OSM way/407941850 matches Asia Square Tower 1, 8 Marina View and postcode. The building centroid does not distinguish suite 41-05."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5736,8 +5776,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 270,
-  "buildingLevelRows": 137,
+  "addressLevelRows": 271,
+  "buildingLevelRows": 140,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5750,6 +5790,7 @@
     "2026-11-03 priority trading-desk office follow-up: Statkraft and Statkraft Markets London rows mapped to OSM 22 Bishopsgate Tower way/717332347 using the official London trading-desk and Statkraft UK office pages; Vattenfall and Vattenfall Energy Trading London rows mapped to OSM 70 St Mary Axe way/556686921 using official UK contact pages. Four registry rows correspond to two physical buildings. Statkraft New York remains at its city anchor; the trading desk is confirmed by city but an office street address was not confirmed, and nearby Stamford was not substituted.",
     "2026-11-03 high-ranked Tokyo trader follow-up: InCommodities Tokyo office mapped to Marunouchi Park Building. Official English company contact and Mitsubishi Estate Japanese property directory agree on the 2-6-1 Marunouchi address; OSM way/363563886 has the matching Japanese/English building name. Point is the building polygon centroid, not an entrance.",
     "2026-11-03 priority office research: Aramco Far East Beijing mapped to the China World Tower III footprint (OSM way/116944490); Vortexa London updated from the stale Portsoken House to Tower 42/25 Old Broad Street (OSM way/166431059), supported by the company’s 2025 report and current Companies House filing; TOTSA TotalEnergies Trading Geneva mapped to Route de l’Aéroport 10 (OSM node/3856274357). The TOTSA physical street address is in Meyrin/Cointrin within Geneva’s metro office scope; 1215 Geneva follows the separate PO Box in the legal notice and was not treated as the street postcode.",
-    "2026-11-03 priority pass mapped Chubu London to OSM way/97237915 at 210 High Holborn; Northpool Vancouver to the named 320 Granville office footprint (Suite 970 official vs Suite 980 on a municipal licence record; suite omitted from point); and Uniper London to the 42–44 Grosvenor Gardens range represented by adjacent OSM building footprints. The Uniper Global Commodities subsidiary row uses the published group office because a separate subsidiary suite/address was not independently published."
+    "2026-11-03 priority pass mapped Chubu London to OSM way/97237915 at 210 High Holborn; Northpool Vancouver to the named 320 Granville office footprint (Suite 970 official vs Suite 980 on a municipal licence record; suite omitted from point); and Uniper London to the 42–44 Grosvenor Gardens range represented by adjacent OSM building footprints. The Uniper Global Commodities subsidiary row uses the published group office because a separate subsidiary suite/address was not independently published.",
+    "2026-11-03 further priority pass mapped ADNOC Trading Singapore to the named One George Street feature and Geneva to the exact Quai de l’Ile 13 address node. Danske Commodities London was mapped to the named One Kingdom Street building with the postcode mismatch (company W2 6BD vs OSM W2 6PY) explicit; its Singapore office was mapped to Asia Square Tower 1 at the official 8 Marina View address."
   ]
 }
