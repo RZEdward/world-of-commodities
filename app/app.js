@@ -142,6 +142,8 @@ function categoryColor(value) {
 
 function asDate(value) {
   if (typeof value !== "string") return null;
+  if (isPlaceholder(value) || /\b(?:deadline|date)\s+(?:is\s+)?(?:not stated|not listed|not provided|unknown|not announced)\b/i.test(value)) return null;
+  const deadlineText = value.replace(/\b(?:last\s+checked|checked|verified|reviewed|date\s+found)\b[^,;)]*/gi, "");
   const zoneNames = {
     JST: "Asia/Tokyo", HKT: "Asia/Hong_Kong", ET: "America/New_York",
     EST: "America/New_York", EDT: "America/New_York", UK: "Europe/London",
@@ -167,7 +169,7 @@ function asDate(value) {
     }
     return timestamp;
   };
-  const matches = [...value.matchAll(/\b(\d{4})-(\d{2})-(\d{2})(?:[ T]+(\d{1,2}):(\d{2})(?:\s*(JST|HKT|ET|EST|EDT|UK|GMT|BST|CET|CEST|UTC))?)?/gi)];
+  const matches = [...deadlineText.matchAll(/\b(\d{4})-(\d{2})-(\d{2})(?:[ T]+(\d{1,2}):(\d{2})(?:\s*(JST|HKT|ET|EST|EDT|UK|GMT|BST|CET|CEST|UTC))?)?/gi)];
   const timestamps = matches.map((match) => toTimestamp(
     Number(match[1]), Number(match[2]), Number(match[3]), Number(match[4] || 0), Number(match[5] || 0), match[6] || "",
   )).filter(Number.isFinite).sort((a, b) => a - b);
