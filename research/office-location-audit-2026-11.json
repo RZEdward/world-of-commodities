@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 400,
-  "cityFallbackRows": 609,
+  "verifiedRows": 403,
+  "cityFallbackRows": 606,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5542,6 +5542,39 @@
       "osm": "way/363563886 https://www.openstreetmap.org/way/363563886",
       "feature": "Marunouchi Park Building, 2-6-1 Marunouchi, Tokyo",
       "method": "Official InCommodities and Mitsubishi Estate addresses match the named OSM building footprint; centroid calculated from way geometry."
+    },
+    {
+      "id": "off:6b89680a31ee",
+      "company": "Saudi Aramco",
+      "office": "Beijing — Aramco Far East, China World Tower 3, No. 1 Jianguomenwai Avenue",
+      "coordinates": "39.9109836, 116.4523893",
+      "precision": "Building-level (official Aramco Beijing office in China World Tower 3 matches OSM way/116944490, named World Trade Center Tower III)",
+      "source": "https://www.aramco.com/en/global-contacts; https://china.aramco.com/en/privacy-statement",
+      "osm": "way/116944490 https://www.openstreetmap.org/way/116944490",
+      "feature": "World Trade Center Tower III / China World Tower 3, Beijing",
+      "method": "Aramco’s official global contacts lists Aramco Far East (Beijing) Business Services at 43/F and 45/F, China World Tower 3, No. 1 Jianguomenwai Avenue, Chaoyang District, Beijing 100004. The company privacy notice confirms its Beijing HQ at 43/F, China World Tower 3. OSM way/116944490 is named 中国国际贸易中心三期A座 / World Trade Center Tower III. Coordinate is polygon centroid; map feature represents Tower III and not a particular suite."
+    },
+    {
+      "id": "off:2305ecb7b3df",
+      "company": "Vortexa",
+      "office": "London — Tower 42, Leaf A&B, 25 Old Broad Street",
+      "coordinates": "51.5152156, -0.0839061",
+      "precision": "Building-level (Vortexa’s 2025 report names Tower 42 at 25 Old Broad Street; OSM way/166431059 matches Tower 42 and address number/street)",
+      "source": "https://marketinfo.vortexa.com/rs/837-MZE-578/images/Global%20Freight%20Snapshot%2020250115.pdf?version=0; https://find-and-update.company-information.service.gov.uk/company/09966213/filing-history",
+      "osm": "way/166431059 https://www.openstreetmap.org/way/166431059",
+      "feature": "Tower 42, 25 Old Broad Street, London",
+      "method": "Vortexa’s January 2025 company report identifies London at Tower 42, Leaf A&B, 25 Old Broad Street. Companies House records the registered office move from Portsoken House to Tower 42, 25 Old Broad Street in December 2024. OSM way/166431059 is the Tower 42 building at 25 Old Broad Street. The current workbook’s former Portsoken House address is obsolete; point is building-level, not a particular floor."
+    },
+    {
+      "id": "off:2ff69eceb64b",
+      "company": "TotalEnergies Trading",
+      "office": "Geneva — TOTSA TotalEnergies Trading, Route de l’Aéroport 10",
+      "coordinates": "46.2290965, 6.1057736",
+      "precision": "Address-level (official TOTSA Route de l’Aéroport 10 matches OSM node/3856274357 house number and street; within the Geneva metropolitan office area)",
+      "source": "https://trading.totalenergies.com/en/legal-notices/",
+      "osm": "node/3856274357 https://www.openstreetmap.org/node/3856274357",
+      "feature": "10 Route de l’Aéroport, Cointrin/Meyrin, Geneva canton",
+      "method": "TOTSA TotalEnergies Trading SA official legal notice lists its registered office at Route de l’Aéroport 10, Geneva, followed by P.O. Box 276, 1215 Geneva. OSM node/3856274357 matches house number 10 and Route de l’Aéroport; it has no postcode tag and locates the street address in Cointrin/Meyrin (Geneva canton). The 1215 is the mailing address for the PO Box, not treated as the physical street postcode. This is in the Geneva metro office scope, not central Geneva."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5663,8 +5696,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 268,
-  "buildingLevelRows": 132,
+  "addressLevelRows": 269,
+  "buildingLevelRows": 134,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5675,6 +5708,7 @@
     "2026-11-03 targeted follow-up reviewed 25 exact address/building query variants. Two points promoted: TD Securities 22 Vanderbilt Avenue (address-level OSM node/2716011976) and Macquarie Philadelphia Two Liberty Place (building-level OSM way/42785013; OSM address tags differ). Twenty-three candidates were retained at city level or rejected because results were road-only, wrong-city/address, unrelated-tenant or unresolved.",
     "2026-11-03 named-building follow-up reviewed 12 targeted searches. Four points passed: Jingan Asset Management COSCO Tower (address-level OSM way/148228836), S&P Global K. Wah Centre Shanghai (building-level way/255632242), S&P Global Marunouchi Kitaguchi Building Tokyo (building-level relation/3817813), and Vitol Nova South London (building-level way/451259201; OSM address tags conflict with the official address). Eight candidates remained unresolved or were rejected.",
     "2026-11-03 priority trading-desk office follow-up: Statkraft and Statkraft Markets London rows mapped to OSM 22 Bishopsgate Tower way/717332347 using the official London trading-desk and Statkraft UK office pages; Vattenfall and Vattenfall Energy Trading London rows mapped to OSM 70 St Mary Axe way/556686921 using official UK contact pages. Four registry rows correspond to two physical buildings. Statkraft New York remains at its city anchor; the trading desk is confirmed by city but an office street address was not confirmed, and nearby Stamford was not substituted.",
-    "2026-11-03 high-ranked Tokyo trader follow-up: InCommodities Tokyo office mapped to Marunouchi Park Building. Official English company contact and Mitsubishi Estate Japanese property directory agree on the 2-6-1 Marunouchi address; OSM way/363563886 has the matching Japanese/English building name. Point is the building polygon centroid, not an entrance."
+    "2026-11-03 high-ranked Tokyo trader follow-up: InCommodities Tokyo office mapped to Marunouchi Park Building. Official English company contact and Mitsubishi Estate Japanese property directory agree on the 2-6-1 Marunouchi address; OSM way/363563886 has the matching Japanese/English building name. Point is the building polygon centroid, not an entrance.",
+    "2026-11-03 priority office research: Aramco Far East Beijing mapped to the China World Tower III footprint (OSM way/116944490); Vortexa London updated from the stale Portsoken House to Tower 42/25 Old Broad Street (OSM way/166431059), supported by the company’s 2025 report and current Companies House filing; TOTSA TotalEnergies Trading Geneva mapped to Route de l’Aéroport 10 (OSM node/3856274357). The TOTSA physical street address is in Meyrin/Cointrin within Geneva’s metro office scope; 1215 Geneva follows the separate PO Box in the legal notice and was not treated as the street postcode."
   ]
 }
