@@ -1,22 +1,27 @@
 # Coordinate audit — 2026-11-02
 
-## What changed
+## Registry coverage
 
-- Reviewed 378 map lookups: 332 office-address candidates, 17 campuses and 29 registered search cities.
-- Added address-level coordinates to 107 office records. In the broad sweep, the listed street number and road had to match; postcodes were matched when the source address and map data both supplied one. Each updated office row has the OpenStreetMap feature link and match details in `Research Notes`; its original official office source remains in `Source URL`.
-- Corrected Macquarie Commodities’ Sydney office to the `1Elizabeth` building (OSM way 1241501338) after the first search result matched a different `1 Elizabeth Street` in another Sydney suburb. The official Macquarie locations page lists the Sydney address.
-- A focused native-language pass added building/address coordinates for six Tokyo offices (five distinct points; S&P Global and Platts share the same registered building). The remaining Tokyo office records still have only city-level evidence.
-- Updated 14 of 17 campus records to a campus feature or campus address point. The Oxford, Cambridge UK and KAIST Seoul records remain at their registered city coordinates because the searches did not establish a sufficiently reliable campus point. Their notes record that limitation.
-- Retained the 29 Location Registry coordinates as city-level search-scope points. They represent the target cities, not office addresses.
+- Office Registry now has 1,068 rows, each linked to an in-scope Location Registry ID and carrying coordinates. One Taipei office row had been incorrectly assigned to Nanjing because “Nanjing East Road” occurs in the Taipei street address; that out-of-scope row was removed.
+- 179 offices now have address/building evidence: 152 address-level matches and 27 building-level matches. This includes 50 additional office coordinates from the follow-up pass. The other 889 office rows retain a registered city/area estimate because the research did not establish a defensible building point.
+- All 17 Campus Registry rows now have a campus or building point. The final three refinements are Oxford Engineering Science’s Thom Building, Cambridge’s Centre for Mathematical Sciences (the course-linked DAMTP location), and KAIST Seoul Campus.
+- All 29 Location Registry rows have coordinates. These are city-level search-scope points, not office or campus coordinates.
 
-## Map display
+## Evidence and decisions
 
-Office and campus records with verified address or campus points use those coordinates. Where a record only has a registered city-centre estimate, its stored coordinates remain unchanged. The dashboard separates coincident city-estimate markers by a deterministic, small map-only offset and labels the popup `City-level estimate · pin offset slightly for visibility`. Selecting a record zooms to its point and opens its detail panel. Records with genuinely identical verified coordinates remain grouped in a counted marker whose list opens each record.
+The earlier sweep reviewed 378 map lookups and refined 107 office rows. The follow-up checked 242 address-bearing company/office records against the registered city, retried unresolved entries with the address alone, and reviewed the official office pages already collected. Fifty entries qualified through a matching OpenStreetMap house number or named building. Each changed Office Registry row retains its original office source and adds the OSM feature link, matched feature name, and check date in `Research Notes`.
 
-The visual offset is only a collision aid. It does not replace or imply a researched street address, and the registry continues to store the real city-centre coordinate and its uncertainty.
+Campus sources and map features were matched as follows:
 
-## Checks and limits
+- Oxford MSc Energy Systems is offered by Engineering Science; the Thom Building is the department’s main site at Parks Road. Coordinates use OSM way 66710279. [Oxford course page](https://www.ox.ac.uk/admissions/graduate/courses/msc-energy-systems), [Thom Building](https://www.ox.ac.uk/about/how-we-are-run/equality-diversity/access-guide/academic-depts/thom-building), [OSM feature](https://www.openstreetmap.org/way/66710279).
+- Cambridge’s MPhil in Quantitative Climate and Environmental Science is cross-departmental and includes DAMTP. The campus point is the Centre for Mathematical Sciences on Wilberforce Road, from the official DAMTP address and OSM way 4195915. [Course page](https://www.postgraduate.study.cam.ac.uk/courses/directory/maammpqce), [DAMTP address](https://www.damtp.cam.ac.uk/about/contacts), [OSM feature](https://www.openstreetmap.org/way/4195915).
+- KAIST Seoul Campus is officially listed at 85 Hoegi-ro; OSM way 416468238 is tagged as the Seoul Campus. [KAIST campus page](https://www.kaist.ac.kr/en/html/kaist/01200203.html), [OSM feature](https://www.openstreetmap.org/way/416468238).
+- Macquarie’s official current New York address is 660 Fifth Avenue. OSM’s building feature is named “660 Fifth Avenue” but retains the legacy 666 house-number tag; the coordinates represent that verified building. [Macquarie announcement](https://www.macquarie.com/cl/en/about/news/2024/macquarie-group-demonstrates-commitment-to-the-americas-with-move-to-iconic-new-york-address-at-660-fifth-avenue), [OSM feature](https://www.openstreetmap.org/way/118476502).
 
-- The dashboard feed contains 1,069 mapped office records and 172 mapped opportunities. Office records are joined through registered Location IDs; the 29 search cities remain the scope source.
-- Nominatim results were accepted only when the street number and road matched; a conflicting postcode or a result more than 12 km from the registered city point was rejected. The exact-match rule is intentionally conservative. A map match is coordinate evidence, not proof that an office is still occupied there; see each row’s official source and check date.
-- Address-level/campus-level positions now exist where the available evidence supports them. Remaining city-centre values are explicitly approximate and spread only in the map renderer to prevent visual overlap.
+The company office address is not evidence that the company currently occupies the site; the cited company page and check date remain in each row. Where an OSM result conflicted with the registered city or listed street number, it was rejected. For example, a Taipei address was not geocoded to Nanjing, and a result for Macquarie’s former building number was accepted only after confirming that OSM’s feature name and Macquarie’s current official address refer to the same building.
+
+## Map display and remaining uncertainty
+
+Verified office and campus points use their researched coordinates. City/area estimates keep their registered approximate coordinates; the dashboard separates coincident estimated pins with a deterministic map-only offset and labels them as estimates. This keeps pins visible without inventing office coordinates. Exact shared buildings remain grouped in a counted marker.
+
+There are no blank coordinate cells in the Office, Campus, or Location registries. There are still 889 office records whose individual building coordinates are not established. Those rows are explicitly approximate rather than presented as precise. The 29 Location Registry points are intentionally city centroids used for search scope.
