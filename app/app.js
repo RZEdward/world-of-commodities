@@ -729,21 +729,11 @@ function render() {
   const filtered = getFilteredItems();
   const visibleIds = new Set(filtered.map((item) => item.id));
   for (const item of filtered) for (const memberId of item.memberIds || []) visibleIds.add(memberId);
-  const updatedStacks = new Set();
   for (const [id, markers] of state.markers) {
     for (const marker of markers) {
       const members = marker.memberIds || [id];
       const isVisible = members.some((member) => visibleIds.has(member));
       marker.getElement().style.display = isVisible ? "" : "none";
-      if (marker.stackEntries && !updatedStacks.has(marker)) {
-        updatedStacks.add(marker);
-        const visibleEntries = marker.stackEntries.filter((entry) => entry.memberIds.some((memberId) => visibleIds.has(memberId)));
-        const count = visibleEntries.reduce((sum, entry) => sum + entry.count, 0);
-        const badge = marker.getElement().querySelector(".map-stack-count");
-        if (badge) badge.textContent = count > 99 ? "99+" : String(count);
-        marker.getElement().setAttribute("aria-label", `${count} mapped items at ${marker.stackLocation.name || "this location"}`);
-        marker.getElement().style.display = count ? "" : "none";
-      }
     }
   }
 
@@ -822,154 +812,15 @@ function selectItem(id, flyTo) {
         duration: 700,
       });
     }
-    const stackMarker = markers.find((marker) => marker.stackEntries);
-    if (stackMarker) {
-      const entry = stackMarker.stackEntries.find((candidate) => candidate.memberIds.includes(id));
-      if (entry) showStackDetail(stackMarker, entry);
-      else if (!stackMarker.getPopup()?.isOpen()) stackMarker.togglePopup();
-    } else if (!markers[0].getPopup()?.isOpen()) markers[0].togglePopup();
+    if (!markers[0].getPopup()?.isOpen()) markers[0].togglePopup();
   }
 
 }
 
-function visibleStackEntries(marker) {
-  const visibleIds = new Set();
-  for (const item of getFilteredItems()) {
-    visibleIds.add(item.id);
-    for (const memberId of item.memberIds || []) visibleIds.add(memberId);
-  }
-  return marker.stackEntries.filter((entry) => entry.memberIds.some((id) => visibleIds.has(id)));
-}
-
-function stackCount(entries) {
-  return entries.reduce((sum, entry) => sum + entry.count, 0);
-}
-
-function buildStackPopupContent(marker) {
-  const entries = visibleStackEntries(marker);
-  const count = stackCount(entries);
-  const rows = entries.map((entry) => {
-    const item = entry.item;
-    const detail = item.kind === "company" ? (item.category || "Company") : (item.status || item.kind.replaceAll("_", " "));
-    const place = entry.location?.name || item.office || item.location || item.campus || "Location not specified";
-    const memberId = entry.memberIds[0];
-    return `<button type="button" class="map-stack-item" data-stack-item="${escapeHtml(memberId)}">
-      <span class="map-stack-item-title">${escapeHtml(item.title || item.organization)}</span>
-      <span class="map-stack-item-meta">${escapeHtml(item.organization || item.category || "")}${detail ? ` · ${escapeHtml(detail)}` : ""}</span>
-      <span class="map-stack-item-place">${escapeHtml(place)}</span>
-    </button>`;
-  }).join("");
-  return `<div class="map-popup map-stack-popup">
-    <div class="map-popup-title">${count} mapped ${count === 1 ? "item" : "items"}</div>
-    <div class="map-popup-organization">${escapeHtml(marker.stackLocation.name || "Same mapped coordinates")}</div>
-    <div class="map-stack-list">${rows || '<div class="empty">No matching records.</div>'}</div>
-  </div>`;
-}
-
-function showStackDetail(marker, entry) {
-  const popup = marker.getPopup();
-  if (!popup) return;
-  const count = stackCount(visibleStackEntries(marker));
-  marker.getElement().dataset.stackDetailOpen = "true";
-  popup.setHTML(`<div class="map-stack-detail">
-    <button type="button" class="map-stack-back" data-stack-back>← Show ${count} mapped items</button>
-    ${buildPopupContent(entry.item, entry.location || marker.stackLocation)}
-  </div>`);
-  if (!popup.isOpen()) marker.togglePopup();
-  attachScoreTooltips(popup.getElement());
-  attachStackPopupActions(marker);
-}
-
-function attachStackPopupActions(marker) {
-  const element = marker.getPopup()?.getElement();
-  if (!element || element.dataset.stackActionsAttached === "true") return;
-  element.dataset.stackActionsAttached = "true";
-  element.addEventListener("click", (event) => {
-    const itemButton = event.target.closest("[data-stack-item]");
-    if (itemButton) {
-      event.preventDefault();
-      selectItem(itemButton.dataset.stackItem, true);
-      return;
-    }
-    if (event.target.closest("[data-stack-back]")) {
-      event.preventDefault();
-      marker.getElement().dataset.stackDetailOpen = "false";
-      marker.getPopup().setHTML(buildStackPopupContent(marker));
-    }
-  });
-}
-
-function collapseCoincidentMarkers() {
+function separateCoincidentMarkers() {
   const markers = new Set([...state.markers.values()].flat());
   const groups = new Map();
   for (const marker of markers) {
-    if (!marker.mapEntry) continue;
-    if (isApproximateMapPoint(marker.mapEntry.location, marker.mapEntry.item)) continue;
-    const point = marker.getLngLat();
-    const key = `${point.lng.toFixed(5)},${point.lat.toFixed(5)}`;
-    if (!groups.has(key)) groups.set(key, []);
-    groups.get(key).push(marker);
-  }
-
-  for (const group of groups.values()) {
-    if (group.length < 2) continue;
-    const uniqueEntries = new Map();
-    for (const marker of group) {
-      const entry = marker.mapEntry;
-      const point = marker.getLngLat();
-      const key = `${entry.item.id}|${point.lng.toFixed(5)},${point.lat.toFixed(5)}`;
-      if (!uniqueEntries.has(key)) uniqueEntries.set(key, { ...entry, memberIds: marker.memberIds || [entry.item.id], count: entry.item.programmes?.length || 1 });
-    }
-    const entries = [...uniqueEntries.values()];
-    const firstPoint = group[0].getLngLat();
-    const location = group[0].mapEntry.location;
-    const memberIds = [...new Set(entries.flatMap((entry) => entry.memberIds))];
-    for (const marker of group) marker.remove();
-
-    const element = document.createElement("button");
-    element.type = "button";
-    element.className = "map-stack-marker";
-    element.setAttribute("aria-label", `${stackCount(entries)} mapped items at ${location.name || "this location"}`);
-    element.innerHTML = `<span class="map-stack-count">${stackCount(entries) > 99 ? "99+" : stackCount(entries)}</span>`;
-    const popup = new maplibregl.Popup({ offset: 18, maxWidth: "370px", closeButton: true, closeOnClick: true, focusAfterOpen: false }).setHTML("");
-    popup.on("open", () => {
-      if (element.dataset.stackDetailOpen !== "true") popup.setHTML(buildStackPopupContent(clusterMarker));
-      attachStackPopupActions(clusterMarker);
-      attachScoreTooltips(popup.getElement());
-    });
-    const clusterMarker = new maplibregl.Marker({ element })
-      .setLngLat([firstPoint.lng, firstPoint.lat])
-      .setPopup(popup)
-      .addTo(state.map);
-    clusterMarker.memberIds = memberIds;
-    clusterMarker.stackEntries = entries;
-    clusterMarker.stackLocation = location;
-    element.addEventListener("click", () => {
-      if (element.dataset.stackDetailOpen === "true") {
-        element.dataset.stackDetailOpen = "false";
-        popup.setHTML(buildStackPopupContent(clusterMarker));
-        attachStackPopupActions(clusterMarker);
-      }
-      state.selected = memberIds[0] || null;
-      render();
-    });
-    for (const [id, currentMarkers] of state.markers) {
-      if (currentMarkers.some((marker) => group.includes(marker))) state.markers.set(id, [clusterMarker]);
-    }
-  }
-}
-
-function isApproximateMapPoint(location, item) {
-  const precision = String(location?.precision || item?.coordinate_precision || "");
-  return /city[- ]level|city[- ]centre|city[- ]center|approx|not independently|not established|fallback/i.test(precision);
-}
-
-function spreadApproximateMarkers() {
-  const markers = new Set([...state.markers.values()].flat());
-  const groups = new Map();
-  for (const marker of markers) {
-    const location = marker.mapEntry?.location;
-    if (!isApproximateMapPoint(location, marker.mapEntry?.item)) continue;
     const point = marker.getLngLat();
     const key = `${point.lng.toFixed(6)},${point.lat.toFixed(6)}`;
     if (!groups.has(key)) groups.set(key, []);
@@ -977,20 +828,19 @@ function spreadApproximateMarkers() {
   }
   const goldenAngle = Math.PI * (3 - Math.sqrt(5));
   for (const group of groups.values()) {
-    if (group.length < 2) continue;
+    if (group.length < 2) {
+      group[0].setOffset([0, 0]);
+      continue;
+    }
     const ordered = group.sort((a, b) => {
       const left = `${a.mapEntry.item.id}|${a.mapEntry.location.name || ""}`;
       const right = `${b.mapEntry.item.id}|${b.mapEntry.location.name || ""}`;
       return left.localeCompare(right);
     });
-    const anchor = ordered[0].getLngLat();
-    const latitude = anchor.lat;
-    const maxRadiusMeters = Math.min(10000, 2500 + ordered.length * 75);
-    const metersPerPixel = Math.cos(latitude * Math.PI / 180) * 40075016 / (512 * 2 ** state.map.getZoom());
-    const maxRadiusPixels = Math.min(100, maxRadiusMeters / metersPerPixel);
+    const maxRadiusPixels = Math.min(24, 10 + Math.sqrt(ordered.length) * 2);
     ordered.forEach((marker, index) => {
       const angle = index * goldenAngle;
-      const radius = maxRadiusPixels * Math.sqrt((index + 0.5) / ordered.length);
+      const radius = ordered.length === 2 ? 8 + index * 8 : maxRadiusPixels * Math.sqrt((index + 0.5) / ordered.length);
       marker.setOffset([radius * Math.cos(angle), radius * Math.sin(angle)]);
     });
   }
@@ -1093,9 +943,8 @@ function initializeMap() {
     for (const item of state.locations) {
       state.markers.set(item.id, (item.locations || []).map((location) => createMarker(item, location)));
     }
-    spreadApproximateMarkers();
-    collapseCoincidentMarkers();
-    state.map.on("zoomend", spreadApproximateMarkers);
+    separateCoincidentMarkers();
+    state.map.on("zoomend", separateCoincidentMarkers);
     render();
   });
 }

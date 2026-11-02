@@ -456,7 +456,12 @@ def main() -> None:
                 campus = campus_by_id.get(row.get("Campus ID", ""), {})
                 university = universities_by_id.get(row.get("University ID", ""), {})
                 point = point_for(campus.get("Coordinates", "")) if campus else None
-                places = [{"name": campus.get("Location", row.get("Location", "")), "latitude": point[0], "longitude": point[1]}] if point else []
+                precision = campus.get("Coordinate Precision", "") if campus else ""
+                place_name = campus.get("Location", row.get("Location", "")) if campus else row.get("Location", "")
+                if not point:
+                    point = point_for(row.get("Coordinates", ""))
+                    precision = "Course-sheet coordinates; campus-level precision not confirmed" if point else ""
+                places = [{"name": place_name, "latitude": point[0], "longitude": point[1], "precision": precision}] if point else []
                 payload.update({"university_id": row.get("University ID", ""), "campus_id": row.get("Campus ID", ""), "campus": row.get("Campus", ""), "location": row.get("Location", ""),
                     "university_reputation_score_10": university.get("University Reputation Score /10", ""), "university_reputation_notes": university.get("University Reputation Notes", "")})
             else:
