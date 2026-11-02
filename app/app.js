@@ -52,6 +52,7 @@ const statusClass = (item) => {
 const fieldLabels = {
   kind: "Type",
   verification: "Source check",
+  duration: "Duration",
   function_market: "Function / market",
   business: "Business / company category",
   role_function: "Role function",
@@ -407,7 +408,7 @@ function buildPopupContent(item, location) {
     else jobDetailRows.push(markup);
   };
 
-  const preferredOrder = ["university", "course", "campus", "location", "owner", "status", "company_priority_rank", "company_priority_tier", "company_search_focus", "company_priority_rationale", "candidate_fit_score_10", "candidate_fit_notes", "role_fit_score_10", "role_fit_notes", "company_reputation_score_10", "company_reputation_notes", "role_desk_outlook_score_10", "role_desk_outlook_notes", "location_fit_score_10", "expected_earnings_score_10", "expected_earnings_notes", "total_score_10", "total_score_method", "total_compensation_expectation_usd", "compensation_estimate_notes", "university_reputation_score_10", "university_reputation_notes", "course_fit_score_10", "course_fit_notes", "course_programme_score_10", "course_programme_notes", "recruitment_company_score_10", "recruitment_company_score_notes", "recruiter_assessment_score_10", "recruiter_assessment_notes", "recruiter_relationship_score_10", "confidence", "intake", "deadline", "fit", "link", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
+  const preferredOrder = ["university", "course", "duration", "campus", "location", "owner", "status", "company_priority_rank", "company_priority_tier", "company_search_focus", "company_priority_rationale", "candidate_fit_score_10", "candidate_fit_notes", "role_fit_score_10", "role_fit_notes", "company_reputation_score_10", "company_reputation_notes", "role_desk_outlook_score_10", "role_desk_outlook_notes", "location_fit_score_10", "expected_earnings_score_10", "expected_earnings_notes", "total_score_10", "total_score_method", "total_compensation_expectation_usd", "compensation_estimate_notes", "university_reputation_score_10", "university_reputation_notes", "course_fit_score_10", "course_fit_notes", "course_programme_score_10", "course_programme_notes", "recruitment_company_score_10", "recruitment_company_score_notes", "recruiter_assessment_score_10", "recruiter_assessment_notes", "recruiter_relationship_score_10", "confidence", "intake", "deadline", "fit", "link", "requirements", "next_action", "business", "role_function", "business_function", "commodity", "market_geography", "time_horizon", "category", "office", "description"];
   preferredOrder.splice(preferredOrder.indexOf("deadline"), 0, "application_routes");
   const fields = Object.entries(item).sort(([a], [b]) => {
     const ai = preferredOrder.indexOf(a), bi = preferredOrder.indexOf(b);
