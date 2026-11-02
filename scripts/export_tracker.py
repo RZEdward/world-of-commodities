@@ -426,13 +426,15 @@ def main() -> None:
             if office:
                 point = point_for(office.get("Coordinates", ""))
                 label = office.get("Office", "")
+                precision = office.get("Coordinate Precision", "")
             else:
                 point = point_for(loc.get("Coordinates", "")) if loc else None
                 label = link.get("City", "")
+                precision = "City-centre fallback (Location Registry; office not linked)"
             if label and label not in labels: labels.append(label)
             city = link.get("City", "")
             if city and city not in city_labels: city_labels.append(city)
-            if point: places.append({"name": label or city, "latitude": point[0], "longitude": point[1]})
+            if point: places.append({"name": label or city, "latitude": point[0], "longitude": point[1], "precision": precision})
         places = list({(p["latitude"], p["longitude"]): p for p in places}.values())
         title, org = row.get("Role", ""), row.get("Company", "")
         company = companies.get(row.get("Company ID", ""), {})
@@ -472,7 +474,7 @@ def main() -> None:
     for row in office_rows:
         company = companies.get(row["Company ID"], {})
         point = point_for(row.get("Coordinates", ""))
-        places = [{"name": row.get("Office", ""), "latitude": point[0], "longitude": point[1]}] if point else []
+        places = [{"name": row.get("Office", ""), "latitude": point[0], "longitude": point[1], "precision": row.get("Coordinate Precision", "")}] if point else []
         office = row.get("Office", "")
         offices.append({**{key(k): v for k, v in row.items() if v not in (None, "")}, "id": row["Office ID"], "kind": "company",
             "title": company.get("Company", row.get("Company", "")), "organization": categories.get(company.get("Company", "").casefold(), "Uncategorized"),
@@ -511,7 +513,7 @@ def main() -> None:
         places = []
         for campus in campuses:
             point = point_for(campus.get("Coordinates", ""))
-            if point: places.append({"name": campus.get("Campus", "") or campus.get("Location", ""), "latitude": point[0], "longitude": point[1]})
+            if point: places.append({"name": campus.get("Campus", "") or campus.get("Location", ""), "latitude": point[0], "longitude": point[1], "precision": campus.get("Coordinate Precision", "")})
         members = [r.get("Opportunity ID") for r in sheets.get("Masters", []) if r.get("University ID") == uni.get("University ID") and r.get("Opportunity ID")]
         universities.append({"id": uni.get("University ID", ""), "kind": "university", "title": uni.get("University", ""), "organization": uni.get("Category", "University"),
             "category": uni.get("Category", "University"), "university": uni.get("University", ""), "memberIds": members, "locations": places,

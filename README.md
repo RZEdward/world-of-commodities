@@ -26,6 +26,8 @@ Registries define the entities and scope that opportunities link to:
 
 Each sheet has an Owner. For registry and search-scope records this is the person responsible for maintaining them; for opportunities and interactions it is the person responsible for the application or relationship. Job records link to registered offices and locations. Multi-city vacancies are represented as one role-city row per eligible registered city. Masters records link to university and campus records; campus coordinates are stored in Campus Registry. The Location Registry is the geographic boundary: do not add or export offices/campuses outside an owner's active search scope. Chicago, Harbin, Providence, and Xi'an were explicitly excluded from Ross's scope; associated institutions should not be retained as in-scope records.
 
+Office and campus coordinates are address/campus-level only when the source supports that precision. Otherwise the registry retains its city-level coordinate; the map fans coincident approximate pins apart on screen and labels the saved coordinate as approximate. See the [coordinate audit](research/coordinate-audit-2026-11.md) for the November 2026 review and its remaining gaps.
+
 For jobs, **Business** is the employer category. **Commodity**, **Market Geography**, and **Time Horizon** describe the traded product, market region, and trading/analysis horizon. **Role Function** describes the work performed. Do not put a graduate rotation, seniority, or contract duration in the market time-horizon field.
 
 ## Scores and ranking
