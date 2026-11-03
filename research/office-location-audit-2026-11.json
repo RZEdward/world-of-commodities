@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 437,
-  "cityFallbackRows": 572,
+  "verifiedRows": 439,
+  "cityFallbackRows": 570,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5931,6 +5931,26 @@
       "source": "https://www.sucden.com/en/contact/; https://www.sucdenfinancial.com/en/about/",
       "osm": "way/141329944",
       "method": "Sucden’s official group contact directory identifies Sucden Financial Limited at Plantation Place South, 60 Great Tower Street, EC3R 5AZ; Sucden Financial’s own current company page confirms the same. OSM way/141329944 is named Plantation Place South at no. 60 but tags postcode EC3R 7AG. Building name and number match; postcode discrepancy retained."
+    },
+    {
+      "id": "off:3dfa2dbca00e",
+      "company": "Bunge",
+      "coordinates": "46.1961737, 6.1559428",
+      "precision": "Address-level (OSM node/2194822358 matches house number 13, Route de Florissant and postcode 1206)",
+      "source": "https://www.bunge.com/en/contact-us; https://www.sec.gov/Archives/edgar/data/1996862/000162828026024590/annualreport_bg-12312025x.htm",
+      "osm": "node/2194822358",
+      "method": "Bunge’s current contact page lists a Geneva commercial office. Its 2025 Form 10-K gives the registered and principal executive office as 13 Route de Florissant, 1206 Geneva; the Swiss active Bunge SA entity is at the same address. OSM node/2194822358 matches number 13, street and postcode 1206. The group filing and entity records support the office address; address-level pin.",
+      "office": "Geneva — Bunge Global SA, Route de Florissant 13, 1206 Geneva"
+    },
+    {
+      "id": "off:babbf8761555",
+      "company": "Bunge",
+      "coordinates": "1.2770467, 103.8454726",
+      "precision": "Building-level (OSM way/393100849 is Guoco Tower at 1 Wallich Street and postcode 078881)",
+      "source": "https://www.bunge.com/en/contact-us; https://indialei.in/detailed-information/563892/5493000DM1JNU1X8WN78/bunge-asia-pte-ltd/; https://www.openstreetmap.org/way/393100849",
+      "osm": "way/393100849",
+      "method": "Bunge’s current contact page confirms a Singapore office. The active Bunge Asia Pte. Ltd. LEI record, updated 2026-03-03 and derived from Singapore’s entity register, lists 1 Wallich Street #08-01, Guoco Tower, Singapore 078881. OSM way/393100849 is the named Guoco Tower footprint and matches address number and postcode; building-level, not unit-level.",
+      "office": "Singapore — Bunge Asia Pte. Ltd., 1 Wallich Street, #08-01, Guoco Tower, Singapore 078881"
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6052,8 +6072,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 277,
-  "buildingLevelRows": 160,
+  "addressLevelRows": 278,
+  "buildingLevelRows": 161,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6073,6 +6093,7 @@
     "2026-11-03 exchange/trading office pass mapped EEX London and Tokyo and EDF Trading London using current official contact addresses matched to OSM address/building features; EDF address also matches Companies House.",
     "2026-11-03 follow-up mapped Gunvor Geneva to OSM building address node 80 within official 80–84 Rue du Rhône range, and Gunvor Singapore to the Guoco Midtown office-tower footprint. Gunvor London was left at the city anchor because current public legal/SRA location records conflict and no exact office map feature could be corroborated.",
     "2026-11-03 Hudson River Trading pass mapped six in-scope registered city offices from the current official HRT directory to matching OSM address/building features. London was left city-level; the New York and Seoul OSM postcode conflicts are documented.",
-    "2026-11-03 Sucden pass mapped five in-scope office rows using current official group/subsidiary contact addresses and OSM address/building features; Shanghai house-number and London postcode mismatches remain explicit."
+    "2026-11-03 Sucden pass mapped five in-scope office rows using current official group/subsidiary contact addresses and OSM address/building features; Shanghai house-number and London postcode mismatches remain explicit.",
+    "2026-11-03 Bunge pass mapped Geneva Route de Florissant 13 and Singapore Guoco Tower from current company/entity records matched to OSM. Shanghai remains city-level because its current official contact page does not publish a street address."
   ]
-}
+}\n
