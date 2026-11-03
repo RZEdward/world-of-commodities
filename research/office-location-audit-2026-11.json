@@ -2,9 +2,9 @@
   "date": "2026-11-03",
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
-  "officeRowsAfter": 1009,
-  "verifiedRows": 503,
-  "cityFallbackRows": 506,
+  "officeRowsAfter": 1005,
+  "verifiedRows": 512,
+  "cityFallbackRows": 493,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -998,6 +998,70 @@
       "Owner": "Ross",
       "removal_reason": "Office is outside the registered search city; removed from in-scope Office Registry",
       "audit_source": "https://second-foundation.de/en/"
+    },
+    {
+      "Company": "Gunvor Singapore",
+      "Office": "London",
+      "Coordinates": "51.5072,-0.1276",
+      "Source URL": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+      "Checked On": "2026-11-02",
+      "Confidence": "Official 2025 group brochure; Singapore entity row should be tied to Singapore office.",
+      "Research Notes": "Official company source identifies physical office city; verify role/desk relevance separately. Official company source identifies physical office city; verify role/desk relevance separately. Approximate city-centre coordinates from GeoNames, not geocoded to the office address. Map point reset to an approximate city/area coordinate to match the verified office label. Map point reset to an approximate city/area coordinate to match the verified office label. | Coordinate audit 2026-11-02: no source-backed office address point accepted; coordinates reset to registered Location Registry anchor. Dashboard may apply a small visual-only offset to separate overlapping approximate markers.",
+      "Office ID": "off:4b6276221b1b",
+      "Company ID": "co:gunvor-singapore",
+      "Location ID": "loc:london",
+      "Coordinate Precision": "City-level fallback — office address not independently verified",
+      "Owner": "Ross",
+      "removal_reason": "Gunvor Singapore is a Singapore-incorporated subsidiary; no entity-specific office evidence supports assigning Geneva, London, Shanghai, or Beijing. Corresponding Gunvor Group office rows remain in the registry.",
+      "audit_source": "Gunvor Group official 2025 office brochure; Gunvor Singapore entity address corroboration"
+    },
+    {
+      "Company": "Gunvor Singapore",
+      "Office": "Geneva",
+      "Coordinates": "46.2044,6.1432",
+      "Source URL": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+      "Checked On": "2026-11-02",
+      "Confidence": "Official 2025 group brochure; Singapore entity row should be tied to Singapore office.",
+      "Research Notes": "Official company source identifies physical office city; verify role/desk relevance separately. Official company source identifies physical office city; verify role/desk relevance separately. Approximate city-centre coordinates from GeoNames, not geocoded to the office address. Map point reset to an approximate city/area coordinate to match the verified office label. Map point reset to an approximate city/area coordinate to match the verified office label. | Coordinate audit 2026-11-02: no source-backed office address point accepted; coordinates reset to registered Location Registry anchor. Dashboard may apply a small visual-only offset to separate overlapping approximate markers.",
+      "Office ID": "off:f443dd05feb1",
+      "Company ID": "co:gunvor-singapore",
+      "Location ID": "loc:geneva",
+      "Coordinate Precision": "City-level fallback — office address not independently verified",
+      "Owner": "Ross",
+      "removal_reason": "Gunvor Singapore is a Singapore-incorporated subsidiary; no entity-specific office evidence supports assigning Geneva, London, Shanghai, or Beijing. Corresponding Gunvor Group office rows remain in the registry.",
+      "audit_source": "Gunvor Group official 2025 office brochure; Gunvor Singapore entity address corroboration"
+    },
+    {
+      "Company": "Gunvor Singapore",
+      "Office": "Shanghai",
+      "Coordinates": "31.2304,121.4737",
+      "Source URL": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+      "Checked On": "2026-11-02",
+      "Confidence": "Official 2025 group brochure; Singapore entity row should be tied to Singapore office.",
+      "Research Notes": "Official company source identifies physical office city; verify role/desk relevance separately. Official company source identifies physical office city; verify role/desk relevance separately. Approximate city-centre coordinates from GeoNames, not geocoded to the office address. Map point reset to an approximate city/area coordinate to match the verified office label. Map point reset to an approximate city/area coordinate to match the verified office label. | Coordinate audit 2026-11-02: no source-backed office address point accepted; coordinates reset to registered Location Registry anchor. Dashboard may apply a small visual-only offset to separate overlapping approximate markers.",
+      "Office ID": "off:06e1c178d850",
+      "Company ID": "co:gunvor-singapore",
+      "Location ID": "loc:shanghai",
+      "Coordinate Precision": "City-level fallback — office address not independently verified",
+      "Owner": "Ross",
+      "removal_reason": "Gunvor Singapore is a Singapore-incorporated subsidiary; no entity-specific office evidence supports assigning Geneva, London, Shanghai, or Beijing. Corresponding Gunvor Group office rows remain in the registry.",
+      "audit_source": "Gunvor Group official 2025 office brochure; Gunvor Singapore entity address corroboration"
+    },
+    {
+      "Company": "Gunvor Singapore",
+      "Office": "Beijing",
+      "Coordinates": "39.9042,116.4074",
+      "Source URL": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf",
+      "Checked On": "2026-11-02",
+      "Confidence": "Official 2025 group brochure; Singapore entity row should be tied to Singapore office.",
+      "Research Notes": "Official company source identifies physical office city; verify role/desk relevance separately. Official company source identifies physical office city; verify role/desk relevance separately. Approximate city-centre coordinates from GeoNames, not geocoded to the office address. Map point reset to an approximate city/area coordinate to match the verified office label. Map point reset to an approximate city/area coordinate to match the verified office label. | Coordinate audit 2026-11-02: no source-backed office address point accepted; coordinates reset to registered Location Registry anchor. Dashboard may apply a small visual-only offset to separate overlapping approximate markers.",
+      "Office ID": "off:b7488247cce9",
+      "Company ID": "co:gunvor-singapore",
+      "Location ID": "loc:beijing",
+      "Coordinate Precision": "City-level fallback — office address not independently verified",
+      "Owner": "Ross",
+      "removal_reason": "Gunvor Singapore is a Singapore-incorporated subsidiary; no entity-specific office evidence supports assigning Geneva, London, Shanghai, or Beijing. Corresponding Gunvor Group office rows remain in the registry.",
+      "audit_source": "Gunvor Group official 2025 office brochure; Gunvor Singapore entity address corroboration"
     }
   ],
   "coordinateChanges": [
@@ -6562,6 +6626,91 @@
       "precision": "Building-level (OSM way/232511784)",
       "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/232511784",
       "method": "BofA global directory lists 34/F, Governor Phillip Tower, 1 Farrer Place, Sydney NSW 2000. OSM feature is the named Governor Phillip Tower at 1 Farrer Place; footprint centroid used."
+    },
+    {
+      "id": "off:422e01b6bbbf",
+      "company": "Gunvor",
+      "office": "Geneva — Rue du Rhône 80–84, 1204 Genève",
+      "coordinates": "46.2036731, 6.1494265",
+      "precision": "Address-level (node/963893774)",
+      "source": "https://www.uid.admin.ch/Detail.aspx?lang=en&uid_id=CHE-112.675.659; https://gunvorgroup.com/gunvor-group-brochure-2025.pdf; https://www.openstreetmap.org/node/963893774",
+      "method": "Swiss UID register identifies active Gunvor SA at Rue du Rhône 80–84 and was last validated 2026-10-26. Gunvor 2025 group brochure identifies Geneva as a trading office. OSM node/963893774 matches street no. 80 within the official 80–84 range; point is the address site."
+    },
+    {
+      "id": "off:d95a7fa88522",
+      "company": "Gunvor",
+      "office": "Singapore — 12 Marina Boulevard, #35-03, Marina Bay Financial Centre Tower 3, Singapore 018982",
+      "coordinates": "1.2789573, 103.8544488",
+      "precision": "Building-level (way/116905041 pin)",
+      "source": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf; https://www.energy.gov/sites/default/files/2023-10/Gunvor%20Singapore%2010.23.2023.pdf; https://gunvorgroup.com/tr/insurance/; https://www.openstreetmap.org/way/116905041",
+      "method": "Gunvor 2025 brochure identifies Singapore as a trading office. Gunvor Singapore Pte Ltd 2023 DOE filing gives 12 Marina Boulevard #35-03, MBFC Tower 3; current Gunvor group insurance page gives the same group building/address. OSM footprint names MBFC Tower 3; OSM tags show a differing street number, so the point is matched by tower name and geometry, not OSM address number."
+    },
+    {
+      "id": "off:354131dd8e32",
+      "company": "Gunvor Singapore",
+      "office": "Singapore — 12 Marina Boulevard, #35-03, Marina Bay Financial Centre Tower 3, Singapore 018982",
+      "coordinates": "1.2789573, 103.8544488",
+      "precision": "Building-level (way/116905041 pin)",
+      "source": "https://www.energy.gov/sites/default/files/2023-10/Gunvor%20Singapore%2010.23.2023.pdf; https://gunvorgroup.com/tr/insurance/; https://www.openstreetmap.org/way/116905041",
+      "method": "Gunvor Singapore Pte Ltd filing gives 12 Marina Boulevard #35-03, MBFC Tower 3; Gunvor group insurance subsidiary page confirms the group’s registered office at the same address. OSM footprint names MBFC Tower 3; OSM street-number tag differs. Company-specific row is retained only for its verified Singapore office."
+    },
+    {
+      "id": "off:968c810f91ba",
+      "company": "Gunvor",
+      "office": "Shanghai — Office T30, 63/F, Shanghai World Financial Center, 100 Century Avenue, Pudong, Shanghai 200120",
+      "coordinates": "31.2365768, 121.5030406",
+      "precision": "Building-level (way/10691100 pin)",
+      "source": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf; https://ise-prodnr-eu-west-1-data-integration.s3-eu-west-1.amazonaws.com/202109/293f12a0-10bd-4a37-9d36-7318d80409ed.PDF; https://www.openstreetmap.org/way/10691100",
+      "method": "Gunvor’s 2025 official brochure confirms a Shanghai trading office. The last located exact company-published address is the 2019 annual report: Office T30, 63/F, Shanghai World Financial Center, 100 Century Avenue. OSM feature is the named SWFC footprint. With no newer exact address found, retain a medium-confidence building-level point and flag address for reconfirmation."
+    },
+    {
+      "id": "off:2dcdb74253c8",
+      "company": "Gunvor",
+      "office": "Beijing — Office 1108, Tower A, Hehua Mingcheng Building, 7 Jianguomen South Avenue, Dongcheng District, Beijing 100005",
+      "coordinates": "39.9026958, 116.4283187",
+      "precision": "Building-level (Baidu POI UID 66332e4f3e1ae3326040a9c3 pin)",
+      "source": "https://gunvorgroup.com/gunvor-group-brochure-2025.pdf; https://ise-prodnr-eu-west-1-data-integration.s3-eu-west-1.amazonaws.com/202109/293f12a0-10bd-4a37-9d36-7318d80409ed.PDF; https://english.beijing.gov.cn/investinginbeijing/investment_transaction_promotion/commercial_facilities/202306/t20230625_3144213.html; https://map.baidu.com/search/%E8%8D%B7%E5%8D%8E%E6%98%8E%E5%9F%8E%E5%A4%A7%E5%8E%A6-C%E5%BA%A7/",
+      "method": "Gunvor’s 2025 official brochure confirms a Beijing office. Its 2019 annual report gives Office 1108, Tower A, Hehua City Wall, 7 Jianguomen South Ave. Beijing municipal government identifies Hehua Mingcheng Building at the same street number. Baidu Maps identifies the C-tower POI at the address; embedded BD-09 LL coordinates were converted to WGS-84. Exact present-day Gunvor suite is not reconfirmed, so confidence is medium and pin is building-level."
+    },
+    {
+      "id": "off:93ecadab9bf9",
+      "company": "Mercuria",
+      "office": "Geneva — Mercuria Energy Trading SA, 6th Floor, Rue du Rhône 50, 1204 Genève, Switzerland",
+      "coordinates": "46.2040734, 6.1476440",
+      "precision": "Address-level (official house number matched to OSM address point node/1105370296)",
+      "source": "https://mercuria.com/contact-us/; https://www.openstreetmap.org/node/1105370296",
+      "map_feature": "node/1105370296",
+      "method": "Mercuria current contact page lists the Geneva office at 6th Floor, Rue du Rhône 50, 1204 Genève. OSM node/1105370296 is the matching no. 50 address point. Coordinates represent the address point/building, not the sixth-floor entrance."
+    },
+    {
+      "id": "off:3c76ca92a3f6",
+      "company": "Mercuria",
+      "office": "London — Mercuria Energy Trading Ltd, 62 Buckingham Gate, London SW1E 6AJ, United Kingdom",
+      "coordinates": "51.4976910, -0.1364181",
+      "precision": "Building-level (official street address matched to OSM building way/111763680)",
+      "source": "https://mercuria.com/contact-us/; https://www.openstreetmap.org/way/111763680",
+      "map_feature": "way/111763680",
+      "method": "Mercuria current contact page lists 62 Buckingham Gate, London SW1E 6AJ. OSM way/111763680 is the named 62 Buckingham Gate office building. Building-level pin; not a suite or entrance coordinate."
+    },
+    {
+      "id": "off:63f132561140",
+      "company": "Mercuria",
+      "office": "Beijing — Mercuria Energy Trading (Beijing) Co., Ltd., Unit 01, 48th Floor, Building 16 / China World Tower B, No. 1 Jianguomenwai Street, Chaoyang District, Beijing 100004, China",
+      "coordinates": "39.9116065, 116.4543669",
+      "precision": "Building-level (Amap POI specifically identifies Guomao Phase 3 Tower B; GCJ-02 transformed to WGS-84)",
+      "source": "https://mercuria.com/what-we-do/our-regions/asia-pacific/; https://lei.bloomberg.com/leis/view/549300X81U1PE8YIZP97; https://ditu.amap.com/place/B0FFL34WF2; https://www.cwtc.com/en/about",
+      "map_feature": "Amap POI B0FFL34WF2",
+      "method": "Mercuria’s current Asia Pacific office directory lists 48F China World Tower B, No. 1 Jianguomenwai Avenue. The active/full-corrob LEI record updated 2026-08-20 identifies Unit 01, 48th Floor, Building 16, No. 1 Jianguomenwai Street. Amap POI B0FFL34WF2 is explicitly titled 国贸3期B座 (China World Trade Center Phase 3B) and returns GCJ-02 39.912938,116.460515; converted with the standard GCJ-02 inverse transform to WGS-84 39.9116065,116.4543669. The complex owner confirms Tower B exists separately from Tower A. Pin is the tower footprint, not office-floor entrance."
+    },
+    {
+      "id": "off:1c9dc753ed26",
+      "company": "Mercuria",
+      "office": "Shanghai — Mercuria Energy Trading (Shanghai) Co., Ltd., Unit 2601, Kerry Pudong Office Building, No. 1155 Fang Dian Road, Pudong, Shanghai 201204, China",
+      "coordinates": "31.2147200, 121.5593600",
+      "precision": "Building-level (official address matched to Kerry Pudong / OSM way/709897742)",
+      "source": "https://mercuria.com/what-we-do/our-regions/asia-pacific/; https://mapcarta.com/W709897742",
+      "map_feature": "way/709897742",
+      "method": "Mercuria’s current Asia Pacific directory lists Unit 2601, Kerry Pudong Office Building, No. 1155 Fang Dian Road, Pudong, Shanghai 201204. OSM way/709897742 is the matching named Kerry Pudong / Kerry Parkside office complex at the same address; pin is complex-level, not the unit entrance."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6683,8 +6832,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 287,
-  "buildingLevelRows": 216,
+  "addressLevelRows": 289,
+  "buildingLevelRows": 223,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6717,6 +6866,9 @@
     "2026-11-03 QatarEnergy Beijing official Room 1011 address matched to Baidu’s China World Office Tower 2-specific POI; BD-09 Mercator coordinates transformed to WGS-84.",
     "2026-11-03 DBS/ABN AMRO pass: fourteen official office addresses matched to named OSM building or address-site features; row-level notes preserve discrepancies and suite-level limitations.",
     "2026-11-03 Ørsted London/Boston pass: official contact directory addresses matched; London pinned at official postcode centroid because exact building outline was not confidently isolated.",
-    "2026-11-03 Bank of America pass: all eight registered-city addresses verified against current official global directory and matched to named OSM/Photon building/site features."
-  ]
+    "2026-11-03 Bank of America pass: all eight registered-city addresses verified against current official global directory and matched to named OSM/Photon building/site features.",
+    "2026-11-03 Gunvor pass: mapped Geneva, Singapore, Shanghai, Beijing; retained London city fallback because official registered office and SRA-listed address conflict. Removed four unsupported non-Singapore office links for Gunvor Singapore subsidiary.",
+    "2026-11-03 Mercuria office pass matched current employer-published Geneva, London, Beijing and Shanghai addresses to office map features. Beijing Tower B POI GCJ-02 coordinates were transformed to WGS-84; the conversion and map-source limitations are preserved in the row."
+  ],
+  "removedUnsupportedEntityCityLinks": 4
 }
