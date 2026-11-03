@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 411,
-  "cityFallbackRows": 598,
+  "verifiedRows": 421,
+  "cityFallbackRows": 588,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5655,6 +5655,122 @@
       "source": "https://danskecommodities.com/contact; https://danskecommodities.com/dc-annual-2023",
       "osm": "way/407941850",
       "method": "Danske Commodities’ current office page lists its Singapore APAC office c/o Equinor at 8 Marina View, #41-05, Asia Square Tower 1, Singapore 018960. OSM way/407941850 matches Asia Square Tower 1, 8 Marina View and postcode. The building centroid does not distinguish suite 41-05."
+    },
+    {
+      "id": "off:0c6861ee50f1",
+      "company": "RWE",
+      "office": "New York — RWE Trading Americas, 50 Rockefeller Plaza, Suite 1230, New York, NY 10020",
+      "coordinates": "40.7592523, -73.9784544",
+      "precision": "Address-level (official RWE Trading Americas address matches OSM node/2717543352 house number, street and postcode)",
+      "source": "https://americas.rwe.com/",
+      "feature": "node/2717543352",
+      "method": "RWE Americas lists RWE Trading Americas, Inc. at 50 Rockefeller Plaza, Suite 1230, New York, NY 10020. OSM node/2717543352 matches house number 50, Rockefeller Plaza and postcode 10020. The suite is not separately mapped."
+    },
+    {
+      "id": "off:d53deee113f7",
+      "company": "RWE Supply & Trading",
+      "office": "New York — RWE Trading Americas, 50 Rockefeller Plaza, Suite 1230, New York, NY 10020",
+      "coordinates": "40.7592523, -73.9784544",
+      "precision": "Address-level (official RWE Trading Americas address matches OSM node/2717543352 house number, street and postcode)",
+      "source": "https://americas.rwe.com/",
+      "feature": "node/2717543352",
+      "method": "RWE’s US trading affiliate operates at 50 Rockefeller Plaza, Suite 1230, per the official RWE Americas location page. This row is the group-level New York location; the street address is the trading subsidiary’s published office. OSM node/2717543352 matches the address and postcode; suite is not separately mapped."
+    },
+    {
+      "id": "off:2e59996ec565",
+      "company": "RWE",
+      "office": "Singapore — RWE Supply & Trading Asia-Pacific, 50 Raffles Place, #44-01, Singapore Land Tower, Singapore 048623",
+      "coordinates": "1.2847144, 103.8520187",
+      "precision": "Building-level (official RWE address matches OSM way/46595418 Singapore Land Tower, 50 Raffles Place and postcode; suite not mapped)",
+      "source": "https://www.rwe.com/en/the-group/countries-and-locations/singapore/",
+      "feature": "way/46595418",
+      "method": "RWE Supply & Trading Asia-Pacific’s official page lists 50 Raffles Place, #44-01, Singapore Land Tower, Singapore 048623. OSM way/46595418 is the named Singapore Land Tower footprint at number 50 and the same postcode. The same registered Singapore office location is shared across the RWE and RWEST office rows; the suite is not geocoded separately."
+    },
+    {
+      "id": "off:82744b4ab77b",
+      "company": "RWE Supply & Trading",
+      "office": "Singapore — RWE Supply & Trading Asia-Pacific, 50 Raffles Place, #44-01, Singapore Land Tower, Singapore 048623",
+      "coordinates": "1.2847144, 103.8520187",
+      "precision": "Building-level (official RWE address matches OSM way/46595418 Singapore Land Tower, 50 Raffles Place and postcode; suite not mapped)",
+      "source": "https://www.rwe.com/en/the-group/countries-and-locations/singapore/",
+      "feature": "way/46595418",
+      "method": "RWE Supply & Trading Asia-Pacific’s official page lists 50 Raffles Place, #44-01, Singapore Land Tower, Singapore 048623. OSM way/46595418 is the named Singapore Land Tower footprint at number 50 and the same postcode. The same registered Singapore office location is shared across the RWE and RWEST office rows; the suite is not geocoded separately."
+    },
+    {
+      "id": "off:f81818a44539",
+      "company": "RWE",
+      "office": "Beijing — RWE Supply & Trading (Shanghai) Co., Ltd., Beijing Branch, 12A Tower B, Gateway Plaza, 18 Xiaguangli, Beijing 100027",
+      "coordinates": "39.9567650, 116.4584890",
+      "precision": "Building-level (RWE official Beijing address matches Gateway Plaza owner’s published coordinates and building address)",
+      "source": "https://www.rwe.asia/; https://mapletreepact.com/Asset-Portfolio/Property.aspx?currentProperty=%2FAll-Properties%2FMPACT%2FChina%2FGateway-Plaza",
+      "feature": "Gateway Plaza property map https://mapletreepact.com/Asset-Portfolio/Property.aspx?currentProperty=%2FAll-Properties%2FMPACT%2FChina%2FGateway-Plaza",
+      "method": "RWE’s official Asia site lists its Beijing Branch at 12A, Tower B, Gateway Plaza, No.18 Xiaguangli. Mapletree, the Gateway Plaza owner, lists the same street address and publishes property coordinates 39.956765, 116.458489. The point is the complex/property location, not Tower B suite-level."
+    },
+    {
+      "id": "off:aa67b16e15b8",
+      "company": "RWE Supply & Trading",
+      "office": "Beijing — RWE Supply & Trading (Shanghai) Co., Ltd., Beijing Branch, 12A Tower B, Gateway Plaza, 18 Xiaguangli, Beijing 100027",
+      "coordinates": "39.9567650, 116.4584890",
+      "precision": "Building-level (RWE official Beijing address matches Gateway Plaza owner’s published coordinates and building address)",
+      "source": "https://www.rwe.asia/; https://mapletreepact.com/Asset-Portfolio/Property.aspx?currentProperty=%2FAll-Properties%2FMPACT%2FChina%2FGateway-Plaza",
+      "feature": "Gateway Plaza property map https://mapletreepact.com/Asset-Portfolio/Property.aspx?currentProperty=%2FAll-Properties%2FMPACT%2FChina%2FGateway-Plaza",
+      "method": "RWE’s official Asia site lists its Beijing Branch at 12A, Tower B, Gateway Plaza, No.18 Xiaguangli. Mapletree, the Gateway Plaza owner, lists the same street address and publishes property coordinates 39.956765, 116.458489. The point is the complex/property location, not Tower B suite-level; this group row shares the published Beijing office."
+    },
+    {
+      "id": "off:65fabe9a88c0",
+      "company": "RWE",
+      "office": "Tokyo — RWE Supply & Trading Japan, 5F Marunouchi Trust Tower Main, 1-8-3 Marunouchi, Chiyoda-ku, Tokyo 100-0005",
+      "coordinates": "35.6824538, 139.7692921",
+      "precision": "Building-level (official RWE address matches named OSM way/145412771 Marunouchi Trust Tower Main and postcode)",
+      "source": "https://jp.rwe.com/en/rwest-japan/; https://www.mori-trust.co.jp/english/business/office/marunouchi_trusttower-main/",
+      "feature": "way/145412771",
+      "method": "RWE Supply & Trading Japan’s official page lists 5F, Marunouchi Trust Tower Main, 1-8-3 Marunouchi, Chiyoda-ku, Tokyo 100-0005. Mori Trust, the building owner, confirms the same property address; OSM way/145412771 is the named main tower footprint and postcode. Pin is building-level, not floor-level."
+    },
+    {
+      "id": "off:777fbb01ceb1",
+      "company": "RWE Supply & Trading",
+      "office": "Tokyo — RWE Supply & Trading Japan, 5F Marunouchi Trust Tower Main, 1-8-3 Marunouchi, Chiyoda-ku, Tokyo 100-0005",
+      "coordinates": "35.6824538, 139.7692921",
+      "precision": "Building-level (official RWE address matches named OSM way/145412771 Marunouchi Trust Tower Main and postcode)",
+      "source": "https://jp.rwe.com/en/rwest-japan/; https://www.mori-trust.co.jp/english/business/office/marunouchi_trusttower-main/",
+      "feature": "way/145412771",
+      "method": "RWE Supply & Trading Japan’s official page lists 5F, Marunouchi Trust Tower Main, 1-8-3 Marunouchi, Chiyoda-ku, Tokyo 100-0005. Mori Trust, the building owner, confirms the same property address; OSM way/145412771 is the named main tower footprint and postcode. RWE’s Tokyo office also hosts other RWE colleagues; this group row uses the same published Tokyo base. Pin is building-level, not floor-level."
+    },
+    {
+      "id": "off:10733ae7e1d6",
+      "company": "RWE",
+      "office": "London — The Northcliffe, 28 Tudor Street, London EC4Y 0AY",
+      "coordinates": "51.5128100, -0.1072500",
+      "precision": "Building-level (RWE official address matches Historic England listed-building record for Northcliffe House; coordinates from listed-building location)",
+      "source": "https://uk.rwe.com/rwe-supply-and-trading/; https://uk.rwe.com/disclaimer/; https://historicengland.org.uk/listing/the-list/list-entry/1262507",
+      "method": "RWE Supply & Trading’s official UK page lists The Northcliffe, 28 Tudor Street, EC4Y 0AY as its London office. Historic England’s Grade II listing identifies Northcliffe House at that address and gives location TQ 3143581010; published coordinates 51.51281, -0.10725 represent the listed building. This is building-level; the point does not identify an internal suite."
+    },
+    {
+      "id": "off:9493fbeaffe9",
+      "company": "RWE Supply & Trading",
+      "office": "London — RWE Supply & Trading, The Northcliffe, 28 Tudor Street, London EC4Y 0AY",
+      "coordinates": "51.5128100, -0.1072500",
+      "precision": "Building-level (RWE official address matches Historic England listed-building record for Northcliffe House; coordinates from listed-building location)",
+      "source": "https://uk.rwe.com/rwe-supply-and-trading/; https://uk.rwe.com/disclaimer/; https://historicengland.org.uk/listing/the-list/list-entry/1262507",
+      "method": "RWE Supply & Trading lists London at The Northcliffe, 28 Tudor Street, EC4Y 0AY; the legal disclaimer confirms the trading entity’s London branch there. Historic England’s Grade II listing identifies Northcliffe House at the official address and gives location TQ 3143581010, with published coordinates 51.51281, -0.10725. The point is building-level, not suite-level."
+    },
+    {
+      "id": "off:72bec4b47fb5",
+      "company": "RWE",
+      "office": "Shanghai — RWE Supply & Trading (Shanghai), Room 623, Floor 6, Zhenfeng Building, 89 Jilong Road, Pudong",
+      "coordinates": "31.3523681, 121.5859877",
+      "precision": "Address-level (RWE official office and Amap tenant pin both identify No. 89 Jilong Road; Amap GCJ-02 point converted to WGS84)",
+      "source": "https://www.rwe.asia/rwest-shanghai/; https://www.amap.com/place/B0HB9ZDZKI",
+      "method": "RWE’s official Shanghai office page lists Room 623, Floor 6, Zhenfeng Building, No.89 Jilong Road. Amap identifies a ground-floor Starbucks tenant at exactly 89 Jilong Road (振丰大厦店), providing a building-address pin at 31.350215, 121.590202 in GCJ-02. Converted to WGS84 for this map, the stored point is 31.3523681, 121.5859877; the marker is address/building-level and not floor/suite-level."
+    },
+    {
+      "id": "off:d6f62314b48a",
+      "company": "RWE Supply & Trading",
+      "office": "Shanghai — RWE Supply & Trading (Shanghai), Room 623, Floor 6, Zhenfeng Building, 89 Jilong Road, Pudong",
+      "coordinates": "31.3523681, 121.5859877",
+      "precision": "Address-level (RWE official office and Amap tenant pin both identify No. 89 Jilong Road; Amap GCJ-02 point converted to WGS84)",
+      "source": "https://www.rwe.asia/rwest-shanghai/; https://www.amap.com/place/B0HB9ZDZKI",
+      "method": "RWE’s official Shanghai office page lists Room 623, Floor 6, Zhenfeng Building, No.89 Jilong Road. Amap identifies a ground-floor Starbucks tenant at exactly 89 Jilong Road (振丰大厦店), providing a building-address pin at 31.350215, 121.590202 in GCJ-02. Converted to WGS84 for this map, the stored point is 31.3523681, 121.5859877; the marker is address/building-level and not floor/suite-level."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5776,8 +5892,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 271,
-  "buildingLevelRows": 140,
+  "addressLevelRows": 275,
+  "buildingLevelRows": 146,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5791,6 +5907,8 @@
     "2026-11-03 high-ranked Tokyo trader follow-up: InCommodities Tokyo office mapped to Marunouchi Park Building. Official English company contact and Mitsubishi Estate Japanese property directory agree on the 2-6-1 Marunouchi address; OSM way/363563886 has the matching Japanese/English building name. Point is the building polygon centroid, not an entrance.",
     "2026-11-03 priority office research: Aramco Far East Beijing mapped to the China World Tower III footprint (OSM way/116944490); Vortexa London updated from the stale Portsoken House to Tower 42/25 Old Broad Street (OSM way/166431059), supported by the company’s 2025 report and current Companies House filing; TOTSA TotalEnergies Trading Geneva mapped to Route de l’Aéroport 10 (OSM node/3856274357). The TOTSA physical street address is in Meyrin/Cointrin within Geneva’s metro office scope; 1215 Geneva follows the separate PO Box in the legal notice and was not treated as the street postcode.",
     "2026-11-03 priority pass mapped Chubu London to OSM way/97237915 at 210 High Holborn; Northpool Vancouver to the named 320 Granville office footprint (Suite 970 official vs Suite 980 on a municipal licence record; suite omitted from point); and Uniper London to the 42–44 Grosvenor Gardens range represented by adjacent OSM building footprints. The Uniper Global Commodities subsidiary row uses the published group office because a separate subsidiary suite/address was not independently published.",
-    "2026-11-03 further priority pass mapped ADNOC Trading Singapore to the named One George Street feature and Geneva to the exact Quai de l’Ile 13 address node. Danske Commodities London was mapped to the named One Kingdom Street building with the postcode mismatch (company W2 6BD vs OSM W2 6PY) explicit; its Singapore office was mapped to Asia Square Tower 1 at the official 8 Marina View address."
+    "2026-11-03 further priority pass mapped ADNOC Trading Singapore to the named One George Street feature and Geneva to the exact Quai de l’Ile 13 address node. Danske Commodities London was mapped to the named One Kingdom Street building with the postcode mismatch (company W2 6BD vs OSM W2 6PY) explicit; its Singapore office was mapped to Asia Square Tower 1 at the official 8 Marina View address.",
+    "2026-11-03 RWE pass mapped New York group/trading rows to 50 Rockefeller Plaza; Singapore rows to Singapore Land Tower; Beijing rows to Gateway Plaza using property-owner-published coordinates matching the RWE address; and Tokyo rows to Marunouchi Trust Tower Main. RWE Shanghai and London were not upgraded without a defensible point.",
+    "2026-11-03 RWE London and Shanghai locations were resolved. London uses the Historic England-listed Northcliffe House coordinate at RWE’s official 28 Tudor Street address. Shanghai uses Amap’s tenant pin for the same No.89 Jilong Road building as RWE’s official floor-6 office, converted from GCJ-02 to WGS84 before storage."
   ]
 }
