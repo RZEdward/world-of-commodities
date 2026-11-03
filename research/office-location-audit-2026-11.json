@@ -2,9 +2,9 @@
   "date": "2026-11-03",
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
-  "officeRowsAfter": 1009,
-  "verifiedRows": 515,
-  "cityFallbackRows": 494,
+  "officeRowsAfter": 1004,
+  "verifiedRows": 523,
+  "cityFallbackRows": 481,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6711,9 +6711,119 @@
       "source": "https://mercuria.com/what-we-do/our-regions/asia-pacific/; https://mapcarta.com/W709897742",
       "map_feature": "way/709897742",
       "method": "Mercuria’s current Asia Pacific directory lists Unit 2601, Kerry Pudong Office Building, No. 1155 Fang Dian Road, Pudong, Shanghai 201204. OSM way/709897742 is the matching named Kerry Pudong / Kerry Parkside office complex at the same address; pin is complex-level, not the unit entrance."
+    },
+    {
+      "id": "off:c002dd0c9aa8",
+      "company": "Louis Dreyfus Company",
+      "office": "Beijing Office — Ying Ke Zhong Xin (Yingke Center), North Workers Stadium Road, Beijing 100027",
+      "coordinates": "39.9313180, 116.4528187",
+      "precision": "Building-complex level (official Ying Ke Zhong Xin listing matched to OSM named commercial complex; map point is complex-level, not a tower entrance)",
+      "source": "https://www.ldc.com/who-we-are/locations/; https://www.yingkeds.cn/index.html; https://www.amap.com/place/B000A6C5EC; https://www.openstreetmap.org/way/1130951556",
+      "map_feature": "way/1130951556",
+      "method": "LDC’s current locations directory lists its Beijing Office as Ying Ke Zhong Xin, North Worker Stadium Road, Beijing 100027. Chinese building sources identify Yingke Center (盈科中心) at Workers Stadium North Road A2; Amap independently gives the same building name and address at GCJ-02 39.932654, 116.458974. OSM way/1130951556 is named 盈科中心 and is tagged as the commercial complex. The Amap point was converted from GCJ-02 to WGS-84 (39.9313180, 116.4528187), placing it within about 40 m of the OSM geometry centroid. The pin is complex-level, not an exact entrance or tower pin."
+    },
+    {
+      "id": "off:4941b74a784f",
+      "company": "Louis Dreyfus Company",
+      "office": "Shanghai Office — No. 1359 Yaolong Road, Pudong District, Shanghai 200124 (Crystal Plaza)",
+      "coordinates": "31.1543825, 121.4727699",
+      "precision": "Building-complex level (official street number matched to Crystal Plaza / OSM commercial complex; tower/entrance not resolved)",
+      "source": "https://www.ldc.com/who-we-are/locations/; https://www.reset.build/directory/projects/RP-00150; https://surl.amap.com/fzvc5QNgaSr; https://www.openstreetmap.org/way/511379586",
+      "map_feature": "way/511379586",
+      "method": "LDC’s current location directory lists Shanghai Office at No. 1359 Yaolong Road, Pudong District, Shanghai 200124. An independent building/project directory ties 1359 Yaolong Road to Crystal Plaza T1, and Amap identifies the Crystal Plaza complex at the same road address. OSM way/511379586 is named 晶耀前滩 / Crystal Plaza and tagged as a commercial complex. Coordinates are the arithmetic centroid of that OSM geometry; this is a complex-level pin only, not a claim that LDC occupies the specific T1 polygon or a known floor/entrance."
+    },
+    {
+      "id": "off:406489f24965",
+      "company": "Olam Group",
+      "office": "Singapore — 7 Straits View, Marina One East Tower, #20-01, Singapore 018936",
+      "coordinates": "1.2774226, 103.8526863",
+      "precision": "Building-complex level (official address names Marina One East Tower; OSM feature is Marina One Offices complex, not tower-specific)",
+      "source": "https://www.olamgroup.com/content/dam/olamgroup/investor-relations/ir-library/financial-results/financial-results-pdfs/2025/h1-2025-results/14aug2025_h1_2025_results_financial_statements.pdf; https://www.olamgroup.com/news/all-news/press-release/olam-group-to-closedown-jiva-ag-as-part-of-updated-2025-re-organisation-plan.html; https://www.openstreetmap.org/way/463857949",
+      "map_feature": "way/463857949",
+      "method": "Olam Group’s 2025 interim financial statements identify 7 Straits View, #20-01, Marina One East Tower, Singapore 018936 as its registered office and principal place of business; the current corporate site repeats the address. OSM way/463857949 is named Marina One Offices and describes the commercial complex. The feature centroid is used as a complex-level location; East Tower is established by the official address, but this feature does not isolate that tower entrance."
+    },
+    {
+      "id": "off:507716e0e59c",
+      "company": "Toyota Tsusho",
+      "office": "Tokyo Head Office — Shinagawa Front Building, 3-13 Konan 2-chome, Minato-ku, Tokyo 108-8208",
+      "coordinates": "35.6290667, 139.7442056",
+      "precision": "Building-level (official company address matched to Shinagawa Front Building; georeferenced building point; move announced for around FY2030)",
+      "source": "https://www.toyota-tsusho.com/english/company/network/; https://www.toyota-tsusho.com/english/company/map/tokyo.html; https://www.toyota-tsusho.com/english/press/detail/261029_006956.html; https://shinagawafront.com/about/",
+      "map_feature": "named OSM building feature",
+      "method": "Toyota Tsusho’s current official global directory and Tokyo map identify its Tokyo Head Office at Shinagawa Front Building, 3-13 Konan 2-chome. Toyota Tsusho announced on 2026-10-29 that it plans to move the Tokyo Head Office to the Yaesu 1-chome North District project around FY2030. Coordinates identify the current building, not a future office. Building reference: 35.6290667, 139.7442056; independent location reference and access details are linked. Keep this point current until the move occurs, then re-research."
+    },
+    {
+      "id": "off:46159a40f8ee",
+      "company": "Toyota Tsusho",
+      "office": "New York — 825 Third Avenue, 10th Floor, New York, NY 10022",
+      "coordinates": "40.7558500, -73.9701600",
+      "precision": "Building-level (official corporate address matched to OSM building way/150397674)",
+      "source": "https://www.toyota-tsusho.com/english/company/network/; https://www.taiamerica.com/contact/; https://www.openstreetmap.org/way/150397674",
+      "map_feature": "named OSM building feature",
+      "method": "Toyota Tsusho’s current global network lists Toyota Tsusho America at 825 Third Avenue, 10th Floor, New York. Toyota Tsusho America’s contact page confirms the corporate address. OSM way/150397674 is the named/address-matched 825 Third Avenue building. Coordinates are the building feature point; floor-level location is not implied."
+    },
+    {
+      "id": "off:c8b86193971b",
+      "company": "Toyota Tsusho",
+      "office": "Shanghai — Wheelock Square, 2nd Floor, 1717 Nanjing West Road, Jing’an District, Shanghai 200040",
+      "coordinates": "31.2235280, 121.4402300",
+      "precision": "Building-level (official street number and building name match OSM way/185830584)",
+      "source": "https://www.toyota-tsusho.com/english/company/network/; https://mapcarta.com/W185830584; https://www.openstreetmap.org/way/185830584",
+      "map_feature": "named OSM building feature",
+      "method": "Toyota Tsusho’s current global directory lists Toyota Tsusho (Shanghai) at 2nd Floor, Wheelock Square, 1717 Nanjing West Road, Jing’an District. OSM way/185830584 is Wheelock Square at 1717 Nanjing West Road with matching district/postcode. Coordinates are the building feature point; tenant floor is established by the company directory."
+    },
+    {
+      "id": "off:dbb120e1ce7f",
+      "company": "Toyota Tsusho",
+      "office": "Beijing — Room 218, Beijing Fortune Building (Beijing Development Building), No. 5 Dong San Huan Bei Lu, Chaoyang District, Beijing",
+      "coordinates": "39.9502003, 116.4545376",
+      "precision": "Building-level (official company directory matched to named building and Amap address POI; GCJ-02 point converted to WGS-84)",
+      "source": "https://www.toyota-tsusho.com/english/company/network/; https://ditu.amap.com/place/B000A3F74B; https://www.bjfzds.cn/; https://commons.wikimedia.org/wiki/File:Beijing_Fortune_Building_(20261031131242).jpg",
+      "map_feature": "Amap POI B000A3F74B (WGS-84 transformed)",
+      "method": "Toyota Tsusho’s current global directory gives its Beijing office as Room 218, Beijing Fortune Building, No. 5 Dong San Huan Bei Lu. Native-language Amap identifies Beijing Development Building (北京发展大厦) at the exact No. 5 address and provides GCJ-02 point 39.951533, 116.460690. The coordinate was converted to WGS-84 (39.9502003, 116.4545376); a Wikimedia Commons photograph identifies the same building and its camera location falls about 55 m away. The point is building-level, not a room or entrance pin. Beijing Fortune Building is the translated name used by the company directory."
+    },
+    {
+      "id": "off:d5fa8a347211",
+      "company": "HSBC",
+      "office": "Shanghai — HSBC Building, Shanghai IFC North Tower, 8 Century Avenue, Pudong, Shanghai 200120",
+      "coordinates": "31.2391000, 121.4978000",
+      "precision": "Building-level (HSBC’s official Shanghai headquarters address matched to the mapped Shanghai IFC North Tower OSM way/423304682)",
+      "source": "https://www.hsbc.com/contact-us; https://www.about.hsbc.com.cn/; https://www.hsbc.com.cn/en-cn/help/contact/branch-finder/lists/; https://mapcarta.com/W423304682; https://www.openstreetmap.org/way/423304682",
+      "map_feature": "way/423304682",
+      "method": "HSBC’s official group contact directory and HSBC China site give the Shanghai office/headquarters as HSBC Building, Shanghai IFC, 8 Century Avenue, Pudong. The official branch finder independently places Shanghai Branch in the HSBC Building. OSM way/423304682 is explicitly the Shanghai IFC North Tower; it is the HSBC China headquarters tower. The point is building-level, not a floor/entrance pin."
+    },
+    {
+      "id": "off:f69d33bccc35",
+      "company": "HSBC",
+      "office": "Tokyo — HSBC Building, 11-1 Nihonbashi 3-chome, Chuo-ku, Tokyo 103-0027",
+      "coordinates": "35.6791279, 139.7736390",
+      "precision": "Building-level (HSBC Japan current address matches named HSBC Building OSM way/187643579)",
+      "source": "https://www.hsbc.com/contact-us; https://www.about.hsbc.co.jp/; https://www.openstreetmap.org/way/187643579",
+      "map_feature": "way/187643579",
+      "method": "HSBC Group’s official contact page lists HSBC Building, 3-11-1 Nihonbashi, Chuo-ku, Tokyo 103-0027; HSBC Japan’s current corporate site renders the same address as 11-1, Nihonbashi 3-chome. OSM way/187643579 is HSBC Building, 11-1, Nihonbashi 3-chome, postcode 103-0027. Coordinates are the building point only."
+    },
+    {
+      "id": "off:89fef5d15a32",
+      "company": "MFT Energy",
+      "office": "New York — 860 Broadway, 6th Floor, Office 602, New York, NY 10003",
+      "coordinates": "40.7371580, -73.9898080",
+      "precision": "Address/building-level (official MFT address matched to NYC Planning geosearch parcel/BIN for 860 Broadway)",
+      "source": "https://mft-energy.com/contact/; https://geosearch.planninglabs.nyc/v2/search?text=860%20Broadway%2C%20Manhattan%2C%20NY; https://www.nyc.gov/assets/lpc/downloads/pdf/presentation-materials/20211207/860-Broadway.pdf",
+      "map_feature": "NYC Planning Labs exact address point, BBL 1008460026/BIN 1016128",
+      "method": "MFT Energy’s current contact page lists its New York office at 860 Broadway, 6th Floor, Office 602, New York, NY 10003. NYC Planning Labs Geosearch matches 860 Broadway to the same address/postcode and municipal property identifiers BBL 1008460026 and BIN 1016128. The coordinate is the municipal address point; exact suite/floor is from MFT, not represented by the pin."
+    },
+    {
+      "id": "off:31265166d348",
+      "company": "MFT Energy",
+      "office": "Tokyo — 10F, Urbannet Nihonbashi 2-chome Building, 2-1-3 Nihonbashi, Chuo-ku, Tokyo",
+      "coordinates": "35.6826057, 139.7726337",
+      "precision": "Building-level (official MFT address matched to named OSM way/187598485 and house number/postcode)",
+      "source": "https://mft-energy.com/contact/; https://www.openstreetmap.org/way/187598485; https://photon.komoot.io/api/?q=10F%20Urbannet%20Nihonbashi%202-chome%20Building%2C%202-1-3%20Nihonbashi%2C%20Tokyo&limit=5",
+      "map_feature": "way/187598485",
+      "method": "MFT Energy’s current contact page lists its Tokyo office at 10F, Urbannet Nihonbashi 2-chome Building, 2-1-3 Nihonbashi, Chuo-ku. OSM way/187598485 is the corresponding commercial building (アーバンネット日本橋二丁目ビル), tagged at 1-3 Nihonbashi 2-chome, Chuo-ku, postcode 103-0027. Coordinates are the building feature point, not the 10th-floor suite."
     }
   ],
-  "duplicateRowsRemoved": 4,
+  "duplicateRowsRemoved": 8,
   "duplicateRows": [
     {
       "duplicate_of": "off:equilibrium-energy-san-francisco",
@@ -6746,6 +6856,38 @@
       "location_id": "loc:london",
       "source_url": "https://www.linkedin.com/company/nanook-energy-advisors-llp/",
       "reason": "Exact duplicate Office Registry row; same Office ID, company, location, office label and source"
+    },
+    {
+      "duplicate_of": "off:td-securities-london-60-threadneedle",
+      "company": "TD Securities",
+      "office": "London — 60 Threadneedle Street, London EC2R 8AP",
+      "location_id": "loc:london",
+      "source_url": "https://www.tdsecurities.com/ca/en/our-offices",
+      "reason": "Exact duplicate Office Registry row; same Office ID and identical full row content."
+    },
+    {
+      "duplicate_of": "off:td-securities-london-33-cork",
+      "company": "TD Securities",
+      "office": "London — TD Securities Limited, 3rd Floor, 33 Cork Street, London W1S 3NQ",
+      "location_id": "loc:london",
+      "source_url": "https://www.tdsecurities.com/ca/en/our-offices; https://www.openstreetmap.org/node/5671022802",
+      "reason": "Exact duplicate Office Registry row; same Office ID and identical full row content."
+    },
+    {
+      "duplicate_of": "off:goldman-sachs-singapore-60-anson-road",
+      "company": "Goldman Sachs",
+      "office": "Singapore — 60 Anson Road, #14-01, Singapore 079914",
+      "location_id": "loc:singapore",
+      "source_url": "https://www.goldmansachs.com/our-firm/locations/",
+      "reason": "Exact duplicate Office Registry row; same Office ID and identical full row content."
+    },
+    {
+      "duplicate_of": "off:goldman-sachs-london-2-stonecutter",
+      "company": "Goldman Sachs",
+      "office": "London — Plumtree Court, 2 Stonecutter Street, London EC4A 4AU",
+      "location_id": "loc:london",
+      "source_url": "https://www.goldmansachs.com/our-firm/locations/",
+      "reason": "Exact duplicate Office Registry row; same Office ID and identical full row content."
     }
   ],
   "removedOfficeRows": [
@@ -6780,6 +6922,13 @@
       "location_id": "loc:london",
       "source_url": "https://www.linkedin.com/company/nanook-energy-advisors-llp/",
       "reason": "Exact duplicate Office Registry row; same Office ID, company, location, office label and source"
+    },
+    {
+      "id": "off:c89401ac9cf4",
+      "company": "HSBC",
+      "office": "Vancouver — former HSBC Canada head office",
+      "reason": "HSBC completed the sale of its Canadian banking business and subsidiaries to RBC on 2024-03-28; this was a stale HSBC Canada row, not a current HSBC Group office.",
+      "source": "https://www.hsbc.com/news-and-views/news/hsbc-news-archive/canada-sale-completes"
     }
   ],
   "newResearch": {
@@ -6832,8 +6981,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 290,
-  "buildingLevelRows": 225,
+  "addressLevelRows": 289,
+  "buildingLevelRows": 234,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6869,7 +7018,12 @@
     "2026-11-03 Bank of America pass: all eight registered-city addresses verified against current official global directory and matched to named OSM/Photon building/site features.",
     "2026-11-03 Gunvor pass: mapped Geneva, Singapore, Shanghai, Beijing; retained London city fallback because official registered office and SRA-listed address conflict. Removed four unsupported non-Singapore office links for Gunvor Singapore subsidiary.",
     "2026-11-03 Mercuria office pass matched current employer-published Geneva, London, Beijing and Shanghai addresses to office map features. Beijing Tower B POI GCJ-02 coordinates were transformed to WGS-84; the conversion and map-source limitations are preserved in the row.",
-    "2026-11-03 workbook integrity correction: four valid Office Registry records (two TD London locations, Goldman Sachs Singapore and Goldman Sachs London) were present immediately below the Office Registry table boundary, so they were not included by table-based dashboard export. Resized the table to include all four rows; preserved their original sources/precision. Counts below include them."
+    "2026-11-03 workbook integrity correction: four valid Office Registry records (two TD London locations, Goldman Sachs Singapore and Goldman Sachs London) were present immediately below the Office Registry table boundary, so they were not included by table-based dashboard export. Resized the table to include all four rows; preserved their original sources/precision. Counts below include them.",
+    "2026-11-03 LDC/Olam office pass upgraded three in-scope rows: LDC Beijing Yingke Center, LDC Shanghai Crystal Plaza, and Olam Group Singapore Marina One. Pins are building-complex-level; Beijing has a documented OSM/Amap coordinate discrepancy and remains caveated.",
+    "November 3 Toyota Tsusho pass mapped all four registered office cities (Tokyo, New York, Shanghai, Beijing) to address/building-level points; Tokyo move announcement for around FY2030 is recorded.",
+    "November 3 HSBC pass mapped current Shanghai and Tokyo offices and removed the former HSBC Canada Vancouver headquarters row following HSBC’s official 2024 sale-completion notice.",
+    "November 3 MFT Energy pass mapped its New York and Tokyo offices: NYC municipal address point with parcel/building identifiers and a named Tokyo office-building feature.",
+    "Deduplicated four additional exact Office Registry rows by Office ID after verifying every field was identical."
   ],
   "removedUnsupportedEntityCityLinks": 4
 }
