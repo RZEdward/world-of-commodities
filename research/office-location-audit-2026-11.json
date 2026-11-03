@@ -2,9 +2,9 @@
   "date": "2026-11-03",
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
-  "officeRowsAfter": 1004,
-  "verifiedRows": 523,
-  "cityFallbackRows": 481,
+  "officeRowsAfter": 1005,
+  "verifiedRows": 528,
+  "cityFallbackRows": 477,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6821,6 +6821,56 @@
       "source": "https://mft-energy.com/contact/; https://www.openstreetmap.org/way/187598485; https://photon.komoot.io/api/?q=10F%20Urbannet%20Nihonbashi%202-chome%20Building%2C%202-1-3%20Nihonbashi%2C%20Tokyo&limit=5",
       "map_feature": "way/187598485",
       "method": "MFT Energy’s current contact page lists its Tokyo office at 10F, Urbannet Nihonbashi 2-chome Building, 2-1-3 Nihonbashi, Chuo-ku. OSM way/187598485 is the corresponding commercial building (アーバンネット日本橋二丁目ビル), tagged at 1-3 Nihonbashi 2-chome, Chuo-ku, postcode 103-0027. Coordinates are the building feature point, not the 10th-floor suite."
+    },
+    {
+      "id": "off:940a6df45d84",
+      "company": "IMC Trading",
+      "office": "Hong Kong — Unit 1702, 17/F, 100 Queen's Road Central, Central",
+      "coordinates": "22.2833236, 114.1549580",
+      "precision": "Building-level (IMC’s official 100 Queen’s Road Central office matched to named OSM building way/723231734, 100QRC)",
+      "source": "https://www.imc.com/us/contact/offices/hong-kong; https://www.openstreetmap.org/way/723231734",
+      "map_feature": "way/723231734 (100QRC building)",
+      "method": "IMC’s current Hong Kong office page identifies Unit 1702, 17/F, 100 Queen’s Road Central. OSM way/723231734 is the named 100QRC building at 100 Queen’s Road Central. Stored coordinates are the building feature point, not the floor or suite."
+    },
+    {
+      "id": "off:f5c00967d66a",
+      "company": "Graviton Research Capital",
+      "office": "Singapore — 36 Robinson Road, City House, Singapore 068877",
+      "coordinates": "1.2812201, 103.8497983",
+      "precision": "Building-level (official company-postal location at City House matched to Singapore OneMap postal point 068877)",
+      "source": "https://sg.linkedin.com/company/gravitonresearchcapital; https://www.gravitontrading.com/office.html; https://lei.bloomberg.com/leis/view/254900N4UK2DCBCWWJ63; https://www.onemap.gov.sg/api/common/elastic/search?searchVal=068877&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "map_feature": "Singapore OneMap postal point, City House, 068877",
+      "method": "Graviton’s current company LinkedIn location lists 36 Robinson Road, Singapore 068877, and its company post says its Singapore team moved into a new office. OneMap resolves postcode 068877 to City House at 36 Robinson Road. The company office webpage and LEI entity record still show One Raffles Place as the registered/legal address; because that conflicts with the newer physical-office location, the map follows the newer company location, and the legal-address distinction is retained here. OneMap point is building/postal-level, not a suite or floor."
+    },
+    {
+      "id": "off:245c07c21efc",
+      "company": "BP Trading",
+      "office": "Singapore — 7 Straits View, #26-01, Marina One East Tower, Singapore 018936",
+      "coordinates": "1.2779064, 103.8528517",
+      "precision": "Building-level (BP Singapore registered office address matched to Singapore OneMap postal point for Marina One East Tower)",
+      "source": "https://careers.bp.com/job-description/RQ116854; https://lei.bloomberg.com/leis/view/549300S6ZINNW7Y1NP62; https://www.onemap.gov.sg/api/common/elastic/search?searchVal=018936&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "map_feature": "Singapore OneMap postal point, Marina One East Tower, 018936",
+      "method": "BP’s live trading-role listing is for Singapore. The BP Singapore Pte. Ltd. active LEI record, validated against Singapore ACRA, gives its registered/headquarters address as 7 Straits View #26-01, Marina One East Tower, Singapore 018936. Singapore OneMap resolves the exact building and postcode. Coordinates represent the building postal point, not the 26th-floor suite."
+    },
+    {
+      "id": "off:28f0b2959df7",
+      "company": "DXT Commodities",
+      "office": "Singapore — Corporate Office, 8 Wilkie Road, #03-01 Wilkie Edge, Singapore 228095",
+      "coordinates": "1.3021220, 103.8495113",
+      "precision": "Building-level (DXT’s official corporate-office address matched to Singapore OneMap postal point for Wilkie Edge)",
+      "source": "https://dxt.com/contact-us/; https://www.onemap.gov.sg/api/common/elastic/search?searchVal=228095&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "map_feature": "Singapore OneMap postal point, Wilkie Edge, 228095",
+      "method": "DXT’s current contact page lists 8 Wilkie Road #03-01, Wilkie Edge as its Singapore Corporate Office. Singapore OneMap resolves postcode 228095 to Wilkie Edge at the exact address. Point represents the building postal location, not the third-floor suite."
+    },
+    {
+      "id": "off:dxt-commodities-singapore-operations",
+      "company": "DXT Commodities",
+      "office": "Singapore — Operations Office, 3 Church Street, #17-01 Samsung Hub, Singapore 049483",
+      "coordinates": "1.2832632, 103.8496265",
+      "precision": "Building-level (DXT’s official operations-office address matched to Singapore OneMap postal point for Samsung Hub)",
+      "source": "https://dxt.com/contact-us/; https://www.onemap.gov.sg/api/common/elastic/search?searchVal=049483&returnGeom=Y&getAddrDetails=Y&pageNum=1",
+      "map_feature": "Singapore OneMap postal point, Samsung Hub, 049483",
+      "method": "DXT’s current official contact page distinguishes its Singapore Corporate Office at Wilkie Edge from its Operations office at 3 Church Street #17-01, Samsung Hub. Singapore OneMap resolves postcode 049483 to Samsung Hub at the exact address. The building/postal point does not represent the 17th-floor suite."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -6982,7 +7032,7 @@
     ]
   },
   "addressLevelRows": 289,
-  "buildingLevelRows": 234,
+  "buildingLevelRows": 239,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -7023,7 +7073,9 @@
     "November 3 Toyota Tsusho pass mapped all four registered office cities (Tokyo, New York, Shanghai, Beijing) to address/building-level points; Tokyo move announcement for around FY2030 is recorded.",
     "November 3 HSBC pass mapped current Shanghai and Tokyo offices and removed the former HSBC Canada Vancouver headquarters row following HSBC’s official 2024 sale-completion notice.",
     "November 3 MFT Energy pass mapped its New York and Tokyo offices: NYC municipal address point with parcel/building identifiers and a named Tokyo office-building feature.",
-    "Deduplicated four additional exact Office Registry rows by Office ID after verifying every field was identical."
+    "Deduplicated four additional exact Office Registry rows by Office ID after verifying every field was identical.",
+    "2026-11-03 IMC/BP/Graviton/DXT follow-up: upgraded IMC Hong Kong, BP Singapore, Graviton Singapore and DXT Singapore corporate office to building-level points; added DXT’s separately listed Samsung Hub operations office as a second Singapore office. Graviton’s company LinkedIn location and move notice identify 36 Robinson Road while its legal address and older website locator still name One Raffles Place; the map follows the newer physical-office evidence and records the conflict."
   ],
-  "removedUnsupportedEntityCityLinks": 4
+  "removedUnsupportedEntityCityLinks": 4,
+  "additionalOfficeRowsAdded": 1
 }
