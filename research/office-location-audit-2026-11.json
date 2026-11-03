@@ -2,9 +2,9 @@
   "date": "2026-11-03",
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
-  "officeRowsAfter": 1005,
-  "verifiedRows": 512,
-  "cityFallbackRows": 493,
+  "officeRowsAfter": 1009,
+  "verifiedRows": 515,
+  "cityFallbackRows": 494,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6832,8 +6832,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 289,
-  "buildingLevelRows": 223,
+  "addressLevelRows": 290,
+  "buildingLevelRows": 225,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6868,7 +6868,8 @@
     "2026-11-03 Ørsted London/Boston pass: official contact directory addresses matched; London pinned at official postcode centroid because exact building outline was not confidently isolated.",
     "2026-11-03 Bank of America pass: all eight registered-city addresses verified against current official global directory and matched to named OSM/Photon building/site features.",
     "2026-11-03 Gunvor pass: mapped Geneva, Singapore, Shanghai, Beijing; retained London city fallback because official registered office and SRA-listed address conflict. Removed four unsupported non-Singapore office links for Gunvor Singapore subsidiary.",
-    "2026-11-03 Mercuria office pass matched current employer-published Geneva, London, Beijing and Shanghai addresses to office map features. Beijing Tower B POI GCJ-02 coordinates were transformed to WGS-84; the conversion and map-source limitations are preserved in the row."
+    "2026-11-03 Mercuria office pass matched current employer-published Geneva, London, Beijing and Shanghai addresses to office map features. Beijing Tower B POI GCJ-02 coordinates were transformed to WGS-84; the conversion and map-source limitations are preserved in the row.",
+    "2026-11-03 workbook integrity correction: four valid Office Registry records (two TD London locations, Goldman Sachs Singapore and Goldman Sachs London) were present immediately below the Office Registry table boundary, so they were not included by table-based dashboard export. Resized the table to include all four rows; preserved their original sources/precision. Counts below include them."
   ],
   "removedUnsupportedEntityCityLinks": 4
 }
