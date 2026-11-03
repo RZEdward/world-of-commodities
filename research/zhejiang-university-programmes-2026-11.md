@@ -39,3 +39,18 @@ QS lists Zhejiang University at #47 in the 2027 World University Rankings. The 9
 - [Official ZJU campus addresses](https://www.zju.edu.cn/english/_t874/20083/list.htm)
 - [QS Zhejiang University profile](https://www.topuniversities.com/universities/zhejiang-university)
 - OpenStreetMap campus features: [Zijingang campus](https://www.openstreetmap.org/way/288874844); [Engineer College campus](https://www.openstreetmap.org/node/5290986738)
+
+
+## Master’s in Control Science and Engineering (2027 planning lead)
+
+ZJU’s official 2026 international English-taught master catalogue lists Control Science and Engineering as a three-year programme at CNY 36,800/year and requires a provisional acceptance form from a ZJU supervisor. ZJU’s general guide gives the prior cycle’s deadline as 28 February 2026; that deadline has passed and must not be reused for 2027. The 2027 international deadline and application guide are not yet published.
+
+The College of Control Science and Engineering is based at Yuquan Campus. ZJU’s official campus page gives 38 Zheda Road, Hangzhou; [OSM way/28907128](https://www.openstreetmap.org/way/28907128) is the campus polygon, and the workbook maps its centroid at 30.2665579, 120.1183376. The college and its Spatial Intelligence and Robotics Lab describe work in robotics, perception, localization, embodied intelligence, computer vision, multimodal decision-making and autonomous systems. This route is therefore a strong topical match to the user’s newly stated interest in robotics and MPhil/MSc-style research combining machine learning, computer vision and data mining.
+
+The new Masters record is a 2027 planning lead, not a currently open application. Tuition converts to about USD 5,531/year using the ECB 2026-10-30 rates (EUR/USD 1.1172; EUR/CNY 7.4326). Living costs use the existing Hangzhou estimate of about USD 6,315/year; total estimated three-year tuition and living is about USD 35,539 before other costs. This is an estimate, not an official cost quote. Before applying, confirm the 2027 intake, English delivery, degree prerequisites, potential supervisors and the required acceptance form. Potential research contact identified, but not contacted: Spatial Intelligence and Robotics Lab, Prof. Liang Li (liang.li@zju.edu.cn).
+
+- [Official ZJU international master’s guide](https://iczu.zju.edu.cn/admissionsen/2024/1030/c68989a2981849/page.psp)
+- [Official English-taught master’s catalogue (2026 PDF)](https://iczu.zju.edu.cn/_upload/article/files/32/c1/d48dfe1349279755c872b98ce7e1/41d95e69-3780-40a7-96c8-3a645c90dc1f.pdf)
+- [ZJU Yuquan campus address](https://www.zju.edu.cn/english/_t874/20083/list.htm)
+- [College of Control Science and Engineering robotics lab research](https://sirl.com.cn/research/)
+- [ECB rates, 30 October 2026](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html?date=2026-10-27)

@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 424,
-  "cityFallbackRows": 585,
+  "verifiedRows": 426,
+  "cityFallbackRows": 583,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5801,6 +5801,26 @@
       "source": "https://www.edftrading.com/contact; https://company-information.service.gov.uk/company/03750288",
       "osm": "way/107063630",
       "method": "EDF Trading’s current contact page lists its global headquarters at 3rd Floor, Cardinal Place, 80 Victoria Street, London SW1E 5JL. Companies House confirms the same registered office. OSM way/107063630 is the Cardinal Place complex footprint at number 80 with matching postcode; pin is complex-level, not 3rd-floor."
+    },
+    {
+      "id": "off:422e01b6bbbf",
+      "company": "Gunvor",
+      "office": "Geneva — Gunvor SA, Rue du Rhône 80–84, 1204 Geneva",
+      "coordinates": "46.2036731, 6.1494265",
+      "precision": "Building-level (OSM node/963893774 is address no. 80 within official registered range 80–84)",
+      "source": "https://www.uid.admin.ch/Detail.aspx?lang=en&uid_id=CHE-112.675.659; https://www.openstreetmap.org/node/963893774",
+      "osm": "node/963893774",
+      "method": "Swiss Federal UID register currently lists active Gunvor SA at Rue du Rhône 80–84, 1204 Genève. OSM address node/963893774 is house number 80 at Rue du Rhône, postcode 1204; used as building-level pin for the official 80–84 range, not an asserted suite entrance."
+    },
+    {
+      "id": "off:d95a7fa88522",
+      "company": "Gunvor",
+      "office": "Singapore — Gunvor Singapore Pte. Ltd., 29-01 Guoco Midtown Office, 128 Beach Road, Singapore 189773",
+      "coordinates": "1.2973732, 103.8579752",
+      "precision": "Building-level (OSM way/725743263 matches 128 Beach Road, Guoco Midtown Office and postcode)",
+      "source": "https://opengovsg.com/corporate/200606959K; https://www.guocomidtown.com/reach-us/; https://www.openstreetmap.org/way/725743263",
+      "osm": "way/725743263",
+      "method": "Current ACRA-derived corporate record for UEN 200606959K lists Gunvor Singapore Pte. Ltd. at #29-01, 128 Beach Road, Guoco Midtown Office, Singapore 189773; the record shows a 2026 annual return. Guoco Midtown’s own site confirms the building address. OSM way/725743263 is the matching 128 Beach Road / postcode 189773 office tower footprint; building-level, not floor/unit-level."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5923,8 +5943,8 @@
     ]
   },
   "addressLevelRows": 276,
-  "buildingLevelRows": 148,
-  "campusRows": 19,
+  "buildingLevelRows": 150,
+  "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
     "2026-11-02 official-address batch: 8 office coordinates added. Four records retain postcode discrepancies and are classified building-level; one exact company-office point is address-level.",
@@ -5940,6 +5960,7 @@
     "2026-11-03 further priority pass mapped ADNOC Trading Singapore to the named One George Street feature and Geneva to the exact Quai de l’Ile 13 address node. Danske Commodities London was mapped to the named One Kingdom Street building with the postcode mismatch (company W2 6BD vs OSM W2 6PY) explicit; its Singapore office was mapped to Asia Square Tower 1 at the official 8 Marina View address.",
     "2026-11-03 RWE pass mapped New York group/trading rows to 50 Rockefeller Plaza; Singapore rows to Singapore Land Tower; Beijing rows to Gateway Plaza using property-owner-published coordinates matching the RWE address; and Tokyo rows to Marunouchi Trust Tower Main. RWE Shanghai and London were not upgraded without a defensible point.",
     "2026-11-03 RWE London and Shanghai locations were resolved. London uses the Historic England-listed Northcliffe House coordinate at RWE’s official 28 Tudor Street address. Shanghai uses Amap’s tenant pin for the same No.89 Jilong Road building as RWE’s official floor-6 office, converted from GCJ-02 to WGS84 before storage.",
-    "2026-11-03 exchange/trading office pass mapped EEX London and Tokyo and EDF Trading London using current official contact addresses matched to OSM address/building features; EDF address also matches Companies House."
+    "2026-11-03 exchange/trading office pass mapped EEX London and Tokyo and EDF Trading London using current official contact addresses matched to OSM address/building features; EDF address also matches Companies House.",
+    "2026-11-03 follow-up mapped Gunvor Geneva to OSM building address node 80 within official 80–84 Rue du Rhône range, and Gunvor Singapore to the Guoco Midtown office-tower footprint. Gunvor London was left at the city anchor because current public legal/SRA location records conflict and no exact office map feature could be corroborated."
   ]
 }
