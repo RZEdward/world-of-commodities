@@ -94,3 +94,6 @@ Four additional office rows were upgraded: HRT London at 100 Liverpool Street (p
 
 
 COFCO International’s Geneva HQ is confirmed at Route de Malagnou 101–105 by company-published material; OSM node/3721575799 matches 101 and the street, but its postcode differs from the company source, so that discrepancy stays visible. ENGIE Global Markets Singapore is confirmed at 8 Marina View, #34-01, Asia Square Tower 1; the branch’s official role listing, ENGIE contact page and OSM building relation agree. Audit: 281 address-level, 190 building-level, 538 city-level fallbacks (471 non-city-level rows).
+
+
+Six more registered offices were mapped on 2026-11-03: Equinor Singapore (Asia Square Tower 1), London (One Kingdom Street), and Beijing (Twin Towers West Tower); QatarEnergy Shanghai (Lippo Plaza), Tokyo (Grand Cube), and Seoul (Gangnam Finance Center). QatarEnergy’s official Global Offices page also gives its Beijing office address at China World Office Tower 2, but that building-specific point has not yet been resolved, so its row remains a fallback for now. Equinor London’s official W2 6BD and OSM W2 6PY postcode disagreement is documented. Current audit counts: 283 address-level, 194 building-level, 532 city-level fallbacks (477 non-city-level rows).

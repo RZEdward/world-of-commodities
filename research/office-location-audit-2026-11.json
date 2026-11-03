@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 471,
-  "cityFallbackRows": 538,
+  "verifiedRows": 477,
+  "cityFallbackRows": 532,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6274,6 +6274,60 @@
       "precision": "Building-level (Singapore branch address/postcode matched to Asia Square Tower 1 OSM relation/407941850)",
       "source": "https://jobs.engie.com/job/Sales-Trader/71834-en_US/; https://www.engie-sea.com/contact-us/; https://www.openstreetmap.org/relation/407941850",
       "method": "ENGIE’s current Sales Trader listing identifies ENGIE Global Markets Singapore Branch and location Singapore 018960. The official ENGIE SEA contact page lists its Supply & Energy Management office at 8 Marina View, #34-01 Asia Square Tower 1, 018960; a current active LEI record for ENGIE Energy Marketing Singapore Pte Ltd gives the same address. OSM relation/407941850 is the named Asia Square Tower 1 building at 8 Marina View; building-level point."
+    },
+    {
+      "id": "off:a3a167bbb5db",
+      "company": "Equinor",
+      "office": "Singapore — Equinor Asia Pacific, 8 Marina View, #41-05, Asia Square Tower 1, Singapore 018960",
+      "coordinates": "1.2790064, 103.8513509",
+      "precision": "Building-level (Asia Square Tower 1 named OSM way/407941850; official company address, building and postcode match)",
+      "source": "https://www.equinor.com/where-we-are/singapore; https://www.openstreetmap.org/way/407941850",
+      "method": "Equinor’s current country page lists its Singapore office at 8 Marina View, #41-05, Asia Square Tower 1, Singapore 018960. OSM way/407941850 is the named Asia Square Tower 1 building and matches the street and postcode. This is a building point, not a suite entrance."
+    },
+    {
+      "id": "off:430b55e10a34",
+      "company": "Equinor",
+      "office": "London — Equinor UK, One Kingdom Street, London W2 6BD, United Kingdom",
+      "coordinates": "51.5190420, -0.1816949",
+      "precision": "Building-level (named OSM way/42032682 One Kingdom Street matches official company building; OSM postcode W2 6PY conflicts with company-published W2 6BD)",
+      "source": "https://www.equinor.com/where-we-are/united-kingdom; https://www.openstreetmap.org/way/42032682",
+      "method": "Equinor’s current UK country page explicitly lists its London office as One Kingdom Street, London W2 6BD. OSM way/42032682 is the named One Kingdom Street building at the address and provides its polygon point, but its database postcode is W2 6PY. The company’s address is retained; postcode disagreement is disclosed rather than silently treated as an exact postcode match."
+    },
+    {
+      "id": "off:7e22c78de33a",
+      "company": "Equinor",
+      "office": "Beijing — Equinor China, 28/F West Tower, Twin Towers, B-12 Jianguomenwai Avenue, Chaoyang District, Beijing 100022, China",
+      "coordinates": "39.9063170, 116.4420500",
+      "precision": "Building-level (Amap named Twin Towers West Tower POI at the official address; GCJ-02 converted to WGS-84)",
+      "source": "https://www.equinor.com/where-we-are/china; https://www.equinor.com/content/dam/statoil/documents/privacy-policy/equinor-list-of-equinor-bcr-members-05012022.pdf; https://ditu.amap.com/place/B000A7X6EI",
+      "method": "Equinor’s current China page lists 28th Floor, West Tower, Twin Towers, B-12, Jianwai Avenue. The company’s BCR-member list gives the legal entity address and postcode 100022. Amap identifies 汇京双子座大厦西塔 (Hui Jing Twin Towers West Tower) at 建国门外大街乙12号, with GCJ-02 coordinates 39.907675, 116.448232; converted to WGS-84 39.9063170, 116.4420500 for the dashboard. This is the named West Tower building point, not a floor/suite entrance."
+    },
+    {
+      "id": "off:e6601089a1bc",
+      "company": "QatarEnergy",
+      "office": "Shanghai — QatarEnergy liaison office, Room 3808–12, Lippo Plaza, 222 Middle Huaihai Road, Shanghai 200021, China",
+      "coordinates": "31.2261497, 121.4711083",
+      "precision": "Address-level (official address number, road and postcode matched to named OSM building way/969542043)",
+      "source": "https://www.qatarenergy.qa/en/MarketingAndTrading/Marketing/Pages/GlobalOffices.aspx; https://www.openstreetmap.org/way/969542043",
+      "method": "QatarEnergy’s current Global Offices page lists Room 3808–12, Lippo Plaza, 222 Middle Huaihai Road, Shanghai 200021. OSM way/969542043 is 力宝广场 (Lippo Plaza), at 222 Middle Huaihai Road, postcode 200021. The pin is the building polygon centroid, not the room entrance."
+    },
+    {
+      "id": "off:0b973975312c",
+      "company": "QatarEnergy",
+      "office": "Tokyo — QatarEnergy liaison office, 18/F Otemachi Financial City Grand Cube, 1-9-2 Otemachi, Chiyoda-ku, Tokyo, Japan",
+      "coordinates": "35.6884556, 139.7647904",
+      "precision": "Building-level (named OSM way/145397107 グランキューブ / Grand Cube; official building address matches)",
+      "source": "https://www.qatarenergy.qa/en/MarketingAndTrading/Marketing/Pages/GlobalOffices.aspx; https://office.mec.co.jp/en/search/detail/011523; https://www.openstreetmap.org/way/145397107",
+      "method": "QatarEnergy’s current Global Offices page lists its Tokyo office on the 18th floor of Otemachi Financial City Grand Cube. Mitsubishi Estate’s building page confirms Grand Cube at 1-9-2 Otemachi, Chiyoda-ku. OSM way/145397107 is the named グランキューブ (Grand Cube) building polygon; coordinates are its polygon centroid, not an office suite point."
+    },
+    {
+      "id": "off:e58c0b4d9546",
+      "company": "QatarEnergy",
+      "office": "Seoul — QatarEnergy liaison office, 15/F Gangnam Finance Center, 152 Teheran-ro, Gangnam-gu, Seoul 06236, South Korea",
+      "coordinates": "37.5000191, 127.0365483",
+      "precision": "Address-level (official street number and road match named OSM building way/117823787; postcode also consistent)",
+      "source": "https://www.qatarenergy.qa/en/MarketingAndTrading/Marketing/Pages/GlobalOffices.aspx; https://www.openstreetmap.org/way/117823787",
+      "method": "QatarEnergy’s current Global Offices page lists its Seoul office on the 15th floor, Gangnam Finance Center, 152 Teheran-ro, Gangnam-gu. OSM way/117823787 is the named 강남파이낸스센터 (Gangnam Finance Center) building at 152 Teheran-ro, postcode 06236. The point represents the building, not the 15th-floor suite."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6395,8 +6449,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 281,
-  "buildingLevelRows": 190,
+  "addressLevelRows": 283,
+  "buildingLevelRows": 194,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6424,6 +6478,7 @@
     "2026-11-03 Bunge Shanghai matched the current Bunge China office listing at 50/F MAXDO Center, 8 Xingyi Road; the named Amap building point was converted from GCJ-02 to WGS-84.",
     "2026-11-03 Barclays pass mapped five registered-city offices using current Barclays listings/privacy notice, HKMA, Rockefeller Group and matching OSM office-building features.",
     "2026-11-03 HRT London, Tower Research London/Singapore, and Second Foundation Tokyo offices mapped; address, postcode and building-complex precision are stated per row.",
-    "2026-11-03 COFCO International Geneva HQ and ENGIE Global Markets Singapore office matched to current exact office address/building points. COFCO OSM postcode mismatch is explicitly retained."
+    "2026-11-03 COFCO International Geneva HQ and ENGIE Global Markets Singapore office matched to current exact office address/building points. COFCO OSM postcode mismatch is explicitly retained.",
+    "2026-11-03 Six office rows upgraded using current Equinor/QatarEnergy office addresses and named building features. Equinor London OSM postcode disagreement is retained; Beijing Amap GCJ-02 was converted to WGS-84. QatarEnergy Beijing remains pending tower-specific map verification."
   ]
 }
