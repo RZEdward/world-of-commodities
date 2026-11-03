@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 432,
-  "cityFallbackRows": 577,
+  "verifiedRows": 437,
+  "cityFallbackRows": 572,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5881,6 +5881,56 @@
       "source": "https://www.hudsonrivertrading.com/offices/",
       "osm": "way/621752528",
       "method": "HRT’s current official office page lists Unit 4310, Level 43, Three IFC, 10 Gukjegeumyung-ro, Seoul 07326. OSM way/621752528 is the named Three IFC building; its OSM postcode tag is 07327, while HRT publishes 07326. Building match is direct; postcode conflict retained."
+    },
+    {
+      "id": "off:a52063fdd39a",
+      "company": "Sucden",
+      "office": "New York — Sucden NY Corp., 60 Broad Street, 28th Floor, New York, NY 10004",
+      "coordinates": "40.7053475, -74.0119940",
+      "precision": "Building-level (OSM way/169362524 matches number 60, Broad Street and ZIP 10004)",
+      "source": "https://www.sucden.com/en/contact/",
+      "osm": "way/169362524",
+      "method": "Sucden’s current official contact directory lists Sucden NY Corp. at 60 Broad Street, 28th Floor, New York 10004. OSM way/169362524 matches house number, street and postcode; building-level point."
+    },
+    {
+      "id": "off:330e2628b5be",
+      "company": "Sucden",
+      "office": "Singapore — Sucres et Denrées Singapore Branch, 1 Finlayson Green, #16-02, Singapore 049246",
+      "coordinates": "1.2822625, 103.8512767",
+      "precision": "Building-level (OSM way/314352312 is One Finlayson Green at number 1 and postcode 049246)",
+      "source": "https://www.sucden.com/en/contact/",
+      "osm": "way/314352312",
+      "method": "Sucden’s current official contact directory lists the Singapore branch at 1 Finlayson Green #16-02, Singapore 049246. OSM way/314352312 is One Finlayson Green and matches the official street number and postcode; building-level, not suite-level."
+    },
+    {
+      "id": "off:faa7eee3bd74",
+      "company": "Sucden",
+      "office": "Shanghai — Sucden China, Unit 1202, 12/F, JingAn Kerry Centre Tower 1, 1515 West Nanjing Road, Shanghai 200040",
+      "coordinates": "31.2258707, 121.4445924",
+      "precision": "Building-level (OSM way/255636963 is JingAn Kerry Centre on Nanjing West Road; OSM address tag has malformed 15151 and is not treated as exact)",
+      "source": "https://www.sucden.com/en/contact/",
+      "osm": "way/255636963",
+      "method": "Sucden’s current official contact directory lists Unit 1202, Tower 1, JingAn Kerry Centre, 1515 West Nanjing Road, Shanghai. OSM way/255636963 is part of the named JingAn Kerry Centre complex on Nanjing West Road, postcode 200040, but its house-number tag is malformed as 15151; building complex match is used with address-number mismatch explicit, not address-level precision."
+    },
+    {
+      "id": "off:e10acbf8bad2",
+      "company": "Sucden",
+      "office": "Geneva — Sucden Geneva, Rue de la Croix-d’Or 19, 1204 Geneva",
+      "coordinates": "46.2027122, 6.1492493",
+      "precision": "Address-level (OSM node/1291747245 matches house number 19, Rue de la Croix-d’Or and postcode 1204)",
+      "source": "https://www.sucden.com/en/contact/",
+      "osm": "node/1291747245",
+      "method": "Sucden’s current official contact directory lists Geneva at Rue de la Croix d’Or 19, 1204. OSM node/1291747245 matches number 19, street and postcode. Address-level point; no suite is claimed."
+    },
+    {
+      "id": "off:5323fd26e8a6",
+      "company": "Sucden",
+      "office": "London — Sucden Financial Limited (Sucden Group), Plantation Place South, 60 Great Tower Street, London EC3R 5AZ",
+      "coordinates": "51.5105390, -0.0819789",
+      "precision": "Building-level (OSM way/141329944 names Plantation Place South and number 60; postcode differs from official EC3R 5AZ)",
+      "source": "https://www.sucden.com/en/contact/; https://www.sucdenfinancial.com/en/about/",
+      "osm": "way/141329944",
+      "method": "Sucden’s official group contact directory identifies Sucden Financial Limited at Plantation Place South, 60 Great Tower Street, EC3R 5AZ; Sucden Financial’s own current company page confirms the same. OSM way/141329944 is named Plantation Place South at no. 60 but tags postcode EC3R 7AG. Building name and number match; postcode discrepancy retained."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6002,8 +6052,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 276,
-  "buildingLevelRows": 156,
+  "addressLevelRows": 277,
+  "buildingLevelRows": 160,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6022,6 +6072,7 @@
     "2026-11-03 RWE London and Shanghai locations were resolved. London uses the Historic England-listed Northcliffe House coordinate at RWE’s official 28 Tudor Street address. Shanghai uses Amap’s tenant pin for the same No.89 Jilong Road building as RWE’s official floor-6 office, converted from GCJ-02 to WGS84 before storage.",
     "2026-11-03 exchange/trading office pass mapped EEX London and Tokyo and EDF Trading London using current official contact addresses matched to OSM address/building features; EDF address also matches Companies House.",
     "2026-11-03 follow-up mapped Gunvor Geneva to OSM building address node 80 within official 80–84 Rue du Rhône range, and Gunvor Singapore to the Guoco Midtown office-tower footprint. Gunvor London was left at the city anchor because current public legal/SRA location records conflict and no exact office map feature could be corroborated.",
-    "2026-11-03 Hudson River Trading pass mapped six in-scope registered city offices from the current official HRT directory to matching OSM address/building features. London was left city-level; the New York and Seoul OSM postcode conflicts are documented."
+    "2026-11-03 Hudson River Trading pass mapped six in-scope registered city offices from the current official HRT directory to matching OSM address/building features. London was left city-level; the New York and Seoul OSM postcode conflicts are documented.",
+    "2026-11-03 Sucden pass mapped five in-scope office rows using current official group/subsidiary contact addresses and OSM address/building features; Shanghai house-number and London postcode mismatches remain explicit."
   ]
 }
