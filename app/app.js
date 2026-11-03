@@ -818,6 +818,11 @@ function selectItem(id, flyTo) {
 }
 
 function separateCoincidentMarkers() {
+  // Keep exact-coordinate markers stacked at country/region zoom. Spread them
+  // gradually only as the map reaches street-level city zoom so the global view
+  // stays geographically honest and visually calm.
+  const zoom = state.map?.getZoom() ?? 0;
+  const spread = Math.max(0, Math.min(1, (zoom - 10.5) / 2));
   const markers = new Set([...state.markers.values()].flat());
   const groups = new Map();
   for (const marker of markers) {
@@ -837,10 +842,10 @@ function separateCoincidentMarkers() {
       const right = `${b.mapEntry.item.id}|${b.mapEntry.location.name || ""}`;
       return left.localeCompare(right);
     });
-    const maxRadiusPixels = Math.min(24, 10 + Math.sqrt(ordered.length) * 2);
+    const maxRadiusPixels = spread * Math.min(24, 10 + Math.sqrt(ordered.length) * 2);
     ordered.forEach((marker, index) => {
       const angle = index * goldenAngle;
-      const radius = ordered.length === 2 ? 8 + index * 8 : maxRadiusPixels * Math.sqrt((index + 0.5) / ordered.length);
+      const radius = spread === 0 ? 0 : ordered.length === 2 ? spread * (8 + index * 8) : maxRadiusPixels * Math.sqrt((index + 0.5) / ordered.length);
       marker.setOffset([radius * Math.cos(angle), radius * Math.sin(angle)]);
     });
   }
