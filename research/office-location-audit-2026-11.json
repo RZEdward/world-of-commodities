@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 495,
-  "cityFallbackRows": 514,
+  "verifiedRows": 503,
+  "cityFallbackRows": 506,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6490,6 +6490,78 @@
       "precision": "Address-level (building/site point; matching official address)",
       "source": "https://orsted.com/en/contact-us; https://api.postcodes.io/postcodes/SW1P1WG",
       "method": "Ørsted official contact page lists Offshore North America at 399 Boylston Street, 12th Floor, Boston MA 02116. This row is the trading entity at the same corporate office; coordinate is the matching office-site point previously verified against OSM N/7764104098."
+    },
+    {
+      "id": "off:f03896cf32bf",
+      "company": "Bank of America",
+      "office": "New York — One Bryant Park, New York, NY 10036",
+      "coordinates": "40.7555484, -73.9853184",
+      "precision": "Address-level (named One Bryant Park map point) (OSM node/8729437331)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/node/8729437331",
+      "method": "BofA global directory lists One Bryant Park, New York NY 10036. Photon/OSM resolves the named One Bryant Park feature at 135 W 42nd Street; address corresponds to the office tower. Point is the named complex POI, not suite or door."
+    },
+    {
+      "id": "off:5c709600b99a",
+      "company": "Bank of America",
+      "office": "Shanghai — Bank of America, N.A. Shanghai Branch, 55/F, International Finance Center Tower 2, 8 Century Avenue, Pudong, Shanghai 200120",
+      "coordinates": "31.2390806, 121.4977983",
+      "precision": "Building-level (OSM way/423304682)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/423304682",
+      "method": "Current BofA global directory and China branch page give IFC Tower 2 at 8 Century Avenue. OSM/Photon resolves Two International Finance Center (IFC North Tower / Tower 2) at the address; building footprint centroid used."
+    },
+    {
+      "id": "off:032aecffda2c",
+      "company": "Bank of America",
+      "office": "Hong Kong — 55/F, Cheung Kong Centre, 2 Queen’s Road Central",
+      "coordinates": "22.2792782, 114.1602726",
+      "precision": "Building-level (OSM way/295407286)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/295407286",
+      "method": "BofA global directory lists 55/F, Cheung Kong Centre, 2 Queen’s Road Central. OSM feature is Cheung Kong Center at the matching address; pin is the tower footprint."
+    },
+    {
+      "id": "off:0d0f6563edce",
+      "company": "Bank of America",
+      "office": "Seoul — Bank of America N.A., 27/F, Seoul Finance Center, 136 Sejong-daero, Jung-gu, Seoul 04520",
+      "coordinates": "37.5684219, 126.9782869",
+      "precision": "Building-level (OSM way/332565592)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/332565592",
+      "method": "BofA global directory and Korea office page list 27/F, Seoul Finance Center, 136 Sejong-daero. OSM building is named Seoul Finance Center; point is building footprint."
+    },
+    {
+      "id": "off:d8ab3b9342f5",
+      "company": "Bank of America",
+      "office": "Zurich — Stockerhof, Stockerstrasse 23, 8002 Zürich",
+      "coordinates": "47.3661864, 8.5351773",
+      "precision": "Building-level (OSM way/38024106)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/38024106",
+      "method": "BofA global directory lists Stockerhof, Stockerstrasse 23, Zürich 8002. OSM feature is named Stockerhof; building centroid used."
+    },
+    {
+      "id": "off:03c7e8622027",
+      "company": "Bank of America",
+      "office": "London — Bank of America, 2 King Edward Street, London EC1A 1HQ",
+      "coordinates": "51.5162146, -0.1000942",
+      "precision": "Building-level (OSM way/170525607)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/170525607",
+      "method": "BofA global directory lists 2 King Edward Street, EC1A 1HQ. OSM feature is labelled Bank of America at 2 King Edward Street; footprint point used."
+    },
+    {
+      "id": "off:6443f17b4963",
+      "company": "Bank of America",
+      "office": "Tokyo — 6/F, Nihonbashi 1-chome Mitsui Building, 1-4-1 Nihonbashi, Chuo-ku, Tokyo 103-0027",
+      "coordinates": "35.6825593, 139.7746312",
+      "precision": "Building-level (OSM way/187598470)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/187598470",
+      "method": "BofA global directory lists its Tokyo Branch at Nihonbashi 1-chome Mitsui Building. OSM building name 日本橋一丁目三井ビルディング matches; footprint centroid used."
+    },
+    {
+      "id": "off:21cd1e26546f",
+      "company": "Bank of America",
+      "office": "Sydney — 34/F, Governor Phillip Tower, 1 Farrer Place, Sydney NSW 2000",
+      "coordinates": "-33.8640675, 151.2113159",
+      "precision": "Building-level (OSM way/232511784)",
+      "source": "https://business.bofa.com/content/boaml/en_us/locations.html; https://business.bofa.com/content/dam/boamlimages/documents/articles/ID18_0208/gbam_privacy_notice_china.pdf; https://www.openstreetmap.org/way/232511784",
+      "method": "BofA global directory lists 34/F, Governor Phillip Tower, 1 Farrer Place, Sydney NSW 2000. OSM feature is the named Governor Phillip Tower at 1 Farrer Place; footprint centroid used."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6611,8 +6683,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 286,
-  "buildingLevelRows": 209,
+  "addressLevelRows": 287,
+  "buildingLevelRows": 216,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6644,6 +6716,7 @@
     "2026-11-03 Six office rows upgraded using current Equinor/QatarEnergy office addresses and named building features. Equinor London OSM postcode disagreement is retained; Beijing Amap GCJ-02 was converted to WGS-84. QatarEnergy Beijing remains pending tower-specific map verification.",
     "2026-11-03 QatarEnergy Beijing official Room 1011 address matched to Baidu’s China World Office Tower 2-specific POI; BD-09 Mercator coordinates transformed to WGS-84.",
     "2026-11-03 DBS/ABN AMRO pass: fourteen official office addresses matched to named OSM building or address-site features; row-level notes preserve discrepancies and suite-level limitations.",
-    "2026-11-03 Ørsted London/Boston pass: official contact directory addresses matched; London pinned at official postcode centroid because exact building outline was not confidently isolated."
+    "2026-11-03 Ørsted London/Boston pass: official contact directory addresses matched; London pinned at official postcode centroid because exact building outline was not confidently isolated.",
+    "2026-11-03 Bank of America pass: all eight registered-city addresses verified against current official global directory and matched to named OSM/Photon building/site features."
   ]
 }

@@ -106,3 +106,6 @@ A DBS and ABN AMRO Clearing pass mapped 14 registered office rows from their off
 
 
 Ørsted’s current official contact directory confirms London at 5 Howick Place, SW1P 1WG, and Boston at 399 Boylston Street. Two London entity rows now use the official postcode centroid returned by postcodes.io (not represented as an entrance/building pin); the trading-entity Boston row uses the already verified office-site point. Current audit: 286 address-level, 209 building-level, 514 city-level fallbacks (495 non-city-level rows).
+
+
+Bank of America’s current official global directory resolved all eight registered-city rows: New York (One Bryant Park), Shanghai (IFC Tower 2), Hong Kong (Cheung Kong Centre), Seoul (Seoul Finance Center), Zurich (Stockerhof), London (2 King Edward Street), Tokyo (Nihonbashi 1-chome Mitsui Building), and Sydney (Governor Phillip Tower). Each office row now carries the official address and its named OSM feature/precision. Current audit: 287 address-level, 216 building-level, 506 city-level fallbacks (503 non-city-level rows).
