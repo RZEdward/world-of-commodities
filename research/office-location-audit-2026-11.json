@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 421,
-  "cityFallbackRows": 588,
+  "verifiedRows": 424,
+  "cityFallbackRows": 585,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5771,6 +5771,36 @@
       "precision": "Address-level (RWE official office and Amap tenant pin both identify No. 89 Jilong Road; Amap GCJ-02 point converted to WGS84)",
       "source": "https://www.rwe.asia/rwest-shanghai/; https://www.amap.com/place/B0HB9ZDZKI",
       "method": "RWE’s official Shanghai office page lists Room 623, Floor 6, Zhenfeng Building, No.89 Jilong Road. Amap identifies a ground-floor Starbucks tenant at exactly 89 Jilong Road (振丰大厦店), providing a building-address pin at 31.350215, 121.590202 in GCJ-02. Converted to WGS84 for this map, the stored point is 31.3523681, 121.5859877; the marker is address/building-level and not floor/suite-level."
+    },
+    {
+      "id": "off:d1f4ba3e11e9",
+      "company": "EEX Group",
+      "office": "London — European Energy Exchange AG, 11 Westferry Circus, Canary Wharf, London E14 4HE",
+      "coordinates": "51.5057884, -0.0251463",
+      "precision": "Address-level (official EEX address matches OSM node/9359206899 house number 11, Westferry Circus and postcode)",
+      "source": "https://www.eex-group.com/en/contact",
+      "osm": "node/9359206899",
+      "method": "EEX Group’s current contact page lists European Energy Exchange AG at 11 Westferry Circus, Canary Wharf, London E14 4HE. OSM node/9359206899 matches the street number, street and postcode. Address-level pin; no floor-level precision claimed."
+    },
+    {
+      "id": "off:4cd5e9c9cab0",
+      "company": "EEX Group",
+      "office": "Tokyo — EEX Japan KK, 27F Marunouchi Kitaguchi Building, 1-6-5 Marunouchi, Chiyoda-ku, Tokyo 100-0005",
+      "coordinates": "35.6838783, 139.7668809",
+      "precision": "Building-level (official EEX Tokyo office matches named OSM relation/3817813 Marunouchi Kitaguchi Building and postcode)",
+      "source": "https://www.eex-group.com/en/contact",
+      "osm": "relation/3817813",
+      "method": "EEX Group’s current contact page lists EEX Japan KK at 27F Marunouchi Kitaguchi Building, 1-6-5 Marunouchi, Chiyoda-ku, Tokyo 100-0005. OSM relation/3817813 is the building named 丸の内北口ビル with matching postcode; the footprint point is building-level, not floor-level."
+    },
+    {
+      "id": "off:e6319d6276a6",
+      "company": "EDF",
+      "office": "London — EDF Trading, 3rd Floor Cardinal Place, 80 Victoria Street, London SW1E 5JL",
+      "coordinates": "51.4972547, -0.1401126",
+      "precision": "Building-level (official EDF Trading address matches OSM way/107063630 Cardinal Place, 80 Victoria Street and postcode)",
+      "source": "https://www.edftrading.com/contact; https://company-information.service.gov.uk/company/03750288",
+      "osm": "way/107063630",
+      "method": "EDF Trading’s current contact page lists its global headquarters at 3rd Floor, Cardinal Place, 80 Victoria Street, London SW1E 5JL. Companies House confirms the same registered office. OSM way/107063630 is the Cardinal Place complex footprint at number 80 with matching postcode; pin is complex-level, not 3rd-floor."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5892,8 +5922,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 275,
-  "buildingLevelRows": 146,
+  "addressLevelRows": 276,
+  "buildingLevelRows": 148,
   "campusRows": 19,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5909,6 +5939,7 @@
     "2026-11-03 priority pass mapped Chubu London to OSM way/97237915 at 210 High Holborn; Northpool Vancouver to the named 320 Granville office footprint (Suite 970 official vs Suite 980 on a municipal licence record; suite omitted from point); and Uniper London to the 42–44 Grosvenor Gardens range represented by adjacent OSM building footprints. The Uniper Global Commodities subsidiary row uses the published group office because a separate subsidiary suite/address was not independently published.",
     "2026-11-03 further priority pass mapped ADNOC Trading Singapore to the named One George Street feature and Geneva to the exact Quai de l’Ile 13 address node. Danske Commodities London was mapped to the named One Kingdom Street building with the postcode mismatch (company W2 6BD vs OSM W2 6PY) explicit; its Singapore office was mapped to Asia Square Tower 1 at the official 8 Marina View address.",
     "2026-11-03 RWE pass mapped New York group/trading rows to 50 Rockefeller Plaza; Singapore rows to Singapore Land Tower; Beijing rows to Gateway Plaza using property-owner-published coordinates matching the RWE address; and Tokyo rows to Marunouchi Trust Tower Main. RWE Shanghai and London were not upgraded without a defensible point.",
-    "2026-11-03 RWE London and Shanghai locations were resolved. London uses the Historic England-listed Northcliffe House coordinate at RWE’s official 28 Tudor Street address. Shanghai uses Amap’s tenant pin for the same No.89 Jilong Road building as RWE’s official floor-6 office, converted from GCJ-02 to WGS84 before storage."
+    "2026-11-03 RWE London and Shanghai locations were resolved. London uses the Historic England-listed Northcliffe House coordinate at RWE’s official 28 Tudor Street address. Shanghai uses Amap’s tenant pin for the same No.89 Jilong Road building as RWE’s official floor-6 office, converted from GCJ-02 to WGS84 before storage.",
+    "2026-11-03 exchange/trading office pass mapped EEX London and Tokyo and EDF Trading London using current official contact addresses matched to OSM address/building features; EDF address also matches Companies House."
   ]
 }
