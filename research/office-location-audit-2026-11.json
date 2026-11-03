@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 453,
-  "cityFallbackRows": 556,
+  "verifiedRows": 459,
+  "cityFallbackRows": 550,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6101,6 +6101,66 @@
       "source": "https://www.tdsecurities.com/ca/en/our-offices; https://office.mec.co.jp/en/search/detail/011521",
       "osm": "",
       "method": "TD Securities current directory lists Otemachi Park Building, 1-1 Otemachi 1-chome, Tokyo 100-0004. Mitsubishi Estate’s current property page confirms the building and address. The point is the Otemachi Park Building helipad coordinate (35.6866, 139.7628), physically on the named building; rooftop/building-level, not a street entrance. Feature check: https://www.openstreetmap.org/?mlat=35.6866&mlon=139.7628#map=19/35.6866/139.7628"
+    },
+    {
+      "id": "off:0ef01f21739a",
+      "company": "Balyasny Asset Management",
+      "office": "Boston — Balyasny Asset Management L.P., 500 Boylston Street, 12th Floor, Boston, MA 02116",
+      "coordinates": "42.35043, -71.07425",
+      "precision": "Building-level (current employer address matched to named building or address point)",
+      "source": "https://www.bamfunds.com/about-us/locations",
+      "osm": "way/29862973",
+      "method": "BAM current locations page lists 500 Boylston Street, 12th Floor, Boston MA 02116. OSM way/29862973 is the matching named 500 Boylston Street office building; building-level."
+    },
+    {
+      "id": "off:9f691a021467",
+      "company": "Balyasny Asset Management",
+      "office": "Hong Kong — Balyasny Asset Management (Hong Kong) Limited, 41/F Two Exchange Square, 8 Connaught Place, Central, Hong Kong",
+      "coordinates": "22.28385, 114.1583833",
+      "precision": "Building-level (current employer address matched to named building or address point)",
+      "source": "https://www.bamfunds.com/about-us/locations",
+      "osm": "",
+      "method": "BAM current locations page lists 41st Floor, Two Exchange Square, 8 Connaught Place. The office is in the named Two Exchange Square tower; the point is the published tower coordinate (22.28385, 114.1583833), building-level. Map reference: https://www.openstreetmap.org/?mlat=22.28385&mlon=114.1583833#map=19/22.28385/114.1583833"
+    },
+    {
+      "id": "off:a969b6db279e",
+      "company": "Balyasny Asset Management",
+      "office": "London — Balyasny Asset Management (UK) LLP, 23 King Street, 4th Floor, London SW1Y 6QY",
+      "coordinates": "51.50610, -0.13790",
+      "precision": "Building-level (current employer address matched to named building or address point)",
+      "source": "https://www.bamfunds.com/about-us/locations",
+      "osm": "",
+      "method": "BAM current locations page and Companies House list 23 King Street, London SW1Y 6QY. The postcode coordinate source places SW1Y 6QY within the matched address building. Building-level point; floor not independently geocoded. Map reference: https://www.openstreetmap.org/?mlat=51.50610&mlon=-0.13790#map=19/51.50610/-0.13790"
+    },
+    {
+      "id": "off:99c17ab68698",
+      "company": "Balyasny Asset Management",
+      "office": "New York — Balyasny Asset Management L.P., 767 Fifth Avenue, 35th Floor, New York, NY 10153",
+      "coordinates": "40.76354, -73.97225",
+      "precision": "Building-level (current employer address matched to named building or address point)",
+      "source": "https://www.bamfunds.com/about-us/locations",
+      "osm": "way/86216907",
+      "method": "BAM current locations page lists 767 Fifth Avenue, 35th Floor, New York NY 10153. OSM way/86216907 is the General Motors Building at 767 Fifth Avenue; building-level."
+    },
+    {
+      "id": "off:bd7fad292c2f",
+      "company": "Balyasny Asset Management",
+      "office": "San Francisco — Balyasny Asset Management L.P., 101 California Street, Suite 4600, San Francisco, CA 94111",
+      "coordinates": "37.79290, -122.39812",
+      "precision": "Building-level (current employer address matched to named building or address point)",
+      "source": "https://www.bamfunds.com/about-us/locations",
+      "osm": "way/1279505488",
+      "method": "BAM current locations page lists 101 California Street, Suite 4600, San Francisco CA 94111. OSM way/1279505488 is the matching named 101 California office tower; building-level."
+    },
+    {
+      "id": "off:e508a597aa88",
+      "company": "Balyasny Asset Management",
+      "office": "Tokyo — Balyasny Asset Management (Japan) Limited, 11/F JP Tower, 2-7-2 Marunouchi, Chiyoda-ku, Tokyo 100-7011",
+      "coordinates": "35.67979, 139.76483",
+      "precision": "Building-level (current employer address matched to named building or address point)",
+      "source": "https://www.bamfunds.com/about-us/locations",
+      "osm": "way/145394391",
+      "method": "BAM current locations page lists 11th Floor, JP Tower, 2-7-2 Marunouchi, Chiyoda-ku, Tokyo. OSM way/145394391 is the named JP Tower building at that address; building-level."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6223,7 +6283,7 @@
     ]
   },
   "addressLevelRows": 279,
-  "buildingLevelRows": 174,
+  "buildingLevelRows": 180,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6246,6 +6306,7 @@
     "2026-11-03 Sucden pass mapped five in-scope office rows using current official group/subsidiary contact addresses and OSM address/building features; Shanghai house-number and London postcode mismatches remain explicit.",
     "2026-11-03 Bunge pass mapped Geneva Route de Florissant 13 and Singapore Guoco Tower from current company/entity records matched to OSM. Shanghai remains city-level because its current official contact page does not publish a street address.",
     "2026-11-03 ING global office pass mapped ten registered-city office rows from current ING Wholesale Banking and national branch/location sources to address/building/tenant features. London, Seoul and Sydney map-tag limitations are stated row by row.",
-    "2026-11-03 TD Securities pass mapped six registered-city offices from the current employer directory. Tokyo uses the rooftop helipad on the named Otemachi Park Building; London uses the listed 33 Cork Street address and its mapped address-associated OSM node."
+    "2026-11-03 TD Securities pass mapped six registered-city offices from the current employer directory. Tokyo uses the rooftop helipad on the named Otemachi Park Building; London uses the listed 33 Cork Street address and its mapped address-associated OSM node.",
+    "2026-11-03 Balyasny pass mapped six registered-city rows from the current company location directory to named building/address points."
   ]
 }
