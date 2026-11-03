@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 459,
-  "cityFallbackRows": 550,
+  "verifiedRows": 471,
+  "cityFallbackRows": 538,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6161,6 +6161,119 @@
       "source": "https://www.bamfunds.com/about-us/locations",
       "osm": "way/145394391",
       "method": "BAM current locations page lists 11th Floor, JP Tower, 2-7-2 Marunouchi, Chiyoda-ku, Tokyo. OSM way/145394391 is the named JP Tower building at that address; building-level."
+    },
+    {
+      "id": "off:30ce0fb1bdba",
+      "company": "Bunge",
+      "office": "Shanghai — Bunge Shanghai office, 50/F MAXDO Center, 8 Xingyi Road, Changning District, Shanghai 200336",
+      "coordinates": "31.2066255, 121.4006261",
+      "precision": "Building-level (official Bunge 50/F MAXDO Center address matched to named Amap building point; GCJ-02 converted to WGS-84)",
+      "source": "https://www.bunge.com/en/china; https://ditu.amap.com/place/B001538C22",
+      "method": "Bunge China’s current Chinese-language office directory lists the Shanghai office at 50/F, MAXDO Center, 8 Xingyi Road, Shanghai 200336. Amap identifies 万都中心 (MAXDO Center) at 8 Xingyi Road and provides a building-specific pin (GCJ-02 31.204778, 121.405275). Converted to WGS-84 31.2066255, 121.4006261 for the dashboard; this is the named office building point, not a suite entrance. Sources: https://www.bunge.com/en/china; https://ditu.amap.com/place/B001538C22"
+    },
+    {
+      "id": "off:4999d418b267",
+      "company": "Barclays",
+      "office": "New York — Barclays, 745 Seventh Avenue, New York, NY 10019",
+      "coordinates": "40.7605306, -73.9829500",
+      "precision": "Building-level (Barclays address mapped to the 745 Seventh Avenue office-building footprint)",
+      "source": "https://events.barclays.com/ereg/inactive.php?eventid=867116; https://www.rockefellergroup.com/developments/745-seventh-avenue/",
+      "osm": "way/266170754",
+      "method": "Barclays’ official 2026 event listing gives 745 Seventh Avenue, New York NY 10019. Rockefeller Group identifies 745 Seventh Avenue as an office building fully occupied by Barclays. The mapped OSM building is way/266170754 (Barclays / 745 Seventh Avenue); point 40.7605306, -73.9829500 is the building location. Building-level, not a floor entrance."
+    },
+    {
+      "id": "off:e0e93dd75271",
+      "company": "Barclays",
+      "office": "Hong Kong — Barclays Bank PLC, 41/F Cheung Kong Center, 2 Queen’s Road Central, Hong Kong",
+      "coordinates": "22.2792782, 114.1602726",
+      "precision": "Building-level (HKMA-registered address matched to Cheung Kong Center OSM building footprint)",
+      "source": "https://vpr.hkma.gov.hk/eng/regulatory-resources/registers/register-of-ais-and-lros/info/100084",
+      "osm": "way/295407286",
+      "method": "HKMA’s current register (revised 2026-11-02) gives Barclays Bank PLC Hong Kong principal business address as 41/F, Cheung Kong Center, 2 Queen’s Road Central. OSM way/295407286 is the named Cheung Kong Center building; tower-level point, not office-floor coordinates."
+    },
+    {
+      "id": "off:2b1b4ab501ec",
+      "company": "Barclays",
+      "office": "Singapore — Barclays Bank PLC Singapore Branch, 10 Marina Boulevard, #25-01, Marina Bay Financial Centre Tower 2, Singapore 018983",
+      "coordinates": "1.2795824, 103.8538296",
+      "precision": "Building-level (Barclays-registered address and postcode matched to MBFC Tower 2 OSM footprint)",
+      "source": "https://privatebank.barclays.com/support-and-information/full-privacy-notice/",
+      "osm": "way/116905042",
+      "method": "Barclays’ current Full Privacy Notice names its Singapore Branch registered office as 10 Marina Boulevard, #25-01, Marina Bay Financial Centre Tower 2, Singapore 018983. OSM way/116905042 is MBFC Tower 2 at that address/postcode; building-level point."
+    },
+    {
+      "id": "off:195b7e3f9af0",
+      "company": "Barclays",
+      "office": "Tokyo — Barclays Bank PLC Tokyo Branch, 31/F Roppongi Hills Mori Tower, 6-10-1 Roppongi, Minato-ku, Tokyo 106-6131",
+      "coordinates": "35.6604500, 139.7292800",
+      "precision": "Building-level (Barclays office address matched to named Roppongi Hills Mori Tower OSM footprint)",
+      "source": "https://privatebank.barclays.com/support-and-information/full-privacy-notice/; https://www.openstreetmap.org/way/153924771",
+      "osm": "way/153924771",
+      "method": "Barclays’ APAC privacy notice, linked from the Barclays official privacy-notice page, lists the Tokyo Branch at 31/F Roppongi Hills Mori Tower, 6-10-1 Roppongi, Minato-ku. OSM way/153924771 is the named 六本木ヒルズ森タワー building. Coordinates from the mapped tower feature; the public Barclays page links the official APAC notice PDF, whose direct fetch is blocked."
+    },
+    {
+      "id": "off:93086aa80132",
+      "company": "Barclays",
+      "office": "Sydney — Barclays Bank PLC Australia Branch, Quay Quarter Tower, 50 Bridge Street, Sydney NSW 2000",
+      "coordinates": "-33.8629958, 151.2115076",
+      "precision": "Building-level (Barclays current job location names Quay Quarter Tower; mapped to named Quay Quarter Tower OSM footprint)",
+      "source": "https://barclays.wd3.myworkdayjobs.com/en-US/External_Career_Site_Barclays/job/Associate-Banker---Australia_JR-0000103741-1; https://www.openstreetmap.org/way/312373859",
+      "osm": "way/312373859",
+      "method": "Current Barclays Workday job listings identify Sydney, Quay Quarter Tower as the employer office location. The tower’s street address is 50 Bridge Street, Sydney NSW 2000. OSM way/312373859 is the named Quay Quarter Tower footprint; building-level pin, no floor-level claim."
+    },
+    {
+      "id": "off:13d2b2310ab2",
+      "company": "Hudson River Trading",
+      "office": "London — Hudson River Trading Europe Ltd., 100 Liverpool Street, 10th Floor, London EC2M 2AT",
+      "coordinates": "51.517889, -0.083408",
+      "precision": "Address-level postcode point (official HRT street address and unit postcode EC2M 2AT matched; postcode geocoder point is within 100 Liverpool Street)",
+      "source": "https://www.hudsonrivertrading.com/offices/; https://api.postcodes.io/postcodes/EC2M2AT",
+      "method": "HRT’s official office page gives 100 Liverpool Street, 10th Floor, London EC2M 2AT; Companies House independently confirms the registered office. The current postcode lookup returns 51.517889, -0.083408 for EC2M 2AT. This is an address/postcode point inside the named office block, not a suite doorway."
+    },
+    {
+      "id": "off:2420ff9515b7",
+      "company": "Tower Research Capital",
+      "office": "London — The Minster Building, 21 Mincing Lane, London EC3R 7AG",
+      "coordinates": "51.510204, -0.081439",
+      "precision": "Address/postcode point (official employer address at The Minster Building and postcode EC3R 7AG; national postcode coordinate)",
+      "source": "https://tower-research.com/offices/; https://find-and-update.company-information.service.gov.uk/company/06005750; https://api.postcodes.io/postcodes/EC3R7AG",
+      "method": "Tower Research Capital’s current offices page lists The Minster Building, 21 Mincing Lane, EC3R 7AG; Companies House confirms the same registered address. Postcodes.io returns the national unit-postcode coordinate. It is a postcode point for the verified building address, not an independently surveyed building centroid."
+    },
+    {
+      "id": "off:d2a3ac0cb0fb",
+      "company": "Tower Research Capital",
+      "office": "Singapore — Marina One West Tower, 9 Straits View, Singapore 018937",
+      "coordinates": "1.2772586, 103.8529596",
+      "precision": "Building-complex level (officially verified West Tower address; OSM way/424896140 maps the Marina One office complex, but not an individual tower footprint)",
+      "source": "https://tower-research.com/offices/; https://www.marinaone.com.sg/contact1.html; https://mapcarta.com/W424896140",
+      "method": "Tower Research’s current office page lists Marina One West Tower, 9 Straits View, Singapore 018937. The property’s official page verifies the West Tower address. The mapped OSM way/424896140 represents the Marina One complex rather than West Tower alone; pin uses that real complex footprint centroid and is explicitly complex-level."
+    },
+    {
+      "id": "off:270d262c6032",
+      "company": "Second Foundation",
+      "office": "Tokyo — Second Foundation Japan GK, 8/F VORT Kioizaka, 4-3-29 Kojimachi, Chiyoda-ku, Tokyo 102-0083",
+      "coordinates": "35.6831228, 139.73767475",
+      "precision": "Building-level (employer’s exact registered address matched to Yahoo Japan Maps POI for VORT Kioizaka)",
+      "source": "https://second-foundation.jp/contact/; https://map.yahoo.co.jp/v3/place/SzBu7VX_OxM",
+      "method": "Second Foundation Japan’s current Japanese contact page lists 麹町4-3-29 VORT紀尾井坂8F, postal code 102-0083. Yahoo Japan Maps identifies VORT紀尾井坂 at the same street address and returns the building POI coordinate 35.6831228, 139.73767475; this is a named-building point."
+    },
+    {
+      "id": "off:c2f3cba13aee",
+      "company": "COFCO International",
+      "office": "Geneva — COFCO International global headquarters, Route de Malagnou 101–105, 1224 Chêne-Bougeries, Geneva, Switzerland",
+      "coordinates": "46.1944892, 6.1717019",
+      "precision": "Address-level (OSM node/3721575799 matches house number 101 and Route de Malagnou; OSM postcode 1208 differs from employer-supplied 1224)",
+      "source": "https://www.cofco.com/en/BrandProduct/COFCOInternational/; https://www.cofcointernational.com/media/vqtfz2ir/cofco-sr21.pdf; https://www.openstreetmap.org/node/3721575799",
+      "method": "COFCO’s official group profile says Geneva is COFCO International’s headquarters. Its 2021 sustainability report identifies the global headquarters as Route de Malagnou 101, 1224 Chêne-Bougeries. OSM node/3721575799 matches house number 101 and the road, but returns postcode 1208 rather than the company-published 1224; exact address number/road are the stronger match and the postcode conflict is recorded."
+    },
+    {
+      "id": "off:211caa3d7d57",
+      "company": "Engie Global Markets",
+      "office": "Singapore — ENGIE Global Markets Singapore Branch, 8 Marina View, #34-01 Asia Square Tower 1, Singapore 018960",
+      "coordinates": "1.2790064, 103.8513509",
+      "precision": "Building-level (Singapore branch address/postcode matched to Asia Square Tower 1 OSM relation/407941850)",
+      "source": "https://jobs.engie.com/job/Sales-Trader/71834-en_US/; https://www.engie-sea.com/contact-us/; https://www.openstreetmap.org/relation/407941850",
+      "method": "ENGIE’s current Sales Trader listing identifies ENGIE Global Markets Singapore Branch and location Singapore 018960. The official ENGIE SEA contact page lists its Supply & Energy Management office at 8 Marina View, #34-01 Asia Square Tower 1, 018960; a current active LEI record for ENGIE Energy Marketing Singapore Pte Ltd gives the same address. OSM relation/407941850 is the named Asia Square Tower 1 building at 8 Marina View; building-level point."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6282,8 +6395,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 279,
-  "buildingLevelRows": 180,
+  "addressLevelRows": 281,
+  "buildingLevelRows": 190,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6307,6 +6420,10 @@
     "2026-11-03 Bunge pass mapped Geneva Route de Florissant 13 and Singapore Guoco Tower from current company/entity records matched to OSM. Shanghai remains city-level because its current official contact page does not publish a street address.",
     "2026-11-03 ING global office pass mapped ten registered-city office rows from current ING Wholesale Banking and national branch/location sources to address/building/tenant features. London, Seoul and Sydney map-tag limitations are stated row by row.",
     "2026-11-03 TD Securities pass mapped six registered-city offices from the current employer directory. Tokyo uses the rooftop helipad on the named Otemachi Park Building; London uses the listed 33 Cork Street address and its mapped address-associated OSM node.",
-    "2026-11-03 Balyasny pass mapped six registered-city rows from the current company location directory to named building/address points."
+    "2026-11-03 Balyasny pass mapped six registered-city rows from the current company location directory to named building/address points.",
+    "2026-11-03 Bunge Shanghai matched the current Bunge China office listing at 50/F MAXDO Center, 8 Xingyi Road; the named Amap building point was converted from GCJ-02 to WGS-84.",
+    "2026-11-03 Barclays pass mapped five registered-city offices using current Barclays listings/privacy notice, HKMA, Rockefeller Group and matching OSM office-building features.",
+    "2026-11-03 HRT London, Tower Research London/Singapore, and Second Foundation Tokyo offices mapped; address, postcode and building-complex precision are stated per row.",
+    "2026-11-03 COFCO International Geneva HQ and ENGIE Global Markets Singapore office matched to current exact office address/building points. COFCO OSM postcode mismatch is explicitly retained."
   ]
 }
