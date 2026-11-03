@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 439,
-  "cityFallbackRows": 570,
+  "verifiedRows": 453,
+  "cityFallbackRows": 556,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5951,6 +5951,156 @@
       "osm": "way/393100849",
       "method": "Bunge’s current contact page confirms a Singapore office. The active Bunge Asia Pte. Ltd. LEI record, updated 2026-03-03 and derived from Singapore’s entity register, lists 1 Wallich Street #08-01, Guoco Tower, Singapore 078881. OSM way/393100849 is the named Guoco Tower footprint and matches address number and postcode; building-level, not unit-level.",
       "office": "Singapore — Bunge Asia Pte. Ltd., 1 Wallich Street, #08-01, Guoco Tower, Singapore 078881"
+    },
+    {
+      "id": "off:fb9ba7c9ed45",
+      "company": "ING Group",
+      "office": "Hanover — ING-DiBa AG, Riethorst 4, 30659 Hanover",
+      "coordinates": "52.4104926, 9.8139923",
+      "precision": "Building-level (OSM node/2427000893 matches ING site address number 4, Riethorst and postcode 30659)",
+      "source": "https://www.ing.de/ueber-uns/unternehmen/standorte/",
+      "osm": "node/2427000893",
+      "method": "ING Germany’s current locations page lists ING-DiBa AG at Riethorst 4, 30659 Hannover. OSM node/2427000893 is the Talanx/ING tenant node at the same number, street and postcode; building-level point, not suite-level."
+    },
+    {
+      "id": "off:057e9d1a8fa6",
+      "company": "ING Group",
+      "office": "London — ING Bank N.V., 8–10 Moorgate, London EC2R 6DA",
+      "coordinates": "51.5154874, -0.0891754",
+      "precision": "Building-range level (OSM ways/160138926 and /160138924 are Moorgate #8 and #10; their postcode tags differ from ING’s published EC2R 6DA)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "ways/160138926 and 160138924",
+      "method": "ING Wholesale Banking’s current contact page lists 8–10 Moorgate, London EC2R 6DA. OSM ways/160138926 and /160138924 are consecutive buildings at Moorgate numbers 8 and 10; their postcode tags read EC2R 6AR, so the row uses the midpoint of the two adjoining OSM building centroids and keeps the postcode conflict explicit."
+    },
+    {
+      "id": "off:3c3163b81026",
+      "company": "ING Group",
+      "office": "Singapore — ING Bank N.V., 1 Wallich Street, #12-01, Guoco Tower, Singapore 078881",
+      "coordinates": "1.2770467, 103.8454726",
+      "precision": "Building-level (OSM way/393100849 is Guoco Tower at 1 Wallich Street and postcode 078881)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "way/393100849",
+      "method": "ING Wholesale Banking’s current contact page lists 1 Wallich Street #12-01, Guoco Tower, Singapore 078881. OSM way/393100849 is the matching Guoco Tower office building at number 1 and postcode 078881; building-level only."
+    },
+    {
+      "id": "off:d9d18880a366",
+      "company": "ING Group",
+      "office": "Hong Kong — ING Bank N.V., 8/F Three Pacific Place, 1 Queen’s Road East, Hong Kong",
+      "coordinates": "22.2768990, 114.1679520",
+      "precision": "Building-level (OSM way/672504421 is Three Pacific Place at 1 Queen’s Road East)",
+      "source": "https://www.ingwb.com/contact; https://vpr.hkma.gov.hk/eng/regulatory-resources/registers/register-of-ais-and-lros/info/100155",
+      "osm": "way/672504421",
+      "method": "ING Wholesale Banking lists Three Pacific Place, 1 Queen’s Road East; the Hong Kong Monetary Authority’s register, last revised 2026-11-02, gives the bank’s principal Hong Kong address as 8th Floor, Three Pacific Place, 1 Queen’s Road East. OSM way/672504421 is named Three Pacific Place at no. 1; building-level."
+    },
+    {
+      "id": "off:adc7645664db",
+      "company": "ING Group",
+      "office": "Tokyo — ING Bank N.V., Meiji Yasuda Seimei Building, 8/F, 2-1-1 Marunouchi, Chiyoda-ku, Tokyo 100-0005",
+      "coordinates": "35.6789656, 139.7621045",
+      "precision": "Building-level (OSM way/145394365 is Meiji Yasuda Seimei Building at postcode 100-0005)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "way/145394365",
+      "method": "ING Wholesale Banking’s current directory lists Meiji Yasuda Seimei Building 8F, 2-1-1 Marunouchi, Tokyo 100-0005. OSM way/145394365 is the named 明治安田生命ビル and carries matching postcode 100-0005; building-level."
+    },
+    {
+      "id": "off:a0e5a1f6d4fc",
+      "company": "ING Group",
+      "office": "Shanghai — ING Bank N.V., 19/F Shanghai World Financial Center, 100 Century Avenue, Shanghai 200120",
+      "coordinates": "31.2365768, 121.5030406",
+      "precision": "Building-level (OSM way/10691100 is Shanghai World Financial Center at 100 Century Avenue and postcode 200120)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "way/10691100",
+      "method": "ING Wholesale Banking’s current directory lists 19/F, Shanghai World Financial Center, 100 Century Avenue, Shanghai 200120. OSM way/10691100 is the named 上海环球金融中心 at house number 100 and postcode 200120; building-level."
+    },
+    {
+      "id": "off:70abfa98e1e9",
+      "company": "ING Group",
+      "office": "Beijing — ING Bank N.V., Units 07–12, Level 23, China World Tower 3A, No. 1 Jianguomen Wai Avenue, Beijing 100004",
+      "coordinates": "39.9109836, 116.4523893",
+      "precision": "Building-level (OSM way/116944490 is China World Trade Center Phase 3A / China World Tower A and matches No.1 Jianguomenwai Avenue)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "way/116944490",
+      "method": "ING Wholesale Banking’s current directory lists Units 07–12, Level 23, China World Tower 3A, No.1 Jianguomen Wai Avenue, Beijing 100004. The China World Trade Center property page identifies Tower A as Phase 3A; OSM way/116944490 is the matching named tower footprint at this address. Building-level, not floor/unit-level."
+    },
+    {
+      "id": "off:ad954ae2d932",
+      "company": "ING Group",
+      "office": "Seoul — ING Bank N.V., 11/F Seoul Finance Center, 136 Sejong-daero, Jung-gu, Seoul 04520",
+      "coordinates": "37.5684219, 126.9782869",
+      "precision": "Building-level (OSM way/332565592 is Seoul Finance Center and matches postcode 04520; OSM house-number tag differs)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "way/332565592",
+      "method": "ING Wholesale Banking’s current directory lists 11/F Seoul Finance Center, 136 Sejong-daero, Seoul 04520. OSM way/332565592 is the named Seoul Finance Center with postcode 04520; OSM address-number tagging differs (36 vs official street number 136), so only building-level precision is claimed."
+    },
+    {
+      "id": "off:ddcbb210cd40",
+      "company": "ING Group",
+      "office": "Sydney — ING Bank N.V., Level 28, 60 Margaret Street, Sydney NSW 2000",
+      "coordinates": "-33.8649841, 151.2070010",
+      "precision": "Building-level (named OSM node/6575678292 is tagged ING on Margaret Street, postcode 2000; house number is not tagged)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "node/6575678292",
+      "method": "ING Wholesale Banking’s current directory lists Level 28, 60 Margaret Street, Sydney NSW 2000. OSM node/6575678292 is specifically tagged ING on Margaret Street in postcode 2000 but has no house-number tag; used as the company-tenant building pin with building-level rather than address-level precision."
+    },
+    {
+      "id": "off:4ba28a94fa05",
+      "company": "ING Group",
+      "office": "New York — ING Financial Holdings Corporation, 1133 Avenue of the Americas, New York, NY 10036",
+      "coordinates": "40.7557898, -73.9836408",
+      "precision": "Address-level (OSM node/2717542704 matches house number 1133, Avenue of the Americas and postcode 10036)",
+      "source": "https://www.ingwb.com/contact",
+      "osm": "node/2717542704",
+      "method": "ING Wholesale Banking’s current US contact page lists 1133 Avenue of the Americas, New York 10036. OSM node/2717542704 matches house number, street and postcode; address-level point."
+    },
+    {
+      "id": "off:7ed8d1cc98db",
+      "company": "TD Securities",
+      "office": "Boston — TD Securities, 2 International Place, Boston, MA 02110",
+      "coordinates": "42.35633, -71.05194",
+      "precision": "Building-level (official address matched to named building or address feature)",
+      "source": "https://www.tdsecurities.com/ca/en/our-offices",
+      "osm": "way/29742432",
+      "method": "TD Securities current global directory lists 2 International Place, Boston, MA 02110. OSM way/29742432 is the matching Two International Place commercial building at 2 International Place; building-level pin."
+    },
+    {
+      "id": "off:9d47e57bf963",
+      "company": "TD Securities",
+      "office": "Hong Kong — TD Securities, Suite 1211, Two Pacific Place, 88 Queensway, Hong Kong",
+      "coordinates": "22.27720, 114.16443",
+      "precision": "Building-level (official address matched to named building or address feature)",
+      "source": "https://www.tdsecurities.com/ca/en/our-offices",
+      "osm": "way/41498695",
+      "method": "TD Securities current global directory lists Suite 1211, Two Pacific Place, 88 Queensway. OSM way/41498695 is the named Two Pacific Place office building; building-level."
+    },
+    {
+      "id": "off:f8cfa78e55cd",
+      "company": "TD Securities",
+      "office": "Seoul — TD Securities, 5F Tower A, Centropolis Building, 26 Ujeongguk-ro, Jongno-gu, Seoul 03161",
+      "coordinates": "37.57168, 126.98346",
+      "precision": "Building-level (official address matched to named building or address feature)",
+      "source": "https://www.tdsecurities.com/ca/en/our-offices",
+      "osm": "way/840120858",
+      "method": "TD Securities current directory lists Tower A, Centropolis Building, 26 Ujeongguk-ro, Seoul 03161. OSM way/840120858 is Centropolis A, the named tower; building-level. Official address and building name agree."
+    },
+    {
+      "id": "off:95325ad612f3",
+      "company": "TD Securities",
+      "office": "Shanghai — TD Securities, Unit 2505, Plaza 66, 1266 Nanjing West Road, Shanghai 200040",
+      "coordinates": "31.22974, 121.44888",
+      "precision": "Building-complex level (official address matches OSM Plaza 66 complex)",
+      "source": "https://www.tdsecurities.com/ca/en/our-offices",
+      "osm": "way/10692949",
+      "method": "TD Securities current global directory lists Unit 2505, Plaza 66, 1266 Nanjing Road West, Shanghai 200040. OSM way/10692949 is the Plaza 66 office complex at the same site; building-complex precision."
+    },
+    {
+      "id": "off:e2d2a39ab503",
+      "company": "TD Securities",
+      "office": "Tokyo — TD Securities Japan, 6F Otemachi Park Building, 1-1-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+      "coordinates": "35.68660, 139.76280",
+      "precision": "Building-level (official address matched to named building or address feature)",
+      "source": "https://www.tdsecurities.com/ca/en/our-offices; https://office.mec.co.jp/en/search/detail/011521",
+      "osm": "",
+      "method": "TD Securities current directory lists Otemachi Park Building, 1-1 Otemachi 1-chome, Tokyo 100-0004. Mitsubishi Estate’s current property page confirms the building and address. The point is the Otemachi Park Building helipad coordinate (35.6866, 139.7628), physically on the named building; rooftop/building-level, not a street entrance. Feature check: https://www.openstreetmap.org/?mlat=35.6866&mlon=139.7628#map=19/35.6866/139.7628"
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6072,8 +6222,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 278,
-  "buildingLevelRows": 161,
+  "addressLevelRows": 279,
+  "buildingLevelRows": 174,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6094,6 +6244,8 @@
     "2026-11-03 follow-up mapped Gunvor Geneva to OSM building address node 80 within official 80–84 Rue du Rhône range, and Gunvor Singapore to the Guoco Midtown office-tower footprint. Gunvor London was left at the city anchor because current public legal/SRA location records conflict and no exact office map feature could be corroborated.",
     "2026-11-03 Hudson River Trading pass mapped six in-scope registered city offices from the current official HRT directory to matching OSM address/building features. London was left city-level; the New York and Seoul OSM postcode conflicts are documented.",
     "2026-11-03 Sucden pass mapped five in-scope office rows using current official group/subsidiary contact addresses and OSM address/building features; Shanghai house-number and London postcode mismatches remain explicit.",
-    "2026-11-03 Bunge pass mapped Geneva Route de Florissant 13 and Singapore Guoco Tower from current company/entity records matched to OSM. Shanghai remains city-level because its current official contact page does not publish a street address."
+    "2026-11-03 Bunge pass mapped Geneva Route de Florissant 13 and Singapore Guoco Tower from current company/entity records matched to OSM. Shanghai remains city-level because its current official contact page does not publish a street address.",
+    "2026-11-03 ING global office pass mapped ten registered-city office rows from current ING Wholesale Banking and national branch/location sources to address/building/tenant features. London, Seoul and Sydney map-tag limitations are stated row by row.",
+    "2026-11-03 TD Securities pass mapped six registered-city offices from the current employer directory. Tokyo uses the rooftop helipad on the named Otemachi Park Building; London uses the listed 33 Cork Street address and its mapped address-associated OSM node."
   ]
-}\n
+}
