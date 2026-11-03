@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 528,
-  "cityFallbackRows": 477,
+  "verifiedRows": 529,
+  "cityFallbackRows": 476,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6871,6 +6871,16 @@
       "source": "https://dxt.com/contact-us/; https://www.onemap.gov.sg/api/common/elastic/search?searchVal=049483&returnGeom=Y&getAddrDetails=Y&pageNum=1",
       "map_feature": "Singapore OneMap postal point, Samsung Hub, 049483",
       "method": "DXT’s current official contact page distinguishes its Singapore Corporate Office at Wilkie Edge from its Operations office at 3 Church Street #17-01, Samsung Hub. Singapore OneMap resolves postcode 049483 to Samsung Hub at the exact address. The building/postal point does not represent the 17th-floor suite."
+    },
+    {
+      "id": "off:40a204e051dd",
+      "company": "Alvean",
+      "office": "Geneva / Grand-Lancy — Esplanade de Pont-Rouge 4, 1212 Grand-Lancy",
+      "coordinates": "46.1873169, 6.1264005",
+      "precision": "Address-level (Swiss federal official building-address gazetteer resolves Esplanade de Pont-Rouge 4, 1212 Grand-Lancy)",
+      "source": "https://alvean.com/our-locations/; https://alvean.com/our-business/; https://lei.bloomberg.com/leis/view/549300IOW92TBZQIR750; https://www.local.ch/en/d/grand-lancy/1212/alvean-sugar-s-l-bilbao-geneva-branch-xgVvwH7omUJwge7CnbPTxA; https://api3.geo.admin.ch/rest/services/api/SearchServer?searchText=Esplanade%20de%20Pont-Rouge%204%2C%201212%20Grand-Lancy&type=locations&limit=5; https://www.openstreetmap.org/way/547729055",
+      "map_feature": "geo.admin.ch official address point 2955476; OSM way/547729055 (Esplanade 4–6)",
+      "method": "Alvean’s current official location page identifies Geneva as its trading office, and its business page says trading is primarily from the Geneva office. The current LEI record gives the entity headquarters at Esplanade de Pont-Rouge 4, Grand-Lancy, 1212. Swisscom Directories independently lists Alvean’s Geneva branch at the same address and phone. The Swiss federal geo.admin.ch search service resolves exact address number 4 to 46.1873169, 6.1264005; the building is also identified as Esplanade 4–6, OSM way/547729055. The pin is the official street-address point, not a suite or floor. Grand-Lancy is within the Geneva metropolitan office location already registered."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -7031,7 +7041,7 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 289,
+  "addressLevelRows": 290,
   "buildingLevelRows": 239,
   "campusRows": 20,
   "notes": [
@@ -7074,7 +7084,8 @@
     "November 3 HSBC pass mapped current Shanghai and Tokyo offices and removed the former HSBC Canada Vancouver headquarters row following HSBC’s official 2024 sale-completion notice.",
     "November 3 MFT Energy pass mapped its New York and Tokyo offices: NYC municipal address point with parcel/building identifiers and a named Tokyo office-building feature.",
     "Deduplicated four additional exact Office Registry rows by Office ID after verifying every field was identical.",
-    "2026-11-03 IMC/BP/Graviton/DXT follow-up: upgraded IMC Hong Kong, BP Singapore, Graviton Singapore and DXT Singapore corporate office to building-level points; added DXT’s separately listed Samsung Hub operations office as a second Singapore office. Graviton’s company LinkedIn location and move notice identify 36 Robinson Road while its legal address and older website locator still name One Raffles Place; the map follows the newer physical-office evidence and records the conflict."
+    "2026-11-03 IMC/BP/Graviton/DXT follow-up: upgraded IMC Hong Kong, BP Singapore, Graviton Singapore and DXT Singapore corporate office to building-level points; added DXT’s separately listed Samsung Hub operations office as a second Singapore office. Graviton’s company LinkedIn location and move notice identify 36 Robinson Road while its legal address and older website locator still name One Raffles Place; the map follows the newer physical-office evidence and records the conflict.",
+    "2026-11-03 Alvean Geneva pass resolved Esplanade de Pont-Rouge 4, Grand-Lancy. Alvean’s official Geneva trading-office information, current LEI headquarters and Swisscom Directories branch record agree; the Swiss federal geo.admin.ch address gazetteer resolves the exact house number."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1
