@@ -54,3 +54,14 @@ The new Masters record is a 2027 planning lead, not a currently open application
 - [ZJU Yuquan campus address](https://www.zju.edu.cn/english/_t874/20083/list.htm)
 - [College of Control Science and Engineering robotics lab research](https://sirl.com.cn/research/)
 - [ECB rates, 30 October 2026](https://www.ecb.europa.eu/stats/policy_and_exchange_rates/euro_reference_exchange_rates/html/index.en.html?date=2026-10-27)
+
+
+## Master’s in Computer Science and Technology — ML / CV research option
+
+Added to the Masters sheet as a distinct research route at Zijingang Campus. The official 2026 English-taught catalogue lists Computer Science and Technology as a three-year international master’s at CNY 36,800/year. ZJU’s 2026 master’s guide gave a general deadline of 28 February 2026; the next 2027 application guide and deadline have not been published. The catalogue prioritizes applicants with a provisional acceptance form from a ZJU supervisor.
+
+The current College of Computer Science and Technology graduate-supervisor directory includes relevant faculty: Xiaofei He and Deng Cai (machine learning, computer vision, information retrieval); Guofeng Zhang (computer vision, augmented/mixed reality, robot perception); and other faculty in robotics and visual processing. The directory places its CAD/vision group in Mengminwei Building, Zijingang Campus. These are potential research matches, not confirmation of 2027 international student supervision. The 2010–2012 LinkedIn MPhil example is recorded as a subject-interest signal; ZJU’s catalogued qualification is a Master’s degree, not that MPhil.
+
+Potential faculty emails and scope are listed in the workbook’s Requirements/Next Action fields. No email has been sent. The next action is to confirm degree prerequisites, 2027 English-taught availability, project/supervisor eligibility, and the provisional-acceptance requirement.
+
+Sources: [ZJU international master’s guide](https://iczu.zju.edu.cn/admissionsen/2024/1030/c68989a2981849/page.psp); [official 2026 English-taught catalogue](https://iczu.zju.edu.cn/_upload/article/files/32/c1/d48dfe1349279755c872b98ce7e1/4d75c52b-8b5e-412a-9039-49cceec8a006.pdf); [College of Computer Science and Technology graduate supervisor directory](https://www.cs.zju.edu.cn/_upload/article/files/d4/45/e46a2ca6469693738d84d1fffc3f/642ea7c2-932e-4023-b1bb-ce1618ee6c27.pdf); [ZJU campus overview](https://www.zju.edu.cn/english/_t874/20083/list.htm).

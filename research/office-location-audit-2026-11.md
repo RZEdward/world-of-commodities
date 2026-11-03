@@ -97,3 +97,12 @@ COFCO International’s Geneva HQ is confirmed at Route de Malagnou 101–105 by
 
 
 Six more registered offices were mapped on 2026-11-03: Equinor Singapore (Asia Square Tower 1), London (One Kingdom Street), and Beijing (Twin Towers West Tower); QatarEnergy Shanghai (Lippo Plaza), Tokyo (Grand Cube), and Seoul (Gangnam Finance Center). QatarEnergy’s official Global Offices page also gives its Beijing office address at China World Office Tower 2, but that building-specific point has not yet been resolved, so its row remains a fallback for now. Equinor London’s official W2 6BD and OSM W2 6PY postcode disagreement is documented. Current audit counts: 283 address-level, 194 building-level, 532 city-level fallbacks (477 non-city-level rows).
+
+
+QatarEnergy Beijing is now mapped to China World Office Tower 2. Its official Global Offices page gives Room 1011 and the street address; Baidu Maps provides a Tower 2-specific POI. The returned BD-09 Mercator point was converted to WGS-84 for the dashboard. Audit counts: 283 address-level, 195 building-level, 531 city-level fallbacks (478 non-city-level rows).
+
+
+A DBS and ABN AMRO Clearing pass mapped 14 registered office rows from their official directories: DBS Singapore, Sydney, Shanghai, Hong Kong, Tokyo, Seoul, London, and New York; ABN AMRO Clearing Sydney, Hong Kong, Tokyo, Singapore, London, and New York. OSM footprint/address features are linked row by row. Notes preserve street-number, feature-address, and suite-level limitations rather than implying a floor-level pin. Current audit: 283 address-level, 209 building-level, 517 city-level fallbacks (492 non-city-level rows).
+
+
+Ørsted’s current official contact directory confirms London at 5 Howick Place, SW1P 1WG, and Boston at 399 Boylston Street. Two London entity rows now use the official postcode centroid returned by postcodes.io (not represented as an entrance/building pin); the trading-entity Boston row uses the already verified office-site point. Current audit: 286 address-level, 209 building-level, 514 city-level fallbacks (495 non-city-level rows).

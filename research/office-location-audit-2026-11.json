@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 477,
-  "cityFallbackRows": 532,
+  "verifiedRows": 495,
+  "cityFallbackRows": 514,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -6328,6 +6328,168 @@
       "precision": "Address-level (official street number and road match named OSM building way/117823787; postcode also consistent)",
       "source": "https://www.qatarenergy.qa/en/MarketingAndTrading/Marketing/Pages/GlobalOffices.aspx; https://www.openstreetmap.org/way/117823787",
       "method": "QatarEnergy’s current Global Offices page lists its Seoul office on the 15th floor, Gangnam Finance Center, 152 Teheran-ro, Gangnam-gu. OSM way/117823787 is the named 강남파이낸스센터 (Gangnam Finance Center) building at 152 Teheran-ro, postcode 06236. The point represents the building, not the 15th-floor suite."
+    },
+    {
+      "id": "off:0362b4f0514b",
+      "company": "QatarEnergy",
+      "office": "Beijing — QatarEnergy liaison office, Room 1011, Level 10, China World Office Tower 2, 1 Jianguomenwai Avenue, Chaoyang District, Beijing, China",
+      "coordinates": "39.9100434, 116.4532646",
+      "precision": "Building-level (Baidu POI specifically identifies China World Office Tower 2 at official street address; BD-09 Mercator converted to WGS-84)",
+      "source": "https://www.qatarenergy.qa/en/MarketingAndTrading/Marketing/Pages/GlobalOffices.aspx; https://map.baidu.com/mobile/webapp/place/detail/qt%3Ds%26wd%3D%E5%8C%97%E4%BA%AC%E5%B8%82%E5%BB%BA%E5%9B%BD%E9%97%A8%E5%A4%96%E5%A4%A7%E8%A1%971%E5%8F%B7%E5%9B%BD%E8%B4%B8%E5%A4%A7%E5%8E%A62%E5%BA%A76%E5%B1%82%E3%80%8126%E5%B1%82%E3%80%8127%E5%B1%82%E5%8F%8A28%E5%B1%82%26c%3D348%26searchFlag%3DbigBox%26version%3D5%26exptype%3Ddep%26uid%3D92b806d221da588078b55cb7/; https://lbs.baidu.com/docs/jsapi?title=jsapi4/guide/concept/projection; https://github.com/xvill/xutil/blob/master/gis.go",
+      "method": "QatarEnergy’s official Global Offices page identifies Room 1011, Level 10, China World Office Tower 2, 1 Jianguomenwai Avenue. Baidu Maps returns a Tower 2-specific POI (uid 92b806d221da588078b55cb7) with BD-09 Mercator point 12965079.69, 4826216.44. Converted to BD-09 longitude/latitude 116.4660252, 39.9170246, then GCJ-02 116.4594158, 39.9113775, then WGS-84 116.4532646, 39.9100434 for the dashboard. The pin is the building location, not a floor/suite entrance."
+    },
+    {
+      "id": "off:68b12ee57af3",
+      "company": "DBS",
+      "office": "Singapore — 12 Marina Boulevard, Marina Bay Financial Centre Tower 3",
+      "coordinates": "1.2789573, 103.8544488",
+      "precision": "undefined (OSM way/116905041)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/116905041",
+      "method": "DBS official Global Offices lists 12 Marina Boulevard, MBFC Tower 3. OSM feature names MBFC Tower 3 and its footprint; OSM carries a differing street number (10), so identity is established by tower name and geometry, not street number."
+    },
+    {
+      "id": "off:4f404b25abaf",
+      "company": "DBS",
+      "office": "Sydney — Suite 1901, Level 19, Chifley Tower, 2 Chifley Square, NSW 2000",
+      "coordinates": "-33.8659000, 151.2116767",
+      "precision": "undefined (OSM way/544269333)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/544269333",
+      "method": "DBS official Global Offices lists Chifley Tower, 2 Chifley Square. OSM feature is named Chifley Tower; centroid used. OSM feature is a smaller footprint component and its address tags point to Hunter Street, so pin precision is building-complex level."
+    },
+    {
+      "id": "off:774cacc45cc8",
+      "company": "DBS",
+      "office": "Shanghai — DBS Bank Tower, 1318 Lujiazui Ring Road, Pudong New Area, Shanghai 200120",
+      "coordinates": "31.2441878, 121.4989333",
+      "precision": "undefined (OSM way/164905211)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/164905211",
+      "method": "DBS official Global Offices gives DBS Bank Tower at 1318 Lujiazui Ring Road. OSM building is named 星展银行大厦 / DBS Building and carries 1318号 Lujiazui Ring Road; its footprint centroid is used."
+    },
+    {
+      "id": "off:e91425379735",
+      "company": "DBS",
+      "office": "Hong Kong — 11/F, The Center, 99 Queen’s Road Central",
+      "coordinates": "22.2846128, 114.1547280",
+      "precision": "undefined (OSM way/148228888)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/148228888",
+      "method": "DBS official Global Offices gives The Center, 99 Queen’s Road Central. Photon/OSM search resolves the named The Center footprint at this exact address; pin is the building centroid."
+    },
+    {
+      "id": "off:e1c74bf213e0",
+      "company": "DBS",
+      "office": "Tokyo — Otemachi First Square, East Tower, 15/F, 1-5-1 Otemachi, Chiyoda-ku, Tokyo 100-0004",
+      "coordinates": "35.6857570, 139.7643135",
+      "precision": "undefined (OSM way/345027603)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/345027603",
+      "method": "DBS official Tokyo branch page confirms the East Tower address. OSM feature names Otemachi First Square East Tower; footprint centroid used."
+    },
+    {
+      "id": "off:2b5ddb47a03e",
+      "company": "DBS",
+      "office": "Seoul — 18/F, Seoul Finance Center, 136 Sejong-daero, Jung-gu, Seoul 04520",
+      "coordinates": "37.5684219, 126.9782869",
+      "precision": "undefined (OSM way/332565592)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/332565592",
+      "method": "DBS official Global Offices gives Seoul Finance Center, 136 Sejong-daero. OSM feature is the named Seoul Finance Center footprint; pin is building-level."
+    },
+    {
+      "id": "off:f0f2e6aed0b5",
+      "company": "DBS",
+      "office": "London — DBS Bank London Branch, One London Wall, London EC2Y 5EA",
+      "coordinates": "51.5172067, -0.0961686",
+      "precision": "undefined (OSM way/156190523)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/way/156190523",
+      "method": "DBS official Global Offices lists One London Wall. OSM footprint is named One London Wall at 1 London Wall; suite-level location not represented."
+    },
+    {
+      "id": "off:d146851a467a",
+      "company": "DBS",
+      "office": "New York — DBS Vickers (USA), 777 Third Avenue, Suite 1701, New York, NY 10017",
+      "coordinates": "40.7546507, -73.9712680",
+      "precision": "undefined (OSM node/12840446756)",
+      "source": "https://www.dbs.com/about-us/our-global-offices/default.page; https://www.openstreetmap.org/node/12840446756",
+      "method": "DBS official Global Offices lists DBS Vickers (USA) at 777 Third Avenue, Suite 1701. OSM POI is at the same numbered address; pin represents address/site, not floor."
+    },
+    {
+      "id": "off:e68f90c4c240",
+      "company": "ABN AMRO",
+      "office": "Sydney — ABN AMRO Clearing Australia, Suite 1, Level 8, 255 George Street, Sydney NSW 2000",
+      "coordinates": "-33.8637191, 151.2070753",
+      "precision": "undefined (OSM way/26303656)",
+      "source": "https://www.abnamro.com/clearing/en/contact; https://www.openstreetmap.org/way/26303656",
+      "method": "ABN AMRO Clearing official contact directory lists this exact address. Photon/OSM resolves the George Street building site; point is building-level pending verification of an address tag on the building footprint."
+    },
+    {
+      "id": "off:1fdce9cbf36c",
+      "company": "ABN AMRO",
+      "office": "Hong Kong — ABN AMRO Clearing, Suites 2407–2409, Level 24, Three Pacific Place, 1 Queen’s Road East",
+      "coordinates": "22.2768990, 114.1679520",
+      "precision": "undefined (OSM way/672504421)",
+      "source": "https://www.abnamro.com/clearing/en/contact; https://www.openstreetmap.org/way/672504421",
+      "method": "ABN AMRO Clearing official contact directory lists Three Pacific Place. OSM feature is the named Three Pacific Place complex footprint; pin is building-level."
+    },
+    {
+      "id": "off:51dd98b4908c",
+      "company": "ABN AMRO",
+      "office": "Tokyo — ABN AMRO Clearing Tokyo, 39/F, Atago Green Hills Mori Tower, 2-5-1 Atago, Minato-ku, Tokyo 105-6239",
+      "coordinates": "35.6621242, 139.7489089",
+      "precision": "undefined (OSM way/149718440)",
+      "source": "https://www.abnamro.com/clearing/en/contact; https://www.openstreetmap.org/way/149718440",
+      "method": "ABN AMRO Clearing official directory lists Atago Green Hills Mori Tower. OSM feature is named 愛宕MORIタワー / Atago MORI Tower; building name and locality match. OSM house-number formatting differs from Japanese address; pin is footprint-level."
+    },
+    {
+      "id": "off:7d02cf373326",
+      "company": "ABN AMRO",
+      "office": "Singapore — ABN AMRO Clearing Singapore, 77 Robinson Road #32-01, Singapore 068896",
+      "coordinates": "1.2777961, 103.8484786",
+      "precision": "undefined (OSM way/47345028)",
+      "source": "https://www.abnamro.com/clearing/en/contact; https://www.openstreetmap.org/way/47345028",
+      "method": "ABN AMRO Clearing official directory gives 77 Robinson Road #32-01. OSM footprint is named Robinson 77 and carries house number 77, Robinson Road, postal code 068896."
+    },
+    {
+      "id": "off:02ea4fd4f207",
+      "company": "ABN AMRO",
+      "office": "London — ABN AMRO Bank N.V. UK Branch, 5 Aldermanbury Square, London EC2V 7HR",
+      "coordinates": "51.5170909, -0.0933796",
+      "precision": "undefined (OSM way/164296395)",
+      "source": "https://www.abnamro.com/clearing/en/contact; https://www.openstreetmap.org/way/164296395",
+      "method": "ABN AMRO Clearing official directory gives 5 Aldermanbury Square. OSM feature is the named/addressed 5 Aldermanbury Square building; suite-level location not represented."
+    },
+    {
+      "id": "off:b9dc760baba4",
+      "company": "ABN AMRO",
+      "office": "New York — ABN AMRO Clearing USA, 450 Seventh Avenue, New York, NY 10123",
+      "coordinates": "40.7514791, -73.9907412",
+      "precision": "undefined (OSM way/265277008)",
+      "source": "https://www.abnamro.com/clearing/en/contact; https://www.openstreetmap.org/way/265277008",
+      "method": "ABN AMRO Clearing official directory gives 450 Seventh Avenue, New York NY 10123. OSM feature is Nelson Tower and carries matching house number, street and ZIP; address-level site point."
+    },
+    {
+      "id": "off:1c1ecf64318b",
+      "company": "Ørsted",
+      "office": "London — 5 Howick Place, London SW1P 1WG",
+      "coordinates": "51.496694, -0.136465",
+      "precision": "Address-level (official postcode centroid; exact building outline not confidently isolated)",
+      "source": "https://orsted.com/en/contact-us; https://api.postcodes.io/postcodes/SW1P1WG",
+      "method": "Current official Ørsted contact page lists London Office, 5 Howick Place, London SW1P 1WG. Coordinates are the SW1P 1WG postcode centroid from postcodes.io (postcode quality 1), WGS-84; they place the pin at the office postcode, not the building entrance."
+    },
+    {
+      "id": "off:1c12a5678d77",
+      "company": "Ørsted Trading",
+      "office": "London — 5 Howick Place, London SW1P 1WG",
+      "coordinates": "51.496694, -0.136465",
+      "precision": "Address-level (official postcode centroid; exact building outline not confidently isolated)",
+      "source": "https://orsted.com/en/contact-us; https://api.postcodes.io/postcodes/SW1P1WG",
+      "method": "Ørsted Trading uses the confirmed London office at 5 Howick Place shown on the current official Ørsted contact page. Coordinates are SW1P 1WG postcode centroid from postcodes.io, not a suite/entrance coordinate."
+    },
+    {
+      "id": "off:d7f5640f4f86",
+      "company": "Ørsted Trading",
+      "office": "Boston — 399 Boylston Street, 12th Floor, Boston, MA 02116",
+      "coordinates": "42.3516557, -71.0718924",
+      "precision": "Address-level (building/site point; matching official address)",
+      "source": "https://orsted.com/en/contact-us; https://api.postcodes.io/postcodes/SW1P1WG",
+      "method": "Ørsted official contact page lists Offshore North America at 399 Boylston Street, 12th Floor, Boston MA 02116. This row is the trading entity at the same corporate office; coordinate is the matching office-site point previously verified against OSM N/7764104098."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -6449,8 +6611,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 283,
-  "buildingLevelRows": 194,
+  "addressLevelRows": 286,
+  "buildingLevelRows": 209,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -6479,6 +6641,9 @@
     "2026-11-03 Barclays pass mapped five registered-city offices using current Barclays listings/privacy notice, HKMA, Rockefeller Group and matching OSM office-building features.",
     "2026-11-03 HRT London, Tower Research London/Singapore, and Second Foundation Tokyo offices mapped; address, postcode and building-complex precision are stated per row.",
     "2026-11-03 COFCO International Geneva HQ and ENGIE Global Markets Singapore office matched to current exact office address/building points. COFCO OSM postcode mismatch is explicitly retained.",
-    "2026-11-03 Six office rows upgraded using current Equinor/QatarEnergy office addresses and named building features. Equinor London OSM postcode disagreement is retained; Beijing Amap GCJ-02 was converted to WGS-84. QatarEnergy Beijing remains pending tower-specific map verification."
+    "2026-11-03 Six office rows upgraded using current Equinor/QatarEnergy office addresses and named building features. Equinor London OSM postcode disagreement is retained; Beijing Amap GCJ-02 was converted to WGS-84. QatarEnergy Beijing remains pending tower-specific map verification.",
+    "2026-11-03 QatarEnergy Beijing official Room 1011 address matched to Baidu’s China World Office Tower 2-specific POI; BD-09 Mercator coordinates transformed to WGS-84.",
+    "2026-11-03 DBS/ABN AMRO pass: fourteen official office addresses matched to named OSM building or address-site features; row-level notes preserve discrepancies and suite-level limitations.",
+    "2026-11-03 Ørsted London/Boston pass: official contact directory addresses matched; London pinned at official postcode centroid because exact building outline was not confidently isolated."
   ]
 }
