@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1009,
-  "verifiedRows": 426,
-  "cityFallbackRows": 583,
+  "verifiedRows": 432,
+  "cityFallbackRows": 577,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -5821,6 +5821,66 @@
       "source": "https://opengovsg.com/corporate/200606959K; https://www.guocomidtown.com/reach-us/; https://www.openstreetmap.org/way/725743263",
       "osm": "way/725743263",
       "method": "Current ACRA-derived corporate record for UEN 200606959K lists Gunvor Singapore Pte. Ltd. at #29-01, 128 Beach Road, Guoco Midtown Office, Singapore 189773; the record shows a 2026 annual return. Guoco Midtown’s own site confirms the building address. OSM way/725743263 is the matching 128 Beach Road / postcode 189773 office tower footprint; building-level, not floor/unit-level."
+    },
+    {
+      "id": "off:f5416a6dc709",
+      "company": "Hudson River Trading",
+      "office": "New York — 3 World Trade Center, 175 Greenwich Street, 76th Floor, New York, NY 10007",
+      "coordinates": "40.711006, -74.0116426",
+      "precision": "Building-level (OSM way/166839381 is named 3 World Trade Center and matches 175 Greenwich Street; OSM ZIP tag differs)",
+      "source": "https://www.hudsonrivertrading.com/offices/",
+      "osm": "way/166839381",
+      "method": "HRT’s current official office page lists NYC at 3 World Trade Center, 175 Greenwich Street, 76th Floor, NY 10007. OSM way/166839381 is the named 3 World Trade Center footprint at house number 175 Greenwich Street; OSM currently tags ZIP 10048, unlike the company’s 10007. Building identity and street number match; pin remains building-level and ZIP discrepancy is explicit."
+    },
+    {
+      "id": "off:b144c96023d5",
+      "company": "Hudson River Trading",
+      "office": "Cambridge, MA — 20 University Road, 5th Floor, Cambridge, MA 02138",
+      "coordinates": "42.3722922, -71.1235899",
+      "precision": "Building-level (OSM way/1356477215 matches house number 20, University Road and postcode 02138)",
+      "source": "https://www.hudsonrivertrading.com/offices/",
+      "osm": "way/1356477215",
+      "method": "HRT’s current official office page lists 20 University Road, 5th Floor, Cambridge, MA 02138. OSM way/1356477215 matches house number, street and postcode; its amenity/tenant tagging says Industrious, but the address/building feature is exact."
+    },
+    {
+      "id": "off:e9b5c09226d4",
+      "company": "Hudson River Trading",
+      "office": "Singapore — Ocean Financial Centre, 10 Collyer Quay, #06-07/10, Singapore 049315",
+      "coordinates": "1.2832418, 103.8519775",
+      "precision": "Building-level (OSM way/172915346 is Ocean Financial Centre at 10 Collyer Quay, postcode 049315)",
+      "source": "https://www.hudsonrivertrading.com/offices/",
+      "osm": "way/172915346",
+      "method": "HRT’s current official office page lists Ocean Financial Centre, 10 Collyer Quay, #06-07/10, Singapore 049315. OSM way/172915346 names Ocean Financial Centre and matches street number, street and postcode; building-level point, not suite-level."
+    },
+    {
+      "id": "off:29c953990248",
+      "company": "Hudson River Trading",
+      "office": "Shanghai — HSBC Building, Shanghai IFC, Suite 608-09, 8 Century Avenue, Pudong, Shanghai 200120",
+      "coordinates": "31.2385900, 121.4968200",
+      "precision": "Building-level (OSM way/164968674 is HSBC Building / Shanghai IFC South Tower; building name matches official office directory)",
+      "source": "https://www.hudsonrivertrading.com/offices/",
+      "osm": "way/164968674",
+      "method": "HRT’s current official office page lists Suite 608-09, 6F, HSBC Building, Shanghai IFC. OSM way/164968674 is the named HSBC Building (also identified as Shanghai IFC South Tower), matching the official building within Shanghai IFC; the street/building number 8 Century Avenue is consistent with the complex address. Building-level only; no suite precision claimed."
+    },
+    {
+      "id": "off:20175f506637",
+      "company": "Hudson River Trading",
+      "office": "Hong Kong — Unit 2002-03, 28 Stanley Street, Central, Hong Kong",
+      "coordinates": "22.2823526, 114.1554285",
+      "precision": "Building-level (OSM way/1215615598 matches 28 Stanley Street; no postcode available)",
+      "source": "https://www.hudsonrivertrading.com/offices/",
+      "osm": "way/1215615598",
+      "method": "HRT’s current official office page lists Unit 2002-03, 28 Stanley Street, Central. OSM way/1215615598 is the address footprint at no. 28 Stanley Street; no postcode is published on the OSM feature. Building-level, not unit-level."
+    },
+    {
+      "id": "off:bc67b5bc8573",
+      "company": "Hudson River Trading",
+      "office": "Seoul — Unit 4310, Level 43, Three International Finance Centre (Three IFC), 10 Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul 07326",
+      "coordinates": "37.5248722, 126.9257372",
+      "precision": "Building-level (named OSM way/621752528 Three IFC; OSM postcode differs from official address)",
+      "source": "https://www.hudsonrivertrading.com/offices/",
+      "osm": "way/621752528",
+      "method": "HRT’s current official office page lists Unit 4310, Level 43, Three IFC, 10 Gukjegeumyung-ro, Seoul 07326. OSM way/621752528 is the named Three IFC building; its OSM postcode tag is 07327, while HRT publishes 07326. Building match is direct; postcode conflict retained."
     }
   ],
   "duplicateRowsRemoved": 4,
@@ -5943,7 +6003,7 @@
     ]
   },
   "addressLevelRows": 276,
-  "buildingLevelRows": 150,
+  "buildingLevelRows": 156,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -5961,6 +6021,7 @@
     "2026-11-03 RWE pass mapped New York group/trading rows to 50 Rockefeller Plaza; Singapore rows to Singapore Land Tower; Beijing rows to Gateway Plaza using property-owner-published coordinates matching the RWE address; and Tokyo rows to Marunouchi Trust Tower Main. RWE Shanghai and London were not upgraded without a defensible point.",
     "2026-11-03 RWE London and Shanghai locations were resolved. London uses the Historic England-listed Northcliffe House coordinate at RWE’s official 28 Tudor Street address. Shanghai uses Amap’s tenant pin for the same No.89 Jilong Road building as RWE’s official floor-6 office, converted from GCJ-02 to WGS84 before storage.",
     "2026-11-03 exchange/trading office pass mapped EEX London and Tokyo and EDF Trading London using current official contact addresses matched to OSM address/building features; EDF address also matches Companies House.",
-    "2026-11-03 follow-up mapped Gunvor Geneva to OSM building address node 80 within official 80–84 Rue du Rhône range, and Gunvor Singapore to the Guoco Midtown office-tower footprint. Gunvor London was left at the city anchor because current public legal/SRA location records conflict and no exact office map feature could be corroborated."
+    "2026-11-03 follow-up mapped Gunvor Geneva to OSM building address node 80 within official 80–84 Rue du Rhône range, and Gunvor Singapore to the Guoco Midtown office-tower footprint. Gunvor London was left at the city anchor because current public legal/SRA location records conflict and no exact office map feature could be corroborated.",
+    "2026-11-03 Hudson River Trading pass mapped six in-scope registered city offices from the current official HRT directory to matching OSM address/building features. London was left city-level; the New York and Seoul OSM postcode conflicts are documented."
   ]
 }
