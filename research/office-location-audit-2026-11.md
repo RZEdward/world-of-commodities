@@ -694,3 +694,10 @@ Macquarie Group’s Shanghai address is Tower 2, HKRI Taikoo Hui. The row now sh
 ## Office coordinate batch 158 — November 5, 2026
 
 Kraken Technologies’ [current careers page](https://www.kraken.tech/working-at-kraken) confirms a New York office. A report on the company’s announced North American headquarters identifies 99 Hudson Street; ArcGIS PointAddress score 100 resolves it to 40.7189834, −74.0089364. The pin marks the headquarters building; the company does not publish a suite-level office listing. Totals: 398 address-level, 576 building/complex-level, and 31 city-level office rows.
+
+
+## Office coordinate batch 159 — November 5, 2026
+
+Lloyd’s List Intelligence’s [current contact page](https://www.lloydslistintelligence.com/contact-us) gives Room 1520, 15F, Enterprise Centre I, 222 Hubin Road. Amap’s named [Enterprise Centre I / Corporate Avenue 1](https://ditu.amap.com/place/B001550C5U) POI matches the exact building and address at GCJ-02 31.221134, 121.475816; transformed to WGS-84 31.2230864, 121.4713007.
+
+Man Group’s [current contact page](https://www.man.com/contact) gives Room 1701A, 5 Corporate Avenue, 150 Hubin Road; the [building directory](https://www.executivecentre.com/en-hk/office-space/shanghai-5-corporate-avenue/) confirms the property. Amap POI [B0G2CP6CVM](https://ditu.amap.com/place/B0G2CP6CVM) is an in-building tenant at the matching building/address (GCJ-02 31.220561, 121.478775), transformed to WGS-84 31.2225219, 121.4742696. The latter coordinate represents the building complex, not Man Group’s suite or entrance. Totals: 398 address-level, 578 building/complex-level, and 29 city-level office rows.

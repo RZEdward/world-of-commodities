@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 974,
-  "cityFallbackRows": 31,
+  "verifiedRows": 976,
+  "cityFallbackRows": 29,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11607,6 +11607,34 @@
       "precision": "Building-level (reported Kraken Technologies office; ArcGIS PointAddress score 100)",
       "source": "https://www.kraken.tech/working-at-kraken; https://businessfacilities.com/kraken-plans-second-global-hq-in-new-york-city/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=99%20Hudson%20Street%20New%20York%20NY%2010013&category=Address&f=json",
       "method": "Kraken’s current careers page identifies its New York office. A report on the company’s announced North American headquarters identifies 99 Hudson Street; ArcGIS PointAddress score 100 at 40.718983416780, -74.008936432194. The current office page confirms presence in New York, while the street address comes from the headquarters announcement; the marker is the building address, not a suite/entrance pin."
+    },
+    {
+      "id": "off:bf103d9bb7df",
+      "company": "Lloyd's List Intelligence",
+      "office": "Shanghai — Room 1520, 15F, Enterprise Centre I, 222 Hubin Road, Huangpu District, Shanghai 200021",
+      "before": {
+        "office": "Shanghai — Enterprise Centre I, Huangpu District",
+        "coordinates": "31.2304,121.4737",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "31.2230864, 121.4713007",
+      "precision": "Building-level (official office address matched to Amap named Enterprise Centre I / Corporate Avenue 1 building)",
+      "source": "https://www.lloydslistintelligence.com/contact-us; https://ditu.amap.com/place/B001550C5U",
+      "method": "Lloyd’s List Intelligence’s current contact page lists Room 1520, 15F, Enterprise Centre I, 222 Hubin Road, Huangpu District. Amap’s named Enterprise Centre I (企业天地1号楼) POI matches the building/address at GCJ-02 31.221134, 121.475816; transformed to WGS-84 31.2230864, 121.4713007. This marks the named office building, not a suite entrance."
+    },
+    {
+      "id": "off:5fe9b0b40a51",
+      "company": "Man Group",
+      "office": "Shanghai — Room 1701A, 5 Corporate Avenue, 150 Hubin Road, Huangpu District, Shanghai 200021",
+      "before": {
+        "office": "Shanghai — Room 1701A, 5 Corporate Avenue, 150 Hubin Road, Shanghai 200021",
+        "coordinates": "31.2304,121.4737",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "31.2225219, 121.4742696",
+      "precision": "Building-level (official Man Group address matched to Amap POI within 5 Corporate Avenue; complex point, not office entrance)",
+      "source": "https://www.man.com/contact; https://www.executivecentre.com/en-hk/office-space/shanghai-5-corporate-avenue/; https://ditu.amap.com/place/B0G2CP6CVM",
+      "method": "Man Group’s current contact page gives Room 1701A, 5 Corporate Avenue, 150 Hubin Road. The property directory confirms 5 Corporate Avenue is the office building at 150 Hubin Road. Amap POI B0G2CP6CVM is located inside that named building at the matching address (GCJ-02 31.220561, 121.478775); transformed to WGS-84 31.2225219, 121.4742696. The coordinate is a complex point anchored to an in-building POI, not Man’s suite or entrance."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11768,7 +11796,7 @@
     ]
   },
   "addressLevelRows": 398,
-  "buildingLevelRows": 576,
+  "buildingLevelRows": 578,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -11932,7 +11960,8 @@
     "2026-11-05 office batch 155: Powertica London and Vanguard London/Zurich were upgraded from city anchors to address/building-level points based on current official entity addresses.",
     "2026-11-05 office batch 156: China Merchants Securities Korea, Hydrogen Insight’s DN Media Group publisher office, Cargill Hong Kong (medium confidence), and the two official FIS Trading University training venues were geocoded to building points; venue type and unresolved occupancy caveats retained.",
     "2026-11-05 office batch 157: BlueCrest Capital Management (UK) LLP current registered London office geocoded; Gridcog London office mapped to the identifiable former Shoreditch Vestry power station footprint from its official office story; Macquarie Group Shanghai row matched to the existing HKRI Taikoo Hui complex marker. Precision caveats retained.",
-    "2026-11-05 office batch 158: Kraken Technologies New York office matched to 99 Hudson Street. Current careers page confirms its New York office and a business press report on the company’s North American HQ names the building; ArcGIS PointAddress score 100."
+    "2026-11-05 office batch 158: Kraken Technologies New York office matched to 99 Hudson Street. Current careers page confirms its New York office and a business press report on the company’s North American HQ names the building; ArcGIS PointAddress score 100.",
+    "2026-11-05 office batch 159: Lloyd’s List Intelligence Shanghai office matched directly to Amap Enterprise Centre I named-building POI; Man Group Shanghai office matched to an Amap POI within the exact 5 Corporate Avenue complex. Amap GCJ-02 points converted to WGS-84; Man Group point is explicitly a complex proxy, not its suite."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,
