@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 982,
-  "cityFallbackRows": 23,
+  "verifiedRows": 983,
+  "cityFallbackRows": 22,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11714,6 +11714,19 @@
       "precision": "Building-level (Amap named company/building POI; GCJ-02 transformed to WGS-84)",
       "source": "https://static.sse.com.cn/disclosure/bond/announcement/company/c/3010701710781508.pdf; https://ditu.amap.com/place/B0FFFAH0L3",
       "method": "China Huadian’s public-company disclosure gives its office address as No. 2 Xuanwumen Inner Street; a current group subsidiary office page identifies China Huadian Mansion, Building B, at the same address. Amap’s named China Huadian Building POI matches the address at GCJ-02 39.904841, 116.375378; transformed to WGS-84. The pin marks the building, not an entrance or suite."
+    },
+    {
+      "id": "off:63a48718f144",
+      "company": "UOB",
+      "office": "Beijing — Unit 2701, 2707–2709, 27F, Tower C Office Park, No. 5 Jing Hua South Street, Chaoyang District, Beijing 100020",
+      "before": {
+        "coordinates": "Location Registry city anchor",
+        "precision": "City-level"
+      },
+      "coordinates": "39.9136640, 116.4489186",
+      "precision": "Building-level (Amap named Tower C Office Park POI; GCJ-02 transformed to WGS-84)",
+      "source": "https://www.uobchina.com.cn/aboutus-en/branch.page; https://www.uobgroup.com.sg/investor-relations/assets/pdfs/investor/annual/China/CN-AR24.pdf; https://ditu.amap.com/place/B000A85D6K",
+      "method": "UOB China’s current Beijing Branch directory gives No. 5 Jing Hua South Street; its 2024 annual report specifies Tower C Office Park. Amap’s named Oceanwide Guanhua International Tower C POI is the same complex/tower address (the POI result labels the shared basement/property street address) at GCJ-02 39.915008, 116.455083; transformed to WGS-84. Marker represents Tower C, not a tenant suite or entrance."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11875,7 +11888,7 @@
     ]
   },
   "addressLevelRows": 398,
-  "buildingLevelRows": 584,
+  "buildingLevelRows": 585,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -12044,7 +12057,8 @@
     "2026-11-05 office batch 160: Caixin’s current KYMS Building office address at 599 Lingling Road was associated with the wider Aijian City complex using local building sources; mapped its Amap south-east entrance as a complex-level point. Exact KYMS building remains unresolved.",
     "2026-11-05 batch 161: China Huaneng and SPIC Beijing office rows matched to named Amap building POIs at their exact listed addresses. Original GCJ-02 coordinates were transformed to WGS-84; method and POI IDs are retained in row notes and source URLs.",
     "2026-11-05 batch 162: Eclipse Trading’s current Shanghai address explicitly names Tower 1, 111 Ji’an Road; CTBUH identifies CPIC Xintiandi Commercial Center Tower 1 at that address. Used its published tower coordinate as a building point, not a suite entrance.",
-    "2026-11-05 batch 163: Beijing Power Exchange Center and China Huadian building locations resolved from published addresses to company/building-specific Amap POIs. GCJ-02 coordinates were transformed to WGS-84."
+    "2026-11-05 batch 163: Beijing Power Exchange Center and China Huadian building locations resolved from published addresses to company/building-specific Amap POIs. GCJ-02 coordinates were transformed to WGS-84.",
+    "2026-11-05 batch 164: UOB China Beijing Branch is at Tower C Office Park, No. 5 Jing Hua South Street. The named Amap Tower C POI was matched to that office and transformed from GCJ-02 to WGS-84."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,

@@ -721,3 +721,8 @@ Eclipse Trading’s [current office information](https://www.eclipsetrading.com/
 ## Office coordinate batch 163 — November 5, 2026
 
 Beijing Power Exchange Center’s address is published in a patent-owner record as Room 301–306, 3/F, 86 West Chang’an Street; Amap’s [company POI](https://ditu.amap.com/place/B000A7WP0A) provides a company-specific nearby map point. China Huadian’s office address at 2 Xuanwumen Inner Street is supported by its public-company disclosure and group subsidiary office page; Amap’s [China Huadian Building POI](https://ditu.amap.com/place/B0FFFAH0L3) matches the named building and address. Both Amap GCJ-02 points were transformed to WGS-84, with the POI/building pin limitations preserved. Totals: 398 address-level, 584 building/complex-level, and 23 city-level office rows.
+
+
+## Office coordinate batch 164 — November 5, 2026
+
+UOB China’s [current branch directory](https://www.uobchina.com.cn/aboutus-en/branch.page) and [2024 annual report](https://www.uobgroup.com.sg/investor-relations/assets/pdfs/investor/annual/China/CN-AR24.pdf) place its Beijing Branch in Tower C Office Park, No. 5 Jing Hua South Street. Amap’s named [Tower C Office Park POI](https://ditu.amap.com/place/B000A85D6K) identifies the matching tower. Its GCJ-02 coordinate was transformed to WGS-84; the point denotes the tower, not UOB’s suite or entrance. Totals: 398 address-level, 585 building/complex-level, and 22 city-level office rows.
