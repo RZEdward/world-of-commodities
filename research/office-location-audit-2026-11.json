@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 983,
-  "cityFallbackRows": 22,
+  "verifiedRows": 985,
+  "cityFallbackRows": 20,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11727,6 +11727,32 @@
       "precision": "Building-level (Amap named Tower C Office Park POI; GCJ-02 transformed to WGS-84)",
       "source": "https://www.uobchina.com.cn/aboutus-en/branch.page; https://www.uobgroup.com.sg/investor-relations/assets/pdfs/investor/annual/China/CN-AR24.pdf; https://ditu.amap.com/place/B000A85D6K",
       "method": "UOB China’s current Beijing Branch directory gives No. 5 Jing Hua South Street; its 2024 annual report specifies Tower C Office Park. Amap’s named Oceanwide Guanhua International Tower C POI is the same complex/tower address (the POI result labels the shared basement/property street address) at GCJ-02 39.915008, 116.455083; transformed to WGS-84. Marker represents Tower C, not a tenant suite or entrance."
+    },
+    {
+      "id": "off:f502b6d8631b",
+      "company": "Macquarie Group",
+      "office": "Zurich Office — Floor 3, Claridenstrasse 41, 8002 Zurich",
+      "before": {
+        "coordinates": "47.3769, 8.5417",
+        "precision": "Location Registry city anchor"
+      },
+      "coordinates": "47.3678301, 8.5367201",
+      "precision": "Building-level (official address matched to OSM relation/369170303; building coordinate)",
+      "source": "https://www.macquarie.com/au/en/about/contact/locations.html; https://www.openstreetmap.org/relation/369170303; https://www.addresshistory.ch/claridenstrasse-41-8002-z%C3%BCrich-switzerland",
+      "method": "Macquarie’s current office directory lists its Zurich representative office at Floor 3, Claridenstrasse 41. The address matches OSM relation/369170303 (building feature) and the independently published address-history coordinate (47.3678, 8.5367); stored point uses the OSM building geometry coordinate recorded for the already-mapped Macquarie Commodities office at the same address. Pin is building-level, not floor/suite-level."
+    },
+    {
+      "id": "off:89b60e13087f",
+      "company": "ICIS",
+      "office": "Shanghai — Digital China Centre (Shenzhou Smart Land), F/8 Unit D, No. 567 Tianshan West Road",
+      "before": {
+        "coordinates": "31.2304,121.4737",
+        "precision": "Location Registry city anchor"
+      },
+      "coordinates": "31.2197736, 121.3520130",
+      "precision": "Complex-level (Digital China Centre / Shenzhou Smart Land commercial complex; OSM way/1154867135)",
+      "source": "https://www.icis.com/explore/contact/; https://www.relx.com/~/media/Files/R/RELX-Group/documents/reports/annual-reports/relx-2025-annual-report.pdf; https://www.openstreetmap.org/way/1154867135; https://www.sh-kuaizu.com/zlp/2352.html",
+      "method": "ICIS’s current contact page lists its Shanghai office at F/8, Unit D, Digital China Centre, No. 567 Tianshan West Road. RELX’s 2025 annual report independently lists its Shanghai undertaking at Unit D-4, 8th Floor, No. 567 Tianshan West Road. Local building sources identify 神州智慧天地 (Digital China Smart Park/Land) at No. 567; OSM way/1154867135 is the named commercial complex at that location. Coordinates are the WGS-84 OSM complex point, not an individual building entrance or office suite."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11888,7 +11914,7 @@
     ]
   },
   "addressLevelRows": 398,
-  "buildingLevelRows": 585,
+  "buildingLevelRows": 587,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -12058,7 +12084,9 @@
     "2026-11-05 batch 161: China Huaneng and SPIC Beijing office rows matched to named Amap building POIs at their exact listed addresses. Original GCJ-02 coordinates were transformed to WGS-84; method and POI IDs are retained in row notes and source URLs.",
     "2026-11-05 batch 162: Eclipse Trading’s current Shanghai address explicitly names Tower 1, 111 Ji’an Road; CTBUH identifies CPIC Xintiandi Commercial Center Tower 1 at that address. Used its published tower coordinate as a building point, not a suite entrance.",
     "2026-11-05 batch 163: Beijing Power Exchange Center and China Huadian building locations resolved from published addresses to company/building-specific Amap POIs. GCJ-02 coordinates were transformed to WGS-84.",
-    "2026-11-05 batch 164: UOB China Beijing Branch is at Tower C Office Park, No. 5 Jing Hua South Street. The named Amap Tower C POI was matched to that office and transformed from GCJ-02 to WGS-84."
+    "2026-11-05 batch 164: UOB China Beijing Branch is at Tower C Office Park, No. 5 Jing Hua South Street. The named Amap Tower C POI was matched to that office and transformed from GCJ-02 to WGS-84.",
+    "2026-11-05 batch 165: Macquarie Zurich representative office upgraded from city anchor to Claridenstrasse 41 building point. Current official directory matches OSM relation/369170303 and an independent address-coordinate listing; the point matches the separate Macquarie Commodities office row at the same address.",
+    "2026-11-05 batch 166: ICIS’s current Shanghai office address was verified as Digital China Centre, Unit D, No. 567 Tianshan West Road. The named Chinese commercial complex is mapped in OSM as way/1154867135; its complex point was used rather than estimating the office suite."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,

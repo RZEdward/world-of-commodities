@@ -1,10 +1,10 @@
-# Office location audit — 2026-11-03
+# Office location audit — 2026-11-05
 
 ## Current registry state
 
 - **1,005** office rows, each with a unique Office ID and a link to one of the 29 cities in the active Location Registry.
-- **340** address/postcode-level points and **373** building or complex-level points are supported by researched office information and a matching map address/building feature.
-- **292** rows remain on their registered city anchors. Some contain an official street/building address, but the available map data did not establish the individual point; others have only a city-level office record. Their precision stays labelled as a city-level fallback.
+- **398** address/postcode-level points and **587** building or complex-level points are supported by researched office information and a matching map address/building feature.
+- **20** rows remain on their registered city anchors. Some contain an official street/building address, but the available map data did not establish the individual point; others have only a city-level office record. Their precision stays labelled as a city-level fallback.
 - **62** out-of-scope rows and **8** exact duplicate rows were removed. Their IDs, source links, and reasons remain in the JSON audit file.
 - Goldman Sachs' distinct Hong Kong, London, and Singapore locations are separate rows. Macquarie city records were enriched from its official location directory; separate company rows remain linked to their own offices.
 - The Location Registry still contains **29** cities and the Campus Registry **20** campuses. Chicago, Harbin, Providence, and Xi'an remain excluded.
@@ -31,7 +31,7 @@ A final directory pass used company office listings to fill addresses for Goldma
 
 Primary company sources include [Goldman Sachs Locations](https://www.goldmansachs.com/our-firm/locations/), [Macquarie Office Locations](https://www.macquarie.com/au/en/about/contact/locations.html), [TD Securities Offices](https://www.tdsecurities.com/ca/en/our-offices), [OCBC International Network](https://www.ocbc.com/group/about-us/international-network.page), and [Goldman Sachs Locations for the two Hong Kong offices](https://www.goldmansachs.com/our-firm/locations/). The workbook retains each row's own source URL and check date.
 
-**This is not 90% address-point coverage.** The current workbook has 702 non-city-level points out of 1005 unique office rows; 303 remain city-level fallbacks. The fallback count is a concrete research backlog, not a claim that no addresses exist. Address text may be known even if the map could not verify the exact feature. No city anchor is presented as an individual office coordinate.
+**This is not 90% address-point coverage.** The current workbook has 985 non-city-level points out of 1,005 unique office rows; 20 remain city-level fallbacks. The remaining count includes addresses that could not yet be matched to a trusted map feature, records where no current street address is published, and potentially stale or ambiguous office claims. Address text may be known even if the map could not verify the exact feature. No city anchor is presented as an individual office coordinate.
 
 The address verification pass has added 18 source-backed points across two batches: ADM Tokyo, Freepoint London, Energy Intelligence London, Kraken London, Tower Research Shanghai, TP ICAP Shanghai, and Man Group and Brevan Howard at the same verified New York building. Seven building-level pins retain postcode discrepancies, and the Accenture Singapore complex pin has a two-number street-address difference; each limitation is stated on its row.
 
@@ -726,3 +726,13 @@ Beijing Power Exchange Center’s address is published in a patent-owner record 
 ## Office coordinate batch 164 — November 5, 2026
 
 UOB China’s [current branch directory](https://www.uobchina.com.cn/aboutus-en/branch.page) and [2024 annual report](https://www.uobgroup.com.sg/investor-relations/assets/pdfs/investor/annual/China/CN-AR24.pdf) place its Beijing Branch in Tower C Office Park, No. 5 Jing Hua South Street. Amap’s named [Tower C Office Park POI](https://ditu.amap.com/place/B000A85D6K) identifies the matching tower. Its GCJ-02 coordinate was transformed to WGS-84; the point denotes the tower, not UOB’s suite or entrance. Totals: 398 address-level, 585 building/complex-level, and 22 city-level office rows.
+
+
+## Office coordinate batch 165 — November 5, 2026
+
+Macquarie’s [current office directory](https://www.macquarie.com/au/en/about/contact/locations.html) lists its Zurich representative office at Floor 3, Claridenstrasse 41. The address matches [OSM building relation 369170303](https://www.openstreetmap.org/relation/369170303) and an independent [address-coordinate listing](https://www.addresshistory.ch/claridenstrasse-41-8002-z%C3%BCrich-switzerland). The Office Registry point uses the building coordinate already recorded for the separately listed Macquarie Commodities office at the same address; it represents the building, not a floor or suite. Totals: 398 address-level, 586 building/complex-level, and 21 city-level office rows.
+
+
+## Office coordinate batch 166 — November 5, 2026
+
+ICIS’s [current Shanghai contact page](https://www.icis.com/explore/contact/) lists its office at F/8, Unit D, Digital China Centre, No. 567 Tianshan West Road. The [RELX 2025 annual report](https://www.relx.com/~/media/Files/R/RELX-Group/documents/reports/annual-reports/relx-2025-annual-report.pdf) independently lists a Unit D office at the same address. Local sources identify the Chinese-named complex 神州智慧天地, matched to [OSM way 1154867135](https://www.openstreetmap.org/way/1154867135). The map point represents the commercial complex rather than ICIS’s floor, suite, or entrance. Totals: 398 address-level, 587 building/complex-level, and 20 city-level office rows.
