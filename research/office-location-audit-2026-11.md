@@ -711,3 +711,8 @@ Caixin’s [current contact page](https://www.caixinglobal.com/contact/) lists R
 ## Office coordinate batch 161 — November 5, 2026
 
 China Huaneng Group’s [official company overview](https://www.chng.com.cn/en/companyoverview.html) lists No. 6 Fuxingmennei Street; Amap’s named [Huaneng Building POI](https://ditu.amap.com/place/B000A84ESH) matches that address. SPIC’s [official tender record](https://ebid.espic.com.cn/bidprocurement/datacenter-cebpubserver/cebpubserver/dataCeboubServerCommonController/openFileById?fileType=2&id=a5bd02eb2de24dbcad4fe2c5d71e80bb) gives North Third Ring Road Middle, Compound 29, Building 1; Amap’s [State Power Investment Building POI](https://ditu.amap.com/place/B0FFKUS2I3) matches it. Both POIs supply GCJ-02 coordinates, transformed to WGS-84 for the workbook. The precision is the named building, not an entrance or tenant suite. Totals: 398 address-level, 581 building/complex-level, and 26 city-level office rows.
+
+
+## Office coordinate batch 162 — November 5, 2026
+
+Eclipse Trading’s [current office information](https://www.eclipsetrading.com/) identifies its Shanghai office in Tower 1, 111 Ji’an Road. The [CTBUH record](https://www.skyscrapercenter.com/building/b/35857) identifies CPIC Xintiandi Commercial Center Tower 1 at No. 111 Ji’an Road. The named tower’s published coordinate (31°13′21″N, 121°28′34″E) converts to WGS-84 31.2225000, 121.4761111. This is the tower point, not the company’s suite entrance. Totals: 398 address-level, 582 building/complex-level, and 25 city-level office rows.

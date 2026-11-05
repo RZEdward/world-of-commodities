@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 979,
-  "cityFallbackRows": 26,
+  "verifiedRows": 980,
+  "cityFallbackRows": 25,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11675,6 +11675,19 @@
       "precision": "Building-level (Amap named building POI; GCJ-02 transformed to WGS-84)",
       "source": "https://ebid.espic.com.cn/bidprocurement/datacenter-cebpubserver/cebpubserver/dataCeboubServerCommonController/openFileById?fileType=2&id=a5bd02eb2de24dbcad4fe2c5d71e80bb; https://ditu.amap.com/place/B0FFKUS2I3",
       "method": "SPIC’s official tender material identifies the State Power Investment Building at North Third Ring Road Middle, Compound 29, Building 1. Amap’s named State Power Investment Building POI matches that exact address at GCJ-02 39.969273, 116.383453; transformed to WGS-84. The point is the building, not an entrance or suite."
+    },
+    {
+      "id": "off:e63ea520efd2",
+      "company": "Eclipse Trading",
+      "office": "Shanghai — Units 4008B–4009A, Tower 1, 111 Ji’an Road, Huangpu District",
+      "before": {
+        "coordinates": "Location Registry city anchor",
+        "precision": "City-level"
+      },
+      "coordinates": "31.2225000, 121.4761111",
+      "precision": "Building-level (published named-tower coordinates; official office address matches Tower 1, 111 Ji’an Road)",
+      "source": "https://www.eclipsetrading.com/; https://www.skyscrapercenter.com/building/b/35857; https://fr.wikipedia.org/wiki/Liste_des_plus_hauts_immeubles_de_Shanghai",
+      "method": "Eclipse Trading’s Shanghai office address is Units 4008B–4009A, Tower 1, 111 Ji’an Road. The Council on Tall Buildings and Urban Habitat (CTBUH) identifies CPIC Xintiandi Commercial Center Tower 1 at No. 111 Ji’an Road. The published tower coordinate is 31°13′21″N, 121°28′34″E, converted to decimal WGS-84 31.2225000, 121.4761111. This is the tower coordinate, not Eclipse’s suite entrance."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11836,7 +11849,7 @@
     ]
   },
   "addressLevelRows": 398,
-  "buildingLevelRows": 581,
+  "buildingLevelRows": 582,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -12003,7 +12016,8 @@
     "2026-11-05 office batch 158: Kraken Technologies New York office matched to 99 Hudson Street. Current careers page confirms its New York office and a business press report on the company’s North American HQ names the building; ArcGIS PointAddress score 100.",
     "2026-11-05 office batch 159: Lloyd’s List Intelligence Shanghai office matched directly to Amap Enterprise Centre I named-building POI; Man Group Shanghai office matched to an Amap POI within the exact 5 Corporate Avenue complex. Amap GCJ-02 points converted to WGS-84; Man Group point is explicitly a complex proxy, not its suite.",
     "2026-11-05 office batch 160: Caixin’s current KYMS Building office address at 599 Lingling Road was associated with the wider Aijian City complex using local building sources; mapped its Amap south-east entrance as a complex-level point. Exact KYMS building remains unresolved.",
-    "2026-11-05 batch 161: China Huaneng and SPIC Beijing office rows matched to named Amap building POIs at their exact listed addresses. Original GCJ-02 coordinates were transformed to WGS-84; method and POI IDs are retained in row notes and source URLs."
+    "2026-11-05 batch 161: China Huaneng and SPIC Beijing office rows matched to named Amap building POIs at their exact listed addresses. Original GCJ-02 coordinates were transformed to WGS-84; method and POI IDs are retained in row notes and source URLs.",
+    "2026-11-05 batch 162: Eclipse Trading’s current Shanghai address explicitly names Tower 1, 111 Ji’an Road; CTBUH identifies CPIC Xintiandi Commercial Center Tower 1 at that address. Used its published tower coordinate as a building point, not a suite entrance."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,
