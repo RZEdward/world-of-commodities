@@ -701,3 +701,8 @@ Kraken Technologies’ [current careers page](https://www.kraken.tech/working-at
 Lloyd’s List Intelligence’s [current contact page](https://www.lloydslistintelligence.com/contact-us) gives Room 1520, 15F, Enterprise Centre I, 222 Hubin Road. Amap’s named [Enterprise Centre I / Corporate Avenue 1](https://ditu.amap.com/place/B001550C5U) POI matches the exact building and address at GCJ-02 31.221134, 121.475816; transformed to WGS-84 31.2230864, 121.4713007.
 
 Man Group’s [current contact page](https://www.man.com/contact) gives Room 1701A, 5 Corporate Avenue, 150 Hubin Road; the [building directory](https://www.executivecentre.com/en-hk/office-space/shanghai-5-corporate-avenue/) confirms the property. Amap POI [B0G2CP6CVM](https://ditu.amap.com/place/B0G2CP6CVM) is an in-building tenant at the matching building/address (GCJ-02 31.220561, 121.478775), transformed to WGS-84 31.2225219, 121.4742696. The latter coordinate represents the building complex, not Man Group’s suite or entrance. Totals: 398 address-level, 578 building/complex-level, and 29 city-level office rows.
+
+
+## Caixin Shanghai complex point — November 5, 2026
+
+Caixin’s [current contact page](https://www.caixinglobal.com/contact/) lists Room 1002, KYMS Building, 599 Lingling Road. Local property records identify buildings 7/8 at 599/635 Lingling Road as part of Aijian City. Amap’s [Aijian City southeast gate](https://ditu.amap.com/place/B00155LGJ1) matches the complex address (583–635 Lingling Road) at GCJ-02 31.188293, 121.447886; transformed to WGS-84 31.1901942, 121.4432933. This is a complex entrance pin; the specific KYMS building remains unresolved. Totals: 398 address-level, 579 building-level, and 28 city-level office rows.

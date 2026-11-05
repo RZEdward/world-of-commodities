@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 976,
-  "cityFallbackRows": 29,
+  "verifiedRows": 977,
+  "cityFallbackRows": 28,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11635,6 +11635,20 @@
       "precision": "Building-level (official Man Group address matched to Amap POI within 5 Corporate Avenue; complex point, not office entrance)",
       "source": "https://www.man.com/contact; https://www.executivecentre.com/en-hk/office-space/shanghai-5-corporate-avenue/; https://ditu.amap.com/place/B0G2CP6CVM",
       "method": "Man Group’s current contact page gives Room 1701A, 5 Corporate Avenue, 150 Hubin Road. The property directory confirms 5 Corporate Avenue is the office building at 150 Hubin Road. Amap POI B0G2CP6CVM is located inside that named building at the matching address (GCJ-02 31.220561, 121.478775); transformed to WGS-84 31.2225219, 121.4742696. The coordinate is a complex point anchored to an in-building POI, not Man’s suite or entrance."
+    },
+    {
+      "id": "off:781dae75dd57",
+      "company": "Caixin",
+      "office": "Shanghai — Room 1002, KYMS Building, 599 Lingling Road, Xuhui District (Aijian City complex)",
+      "before": {
+        "office": "Shanghai — Room 1002 KYMS Building 599 Lingling Road Xuhui",
+        "coordinates": "31.2304,121.4737",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "31.1901942, 121.4432933",
+      "precision": "Complex-level (Amap Aijian City complex entrance; exact KYMS building point not identified)",
+      "source": "https://www.caixinglobal.com/contact/; https://ditu.amap.com/place/B00155LGJ1; https://www.jendow.com.tw/wiki/%E6%84%9B%E5%BB%BA%E5%9F%8E",
+      "method": "Caixin’s current contact page lists Room 1002, KYMS Building, 599 Lingling Road, Xuhui District. Local property references identify 599/635 Lingling Road as Aijian City (爱建城) buildings 7/8 within the larger complex. Amap maps the southeast gate for Aijian City, address 583–635 Lingling Road, at GCJ-02 31.188293, 121.447886; transformed to WGS-84 31.1901942, 121.4432933. This is a complex entrance point, not the specific KYMS building or suite."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11796,7 +11810,7 @@
     ]
   },
   "addressLevelRows": 398,
-  "buildingLevelRows": 578,
+  "buildingLevelRows": 579,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -11961,7 +11975,8 @@
     "2026-11-05 office batch 156: China Merchants Securities Korea, Hydrogen Insight’s DN Media Group publisher office, Cargill Hong Kong (medium confidence), and the two official FIS Trading University training venues were geocoded to building points; venue type and unresolved occupancy caveats retained.",
     "2026-11-05 office batch 157: BlueCrest Capital Management (UK) LLP current registered London office geocoded; Gridcog London office mapped to the identifiable former Shoreditch Vestry power station footprint from its official office story; Macquarie Group Shanghai row matched to the existing HKRI Taikoo Hui complex marker. Precision caveats retained.",
     "2026-11-05 office batch 158: Kraken Technologies New York office matched to 99 Hudson Street. Current careers page confirms its New York office and a business press report on the company’s North American HQ names the building; ArcGIS PointAddress score 100.",
-    "2026-11-05 office batch 159: Lloyd’s List Intelligence Shanghai office matched directly to Amap Enterprise Centre I named-building POI; Man Group Shanghai office matched to an Amap POI within the exact 5 Corporate Avenue complex. Amap GCJ-02 points converted to WGS-84; Man Group point is explicitly a complex proxy, not its suite."
+    "2026-11-05 office batch 159: Lloyd’s List Intelligence Shanghai office matched directly to Amap Enterprise Centre I named-building POI; Man Group Shanghai office matched to an Amap POI within the exact 5 Corporate Avenue complex. Amap GCJ-02 points converted to WGS-84; Man Group point is explicitly a complex proxy, not its suite.",
+    "2026-11-05 office batch 160: Caixin’s current KYMS Building office address at 599 Lingling Road was associated with the wider Aijian City complex using local building sources; mapped its Amap south-east entrance as a complex-level point. Exact KYMS building remains unresolved."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,
