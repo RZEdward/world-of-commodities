@@ -706,3 +706,8 @@ Man Group’s [current contact page](https://www.man.com/contact) gives Room 170
 ## Caixin Shanghai complex point — November 5, 2026
 
 Caixin’s [current contact page](https://www.caixinglobal.com/contact/) lists Room 1002, KYMS Building, 599 Lingling Road. Local property records identify buildings 7/8 at 599/635 Lingling Road as part of Aijian City. Amap’s [Aijian City southeast gate](https://ditu.amap.com/place/B00155LGJ1) matches the complex address (583–635 Lingling Road) at GCJ-02 31.188293, 121.447886; transformed to WGS-84 31.1901942, 121.4432933. This is a complex entrance pin; the specific KYMS building remains unresolved. Totals: 398 address-level, 579 building-level, and 28 city-level office rows.
+
+
+## Office coordinate batch 161 — November 5, 2026
+
+China Huaneng Group’s [official company overview](https://www.chng.com.cn/en/companyoverview.html) lists No. 6 Fuxingmennei Street; Amap’s named [Huaneng Building POI](https://ditu.amap.com/place/B000A84ESH) matches that address. SPIC’s [official tender record](https://ebid.espic.com.cn/bidprocurement/datacenter-cebpubserver/cebpubserver/dataCeboubServerCommonController/openFileById?fileType=2&id=a5bd02eb2de24dbcad4fe2c5d71e80bb) gives North Third Ring Road Middle, Compound 29, Building 1; Amap’s [State Power Investment Building POI](https://ditu.amap.com/place/B0FFKUS2I3) matches it. Both POIs supply GCJ-02 coordinates, transformed to WGS-84 for the workbook. The precision is the named building, not an entrance or tenant suite. Totals: 398 address-level, 581 building/complex-level, and 26 city-level office rows.
