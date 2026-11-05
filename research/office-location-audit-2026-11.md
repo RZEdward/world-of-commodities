@@ -716,3 +716,8 @@ China Huaneng Group’s [official company overview](https://www.chng.com.cn/en/c
 ## Office coordinate batch 162 — November 5, 2026
 
 Eclipse Trading’s [current office information](https://www.eclipsetrading.com/) identifies its Shanghai office in Tower 1, 111 Ji’an Road. The [CTBUH record](https://www.skyscrapercenter.com/building/b/35857) identifies CPIC Xintiandi Commercial Center Tower 1 at No. 111 Ji’an Road. The named tower’s published coordinate (31°13′21″N, 121°28′34″E) converts to WGS-84 31.2225000, 121.4761111. This is the tower point, not the company’s suite entrance. Totals: 398 address-level, 582 building/complex-level, and 25 city-level office rows.
+
+
+## Office coordinate batch 163 — November 5, 2026
+
+Beijing Power Exchange Center’s address is published in a patent-owner record as Room 301–306, 3/F, 86 West Chang’an Street; Amap’s [company POI](https://ditu.amap.com/place/B000A7WP0A) provides a company-specific nearby map point. China Huadian’s office address at 2 Xuanwumen Inner Street is supported by its public-company disclosure and group subsidiary office page; Amap’s [China Huadian Building POI](https://ditu.amap.com/place/B0FFFAH0L3) matches the named building and address. Both Amap GCJ-02 points were transformed to WGS-84, with the POI/building pin limitations preserved. Totals: 398 address-level, 584 building/complex-level, and 23 city-level office rows.
