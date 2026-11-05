@@ -12126,7 +12126,8 @@
     "2026-11-05 batch 164: UOB China Beijing Branch is at Tower C Office Park, No. 5 Jing Hua South Street. The named Amap Tower C POI was matched to that office and transformed from GCJ-02 to WGS-84.",
     "2026-11-05 batch 165: Macquarie Zurich representative office upgraded from city anchor to Claridenstrasse 41 building point. Current official directory matches OSM relation/369170303 and an independent address-coordinate listing; the point matches the separate Macquarie Commodities office row at the same address.",
     "2026-11-05 batch 166: ICIS’s current Shanghai office address was verified as Digital China Centre, Unit D, No. 567 Tianshan West Road. The named Chinese commercial complex is mapped in OSM as way/1154867135; its complex point was used rather than estimating the office suite.",
-    "2026-11-05 batch 167: Bridgewater’s current locations were researched individually. Its New York city is tied to 600 Fifth Avenue by SEC adviser disclosure; Singapore is tied to 18 Cross Street by MAS; Shanghai is tied to 25/F, Building B, 8 Century Avenue on Bridgewater China’s official site. Each address was matched to an OSM building footprint; all points are building representatives, not tenant suites."
+    "2026-11-05 batch 167: Bridgewater’s current locations were researched individually. Its New York city is tied to 600 Fifth Avenue by SEC adviser disclosure; Singapore is tied to 18 Cross Street by MAS; Shanghai is tied to 25/F, Building B, 8 Century Avenue on Bridgewater China’s official site. Each address was matched to an OSM building footprint; all points are building representatives, not tenant suites.",
+    "2026-11-05 final city-fallback review: rechecked all 17 remaining city anchors individually. No additional coordinate was promoted: eight records have only city-level location evidence, four have a published address without a defensible matching map feature, and five are stale/ambiguous or affiliate-mismatched. Every item remains at its registered city anchor; no coordinate was fabricated."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,
@@ -12723,6 +12724,127 @@
       "Confidence": "High",
       "Notes": "City-level mapping from the cited vacancy; no specific office address inferred.",
       "Owner": "Ross"
+    }
+  ],
+  "cityFallbackReview": [
+    {
+      "id": "off:05739f8cb44f",
+      "company": "Trafigura",
+      "city": "Beijing",
+      "finding": "No current city listing; a historical trading mention does not establish a physical office.",
+      "source": "https://www.trafigura.com/who-we-are/locations/"
+    },
+    {
+      "id": "off:bd13024c2048",
+      "company": "CRU Group",
+      "city": "Seoul",
+      "finding": "Current CRU Seoul page confirms a representative office but publishes no street address; stored coworking address lacks current primary confirmation.",
+      "source": "https://www.crugroup.com/en/about-us/locations/seoul-south-korea/"
+    },
+    {
+      "id": "off:34ec12bbc0da",
+      "company": "ExxonMobil",
+      "city": "London",
+      "finding": "The role listing names a central London trading office but not a street address.",
+      "source": ""
+    },
+    {
+      "id": "off:28e982670cb8",
+      "company": "Sojitz",
+      "city": "London",
+      "finding": "UK Companies House shows Sojitz Europe PLC in liquidation and its registered address changed to liquidator Teneo in Birmingham on 2026-04-28; this is not evidence of a current Sojitz office in London.",
+      "source": "https://find-and-update.company-information.service.gov.uk/company/02753531/filing-history"
+    },
+    {
+      "id": "off:a828fad8dca6",
+      "company": "AOT Energy",
+      "city": "Geneva",
+      "finding": "No Geneva office was substantiated. Swiss register reporting places the entity in Steinhausen and records it in liquidation/bankruptcy proceedings in Oct 2026; not a Geneva location.",
+      "source": "https://www.moneyhouse.ch/en/company/aot-energy-switzerland-ag-11475115801; https://shab.lixt.ch/pdf/2021/10/1/f80da422-9c37-443a-abd1-883f2b70e39f.pdf"
+    },
+    {
+      "id": "off:8b6fa1937d2c",
+      "company": "Santos",
+      "city": "Sydney",
+      "finding": "Current official contact information gives a Sydney postal address only; no street office address to map.",
+      "source": "https://www.santos.com/contact-us/"
+    },
+    {
+      "id": "off:cbbe01b6ded8",
+      "company": "D2IQ",
+      "city": "San Francisco",
+      "finding": "Stored PMB is a mailing address and current staffed-office status could not be confirmed from a current first-party source.",
+      "source": ""
+    },
+    {
+      "id": "off:9282e1bf971c",
+      "company": "MUFG",
+      "city": "Shanghai",
+      "finding": "Current official source verifies New Bund Times Square, 399 Haiyang West Road; no independently verified named map feature/coordinate found.",
+      "source": "https://www.bk.mufg.jp/global/globalnetwork/asiaoceania/shanghai.html"
+    },
+    {
+      "id": "off:4686e2a070da",
+      "company": "Akuna Capital",
+      "city": "Shanghai",
+      "finding": "Current company page says 889 Guozhan Road; employer-maintained LinkedIn/local entity sources say 839 Guozhan Road / Shanghai Huadian Tower. Address conflict prevents a safe pin.",
+      "source": "https://akunacapital.com/who-we-are/; https://au.linkedin.com/company/akuna-capital"
+    },
+    {
+      "id": "off:6a5fe63963bb",
+      "company": "Taula Capital Management",
+      "city": "New York",
+      "finding": "Current company site names New York but does not publish the street address.",
+      "source": "https://taulacapital.com/"
+    },
+    {
+      "id": "off:f0dc93e90398",
+      "company": "Taula Capital Management",
+      "city": "Geneva",
+      "finding": "Current company site names Geneva but does not publish the street address.",
+      "source": "https://taulacapital.com/"
+    },
+    {
+      "id": "off:3c195818dd91",
+      "company": "RBC Capital Markets",
+      "city": "Zurich",
+      "finding": "Current RBC Capital Markets directory does not show Zurich; Zurich references found belong to other RBC affiliates. Do not substitute an affiliate location.",
+      "source": "https://www.rbccm.com/en/contact-us.page; https://www.rbccm.com/en/contact-us/locations.page"
+    },
+    {
+      "id": "off:2c246cf26fba",
+      "company": "Crédit Agricole CIB",
+      "city": "Zurich",
+      "finding": "Current group directory shows Zurich for affiliates (CA Indosuez/CACEIS), not Crédit Agricole CIB; no CIB office address verified.",
+      "source": "https://www.credit-agricole.com/en/group/list-of-our-locations"
+    },
+    {
+      "id": "off:2859959c9018",
+      "company": "OCBC",
+      "city": "Shanghai",
+      "finding": "Current official OCBC directory verifies OCBC Bank Tower, 1155 Yuanshen Road, but no independently verified named map feature/coordinate was found.",
+      "source": "https://www.ocbc.com/group/about-us/international-network.page; https://www.ocbc.com.cn/CN/group/ContactUS/index.shtml?v=2"
+    },
+    {
+      "id": "off:844bfc45b21a",
+      "company": "China International Capital Corporation",
+      "city": "Nanjing",
+      "finding": "CICC annual report verifies Unit 301, Building 4, 5 Wangjiang Road; exact building map feature could not be independently identified.",
+      "source": "https://www.cicc.com/en/ir/financial-reports.html"
+    },
+    {
+      "id": "off:co-brookfield-renewable:new-york",
+      "company": "Brookfield Renewable",
+      "city": "New York",
+      "finding": "Job listing identifies New York, but does not confirm this role is at a specific registered office or give a street address.",
+      "source": "https://bep.brookfield.com/contact-us"
+    },
+    {
+      "id": "off:acwa-power-shanghai",
+      "company": "ACWA Power",
+      "city": "Shanghai",
+      "finding": "China careers material names Shanghai, but no current Shanghai office street address or exact map feature was confirmed.",
+      "source": "https://www.acwapower.com/en/careers/"
     }
   ]
 }

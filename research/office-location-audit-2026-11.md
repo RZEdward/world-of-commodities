@@ -741,3 +741,29 @@ ICIS’s [current Shanghai contact page](https://www.icis.com/explore/contact/) 
 ## Office coordinate batch 167 — November 5, 2026
 
 Bridgewater’s New York, Singapore, and Shanghai offices are now mapped separately. Its [current careers FAQ](https://www.bridgewater.com/working-at-bridgewater/faqs) confirms all three office cities. A [SEC adviser disclosure](https://reports.adviserinfo.sec.gov/reports/individual/individual_7683909.pdf) gives the New York address (600 Fifth Avenue, 26th Floor), matched to [OSM way 266170727](https://www.openstreetmap.org/way/266170727). The [MAS Financial Institutions Directory](https://eservices.mas.gov.sg/fid/institution/detail/252087-BRIDGEWATER-ASSOCIATES-SINGAPORE-MANAGEMENT-PTE-LTD) lists Singapore at 18 Cross Street #15-04/05, matched to [OSM way 47300929](https://www.openstreetmap.org/way/47300929). [Bridgewater China](https://www.bridgewater.cn/activities/) gives 25/F, Building B, 8 Century Avenue; the tower is corroborated as Shanghai IFC North Tower/IFC Phase II and matched to [OSM way 423304682](https://www.openstreetmap.org/way/423304682). Coordinates represent building footprints, not tenant suites or entrances. Current totals: 398 address-level, 590 building/complex-level, and 17 city-level office rows.
+
+## Final review of remaining city anchors — November 5, 2026
+
+After mapping the three Bridgewater offices, the remaining 17 city-level records were checked one by one. No further point was promoted: **8** have no published street address, **4** have a verified street address but no independently matched map feature, and **5** have a stale, unsupported, or entity-mismatched office claim. Each remains at its Location Registry city anchor; coordinates were not estimated from street text alone.
+
+| Office | Finding |
+| --- | --- |
+| Trafigura — Beijing | Current Trafigura location directory omits Beijing; historical trading mention does not verify an office. [Current directory](https://www.trafigura.com/who-we-are/locations/) |
+| CRU — Seoul | Current page verifies representative office, but publishes no street address. [CRU Seoul](https://www.crugroup.com/en/about-us/locations/seoul-south-korea/) |
+| ExxonMobil — London | Central London trading-office role listing gives no street address. |
+| Sojitz — London | Sojitz Europe PLC is in liquidation; Companies House records the registered office moved to its liquidator in Birmingham on 2026-04-28. The old London address is not a current operating-office pin. [Companies House filing history](https://find-and-update.company-information.service.gov.uk/company/02753531/filing-history) |
+| AOT Energy — Geneva | No Geneva office found. Swiss registry reporting places the entity in Steinhausen and in insolvency proceedings; not a Geneva location. [Registry record](https://www.moneyhouse.ch/en/company/aot-energy-switzerland-ag-11475115801) |
+| Santos — Sydney | Current contact page provides postal contact only; no office street address. [Santos contact](https://www.santos.com/contact-us/) |
+| D2IQ — San Francisco | Stored PMB is a mailing address; current staffed-office status remains unverified. |
+| MUFG — Shanghai | Official address is New Bund Times Square, 399 Haiyang West Road; building feature unresolved. [MUFG Shanghai](https://www.bk.mufg.jp/global/globalnetwork/asiaoceania/shanghai.html) |
+| Akuna Capital — Shanghai | Current company site says 889 Guozhan Road; employer/local sources give 839 Guozhan Road / Shanghai Huadian Tower. Address conflict unresolved. [Akuna](https://akunacapital.com/who-we-are/) |
+| Taula Capital — New York | City is listed; no street address published. [Taula](https://taulacapital.com/) |
+| Taula Capital — Geneva | City is listed; no street address published. [Taula](https://taulacapital.com/) |
+| RBC Capital Markets — Zurich | Current RBC CM directory does not list Zurich; Zurich records refer to other RBC affiliates. [RBC contacts](https://www.rbccm.com/en/contact-us.page) |
+| Crédit Agricole CIB — Zurich | Zurich listings found are CA Indosuez/CACEIS affiliates, not CIB. [Group locations](https://www.credit-agricole.com/en/group/list-of-our-locations) |
+| OCBC — Shanghai | Official address is OCBC Bank Tower, 1155 Yuanshen Road; independent building feature unresolved. [OCBC network](https://www.ocbc.com/group/about-us/international-network.page) |
+| CICC — Nanjing | Annual report verifies Unit 301, Building 4, 5 Wangjiang Road; exact building feature unresolved. [CICC reports](https://www.cicc.com/en/ir/financial-reports.html) |
+| Brookfield Renewable — New York | Job listing gives city but no confirmed office or street address for that role. |
+| ACWA Power — Shanghai | Careers material names city but no current street address or exact map feature. [ACWA careers](https://www.acwapower.com/en/careers/) |
+
+This closes the coordinate pass at **988 address/building-level points and 17 city anchors out of 1,005 offices (98.3% have a point more precise than city-level)**. The 17 exceptions and their research limits are recorded in the Office Registry and Search Runs sheet. The count describes coordinate precision, not assurance that every underlying office claim is current; the five stale/ambiguous rows should be reconciled during the next company-registry cleanup.
