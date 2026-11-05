@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 985,
-  "cityFallbackRows": 20,
+  "verifiedRows": 988,
+  "cityFallbackRows": 17,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11753,6 +11753,45 @@
       "precision": "Complex-level (Digital China Centre / Shenzhou Smart Land commercial complex; OSM way/1154867135)",
       "source": "https://www.icis.com/explore/contact/; https://www.relx.com/~/media/Files/R/RELX-Group/documents/reports/annual-reports/relx-2025-annual-report.pdf; https://www.openstreetmap.org/way/1154867135; https://www.sh-kuaizu.com/zlp/2352.html",
       "method": "ICIS’s current contact page lists its Shanghai office at F/8, Unit D, Digital China Centre, No. 567 Tianshan West Road. RELX’s 2025 annual report independently lists its Shanghai undertaking at Unit D-4, 8th Floor, No. 567 Tianshan West Road. Local building sources identify 神州智慧天地 (Digital China Smart Park/Land) at No. 567; OSM way/1154867135 is the named commercial complex at that location. Coordinates are the WGS-84 OSM complex point, not an individual building entrance or office suite."
+    },
+    {
+      "id": "off:9051c6a6cd0d",
+      "company": "Bridgewater Associates",
+      "office": "New York — 600 Fifth Avenue, 26th Floor, New York, NY 10020",
+      "before": {
+        "coordinates": "40.7128,-74.0060",
+        "precision": "Location Registry city anchor"
+      },
+      "coordinates": "40.7576771, -73.9784493",
+      "precision": "Building-level (600 Fifth Avenue address-tagged OSM building way/266170727)",
+      "source": "https://www.bridgewater.com/working-at-bridgewater/faqs; https://reports.adviserinfo.sec.gov/reports/individual/individual_7683909.pdf; https://www.openstreetmap.org/way/266170727",
+      "method": "Bridgewater’s current careers FAQ confirms its New York office. An SEC Investment Adviser Public Disclosure report for Bridgewater Advisors Inc. (Bridgewater group entity) gives 600 Fifth Avenue, 26th Floor, New York, NY 10020. OSM way/266170727 is the building with matching 600 5th Avenue and 10020 address tags; coordinates are its footprint representative point, not suite entrance."
+    },
+    {
+      "id": "off:106affa92b0a",
+      "company": "Bridgewater Associates",
+      "office": "Singapore — 18 Cross Street, #15-04/05, Singapore 048423",
+      "before": {
+        "coordinates": "1.3521,103.8198",
+        "precision": "Location Registry city anchor"
+      },
+      "coordinates": "1.2835315, 103.8468884",
+      "precision": "Building-level (18 Cross Street OSM building way/47300929; postal code matched)",
+      "source": "https://www.bridgewater.com/working-at-bridgewater/faqs; https://eservices.mas.gov.sg/fid/institution/detail/252087-BRIDGEWATER-ASSOCIATES-SINGAPORE-MANAGEMENT-PTE-LTD; https://www.openstreetmap.org/way/47300929",
+      "method": "Bridgewater’s current careers FAQ confirms Singapore as an office. The Monetary Authority of Singapore Financial Institutions Directory lists Bridgewater Associates (Singapore) Management at 18 Cross Street #15-04/05, 048423. OSM way/47300929 is the named 18 Cross building and matches the address and postcode; point is the building footprint representative point, not the office suite."
+    },
+    {
+      "id": "off:6b3fd6865200",
+      "company": "Bridgewater Associates",
+      "office": "Shanghai — Shanghai IFC North Tower (IFC Phase II), 25/F, 8 Century Avenue",
+      "before": {
+        "coordinates": "31.2304,121.4737",
+        "precision": "Location Registry city anchor"
+      },
+      "coordinates": "31.2391025, 121.4977621",
+      "precision": "Building-level (official Shanghai IFC North Tower named OSM footprint way/423304682)",
+      "source": "https://www.bridgewater.cn/activities/; https://www.qyh.net/fund/companyDetail/5b80cfe264ac092c760f8ec3.html; https://www.openstreetmap.org/way/423304682",
+      "method": "Bridgewater China’s official site displays its Shanghai address as 25/F, Building B, 8 Century Avenue; a current fund-manager directory reproduces the full suite range. Shanghai IFC’s North Tower/IFC Phase II is Building B, supported by the complex/tower naming sources; OSM way/423304682 is the named Shanghai IFC North Tower footprint at 8 Century Avenue. Coordinates are the mean of its footprint vertices and indicate the tower, not an entrance."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11914,7 +11953,7 @@
     ]
   },
   "addressLevelRows": 398,
-  "buildingLevelRows": 587,
+  "buildingLevelRows": 590,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -12086,7 +12125,8 @@
     "2026-11-05 batch 163: Beijing Power Exchange Center and China Huadian building locations resolved from published addresses to company/building-specific Amap POIs. GCJ-02 coordinates were transformed to WGS-84.",
     "2026-11-05 batch 164: UOB China Beijing Branch is at Tower C Office Park, No. 5 Jing Hua South Street. The named Amap Tower C POI was matched to that office and transformed from GCJ-02 to WGS-84.",
     "2026-11-05 batch 165: Macquarie Zurich representative office upgraded from city anchor to Claridenstrasse 41 building point. Current official directory matches OSM relation/369170303 and an independent address-coordinate listing; the point matches the separate Macquarie Commodities office row at the same address.",
-    "2026-11-05 batch 166: ICIS’s current Shanghai office address was verified as Digital China Centre, Unit D, No. 567 Tianshan West Road. The named Chinese commercial complex is mapped in OSM as way/1154867135; its complex point was used rather than estimating the office suite."
+    "2026-11-05 batch 166: ICIS’s current Shanghai office address was verified as Digital China Centre, Unit D, No. 567 Tianshan West Road. The named Chinese commercial complex is mapped in OSM as way/1154867135; its complex point was used rather than estimating the office suite.",
+    "2026-11-05 batch 167: Bridgewater’s current locations were researched individually. Its New York city is tied to 600 Fifth Avenue by SEC adviser disclosure; Singapore is tied to 18 Cross Street by MAS; Shanghai is tied to 25/F, Building B, 8 Century Avenue on Bridgewater China’s official site. Each address was matched to an OSM building footprint; all points are building representatives, not tenant suites."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,
