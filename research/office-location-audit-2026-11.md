@@ -659,3 +659,38 @@ Dare’s [current London locations page](https://careers.dare.global/locations) 
 ## Office coordinate batch 153 — November 5, 2026
 
 Commonwealth Bank’s [current London office page](https://www.commbank.com.au/about-us/our-company/international-branches/europe.html) confirms 60 Ludgate Hill. ArcGIS returned the matching PointAddress at 51.5144563, −0.1030432 (score 97.03), replacing the full-postcode centroid. After this correction, 48 office records remain city-level.
+
+
+## Office coordinate batch 154 — November 5, 2026
+
+Five city-level fallbacks were upgraded using explicit office evidence. Hess’s [current contact page](https://www.hess.com/company/contact/) lists its corporate headquarters at 1185 Avenue of the Americas, 40th Floor; ArcGIS returned a 100-score subaddress point at 40.7578229, −73.9822093. Old Mission’s [current contact page](https://www.oldmissioncapital.com/contact-us/) lists New York at 120 Broadway, 11th Floor (40.7081677, −74.0105883) and London at 1 Finsbury Square, 4th Floor (51.5207589, −0.0878925); both ArcGIS PointAddress matches scored 100. ExodusPoint’s [official office directory](https://www.exoduspoint.com/) lists 20 St James’s Street, London; ArcGIS street-address match scored 99.31 at 51.5064000, −0.1390802.
+
+Veolia’s Boston Energy Market Analyst role page gives only the city. Veolia’s [2025 Universal Registration Document](https://www.veolia.com/sites/g/files/dvc4206/files/document/2026/03/Finance_Veolia_URD_2025_en.pdf) and 2025 new-HQ information establish the group’s current Boston headquarters at 100 Federal Street; ArcGIS PointAddress match scored 100 at 42.3547700, −71.0561300. The registry therefore labels this a representative HQ pin and does not claim the role is based at that specific building. Updated totals: 397 address-level, 565 building/complex-level, and 43 city-level office rows.
+
+
+## Office coordinate batch 155 — November 5, 2026
+
+Powertica’s [current official contacts page](https://www.powertica.com/commodities/contacts/) lists its UK branch at 110 Buckingham Palace Road, London SW1W 9SA, and [Companies House](https://find-and-update.company-information.service.gov.uk/company/15923377) confirms the active UK company at the same address. ArcGIS PointAddress score 100: 51.4940684, −0.1472291. Vanguard’s current [UK terms](https://www.vanguard.co.uk/professional/terms-and-conditions) confirm 4th Floor, The Walbrook Building, 25 Walbrook, London EC4N 8AF; ArcGIS PointAddress score 98.9: 51.5120769, −0.0898560. Vanguard’s [Swiss privacy notice](https://www.ch.vanguard/en/professional/privacy-policy) identifies Vanguard Investments Switzerland GmbH at Rooms 202–204, Bahnhofstrasse 52, Zürich; ArcGIS Subaddress score 99.5: 47.3728134, 8.5385172. Updated totals: 398 address-level, 567 building/complex-level, and 40 city-level office rows.
+
+
+## Office coordinate batch 156 — November 5, 2026
+
+Five additional rows were researched. China Merchants Securities International’s [official Seoul contact page](https://www.cmschina.com.hk/en/AboutUs/Contact-Paths) lists its Korea subsidiary at 4490, Three IFC, 10 Gukjegeumyung-ro; the mapped OSM Three IFC feature is 37.5248722, 126.9257372. Hydrogen Insight is published by DN Media Group; the group’s [current offices page](https://www.dngroup.com/our-offices/) lists London at 155 Fenchurch Street, and its [publication directory](https://www.dngroup.com/our-publications/hydrogen-insight/) confirms the title. ArcGIS PointAddress score 100: 51.5119134, −0.0831799.
+
+Cargill’s official sugar-trading material confirms a Hong Kong office, while the [HKTDC supplier directory](https://sourcing.hktdc.com/en/Supplier-Store-Directory/Cargill-Hong-Kong-Limited/1X02VQ2S) gives an HR contact and Unit 5, 16/F, Tower A, Mira Place, 132 Nathan Road. ArcGIS PointAddress score 100: 22.3009319, 114.1726331. Since other register addresses differ and Cargill does not publish this street address in its own contact directory, the row remains medium-confidence and notes the limitation.
+
+FIS’s [official Trading University location page](https://www.fisglobal.com/trading-university/about/training-locations) lists Zurich at Elias Canetti-Strasse 1 (ArcGIS score 100: 47.4117118, 8.5419123) and Hong Kong at 11/F, 100 Queen’s Road Central (score 99.48: 22.2833515, 114.1549769). These are training venues, not evidence that FIS Front Arena employs traders at those offices; the registry labels them clearly as training locations. Totals: 398 address-level, 572 building/complex-level, and 35 city-level office rows.
+
+
+## Office coordinate batch 157 — November 5, 2026
+
+Three city-level rows were upgraded. BlueCrest’s [current website](https://www.bluecrestcapital.com/) and [Companies House record](https://find-and-update.company-information.service.gov.uk/company/OC349662) confirm Nova North, 11 Bressenden Place, London SW1E 5BY; ArcGIS PointAddress score 100 gives 51.4977352, −0.1430014. This is the LLP’s registered-office building, not a claim about a trading-floor entrance.
+
+Gridcog’s [current profile](https://www.gridcog.com/profile) confirms London as an office, and its [company story](https://www.gridcog.com/blog/more-light-more-power-more-gridcog) identifies the London office as the former Shoreditch Vestry power station. The identifiable Coronet Street building is mapped as OSM [way 705753620](https://www.openstreetmap.org/way/705753620), at 51.5278046, −0.0823851. Gridcog does not publish a suite number; this is the building footprint centroid.
+
+Macquarie Group’s Shanghai address is Tower 2, HKRI Taikoo Hui. The row now shares the existing OSM complex point [node 5501874121](https://www.openstreetmap.org/node/5501874121), at 31.2325269, 121.4580581. This resolves the complex, not the individual tower entrance. Updated totals: 398 address-level, 575 building/complex-level, and 32 city-level office rows.
+
+
+## Office coordinate batch 158 — November 5, 2026
+
+Kraken Technologies’ [current careers page](https://www.kraken.tech/working-at-kraken) confirms a New York office. A report on the company’s announced North American headquarters identifies 99 Hudson Street; ArcGIS PointAddress score 100 resolves it to 40.7189834, −74.0089364. The pin marks the headquarters building; the company does not publish a suite-level office listing. Totals: 398 address-level, 576 building/complex-level, and 31 city-level office rows.

@@ -3,8 +3,8 @@
   "officeRowsBefore": 1068,
   "removedOutOfScope": 62,
   "officeRowsAfter": 1005,
-  "verifiedRows": 957,
-  "cityFallbackRows": 48,
+  "verifiedRows": 974,
+  "cityFallbackRows": 31,
   "addedGoldmanOffice": true,
   "removed": [
     {
@@ -11383,6 +11383,230 @@
       "precision": "Building-level (Kraken Technologies Japan official corporate page; named Izumi Garden Tower OpenStreetMap building feature)",
       "source": "https://www.kraken.tech/ja/about; https://mapcarta.com/28406296; https://www.openstreetmap.org/way/148788622",
       "method": "Kraken Technologies Japan’s official Japanese company profile lists Izumi Garden Tower 28F, 1-6-1 Roppongi, Minato-ku. The named Izumi Garden Tower OSM office-building feature (way 148788622) is at WGS-84 35.6644700, 139.7395200. Pin denotes the building, not the 28th-floor suite."
+    },
+    {
+      "id": "off:0ea83ccd116f",
+      "company": "Hess Corporation",
+      "office": "New York — 1185 Avenue of the Americas, 40th Floor, New York, NY 10036",
+      "before": {
+        "office": "New York",
+        "coordinates": "40.7128,-74.0060",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "40.7578229, -73.9822093",
+      "precision": "Address-level (Hess official HQ; ArcGIS subaddress match 100)",
+      "source": "https://www.hess.com/company/contact/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=1185%20Avenue%20of%20the%20Americas%2040th%20Floor%20New%20York%20NY%2010036&category=Address&f=json",
+      "method": "Hess’s current official contact page gives its corporate headquarters at 1185 Avenue of the Americas, 40th Floor. ArcGIS returned a Subaddress point at 40.7578229, -73.9822093 with score 100. This locates the company HQ; Hess was acquired by Chevron in 2025 and is retained as a legacy company record."
+    },
+    {
+      "id": "off:3d61e7e0f151",
+      "company": "Old Mission Capital",
+      "office": "New York — 120 Broadway, 11th Floor, New York, NY 10271",
+      "before": {
+        "office": "New York",
+        "coordinates": "40.7128,-74.0060",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "40.7081677, -74.0105883",
+      "precision": "Building-level (current Old Mission official address; ArcGIS PointAddress match 100)",
+      "source": "https://www.oldmissioncapital.com/contact-us/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=120%20Broadway%2011th%20Floor%20New%20York%20NY%2010271&category=Address&f=json",
+      "method": "Old Mission’s current official contact page lists its New York office at 120 Broadway, 11th Floor. ArcGIS returned the matching PointAddress at 40.7081677, -74.0105883 with score 100; point represents the building, not floor."
+    },
+    {
+      "id": "off:7b2d6af94fea",
+      "company": "Old Mission Capital",
+      "office": "London — 1 Finsbury Square, 4th Floor, London EC2A 1AE",
+      "before": {
+        "office": "London",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.5207589, -0.0878925",
+      "precision": "Building-level (current Old Mission official address; ArcGIS PointAddress match 100)",
+      "source": "https://www.oldmissioncapital.com/contact-us/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=1%20Finsbury%20Square%20London%20EC2A%201AE&category=Address&f=json",
+      "method": "Old Mission’s current official contact page lists its London office at 1 Finsbury Square, 4th Floor. ArcGIS returned the matching PointAddress at 51.5207589, -0.0878925 with score 100; point represents the building, not floor."
+    },
+    {
+      "id": "off:da893d14625b",
+      "company": "ExodusPoint",
+      "office": "London — 20 St James’s Street, London SW1A 1ES",
+      "before": {
+        "office": "London",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.5064000, -0.1390802",
+      "precision": "Building-level (current ExodusPoint official office listing; ArcGIS StreetAddress match 99.31)",
+      "source": "https://www.exoduspoint.com/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=20%20St%20James%27s%20Street%20London%20SW1A%201ES&category=Address&f=json",
+      "method": "ExodusPoint’s official office directory lists its London office at 20 St James’s Street. ArcGIS returned the street-address feature at 51.5064000, -0.1390802 (score 99.31). Pin is at the building frontage; no suite or entrance precision implied."
+    },
+    {
+      "id": "off:318b6cac8a02",
+      "company": "Veolia North America",
+      "office": "Boston — 100 Federal Street (Veolia North America HQ; role posting states Boston only)",
+      "before": {
+        "office": "Boston (job location per official posting)",
+        "coordinates": "42.3601,-71.0589",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "42.3547700, -71.0561300",
+      "precision": "Building-level (current Veolia HQ; ArcGIS PointAddress match 100; posting itself gives city only)",
+      "source": "https://www.veolianorthamerica.com/media/press-releases?page=5; https://www.veolia.com/sites/g/files/dvc4206/files/document/2026/03/Finance_Veolia_URD_2025_en.pdf; https://jobs.veolia.com/en/job/boston/energy-market-analyst/3091/44322282304; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=100%20Federal%20Street%20Boston%20MA%2002110&category=Address&f=json",
+      "method": "Veolia’s 2025 relocation placed its North American HQ at 100 Federal Street; Veolia’s 2025 universal registration document records 100 Federal Street, 3rd Floor, Boston MA 02110 for a group entity, and its 2026 press archive identifies the new HQ. ArcGIS PointAddress matched 100 Federal Street at 42.3547700, -71.0561300 (score 100). The associated Energy Market Analyst posting says Boston but does not specify that building, so this is a representative HQ pin, not confirmed role workplace."
+    },
+    {
+      "id": "off:75ed45ca4d4f",
+      "company": "Powertica Commodities AG",
+      "office": "London — 110 Buckingham Palace Road, London SW1W 9SA",
+      "before": {
+        "office": "London, United Kingdom",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.4940684, -0.1472291",
+      "precision": "Address-level (current Powertica Commodities UK official contact and Companies House address; ArcGIS PointAddress match 100)",
+      "source": "https://www.powertica.com/commodities/contacts/; https://find-and-update.company-information.service.gov.uk/company/15923377; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=110%20Buckingham%20Palace%20Road%20London%20SW1W%209SA&category=Address&f=json",
+      "method": "Powertica Commodities’ current contacts page lists its London headquarters/branch at 110 Buckingham Palace Road, SW1W 9SA; Companies House confirms the active UK company and matching registered-office address. ArcGIS PointAddress score 100: 51.4940684, -0.1472291."
+    },
+    {
+      "id": "off:b179151d73d7",
+      "company": "Vanguard",
+      "office": "London — 4th Floor, The Walbrook Building, 25 Walbrook, London EC4N 8AF",
+      "before": {
+        "office": "London",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.5120769, -0.0898560",
+      "precision": "Building-level (current Vanguard UK official registered office; ArcGIS PointAddress match 98.9)",
+      "source": "https://www.vanguard.co.uk/professional/terms-and-conditions; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=25%20Walbrook%20London%20EC4N%208AF&category=Address&f=json",
+      "method": "Vanguard UK’s current terms list the London registered office at 4th Floor, The Walbrook Building, 25 Walbrook, EC4N 8AF. ArcGIS returned the named address at 51.5120769, -0.0898560 (score 98.9); pin denotes the building."
+    },
+    {
+      "id": "off:4e31957fcc6b",
+      "company": "Vanguard",
+      "office": "Zurich — Vanguard Investments Switzerland GmbH, Bahnhofstrasse 52, 8001 Zürich",
+      "before": {
+        "office": "Zurich",
+        "coordinates": "47.3769,8.5417",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "47.3728140, 8.5385172",
+      "precision": "Building-level (current Vanguard Switzerland official privacy notice; ArcGIS Subaddress match 99.5)",
+      "source": "https://www.ch.vanguard/en/professional/privacy-policy; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Rooms%20202%203%204%20Bahnhofstrasse%2052%20Zurich%208001&category=Address&f=json",
+      "method": "Vanguard’s current Switzerland professional privacy notice identifies Vanguard Investments Switzerland GmbH at Rooms 202–204, Bahnhofstrasse 52, 8001 Zürich. ArcGIS returned a subaddress for Bahnhofstrasse 52 at 47.3728134, 8.5385172 (score 99.5); pin is building-level, not suite-level."
+    },
+    {
+      "id": "off:d11ab306e9ae",
+      "company": "China Merchants Securities",
+      "office": "Seoul — China Merchants Securities (Korea), 4490, Three IFC, 10 Gukjegeumyung-ro, Yeongdeungpo-gu, Seoul 07326",
+      "before": {
+        "office": "Seoul",
+        "coordinates": "37.5665,126.9780",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "37.5248722, 126.9257372",
+      "precision": "Building-level (official group contact address; OSM Three IFC feature)",
+      "source": "https://www.cmschina.com.hk/en/AboutUs/Contact-Paths; https://www.openstreetmap.org/search?query=Three%20IFC%20Seoul",
+      "method": "CMS International’s current official contact page lists Seoul at 4490, Three IFC, 10 Gukjegeumyung-ro. OSM named commercial feature Three IFC is at 37.5248722, 126.9257372; building point, not a suite/entrance pin."
+    },
+    {
+      "id": "off:9e764fe28e5e",
+      "company": "Hydrogen Insight",
+      "office": "London — DN Media Group UK, 155 Fenchurch Street, London EC3M 6AL (Hydrogen Insight publisher office)",
+      "before": {
+        "office": "London",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.5119134, -0.0831799",
+      "precision": "Building-level (current official DN Media Group office; ArcGIS PointAddress match 100)",
+      "source": "https://www.dngroup.com/our-offices/; https://www.dngroup.com/our-publications/hydrogen-insight/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=155%20Fenchurch%20Street%20London%20EC3M%206AL&category=Address&f=json",
+      "method": "Hydrogen Insight is a DN Media Group publication. DN Media Group’s current official office directory lists its London office at 155 Fenchurch Street, EC3M 6AL. ArcGIS PointAddress score 100: 51.5119134, -0.0831799. This is the publisher’s London office used by the title, not a separately listed editorial suite."
+    },
+    {
+      "id": "off:4a0513e01b27",
+      "company": "Cargill",
+      "office": "Hong Kong — Cargill Hong Kong Ltd, Unit 5, 16/F, Tower A, Mira Place, 132 Nathan Road, Tsim Sha Tsui, Kowloon",
+      "before": {
+        "office": "Hong Kong",
+        "coordinates": "22.3193,114.1694",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "22.3009319, 114.1726331",
+      "precision": "Building-level (HKTDC directory office address; ArcGIS PointAddress match 100; current company page confirms HK trading presence)",
+      "source": "https://sourcing.hktdc.com/en/Supplier-Store-Directory/Cargill-Hong-Kong-Limited/1X02VQ2S; https://www.cargill.com/food-beverage/na/sugar-world-trading; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=132%20Nathan%20Road%20Mira%20Place%20Tower%20A%20Hong%20Kong&category=Address&f=json",
+      "method": "Cargill’s official trading information confirms a Hong Kong office. HKTDC’s supplier directory lists Cargill Hong Kong Limited, an HR contact, and Unit 5, 16/F, Tower A, Mira Place, 132 Nathan Road. ArcGIS PointAddress score 100 at 22.3009319, 114.1726331. Other company-register addresses differ; this is the best-supported public operating-office lead, but the exact commodities-desk occupancy is not independently confirmed."
+    },
+    {
+      "id": "off:0488b6e4e1fb",
+      "company": "FIS Front Arena",
+      "office": "Zurich — FIS Trading University training location, Elias Canetti-Strasse 1, 8050 Zürich",
+      "before": {
+        "office": "Zurich — Elias Canetti-Strasse 1, 8050",
+        "coordinates": "47.3769,8.5417",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "47.4117118, 8.5419123",
+      "precision": "Building-level (official FIS Trading University training location; ArcGIS PointAddress match 100)",
+      "source": "https://www.fisglobal.com/trading-university/about/training-locations; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Elias%20Canetti-Strasse%201%208050%20Zurich&category=Address&f=json",
+      "method": "FIS’s official Trading University page lists Elias Canetti-Strasse 1, 8050 Zürich as a training location. ArcGIS PointAddress score 100 at 47.4117118, 8.5419123. This row is explicitly a training venue; do not interpret it as a Front Arena employer or FIS trading office."
+    },
+    {
+      "id": "off:25ce436eb2ee",
+      "company": "FIS Front Arena",
+      "office": "Hong Kong — FIS Trading University training location, 11/F, 100 Queen’s Road Central, Central",
+      "before": {
+        "office": "Hong Kong — 11/F, 100 Queens Road Central",
+        "coordinates": "22.3193,114.1694",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "22.2833515, 114.1549769",
+      "precision": "Building-level (official FIS Trading University training location; ArcGIS PointAddress match 99.48)",
+      "source": "https://www.fisglobal.com/trading-university/about/training-locations; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=100%20Queens%20Road%20Central%20Hong%20Kong&category=Address&f=json",
+      "method": "FIS’s official Trading University page lists 11/F, 100 Queen’s Road Central as a training location. ArcGIS PointAddress score 99.48 at 22.2833515, 114.1549769. This row is explicitly a training venue; do not interpret it as a Front Arena employer or FIS trading office."
+    },
+    {
+      "id": "off:30eb9f255971",
+      "company": "BlueCrest Capital Management",
+      "office": "London — Nova North, 11 Bressenden Place, SW1E 5BY",
+      "before": {
+        "office": "London",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.497735181589, -0.143001386962",
+      "precision": "Building-level (current official registered office; ArcGIS PointAddress score 100)",
+      "source": "https://www.bluecrestcapital.com/; https://find-and-update.company-information.service.gov.uk/company/OC349662; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=Nova%20North%2011%20Bressenden%20Place%20London%20SW1E%205BY&category=Address&f=json",
+      "method": "BlueCrest’s current official website gives Nova North, 11 Bressenden Place as its registered office; Companies House confirms the same address for the active LLP. ArcGIS PointAddress score 100: 51.497735181589, -0.143001386962. Mapped as the registered office building, not a claim about a trading-floor entrance."
+    },
+    {
+      "id": "off:801ba136f0b1",
+      "company": "Gridcog",
+      "office": "London — former Shoreditch Vestry power station, Coronet Street (Gridcog London office)",
+      "before": {
+        "office": "London",
+        "coordinates": "51.5072,-0.1276",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "51.5278046, -0.0823851",
+      "precision": "Building-level (official company story identifies the office building; OSM mapped footprint)",
+      "source": "https://www.gridcog.com/profile; https://www.gridcog.com/blog/more-light-more-power-more-gridcog; https://www.openstreetmap.org/way/705753620",
+      "method": "Gridcog’s current profile confirms London as an office. Its company story says its London team moved into the historic former Shoreditch Vestry power station. The building is identifiable as the former station/National Centre for Circus Arts on Coronet Street; OSM way/705753620 building footprint centroid is 51.5278046, -0.0823851. The company does not publish a unit or street number; this is the verified building footprint, not a suite pin."
+    },
+    {
+      "id": "off:f2e78cb4b2ad",
+      "company": "Kraken Technologies",
+      "office": "New York — 99 Hudson Street (North American headquarters)",
+      "before": {
+        "office": "New York",
+        "coordinates": "40.7128,-74.0060",
+        "precision": "City-level fallback — office address not independently verified"
+      },
+      "coordinates": "40.718983416780, -74.008936432194",
+      "precision": "Building-level (reported Kraken Technologies office; ArcGIS PointAddress score 100)",
+      "source": "https://www.kraken.tech/working-at-kraken; https://businessfacilities.com/kraken-plans-second-global-hq-in-new-york-city/; https://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer/findAddressCandidates?SingleLine=99%20Hudson%20Street%20New%20York%20NY%2010013&category=Address&f=json",
+      "method": "Kraken’s current careers page identifies its New York office. A report on the company’s announced North American headquarters identifies 99 Hudson Street; ArcGIS PointAddress score 100 at 40.718983416780, -74.008936432194. The current office page confirms presence in New York, while the street address comes from the headquarters announcement; the marker is the building address, not a suite/entrance pin."
     }
   ],
   "duplicateRowsRemoved": 8,
@@ -11543,8 +11767,8 @@
       "off:54490a308847"
     ]
   },
-  "addressLevelRows": 396,
-  "buildingLevelRows": 561,
+  "addressLevelRows": 398,
+  "buildingLevelRows": 576,
   "campusRows": 20,
   "notes": [
     "2026-11-02 follow-up: added four building-level office pins (Macquarie Sydney, Mercuria Tokyo complex, RWE Singapore and RWE Supply & Trading Singapore). Source/map precision is retained on workbook rows.",
@@ -11703,7 +11927,12 @@
     "2026-11-05 office batch 150: Noble Resources official contact details identify Singapore, Hong Kong, Shanghai and Tokyo offices; each city fallback was replaced with the listed building location and source/match confidence recorded.",
     "2026-11-05 office batch 151: Platts Beijing was matched to the already mapped S&P Global Fortune Financial Center point; Sinopec Trading Beijing to the existing Sinopec Tower point; SK Innovation’s Beijing and Shanghai trading/energy-chemicals subsidiaries were matched to their named SK Tower building features.",
     "2026-11-05 office batch 152: Dare’s current locations page confirms One America Square, London; Kraken Technologies Japan’s official Japanese corporate profile confirms Izumi Garden Tower, Tokyo. Both city-only pins were replaced with named-building locations.",
-    "2026-11-05 office batch 153: Commonwealth Bank London was upgraded from a postcode-centroid coordinate to a matched office-building PointAddress; only 48 city-only rows remain."
+    "2026-11-05 office batch 153: Commonwealth Bank London was upgraded from a postcode-centroid coordinate to a matched office-building PointAddress; only 48 city-only rows remain.",
+    "2026-11-05 office batch 154: Hess NYC, Old Mission NYC and London, ExodusPoint London, and Veolia Boston were upgraded using explicit company-address evidence and ArcGIS matches. Veolia role pin is clearly qualified as representative HQ because the posting specifies only Boston.",
+    "2026-11-05 office batch 155: Powertica London and Vanguard London/Zurich were upgraded from city anchors to address/building-level points based on current official entity addresses.",
+    "2026-11-05 office batch 156: China Merchants Securities Korea, Hydrogen Insight’s DN Media Group publisher office, Cargill Hong Kong (medium confidence), and the two official FIS Trading University training venues were geocoded to building points; venue type and unresolved occupancy caveats retained.",
+    "2026-11-05 office batch 157: BlueCrest Capital Management (UK) LLP current registered London office geocoded; Gridcog London office mapped to the identifiable former Shoreditch Vestry power station footprint from its official office story; Macquarie Group Shanghai row matched to the existing HKRI Taikoo Hui complex marker. Precision caveats retained.",
+    "2026-11-05 office batch 158: Kraken Technologies New York office matched to 99 Hudson Street. Current careers page confirms its New York office and a business press report on the company’s North American HQ names the building; ArcGIS PointAddress score 100."
   ],
   "removedUnsupportedEntityCityLinks": 4,
   "additionalOfficeRowsAdded": 1,
