@@ -1,6 +1,6 @@
 # Daily and on-demand search instructions
 
-Prompt version: 2026-11-02.6
+Prompt version: 2026-11-06.1
 
 Use this as the operating prompt for a World of Commodities research run. Read the live workbook and the linked methodology first. The workbook controls names, IDs, owners, rankings and geographic scope; this file controls search behavior. Do not substitute a copied list for the current registry.
 
@@ -14,7 +14,7 @@ Use this as the operating prompt for a World of Commodities research run. Read t
 > 2. Report newly discovered Hong Kong and Singapore roles first, even when their original posting date is older. Then report other new roles in location-rank order and company-priority order.
 > 3. Search every registered job city for roles by title and role family, including employers absent from Company Registry. This broad city sweep is the safety net against registry omissions. Use the registered company list as an additional targeted search layer, not as the boundary of job discovery.
 > 4. Search all roles that could reasonably fit Ross’s profile, including power/gas analysis, forecasting, modelling, trading, quantitative research, quant trading, portfolio/asset optimization, market fundamentals, energy research, and adjacent commodities or quantitative roles. Do not restrict the run to the current company registry or to exact title matches. Do not omit low-fit roles solely because of fit; score and label them.
-> 5. In China, Japan and South Korea, search in English and the relevant native language: Simplified Chinese for mainland China, Japanese for Japan, and Korean for South Korea. Translate queries and source material as needed. Ross is learning Mandarin and does not read Japanese or Korean, so explain material non-English findings in English and preserve the original source link and translated search terms. Do not assume language fluency for any job requirement; record the employer’s stated requirement.
+> 5. In China, Japan and South Korea, search in English and the relevant native language: Simplified Chinese for mainland China, Japanese for Japan, and Korean for South Korea. Translate queries and source material as needed. Ross has basic Mandarin only (below working proficiency) and does not read Japanese or Korean, so explain material non-English findings in English and preserve the original source link and translated search terms. Do not assume language fluency for any job requirement; record the employer’s stated requirement.
 
 > ### A1. Mandatory completion gate for a requested full/baseline sweep
 >
@@ -53,7 +53,7 @@ Use this as the operating prompt for a World of Commodities research run. Read t
 >
 > ### E. Search and refresh masters programmes
 >
-> Search for suitable programmes across the subject areas in section B, including scholarships and funded routes where relevant. A programme must have a credible link to Ross’s goals, not merely contain a generic energy elective. Capture official course name, university, campus, registered city, duration, instruction language, eligibility, intake, application deadline, tuition/year, estimated living costs/year, total-cost explanation, funding route, source URL, date checked, owner, and next action. Keep university reputation separate from course/programme quality and course fit. If fees or living costs are not published, provide a dated estimate with source/basis or say why no reliable estimate is possible.
+> Search for suitable programmes across the subject areas in section B, including scholarships and funded routes where relevant. Explicitly query commodity trading, commodities, energy trade and finance, commodity derivatives/trading, shipping/trade finance, and closely related energy-market programmes in addition to the broader quantitative, AI, robotics, atmospheric-science and energy subjects. Check official university pages in every University Search city; avoid turning unrelated courses with a token energy elective into leads. A programme must have a credible link to Ross’s goals. Capture official course name, university, campus, registered city, duration, instruction language, eligibility, intake, application deadline, tuition/year, estimated living costs/year, total-cost explanation, funding route, source URL, date checked, owner, and next action. Keep university reputation separate from course/programme quality and course fit. If fees or living costs are not published, provide a dated estimate with source/basis or say why no reliable estimate is possible.
 >
 > ### F. Score, document, and maintain state
 >
