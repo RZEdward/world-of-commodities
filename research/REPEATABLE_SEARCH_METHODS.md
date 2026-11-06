@@ -1,6 +1,6 @@
 # Power and gas company discovery methods
 
-Last reviewed: 2026-11-01. This is a research playbook and evidence log, not an automated daily search specification. Search scope must be read from the current workbook's Location Registry and owner-specific Location Rankings at the start of each run; do not rely on a city count or a copied static city list in this document. City flags determine whether a city is in the current job or university scope; they do not prove that any company trades there.
+Last reviewed: 2026-11-07. This is a research playbook and evidence log, not an automated daily search specification. Search scope must be read from the current workbook's Location Registry and owner-specific Location Rankings at the start of each run; do not rely on a city count or a copied static city list in this document. City flags determine whether a city is in the current job or university scope; they do not prove that any company trades there.
 
 ## Weekly job sweep method
 
@@ -56,6 +56,15 @@ Track capacity auctions, balancing-service procurement and awards, CfD/FiT/renew
 5. Verify each city office individually. Store office and city coordinates, official source, date and confidence. Never copy one company’s address to every office or infer an office from a registry record.
 6. Compare against Company Registry and Office Registry to avoid duplicates. Revisit stale records and distinguish active, historical, pending and unknown status.
 7. Search opportunities separately and link each job to registered office IDs; do not treat a company’s market participation as an open vacancy.
+
+## Search-yield learning — 2026-11-07
+
+- A broad city/title pass found relevant listings that a company-registry-only sweep could miss. Keep those two layers separate: city discovery first, then employer/ATS coverage with explicit per-company outcomes.
+- Search asset operators as well as pure traders. Energy-from-waste and flexible-generation roles can be relevant when the posting covers energy-market analysis, trading/settlements, PPAs/CfDs, dispatch or portfolio commercialization. Add the company only when its asset scale and role make a credible career path; initially rank it below direct trading/market employers and leave office research explicitly pending until verified.
+- Check the employer's full current-vacancies index as well as the individual requisition. For an expired role, verify the stated deadline and whether the official application route remains live; a search index listing alone does not override a passed deadline.
+- For prop firms, query both analyst/research and direct trader titles for commodity desks. Treat an explicit language gate literally: basic Mandarin does not satisfy a requirement for fluent/professional Chinese.
+- Keep secondary-only or stale leads in the research log with the blocker (official requisition missing, old page, unclear hiring status, or no material trading relevance); do not turn a lead into a ranked company or active role without enough evidence.
+- This city-led batch covered Hong Kong, New York, San Francisco, Singapore, Seoul, Tokyo, Shanghai, Beijing, Boston, London, Sydney, Vancouver, Zurich and Geneva. It did not complete the individual 432-company, 982 office-city pair or 169 existing-role refresh ledger. Detailed findings are saved at `research/search_runs/sr-ross-2026-11-07-001-77d7b1/city-led-discovery.md`.
 
 For China, Japan and South Korea, pair English searches with native-language searches (Simplified Chinese, Japanese and Korean). Translate search terms and source claims into English, keep the original URL, and note the language used. Use locally published regulator, exchange, operator and company sources where available. Do not infer candidate language ability from the country or source language.
 

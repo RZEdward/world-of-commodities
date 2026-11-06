@@ -1,6 +1,6 @@
 # Daily and on-demand search instructions
 
-Prompt version: 2026-11-06.1
+Prompt version: 2026-11-07.1
 
 Use this as the operating prompt for a World of Commodities research run. Read the live workbook and the linked methodology first. The workbook controls names, IDs, owners, rankings and geographic scope; this file controls search behavior. Do not substitute a copied list for the current registry.
 
@@ -39,7 +39,7 @@ Use this as the operating prompt for a World of Commodities research run. Read t
 >
 > ### C. Keep company scope selective
 >
-> Add a new company to Company Registry only when evidence suggests it is an employer Ross should realistically track: a credible power/gas/commodities trading, market-making, investment, or decision-support desk; a material market role; and a plausible career/compensation path. A major energy desk at a diversified firm can qualify. A small consultancy with only loose energy adjacency and weak apparent compensation does not qualify just because it publishes energy content.
+> Add a new company to Company Registry only when evidence suggests it is an employer Ross should realistically track: a credible power/gas/commodities trading, market-making, investment, or decision-support desk; a material market role; and a plausible career/compensation path. A major energy desk at a diversified firm can qualify. A small consultancy with only loose energy adjacency and weak apparent compensation does not qualify just because it publishes energy content. Energy-from-waste and flexible-generation operators can qualify when they own a material portfolio and the vacancy specifically covers energy-market analysis, trading/settlements, PPAs/CfDs, dispatch or asset commercialization; place a newly added operator at low priority until repeated relevant hiring or stronger desk evidence appears.
 >
 > Evidence can include official market/operator data, a company’s own trading/careers/product statements, a credible employee/company LinkedIn post, or reliable industry reporting. A lead can be provisional; record exact evidence and confidence. For borderline small firms, use Research Inbox with a reason and do not promote it into the standing registry until the relevance test is met. Do not create duplicate company rows for legal subsidiaries unless they are distinct relevant employers. Add each confirmed target-city office individually and only within the owner’s Location Registry.
 >
@@ -106,6 +106,7 @@ At the close of every run, review Search Runs and Search Coverage Log against ac
 - 2026-11-01 · v1.5 · Added a distinct weekly-jobs sweep covering every active ranked employer and mapped registered job city, separated weekly office/recruiter maintenance from monthly university discovery, and specified parallel regional research with centralized LinkedIn and workbook integration.
 - 2026-11-02 · v1.6 · Corrected the completion gate after the first weekly run skipped 142 active employers with no mapped offices. Requires separate totals for all ranked employers, mapped pairs, cities and open role rows, with row-level employer outcomes; missing office mapping is never a skip condition.
 - 2026-11-01 · v1.3 · Added a per-run learning loop with dated prompt changes and a three-comparable-runs minimum before reducing cadence. Added the `Application Routes` registry to the weekly search and closeout workflow.
+- 2026-11-07 · v1.7 · Added selective energy-from-waste/flexible-generation employers when roles directly cover material portfolio commercialization; keep new operators low priority. Reinforced vacancy-index checks, distinct city-discovery vs. employer-led coverage, and literal language-threshold treatment after the 14-city discovery checkpoint.
 
 
 
