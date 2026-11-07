@@ -1,73 +1,265 @@
-# University programme coverage — 2026-11-07
+# University programme inventory — 2026-11-07
 
-## Scope and outcome
+## Scope and what this inventory means
 
-This monthly/admissions-cycle pass reviewed the **34 active rows in University Registry**. That registry defines which universities may be researched. The job Location Registry is not a second gate: a listed university remains in scope even when a course's actual campus is in another city. No university was added from a city search.
+This inventory is built directly from the dashboard feed on 2026-11-07. It covers **only the active University Registry**; the job Location Registry does not add or exclude universities. The feed has **32 registered universities** and **83 programme records** across **31 universities**.
 
-The pass added **11 programme rows across 9 universities**. The 20 active universities that already had Master’s records remain in the workbook. Five active registry universities have no suitable, confirmed programme row from this pass: Caltech, Fudan, Nanjing University, Shanghai Jiao Tong University, and USTC. The SJTU Low Carbon Energy degree remains a Research Inbox lead until the 2027 international cycle and the specific programme campus are confirmed.
+The subject sweep covers energy and commodities; energy systems and transition; quantitative finance; applied and computational mathematics; statistics; data science, AI and machine learning; robotics and control; and atmospheric, climate and environmental science. We include named master’s programmes and explicitly bounded master’s tracks. We do not count doctoral-only research areas as master’s programmes.
 
-Brown University was disabled in University Registry because Providence was explicitly removed from Ross's scope. City St George remains inactive; its previously excluded programme rows are not exported.
+University of Geneva and The Hong Kong Polytechnic University have been removed because Ross confirms they were never in his university list. City St George’s remains excluded under his earlier instruction. No universities were added from job cities. University of Geneva, HK Polytechnic, and City St George’s do not appear in the active programme feed.
 
-## New programme rows
+**Status caution:** ‘New’, ‘Researching’, ‘On Hold’, and ‘Ready to Apply’ are tracker states, not a guarantee that 2027 admission is open. The deadline column reproduces the current tracked value; entries marked to verify or not confirmed require another official admissions check before action. A programme listed below may have an official programme page while its Fall 2027 intake, English delivery, deadline, fees, or individual eligibility remains unconfirmed. Course-fit and programme-quality scores are not inferred from listing inclusion.
 
-| University | Programme | 2027 entry/deadline status | Fit notes |
-|---|---|---|---|
-| Stanford | MS Management Science and Engineering — Energy and Environment | Autumn 2027; Dec 1, 2026 | Quantitative systems and an explicit energy concentration. |
-| Stanford | MS Computational and Mathematical Engineering (ICME) | Autumn 2027; Jan 29, 2027 | Applied/computational mathematics, data science and mathematical/computational finance. |
-| MIT | SM Technology and Policy — Energy and Environment | Fall 2027; Dec 15, 2026 | Energy-systems and policy work; not a trading degree. GRE optional for this cycle. |
-| UC Berkeley | Master of Artificial Intelligence and Machine Learning | Fall 2027; Jan 11, 2027 | Strong ML/statistics route; robotics and energy applications are possible, but not energy-specific. |
-| UC Berkeley | Master of Climate Solutions | Fall 2027; priority Dec 1, 2026; standard Jan 22, 2027 | Direct climate/energy transition connection; more implementation-focused than quantitative trading. |
-| Columbia | MS Artificial Intelligence | Fall 2027; Jan 15 priority, Feb 15 regular | Robotics and Perception or Business, Finance, and Operations concentration. |
-| Cornell | MEng Operations Research and Information Engineering — Financial Engineering | Fall 2027; Dec 1, 2026 | Optimization, stochastic modelling and quantitative finance; third term may be at Cornell's NYC site. |
-| Dartmouth | MEng Energy Engineering Track | Fall 2027; Dec 15 priority, Feb 15 round two | Energy systems core with quantitative engineering electives; not a trading degree. |
-| University of Pennsylvania | MSE Robotics | Fall 2027; Nov 1 priority passed; Feb 1 regular listed | Robotics, machine learning, computer vision, perception and control. The regular deadline should be confirmed in the live Penn portal. |
-| NTU | MSc Financial Engineering | August 2027; Nov 30, Jan 31 and Mar 31 rounds | Quantitative finance, at a strong tracked location; standard non-CMU tuition track recorded. |
-| KAIST | MS Artificial Intelligence — Kim Jaechul Graduate School of AI | Fall 2027 dates not published | Seoul Campus; English is the official international-student instruction language. Research-oriented and aligned with AI/robotics. |
+## Programme inventory by registered university
 
-Programme-quality and course-fit scores are separate, evidence-based assessments in the Masters sheet. Cost entries state whether the amount is an official programme quote or an estimate, and call out older/out-of-date bases. No unverified Fall 2027 deadline was converted into a firm date.
+### California Institute of Technology (0 tracked programmes)
 
-## Coverage by active registry university
+No suitable named master’s programme is currently tracked. This is a review gap / no-confirmed-match outcome, not evidence that the university offers no relevant postgraduate study.
 
-### Existing programme records retained
+### City University of Hong Kong (3 tracked programmes)
 
-These 20 active registry universities already had programme rows: City University of Hong Kong; ETH Zurich; Harvard University; Imperial College London; Korea University; National University of Singapore; Peking University; Princeton University; Seoul National University; The Hong Kong Polytechnic University; The Hong Kong University of Science and Technology; The University of Hong Kong; The University of Tokyo; Tsinghua University; University of Cambridge; University of Geneva; University of Oxford; Yale University; Yonsei University; Zhejiang University.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Energy and Environment | Kowloon Tong Main Campus · Hong Kong | September 2027 entry | 2027-05-31 (final round for 2027 entry; rolling review; earlier round 2026-09-15 has passed) | New | [programme / source](https://www.cityu.edu.hk/en/see/programmes/master-science-energy-and-environment) |
+| MSc Financial Engineering | Kowloon Tong Main Campus · Hong Kong | 2027/28 intake | 2027-03-31 | Researching | [programme / source](https://www.cityu.edu.hk/pg/programme/program-list/2027/college-of-business/department-of-economics-and-finance/p15) |
+| MSc Financial Mathematics and Statistics | Kowloon Tong Main Campus · Hong Kong | 2027/28 intake | 2027-01-31 | Researching | [programme / source](https://www.cb.cityu.edu.hk/en/pg/programme/program-list/2027/college-of-science/department-of-mathematics/p68) |
 
-### New programme records added
+### Columbia University (2 tracked programmes)
 
-Columbia University; Cornell University; Dartmouth College; KAIST; Massachusetts Institute of Technology; Nanyang Technological University; Stanford University; University of California, Berkeley; University of Pennsylvania.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S. in Artificial Intelligence — Robotics and Perception or Business, Finance, and Operations concentration | Morningside Campus · New York, New York, United States | Fall 2027 | 2027-01-15 (priority); 2027-02-15 (regular) | New | [programme / source](https://ms-ai.engineering.columbia.edu/masters-artificial-intelligence/admissions) |
+| MS in Financial Engineering | Morningside Campus · New York, New York, United States | Fall 2027 | 2027-01-15 listed for MSFE; verify official live programme portal | Researching | [programme / source](https://www.engineering.columbia.edu/sites/default/files/2024-03/MSFE_brochure.pdf) |
 
-### No suitable confirmed current programme promoted
+### Cornell University (3 tracked programmes)
 
-- **California Institute of Technology:** the current programme review did not identify a suitable standalone terminal master's in the tracked interests.
-- **Fudan University:** no suitable English-accessible 2027 master's in the tracked interest areas was confirmed from the current international-programme information.
-- **Nanjing University:** no strong, currently confirmed 2027 programme match was promoted in this pass.
-- **Shanghai Jiao Tong University:** the English-taught Low Carbon Energy programme remains a relevant lead, but the 2027 international cycle and specific campus are not yet confirmed.
-- **University of Science and Technology of China:** no suitable 2027 programme match was confirmed in the tracked interests during this pass.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.Eng. in Operations Research and Information Engineering — Financial Engineering concentration | Ithaca Main Campus · Ithaca, New York, United States | Fall 2027 | 2026-12-01 | New | [programme / source](https://www.duffield.cornell.edu/orie/meng/meng-admissions-requirements-ithaca/) |
+| M.P.S. in Applied Statistics | Ithaca Main Campus · Ithaca, New York, United States | Fall 2027 | Current deadline to verify on application portal | Researching | [programme / source](https://gradschool.cornell.edu/academics/fields-of-study/field/statistics/) |
+| M.S. in Atmospheric Sciences | Ithaca Main Campus · Ithaca, New York, United States | Fall 2027 | 2027-01-15 listed for Fall; confirm live application | Researching | [programme / source](https://gradschool.cornell.edu/academics/fields-of-study/subject/atmospheric-science/atmospheric-sciences-msphd-ithaca/) |
 
-These are “no confirmed match this pass” outcomes, not claims that the universities have no other graduate programmes. The next monthly pass should revisit current admissions notices, especially for China and Korea.
+### Dartmouth College (1 tracked programme)
 
-The registry snapshot also contains Brown University as an inactive row. The other 34 active University Registry entries are accounted for in the three groups above.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.Eng. — Energy Engineering Track | Hanover Main Campus · Hanover, New Hampshire, United States | Fall 2027 | 2026-12-15 (Round 1 priority); 2027-02-15 (Round 2) | New | [programme / source](https://engineering.dartmouth.edu/graduate/meng/energy) |
 
-## Campus mapping and same-campus courses
+### ETH Zurich (8 tracked programmes)
 
-Twelve missing main-campus points were added for universities already in the registry. With the 25 existing campus records, all **34 active universities now have at least one mapped campus**. Campus coordinates are read from Campus Registry directly; the exporter no longer discards a university campus because its city is absent from the job Location Registry.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Computational Science and Engineering | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2027 cycle deadline not confirmed | Researching | [programme / source](https://ethz.ch/en/studies/master/degree-programmes/natural-sciences-and-mathematics/rechnergestuetzte-wissenschaften.html) |
+| MSc Data Science | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2027 cycle deadline not confirmed | Researching | [programme / source](https://math.ethz.ch/studies/master-programmes/master-data-science.html) |
+| MSc ETH in Quantitative Finance (ETH–UZH joint programme) | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2027 cycle deadline not confirmed | Researching | [programme / source](https://math.ethz.ch/studies/master-programmes/master-quantitative-finance.html) |
+| MSc Energy Science and Technology (MEST) | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2026-11-30 11:59 CET | Ready to Apply | [programme / source](https://master-energy.ethz.ch/application/application-information.html) |
+| MSc Mathematics / Applied Mathematics | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2027 cycle deadline not confirmed | Researching | [programme / source](https://ethz.ch/en/studies/master/degree-programmes/natural-sciences-and-mathematics/mathematics-applied-mathematics.leftnav.html) |
+| MSc Robotics, Systems and Control | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2027 cycle deadline not confirmed | Researching | [programme / source](https://ethz.ch/en/studies/master/degree-programmes/engineering-sciences/robotics-systems-and-control.html) |
+| MSc Statistics | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2027 cycle deadline not confirmed | Researching | [programme / source](https://ethz.ch/en/studies/master/degree-programmes/natural-sciences-and-mathematics/statistics.html/1000) |
+| Specialised Master in Atmospheric and Climate Science | Zürich Hönggerberg · Zurich, Switzerland | Autumn 2027 | 2026-11-30 | Researching | [programme / source](https://eaps.ethz.ch/en/studies/master/atmospheric-climate-science.html) |
 
-Course records share the exact Campus ID and coordinates when they are taught at the same campus. The map groups by University ID + Campus ID and coordinate, so two or more courses at one campus appear as one marker with separate course panels in the popup and remain individually selectable from the sidebar. This is used for Stanford's two new courses and Berkeley's two new courses, and existing multi-course campuses such as Oxford, Imperial, HKU, HKUST and Zhejiang.
+### Fudan University (1 tracked programme)
 
-Campus points added: Columbia Morningside; Cornell Ithaca; Dartmouth Hanover; Penn University City; Stanford Main; MIT Cambridge; Caltech Pasadena; Berkeley; Fudan Handan; SJTU Minhang; Nanjing Gulou; USTC East. Each is linked to a university already in the active registry. KAIST's existing Seoul Campus point is used for the KAIST AI programme.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master of Finance — International Finance (English-taught) | Handan Main Campus · Shanghai, China | 2027 entry | Four review rounds; final system closes April 2027 | Researching | [programme / source](https://www.fdsm.fudan.edu.cn/upec/2026/0904/c2660a37229/page.htm) |
 
-## Sources
+### Harvard University (2 tracked programmes)
 
-- Stanford MS&E [admission](https://msande.stanford.edu/academics-admissions/graduate/admission/ms-admission) and [degree](https://msande.stanford.edu/academics-admissions/graduate/ms-program/ms-degree).
-- Stanford ICME [deadline](https://icme.stanford.edu/academics-admission/icme-application-deadlines) and [MS programme](https://icme.stanford.edu/academics-admission/icme-master-science).
-- MIT [Technology and Policy Program](https://oge.mit.edu/programs/technology-and-policy-program/) and [2026-27 graduate costs](https://sfs.mit.edu/graduate-students/cost-of-attendance/grad-cost-of-attendance/).
-- Berkeley [MAIML FAQ](https://cdss.berkeley.edu/academics/graduate-education/master-artificial-intelligence-and-machine-learning/faq) and [MCS FAQ](https://climatesolutions.berkeley.edu/mcs/faq/).
-- Columbia [MSAI admissions](https://ms-ai.engineering.columbia.edu/masters-artificial-intelligence/admissions) and [curriculum](https://ms-ai.engineering.columbia.edu/masters-artificial-intelligence/curriculum).
-- Cornell [ORIE MEng admissions](https://www.duffield.cornell.edu/orie/meng/meng-admissions-requirements-ithaca/) and [2026-27 catalog](https://catalog.cornell.edu/programs/operations-research-information-engineering-orie-meng/).
-- Dartmouth [Energy MEng](https://engineering.dartmouth.edu/graduate/meng/energy), [on-campus admissions](https://engineering.dartmouth.edu/graduate-admissions/on-campus-meng-admissions), and [costs](https://engineering.dartmouth.edu/about/financial-aid/tuition-cost-of-attendance).
-- Penn [Robotics MSE catalog](https://catalog.upenn.edu/graduate/programs/robotics-mse/) and [2026-27 SEAS costs](https://srfs.upenn.edu/costs-budgeting/seas).
-- NTU [MSc Financial Engineering admissions and fees](https://www.ntu.edu.sg/business/admissions/graduate-studies/msc-financial-engineering/admissions).
-- KAIST [AI academics](https://gsai.kaist.ac.kr/academics/), [international admission timeline](https://admission.kaist.ac.kr/intl-graduate/Admission/YearlyTimelines), and [international eligibility/language](https://admission.kaist.ac.kr/intl-graduate/Admission/Eligibility).
-- Official campus sources and coordinate evidence are stored on each campus row in Campus Registry.
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| SM in Computational Science and Engineering | Cambridge, Massachusetts · Cambridge, MA, United States | Fall 2027 | 2026-12-01 | Researching | [programme / source](https://gsas.harvard.edu/program/computational-science-and-engineering) |
+| SM in Data Science | Cambridge, Massachusetts · Cambridge, MA, United States | Fall 2027 | 2026-12-01 17:00 ET | New | [programme / source](https://gsas.harvard.edu/program/data-science) |
 
-**Next review:** 2026-12-07, with an earlier check only for courses whose application deadlines fall within 30 days.
+### Imperial College London (3 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Climate Change, Management and Finance | South Kensington · London, United Kingdom | September 2027 | 2027-01-06 (Round 2) | New | [programme / source](https://www.imperial.ac.uk/study/courses/postgraduate-taught/climate-change-management-finance/) |
+| MSc Statistics (Statistical Finance) | South Kensington · London, United Kingdom | October 2027 | Applications opened 2026-09-30; round deadlines vary; check live page | Researching | [programme / source](https://www.imperial.ac.uk/study/courses/postgraduate-taught/statistics-statistical-finance/) |
+| MSc Sustainable Energy Futures | South Kensington · London, United Kingdom | October 2027 | 2027-01-06 (Round 2) | New | [programme / source](https://www.imperial.ac.uk/study/courses/postgraduate-taught/sustainable-energy-futures/?addCourse=1196723) |
+
+### KAIST (3 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S. in Artificial Intelligence — Kim Jaechul Graduate School of AI | Seoul Campus — Kim Jaechul Graduate School of AI · Seoul, South Korea | Fall 2027 (international application dates not published) | Not published for Fall 2027; recheck when KAIST posts the international graduate guide | On Hold | [programme / source](https://gsai.kaist.ac.kr/academics/) |
+| M.S. in Data Science — Graduate School of Data Science | Daejeon Main Campus · Daejeon, South Korea | Fall 2027 | Fall 2027 dates TBA | Researching | [programme / source](https://gsds.kaist.ac.kr/eng/admission) |
+| M.S. in Robotics — Robotics Program | Daejeon Main Campus · Daejeon, South Korea | Fall 2027 | Fall 2027 dates TBA | Researching | [programme / source](https://admission.kaist.ac.kr/intl-graduate/Discover/ExplorePrograms) |
+
+### Korea University (1 tracked programme)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Graduate School of Energy and Environment (Green School), M.S. — Renewable Energy / Energy and Environmental Policy | KU-KIST Green School, Anam · Seoul, South Korea | Fall 2027 target — next cycle TBA | Estimated - date not announced | On Hold | [programme / source](https://greenschool.korea.ac.kr/greenschool/schedule/admission.do) |
+
+### Massachusetts Institute of Technology (5 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MIT Sloan Master of Finance (MFin) | Cambridge Main Campus · Cambridge, Massachusetts, United States | Summer 2027 | 2027-01-05 (published MIT master's application deadline; verify cycle portal) | Researching | [programme / source](https://mitsloan.mit.edu/mfin) |
+| S.M. in Technology and Policy — Energy and the Environment | Cambridge Main Campus · Cambridge, Massachusetts, United States | Fall 2027 | 2026-12-15 23:59 Eastern Time | New | [programme / source](https://oge.mit.edu/programs/technology-and-policy-program/) |
+| SM in Atmospheric Science | Cambridge Main Campus · Cambridge, Massachusetts, United States | Fall 2027 | 2026-12-01 23:59 ET | Researching | [programme / source](https://oge.mit.edu/programs/earth-atmospheric-and-planetary-sciences/) |
+| SM in Climate Science (Climate Physics and Chemistry) | Cambridge Main Campus · Cambridge, Massachusetts, United States | Fall 2027 | 2026-12-01 23:59 ET | Researching | [programme / source](https://oge.mit.edu/programs/earth-atmospheric-and-planetary-sciences/) |
+| SM in Operations Research | Cambridge Main Campus · Cambridge, Massachusetts, United States | Fall 2027 | 2026-12-01 (MIT ORC standard deadline; confirm programme page) | Researching | [programme / source](https://orc.mit.edu/academics/masters-program/) |
+
+### Nanjing University (1 tracked programme)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master's Program in Computer Technology (Professional Degree) | Gulou Campus · Nanjing, China | Autumn 2027 potential | General cycle 2027-03-01 to 2027-05-20; programme-specific listing to verify | Researching | [programme / source](https://hwxy.nju.edu.cn/English/StudyatNJU/Admissions/DegreeProgramsTaughtinEnglish/index.html) |
+
+### Nanyang Technological University (4 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.Sc. in Financial Engineering | Main Campus · Singapore | August 2027 | 2026-11-30 (Round 1); 2027-01-31 (Round 2); 2027-03-31 (Round 3) | New | [programme / source](https://www.ntu.edu.sg/business/admissions/graduate-studies/msc-financial-engineering/admissions) |
+| MSc Analytics | Main Campus · Singapore | August 2027 | 2027-03-31 (listed cycle window; verify live portal) | Researching | [programme / source](https://www.ntu.edu.sg/spms/about-us/mathematics/grad/msc-in-analytics) |
+| MSc Financial Technology | Main Campus · Singapore | August 2027 | 2026-12-13 batch 2; 2027-01-31 batch 3; 2027-03-31 batch 4 (verify cycle) | Researching | [programme / source](https://www.ntu.edu.sg/spms/admissions/grad/detail/master-of-science-in-financial-technology) |
+| MSc Modelling and Simulation | Main Campus · Singapore | August 2027 | 2027 dates not confirmed | Researching | [programme / source](https://www.ntu.edu.sg/education/graduate-programme/master-of-science-in-modelling-and-simulation) |
+
+### National University of Singapore (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Data Science and Machine Learning | Kent Ridge Campus · Singapore | August 2027 | 2027-01-31 regular-round deadline (verify current programme portal) | Researching | [programme / source](https://www.math.nus.edu.sg/pg/ms-dsml/) |
+| MSc in Quantitative Finance | Kent Ridge Campus · Singapore | 2027 entry | 2027-01-31 | New | [programme / source](https://www.math.nus.edu.sg/pg/mqf/prospective-students/) |
+
+### Peking University (4 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S. Resources and Environmental Engineering — Sustainable Environment and Energy | Shenzhen Graduate School · Shenzhen, China | September 2027 | 2027-03-31 | New | [programme / source](https://see.pkusz.edu.cn/en/info/1008/1258.htm) |
+| Master in Artificial Intelligence for Information Science — Shenzhen Graduate School | Shenzhen Graduate School · Shenzhen, China | 2027 entry | 2027 deadline not verified | Researching | [programme / source](https://admission.pku.edu.cn/zsxx/lxszs/lxszyml/index.htm) |
+| Master in Computer Science and Technology — Shenzhen Graduate School | Shenzhen Graduate School · Shenzhen, China | 2027 entry | 2027 deadline not verified | Researching | [programme / source](https://admission.pku.edu.cn/zsxx/lxszs/lxszyml/index.htm) |
+| Master of Finance — Shenzhen Graduate School | Shenzhen Graduate School · Shenzhen, China | 2027 entry | 2027 deadline not verified | Researching | [programme / source](https://admission.pku.edu.cn/zsxx/lxszs/lxszyml/index.htm) |
+
+### Princeton University (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.Eng. in Civil and Environmental Engineering (water, climate and energy focus) | Princeton Campus · Princeton, New Jersey, United States | Fall 2027 | 2026-12-21 23:59 ET | Researching | [programme / source](https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/civil-and-environmental-engineering) |
+| Master in Finance (M.Fin.) | Princeton Campus · Princeton, New Jersey, United States | Fall 2027 | 2026-12-15 | Researching | [programme / source](https://gradschool.princeton.edu/academics/degrees-requirements/fields-study/finance) |
+
+### Seoul National University (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S. Energy Systems Engineering | Gwanak Campus · Seoul, South Korea | Fall 2027 target — admissions cycle not published | Estimated - date not announced | On Hold | [programme / source](https://eng.snu.ac.kr/en/academics/graduate-programs/energy-systems-engineering) |
+| M.S. in Artificial Intelligence — Graduate School of AI | Gwanak Campus · Seoul, South Korea | Spring 2027 international cycle (current department intake merge) | 2027 Spring deadline passed; Fall 2027 cycle to verify | Researching | [programme / source](https://snuai.snu.ac.kr/) |
+
+### Shanghai Jiao Tong University (1 tracked programme)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master's in Electrical Engineering — Electric Power System and Its Automatization | Minhang Campus · Shanghai, China | September 2027 | Self-funded deadline 2027-05-31; scholarship rounds earlier | Researching | [programme / source](https://en.sjtu.edu.cn/storage/global/web/en/page/2026/11/e5089f10e617b8423efcd1beb77d99ad.pdf) |
+
+### Stanford University (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S. in Computational and Mathematical Engineering (ICME) | Stanford Main Campus · Palo Alto, California, United States | Autumn 2027 | 2027-01-29 23:59 Pacific Time | New | [programme / source](https://icme.stanford.edu/academics-admission/icme-master-science) |
+| M.S. in Management Science and Engineering — Energy and Environment concentration | Stanford Main Campus · Palo Alto, California, United States | Autumn 2027 | 2026-12-01 23:59 Pacific Time | New | [programme / source](https://msande.stanford.edu/academics-admissions/graduate/ms-program/ms-degree) |
+
+### The Hong Kong University of Science and Technology (5 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Dual Master’s Degree Programme in Future Energy and Power System Smart Operation and Management (HKUST MPhil + Strathclyde MSc) | Clear Water Bay Campus · Hong Kong | 2027 intake not confirmed | Not stated by programme | On Hold | [programme / source](https://dualmsc-seng.hkust.edu.hk/admission-requirement) |
+| MEng Robotics and Embodied AI | Clear Water Bay Campus · Hong Kong | Fall 2027 | 2026-12-31 (first round estimate; confirm official portal); 2027-04-01 second round listed | Researching | [programme / source](https://seng.hkust.edu.hk/academics/taught-postgraduate/meng-reai) |
+| MSc Data-Driven Modeling | Clear Water Bay Campus · Hong Kong | Fall 2027 | 2027 cycle dates not confirmed | Researching | [programme / source](https://msdm.hkust.edu.hk/program-details) |
+| MSc Financial Mathematics | Clear Water Bay Campus · Hong Kong | Fall 2027 | 2027-01-31 (current catalogue deadline; confirm admissions portal) | Researching | [programme / source](https://prog-crs.hkust.edu.hk/pgprog/2027-28/msc-mafm) |
+| MSc in Chemical and Energy Engineering | Clear Water Bay Campus · Hong Kong | September 2027 entry | 2026-12-01 (Round 1; non-local applicants) | New | [programme / source](https://seng.hkust.edu.hk/academics/taught-postgraduate/msc-cee) |
+
+### The University of Hong Kong (4 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Artificial Intelligence | Main Campus · Pokfulam, Hong Kong | September 2027 | 2026-11-16 main round; 2027-02-01 clearing (verify page) | Researching | [programme / source](https://www.scifac.hku.hk/prospective/tpg/ArtificialIntelligence) |
+| MSc Financial Technology and Data Analytics | Main Campus · Pokfulam, Hong Kong | 2027/28 intake | Admissions open; exact round deadlines to verify | Researching | [programme / source](https://mscftda.cds.hku.hk/) |
+| MSc(Eng) in Energy Engineering | Main Campus · Hong Kong | September 2027 entry | 2027-01-04 12:00 HKT (main round; clearing Apr 9 is normally for local applicants) | New | [programme / source](https://ece.hku.hk/study/tpg/) |
+| Master of Data Science (MDASC) | Main Campus · Hong Kong | September 2027 | 2026-12-01 12:00 HKT (main); 2027-04-30 12:00 HKT (clearing) | New | [programme / source](https://mdasc.cds.hku.hk/admissions-2027-28/) |
+
+### The University of Tokyo (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Graduate Program on Environmental Sciences (GPES), M.S. | Komaba I Campus · Tokyo, Japan | September 2027 entry (Schedule 1) | 2026-11-09 16:00 JST | Ready to Apply | [programme / source](https://gpes.c.u-tokyo.ac.jp/how-to-apply/downloads.html) |
+| MEng in International Multidisciplinary Engineering (IME) | Komaba I Campus · Tokyo, Japan | October 2027 | 2027-02-17 online deadline (January round); paper documents due 2027-03-10; supervisor acceptance due 2027-03-03 | Researching | [programme / source](https://www.ime.t.u-tokyo.ac.jp/Prospectus-2027.html) |
+
+### Tsinghua University (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master's in Data Science and Information Technology | Shenzhen International Graduate School · Shenzhen, China | 2027 entry | 2027 deadline not verified | Researching | [programme / source](https://yz.tsinghua.edu.cn/en/info/1013/1036.htm) |
+| Professional Master’s in Sustainable and Renewable Energy Technology | Shenzhen International Graduate School · Shenzhen, China | 2027 entry | 2027-05-15 | New | [programme / source](https://www.sigs.tsinghua.edu.cn/en/2026/0914/c7587a293273/page.htm) |
+
+### University of California, Berkeley (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master of Artificial Intelligence and Machine Learning (MAIML) | Berkeley Campus · Berkeley, California, United States | Fall 2027 | 2027-01-11 20:59 Pacific Time | New | [programme / source](https://cdss.berkeley.edu/academics/graduate-education/master-artificial-intelligence-and-machine-learning/faq) |
+| Master of Climate Solutions (MCS) | Berkeley Campus · Berkeley, California, United States | Fall 2027 | 2026-12-01 20:59 Pacific Time (priority); 2027-01-22 20:59 Pacific Time (standard) | New | [programme / source](https://climatesolutions.berkeley.edu/mcs/faq/) |
+
+### University of Cambridge (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MPhil in Energy Technologies | Centre for Mathematical Sciences (DAMTP) · Cambridge, United Kingdom | Michaelmas 2027 | 2027-05-13; course funding deadline 2026-12-08 | Researching | [programme / source](https://www.postgraduate.study.cam.ac.uk/courses/directory/egegmpmet/study) |
+| MPhil in Quantitative Climate and Environmental Science | Cambridge · Cambridge, United Kingdom | Michaelmas 2027 | 2027-03-25 | New | [programme / source](https://www.postgraduate.study.cam.ac.uk/courses/directory/maammpqce) |
+
+### University of Oxford (4 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Energy Systems | Oxford · Oxford, United Kingdom | October 2027 | 2027-01-27 12:00 UK | New | [programme / source](https://www.ox.ac.uk/admissions/graduate/courses/msc-energy-systems) |
+| MSc Mathematical Modelling and Scientific Computing | Thom Building — Department of Engineering Science · Oxford, United Kingdom | October 2027 | 2027-11-13 initial; 2028-01-27 scholarship; 2028-03-02 final | Researching | [programme / source](https://www.ox.ac.uk/admissions/graduate/courses/msc-mathematical-modelling-and-scientific-computing) |
+| MSc Statistical Science | Thom Building — Department of Engineering Science · Oxford, United Kingdom | October 2027 | 2026-11-13 early; 2027-01-27 final | Researching | [programme / source](https://www.ox.ac.uk/admissions/graduate/courses/msc-statistical-science) |
+| MSc in Mathematical and Computational Finance | Oxford · Oxford, United Kingdom | September 2027 | 2026-11-13 (first round); 2027-01-27 (final, 12:00 UK) | New | [programme / source](https://www.ox.ac.uk/admissions/graduate/courses/msc-mathematical-and-computational-finance) |
+
+### University of Pennsylvania (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S.E. in Robotics | University City Campus · Philadelphia, Pennsylvania, United States | Fall 2027 | 2026-11-01 (priority; passed); 2027-02-01 (regular; confirm in the live Penn Engineering application portal) | New | [programme / source](https://catalog.upenn.edu/graduate/programs/robotics-mse/) |
+| MSE in Data Science | University City Campus · Philadelphia, Pennsylvania, United States | Fall 2027 | 2027-02-01 typical deadline; verify 2027 portal | Researching | [programme / source](https://www.cis.upenn.edu/graduate/program-offerings/mse-in-data-science/) |
+
+### University of Science and Technology of China (3 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| MSc Applied Mathematics | Hefei East Campus · Hefei, China | 2027 entry unconfirmed | 2027 international admissions deadline not verified | Researching | [programme / source](https://oic.ustc.edu.cn/en/student/school-and-graduate-degree-program-list/) |
+| MSc Computing Mathematics | Hefei East Campus · Hefei, China | 2027 entry unconfirmed | 2027 international admissions deadline not verified | Researching | [programme / source](https://ustc.admissions.cn/course/index.html?language=english) |
+| MSc Operational Research and Cybernetics | Hefei East Campus · Hefei, China | 2027 entry unconfirmed | 2027 international admissions deadline not verified | Researching | [programme / source](https://ustc.admissions.cn/course/index.html?language=english) |
+
+### Yale University (1 tracked programme)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master of Environmental Management (MEM), Energy and the Environment specialization | New Haven Campus · New Haven, Connecticut, United States | Fall 2027 | 2026-12-01 23:59 ET | New | [programme / source](https://environment.yale.edu/academics/masters/mem) |
+
+### Yonsei University (2 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| M.S. Civil and Environmental Engineering — energy/environment research route | Seoul Campus · Seoul, South Korea | Fall 2027 target — next cycle TBA | Estimated - date not announced | On Hold | [programme / source](https://graduate.yonsei.ac.kr/civil/education/g_1.do) |
+| Master's Program in Economics and Data Analysis | Seoul Campus · Seoul, South Korea | March 2027 | 2026-12-01 to 2026-12-14 application window (confirm notice) | Researching | [programme / source](https://yeri.yonsei.ac.kr/gosc/about/notice.do?article.offset=0&articleLimit=10&articleNo=483912&mode=view) |
+
+### Zhejiang University (4 tracked programmes)
+
+| Programme | Campus / city | Intake | Deadline | Tracker status | Official source |
+|---|---|---|---|---|---|
+| Master’s in Computer Science and Technology | Zijingang Campus · Hangzhou, China | 2027 entry (2027 guide not yet published) | 2027 international deadline not yet published; 2026 cycle closed 2026-02-28 | Researching | [programme / source](https://iczu.zju.edu.cn/_upload/article/files/32/c1/d48dfe1349279755c872b98ce7e1/4d75c52b-8b5e-412a-9039-49cceec8a006.pdf) |
+| Master’s in Control Science and Engineering (robotics / intelligent control research route) | Yuquan Campus · Hangzhou, China | 2027 entry (subject to international admissions guide) | 2027 international application deadline not yet published | Researching | [programme / source](https://iczu.zju.edu.cn/admissionsen/2024/1030/c68989a2981849/page.psp) |
+| Professional Master’s Project in Embodied Intelligence and Robotics (Hangzhou) | Zhejiang University Engineer College (Shixiang Road) · Hangzhou, China | 2027 cohort (national postgraduate entrance route) | 2026-10-24 (registration deadline; passed) | On Hold | [programme / source](https://pi.zju.edu.cn/jsznyjqrwhzwxm/list.htm) |
+| Professional Master’s Project in Intelligent Flight Technology and Equipment (Control Engineering) | Zhejiang University Engineer College (Shixiang Road) · Hangzhou, China | 2027 cohort (national postgraduate entrance route) | 2026-10-24 (registration deadline; passed) | On Hold | [programme / source](https://pi.zju.edu.cn/fhznjsxm/list.htm) |
+
+## Coverage quality and next checks
+
+The inventory now contains multiple distinct candidates at universities whose catalogues support them (for example ETH Zurich, Oxford, MIT, HKUST, HKU, NTU, Peking, Cornell and Zhejiang). It is intentionally not padded to an arbitrary number per university: a school with one programme may have only one relevant master’s route verified, and a zero means the current pass did not find a defensible named master’s option.
+
+The next monthly admissions refresh should prioritize: (1) confirming Fall 2027 availability and deadlines for every Researching row; (2) checking English-language delivery and international eligibility for China and Korea; (3) resolving supervisor-dependent/research-master access (notably MIT EAPS); and (4) reviewing costs and prerequisite fit against Ross’s transcript. Do not convert unknown details into guessed deadlines or 5/10 placeholder scores.
+
+## Registry audit
+
+This list is generated from `data/opportunities.json`, the same feed consumed by the dashboard. To regenerate it after a workbook update, run `python scripts/build_site.py` and then `python scripts/generate_masters_coverage_report.py`.
