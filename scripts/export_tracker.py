@@ -400,7 +400,11 @@ def main() -> None:
     categories = {r.get("Company", "").casefold(): r.get("Category", "") for r in sheets.get("Company Registry", [])}
     recruitment_companies = {r.get("Recruitment Company ID", ""): r for r in sheets.get("Recruitment Company Registry", []) if r.get("Recruitment Company ID")}
     recruiter_people = {r.get("Recruiter ID", ""): r for r in sheets.get("Recruiter Registry", []) if r.get("Recruiter ID")}
-    universities_by_id = {r.get("University ID", ""): r for r in sheets.get("University Registry", []) if r.get("University ID")}
+    university_rows = sheets.get("University Registry", [])
+    active_university_ids = {r.get("University ID", "") for r in university_rows
+                             if r.get("University ID") and truth(r.get("Search Active", True))}
+    universities_by_id = {r.get("University ID", ""): r for r in university_rows
+                          if r.get("University ID") in active_university_ids}
     office_rows = [r for r in sheets.get("Office Registry", []) if r.get("Office ID") and r.get("Company ID") and r.get("Location ID") in locations_by_id]
     office_by_id = {r["Office ID"]: r for r in office_rows}
     office_by_company = {}
@@ -413,7 +417,9 @@ def main() -> None:
         if link.get("Office ID") and link.get("Office ID") not in office_by_id:
             continue
         job_links.setdefault(link.get("Opportunity ID", ""), []).append(link)
-    campus_by_id = {r.get("Campus ID", ""): r for r in sheets.get("Campus Registry", []) if r.get("Campus ID") and r.get("Location ID") in locations_by_id}
+    campus_by_id = {r.get("Campus ID", ""): r for r in sheets.get("Campus Registry", [])
+                    if r.get("Campus ID") and r.get("Location ID") in locations_by_id
+                    and r.get("University ID") in active_university_ids}
     entries = []
     for row in sheets.get("Jobs", []):
         if row.get("Scope Status") != "In Scope":
@@ -451,6 +457,8 @@ def main() -> None:
         entries.append(payload)
     for kind, sheet_name, title_col, org_col in (("masters", "Masters", "Course", "University"), ("recruiter", "Recruiters", "Name", "Company")):
         for row in sheets.get(sheet_name, []):
+            if kind == "masters" and row.get("University ID") not in active_university_ids:
+                continue
             payload = {key(k): v for k, v in row.items() if v not in (None, "")}
             if kind == "masters":
                 campus = campus_by_id.get(row.get("Campus ID", ""), {})
@@ -512,14 +520,15 @@ def main() -> None:
             "company_reputation_score_10": row.get("Company Reputation Score /10", ""), "company_reputation_notes": row.get("Company Reputation Notes", ""),
             "reviews_checked_on": row.get("Reviews Checked On", ""), "review_research_status": row.get("Review Research Status", "Not researched")})
     universities = []
-    uni_rows = sheets.get("University Registry", [])
+    uni_rows = [r for r in university_rows if r.get("University ID") in active_university_ids]
+    active_master_rows = [r for r in sheets.get("Masters", []) if r.get("University ID") in active_university_ids]
     for uni in uni_rows:
         campuses = [c for c in campus_by_id.values() if c.get("University ID") == uni.get("University ID")]
         places = []
         for campus in campuses:
             point = point_for(campus.get("Coordinates", ""))
             if point: places.append({"name": campus.get("Campus", "") or campus.get("Location", ""), "latitude": point[0], "longitude": point[1], "precision": campus.get("Coordinate Precision", "")})
-        members = [r.get("Opportunity ID") for r in sheets.get("Masters", []) if r.get("University ID") == uni.get("University ID") and r.get("Opportunity ID")]
+        members = [r.get("Opportunity ID") for r in active_master_rows if r.get("University ID") == uni.get("University ID") and r.get("Opportunity ID")]
         universities.append({"id": uni.get("University ID", ""), "kind": "university", "title": uni.get("University", ""), "organization": uni.get("Category", "University"),
             "category": uni.get("Category", "University"), "university": uni.get("University", ""), "memberIds": members, "locations": places,
             "owner": uni.get("Owner", ""),

@@ -24,7 +24,12 @@ scripts/fix_office_labels.mjs
 scripts/migrate_schema.mjs
 worldofcommodities.with-recruiter-registry.xlsx
 
-.cursor/
+.cursor/*
+!.cursor/skills/
+.cursor/skills/*
+!.cursor/skills/opportunity-scout/
+.cursor/skills/opportunity-scout/*
+!.cursor/skills/opportunity-scout/SKILL.md
 scripts/populate_workbook.mjs
 scripts/style_workbook.mjs
 
