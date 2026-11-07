@@ -76,6 +76,13 @@ For China, Japan and South Korea, pair English searches with native-language sea
 
 ## Review and research notes
 
+### University scope and campus mapping
+
+- The active University Registry is the institution boundary for programme research. Review every active University ID on the monthly/admissions-cycle pass; do not add schools just because they share a city with a tracked job search.
+- Job Location Registry cities do not decide whether a registered university is in scope, and they do not constrain where an active university's real campus can be mapped. Use the actual programme campus and coordinates in Campus Registry. If the programme is not tied to a separate campus, use the university's main campus.
+- Keep the Location Registry focused on job search geography. A course at a registered university may use a campus elsewhere; that does not create a new job-search city or institution.
+- If multiple course rows share a Campus ID and campus coordinate, they render as one campus marker with all courses accessible from the popup and sidebar. See [university coverage, 2026-11-07](university-coverage-2026-11-07.md) for the current registry-wide pass and next review date.
+
 - Glassdoor: search canonical company and documented aliases; prefer current overall aggregate rating and sample count, then review themes dated within the prior two years. Note the checked date, review count, recency and conflicting themes.
 - Reddit: score only when a company-specific employee/workplace discussion is identifiable. Exclude candidate interview threads, market gossip and unverified allegations from employee-review scores. If no attributable recent material exists, record “no usable evidence found” and use the tracker’s neutral placeholder consistently, clearly marked as a placeholder.
 - Separate company reputation from role/desk quality. A good employer-wide score is not evidence that a particular desk is profitable or a strong fit.

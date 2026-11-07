@@ -417,9 +417,12 @@ def main() -> None:
         if link.get("Office ID") and link.get("Office ID") not in office_by_id:
             continue
         job_links.setdefault(link.get("Opportunity ID", ""), []).append(link)
+    # Universities have their own scope. A degree's campus can be outside the
+    # job-search Location Registry, so map it from the active university's
+    # Campus Registry coordinates instead of dropping it for an unknown city.
     campus_by_id = {r.get("Campus ID", ""): r for r in sheets.get("Campus Registry", [])
-                    if r.get("Campus ID") and r.get("Location ID") in locations_by_id
-                    and r.get("University ID") in active_university_ids}
+                    if r.get("Campus ID") and r.get("University ID") in active_university_ids
+                    and point_for(r.get("Coordinates", ""))}
     entries = []
     for row in sheets.get("Jobs", []):
         if row.get("Scope Status") != "In Scope":

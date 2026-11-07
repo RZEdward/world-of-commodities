@@ -927,7 +927,10 @@ function initializeMap() {
     const campusGroups = new Map();
     for (const item of state.items.filter((entry) => entry.kind === "masters")) {
       const locationKey = (item.locations || []).map((p) => `${p.latitude},${p.longitude}`).join(";");
-      const groupKey = `${item.organization.toLowerCase()}|${String(item.campus || "").toLowerCase()}|${locationKey}`;
+      const campusIdentity = item.campus_id
+        ? `${item.university_id || item.organization}|${item.campus_id}`
+        : `${item.organization}|${String(item.campus || "").toLowerCase()}`;
+      const groupKey = `${campusIdentity}|${locationKey}`.toLowerCase();
       if (!campusGroups.has(groupKey)) campusGroups.set(groupKey, { ...item, id: `campus:${groupKey}`, programmes: [], memberIds: [], locations: item.locations || [] });
       const group = campusGroups.get(groupKey);
       group.programmes.push(item);
