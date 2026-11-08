@@ -19,6 +19,8 @@ const state = {
   query: "",
   facet: "",
   facetValue: "",
+  selectedCities: [],
+  cityMenuOpen: false,
   sort: "total_score",
   map: null,
   markers: new Map(),
@@ -239,6 +241,11 @@ function facetValuesFor(item, key) {
     : value == null || value === "" ? [] : [value];
 }
 
+function cityValuesFor(item) {
+  const value = item.location || item.campus || "";
+  return [...new Set(String(value).split(/[;|]/).map((city) => city.trim()).filter(Boolean))];
+}
+
 function searchHaystack(item) {
   return `${item.title} ${item.organization} ${item.location} ${item.office || ""} ${item.owner || ""} ${item.category || ""} ${item.company_priority_tier || ""} ${item.company_search_focus || ""} ${item.business || ""} ${item.role_function || item.business_function || ""} ${item.commodity || ""} ${item.market_geography || ""} ${item.time_horizon || ""} ${item.experience_requirement_years || ""} ${item.requirements || ""} ${item.next_action || ""}`.toLowerCase();
 }
@@ -344,6 +351,49 @@ function syncCustomDropdown(select, hostId) {
         control.classList.remove("open");
         trigger.focus();
       }
+    });
+  });
+}
+
+function syncCityMultiDropdown(host, source) {
+  const counts = new Map();
+  for (const item of source) for (const city of cityValuesFor(item)) counts.set(city, (counts.get(city) || 0) + 1);
+  const options = [...counts.entries()].filter(([, count]) => count > 0).sort(([a], [b]) => a.localeCompare(b));
+  for (const city of state.selectedCities) if (!counts.has(city)) options.push([city, 0]);
+  options.sort(([a], [b]) => a.localeCompare(b));
+  const selected = state.selectedCities;
+  const buttonLabel = selected.length
+    ? `City · ${selected.slice(0, 2).join(", ")}${selected.length > 2 ? ` +${selected.length - 2}` : ""}`
+    : "City · All cities";
+  host.innerHTML = `<div class="custom-select ${state.cityMenuOpen ? "open" : ""}">
+    <button class="custom-select-trigger city-multi-trigger" type="button" aria-haspopup="true" aria-expanded="${state.cityMenuOpen}" aria-label="Filter opportunities by city"><span>${escapeHtml(buttonLabel)}</span><i aria-hidden="true"></i></button>
+    <div class="city-multi-menu" role="group" aria-label="Choose one or more cities" ${state.cityMenuOpen ? "" : "hidden"}>
+      <div class="city-multi-actions"><span>Filter by city</span><button type="button" data-city-action="all">All cities</button></div>
+      ${options.map(([city, count]) => `<label class="city-multi-option"><input type="checkbox" value="${escapeHtml(city)}" ${selected.includes(city) ? "checked" : ""}><span>${escapeHtml(city)}</span><small>${count}</small></label>`).join("")}
+    </div>
+  </div>`;
+  const control = host.firstElementChild;
+  const trigger = control.querySelector(".city-multi-trigger");
+  const menu = control.querySelector(".city-multi-menu");
+  trigger.addEventListener("click", () => {
+    state.cityMenuOpen = !state.cityMenuOpen;
+    menu.hidden = !state.cityMenuOpen;
+    trigger.setAttribute("aria-expanded", String(state.cityMenuOpen));
+    control.classList.toggle("open", state.cityMenuOpen);
+  });
+  menu.querySelector('[data-city-action="all"]').addEventListener("click", () => {
+    state.selectedCities = [];
+    state.cityMenuOpen = true;
+    render();
+  });
+  menu.querySelectorAll('input[type="checkbox"]').forEach((checkbox) => {
+    checkbox.addEventListener("change", () => {
+      const chosen = new Set(state.selectedCities);
+      if (checkbox.checked) chosen.add(checkbox.value);
+      else chosen.delete(checkbox.value);
+      state.selectedCities = [...chosen];
+      state.cityMenuOpen = true;
+      render();
     });
   });
 }
@@ -547,7 +597,7 @@ function attachScoreTooltips(popupElement) {
   }
 }
 
-function getFilteredItems() {
+function getFilteredItems(ignoreCityFilter = false) {
   const source = state.view === "institutions" ? state.institutions : state.view === "locations" ? state.locations : state.items;
   const filtered = source.filter((item) => {
     const matchesKind = state.view === "locations"
@@ -558,7 +608,8 @@ function getFilteredItems() {
     const matchesFacet = !state.facetValue || (state.facet === "total_score"
       ? Number.isFinite(Number(item.total_score_10)) && Number(item.total_score_10) > Number(state.facetValue)
       : facetValues.some((value) => String(value).toLowerCase() === state.facetValue.toLowerCase()));
-    return matchesKind && matchesFacet && haystack.includes(state.query);
+    const matchesCity = ignoreCityFilter || !state.selectedCities.length || cityValuesFor(item).some((city) => state.selectedCities.includes(city));
+    return matchesKind && matchesFacet && matchesCity && haystack.includes(state.query);
   });
   const deadline = (item) => { const date = asDate(item.deadline); return date ? date.getTime() : Number.MAX_SAFE_INTEGER; };
   const foundAt = (item) => { const date = asDate(item.date_found); return date ? date.getTime() : Number.MIN_SAFE_INTEGER; };
@@ -577,6 +628,8 @@ function renderControls() {
   const filter = document.querySelector("#facet-filter"), value = document.querySelector("#facet-value"), sort = document.querySelector("#sort-order");
   const source = locationMode ? state.locations : companyMode ? state.institutions : state.items.filter((item) => state.filter === "all" || item.kind === state.filter);
   const controls = document.querySelector("#list-controls");
+  const cityControl = document.querySelector("#city-filter-control");
+  cityControl.hidden = locationMode || companyMode;
   if (!source.length) { controls.hidden = true; return; }
   const fieldOptions = locationMode ? [["owner", "Owner"]] : companyMode ? [["category", "Category"], ["company_priority", "Company priority"], ["owner", "Owner"]] : [["business", "Business / company category"], ["role", "Role function"], ["commodity", "Commodity"], ["market", "Market geography"], ["horizon", "Time horizon"], ["status", "Status"], ["deadline", "Deadline"], ["owner", "Owner"], ["total_score", "Total score"]];
   const matchingSource = source.filter((item) => searchHaystack(item).includes(state.query));
@@ -611,6 +664,7 @@ function renderControls() {
   syncCustomDropdown(filter, "facet-filter-menu");
   syncCustomDropdown(value, "facet-value-menu");
   syncCustomDropdown(sort, "sort-order-menu");
+  if (!locationMode && !companyMode) syncCityMultiDropdown(cityControl, getFilteredItems(true));
 }
 
 function renderLegend() {
@@ -1046,6 +1100,8 @@ document.querySelectorAll(".view-button").forEach((button) => {
     state.view = button.dataset.view;
     state.sort = state.view === "locations" ? "rank" : state.view === "institutions" ? "name" : "total_score";
     state.filter = "all";
+    state.selectedCities = [];
+    state.cityMenuOpen = false;
     state.selected = null;
     for (const markers of state.markers.values()) for (const marker of markers) marker.getPopup()?.remove();
     render();
@@ -1073,6 +1129,15 @@ document.querySelector("#facet-value").addEventListener("change", (event) => { s
 document.querySelector("#sort-order").addEventListener("change", (event) => { state.sort = event.target.value; render(); });
 
 document.addEventListener("click", (event) => {
+  if (!event.target.closest("#city-filter-control .custom-select")) {
+    state.cityMenuOpen = false;
+    const cityMenu = document.querySelector("#city-filter-control .city-multi-menu");
+    const cityControl = document.querySelector("#city-filter-control .custom-select");
+    const cityTrigger = document.querySelector("#city-filter-control .city-multi-trigger");
+    if (cityMenu) cityMenu.hidden = true;
+    if (cityControl) cityControl.classList.remove("open");
+    cityTrigger?.setAttribute("aria-expanded", "false");
+  }
   if (event.target.closest(".custom-select")) return;
   document.querySelectorAll(".custom-select-menu").forEach((menu) => {
     menu.hidden = true;
@@ -1088,6 +1153,13 @@ document.addEventListener("keydown", (event) => {
     return;
   }
   if (event.key !== "Escape") return;
+  state.cityMenuOpen = false;
+  const cityMenu = document.querySelector("#city-filter-control .city-multi-menu");
+  const cityControl = document.querySelector("#city-filter-control .custom-select");
+  const cityTrigger = document.querySelector("#city-filter-control .city-multi-trigger");
+  if (cityMenu) cityMenu.hidden = true;
+  if (cityControl) cityControl.classList.remove("open");
+  cityTrigger?.setAttribute("aria-expanded", "false");
   document.querySelectorAll(".custom-select-menu").forEach((menu) => {
     menu.hidden = true;
     menu.previousElementSibling?.setAttribute("aria-expanded", "false");
