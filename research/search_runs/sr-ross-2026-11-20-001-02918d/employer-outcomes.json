@@ -1,0 +1,3975 @@
+{
+  "run_id": "sr:ross:2026-11-20:001:02918d",
+  "run_date": "2026-11-20",
+  "owner": "Ross",
+  "outcomes": [
+    {
+      "rank": 1,
+      "company_id": "co:incommodities",
+      "company": "InCommodities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 2,
+      "company_id": "co:jane-street",
+      "company": "Jane Street",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 3,
+      "company_id": "co:trafigura",
+      "company": "Trafigura",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 4,
+      "company_id": "co:gunvor",
+      "company": "Centalion (formerly Gunvor)",
+      "source_checked": "https://www.gunvorgroup.com/careers/",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://www.gunvorgroup.com/careers/"
+      ],
+      "notes": "Centalion/Gunvor trader/analyst openings already tracked; checked current targeted vacancy inventory."
+    },
+    {
+      "rank": 5,
+      "company_id": "co:glencore",
+      "company": "Glencore",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 6,
+      "company_id": "co:mercuria",
+      "company": "Mercuria",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 7,
+      "company_id": "co:vitol",
+      "company": "Vitol",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 8,
+      "company_id": "co:millennium-management",
+      "company": "Millennium Management",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 9,
+      "company_id": "co:citadel",
+      "company": "Citadel",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 10,
+      "company_id": "co:citadel-securities",
+      "company": "Citadel Securities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 11,
+      "company_id": "co:d-e-shaw",
+      "company": "D. E. Shaw",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 12,
+      "company_id": "co:balyasny-asset-management",
+      "company": "Balyasny Asset Management",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 13,
+      "company_id": "co:point72",
+      "company": "Point72",
+      "source_checked": "https://careers.point72.com/CSJobDetail?jobCode=CSS-0013351&jobName=quant-researcher-power-dispatch-modeling&locale=English&location=New+York+%7C+Stamford&retURL=%2FCSCareerSearch",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://careers.point72.com/CSJobDetail?jobCode=CSS-0013351&jobName=quant-researcher-power-dispatch-modeling&locale=English&location=New+York+%7C+Stamford&retURL=%2FCSCareerSearch"
+      ],
+      "notes": "Power dispatch quant opening found; senior requirements and US work-right barrier make it a stretch."
+    },
+    {
+      "rank": 14,
+      "company_id": "co:two-sigma",
+      "company": "Two Sigma",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 15,
+      "company_id": "co:drw",
+      "company": "DRW",
+      "source_checked": "https://www.drw.com/work-at-drw/listings/commodities-macro-analyst-3331696",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://www.drw.com/work-at-drw/listings/commodities-macro-analyst-3331696"
+      ],
+      "notes": "Two current London commodity analyst/quant vacancies; refreshed requirements and fit gaps."
+    },
+    {
+      "rank": 16,
+      "company_id": "co:imc-trading",
+      "company": "IMC Trading",
+      "source_checked": "https://www.imc.com/ap/careers/jobs/5018650101",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://www.imc.com/ap/careers/jobs/5018650101"
+      ],
+      "notes": "Current Commodities Analyst Sydney plus China-focused analyst; Mandarin and 3+ years gates noted."
+    },
+    {
+      "rank": 17,
+      "company_id": "co:optiver",
+      "company": "Optiver",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 18,
+      "company_id": "co:susquehanna-international-group-sig",
+      "company": "Susquehanna International Group (SIG)",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 19,
+      "company_id": "co:jump-trading",
+      "company": "Jump Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "source_unavailable",
+      "vacancy_urls": [],
+      "notes": "Could not establish a complete, current employer vacancy inventory from accessible sources in this pass; no definitive no-vacancy conclusion. Recheck on next sweep."
+    },
+    {
+      "rank": 20,
+      "company_id": "co:hudson-river-trading",
+      "company": "Hudson River Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 21,
+      "company_id": "co:xtx-markets",
+      "company": "XTX Markets",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 22,
+      "company_id": "co:qube-research-technologies",
+      "company": "Qube Research & Technologies",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 23,
+      "company_id": "co:squarepoint-capital",
+      "company": "Squarepoint Capital",
+      "source_checked": "https://www.squarepoint-capital.com/open-opportunities?gh_jid=7335465&id=7335465",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://www.squarepoint-capital.com/open-opportunities?gh_jid=7335465&id=7335465"
+      ],
+      "notes": "Junior Commodities Fundamental Analyst listing names Singapore, London and Geneva; three location rows added."
+    },
+    {
+      "rank": 24,
+      "company_id": "co:tower-research-capital",
+      "company": "Tower Research Capital",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 25,
+      "company_id": "co:flow-traders",
+      "company": "Flow Traders",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 26,
+      "company_id": "co:graviton-research-capital",
+      "company": "Graviton Research Capital",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 27,
+      "company_id": "co:jain-global",
+      "company": "Jain Global",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 28,
+      "company_id": "co:zams-asset-management",
+      "company": "ZAMs Asset Management",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "source_unavailable",
+      "vacancy_urls": [],
+      "notes": "Could not establish a complete, current employer vacancy inventory from accessible sources in this pass; no definitive no-vacancy conclusion. Recheck on next sweep."
+    },
+    {
+      "rank": 29,
+      "company_id": "co:eagle-seven",
+      "company": "Eagle Seven",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 30,
+      "company_id": "co:prizm-capital",
+      "company": "Prizm Capital",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "source_unavailable",
+      "vacancy_urls": [],
+      "notes": "Could not establish a complete, current employer vacancy inventory from accessible sources in this pass; no definitive no-vacancy conclusion. Recheck on next sweep."
+    },
+    {
+      "rank": 31,
+      "company_id": "co:cmt-capital-markets-trading",
+      "company": "CMT Capital Markets Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "source_unavailable",
+      "vacancy_urls": [],
+      "notes": "Could not establish a complete, current employer vacancy inventory from accessible sources in this pass; no definitive no-vacancy conclusion. Recheck on next sweep."
+    },
+    {
+      "rank": 32,
+      "company_id": "co:alphagrep",
+      "company": "AlphaGrep",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 33,
+      "company_id": "co:elk-capital",
+      "company": "Elk Capital",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 34,
+      "company_id": "co:prime-trading",
+      "company": "Prime Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 35,
+      "company_id": "co:neruda-capital",
+      "company": "Neruda Capital",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 36,
+      "company_id": "co:onyx",
+      "company": "Onyx",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 37,
+      "company_id": "co:nanook-energy-advisors",
+      "company": "Nanook Energy Advisors",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 38,
+      "company_id": "co:sirius-energy",
+      "company": "Sirius Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 39,
+      "company_id": "co:lattis",
+      "company": "Lattis",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 40,
+      "company_id": "co:cobblestone-energy",
+      "company": "Cobblestone Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 41,
+      "company_id": "co:trailstone-group",
+      "company": "Trailstone Group",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 42,
+      "company_id": "co:electroroute",
+      "company": "ElectroRoute",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 43,
+      "company_id": "co:d-trading",
+      "company": "D.Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 44,
+      "company_id": "co:repower",
+      "company": "Repower",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 45,
+      "company_id": "co:pzem-energy",
+      "company": "PZEM Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 46,
+      "company_id": "co:dynasty-power-inc",
+      "company": "Dynasty Power Inc.",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 47,
+      "company_id": "co:danske-commodities",
+      "company": "Danske Commodities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 48,
+      "company_id": "co:jera-global-markets",
+      "company": "JERA Global Markets",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 49,
+      "company_id": "co:shell-trading",
+      "company": "Shell Trading",
+      "source_checked": "https://shell.wd3.myworkdayjobs.com/en-US/shellcareers/job/London-York-Road/Power-Market-Analyst_R202611",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://shell.wd3.myworkdayjobs.com/en-US/shellcareers/job/London-York-Road/Power-Market-Analyst_R202611"
+      ],
+      "notes": "Three current London power/gas roles found; two analysis roles added, structurer retained as low-fit lead."
+    },
+    {
+      "rank": 50,
+      "company_id": "co:bp-trading",
+      "company": "BP Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 51,
+      "company_id": "co:equinor-trading",
+      "company": "Equinor Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 52,
+      "company_id": "co:exxonmobil-global-trading",
+      "company": "ExxonMobil Global Trading",
+      "source_checked": "https://jobs.exxonmobil.com/go/Trading/9512600/",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://jobs.exxonmobil.com/go/Trading/9512600/"
+      ],
+      "notes": "Current trading analytics roles found; Singapore Quantitative Analyst Lead V&S LNG added as a senior stretch."
+    },
+    {
+      "rank": 53,
+      "company_id": "co:totalenergies-trading",
+      "company": "TotalEnergies Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 54,
+      "company_id": "co:chevron-supply-and-trading",
+      "company": "Chevron Supply and Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 55,
+      "company_id": "co:engie-global-markets",
+      "company": "Engie Global Markets",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 56,
+      "company_id": "co:rwe-supply-trading",
+      "company": "RWE Supply & Trading",
+      "source_checked": "https://jobs.rwe.com/RWE/job/London-%28Senior%29-Quantitative-Risk-Analyst-City-EC2R-8HP/1454355333/",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://jobs.rwe.com/RWE/job/London-%28Senior%29-Quantitative-Risk-Analyst-City-EC2R-8HP/1454355333/"
+      ],
+      "notes": "Current London quantitative energy risk opening; added and labeled lower role-fit/support function."
+    },
+    {
+      "rank": 57,
+      "company_id": "co:edf-trading",
+      "company": "EDF Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 58,
+      "company_id": "co:centrica-energy-trading",
+      "company": "Centrica Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 59,
+      "company_id": "co:uniper-global-commodities",
+      "company": "Uniper Global Commodities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 60,
+      "company_id": "co:vattenfall-energy-trading",
+      "company": "Vattenfall Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 61,
+      "company_id": "co:statkraft-markets",
+      "company": "Statkraft Markets",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 62,
+      "company_id": "co:sse-energy-markets",
+      "company": "SSE Energy Markets",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 63,
+      "company_id": "co:rsted-trading",
+      "company": "Ørsted Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 64,
+      "company_id": "co:copenhagen-energy-trading",
+      "company": "Copenhagen Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 65,
+      "company_id": "co:powerex",
+      "company": "Powerex",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 66,
+      "company_id": "co:mft-energy",
+      "company": "MFT Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 67,
+      "company_id": "co:nitor-energy",
+      "company": "Nitor Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 68,
+      "company_id": "co:convex-energy",
+      "company": "Convex Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 69,
+      "company_id": "co:dxt-commodities",
+      "company": "DXT Commodities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 70,
+      "company_id": "co:northpool",
+      "company": "Northpool",
+      "source_checked": "https://www.northpool.nl/vacancies/junior-spot-trader-id-vancouver",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://www.northpool.nl/vacancies/junior-spot-trader-id-vancouver"
+      ],
+      "notes": "Junior Vancouver intraday spot role found; Canadian right-to-work condition flagged."
+    },
+    {
+      "rank": 71,
+      "company_id": "co:equilibrium-energy",
+      "company": "Equilibrium Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 72,
+      "company_id": "co:fuse-energy",
+      "company": "Fuse Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 73,
+      "company_id": "co:alpiq",
+      "company": "Alpiq",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 74,
+      "company_id": "co:axpo",
+      "company": "Axpo",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 75,
+      "company_id": "co:met-group",
+      "company": "MET Group",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 76,
+      "company_id": "co:ompex",
+      "company": "Ompex",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 77,
+      "company_id": "co:priogen-energy",
+      "company": "Priogen Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 78,
+      "company_id": "co:norlys-energy-trading",
+      "company": "Norlys Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 79,
+      "company_id": "co:set-swiss-energy-trading",
+      "company": "SET Swiss Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 80,
+      "company_id": "co:senoko-energy",
+      "company": "Senoko Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 81,
+      "company_id": "co:miraiz",
+      "company": "Miraiz",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 82,
+      "company_id": "co:powerxecution",
+      "company": "PowerXecution",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 83,
+      "company_id": "co:dare",
+      "company": "Dare",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 84,
+      "company_id": "co:powertica-commodities-ag",
+      "company": "Powertica Commodities AG",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 85,
+      "company_id": "co:red-wolf-energy-trading",
+      "company": "Red Wolf Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 86,
+      "company_id": "co:second-foundation",
+      "company": "Second Foundation",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 87,
+      "company_id": "co:ampulse-energy",
+      "company": "Ampulse Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 88,
+      "company_id": "co:aros-commodities",
+      "company": "Aros Commodities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 89,
+      "company_id": "co:quark-energy-trading",
+      "company": "Quark Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 90,
+      "company_id": "co:petroineos",
+      "company": "Petroineos",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 91,
+      "company_id": "co:octopus-energy",
+      "company": "Octopus Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 92,
+      "company_id": "co:gent-commodity",
+      "company": "Gent Commodity",
+      "source_checked": "https://gentcommodity.com/careers/",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://gentcommodity.com/careers/"
+      ],
+      "notes": "Official Singapore trader opening refreshed; exact desk/product is unspecified and needs confirmation."
+    },
+    {
+      "rank": 93,
+      "company_id": "co:four-bung-singapore",
+      "company": "Four Bung Singapore",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 94,
+      "company_id": "co:mol-group",
+      "company": "MOL Group",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 95,
+      "company_id": "co:koch",
+      "company": "Koch",
+      "source_checked": "https://uk.linkedin.com/jobs/view/european-gas-analyst-strategist-at-koch-4423225482",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://uk.linkedin.com/jobs/view/european-gas-analyst-strategist-at-koch-4423225482"
+      ],
+      "notes": "Specific live LinkedIn lead found for London; official ATS requisition not independently confirmed."
+    },
+    {
+      "rank": 96,
+      "company_id": "co:ep-commodities",
+      "company": "EP Commodities",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 97,
+      "company_id": "co:photon-energy-group",
+      "company": "Photon Energy Group",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 98,
+      "company_id": "co:ssw-group",
+      "company": "SSW Group",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 99,
+      "company_id": "co:scharr-group",
+      "company": "SCHARR Group",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 100,
+      "company_id": "co:tg-energy-trading",
+      "company": "TG Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 101,
+      "company_id": "co:tohoku-electric-power-company",
+      "company": "Tohoku Electric Power Company",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 102,
+      "company_id": "co:ls-power",
+      "company": "LS Power",
+      "source_checked": "https://careers-lspower.icims.com/jobs/1582/analyst-associate%2C-energy-marketing-%26-trading/job?in_iframe=1",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://careers-lspower.icims.com/jobs/1582/analyst-associate%2C-energy-marketing-%26-trading/job?in_iframe=1"
+      ],
+      "notes": "Current NYC energy marketing/trading Analyst/Associate role found; US work-right constraint flagged."
+    },
+    {
+      "rank": 103,
+      "company_id": "co:sesco-enterprises",
+      "company": "SESCO Enterprises",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 104,
+      "company_id": "co:veco-power-trading",
+      "company": "VECO Power Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 105,
+      "company_id": "co:enel-energia-livre",
+      "company": "Enel Energia Livre",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 106,
+      "company_id": "co:powermart",
+      "company": "PowerMart",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 107,
+      "company_id": "co:caravela-energy-partners",
+      "company": "Caravela Energy Partners",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 108,
+      "company_id": "co:mind-energy",
+      "company": "Mind Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 109,
+      "company_id": "co:energetech",
+      "company": "Energetech",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 110,
+      "company_id": "co:sympower",
+      "company": "Sympower",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 111,
+      "company_id": "co:outlook-energy",
+      "company": "Outlook Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 112,
+      "company_id": "co:habitat-energy",
+      "company": "Habitat Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 113,
+      "company_id": "co:theme-international-trading",
+      "company": "Theme International Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 114,
+      "company_id": "co:boston-energy-trading",
+      "company": "Boston Energy Trading",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 115,
+      "company_id": "co:eneco-energy",
+      "company": "Eneco Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 116,
+      "company_id": "co:luminant",
+      "company": "Luminant",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 117,
+      "company_id": "co:bakken-energy",
+      "company": "Bakken Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 118,
+      "company_id": "co:origin-energy",
+      "company": "Origin Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 119,
+      "company_id": "co:agl-energy",
+      "company": "AGL Energy",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 120,
+      "company_id": "co:snowy-hydro",
+      "company": "Snowy Hydro",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 121,
+      "company_id": "co:energyaustralia",
+      "company": "EnergyAustralia",
+      "source_checked": "Employer careers/ATS inventory where available; public vacancy search fallback",
+      "outcome": "no_relevant_vacancy_found",
+      "vacancy_urls": [],
+      "notes": "No qualifying current vacancy surfaced in this bounded employer-inventory screen. This is not proof that no vacancy exists; city-led discovery and the next weekly run remain safety nets."
+    },
+    {
+      "rank": 122,
+      "company_id": "co:alinta-energy",
+      "company": "Alinta Energy",
+      "source_checked": "https://careers.alintaenergy.com.au/jobs/energy-spot-trader-sydney-nsw-australia-2dc68198-315b-4663-b228-935852921d2d",
+      "outcome": "relevant_vacancy_found",
+      "vacancy_urls": [
+        "https://careers.alintaenergy.com.au/jobs/energy-spot-trader-sydney-nsw-australia-2dc68198-315b-4663-b228-935852921d2d"
+      ],
+      "notes": "Current Sydney spot trader role found; closing date and Australian work-right requirement noted."
+    },
+    {
+      "rank": 123,
+      "company_id": "co:adm",
+      "company": "ADM",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 124,
+      "company_id": "co:aemo-markets",
+      "company": "AEMO Markets",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 125,
+      "company_id": "co:akuna-capital",
+      "company": "Akuna Capital",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 126,
+      "company_id": "co:alvean",
+      "company": "Alvean",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 127,
+      "company_id": "co:aot-energy",
+      "company": "AOT Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 128,
+      "company_id": "co:aqr-capital-management",
+      "company": "AQR Capital Management",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 129,
+      "company_id": "co:astomos-energy",
+      "company": "Astomos Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 130,
+      "company_id": "co:aston",
+      "company": "Aston",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 131,
+      "company_id": "co:bgc-group",
+      "company": "BGC Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 132,
+      "company_id": "co:blackrock",
+      "company": "BlackRock",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 133,
+      "company_id": "co:bluecrest-capital-management",
+      "company": "BlueCrest Capital Management",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 134,
+      "company_id": "co:brevan-howard",
+      "company": "Brevan Howard",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 135,
+      "company_id": "co:bridgewater-associates",
+      "company": "Bridgewater Associates",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 136,
+      "company_id": "co:brookfield-asset-management",
+      "company": "Brookfield Asset Management",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 137,
+      "company_id": "co:bunge",
+      "company": "Bunge",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 138,
+      "company_id": "co:caldic",
+      "company": "Caldic",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 139,
+      "company_id": "co:cargill",
+      "company": "Cargill",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 140,
+      "company_id": "co:castleton-commodities-international",
+      "company": "Castleton Commodities International",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 141,
+      "company_id": "co:cathay-petroleum",
+      "company": "Cathay Petroleum",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 142,
+      "company_id": "co:cboe-global-markets",
+      "company": "Cboe Global Markets",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 143,
+      "company_id": "co:clp-power",
+      "company": "CLP Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 144,
+      "company_id": "co:cme-group",
+      "company": "CME Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 145,
+      "company_id": "co:cofco-international",
+      "company": "COFCO International",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 146,
+      "company_id": "co:cpc-corporation-taiwan",
+      "company": "CPC Corporation Taiwan",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 147,
+      "company_id": "co:czarnikow",
+      "company": "Czarnikow",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 148,
+      "company_id": "co:da-vinci-derivatives",
+      "company": "Da Vinci Derivatives",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 149,
+      "company_id": "co:dv-trading",
+      "company": "DV Trading",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 150,
+      "company_id": "co:eclipse-trading",
+      "company": "Eclipse Trading",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 151,
+      "company_id": "co:ecom-agroindustrial",
+      "company": "ECOM Agroindustrial",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 152,
+      "company_id": "co:ed-f-man",
+      "company": "ED&F Man",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 153,
+      "company_id": "co:eneos-xplora",
+      "company": "Eneos Xplora",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 154,
+      "company_id": "co:engelhart",
+      "company": "Engelhart",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 155,
+      "company_id": "co:exoduspoint",
+      "company": "ExodusPoint",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 156,
+      "company_id": "co:flow-traders-asia",
+      "company": "Flow Traders Asia",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 157,
+      "company_id": "co:freepoint-commodities",
+      "company": "Freepoint Commodities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 158,
+      "company_id": "co:g-research",
+      "company": "G-Research",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 159,
+      "company_id": "co:gunvor-singapore",
+      "company": "Centalion Singapore (formerly Gunvor Singapore)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 160,
+      "company_id": "co:hartree-partners",
+      "company": "Hartree Partners",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 161,
+      "company_id": "co:hk-electric",
+      "company": "HK Electric",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 162,
+      "company_id": "co:itochu-corporation",
+      "company": "ITOCHU Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 163,
+      "company_id": "co:jingan-asset-management",
+      "company": "Jingan Asset Management",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 164,
+      "company_id": "co:kansai-electric-power",
+      "company": "Kansai Electric Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 165,
+      "company_id": "co:kcg-holdings",
+      "company": "KCG Holdings",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 166,
+      "company_id": "co:louis-dreyfus-company",
+      "company": "Louis Dreyfus Company",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 167,
+      "company_id": "co:macquarie-commodities",
+      "company": "Macquarie Commodities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 168,
+      "company_id": "co:man-group",
+      "company": "Man Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 169,
+      "company_id": "co:marex",
+      "company": "Marex",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 170,
+      "company_id": "co:marshall-wace",
+      "company": "Marshall Wace",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 171,
+      "company_id": "co:marubeni",
+      "company": "Marubeni",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 172,
+      "company_id": "co:maven-securities",
+      "company": "Maven Securities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 173,
+      "company_id": "co:mitsubishi-corporation",
+      "company": "Mitsubishi Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 174,
+      "company_id": "co:mitsui-co",
+      "company": "Mitsui & Co.",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 175,
+      "company_id": "co:nidera",
+      "company": "Nidera",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 176,
+      "company_id": "co:noble-group",
+      "company": "Noble Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 177,
+      "company_id": "co:olam-group",
+      "company": "Olam Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 178,
+      "company_id": "co:old-mission-capital",
+      "company": "Old Mission Capital",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 179,
+      "company_id": "co:pavilion-energy",
+      "company": "Pavilion Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 180,
+      "company_id": "co:petrochina-international",
+      "company": "PetroChina International",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 181,
+      "company_id": "co:pimco",
+      "company": "PIMCO",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 182,
+      "company_id": "co:schonfeld-strategic-advisors",
+      "company": "Schonfeld Strategic Advisors",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 183,
+      "company_id": "co:sinopec-trading",
+      "company": "Sinopec Trading",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 184,
+      "company_id": "co:sojitz",
+      "company": "Sojitz",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 185,
+      "company_id": "co:sp-group",
+      "company": "SP Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 186,
+      "company_id": "co:stx-group",
+      "company": "STX Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 187,
+      "company_id": "co:sucden",
+      "company": "Sucden",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 188,
+      "company_id": "co:sumitomo-corporation",
+      "company": "Sumitomo Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 189,
+      "company_id": "co:taula-capital-management",
+      "company": "Taula Capital Management",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 190,
+      "company_id": "co:tokyo-electric-power-company-tepco",
+      "company": "Tokyo Electric Power Company (TEPCO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 191,
+      "company_id": "co:toyota-tsusho",
+      "company": "Toyota Tsusho",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 192,
+      "company_id": "co:tp-icap",
+      "company": "TP ICAP",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 193,
+      "company_id": "co:tradition",
+      "company": "Tradition",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 194,
+      "company_id": "co:unipec",
+      "company": "Unipec",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 195,
+      "company_id": "co:vanguard",
+      "company": "Vanguard",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 196,
+      "company_id": "co:virtu-financial",
+      "company": "Virtu Financial",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 197,
+      "company_id": "co:wilmar-international",
+      "company": "Wilmar International",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 198,
+      "company_id": "co:wolverine-trading",
+      "company": "Wolverine Trading",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 199,
+      "company_id": "co:abn-amro",
+      "company": "ABN AMRO",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 200,
+      "company_id": "co:adani-power",
+      "company": "Adani Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 201,
+      "company_id": "co:adnoc",
+      "company": "ADNOC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 202,
+      "company_id": "co:aemo",
+      "company": "AEMO",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 203,
+      "company_id": "co:aes-corporation",
+      "company": "AES Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 204,
+      "company_id": "co:alberta-electric-system-operator-aeso",
+      "company": "Alberta Electric System Operator (AESO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 205,
+      "company_id": "co:alectra-energy-solutions",
+      "company": "Alectra Energy Solutions",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 206,
+      "company_id": "co:alectra-utilities",
+      "company": "Alectra Utilities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 207,
+      "company_id": "co:anz",
+      "company": "ANZ",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 208,
+      "company_id": "co:australian-securities-exchange-asx",
+      "company": "Australian Securities Exchange (ASX)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 209,
+      "company_id": "co:bank-of-america",
+      "company": "Bank of America",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 210,
+      "company_id": "co:barclays",
+      "company": "Barclays",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 211,
+      "company_id": "co:bc-hydro",
+      "company": "BC Hydro",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 212,
+      "company_id": "co:bnp-paribas",
+      "company": "BNP Paribas",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 213,
+      "company_id": "co:bp",
+      "company": "BP",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 214,
+      "company_id": "co:california-iso-caiso",
+      "company": "California ISO (CAISO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 215,
+      "company_id": "co:centrica",
+      "company": "Centrica",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 216,
+      "company_id": "co:chevron",
+      "company": "Chevron",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 217,
+      "company_id": "co:china-beijing-power-exchange",
+      "company": "China Beijing Power Exchange",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 218,
+      "company_id": "co:china-datang-corporation",
+      "company": "China Datang Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 219,
+      "company_id": "co:china-energy-investment-corporation",
+      "company": "China Energy Investment Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 220,
+      "company_id": "co:china-huadian-corporation",
+      "company": "China Huadian Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 221,
+      "company_id": "co:china-huaneng-group",
+      "company": "China Huaneng Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 222,
+      "company_id": "co:china-international-capital-corporation",
+      "company": "China International Capital Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 223,
+      "company_id": "co:china-merchants-securities",
+      "company": "China Merchants Securities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 224,
+      "company_id": "co:china-three-gorges-corporation",
+      "company": "China Three Gorges Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 225,
+      "company_id": "co:chubu-electric-power",
+      "company": "Chubu Electric Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 226,
+      "company_id": "co:citigroup",
+      "company": "Citigroup",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 227,
+      "company_id": "co:clp-holdings",
+      "company": "CLP Holdings",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 228,
+      "company_id": "co:cnooc",
+      "company": "CNOOC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 229,
+      "company_id": "co:cnpc",
+      "company": "CNPC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 230,
+      "company_id": "co:commonwealth-bank-of-australia",
+      "company": "Commonwealth Bank of Australia",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 231,
+      "company_id": "co:conocophillips",
+      "company": "ConocoPhillips",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 232,
+      "company_id": "co:constellation-energy",
+      "company": "Constellation Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 233,
+      "company_id": "co:cosmo-energy-holdings",
+      "company": "Cosmo Energy Holdings",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 234,
+      "company_id": "co:credit-agricole-cib",
+      "company": "Crédit Agricole CIB",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 235,
+      "company_id": "co:dbs",
+      "company": "DBS",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 236,
+      "company_id": "co:deutsche-bank",
+      "company": "Deutsche Bank",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 237,
+      "company_id": "co:dominion-energy",
+      "company": "Dominion Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 238,
+      "company_id": "co:drax",
+      "company": "Drax",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 239,
+      "company_id": "co:duke-energy",
+      "company": "Duke Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 240,
+      "company_id": "co:e-on",
+      "company": "E.ON",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 241,
+      "company_id": "co:ecopetrol",
+      "company": "Ecopetrol",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 242,
+      "company_id": "co:edf",
+      "company": "EDF",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 243,
+      "company_id": "co:edison",
+      "company": "Edison",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 244,
+      "company_id": "co:eex-group",
+      "company": "EEX Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 245,
+      "company_id": "co:electric-reliability-council-of-texas-ercot",
+      "company": "Electric Reliability Council of Texas (ERCOT)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 246,
+      "company_id": "co:eletrobras",
+      "company": "Eletrobras",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 247,
+      "company_id": "co:enel",
+      "company": "Enel",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 248,
+      "company_id": "co:eneos",
+      "company": "ENEOS",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 249,
+      "company_id": "co:engie",
+      "company": "ENGIE",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 250,
+      "company_id": "co:eni",
+      "company": "Eni",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 251,
+      "company_id": "co:epex-spot",
+      "company": "EPEX SPOT",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 252,
+      "company_id": "co:equinor",
+      "company": "Equinor",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 253,
+      "company_id": "co:eskom",
+      "company": "Eskom",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 254,
+      "company_id": "co:european-network-of-transmission-system-operators-for-electricity-entso-e",
+      "company": "European Network of Transmission System Operators for Electricity (ENTSO-E)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 255,
+      "company_id": "co:eversource-energy",
+      "company": "Eversource Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 256,
+      "company_id": "co:ewe",
+      "company": "EWE",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 257,
+      "company_id": "co:exxonmobil",
+      "company": "ExxonMobil",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 258,
+      "company_id": "co:fortum",
+      "company": "Fortum",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 259,
+      "company_id": "co:gaspool",
+      "company": "GASPOOL",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 260,
+      "company_id": "co:goldman-sachs",
+      "company": "Goldman Sachs",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 261,
+      "company_id": "co:haitong-securities",
+      "company": "Haitong Securities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 262,
+      "company_id": "co:hess-corporation",
+      "company": "Hess Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 263,
+      "company_id": "co:hong-kong-exchanges-and-clearing-hkex",
+      "company": "Hong Kong Exchanges and Clearing (HKEX)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 264,
+      "company_id": "co:hsbc",
+      "company": "HSBC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 265,
+      "company_id": "co:hydro-quebec",
+      "company": "Hydro-Québec",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 266,
+      "company_id": "co:iberdrola",
+      "company": "Iberdrola",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 267,
+      "company_id": "co:idemitsu-kosan",
+      "company": "Idemitsu Kosan",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 268,
+      "company_id": "co:ing-group",
+      "company": "ING Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 269,
+      "company_id": "co:intercontinental-exchange-ice",
+      "company": "Intercontinental Exchange (ICE)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 270,
+      "company_id": "co:iso-new-england",
+      "company": "ISO New England",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 271,
+      "company_id": "co:japan-electric-power-exchange-jepx",
+      "company": "Japan Electric Power Exchange (JEPX)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 272,
+      "company_id": "co:japan-exchange-group-jpx",
+      "company": "Japan Exchange Group (JPX)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 273,
+      "company_id": "co:jefferies",
+      "company": "Jefferies",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 274,
+      "company_id": "co:jera",
+      "company": "JERA",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 275,
+      "company_id": "co:jpmorgan-chase",
+      "company": "JPMorgan Chase",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 276,
+      "company_id": "co:korea-electric-power-corporation-kepco",
+      "company": "Korea Electric Power Corporation (KEPCO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 277,
+      "company_id": "co:korea-exchange-krx",
+      "company": "Korea Exchange (KRX)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 278,
+      "company_id": "co:macquarie-group",
+      "company": "Macquarie Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 279,
+      "company_id": "co:marathon-petroleum",
+      "company": "Marathon Petroleum",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 280,
+      "company_id": "co:midcontinent-independent-system-operator-miso",
+      "company": "Midcontinent Independent System Operator (MISO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 281,
+      "company_id": "co:mirae-asset-securities",
+      "company": "Mirae Asset Securities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 282,
+      "company_id": "co:mizuho-financial-group",
+      "company": "Mizuho Financial Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 283,
+      "company_id": "co:morgan-stanley",
+      "company": "Morgan Stanley",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 284,
+      "company_id": "co:mufg",
+      "company": "MUFG",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 285,
+      "company_id": "co:nasdaq",
+      "company": "Nasdaq",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 286,
+      "company_id": "co:national-australia-bank",
+      "company": "National Australia Bank",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 287,
+      "company_id": "co:national-energy-system-operator-neso",
+      "company": "National Energy System Operator (NESO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 288,
+      "company_id": "co:natwest-markets",
+      "company": "NatWest Markets",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 289,
+      "company_id": "co:new-york-iso-nyiso",
+      "company": "New York ISO (NYISO)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 290,
+      "company_id": "co:nextera-energy",
+      "company": "NextEra Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 291,
+      "company_id": "co:nomura",
+      "company": "Nomura",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 292,
+      "company_id": "co:nord-pool",
+      "company": "Nord Pool",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 293,
+      "company_id": "co:nrg-energy",
+      "company": "NRG Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 294,
+      "company_id": "co:ntpc",
+      "company": "NTPC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 295,
+      "company_id": "co:ocbc",
+      "company": "OCBC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 296,
+      "company_id": "co:occidental-petroleum",
+      "company": "Occidental Petroleum",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 297,
+      "company_id": "co:omv",
+      "company": "OMV",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 298,
+      "company_id": "co:ontario-ieso",
+      "company": "Ontario IESO",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 299,
+      "company_id": "co:rsted",
+      "company": "Ørsted",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 300,
+      "company_id": "co:petrochina",
+      "company": "PetroChina",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 301,
+      "company_id": "co:petronas",
+      "company": "Petronas",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 302,
+      "company_id": "co:pge",
+      "company": "PGE",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 303,
+      "company_id": "co:phillips-66",
+      "company": "Phillips 66",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 304,
+      "company_id": "co:pjm-interconnection",
+      "company": "PJM Interconnection",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 305,
+      "company_id": "co:ptt",
+      "company": "PTT",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 306,
+      "company_id": "co:qatarenergy",
+      "company": "QatarEnergy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 307,
+      "company_id": "co:rbc-capital-markets",
+      "company": "RBC Capital Markets",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 308,
+      "company_id": "co:repsol",
+      "company": "Repsol",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 309,
+      "company_id": "co:rwe",
+      "company": "RWE",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 310,
+      "company_id": "co:samsung-securities",
+      "company": "Samsung Securities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 311,
+      "company_id": "co:santos",
+      "company": "Santos",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 312,
+      "company_id": "co:saudi-aramco",
+      "company": "Saudi Aramco",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 313,
+      "company_id": "co:scotiabank",
+      "company": "Scotiabank",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 314,
+      "company_id": "co:scottishpower",
+      "company": "ScottishPower",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 315,
+      "company_id": "co:shell",
+      "company": "Shell",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 316,
+      "company_id": "co:shenzhen-energy-group",
+      "company": "Shenzhen Energy Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 317,
+      "company_id": "co:singapore-exchange-sgx",
+      "company": "Singapore Exchange (SGX)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 318,
+      "company_id": "co:singapore-petroleum-company-spc",
+      "company": "Singapore Petroleum Company (SPC)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 319,
+      "company_id": "co:sinopec",
+      "company": "Sinopec",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 320,
+      "company_id": "co:sk-innovation",
+      "company": "SK Innovation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 321,
+      "company_id": "co:smbc",
+      "company": "SMBC",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 322,
+      "company_id": "co:societe-generale",
+      "company": "Société Générale",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 323,
+      "company_id": "co:sse",
+      "company": "SSE",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 324,
+      "company_id": "co:standard-chartered",
+      "company": "Standard Chartered",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 325,
+      "company_id": "co:state-power-investment-corporation",
+      "company": "State Power Investment Corporation",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 326,
+      "company_id": "co:statkraft",
+      "company": "Statkraft",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 327,
+      "company_id": "co:tata-power",
+      "company": "Tata Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 328,
+      "company_id": "co:td-securities",
+      "company": "TD Securities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 329,
+      "company_id": "co:tepco",
+      "company": "TEPCO",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 330,
+      "company_id": "co:totalenergies",
+      "company": "TotalEnergies",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 331,
+      "company_id": "co:ubs",
+      "company": "UBS",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 332,
+      "company_id": "co:uniper",
+      "company": "Uniper",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 333,
+      "company_id": "co:uob",
+      "company": "UOB",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 334,
+      "company_id": "co:valero-energy",
+      "company": "Valero Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 335,
+      "company_id": "co:vattenfall",
+      "company": "Vattenfall",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 336,
+      "company_id": "co:veolia-north-america",
+      "company": "Veolia North America",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 337,
+      "company_id": "co:verbund",
+      "company": "Verbund",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 338,
+      "company_id": "co:vistra",
+      "company": "Vistra",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 339,
+      "company_id": "co:wells-fargo",
+      "company": "Wells Fargo",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 340,
+      "company_id": "co:woodside-energy",
+      "company": "Woodside Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 341,
+      "company_id": "co:ytl-power",
+      "company": "YTL Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 342,
+      "company_id": "co:accenture",
+      "company": "Accenture",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 343,
+      "company_id": "co:allegro-development",
+      "company": "Allegro Development",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 344,
+      "company_id": "co:amperon",
+      "company": "Amperon",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 345,
+      "company_id": "co:argus-media",
+      "company": "Argus Media",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 346,
+      "company_id": "co:ascend-analytics",
+      "company": "Ascend Analytics",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 347,
+      "company_id": "co:aurora-energy-research",
+      "company": "Aurora Energy Research",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 348,
+      "company_id": "co:baringa",
+      "company": "Baringa",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 349,
+      "company_id": "co:bloomberg",
+      "company": "Bloomberg",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 350,
+      "company_id": "co:bloombergnef",
+      "company": "BloombergNEF",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 351,
+      "company_id": "co:brady-technologies",
+      "company": "Brady Technologies",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 352,
+      "company_id": "co:caixin",
+      "company": "Caixin",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 353,
+      "company_id": "co:callendar",
+      "company": "Callendar",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 354,
+      "company_id": "co:ceraweek-s-p-global",
+      "company": "CERAWeek / S&P Global",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 355,
+      "company_id": "co:copperleaf-technologies",
+      "company": "Copperleaf Technologies",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 356,
+      "company_id": "co:cru-group",
+      "company": "CRU Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 357,
+      "company_id": "co:d2iq",
+      "company": "D2IQ",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 358,
+      "company_id": "co:eia",
+      "company": "EIA",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 359,
+      "company_id": "co:elexon",
+      "company": "Elexon",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 360,
+      "company_id": "co:endur-ion",
+      "company": "Endur (ION)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 361,
+      "company_id": "co:enel-x",
+      "company": "Enel X",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 362,
+      "company_id": "co:energy-aspects",
+      "company": "Energy Aspects",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 363,
+      "company_id": "co:energy-exemplar",
+      "company": "Energy Exemplar",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 364,
+      "company_id": "co:energy-intelligence",
+      "company": "Energy Intelligence",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 365,
+      "company_id": "co:energy-one",
+      "company": "Energy One",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 366,
+      "company_id": "co:energy-quantified",
+      "company": "Energy Quantified",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 367,
+      "company_id": "co:energy-traders-europe",
+      "company": "Energy Traders Europe",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 368,
+      "company_id": "co:enspired",
+      "company": "Enspired",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 369,
+      "company_id": "co:entso-e-transparency-platform",
+      "company": "ENTSO-E Transparency Platform",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 370,
+      "company_id": "co:enverus",
+      "company": "Enverus",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 371,
+      "company_id": "co:fge",
+      "company": "FGE",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 372,
+      "company_id": "co:financial-times",
+      "company": "Financial Times",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 373,
+      "company_id": "co:fis-front-arena",
+      "company": "FIS Front Arena",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 374,
+      "company_id": "co:flexpower",
+      "company": "FlexPower",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 375,
+      "company_id": "co:fluence",
+      "company": "Fluence",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 376,
+      "company_id": "co:ge-vernova",
+      "company": "GE Vernova",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 377,
+      "company_id": "co:gridbeyond",
+      "company": "GridBeyond",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 378,
+      "company_id": "co:gridcog",
+      "company": "Gridcog",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 379,
+      "company_id": "co:handelsblatt",
+      "company": "Handelsblatt",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 380,
+      "company_id": "co:hitachi-energy",
+      "company": "Hitachi Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 381,
+      "company_id": "co:hydrogen-insight",
+      "company": "Hydrogen Insight",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 382,
+      "company_id": "co:icis",
+      "company": "ICIS",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 383,
+      "company_id": "co:international-energy-agency-iea",
+      "company": "International Energy Agency (IEA)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 384,
+      "company_id": "co:ion-commodities",
+      "company": "ION Commodities",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 385,
+      "company_id": "co:kpler",
+      "company": "Kpler",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 386,
+      "company_id": "co:kraken-technologies",
+      "company": "Kraken Technologies",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 387,
+      "company_id": "co:krakenflex",
+      "company": "KrakenFlex",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 388,
+      "company_id": "co:krattrade",
+      "company": "KratTrade",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 389,
+      "company_id": "co:lcp-delta",
+      "company": "LCP Delta",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 390,
+      "company_id": "co:lloyd-s-list-intelligence",
+      "company": "Lloyd's List Intelligence",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 391,
+      "company_id": "co:lseg-data-analytics",
+      "company": "LSEG Data & Analytics",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 392,
+      "company_id": "co:lseg-workspace",
+      "company": "LSEG Workspace",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 393,
+      "company_id": "co:marinetraffic",
+      "company": "MarineTraffic",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 394,
+      "company_id": "co:modo-energy",
+      "company": "Modo Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 395,
+      "company_id": "co:molecule-software",
+      "company": "Molecule Software",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 396,
+      "company_id": "co:montel",
+      "company": "Montel",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 397,
+      "company_id": "co:montel-news",
+      "company": "Montel News",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 398,
+      "company_id": "co:nikkei",
+      "company": "Nikkei",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 399,
+      "company_id": "co:openlink-ion",
+      "company": "Openlink (ION)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 400,
+      "company_id": "co:oxford-institute-for-energy-studies-oies",
+      "company": "Oxford Institute for Energy Studies (OIES)",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 401,
+      "company_id": "co:pexapark",
+      "company": "Pexapark",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 402,
+      "company_id": "co:piclo",
+      "company": "Piclo",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 403,
+      "company_id": "co:platts",
+      "company": "Platts",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 404,
+      "company_id": "co:power-factors",
+      "company": "Power Factors",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 405,
+      "company_id": "co:power-magazine",
+      "company": "POWER Magazine",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 406,
+      "company_id": "co:procom",
+      "company": "ProCom",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 407,
+      "company_id": "co:quorum-software",
+      "company": "Quorum Software",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 408,
+      "company_id": "co:recharge-news",
+      "company": "Recharge News",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 409,
+      "company_id": "co:reuters",
+      "company": "Reuters",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 410,
+      "company_id": "co:rigzone",
+      "company": "Rigzone",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 411,
+      "company_id": "co:rystad-energy",
+      "company": "Rystad Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 412,
+      "company_id": "co:s-p-global",
+      "company": "S&P Global",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 413,
+      "company_id": "co:s-p-global-commodity-insights",
+      "company": "S&P Global Commodity Insights",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 414,
+      "company_id": "co:schneider-electric",
+      "company": "Schneider Electric",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 415,
+      "company_id": "co:siemens-energy",
+      "company": "Siemens Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 416,
+      "company_id": "co:smartestenergy",
+      "company": "SmartestEnergy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 417,
+      "company_id": "co:synmax",
+      "company": "SynMax",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 418,
+      "company_id": "co:tesla-energy",
+      "company": "Tesla Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 419,
+      "company_id": "co:the-business-times",
+      "company": "The Business Times",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 420,
+      "company_id": "co:the-economist",
+      "company": "The Economist",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 421,
+      "company_id": "co:the-wall-street-journal",
+      "company": "The Wall Street Journal",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 422,
+      "company_id": "co:timera-energy",
+      "company": "Timera Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 423,
+      "company_id": "co:trayport",
+      "company": "Trayport",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 424,
+      "company_id": "co:uplight",
+      "company": "Uplight",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 425,
+      "company_id": "co:upstream",
+      "company": "Upstream",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 426,
+      "company_id": "co:utility-dive",
+      "company": "Utility Dive",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 427,
+      "company_id": "co:vaisala",
+      "company": "Vaisala",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 428,
+      "company_id": "co:volue",
+      "company": "Volue",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 429,
+      "company_id": "co:vortexa",
+      "company": "Vortexa",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 430,
+      "company_id": "co:wood-mackenzie",
+      "company": "Wood Mackenzie",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 431,
+      "company_id": "co:yes-energy",
+      "company": "Yes Energy",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 432,
+      "company_id": "co:neoen",
+      "company": "Neoen",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 433,
+      "company_id": "co:tokyo-gas",
+      "company": "Tokyo Gas",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 434,
+      "company_id": "co:brookfield-renewable",
+      "company": "Brookfield Renewable",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 435,
+      "company_id": "co:acwa-power",
+      "company": "ACWA Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 436,
+      "company_id": "co:cosmo-eco-power",
+      "company": "Cosmo Eco Power",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 437,
+      "company_id": "co:act-group",
+      "company": "ACT Group",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    },
+    {
+      "rank": 438,
+      "company_id": "co:enfinium",
+      "company": "enfinium",
+      "source_checked": "",
+      "outcome": "not_started",
+      "vacancy_urls": [],
+      "notes": ""
+    }
+  ]
+}
